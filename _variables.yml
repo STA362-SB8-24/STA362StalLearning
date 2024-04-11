@@ -1,0 +1,30 @@
+author: Tyler George
+
+instructor:
+  name: Dr. Tyler George
+  name_no_title: Tyler George
+  email: tgeorge@cornellcollege.edu
+  url: "https://stats-tgeorge.github.io/personal_website/"
+  twitter: stats_tgeorge
+  github: stats-tgeorge
+  office: "West 311"
+  officehrs: "MWThF 3:05pm-4:05pm and by appt."
+  appointment_url: "https://calendar.app.google/3AF98Uc9VdLwRdp39"
+
+course:
+  title: "Introduction to Statistical Learning"
+  subtitle: "Learn the concepts behind and apply statistical and machine learning techniques. The course will use the statistical computing language R."
+  number: "STA 362"
+  semester: "Spring 2024 Block 8"
+  time: "M-F,9am-11am and 1pm-2pm"
+  location: "West 201"
+  github: "https://github.com/sta-363-s23/website"
+  url: "https://sta-363-s23.github.io/website"
+  copyright_year: "2024"
+  text: | 
+    The main text book is: [An Introduction to Statistical Learning with Applications in R](https://hastie.su.domains/ISLR2/ISLRv2_website.pdf)  by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani -- it is freely available online.
+
+
+college:
+  name: Cornell College
+  url: "www.cornellcollege.edu"
