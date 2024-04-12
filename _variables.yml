@@ -18,8 +18,8 @@ course:
   semester: "Spring 2024 Block 8"
   time: "M-F,9am-11am and 1pm-2pm"
   location: "West 201"
-  github: "https://github.com/sta-363-s23/website"
-  url: "https://sta-363-s23.github.io/website"
+  github: "https://github.com/STA362-SB8-24/STA362StatLearning"
+  url: "https://sta362-sb8-24.github.io/STA362StatLearning/"
   copyright_year: "2024"
   text: | 
     The main text book is: [An Introduction to Statistical Learning with Applications in R](https://hastie.su.domains/ISLR2/ISLRv2_website.pdf)  by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani -- it is freely available online.
