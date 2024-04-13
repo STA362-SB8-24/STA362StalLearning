@@ -5,6 +5,7 @@ instructor:
   name_no_title: Tyler George
   email: tgeorge@cornellcollege.edu
   url: "https://stats-tgeorge.github.io/personal_website/"
+  moodle: "https://moodle.cornellcollege.edu/course/view.php?id=7669#section-0"
   twitter: stats_tgeorge
   github: stats-tgeorge
   office: "West 311"
@@ -19,12 +20,14 @@ course:
   time: "M-F,9am-11am and 1pm-2pm"
   location: "West 201"
   github: "https://github.com/STA362-SB8-24/STA362StatLearning"
+  coursecal: "https://calendar.google.com/calendar/u/0?cid=Y19hMDllY2RmYTIyMjMyMTY1YWQwNTE0YjI0Y2FmNjMyMWM1N2YwY2M3MjExNmQ2MjAxMzQxZDdlMTFmZTZiZTUwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
   url: "https://sta362-sb8-24.github.io/STA362StatLearning/"
   copyright_year: "2024"
   text: | 
     The main text book is: [An Introduction to Statistical Learning with Applications in R](https://hastie.su.domains/ISLR2/ISLRv2_website.pdf)  by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani -- it is freely available online.
-
-
+  text2: |
+    The secondary text is R resource: [Tidy Modeling with R](https://www.tmwr.org/) by Max Kuhn and Julia Silge -- it is freely available online.
+  
 college:
   name: Cornell College
   url: "www.cornellcollege.edu"

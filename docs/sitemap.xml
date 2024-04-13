@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{< var course.url >}}/syllabus.html</loc>
-    <lastmod>2024-04-12T12:57:10.687Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/syllabus.html</loc>
+    <lastmod>2024-04-12T13:42:41.838Z</lastmod>
   </url>
   <url>
-    <loc>{{< var course.url >}}/course-support.html</loc>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-support.html</loc>
     <lastmod>2024-04-12T12:57:10.539Z</lastmod>
   </url>
   <url>
-    <loc>{{< var course.url >}}/course-links.html</loc>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-links.html</loc>
     <lastmod>2024-04-12T12:57:10.536Z</lastmod>
   </url>
   <url>
-    <loc>{{< var course.url >}}/computing-access.html</loc>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/computing-access.html</loc>
     <lastmod>2024-04-12T12:57:10.532Z</lastmod>
   </url>
   <url>
-    <loc>{{< var course.url >}}/course-instructor.html</loc>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-instructor.html</loc>
     <lastmod>2024-04-12T12:57:10.534Z</lastmod>
   </url>
   <url>
-    <loc>{{< var course.url >}}/course-overview.html</loc>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-overview.html</loc>
     <lastmod>2024-04-12T12:57:10.537Z</lastmod>
   </url>
   <url>
-    <loc>{{< var course.url >}}/index.html</loc>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/index.html</loc>
     <lastmod>2024-04-12T12:57:10.684Z</lastmod>
   </url>
 </urlset>
