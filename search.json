@@ -738,7 +738,7 @@
     "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome-1",
     "title": "Chapter 5 and tidymodels",
     "section": "Estimating prediction error (quantitative outcome)",
-    "text": "Estimating prediction error (quantitative outcome)\n\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\[CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\]\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+    "text": "Estimating prediction error (quantitative outcome)\n\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\)\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#leave-one-out-cross-validation",
@@ -850,7 +850,7 @@
     "href": "slides/05-cv-tidymodels.html#application-exercise-1",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nCrew a new quarto file in your project and add tidymodels in the name.\nLoad the packages by running the top chunk of R code\n\n\n\nlibrary(tidymodels)\nlibrary(broom)\nlibrary(ISLR)\nlibrary(countdown)"
+    "text": "Application Exercise\n\n\nCreate a new quarto file in your project and add tidymodels in the name.\nLoad the packages by running the top chunk of R code\n\n\n\nlibrary(tidymodels)\nlibrary(broom)\nlibrary(ISLR)\nlibrary(countdown)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#tidymodels-1",
