@@ -620,5 +620,229 @@
     "title": "Chapter 1 and 2",
     "section": "Accuracy",
     "text": "Accuracy\n\nMisclassification error rate\n\n\\[Err_{\\texttt{test}} = \\frac{\\#correct predictions}{total predictions} = \\textrm{Ave}_{test}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]\\] &gt; * \\(I(\\cdot)\\) is an indicator function and will only be eitehr 0 or 1.\n\nThe Bayes Classifier using the true \\(p_k(x)\\) has the smallest error\nSome of the methods we (may) learn build structured models for \\(\\mathcal{C}(x)\\) (support vector machines, for example)\nSome build structured models for \\(p_k(x)\\) (logistic regression, for example)\n\n\n\nthe test error rate \\(\\textrm{Ave}_{i\\in\\texttt{test}}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]\\) is minimized on average by very simple classifier that assigns each observation to the most likely class, given its predictor values (that’s the Bayes classifier)\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation-1",
+    "href": "slides/05-cv-tidymodels.html#cross-validation-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nWhy?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation-2",
+    "href": "slides/05-cv-tidymodels.html#cross-validation-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nHow could we do this?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation-3",
+    "href": "slides/05-cv-tidymodels.html#cross-validation-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\nWhat if we don’t have a separate data set to test our model on?\n🎉 We can use resampling methods to estimate the test-set prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#training-error-versus-test-error",
+    "href": "slides/05-cv-tidymodels.html#training-error-versus-test-error",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Training error versus test error",
+    "text": "Training error versus test error\n\nWhat is the difference? Which is typically larger?\n\n\nThe training error is calculated by using the same observations used to fit the statistical learning model\nThe test error is calculated by using a statistical learning method to predict the response of new observations\nThe training error rate typically underestimates the true prediction error rate"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error",
+    "text": "Estimating prediction error\n\nBest case scenario: We have a large data set to test our model on\nThis is not always the case!\n\n\n💡 Let’s instead find a way to estimate the test error by holding out a subset of the training observations from the model fitting process, and then applying the statistical learning method to those held out observations"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\nRandomly divide the available set up samples into two parts: a training set and a validation set\nFit the model on the training set, calculate the prediction error on the validation set\n\n\n\nIf we have a quantitative predictor what metric would we use to calculate this test error?\n\n\nOften we use Mean Squared Error (MSE)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-1",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\n\nRandomly divide the available set up samples into two parts: a training set and a validation set\nFit the model on the training set, calculate the prediction error on the validation set\n\n\n\nIf we have a qualitative predictor what metric would we use to calculate this test error?\n\n\nOften we use misclassification rate"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-2",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\n\n\\[\\Large\\color{orange}{MSE_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}[y_i-\\hat{f}(x_i)]^2}\\]\n\n\n\\[\\Large\\color{orange}{Err_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]}\\]"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-3",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\nAuto example:\n\n\nWe have 392 observations.\nTrying to predict mpg from horsepower.\nWe can split the data in half and use 196 to fit the model and 196 to test"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-4",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-5",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-5",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\nAuto example:\n\n\nWe have 392 observations.\nTrying to predict mpg from horsepower.\nWe can split the data in half and use 196 to fit the model and 196 to test - what if we did this many times?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-drawbacks",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-drawbacks",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set (Drawbacks)",
+    "text": "Approach #1: Validation set (Drawbacks)\n\nthe validation estimate of the test error can be highly variable, depending on which observations are included in the training set and which observations are included in the validation set\nIn the validation approach, only a subset of the observations (those that are included in the training set rather than in the validation set) are used to fit the model\nTherefore, the validation set error may tend to overestimate the test error for the model fit on the entire data set"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #2: K-fold cross validation",
+    "text": "Approach #2: K-fold cross validation\n💡 The idea is to do the following:\n\nRandomly divide the data into \\(K\\) equal-sized parts\nLeave out part \\(k\\), fit the model to the other \\(K - 1\\) parts (combined)\nObtain predictions for the left-out \\(k\\)th part\nDo this for each part \\(k = 1, 2,\\dots K\\), and then combine the result"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#k-fold-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#k-fold-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "K-fold cross validation",
+    "text": "K-fold cross validation\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-1}}}\\)\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-2}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-3}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-4}}}\\)\nTake the mean of the \\(k\\) MSE values"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise",
+    "href": "slides/05-cv-tidymodels.html#application-exercise",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nIf we use 10 folds:\n\n\nWhat percentage of the training data is used in each analysis for each fold?\nWhat percentage of the training data is used in the assessment for each fold?\n\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quantitative outcome)",
+    "text": "Estimating prediction error (quantitative outcome)\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\)\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome-1",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quantitative outcome)",
+    "text": "Estimating prediction error (quantitative outcome)\n\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\[CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\]\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#leave-one-out-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#leave-one-out-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Leave-one-out cross validation",
+    "text": "Leave-one-out cross validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\\dots\\]"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#special-case",
+    "href": "slides/05-cv-tidymodels.html#special-case",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Special Case!",
+    "text": "Special Case!\n\nWith linear regression, you can actually calculate the LOOCV error without having to iterate!\n\\(CV_{(n)} = \\frac{1}{n}\\sum_{i=1}^n\\left(\\frac{y_i-\\hat{y}_i}{1-h_i}\\right)^2\\)\n\\(\\hat{y}_i\\) is the \\(i\\)th fitted value from the linear model\n\\(h_i\\) is the diagonal of the “hat” matrix (remember that! 🎓)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#picking-k",
+    "href": "slides/05-cv-tidymodels.html#picking-k",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Picking \\(K\\)",
+    "text": "Picking \\(K\\)\n\n\\(K\\) can vary from 2 (splitting the data in half each time) to \\(n\\) (LOOCV)\nLOOCV is sometimes useful but usually the estimates from each fold are very correlated, so their average can have a high variance\nA better choice tends to be \\(K=5\\) or \\(K=10\\)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#bias-variance-trade-off",
+    "href": "slides/05-cv-tidymodels.html#bias-variance-trade-off",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Bias variance trade-off",
+    "text": "Bias variance trade-off\n\nSince each training set is only \\((K - 1)/K\\) as big as the original training set, the estimates of prediction error will typically be biased upward\nThis bias is minimized when \\(K = n\\) (LOOCV), but this estimate has a high variance\n\\(K =5\\) or \\(K=10\\) provides a nice compromise for the bias-variance trade-off"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation-1",
+    "href": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #2: K-fold Cross Validation",
+    "text": "Approach #2: K-fold Cross Validation\nAuto example:\n\n\nWe have 392 observations.\nTrying to predict mpg from horsepower"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (qualitative outcome)",
+    "text": "Estimating prediction error (qualitative outcome)\n\nThe premise is the same as cross valiation for quantitative outcomes\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_K = \\sum_{k=1}^K\\frac{n_k}{n}Err_k\\)\n\\(Err_k = \\sum_{i\\in C_k}I(y_i\\neq\\hat{y}_i)/n_k\\) (misclassification rate)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome-1",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (qualitative outcome)",
+    "text": "Estimating prediction error (qualitative outcome)\n\n\nThe premise is the same as cross valiation for quantitative outcomes\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_K = \\sum_{k=1}^K\\frac{n_k}{n}Err_k\\)\n\\(Err_k = \\sum_{i\\in C_k}I(y_i\\neq\\hat{y}_i)/n_k\\) (misclassification rate)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea",
+    "href": "slides/05-cv-tidymodels.html#big-idea",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea-1",
+    "href": "slides/05-cv-tidymodels.html#big-idea-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nWhy?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea-2",
+    "href": "slides/05-cv-tidymodels.html#big-idea-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nHow could we do this?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea-3",
+    "href": "slides/05-cv-tidymodels.html#big-idea-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\nWhat if we don’t have a separate data set to test our model on?\n🎉 We can use resampling methods to estimate the test-set prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation",
+    "href": "slides/05-cv-tidymodels.html#cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#setup",
+    "href": "slides/05-cv-tidymodels.html#setup",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Setup",
+    "text": "Setup"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quant. outcome)",
+    "text": "Estimating prediction error (quant. outcome)\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\)\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome-1",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quant. outcome)",
+    "text": "Estimating prediction error (quant. outcome)\n\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\[CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\]\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
   }
 ]
