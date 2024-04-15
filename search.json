@@ -255,7 +255,7 @@
     "href": "slides/01-02-welcome_to_sl.html#statistical-learning-problems-3",
     "title": "Chapter 1 and 2",
     "section": "Statistical Learning Problems",
-    "text": "Statistical Learning Problems\n\n\n\nEstablish the relationship between variables in population survey data\n\n\n\nIncome survey data for males from the central Atlantic region of US, 2009\n\n\n\n\nDr. Tyler George adapted from slides by Hastie & Tibshirani"
+    "text": "Statistical Learning Problems\n\n\nEstablish the relationship between variables in population survey data\n\nIncome survey data for males from the central Atlantic region of US, 2009\n\n\n\n\nDr. Tyler George adapted from slides by Hastie & Tibshirani"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#types-of-statistical-learning",
@@ -318,7 +318,7 @@
     "href": "slides/01-02-welcome_to_sl.html#auto-data",
     "title": "Chapter 1 and 2",
     "section": "Auto data",
-    "text": "Auto data\n\n\n\nWarning: package 'ISLR' was built under R version 4.3.3\n\n\nWarning: package 'gridExtra' was built under R version 4.3.2\n\n\n\nAttaching package: 'gridExtra'\n\n\nThe following object is masked from 'package:dplyr':\n\n    combine\n\n\n`geom_smooth()` using formula = 'y ~ x'\n`geom_smooth()` using formula = 'y ~ x'\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\nAbove are mpg vs horsepower, weight, and acceleration, with a blue linear-regression line fit separately to each. Can we predict mpg using these three?\n\nMaybe we can do better using a model:\n\\[\\texttt{mpg} \\approx f(\\texttt{horsepower}, \\texttt{weight}, \\texttt{acceleration})\\]"
+    "text": "Auto data\n\n\n\n\n\n\n\n\n\n\n\nAbove are mpg vs horsepower, weight, and acceleration, with a blue linear-regression line fit separately to each. Can we predict mpg using these three?\n\nMaybe we can do better using a model:\n\\[\\texttt{mpg} \\approx f(\\texttt{horsepower}, \\texttt{weight}, \\texttt{acceleration})\\]"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#notation",
@@ -339,28 +339,28 @@
     "href": "slides/01-02-welcome_to_sl.html#how-do-we-choose-fx",
     "title": "Chapter 1 and 2",
     "section": "How do we choose \\(f(X)\\)?",
-    "text": "How do we choose \\(f(X)\\)?\n\nggplot(Auto, aes(horsepower, mpg)) +\n  geom_point(size = 3, color = \"grey\") + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_vline(xintercept = 100, color = \"blue\") +\n  geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\") +\n  theme_classic()\n\nWarning in geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\"): All aesthetics have length 1, but the data has 392 rows.\nℹ Did you mean to use `annotate()`?\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\nWhat is a good value for \\(f(X)\\) at any selected value of \\(X\\), say \\(X = 100\\)? There can be many \\(Y\\) values at \\(X = 100\\)."
+    "text": "How do we choose \\(f(X)\\)?\n\nWhat is a good value for \\(f(X)\\) at any selected value of \\(X\\), say \\(X = 100\\)? There can be many \\(Y\\) values at \\(X = 100\\)."
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#how-do-we-choose-fx-1",
     "href": "slides/01-02-welcome_to_sl.html#how-do-we-choose-fx-1",
     "title": "Chapter 1 and 2",
     "section": "How do we choose \\(f(X)\\)?",
-    "text": "How do we choose \\(f(X)\\)?\n\nggplot(Auto, aes(horsepower, mpg)) +\n  geom_point(size = 3, color = \"grey\", alpha = 0.5) + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_vline(xintercept = 100, color = \"blue\") +\n  geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\") +\n  scale_x_continuous(limits = c(99, 101)) +\n  theme_classic()\n\nWarning in geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\"): All aesthetics have length 1, but the data has 392 rows.\nℹ Did you mean to use `annotate()`?\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 375 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 375 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\nWhat is a good value for \\(f(X)\\) at any selected value of \\(X\\), say \\(X = 100\\)? There can be many \\(Y\\) values at \\(X = 100\\)."
+    "text": "How do we choose \\(f(X)\\)?\n\nWhat is a good value for \\(f(X)\\) at any selected value of \\(X\\), say \\(X = 100\\)? There can be many \\(Y\\) values at \\(X = 100\\)."
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#how-do-we-choose-fx-2",
     "href": "slides/01-02-welcome_to_sl.html#how-do-we-choose-fx-2",
     "title": "Chapter 1 and 2",
     "section": "How do we choose \\(f(X)\\)?",
-    "text": "How do we choose \\(f(X)\\)?\n\nggplot(Auto, aes(mpg, horsepower)) +\n  geom_point(size = 3, color = \"black\", alpha = 0.5) + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_point(aes(x = 21.6, y = 100), size = 5, color = \"blue\") +\n  scale_y_continuous(limits = c(99, 101)) +\n  theme_classic()\n\nWarning in geom_point(aes(x = 21.6, y = 100), size = 5, color = \"blue\"): All aesthetics have length 1, but the data has 392 rows.\nℹ Did you mean to use `annotate()`?\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 375 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 375 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\nWhat is a good value for \\(f(X)\\) at any selected value of \\(X\\), say \\(X = 100\\)? There can be many \\(Y\\) values at \\(X = 100\\).\n\nThere are 17 points here, what value should I choose for f(100). What do you think the blue dot represents?"
+    "text": "How do we choose \\(f(X)\\)?\n\nWhat is a good value for \\(f(X)\\) at any selected value of \\(X\\), say \\(X = 100\\)? There can be many \\(Y\\) values at \\(X = 100\\).\n\nThere are 17 points here, what value should I choose for f(100). What do you think the blue dot represents?"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#how-do-we-choose-fx-3",
     "href": "slides/01-02-welcome_to_sl.html#how-do-we-choose-fx-3",
     "title": "Chapter 1 and 2",
     "section": "How do we choose \\(f(X)\\)?",
-    "text": "How do we choose \\(f(X)\\)?\n\nggplot(Auto, aes(horsepower, mpg)) +\n  geom_point(size = 3, color = \"grey\") + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_vline(xintercept = 100, color = \"blue\") +\n  geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\") +\n  theme_classic()\n\nWarning in geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\"): All aesthetics have length 1, but the data has 392 rows.\nℹ Did you mean to use `annotate()`?\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\nA good value is\n\\[f(100) = E(Y|X = 100)\\]\n\n\\(E(Y|X = 100)\\) means expected value (average) of \\(Y\\) given \\(X = 100\\)\n\n\nThis ideal \\(f(x) = E(Y | X = x)\\) is called the regression function"
+    "text": "How do we choose \\(f(X)\\)?\n\nA good value is\n\\[f(100) = E(Y|X = 100)\\]\n\n\\(E(Y|X = 100)\\) means expected value (average) of \\(Y\\) given \\(X = 100\\)\n\n\nThis ideal \\(f(x) = E(Y | X = x)\\) is called the regression function"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#regression-function-fx",
@@ -381,21 +381,21 @@
     "href": "slides/01-02-welcome_to_sl.html#regression-function-fx-2",
     "title": "Chapter 1 and 2",
     "section": "Regression function, \\(f(X)\\)",
-    "text": "Regression function, \\(f(X)\\)\n\nggplot(Auto, aes(horsepower, mpg)) +\n  geom_point(color = \"grey\") + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_vline(xintercept = 100, color = \"blue\") +\n  geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\") +\n  theme_classic()\n\nWarning in geom_point(aes(x = 100, y = 21.6), size = 3, color = \"blue\"): All aesthetics have length 1, but the data has 392 rows.\nℹ Did you mean to use `annotate()`?\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+    "text": "Regression function, \\(f(X)\\)"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#regression-function-fx-3",
     "href": "slides/01-02-welcome_to_sl.html#regression-function-fx-3",
     "title": "Chapter 1 and 2",
     "section": "Regression function, \\(f(X)\\)",
-    "text": "Regression function, \\(f(X)\\)\n\nggplot(Auto, aes(horsepower, mpg)) +\n  geom_point(color = \"grey\") + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_point(data = Auto %&gt;% filter(horsepower == 100), aes(horsepower, mpg), color = \"blue\") +\n  theme_classic()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nAuto %&gt;%\n  filter(horsepower == 100) %&gt;%\n  summarise(mean(mpg))\n\n\nUsing these points, how would I calculate the regression function?\n\n\n\nTake the average! \\(f(100) = E[\\texttt{mpg}|\\texttt{horsepower} = 100] = 19.6\\)"
+    "text": "Regression function, \\(f(X)\\)\n\n\nUsing these points, how would I calculate the regression function?\n\n\n\nTake the average! \\(f(100) = E[\\texttt{mpg}|\\texttt{horsepower} = 100] = 19.6\\)"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#regression-function-fx-4",
     "href": "slides/01-02-welcome_to_sl.html#regression-function-fx-4",
     "title": "Chapter 1 and 2",
     "section": "Regression function, \\(f(X)\\)",
-    "text": "Regression function, \\(f(X)\\)\n\nggplot(Auto, aes(horsepower, mpg)) +\n  geom_point(color = \"grey\") + \n  geom_point(aes(x = 100, y = 32.9), size = 4, color = \"red\") + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_point(data = Auto %&gt;% filter(horsepower == 100), aes(horsepower, mpg), color = \"blue\") +\n  theme_classic()\n\nWarning in geom_point(aes(x = 100, y = 32.9), size = 4, color = \"red\"): All aesthetics have length 1, but the data has 392 rows.\nℹ Did you mean to use `annotate()`?\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nThis point has a \\(Y\\) value of 32.9. What is \\(\\hat\\varepsilon\\)?\n\n\n\\(\\hat\\varepsilon = Y - \\hat{f}(X) = 32.9 - 19.6 = \\color{red}{13.3}\\)"
+    "text": "Regression function, \\(f(X)\\)\n\n\nThis point has a \\(Y\\) value of 32.9. What is \\(\\hat\\varepsilon\\)?\n\n\n\\(\\hat\\varepsilon = Y - \\hat{f}(X) = 32.9 - 19.6 = \\color{red}{13.3}\\)"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#the-error",
@@ -409,7 +409,7 @@
     "href": "slides/01-02-welcome_to_sl.html#estimating-f",
     "title": "Chapter 1 and 2",
     "section": "Estimating \\(f\\)",
-    "text": "Estimating \\(f\\)\n\nTypically we have very few (if any!) data points at \\(X=x\\) exactly, so we cannot compute \\(E[Y|X=x]\\)\nFor example, what if we were interested in estimating miles per gallon when horsepower was 104.\n\n\n\nggplot(Auto, aes(horsepower, mpg)) +\n  geom_point(color = \"grey\") + \n  geom_smooth(method = \"loess\", se = FALSE) + \n  geom_vline(xintercept = 104, color = \"blue\") +\n  geom_point(aes(x = 104, y = 20.8), color = \"blue\") +\n  theme_classic()\n\nWarning in geom_point(aes(x = 104, y = 20.8), color = \"blue\"): All aesthetics have length 1, but the data has 392 rows.\nℹ Did you mean to use `annotate()`?\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n💡 We can relax the definition and let\n\\[\\hat{f}(x) = E[Y | X\\in \\mathcal{N}(x)]\\]\n\nWhere \\(\\mathcal{N}(x)\\) is some neighborhood of \\(x\\)"
+    "text": "Estimating \\(f\\)\n\nTypically we have very few (if any!) data points at \\(X=x\\) exactly, so we cannot compute \\(E[Y|X=x]\\)\nFor example, what if we were interested in estimating miles per gallon when horsepower was 104.\n\n\n\n\n\n\n\n\n\n\n\n\n\n💡 We can relax the definition and let\n\\[\\hat{f}(x) = E[Y | X\\in \\mathcal{N}(x)]\\]\n\nWhere \\(\\mathcal{N}(x)\\) is some neighborhood of \\(x\\)"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#notation-pause",

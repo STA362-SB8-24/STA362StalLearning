@@ -30,71 +30,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #97947a;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #97947a;  padding-left: 4px; }
-    div.sourceCode
-      { color: #f8f8f2; background-color: #2b2b2b; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #f8f8f2; } /* Normal */
-    code span.al { color: #dcc6e0; } /* Alert */
-    code span.an { color: #d4d0ab; } /* Annotation */
-    code span.at { color: #ffd700; } /* Attribute */
-    code span.bn { color: #dcc6e0; } /* BaseN */
-    code span.bu { color: #f5ab35; } /* BuiltIn */
-    code span.cf { color: #ffa07a; } /* ControlFlow */
-    code span.ch { color: #abe338; } /* Char */
-    code span.cn { color: #ffa07a; } /* Constant */
-    code span.co { color: #d4d0ab; } /* Comment */
-    code span.cv { color: #d4d0ab; font-style: italic; } /* CommentVar */
-    code span.do { color: #d4d0ab; font-style: italic; } /* Documentation */
-    code span.dt { color: #dcc6e0; } /* DataType */
-    code span.dv { color: #dcc6e0; } /* DecVal */
-    code span.er { color: #dcc6e0; } /* Error */
-    code span.ex { color: #ffd700; } /* Extension */
-    code span.fl { color: #f5ab35; } /* Float */
-    code span.fu { color: #ffd700; } /* Function */
-    code span.im { color: #f8f8f2; } /* Import */
-    code span.in { color: #d4d0ab; } /* Information */
-    code span.kw { color: #ffa07a; } /* Keyword */
-    code span.op { color: #00e0e0; } /* Operator */
-    code span.ot { color: #ffa07a; } /* Other */
-    code span.pp { color: #dcc6e0; } /* Preprocessor */
-    code span.sc { color: #00e0e0; } /* SpecialChar */
-    code span.ss { color: #abe338; } /* SpecialString */
-    code span.st { color: #abe338; } /* String */
-    code span.va { color: #f5ab35; } /* Variable */
-    code span.vs { color: #abe338; } /* VerbatimString */
-    code span.wa { color: #d4d0ab; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -532,13 +467,10 @@ Tyler George
 <h2>Statistical Learning Problems</h2>
 <div class="columns">
 <div class="column">
-<ul>
-<li>Establish the relationship between variables in population survey data<br>
-</li>
-</ul>
+<p>Establish the relationship between variables in population survey data</p>
 </div><div class="column">
 <p>Income survey data for males from the central Atlantic region of US, 2009</p>
-<p><img src="img/01/wage1.png" height="350"></p>
+<p><img data-src="img/01/wage1.png"></p>
 </div>
 </div>
 <div class="footer">
@@ -568,8 +500,8 @@ Tyler George
 <section id="types-of-statistical-learning" class="slide level2">
 <h2>✌️ types of statistical learning</h2>
 <ul>
-<li>Supervised Learning</li>
-<li>Unsupervised Learning</li>
+<li><p>Supervised Learning</p></li>
+<li><p>Unsupervised Learning</p></li>
 </ul>
 </section>
 <section id="supervised-learning" class="slide level2 small">
@@ -672,30 +604,10 @@ Tyler George
 <h2>Auto data</h2>
 <div class="center">
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'ISLR' was built under R version 4.3.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'gridExtra' was built under R version 4.3.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'gridExtra'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:dplyr':
-
-    combine</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'
-`geom_smooth()` using formula = 'y ~ x'
-`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-2-1.png" width="672"></p>
+<p><img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -735,103 +647,26 @@ Attaching package: 'gridExtra'</code></pre>
 </section>
 <section id="how-do-we-choose-fx" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(horsepower, mpg)) <span class="sc">+</span></span>
-<span id="cb6-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span> </span>
-<span id="cb6-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb6-4"><a></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">100</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb6-5"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">100</span>, <span class="at">y =</span> <span class="fl">21.6</span>), <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb6-6"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_point(aes(x = 100, y = 21.6), size = 3, color = "blue"): All aesthetics have length 1, but the data has 392 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 
-</div>
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-3-1.png" width="672" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
 </section>
 <section id="how-do-we-choose-fx-1" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(horsepower, mpg)) <span class="sc">+</span></span>
-<span id="cb9-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
-<span id="cb9-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb9-4"><a></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">100</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb9-5"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">100</span>, <span class="at">y =</span> <span class="fl">21.6</span>), <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb9-6"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">99</span>, <span class="dv">101</span>)) <span class="sc">+</span></span>
-<span id="cb9-7"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_point(aes(x = 100, y = 21.6), size = 3, color = "blue"): All aesthetics have length 1, but the data has 392 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 375 rows containing non-finite outside the scale range
-(`stat_smooth()`).</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 375 rows containing missing values or values outside the scale range
-(`geom_point()`).</code></pre>
-</div>
 
-</div>
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-4-1.png" width="672" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
 </section>
 <section id="how-do-we-choose-fx-2" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(mpg, horsepower)) <span class="sc">+</span></span>
-<span id="cb14-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span> </span>
-<span id="cb14-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb14-4"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">21.6</span>, <span class="at">y =</span> <span class="dv">100</span>), <span class="at">size =</span> <span class="dv">5</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb14-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">99</span>, <span class="dv">101</span>)) <span class="sc">+</span></span>
-<span id="cb14-6"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_point(aes(x = 21.6, y = 100), size = 5, color = "blue"): All aesthetics have length 1, but the data has 392 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 375 rows containing non-finite outside the scale range
-(`stat_smooth()`).</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 375 rows containing missing values or values outside the scale range
-(`geom_point()`).</code></pre>
-</div>
 
-</div>
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-5-1.png" width="672" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
 <ul>
 <li class="fragment">There are 17 points here, what value should I choose for f(100). What do you think the blue dot represents?</li>
 </ul>
 </section>
 <section id="how-do-we-choose-fx-3" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(horsepower, mpg)) <span class="sc">+</span></span>
-<span id="cb19-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span> </span>
-<span id="cb19-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb19-4"><a></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">100</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb19-5"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">100</span>, <span class="at">y =</span> <span class="fl">21.6</span>), <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb19-6"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_point(aes(x = 100, y = 21.6), size = 3, color = "blue"): All aesthetics have length 1, but the data has 392 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 
-</div>
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-6-1.png" width="672" class="r-stretch"><p>A good value is</p>
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><p>A good value is</p>
 <p><span class="math display">\[f(100) = E(Y|X = 100)\]</span></p>
 <div class="fragment">
 <p><span class="math inline">\(E(Y|X = 100)\)</span> means <strong>expected value</strong> (average) of <span class="math inline">\(Y\)</span> given <span class="math inline">\(X = 100\)</span></p>
@@ -862,42 +697,12 @@ Attaching package: 'gridExtra'</code></pre>
 </section>
 <section id="regression-function-fx-2" class="slide level2 small">
 <h2>Regression function, <span class="math inline">\(f(X)\)</span></h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(horsepower, mpg)) <span class="sc">+</span></span>
-<span id="cb22-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span> </span>
-<span id="cb22-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb22-4"><a></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">100</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb22-5"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">100</span>, <span class="at">y =</span> <span class="fl">21.6</span>), <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb22-6"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_point(aes(x = 100, y = 21.6), size = 3, color = "blue"): All aesthetics have length 1, but the data has 392 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 
-</div>
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-7-1.png" width="672" class="r-stretch"></section>
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
 <section id="regression-function-fx-3" class="slide level2 small">
 <h2>Regression function, <span class="math inline">\(f(X)\)</span></h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(horsepower, mpg)) <span class="sc">+</span></span>
-<span id="cb25-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span> </span>
-<span id="cb25-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb25-4"><a></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> Auto <span class="sc">%&gt;%</span> <span class="fu">filter</span>(horsepower <span class="sc">==</span> <span class="dv">100</span>), <span class="fu">aes</span>(horsepower, mpg), <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb25-5"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 
-</div>
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-8-1.png" width="672" class="r-stretch"><div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>Auto <span class="sc">%&gt;%</span></span>
-<span id="cb27-2"><a></a>  <span class="fu">filter</span>(horsepower <span class="sc">==</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb27-3"><a></a>  <span class="fu">summarise</span>(<span class="fu">mean</span>(mpg))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="question">
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><div class="question">
 <p>Using these points, how would I calculate the <strong>regression function</strong>?</p>
 </div>
 <div class="fragment">
@@ -908,23 +713,8 @@ Attaching package: 'gridExtra'</code></pre>
 </section>
 <section id="regression-function-fx-4" class="slide level2 small">
 <h2>Regression function, <span class="math inline">\(f(X)\)</span></h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(horsepower, mpg)) <span class="sc">+</span></span>
-<span id="cb28-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span> </span>
-<span id="cb28-3"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">100</span>, <span class="at">y =</span> <span class="fl">32.9</span>), <span class="at">size =</span> <span class="dv">4</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
-<span id="cb28-4"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb28-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> Auto <span class="sc">%&gt;%</span> <span class="fu">filter</span>(horsepower <span class="sc">==</span> <span class="dv">100</span>), <span class="fu">aes</span>(horsepower, mpg), <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb28-6"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_point(aes(x = 100, y = 32.9), size = 4, color = "red"): All aesthetics have length 1, but the data has 392 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 
-</div>
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-10-1.png" width="672" class="r-stretch"><div class="question">
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"><div class="question">
 <p>This point has a <span class="math inline">\(Y\)</span> value of 32.9. What is <span class="math inline">\(\hat\varepsilon\)</span>?</p>
 </div>
 <ul>
@@ -951,23 +741,10 @@ Attaching package: 'gridExtra'</code></pre>
 </ul>
 <div class="center">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">ggplot</span>(Auto, <span class="fu">aes</span>(horsepower, mpg)) <span class="sc">+</span></span>
-<span id="cb31-2"><a></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"grey"</span>) <span class="sc">+</span> </span>
-<span id="cb31-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb31-4"><a></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">104</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb31-5"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">104</span>, <span class="at">y =</span> <span class="fl">20.8</span>), <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
-<span id="cb31-6"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_point(aes(x = 104, y = 20.8), color = "blue"): All aesthetics have length 1, but the data has 392 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
-</div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-11-1.png" width="672"></p>
+<p><img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1095,7 +872,7 @@ Attaching package: 'gridExtra'</code></pre>
 <section id="accuracy-1" class="slide level2">
 <h2>Accuracy</h2>
 
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-12-1.png" width="672" class="r-stretch"><div class="question">
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"><div class="question">
 <p>I have some <code>train</code> data, plotted above. What <span class="math inline">\(\hat{f}(x)\)</span> would minimize the <span class="math inline">\(MSE_{\texttt{train}}\)</span>?</p>
 </div>
 <p><span class="math display">\[MSE_{\texttt{train}} = \textrm{Ave}_{train}[y_i-\hat{f}(x_i)]^2\]</span></p>
@@ -1103,7 +880,7 @@ Attaching package: 'gridExtra'</code></pre>
 <section id="accuracy-2" class="slide level2">
 <h2>Accuracy</h2>
 
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-13-1.png" width="672" class="r-stretch"><div class="question">
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"><div class="question">
 <p>I have some <code>train</code> data, plotted above. What <span class="math inline">\(\hat{f}(x)\)</span> would minimize the <span class="math inline">\(MSE_{\texttt{train}}\)</span>?</p>
 </div>
 <p><span class="math display">\[MSE_{train} = \textrm{Ave}_{i\in\texttt{train}}[y_i-\hat{f}(x_i)]^2\]</span></p>
@@ -1111,7 +888,7 @@ Attaching package: 'gridExtra'</code></pre>
 <section id="accuracy-3" class="slide level2">
 <h2>Accuracy</h2>
 
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-14-1.png" width="672" class="r-stretch"><div class="question">
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"><div class="question">
 <p>What is wrong with this?</p>
 </div>
 <div class="fragment">
@@ -1121,7 +898,7 @@ Attaching package: 'gridExtra'</code></pre>
 <section id="accuracy-4" class="slide level2">
 <h2>Accuracy</h2>
 
-<img data-src="01-02-welcome_to_sl_files/figure-html/unnamed-chunk-15-1.png" width="672" class="r-stretch"><p>If we get a new sample, that overfit model is probably going to be terrible!</p>
+<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"><p>If we get a new sample, that overfit model is probably going to be terrible!</p>
 </section>
 <section id="accuracy-5" class="slide level2">
 <h2>Accuracy</h2>
@@ -1527,6 +1304,44 @@ Attaching package: 'gridExtra'</code></pre>
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
