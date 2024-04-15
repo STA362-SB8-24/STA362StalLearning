@@ -233,8 +233,8 @@
     "objectID": "hw/hw-01-intro-review.html#yaml",
     "href": "hw/hw-01-intro-review.html#yaml",
     "title": "Homework 1",
-    "section": "YAML:",
-    "text": "YAML:\nOpen the Quarto (qmd) file in your project, change the author name to your name, and render the document."
+    "section": "YAML",
+    "text": "YAML\nIn your Quarto (qmd) file in your project, change the author name to your name, and render the document. Make sure that you also have added the extra YAML clode above."
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#section",

@@ -105,14 +105,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <meta property="og:title" content="Introduction to Statistical Learning - Homework 1">
-<meta property="og:description" content="Review on R, RStudio, and ggplot">
+<meta property="og:description" content="Review on R, RStudio, and ggplot + Bias-Varinace Trade Off">
 <meta property="og:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta property="og:site_name" content="{{< var course.title >}}">
 <meta property="og:locale" content="en_US">
 <meta property="og:image:height" content="670">
 <meta property="og:image:width" content="1200">
 <meta name="twitter:title" content="Introduction to Statistical Learning - Homework 1">
-<meta name="twitter:description" content="Review on R, RStudio, and ggplot">
+<meta name="twitter:description" content="Review on R, RStudio, and ggplot + Bias-Varinace Trade Off">
 <meta name="twitter:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta name="twitter:creator" content="@stats_tgeorge">
 <meta name="twitter:card" content="summary_large_image">
@@ -262,7 +262,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
   <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a>
   <ul class="collapse">
-  <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml">YAML:</a></li>
+  <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml">YAML</a></li>
   </ul></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#add-a-variable" id="toc-add-a-variable" class="nav-link" data-scroll-target="#add-a-variable">Add a variable</a></li>
@@ -280,7 +280,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Homework 1</h1>
-<p class="subtitle lead">Review on R, RStudio, and ggplot</p>
+<p class="subtitle lead">Review on R, RStudio, and ggplot + Bias-Varinace Trade Off</p>
 </div>
 
 
@@ -352,8 +352,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="no-row-height column-margin column-container"><div class="">
 <p>The top portion of your Quarto file (between the three dashed lines) is called YAML. It stands for “YAML Ain’t Markup Language”. It is a human-friendly data serialization standard for all programming languages. All you need to know is that this area is called the YAML (we will refer to it as such) and that it contains meta-information about your document.</p>
 </div></div><section id="yaml" class="level2">
-<h2 class="anchored" data-anchor-id="yaml">YAML:</h2>
-<p>Open the Quarto (qmd) file in your project, change the author name to your name, and render the document.</p>
+<h2 class="anchored" data-anchor-id="yaml">YAML</h2>
+<p>In your Quarto (qmd) file in your project, change the author name to your name, and render the document. Make sure that you also have added the extra YAML clode above.</p>
 </section>
 </section>
 <section id="data" class="level1 page-columns page-full">
@@ -367,13 +367,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="no-row-height column-margin column-container"><div class="">
 <p>This dataset contains daily percentage returns for the S&amp;P 500 stock index between 2001 and 2005.</p>
 </div></div><ol type="1">
-<li>Based on the help function, how many rows (n) and columns (p) does the <code>Smarket</code> file have? What are the variables included in the data frame? Add your responses to your homework.</li>
+<li><strong>Based on the help function, how many rows (n) and columns (p) does the <code>Smarket</code> file have? What are the variables included in the data frame? Add your responses to your homework.</strong></li>
 </ol>
 </section>
 <section id="add-a-variable" class="level1 page-columns page-full">
 <h1>Add a variable</h1>
 <ol start="2" type="1">
-<li>Add a variable called <code>day</code> to the <code>Smarket</code> data. This variable will range from 1 to <code>n()</code> within each <code>Year</code> where <code>n</code> is the number of observations in the given year.</li>
+<li><strong>Add a variable called <code>day</code> to the <code>Smarket</code> data. This variable will range from 1 to <code>n()</code> within each <code>Year</code> where <code>n</code> is the number of observations in the given year.</strong></li>
 </ol>
 <p>Below is the code you will need to complete this exercise. The answer is already given, but you need to include relevant bits in your <code>qmd</code> document and successfully render it and view the results.</p>
 <p>Start with the <code>Smarket</code> dataset and pipe it into the <code>group_by</code> function to group by Year. Then pipe this into the <code>mutate</code> function to create a new variable called <code>day</code>. Overwrite the <code>Smarket</code> data frame with this new data frame that includes the added variable.</p>
@@ -392,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="data-visualization" class="level1 page-columns page-full">
 <h1>Data visualization</h1>
 <ol start="3" type="1">
-<li>Plot <code>Volume</code> versus <code>day</code> for the <code>Year</code> 2001. Then calculate the average <code>Volume</code> in 2001.</li>
+<li><strong>Plot <code>Volume</code> versus <code>day</code> for the <code>Year</code> 2001. Then calculate the average <code>Volume</code> in 2001.</strong></li>
 </ol>
 <p>Below is the code you will need to complete this exercise. The answer is already given, but you need to include relevant bits in your <code>qmd</code> document and successfully render it and view the results. Be sure to write a full sentence with the answer to the question (i.e.&nbsp;The average volume in 2001 is…), do not <em>only</em> output the R code.</p>
 <p>Start with the <code>Smarket</code> dataset and pipe it into the <code>filter</code> function to filter for observations where the <code>Year</code> column is equal to 2001. Store the resulting filtered data frame as a new data frame called <code>smarket_2001</code>.</p>
@@ -420,9 +420,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>b) <strong>Discuss the summary.</strong></p>
 <ol start="4" type="1">
-<li><p>Plot <code>Volume</code> vs.&nbsp;<code>day</code> for the year 2002. Calculate the average <code>Volume</code> in 2002. You can (and should) reuse code we introduced above, just replace the year with the desired year. How does this plot compare to 2001?</p></li>
-<li><p>Plot <code>Volume</code> vs.&nbsp;<code>day</code> for the year 2005. You can (and should) reuse code we introduced above, just replace the year with the desired year. How does this plot compare to 2001 and 2002?</p></li>
-<li><p>Finally, let’s look at all the years at once. To create this plot we will make use of faceting. How do the plots compare to each other across years? How does the average <code>Volume</code> compare across years?</p></li>
+<li><p><strong>Plot <code>Volume</code> vs.&nbsp;<code>day</code> for the year 2002. Calculate the average <code>Volume</code> in 2002. You can (and should) reuse code we introduced above, just replace the year with the desired year. How does this plot compare to 2001?</strong></p></li>
+<li><p><strong>Plot <code>Volume</code> vs.&nbsp;<code>day</code> for the year 2005. You can (and should) reuse code we introduced above, just replace the year with the desired year. How does this plot compare to 2001 and 2002?</strong></p></li>
+<li><p><strong>Finally, let’s look at all the years at once. To create this plot we will make use of faceting. How do the plots compare to each other across years? How does the average <code>Volume</code> compare across years?</strong></p></li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Smarket, <span class="fu">aes</span>(<span class="at">x =</span> day, <span class="at">y =</span> Volume, <span class="at">color =</span> Year)) <span class="sc">+</span> </span>
@@ -442,10 +442,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>b) <strong>Interpret the grouped summary.</strong></p>
 <ol start="7" type="1">
-<li>Complete exercise chapter 2, number 1 in ISLR.</li>
-<li>Complete exercise chapter 2, number 4 in ISLR.</li>
-<li>Complete exercise chapter 2, number 5 in ISLR.</li>
-<li>Complete exercise chapter 2, number 10 in ISLR. Hint: In <code>b</code>, try the <code>ggpairs</code> function from library <code>GGally</code>.</li>
+<li><strong>Complete exercise chapter 2, number 1 in ISLR.</strong></li>
+<li><strong>Complete exercise chapter 2, number 4 in ISLR.</strong></li>
+<li><strong>Complete exercise chapter 2, number 5 in ISLR.</strong></li>
+<li><strong>Complete exercise chapter 2, number 10 in ISLR.</strong> Hint: In <code>b</code>, try the <code>ggpairs</code> function from library <code>GGally</code>.</li>
 </ol>
 <section id="need-more-review" class="level3">
 <h3 class="anchored" data-anchor-id="need-more-review">Need More Review?</h3>
