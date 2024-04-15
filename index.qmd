@@ -45,6 +45,7 @@ d %>%
                    ifelse(is.na(x), fontawesome::fa('file-alt', fill_opacity = 0.1), 
                           glue::glue("<a href = {x}>{fontawesome::fa('flask')}</a>"))
                  }) %>%
+  cols_width(Topic ~ px(150)) |>
   fmt_date(Date, date_style = 9) %>%
   sub_missing(columns = Date, missing_text = "")
 ```
