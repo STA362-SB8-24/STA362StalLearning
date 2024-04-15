@@ -9,11 +9,12 @@ title: "Useful links"
 | Gradebook                  | 🔗 on [Moodle](https://moodle.cornellcollege.edu/grade/report/grader/index.php?id=6992) |
 
 ## Other Useful Links
+-   [Data Wrangling and Viz Interactive Tutorials](https://datasciencebox.org/02-interactive-tutorials)
 -   [RStudio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
 -   [Introduction to dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html)
 -   [R Date Examples](https://www.r-bloggers.com/2013/08/date-formats-in-r/)
 -   [NY Times Cornell College Sign-up](https://cornellcollege.libguides.com/nyt)
--   [R for Data Science](https://r4ds.had.co.nz/)
+-   [R for Data Science 2nd Ed](https://r4ds.hadley.nz/)
 -   [Quarto Documentation](https://quarto.org/)
 -   Data visualization
     -   [ggplot2 Reference](https://ggplot2.tidyverse.org/reference/index.html)

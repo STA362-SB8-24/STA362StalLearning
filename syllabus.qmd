@@ -90,11 +90,11 @@ All of materials for this class are free.
 
 {{< var course.text >}}
 
-{{< bar course.text2 >}}
+{{< var course.text2 >}}
 
 ### Course Site and Moodle
 
-Our course will run from a combination of [Moodle]({{< var course.moodle >}}) and the course website at <{{< var course.url >}}>.
+Our course will run from a combination of [Moodle]({{< var course.moodle >}}) and the course website at [{{< var course.url >}}]({{< var course.url >}}).
 
 ### Software – No need to install
 

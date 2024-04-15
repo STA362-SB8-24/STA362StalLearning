@@ -4,7 +4,7 @@
     "href": "syllabus.html",
     "title": "Introduction to Statistical Learning",
     "section": "",
-    "text": "Instructor\nInstructor Dr. Tyler George\n   Cornell College, West 311\n    tgeorge@cornellcollege.edu \n\n\n\nClass Meetings\nApril 15th - May 8th\n   9am-11am & 1pm-2pm\n   West 201\n   Course Calendar\n\n\n\nOffice Hours\n   MWTh 3:05pm-4:05pm and by appt.\n   West 311\n   Optional Appointment\n\n\n\nI am available far beyond these times listed. Please email me and we can set up a time to chat about class material or whatever you prefer! I will generally announce changes to office hours in class but I still suggest checking the Course Calendar to verify availability.\n\nYou Are A Priority\nMy goal this block is to help you learn the material. I want to first and foremost recognize that you are an individual and thus are unique and may learn uniquely. Additionally, your health and wellbeing are priority one. Learning cannot happen effectively if you don’t meet your other personal needs. That all being said, I have structured the class in a way that I, from experience teaching and learning myself, think will be most beneficial for the majority of students. I promise you that I will do my best to create an inclusive and engaging learning environment. I ask that you keep an open line of communication between us for when you may need help and/or flexibility. You and your learning are why I am here.\n\n\nCourse Description\nThis course will introduce students to relatively new and powerful statistical techniques used to analyze data. The course will begin with a review of linear regression and an introduction to computer-based variable and model selection methods. Other topics will include classification methods, resampling methods for model-building, non-linear models, and tree-based methods. The computer software program R will be used throughout.\n\n\nLearning Objectives\nAt the end of this course I would like you conceptually understand, be able to use apply, and interpret the results of\n\nThe variance/bias trade-off\nMeasuring quality of fits\nLinear model selection and regularization\nClassification including K nearest neighbors\nCross validation\nDimension reduction\nTree based methods\nUnsupervised learning\n\n\n\nPrerequisite\nTo be successful in this class, you should have completed STA 201, STA 202, and DSC 223.\n\n\nOpen Access Books – Free!\nAll of materials for this class are free.\nThe main text book is: An Introduction to Statistical Learning with Applications in R by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani – it is freely available online.\n{{&lt; bar course.text2 &gt;}}\n\n\nCourse Site and Moodle\nOur course will run from a combination of Moodle and the course website at &lt;https://sta362-sb8-24.github.io/STA362StatLearning/&gt;.\n\n\nSoftware – No need to install\nWe will use a combination of technologies in this course including R, and RStudio (server). Luckily for you I have put lots of effort into setting all of this on a machine we have on campus that we will all access with a web browser! You don’t need to install any – in fact for a while I prefer you don’t. More on this in class. If you are an off campus student, please let me know right away, as you may need to checkout a laptop (free) from IT to work on homework from home.\nIf you have any technical problems you should contact IT as soon as possible. Submit a Work Order!\n\n\nGroup Work\nIn this class, I would like you to work in groups for a variety of reasons. A large part of this class is communicating analysis – not just completing analysis. At the beginning of the block, groups will be formed. You should expect to work with this group every day. When we work in groups in class we will decide on roles, specifically who is controlling the one screen will rotate). Group members will rotate roles between tasks to help make sure everybody is sharing work. You won’t be working in a group for everything; any quizzes, and exams may be individual.\n\n\nEvaluations and grades\n\nGrade Category Descriptions\n\nHomework:\nHomeworks will be graded for correctness. The goal is the practice the application of the method and then be able to interpret the result.\n\n\nParticipation\nThis will be measured by attending class and working on the work given including labs and class examples.\n\n\nProject\nThis will entail multiple stages of submission with details accessed through “Project” on the left side of the course website (once available). Some class time will be given for discussing projects with me but not enough to complete the project during class times. I do not anticipate we will start these until week 3.\n\n\nExams\nThere will be a Midterm exam (4/26) and a final exam (morning of 5/8).\n\n\n\n\n\n\n\n\nAssignment\nPoints\n\n\n\n\nHomework\n200\n\n\nParticipation\n100\n\n\nProject\n300\n\n\nExams, two 200pts exams\n400\n\n\nTotal\n1000\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n93-100%\nC\n73-76%\n\n\nA-\n90–92%\nC-\n70-72%\n\n\nB+\n87–89%\nD+\n67-69%\n\n\nB\n83-86%\nD\n63-66%\n\n\nB-\n80-82%\nD-\n60-62%\n\n\nC+\n77-79%\nF\n&lt;60%\n\n\n\n\n\n\n\n\n\nUse of AI\nI expect you to generate your own work in this class. When you submit any kind of work (including projects, exams, homeworks), you are asserting that you have generated and written the text, and code, unless you indicate otherwise by the use of quotation marks and proper attribution for the source. Submitting content as your own that has been generated by someone other than you, or was created or assisted by a computer application or tool, including artificial intelligence (AI) tools such as ChatGPT is cheating and constitutes a violation of our Academic Honesty policy. You may use simple word processing tools to update spelling and grammar in your assignments, but unless given permission otherwise, you may not use AI tools to draft your work, even if you edit, revise, or paraphrase it. There may be opportunities for you to use AI tools in this class. Where they exist, I will clearly specify when and in what capacity it is permissible for you to use these tools.\n\n\nDISABILITIES AND ACCOMODATIONS POLICY\nCornell College makes reasonable accommodations for persons with disabilities. Students should notify the Office of Academic Support and Advising and their course instructor of any disability related accommodations within the first three days of the term for which the accommodations are required, due to the fast pace of the block format. For more information on the documentation required to establish the need for accommodations and the process of requesting the accommodations.\n\n\nACADEMIC HONESTY POLICY\nCornell College expects all members of the Cornell community to act with academic integrity. An important aspect of academic integrity is respecting the work of others. A student is expected to explicitly acknowledge ideas, claims, observations, or data of others, unless generally known. When a piece of work is submitted for credit, a student is asserting that the submission is her or his work unless there is a citation of a specific source. If there is no appropriate acknowledgment of sources, whether intended or not, this may constitute a violation of the College’s requirement for honesty in academic work and may be treated as a case of academic dishonesty. The procedures regarding how the College deals with cases of academic dishonesty appear in The Catalog, under the heading “Academic Honesty.”\n\n\nIllness Policy\nIf you are experiencing COVID-19 symptoms, do not attend class. Perform a home test or contact Director of Student Health Services Lynn O’Brien at student_health@cornellcollege.edu immediately to arrange a COVID-19 test at the Health Center. If you need to isolate due to COVID-19, or if you become unable to attend class for any other health reason, contact me as soon as possible to determine if you are able to continue in the class. A Withdrawal for Health Reasons may be required.\n\n\nMandatory Reporter Reminder\nIt is my goal that you feel supported and able to share information related to your life experiences during classroom discussions, in your written work, and in any one-on-one meetings with me. You should also know that all Cornell College faculty and staff are mandatory reporters. This means that I will keep information you share with me private to the greatest extent possible. However, I am required to share information regarding sexual assault, abuse, criminal behavior, or about a student who may be a danger to themselves or to others. If you wish to speak to someone confidentially who is not a mandatory reporter, you can schedule an appointment with one of the counselors in the Ebersole Health and Wellbeing Center or contact the College Chaplain, Rev. Melea White, at mwhite@cornelllcollege.edu.",
+    "text": "Instructor\nInstructor Dr. Tyler George\n   Cornell College, West 311\n    tgeorge@cornellcollege.edu \n\n\n\nClass Meetings\nApril 15th - May 8th\n   9am-11am & 1pm-2pm\n   West 201\n   Course Calendar\n\n\n\nOffice Hours\n   MWTh 3:05pm-4:05pm and by appt.\n   West 311\n   Optional Appointment\n\n\n\nI am available far beyond these times listed. Please email me and we can set up a time to chat about class material or whatever you prefer! I will generally announce changes to office hours in class but I still suggest checking the Course Calendar to verify availability.\n\nYou Are A Priority\nMy goal this block is to help you learn the material. I want to first and foremost recognize that you are an individual and thus are unique and may learn uniquely. Additionally, your health and wellbeing are priority one. Learning cannot happen effectively if you don’t meet your other personal needs. That all being said, I have structured the class in a way that I, from experience teaching and learning myself, think will be most beneficial for the majority of students. I promise you that I will do my best to create an inclusive and engaging learning environment. I ask that you keep an open line of communication between us for when you may need help and/or flexibility. You and your learning are why I am here.\n\n\nCourse Description\nThis course will introduce students to relatively new and powerful statistical techniques used to analyze data. The course will begin with a review of linear regression and an introduction to computer-based variable and model selection methods. Other topics will include classification methods, resampling methods for model-building, non-linear models, and tree-based methods. The computer software program R will be used throughout.\n\n\nLearning Objectives\nAt the end of this course I would like you conceptually understand, be able to use apply, and interpret the results of\n\nThe variance/bias trade-off\nMeasuring quality of fits\nLinear model selection and regularization\nClassification including K nearest neighbors\nCross validation\nDimension reduction\nTree based methods\nUnsupervised learning\n\n\n\nPrerequisite\nTo be successful in this class, you should have completed STA 201, STA 202, and DSC 223.\n\n\nOpen Access Books – Free!\nAll of materials for this class are free.\nThe main text book is: An Introduction to Statistical Learning with Applications in R by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani – it is freely available online.\nThe secondary text is R resource: Tidy Modeling with R by Max Kuhn and Julia Silge – it is freely available online.\n\n\nCourse Site and Moodle\nOur course will run from a combination of Moodle and the course website at https://sta362-sb8-24.github.io/STA362StatLearning/.\n\n\nSoftware – No need to install\nWe will use a combination of technologies in this course including R, and RStudio (server). Luckily for you I have put lots of effort into setting all of this on a machine we have on campus that we will all access with a web browser! You don’t need to install any – in fact for a while I prefer you don’t. More on this in class. If you are an off campus student, please let me know right away, as you may need to checkout a laptop (free) from IT to work on homework from home.\nIf you have any technical problems you should contact IT as soon as possible. Submit a Work Order!\n\n\nGroup Work\nIn this class, I would like you to work in groups for a variety of reasons. A large part of this class is communicating analysis – not just completing analysis. At the beginning of the block, groups will be formed. You should expect to work with this group every day. When we work in groups in class we will decide on roles, specifically who is controlling the one screen will rotate). Group members will rotate roles between tasks to help make sure everybody is sharing work. You won’t be working in a group for everything; any quizzes, and exams may be individual.\n\n\nEvaluations and grades\n\nGrade Category Descriptions\n\nHomework:\nHomeworks will be graded for correctness. The goal is the practice the application of the method and then be able to interpret the result.\n\n\nParticipation\nThis will be measured by attending class and working on the work given including labs and class examples.\n\n\nProject\nThis will entail multiple stages of submission with details accessed through “Project” on the left side of the course website (once available). Some class time will be given for discussing projects with me but not enough to complete the project during class times. I do not anticipate we will start these until week 3.\n\n\nExams\nThere will be a Midterm exam (4/26) and a final exam (morning of 5/8).\n\n\n\n\n\n\n\n\nAssignment\nPoints\n\n\n\n\nHomework\n200\n\n\nParticipation\n100\n\n\nProject\n300\n\n\nExams, two 200pts exams\n400\n\n\nTotal\n1000\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n93-100%\nC\n73-76%\n\n\nA-\n90–92%\nC-\n70-72%\n\n\nB+\n87–89%\nD+\n67-69%\n\n\nB\n83-86%\nD\n63-66%\n\n\nB-\n80-82%\nD-\n60-62%\n\n\nC+\n77-79%\nF\n&lt;60%\n\n\n\n\n\n\n\n\n\nUse of AI\nI expect you to generate your own work in this class. When you submit any kind of work (including projects, exams, homeworks), you are asserting that you have generated and written the text, and code, unless you indicate otherwise by the use of quotation marks and proper attribution for the source. Submitting content as your own that has been generated by someone other than you, or was created or assisted by a computer application or tool, including artificial intelligence (AI) tools such as ChatGPT is cheating and constitutes a violation of our Academic Honesty policy. You may use simple word processing tools to update spelling and grammar in your assignments, but unless given permission otherwise, you may not use AI tools to draft your work, even if you edit, revise, or paraphrase it. There may be opportunities for you to use AI tools in this class. Where they exist, I will clearly specify when and in what capacity it is permissible for you to use these tools.\n\n\nDISABILITIES AND ACCOMODATIONS POLICY\nCornell College makes reasonable accommodations for persons with disabilities. Students should notify the Office of Academic Support and Advising and their course instructor of any disability related accommodations within the first three days of the term for which the accommodations are required, due to the fast pace of the block format. For more information on the documentation required to establish the need for accommodations and the process of requesting the accommodations.\n\n\nACADEMIC HONESTY POLICY\nCornell College expects all members of the Cornell community to act with academic integrity. An important aspect of academic integrity is respecting the work of others. A student is expected to explicitly acknowledge ideas, claims, observations, or data of others, unless generally known. When a piece of work is submitted for credit, a student is asserting that the submission is her or his work unless there is a citation of a specific source. If there is no appropriate acknowledgment of sources, whether intended or not, this may constitute a violation of the College’s requirement for honesty in academic work and may be treated as a case of academic dishonesty. The procedures regarding how the College deals with cases of academic dishonesty appear in The Catalog, under the heading “Academic Honesty.”\n\n\nIllness Policy\nIf you are experiencing COVID-19 symptoms, do not attend class. Perform a home test or contact Director of Student Health Services Lynn O’Brien at student_health@cornellcollege.edu immediately to arrange a COVID-19 test at the Health Center. If you need to isolate due to COVID-19, or if you become unable to attend class for any other health reason, contact me as soon as possible to determine if you are able to continue in the class. A Withdrawal for Health Reasons may be required.\n\n\nMandatory Reporter Reminder\nIt is my goal that you feel supported and able to share information related to your life experiences during classroom discussions, in your written work, and in any one-on-one meetings with me. You should also know that all Cornell College faculty and staff are mandatory reporters. This means that I will keep information you share with me private to the greatest extent possible. However, I am required to share information regarding sexual assault, abuse, criminal behavior, or about a student who may be a danger to themselves or to others. If you wish to speak to someone confidentially who is not a mandatory reporter, you can schedule an appointment with one of the counselors in the Ebersole Health and Wellbeing Center or contact the College Chaplain, Rev. Melea White, at mwhite@cornelllcollege.edu.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -15,98 +15,10 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nExercises\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro Chapters 1 - Stat Learning Examples Chapter 2 - SL, Bias Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nExercises\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
-    ]
-  },
-  {
-    "objectID": "course-overview.html",
-    "href": "course-overview.html",
-    "title": "Introduction to Statistical Learning",
-    "section": "",
-    "text": "Course Description\nThis course will introduce students to relatively new and powerful statistical techniques used to analyze data. The course will begin with a review of linear regression and an introduction to computer-based variable and model selection methods. Other topics will include classification methods, resampling methods for model-building, non-linear models, and tree-based methods. The computer software program R will be used throughout.",
-    "crumbs": [
-      "Course information",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "course-instructor.html",
-    "href": "course-instructor.html",
-    "title": "Instructor",
-    "section": "",
-    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
-    "crumbs": [
-      "Course information",
-      "Instructor"
-    ]
-  },
-  {
-    "objectID": "course-instructor.html#instructor",
-    "href": "course-instructor.html#instructor",
-    "title": "Instructor",
-    "section": "",
-    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
-    "crumbs": [
-      "Course information",
-      "Instructor"
-    ]
-  },
-  {
-    "objectID": "computing-access.html",
-    "href": "computing-access.html",
-    "title": "Computing access",
-    "section": "",
-    "text": "To access computing resources the course, Introduction to Data Science, offered by the Cornell College Department of Mathematics and Statistics, go to the RStudio Server while on campus and connected to campus internet.\nYour account will be pre-created before the class begins and will use your Cornell College username. The default password will be shared in class and you will need to change it.",
-    "crumbs": [
-      "Course information",
-      "R/RStudio Access"
-    ]
-  },
-  {
-    "objectID": "course-links.html",
-    "href": "course-links.html",
-    "title": "Useful links",
-    "section": "",
-    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
-    ]
-  },
-  {
-    "objectID": "course-links.html#course-links",
-    "href": "course-links.html#course-links",
-    "title": "Useful links",
-    "section": "",
-    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
-    ]
-  },
-  {
-    "objectID": "course-links.html#other-useful-links",
-    "href": "course-links.html#other-useful-links",
-    "title": "Useful links",
-    "section": "Other Useful Links",
-    "text": "Other Useful Links\n\nRStudio Cheatsheets\nIntroduction to dplyr\nR Date Examples\nNY Times Cornell College Sign-up\nR for Data Science\nQuarto Documentation\nData visualization\n\nggplot2 Reference\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A Practice Introduction\nPatchwork R Package",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
-    ]
-  },
-  {
-    "objectID": "course-links.html#data-links",
-    "href": "course-links.html#data-links",
-    "title": "Useful links",
-    "section": "Data Links",
-    "text": "Data Links\n\nTidyTuesday\nR Data Sources for Regression Analysis\nFiveThirtyEight data\nAmazon Registry of Open Data\nOpen data StackExchange\nMicrosoft R Application Window\nData.gov\nUS Census\nNew York City data\nGeorge Mason University Data Link List\nToward Data Science list of Data Sources\nNHS Scotland Open Data\nEdinburgh Open Data\nOpen access to Scotland’s official statistics\nBikeshare data portal\nUK Gov Data\nKaggle datasets\nOpenIntro datasets\nAwesome public datasets\nYouth Risk Behavior Surveillance System (YRBSS)\nPRISM Data Archive Project\nHarvard Dataverse\nAndrew G. Reiter Poly Scie Datasets\nEuropean Statistics\nStatistics Canada\nPew Research\nUNICEF\nCDC\nWorld Bank\nElection Studies\nU.S. Data\nWorld Health Organization\nThe National Bureau of Economic Research\nInternational Monetary Fund\nGeneral Social Survey\nUnited Nations Data\nUnited Nations Statistics Division\nIf you know of others, let me know!",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
     ]
   },
   {
@@ -207,6 +119,122 @@
       "Course information",
       "Support"
     ]
+  },
+  {
+    "objectID": "course-links.html",
+    "href": "course-links.html",
+    "title": "Useful links",
+    "section": "",
+    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#course-links",
+    "href": "course-links.html#course-links",
+    "title": "Useful links",
+    "section": "",
+    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#other-useful-links",
+    "href": "course-links.html#other-useful-links",
+    "title": "Useful links",
+    "section": "Other Useful Links",
+    "text": "Other Useful Links\n\nData Wrangling and Viz Interactive Tutorials\nRStudio Cheatsheets\nIntroduction to dplyr\nR Date Examples\nNY Times Cornell College Sign-up\nR for Data Science 2nd Ed\nQuarto Documentation\nData visualization\n\nggplot2 Reference\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A Practice Introduction\nPatchwork R Package",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#data-links",
+    "href": "course-links.html#data-links",
+    "title": "Useful links",
+    "section": "Data Links",
+    "text": "Data Links\n\nTidyTuesday\nR Data Sources for Regression Analysis\nFiveThirtyEight data\nAmazon Registry of Open Data\nOpen data StackExchange\nMicrosoft R Application Window\nData.gov\nUS Census\nNew York City data\nGeorge Mason University Data Link List\nToward Data Science list of Data Sources\nNHS Scotland Open Data\nEdinburgh Open Data\nOpen access to Scotland’s official statistics\nBikeshare data portal\nUK Gov Data\nKaggle datasets\nOpenIntro datasets\nAwesome public datasets\nYouth Risk Behavior Surveillance System (YRBSS)\nPRISM Data Archive Project\nHarvard Dataverse\nAndrew G. Reiter Poly Scie Datasets\nEuropean Statistics\nStatistics Canada\nPew Research\nUNICEF\nCDC\nWorld Bank\nElection Studies\nU.S. Data\nWorld Health Organization\nThe National Bureau of Economic Research\nInternational Monetary Fund\nGeneral Social Survey\nUnited Nations Data\nUnited Nations Statistics Division\nIf you know of others, let me know!",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "computing-access.html",
+    "href": "computing-access.html",
+    "title": "Computing access",
+    "section": "",
+    "text": "To access computing resources the course, Introduction to Data Science, offered by the Cornell College Department of Mathematics and Statistics, go to the RStudio Server while on campus and connected to campus internet.\nYour account will be pre-created before the class begins and will use your Cornell College username. The default password will be shared in class and you will need to change it.",
+    "crumbs": [
+      "Course information",
+      "R/RStudio Access"
+    ]
+  },
+  {
+    "objectID": "course-instructor.html",
+    "href": "course-instructor.html",
+    "title": "Instructor",
+    "section": "",
+    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
+    "crumbs": [
+      "Course information",
+      "Instructor"
+    ]
+  },
+  {
+    "objectID": "course-instructor.html#instructor",
+    "href": "course-instructor.html#instructor",
+    "title": "Instructor",
+    "section": "",
+    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
+    "crumbs": [
+      "Course information",
+      "Instructor"
+    ]
+  },
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "Introduction to Statistical Learning",
+    "section": "",
+    "text": "Course Description\nThis course will introduce students to relatively new and powerful statistical techniques used to analyze data. The course will begin with a review of linear regression and an introduction to computer-based variable and model selection methods. Other topics will include classification methods, resampling methods for model-building, non-linear models, and tree-based methods. The computer software program R will be used throughout.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html",
+    "href": "hw/hw-01-intro-review.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "R is the name of the programming language itself and RStudio is a convenient interface.\nThe main goal of this homework is to re-introduce you to R and RStudio, which we will be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions.\nAs the homework’s progress, you are encouraged to explore beyond what the homework dictates; a willingness to experiment will make you a much better programmer. Before we get to that stage, however, you need to build some basic fluency in R. Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands."
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html#this-one-time",
+    "href": "hw/hw-01-intro-review.html#this-one-time",
+    "title": "Homework 1",
+    "section": "This One Time",
+    "text": "This One Time\n\nGo to our RStudio Server at http://turing.cornellcollege.edu:8787/\nClick File tab on the bottom right and then click the work Home.\nCreate a new folder using the little folder icon with the green plus on it. Use STA 362 in the folder name."
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html#every-homeworklabactivity",
+    "href": "hw/hw-01-intro-review.html#every-homeworklabactivity",
+    "title": "Homework 1",
+    "section": "Every Homework/lab/activity",
+    "text": "Every Homework/lab/activity\nEach of your assignments will begin with the following steps.\n\nFinding the instructions on our website: https://sta362-sb8-24.github.io/STA362StatLearning/\nGoing to our RStudio Server at http://turing.cornellcollege.edu:8787/\nCreating a new project. and giving it a sensible name such as homework_1 and having that project in the course folder you created.\nCreate a new quarto document and give it a sensible name such as hw1.\nIn the YAML add the following (add what you don’t have). The embed-resources component will make your final rendered html self-contained.\n\n---\ntitle: \"Document title\"\nauthor: \"my name\"\nformat:\n  html:\n    embed-resources: true\n---"
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html#yaml",
+    "href": "hw/hw-01-intro-review.html#yaml",
+    "title": "Homework 1",
+    "section": "YAML",
+    "text": "YAML\nIn your Quarto (qmd) file in your project, change the author name to your name, and render the document. Make sure that you also have added the extra YAML clode above."
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#section",
@@ -592,5 +620,516 @@
     "title": "Chapter 1 and 2",
     "section": "Accuracy",
     "text": "Accuracy\n\nMisclassification error rate\n\n\\[Err_{\\texttt{test}} = \\frac{\\#correct predictions}{total predictions} = \\textrm{Ave}_{test}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]\\] &gt; * \\(I(\\cdot)\\) is an indicator function and will only be eitehr 0 or 1.\n\nThe Bayes Classifier using the true \\(p_k(x)\\) has the smallest error\nSome of the methods we (may) learn build structured models for \\(\\mathcal{C}(x)\\) (support vector machines, for example)\nSome build structured models for \\(p_k(x)\\) (logistic regression, for example)\n\n\n\nthe test error rate \\(\\textrm{Ave}_{i\\in\\texttt{test}}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]\\) is minimized on average by very simple classifier that assigns each observation to the most likely class, given its predictor values (that’s the Bayes classifier)\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation-1",
+    "href": "slides/05-cv-tidymodels.html#cross-validation-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nWhy?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation-2",
+    "href": "slides/05-cv-tidymodels.html#cross-validation-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nHow could we do this?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation-3",
+    "href": "slides/05-cv-tidymodels.html#cross-validation-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\nWhat if we don’t have a separate data set to test our model on?\n🎉 We can use resampling methods to estimate the test-set prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#training-error-versus-test-error",
+    "href": "slides/05-cv-tidymodels.html#training-error-versus-test-error",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Training error versus test error",
+    "text": "Training error versus test error\n\nWhat is the difference? Which is typically larger?\n\n\nThe training error is calculated by using the same observations used to fit the statistical learning model\nThe test error is calculated by using a statistical learning method to predict the response of new observations\nThe training error rate typically underestimates the true prediction error rate"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error",
+    "text": "Estimating prediction error\n\nBest case scenario: We have a large data set to test our model on\nThis is not always the case!\n\n\n💡 Let’s instead find a way to estimate the test error by holding out a subset of the training observations from the model fitting process, and then applying the statistical learning method to those held out observations"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\nRandomly divide the available set up samples into two parts: a training set and a validation set\nFit the model on the training set, calculate the prediction error on the validation set\n\n\n\nIf we have a quantitative predictor what metric would we use to calculate this test error?\n\n\nOften we use Mean Squared Error (MSE)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-1",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\n\nRandomly divide the available set up samples into two parts: a training set and a validation set\nFit the model on the training set, calculate the prediction error on the validation set\n\n\n\nIf we have a qualitative predictor what metric would we use to calculate this test error?\n\n\nOften we use misclassification rate"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-2",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\n\n\\[\\Large\\color{orange}{MSE_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}[y_i-\\hat{f}(x_i)]^2}\\]\n\n\n\\[\\Large\\color{orange}{Err_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]}\\]"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-3",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\nAuto example:\n\n\nWe have 392 observations.\nTrying to predict mpg from horsepower.\nWe can split the data in half and use 196 to fit the model and 196 to test"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-4",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-5",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-5",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set",
+    "text": "Approach #1: Validation set\nAuto example:\n\n\nWe have 392 observations.\nTrying to predict mpg from horsepower.\nWe can split the data in half and use 196 to fit the model and 196 to test - what if we did this many times?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-drawbacks",
+    "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-drawbacks",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #1: Validation set (Drawbacks)",
+    "text": "Approach #1: Validation set (Drawbacks)\n\nthe validation estimate of the test error can be highly variable, depending on which observations are included in the training set and which observations are included in the validation set\nIn the validation approach, only a subset of the observations (those that are included in the training set rather than in the validation set) are used to fit the model\nTherefore, the validation set error may tend to overestimate the test error for the model fit on the entire data set"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #2: K-fold cross validation",
+    "text": "Approach #2: K-fold cross validation\n💡 The idea is to do the following:\n\nRandomly divide the data into \\(K\\) equal-sized parts\nLeave out part \\(k\\), fit the model to the other \\(K - 1\\) parts (combined)\nObtain predictions for the left-out \\(k\\)th part\nDo this for each part \\(k = 1, 2,\\dots K\\), and then combine the result"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#k-fold-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#k-fold-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "K-fold cross validation",
+    "text": "K-fold cross validation\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-1}}}\\)\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-2}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-3}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-4}}}\\)\nTake the mean of the \\(k\\) MSE values"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise",
+    "href": "slides/05-cv-tidymodels.html#application-exercise",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nCreate a new R project, then a new quarto file with cv in its name in that project. Answer the questions in that file.\nIf we use 10 folds:\n\n\nWhat percentage of the training data is used in each analysis for each fold?\nWhat percentage of the training data is used in the assessment for each fold?\n\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quantitative outcome)",
+    "text": "Estimating prediction error (quantitative outcome)\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\)\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome-1",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quantitative outcome)",
+    "text": "Estimating prediction error (quantitative outcome)\n\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\)\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#leave-one-out-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#leave-one-out-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Leave-one-out cross validation",
+    "text": "Leave-one-out cross validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\\dots\\]"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#special-case",
+    "href": "slides/05-cv-tidymodels.html#special-case",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Special Case!",
+    "text": "Special Case!\n\nWith linear regression, you can actually calculate the LOOCV error without having to iterate!\n\\(CV_{(n)} = \\frac{1}{n}\\sum_{i=1}^n\\left(\\frac{y_i-\\hat{y}_i}{1-h_i}\\right)^2\\)\n\\(\\hat{y}_i\\) is the \\(i\\)th fitted value from the linear model\n\\(h_i\\) is the diagonal of the “hat” matrix (remember that! 🎓)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#picking-k",
+    "href": "slides/05-cv-tidymodels.html#picking-k",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Picking \\(K\\)",
+    "text": "Picking \\(K\\)\n\n\\(K\\) can vary from 2 (splitting the data in half each time) to \\(n\\) (LOOCV)\nLOOCV is sometimes useful but usually the estimates from each fold are very correlated, so their average can have a high variance\nA better choice tends to be \\(K=5\\) or \\(K=10\\)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#bias-variance-trade-off",
+    "href": "slides/05-cv-tidymodels.html#bias-variance-trade-off",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Bias variance trade-off",
+    "text": "Bias variance trade-off\n\nSince each training set is only \\((K - 1)/K\\) as big as the original training set, the estimates of prediction error will typically be biased upward\nThis bias is minimized when \\(K = n\\) (LOOCV), but this estimate has a high variance\n\\(K =5\\) or \\(K=10\\) provides a nice compromise for the bias-variance trade-off"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation-1",
+    "href": "slides/05-cv-tidymodels.html#approach-2-k-fold-cross-validation-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Approach #2: K-fold Cross Validation",
+    "text": "Approach #2: K-fold Cross Validation\nAuto example:\n\n\nWe have 392 observations.\nTrying to predict mpg from horsepower"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (qualitative outcome)",
+    "text": "Estimating prediction error (qualitative outcome)\n\nThe premise is the same as cross valiation for quantitative outcomes\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_K = \\sum_{k=1}^K\\frac{n_k}{n}Err_k\\)\n\\(Err_k = \\sum_{i\\in C_k}I(y_i\\neq\\hat{y}_i)/n_k\\) (misclassification rate)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome-1",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-qualitative-outcome-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (qualitative outcome)",
+    "text": "Estimating prediction error (qualitative outcome)\n\n\nThe premise is the same as cross valiation for quantitative outcomes\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_K = \\sum_{k=1}^K\\frac{n_k}{n}Err_k\\)\n\\(Err_k = \\sum_{i\\in C_k}I(y_i\\neq\\hat{y}_i)/n_k\\) (misclassification rate)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea",
+    "href": "slides/05-cv-tidymodels.html#big-idea",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea-1",
+    "href": "slides/05-cv-tidymodels.html#big-idea-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nWhy?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea-2",
+    "href": "slides/05-cv-tidymodels.html#big-idea-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\n\n\n\nHow could we do this?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#big-idea-3",
+    "href": "slides/05-cv-tidymodels.html#big-idea-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "💡 Big idea",
+    "text": "💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error\nWhat if we don’t have a separate data set to test our model on?\n🎉 We can use resampling methods to estimate the test-set prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#cross-validation",
+    "href": "slides/05-cv-tidymodels.html#cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Cross validation",
+    "text": "Cross validation\n💡 Big idea\n\n\nWe have determined that it is sensible to use a test set to calculate metrics like prediction error"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#setup",
+    "href": "slides/05-cv-tidymodels.html#setup",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(ISLR)\nlibrary(tidymodels)\nlibrary(gridExtra)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quant. outcome)",
+    "text": "Estimating prediction error (quant. outcome)\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\(CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\)\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome-1",
+    "href": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Estimating prediction error (quant. outcome)",
+    "text": "Estimating prediction error (quant. outcome)\n\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\[CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\]\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-1",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nCreate a new quarto file in your project and add tidymodels in the name.\nLoad the packages by running the top chunk of R code\n\n\n\nlibrary(tidymodels)\nlibrary(broom)\nlibrary(ISLR)\nlibrary(countdown)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#tidymodels-1",
+    "href": "slides/05-cv-tidymodels.html#tidymodels-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "tidymodels",
+    "text": "tidymodels\n\n\n\n\ntidymodels.org\n\ntidymodels is an opinionated collection of R packages designed for modeling and statistical analysis.\nAll packages share an underlying philosophy and a common grammar."
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#step-1-specify-the-model",
+    "href": "slides/05-cv-tidymodels.html#step-1-specify-the-model",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Step 1: Specify the model",
+    "text": "Step 1: Specify the model\n\nPick the model\nSet the engine"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"lm\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-1",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"glmnet\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-2",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"spark\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-3",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\ndecision_tree() |&gt;\n  set_engine(\"rpart\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-4",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\n\nAll available models:\n\ntidymodels.org"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-2",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nWrite a pipe that creates a model that uses lm() to fit a linear regression using tidymodels. Save it as lm_spec and look at the object. What does it return?\n\n\nHint: you’ll need https://www.tidymodels.org\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#section-1",
+    "href": "slides/05-cv-tidymodels.html#section-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "",
+    "text": "lm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578  \n\nlm(mpg ~ horsepower, data = Auto)\n\n\nCall:\nlm(formula = mpg ~ horsepower, data = Auto)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#fit-the-data",
+    "href": "slides/05-cv-tidymodels.html#fit-the-data",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Fit the data",
+    "text": "Fit the data\n\n\nYou can train your model using the fit() function\n\n\nfit(lm_spec,\n    mpg ~ horsepower,\n    data = Auto)\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-3",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit the model:\n\n\nlibrary(ISLR)\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nDoes this give the same results as\n\nlm(mpg ~ horsepower, data = Auto)\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#section-2",
+    "href": "slides/05-cv-tidymodels.html#section-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "",
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578  \n\n\n\nCall:\nlm(formula = mpg ~ horsepower, data = Auto)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions",
+    "href": "slides/05-cv-tidymodels.html#get-predictions",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto)\n\n\nUses the predict() function\n‼️ new_data has an underscore\n😄 This automagically creates a data frame"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions-1",
+    "href": "slides/05-cv-tidymodels.html#get-predictions-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows\n\n\n\n\nWhat does bind_cols do?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions-2",
+    "href": "slides/05-cv-tidymodels.html#get-predictions-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows\n\n\n\nWhich column has the predicted values?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-4",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\n−+\n03:00\n\n\n\n\n\nEdit the code below to add the original data to the predicted data.\n\n\n\nmpg_pred &lt;- lm_fit |&gt; \n  predict(new_data = Auto) |&gt; \n  ---"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions-3",
+    "href": "slides/05-cv-tidymodels.html#get-predictions-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nmpg_pred &lt;- lm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\nmpg_pred\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#calculate-the-error",
+    "href": "slides/05-cv-tidymodels.html#calculate-the-error",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Calculate the error",
+    "text": "Calculate the error\n\n\nRoot mean square error\n\n\n\nmpg_pred |&gt;\n  rmse(truth = mpg, estimate = .pred)\n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rmse    standard        4.89\n\n\n\n\nWhat is this estimate? (training error? testing error?)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\n\nHow many observations are in the training set?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-1",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\nHow many observations are in the test set?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-2",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\nHow many observations are there in total?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-3",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\n\nExtract the training and testing data\n\n\n\ntraining(Auto_split)\ntesting(Auto_split)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-4",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_train &lt;- training(Auto_split)\n\n\nAuto_train\n\n\n\n# A tibble: 196 × 9\n     mpg cylinders displacement horsepower weight acceleration  year origin name          \n   &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;         \n 1  37.7         4           89         62   2050         17.3    81      3 toyota tercel \n 2  27           4           97         60   1834         19      71      2 volkswagen mo…\n 3  22           6          232        112   2835         14.7    82      1 ford granada l\n 4  16           6          250        100   3781         17      74      1 chevrolet che…\n 5  25           4           90         71   2223         16.5    75      2 volkswagen da…\n 6  18           6          232        100   2945         16      73      1 amc hornet    \n 7  38.1         4           89         60   1968         18.8    80      3 toyota coroll…\n 8  23           4           97         54   2254         23.5    72      2 volkswagen ty…\n 9  15           8          302        130   4295         14.9    77      1 mercury couga…\n10  34           4          108         70   2245         16.9    82      3 toyota corolla\n# ℹ 186 more rows"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-5",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-5",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nCopy the code below, fill in the blanks to fit a model on the training data then calculate the test RMSE.\n\n\nset.seed(100)\nAuto_split  &lt;- ________\nAuto_train  &lt;- ________\nAuto_test   &lt;- ________\nlm_fit      &lt;- fit(lm_spec, \n                   mpg ~ horsepower, \n                   data = ________)\nmpg_pred  &lt;- ________ |&gt; \n  predict(new_data = ________) |&gt; \n  bind_cols(________)\nrmse(________, truth = ________, estimate = ________)\n\n\n\n\n−+\n06:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nYou can use last_fit() and specify the split\nThis will automatically train the data on the train data from the split\nInstead of specifying which metric to calculate (with rmse as before) you can just use collect_metrics() and it will automatically calculate the metrics on the test data from the split"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way-1",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way-2",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way-3",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\nAuto_cv\n\n#  5-fold cross-validation \n# A tibble: 5 × 2\n  splits           id   \n  &lt;list&gt;           &lt;chr&gt;\n1 &lt;split [313/79]&gt; Fold1\n2 &lt;split [313/79]&gt; Fold2\n3 &lt;split [314/78]&gt; Fold3\n4 &lt;split [314/78]&gt; Fold4\n5 &lt;split [314/78]&gt; Fold5"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-1",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nInstead of fit we will use fit_resamples\n\n\n\nfit_resamples(lm_spec, \n              mpg ~ horsepower,\n              resamples = Auto_cv)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-2",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nHow do we get the metrics out? With collect_metrics() again!\n\n\n\nresults &lt;- fit_resamples(lm_spec,\n                         mpg ~ horsepower,\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.88      5  0.385  Preprocessor1_Model1\n2 rsq     standard   0.616     5  0.0220 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-3",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-4",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-5",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-5",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\n\n# Resampling results\n# 5-fold cross-validation \n# A tibble: 5 × 4\n  splits           id    .metrics         .notes          \n  &lt;list&gt;           &lt;chr&gt; &lt;list&gt;           &lt;list&gt;          \n1 &lt;split [313/79]&gt; Fold1 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n2 &lt;split [313/79]&gt; Fold2 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n3 &lt;split [314/78]&gt; Fold3 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n4 &lt;split [314/78]&gt; Fold4 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n5 &lt;split [314/78]&gt; Fold5 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-6",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-6",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nHow do we get the metrics out? With collect_metrics() again!\n\n\n\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.88      5  0.385  Preprocessor1_Model1\n2 rsq     standard   0.616     5  0.0220 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-6",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-6",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\n\n−+\n05:00\n\n\n\n\nEdit the code below to get the 5-fold cross validation error rate for the following model:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nresults &lt;- fit_resamples(lm_spec,\n                         ----,\n                         resamples = ---)\n\nresults |&gt;\n  collect_metrics()\n\n\nWhat do you think rsq is?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-7",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-7",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit 3 models on the data using 5 fold cross validation:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\beta_3 horsepower^3 +\\epsilon\\)\n\nCollect the metrics from each model, saving the results as results_1, results_2, results_3\nWhich model is “best”?\n\n\n\n\n\n−+\n08:00\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#answer",
+    "href": "slides/05-cv-tidymodels.html#answer",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Answer",
+    "text": "Answer\n\nlm_spec &lt;- \n  linear_reg() |&gt; # Pick linear regression\n  set_engine(engine = \"lm\") # set engine\nlm_spec\n\nLinear Regression Model Specification (regression)\n\nComputational engine: lm"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#answer-1",
+    "href": "slides/05-cv-tidymodels.html#answer-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Answer",
+    "text": "Answer\n\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578  \n\nlm(mpg ~ horsepower, data = Auto)\n\n\nCall:\nlm(formula = mpg ~ horsepower, data = Auto)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#answer-2",
+    "href": "slides/05-cv-tidymodels.html#answer-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Answer",
+    "text": "Answer\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nresults &lt;- fit_resamples(lm_spec,\n                         mpg ~ horsepower + I(horsepower^2),\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.38      5  0.110  Preprocessor1_Model1\n2 rsq     standard   0.688     5  0.0177 Preprocessor1_Model1"
   }
 ]

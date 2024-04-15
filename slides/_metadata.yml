@@ -9,6 +9,9 @@ format:
     slide-number: true
     chalkboard: true
     highlight-style: a11y-dark
+    echo: false
+    message: false
+    warning: false
 editor: visual
 execute:
   freeze: auto

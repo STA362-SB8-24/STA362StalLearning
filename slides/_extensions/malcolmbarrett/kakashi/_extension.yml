@@ -6,7 +6,7 @@ contributes:
     common:
       knitr:
         opts_chunk:
-          echo: true
+          echo: false
           warning: false
           message: false
           dev: "ragg_png"
@@ -21,10 +21,7 @@ contributes:
       theme: kakashi.scss
       slide-number: c/t
       show-slide-number: all
-      title-slide-attributes:
-        data-background-color: "#523178"
-        data-color: "#EDEEF"
       preview-links: true
       code-overflow: wrap
-      menu: false
+      menu: true
       incremental: true
