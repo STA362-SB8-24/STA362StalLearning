@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/syllabus.html</loc>
-    <lastmod>2024-04-13T19:03:38.966Z</lastmod>
+    <lastmod>2024-04-15T16:13:18.701Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/index.html</loc>
@@ -31,5 +31,9 @@
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/01-02-welcome_to_sl.html</loc>
     <lastmod>2024-04-15T01:58:50.297Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw1-intro-review.html</loc>
+    <lastmod>2024-04-15T16:10:24.915Z</lastmod>
   </url>
 </urlset>
