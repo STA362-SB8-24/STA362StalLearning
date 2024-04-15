@@ -15,7 +15,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nExercises\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro &lt;br&gt; Ch 1 - Stat Learning Examples br&gt; Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation &lt;br&gt; Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nExercises\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -724,7 +724,7 @@
     "href": "slides/05-cv-tidymodels.html#application-exercise",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\nIf we use 10 folds:\n\n\nWhat percentage of the training data is used in each analysis for each fold?\nWhat percentage of the training data is used in the assessment for each fold?\n\n\n\n\n\n−+\n02:00"
+    "text": "Application Exercise\nCreate a new R project, then a new quarto file with cv in its name in that project. Answer the questions in that file.\nIf we use 10 folds:\n\n\nWhat percentage of the training data is used in each analysis for each fold?\nWhat percentage of the training data is used in the assessment for each fold?\n\n\n\n\n\n−+\n02:00"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome",
@@ -829,7 +829,7 @@
     "href": "slides/05-cv-tidymodels.html#setup",
     "title": "Chapter 5 and tidymodels",
     "section": "Setup",
-    "text": "Setup"
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(ISLR)\nlibrary(tidymodels)\nlibrary(gridExtra)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quant.-outcome",
@@ -844,5 +844,292 @@
     "title": "Chapter 5 and tidymodels",
     "section": "Estimating prediction error (quant. outcome)",
     "text": "Estimating prediction error (quant. outcome)\n\n\nSplit the data into K parts, where \\(C_1, C_2, \\dots, C_k\\) indicate the indices of observations in part \\(k\\)\n\\[CV_{(K)} = \\sum_{k=1}^K\\frac{n_k}{n}MSE_k\\]\n\\(MSE_k = \\sum_{i \\in C_k} (y_i - \\hat{y}_i)^2/n_k\\)\n\\(n_k\\) is the number of observations in group \\(k\\)\n\\(\\hat{y}_i\\) is the fit for observation \\(i\\) obtained from the data with the part \\(k\\) removed\nIf we set \\(K = n\\), we’d have \\(n-fold\\) cross validation which is the same as leave-one-out cross validation (LOOCV)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-1",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nCrew a new quarto file in your project and add tidymodels in the name.\nLoad the packages by running the top chunk of R code\n\n\n\nlibrary(tidymodels)\nlibrary(broom)\nlibrary(ISLR)\nlibrary(countdown)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#tidymodels-1",
+    "href": "slides/05-cv-tidymodels.html#tidymodels-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "tidymodels",
+    "text": "tidymodels\n\n\n\n\ntidymodels.org\n\ntidymodels is an opinionated collection of R packages designed for modeling and statistical analysis.\nAll packages share an underlying philosophy and a common grammar."
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#step-1-specify-the-model",
+    "href": "slides/05-cv-tidymodels.html#step-1-specify-the-model",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Step 1: Specify the model",
+    "text": "Step 1: Specify the model\n\nPick the model\nSet the engine"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"lm\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-1",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"glmnet\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-2",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"spark\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-3",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\ndecision_tree() |&gt;\n  set_engine(\"rpart\")"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#specify-the-model-4",
+    "href": "slides/05-cv-tidymodels.html#specify-the-model-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Specify the model",
+    "text": "Specify the model\n\n\nAll available models:\n\ntidymodels.org"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-2",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nWrite a pipe that creates a model that uses lm() to fit a linear regression using tidymodels. Save it as lm_spec and look at the object. What does it return?\n\n\nHint: you’ll need https://www.tidymodels.org\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#section-1",
+    "href": "slides/05-cv-tidymodels.html#section-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "",
+    "text": "lm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578  \n\nlm(mpg ~ horsepower, data = Auto)\n\n\nCall:\nlm(formula = mpg ~ horsepower, data = Auto)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#fit-the-data",
+    "href": "slides/05-cv-tidymodels.html#fit-the-data",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Fit the data",
+    "text": "Fit the data\n\n\nYou can train your model using the fit() function\n\n\nfit(lm_spec,\n    mpg ~ horsepower,\n    data = Auto)\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-3",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit the model:\n\n\nlibrary(ISLR)\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nDoes this give the same results as\n\nlm(mpg ~ horsepower, data = Auto)\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#section-2",
+    "href": "slides/05-cv-tidymodels.html#section-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "",
+    "text": "parsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578  \n\n\n\nCall:\nlm(formula = mpg ~ horsepower, data = Auto)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions",
+    "href": "slides/05-cv-tidymodels.html#get-predictions",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto)\n\n\nUses the predict() function\n‼️ new_data has an underscore\n😄 This automagically creates a data frame"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions-1",
+    "href": "slides/05-cv-tidymodels.html#get-predictions-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows\n\n\n\n\nWhat does bind_cols do?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions-2",
+    "href": "slides/05-cv-tidymodels.html#get-predictions-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows\n\n\n\nWhich column has the predicted values?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-4",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\n−+\n03:00\n\n\n\n\n\nEdit the code below to add the original data to the predicted data.\n\n\n\nmpg_pred &lt;- lm_fit |&gt; \n  predict(new_data = Auto) |&gt; \n  ---"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#get-predictions-3",
+    "href": "slides/05-cv-tidymodels.html#get-predictions-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Get predictions",
+    "text": "Get predictions\n\nmpg_pred &lt;- lm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\nmpg_pred\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#calculate-the-error",
+    "href": "slides/05-cv-tidymodels.html#calculate-the-error",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Calculate the error",
+    "text": "Calculate the error\n\n\nRoot mean square error\n\n\n\nmpg_pred |&gt;\n  rmse(truth = mpg, estimate = .pred)\n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rmse    standard        4.89\n\n\n\n\nWhat is this estimate? (training error? testing error?)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\n\nHow many observations are in the training set?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-1",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\nHow many observations are in the test set?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-2",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\nHow many observations are there in total?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-3",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\n\nExtract the training and testing data\n\n\n\ntraining(Auto_split)\ntesting(Auto_split)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-4",
+    "href": "slides/05-cv-tidymodels.html#validation-set-approach-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_train &lt;- training(Auto_split)\n\n\nAuto_train\n\n\n\n# A tibble: 196 × 9\n     mpg cylinders displacement horsepower weight acceleration  year origin name          \n   &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;         \n 1  37.7         4           89         62   2050         17.3    81      3 toyota tercel \n 2  27           4           97         60   1834         19      71      2 volkswagen mo…\n 3  22           6          232        112   2835         14.7    82      1 ford granada l\n 4  16           6          250        100   3781         17      74      1 chevrolet che…\n 5  25           4           90         71   2223         16.5    75      2 volkswagen da…\n 6  18           6          232        100   2945         16      73      1 amc hornet    \n 7  38.1         4           89         60   1968         18.8    80      3 toyota coroll…\n 8  23           4           97         54   2254         23.5    72      2 volkswagen ty…\n 9  15           8          302        130   4295         14.9    77      1 mercury couga…\n10  34           4          108         70   2245         16.9    82      3 toyota corolla\n# ℹ 186 more rows"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-5",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-5",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nCopy the code below, fill in the blanks to fit a model on the training data then calculate the test RMSE.\n\n\nset.seed(100)\nAuto_split  &lt;- ________\nAuto_train  &lt;- ________\nAuto_test   &lt;- ________\nlm_fit      &lt;- fit(lm_spec, \n                   mpg ~ horsepower, \n                   data = ________)\nmpg_pred  &lt;- ________ |&gt; \n  predict(new_data = ________) |&gt; \n  bind_cols(________)\nrmse(________, truth = ________, estimate = ________)\n\n\n\n\n−+\n06:00"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nYou can use last_fit() and specify the split\nThis will automatically train the data on the train data from the split\nInstead of specifying which metric to calculate (with rmse as before) you can just use collect_metrics() and it will automatically calculate the metrics on the test data from the split"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way-1",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way-2",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#a-faster-way-3",
+    "href": "slides/05-cv-tidymodels.html#a-faster-way-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\nAuto_cv\n\n#  5-fold cross-validation \n# A tibble: 5 × 2\n  splits           id   \n  &lt;list&gt;           &lt;chr&gt;\n1 &lt;split [313/79]&gt; Fold1\n2 &lt;split [313/79]&gt; Fold2\n3 &lt;split [314/78]&gt; Fold3\n4 &lt;split [314/78]&gt; Fold4\n5 &lt;split [314/78]&gt; Fold5"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-1",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nInstead of fit we will use fit_resamples\n\n\n\nfit_resamples(lm_spec, \n              mpg ~ horsepower,\n              resamples = Auto_cv)"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-2",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nHow do we get the metrics out? With collect_metrics() again!\n\n\n\nresults &lt;- fit_resamples(lm_spec,\n                         mpg ~ horsepower,\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.88      5  0.385  Preprocessor1_Model1\n2 rsq     standard   0.616     5  0.0220 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-3",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-3",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-4",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-4",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-5",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-5",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\n\n# Resampling results\n# 5-fold cross-validation \n# A tibble: 5 × 4\n  splits           id    .metrics         .notes          \n  &lt;list&gt;           &lt;chr&gt; &lt;list&gt;           &lt;list&gt;          \n1 &lt;split [313/79]&gt; Fold1 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n2 &lt;split [313/79]&gt; Fold2 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n3 &lt;split [314/78]&gt; Fold3 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n4 &lt;split [314/78]&gt; Fold4 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;\n5 &lt;split [314/78]&gt; Fold5 &lt;tibble [2 × 4]&gt; &lt;tibble [0 × 3]&gt;"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-6",
+    "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-6",
+    "title": "Chapter 5 and tidymodels",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nHow do we get the metrics out? With collect_metrics() again!\n\n\n\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.88      5  0.385  Preprocessor1_Model1\n2 rsq     standard   0.616     5  0.0220 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-6",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-6",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\n\n−+\n05:00\n\n\n\n\nEdit the code below to get the 5-fold cross validation error rate for the following model:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nresults &lt;- fit_resamples(lm_spec,\n                         ----,\n                         resamples = ---)\n\nresults |&gt;\n  collect_metrics()\n\n\nWhat do you think rsq is?"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#application-exercise-7",
+    "href": "slides/05-cv-tidymodels.html#application-exercise-7",
+    "title": "Chapter 5 and tidymodels",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit 3 models on the data using 5 fold cross validation:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\beta_3 horsepower^3 +\\epsilon\\)\n\nCollect the metrics from each model, saving the results as results_1, results_2, results_3\nWhich model is “best”?\n\n\n\n\n\n−+\n08:00\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#answer",
+    "href": "slides/05-cv-tidymodels.html#answer",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Answer",
+    "text": "Answer\n\nlm_spec &lt;- \n  linear_reg() |&gt; # Pick linear regression\n  set_engine(engine = \"lm\") # set engine\nlm_spec\n\nLinear Regression Model Specification (regression)\n\nComputational engine: lm"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#answer-1",
+    "href": "slides/05-cv-tidymodels.html#answer-1",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Answer",
+    "text": "Answer\n\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578  \n\nlm(mpg ~ horsepower, data = Auto)\n\n\nCall:\nlm(formula = mpg ~ horsepower, data = Auto)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
+  },
+  {
+    "objectID": "slides/05-cv-tidymodels.html#answer-2",
+    "href": "slides/05-cv-tidymodels.html#answer-2",
+    "title": "Chapter 5 and tidymodels",
+    "section": "Answer",
+    "text": "Answer\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nresults &lt;- fit_resamples(lm_spec,\n                         mpg ~ horsepower + I(horsepower^2),\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.38      5  0.110  Preprocessor1_Model1\n2 rsq     standard   0.688     5  0.0177 Preprocessor1_Model1"
   }
 ]
