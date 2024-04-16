@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -219,7 +253,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#submission" id="toc-submission" class="nav-link active" data-scroll-target="#submission">Submission</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul>
 </nav>
     </div>
@@ -246,19 +282,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A note on approach. Though the book used R code for base R, I want you to complete the exercises using functions from <em>tidymodels</em>.</p>
+<section id="instructions" class="level1">
+<h1>Instructions</h1>
+<ul>
+<li><p>Creating a new <em>project.</em> and giving it a sensible name such as <em>homework_2</em> and having that project in the course folder you created.</p></li>
+<li><p>Create a new quarto document and give it a sensible name such as <em>hw2</em>.</p></li>
+<li><p>In the <code>YAML</code> add the following (add what you don’t have). The embed-resources component will make your final rendered <code>html</code> self-contained.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Document title"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> <span class="st">"my name"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    embed<span class="sc">-</span>resources<span class="sc">:</span> true</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p>Though the book used R code for base R, I want you to complete the exercises using functions from <em>tidymodels</em>.</p></li>
+<li><p>Set a seed before each problem.</p></li>
+<li><p>Make sure you answers print results. If the output is a large table, use the head() function to shorten the output.</p></li>
+</ul>
+</section>
+<section id="exercises" class="level1">
+<h1>Exercises</h1>
 <ol type="1">
 <li><p><strong>Complete exercise chapter 5, number 3 in ISLR.</strong></p></li>
 <li><p><strong>Complete exercise chapter 5, number 8 in ISLR.</strong></p></li>
 <li><p>The data <em>FirstYearGPA</em>, in the <em>Stat2Data</em> packages contains measurements on 219 college students. The response variable is GPA (grade point average after one year of college). Use <code>?FirstYearGPA</code> to learn about the dataset.</p></li>
 </ol>
 <ol type="a">
-<li><p>Split the data into training and test using 70% for training and the remaining for test. Fit a multiple linear regression to predict GPA using HSGPA, HU, and White. Give the prediction equation along with the test MSE. Make sure to set a seed.</p></li>
+<li><p>Split the data into training and test using 70% for training and the remaining for test. Fit a multiple linear regression to predict GPA using HSGPA, HU, and White. Give the prediction equation along with the training MSE. Make sure to set a seed.</p></li>
 <li><p>Use the prediction equation in the previous part as a formula to generate predictions of the GPA for each of the cases in the test sample. Then give the test MSE.</p></li>
 <li><p>Now do cross validation instead of using a test and training set. Give the final CV MSE.</p></li>
 <li><p>Which was better - using a test/training approach or using Cross Validation? Why is Cross validation likely to be better in this example?</p></li>
 <li><p>If we had more data, how might we combine both approaches?</p></li>
 </ol>
+</section>
 <section id="submission" class="level1">
 <h1>Submission</h1>
 <p>When you are finished with your homework, be sure to Render the final document. Once rendered, you can download your file by:</p>
