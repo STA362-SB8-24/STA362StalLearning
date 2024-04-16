@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to Statistical Learning - Tentative Homework 2</title>
+<title>Introduction to Statistical Learning - Homework 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,14 +104,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="Introduction to Statistical Learning - Tentative Homework 2">
+<meta property="og:title" content="Introduction to Statistical Learning - Homework 2">
 <meta property="og:description" content="Cross Validation and tidymodels">
 <meta property="og:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta property="og:site_name" content="{{< var course.title >}}">
 <meta property="og:locale" content="en_US">
 <meta property="og:image:height" content="670">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Introduction to Statistical Learning - Tentative Homework 2">
+<meta name="twitter:title" content="Introduction to Statistical Learning - Homework 2">
 <meta name="twitter:description" content="Cross Validation and tidymodels">
 <meta name="twitter:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta name="twitter:creator" content="@stats_tgeorge">
@@ -129,7 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tentative Homework 2</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Homework 2</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -265,7 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tentative Homework 2</h1>
+<h1 class="title">Homework 2</h1>
 <p class="subtitle lead">Cross Validation and tidymodels</p>
 </div>
 
@@ -341,9 +341,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> ________)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="a">
-<li><p>Find the missclassifcation rate for this model.</p></li>
+<li><p>Use the predict function on your model and predict for the data you used to fit the model.</p></li>
+<li><p>Using your predicted values, calculate the missclassification rate. You will need to find a way to compare the predicted value to the new estimates and then count when they do not match.</p></li>
 <li><p>Now split the data into training and test like in the previous exercise (70/30 split). Give the missclassification rate for the test set.</p></li>
-<li><p>Now use cross validation and give the average missclassification rate across folds (default of the collect_metrics function).</p></li>
+<li><p>Now use cross validation and give the average missclassification rate across folds (<code>almost</code> a default output of the collect_metrics function).</p></li>
 </ol>
 </section>
 <section id="submission" class="level1">
