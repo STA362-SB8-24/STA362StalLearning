@@ -30,71 +30,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -388,8 +323,6 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-  <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
 <meta property="og:title" content="Introduction to Statistical Learning - Chapter 4 Part 1">
 <meta property="og:description" content="Logistic Regression">
 <meta property="og:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
@@ -428,18 +361,11 @@ Tyler George
 <section id="recap" class="slide level2 small">
 <h2>Recap</h2>
 <ul>
-<li class="fragment">We had a <em>linear regression</em> refresher</li>
-<li class="fragment">Linear regression is a great tool when we have a continuous outcome</li>
-<li class="fragment">We are going to learn some fancy ways to do even better in the future</li>
+<li>We had a <em>linear regression</em> refresher</li>
+<li>Linear regression is a great tool when we have a continuous outcome</li>
+<li>We are going to learn some fancy ways to do even better in the future</li>
 </ul>
 <p><em>Setup:</em></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a></a><span class="fu">library</span>(broom)</span>
-<span id="cb1-3"><a></a><span class="fu">library</span>(tidymodels)</span>
-<span id="cb1-4"><a></a><span class="fu">library</span>(gridExtra)</span>
-<span id="cb1-5"><a></a><span class="fu">library</span>(ISLR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 </section>
 <section>
 <section id="classification" class="title-slide slide level1 center">
@@ -452,27 +378,26 @@ Tyler George
 <p>What are some examples of classification problems?</p>
 </div>
 <ul>
-<li class="fragment">Qualitative response variable in an <em>unordered set</em>, <span class="math inline">\(\mathcal{C}\)</span></li>
-<li class="fragment"><code>eye color</code> <span class="math inline">\(\in\)</span> <code>{blue, brown, green}</code></li>
-<li class="fragment"><code>email</code> <span class="math inline">\(\in\)</span> <code>{spam, not spam}</code></li>
-<li class="fragment">Response, <span class="math inline">\(Y\)</span> takes on values in <span class="math inline">\(\mathcal{C}\)</span></li>
-<li class="fragment">Predictors are a vector, <span class="math inline">\(X\)</span></li>
-<li class="fragment">The task: build a function <span class="math inline">\(C(X)\)</span> that takes <span class="math inline">\(X\)</span> and predicts <span class="math inline">\(Y\)</span>, <span class="math inline">\(C(X)\in\mathcal{C}\)</span></li>
-<li class="fragment">Many times we are actually more interested in the <em>probabilities</em> that <span class="math inline">\(X\)</span> belongs to each category in <span class="math inline">\(\mathcal{C}\)</span></li>
+<li>Qualitative response variable in an <em>unordered set</em>, <span class="math inline">\(\mathcal{C}\)</span></li>
+<li><code>eye color</code> <span class="math inline">\(\in\)</span> <code>{blue, brown, green}</code></li>
+<li><code>email</code> <span class="math inline">\(\in\)</span> <code>{spam, not spam}</code></li>
+<li>Response, <span class="math inline">\(Y\)</span> takes on values in <span class="math inline">\(\mathcal{C}\)</span></li>
+<li>Predictors are a vector, <span class="math inline">\(X\)</span></li>
+<li>The task: build a function <span class="math inline">\(C(X)\)</span> that takes <span class="math inline">\(X\)</span> and predicts <span class="math inline">\(Y\)</span>, <span class="math inline">\(C(X)\in\mathcal{C}\)</span></li>
+<li>Many times we are actually more interested in the <em>probabilities</em> that <span class="math inline">\(X\)</span> belongs to each category in <span class="math inline">\(\mathcal{C}\)</span></li>
 </ul>
 </section>
 <section id="example-credit-card-default" class="slide level2">
 <h2>Example: Credit card default</h2>
-
-<img data-src="04-logistic_files/figure-revealjs/plot1-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+</section>
 <section id="can-we-use-linear-regression" class="slide level2 small">
 <h2>Can we use linear regression?</h2>
 <p>We can code <code>Default</code> as</p>
 <p><span class="math display">\[Y = \begin{cases} 0 &amp; \textrm{if }\texttt{No}\\ 1&amp;\textrm{if }\texttt{Yes}\end{cases}\]</span> Can we fit a linear regression of <span class="math inline">\(Y\)</span> on <span class="math inline">\(X\)</span> and classify as <code>Yes</code> if <span class="math inline">\(\hat{Y}&gt; 0.5\)</span>?</p>
 <ul>
-<li class="fragment">In this case of a <strong>binary</strong> outcome, linear regression is okay (it is equivalent to <strong>linear discriminant analysis</strong>, you can read more about that in your book!)</li>
-<li class="fragment"><span class="math inline">\(E[Y|X=x] = P(Y=1|X=x)\)</span>, so it seems like this is a pretty good idea!</li>
-<li class="fragment"><strong>The problem</strong>: Linear regression can produce probabilities less than 0 or greater than 1 😱</li>
+<li>In this case of a <strong>binary</strong> outcome, linear regression is okay (it is equivalent to <strong>linear discriminant analysis</strong>, you can read more about that in your book!)</li>
+<li><span class="math inline">\(E[Y|X=x] = P(Y=1|X=x)\)</span>, so it seems like this is a pretty good idea!</li>
+<li><strong>The problem</strong>: Linear regression can produce probabilities less than 0 or greater than 1 😱</li>
 </ul>
 </section>
 <section id="can-we-use-linear-regression-1" class="slide level2 small">
@@ -483,17 +408,16 @@ Tyler George
 <p>What may do a better job?</p>
 </div>
 <ul>
-<li class="fragment"><strong>Logistic regression!</strong></li>
+<li><strong>Logistic regression!</strong></li>
 </ul>
 </section>
 <section id="linear-versus-logistic-regression" class="slide level2 small">
 <h2>Linear versus logistic regression</h2>
-
-<img data-src="04-logistic_files/figure-revealjs/plot2-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="question">
+<div class="question">
 <p>Which does a better job at predicting the probability of default?</p>
 </div>
 <ul>
-<li class="fragment">The orange marks represent the response <span class="math inline">\(Y\in\{0,1\}\)</span></li>
+<li>The orange marks represent the response <span class="math inline">\(Y\in\{0,1\}\)</span></li>
 </ul>
 </section>
 <section id="linear-regression" class="slide level2 small">
@@ -508,8 +432,8 @@ Y = \begin{cases} 1&amp; \textrm{if }\texttt{stroke}\\2&amp;\textrm{if }\texttt{
 <p>What could go wrong here?</p>
 </div>
 <ul>
-<li class="fragment">The coding implies an <em>ordering</em></li>
-<li class="fragment">The coding implies <em>equal spacing</em> (that is the difference between <code>stroke</code> and <code>drug overdose</code> is the same as <code>drug overdose</code> and <code>epileptic seizure</code>)</li>
+<li>The coding implies an <em>ordering</em></li>
+<li>The coding implies <em>equal spacing</em> (that is the difference between <code>stroke</code> and <code>drug overdose</code> is the same as <code>drug overdose</code> and <code>epileptic seizure</code>)</li>
 </ul>
 </section>
 <section id="linear-regression-1" class="slide level2 small">
@@ -521,8 +445,8 @@ Y = \begin{cases} 1&amp; \textrm{if }\texttt{stroke}\\2&amp;\textrm{if }\texttt{
 \end{align}
 \]</span></p>
 <ul>
-<li class="fragment">Linear regression is <strong>not</strong> appropriate here</li>
-<li class="fragment"><strong>Mutliclass logistic regression</strong> or <strong>discriminant analysis</strong> are more appropriate</li>
+<li>Linear regression is <strong>not</strong> appropriate here</li>
+<li><strong>Mutliclass logistic regression</strong> or <strong>discriminant analysis</strong> are more appropriate</li>
 </ul>
 </section>
 <section id="logistic-regression" class="slide level2 small">
@@ -531,8 +455,8 @@ Y = \begin{cases} 1&amp; \textrm{if }\texttt{stroke}\\2&amp;\textrm{if }\texttt{
 p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 \]</span></p>
 <ul>
-<li class="fragment">Note: <span class="math inline">\(p(X)\)</span> is shorthand for <span class="math inline">\(P(Y=1|X)\)</span></li>
-<li class="fragment">No matter what values <span class="math inline">\(\beta_0\)</span>, <span class="math inline">\(\beta_1\)</span>, or <span class="math inline">\(X\)</span> take <span class="math inline">\(p(X)\)</span> will always be between 0 and 1</li>
+<li>Note: <span class="math inline">\(p(X)\)</span> is shorthand for <span class="math inline">\(P(Y=1|X)\)</span></li>
+<li>No matter what values <span class="math inline">\(\beta_0\)</span>, <span class="math inline">\(\beta_1\)</span>, or <span class="math inline">\(X\)</span> take <span class="math inline">\(p(X)\)</span> will always be between 0 and 1</li>
 </ul>
 </section>
 <section id="logistic-regression-1" class="slide level2 small">
@@ -548,13 +472,12 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <p>What is this transformation called?</p>
 </div>
 <ul>
-<li class="fragment">This is a <strong>log odds</strong> or <strong>logit</strong> transformation of <span class="math inline">\(p(X)\)</span></li>
+<li>This is a <strong>log odds</strong> or <strong>logit</strong> transformation of <span class="math inline">\(p(X)\)</span></li>
 </ul>
 </section>
 <section id="linear-versus-logistic-regression-1" class="slide level2">
 <h2>Linear versus logistic regression</h2>
-
-<img data-src="04-logistic_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>Logistic regression ensures that our estimates for <span class="math inline">\(p(X)\)</span> are between 0 and 1 🎉</p>
+<p>Logistic regression ensures that our estimates for <span class="math inline">\(p(X)\)</span> are between 0 and 1 🎉</p>
 </section>
 <section id="maximum-likelihood" class="slide level2">
 <h2>Maximum Likelihood</h2>
@@ -570,65 +493,21 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <p>In logistic regression, we use <strong>maximum likelihood</strong> to estimate the parameters</p>
 <p><span class="math display">\[\mathcal{l}(\beta_0,\beta_1)=\prod_{i:y_i=1}p(x_i)\prod_{i:y_i=0}(1-p(x_i))\]</span></p>
 <ul>
-<li class="fragment">This <strong>likelihood</strong> give the probability of the observed ones and zeros in the data</li>
-<li class="fragment">We pick <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> to maximize the likelihood</li>
-<li class="fragment"><em>We’ll let <code>R</code> do the heavy lifting here</em></li>
+<li>This <strong>likelihood</strong> give the probability of the observed ones and zeros in the data</li>
+<li>We pick <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> to maximize the likelihood</li>
+<li><em>We’ll let <code>R</code> do the heavy lifting here</em></li>
 </ul>
 </section>
 <section id="lets-see-it-in-r" class="slide level2 small">
 <h2>Let’s see it in R</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term         estimate std.error statistic   p.value
-  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
-1 (Intercept) -10.7      0.361        -29.5 3.62e-191
-2 balance       0.00550  0.000220      25.0 1.98e-137</code></pre>
-</div>
-</div>
 <ul>
-<li class="fragment">Use the <code>logistic_reg()</code> function in R with the <code>glm</code> engine</li>
+<li>Use the <code>logistic_reg()</code> function in R with the <code>glm</code> engine</li>
 </ul>
 </section>
 <section id="making-predictions" class="slide level2">
 <h2>Making predictions</h2>
 <div class="question">
 <p>What is our estimated probability of default for someone with a balance of $1000?</p>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">-10.6513306</td>
-<td style="text-align: right;">0.3611574</td>
-<td style="text-align: right;">-29.49221</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">balance</td>
-<td style="text-align: right;">0.0054989</td>
-<td style="text-align: right;">0.0002204</td>
-<td style="text-align: right;">24.95309</td>
-<td style="text-align: right;">0</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
 </div>
 <div class="fragment">
 <p><span class="math display">\[
@@ -641,41 +520,6 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <div class="question">
 <p>What is our estimated probability of default for someone with a balance of $2000?</p>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">-10.6513306</td>
-<td style="text-align: right;">0.3611574</td>
-<td style="text-align: right;">-29.49221</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">balance</td>
-<td style="text-align: right;">0.0054989</td>
-<td style="text-align: right;">0.0002204</td>
-<td style="text-align: right;">24.95309</td>
-<td style="text-align: right;">0</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div>
 <div class="fragment">
 <p><span class="math display">\[
 \hat{p}(X) = \frac{e^{\hat{\beta}_0+\hat{\beta}_1X}}{1+e^{\hat{\beta}_0+\hat{\beta}_1X}}=\frac{e^{-10.65+0.0055\times 2000}}{1+e^{-10.65+0.0055\times 2000}}=0.586
@@ -685,41 +529,6 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="logistic-regression-example" class="slide level2 small">
 <h2>Logistic regression example</h2>
 <p>Let’s refit the model to predict the probability of default given the customer is a <code>student</code></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">-3.5041278</td>
-<td style="text-align: right;">0.0707130</td>
-<td style="text-align: right;">-49.554219</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">studentYes</td>
-<td style="text-align: right;">0.4048871</td>
-<td style="text-align: right;">0.1150188</td>
-<td style="text-align: right;">3.520181</td>
-<td style="text-align: right;">0.0004313</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div>
 <p><span class="math display">\[P(\texttt{default = Yes}|\texttt{student = Yes}) = \frac{e^{-3.5041+0.4049\times1}}{1+e^{-3.5041+0.4049\times1}}=0.0431\]</span></p>
 <div class="fragment">
 <div class="question">
@@ -733,106 +542,55 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="multiple-logistic-regression" class="slide level2 small">
 <h2>Multiple logistic regression</h2>
 <p><span class="math display">\[\log\left(\frac{p(X)}{1-p(X)}\right)=\beta_0+\beta_1X_1+\dots+\beta_pX_p\]</span> <span class="math display">\[p(X) = \frac{e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}{1+e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}\]</span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">-10.8690452</td>
-<td style="text-align: right;">0.4922555</td>
-<td style="text-align: right;">-22.080088</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">balance</td>
-<td style="text-align: right;">0.0057365</td>
-<td style="text-align: right;">0.0002319</td>
-<td style="text-align: right;">24.737563</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">income</td>
-<td style="text-align: right;">0.0000030</td>
-<td style="text-align: right;">0.0000082</td>
-<td style="text-align: right;">0.369815</td>
-<td style="text-align: right;">0.7115203</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">studentYes</td>
-<td style="text-align: right;">-0.6467758</td>
-<td style="text-align: right;">0.2362525</td>
-<td style="text-align: right;">-2.737646</td>
-<td style="text-align: right;">0.0061881</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div>
 <ul>
-<li class="fragment">Why is the coefficient for <code>student</code> negative now when it was positive before?</li>
+<li>Why is the coefficient for <code>student</code> negative now when it was positive before?</li>
 </ul>
 </section>
 <section id="confounding" class="slide level2 small">
 <h2>Confounding</h2>
-
-<img data-src="04-logistic_files/figure-revealjs/plot3-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="question">
+<div class="question">
 <p>What is going on here?</p>
 </div>
 </section>
 <section id="confounding-1" class="slide level2 small">
 <h2>Confounding</h2>
-
-<img data-src="04-logistic_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
-<li class="fragment">Students tend to have higher balances than non-students</li>
-<li class="fragment">Their <strong>marginal</strong> default rate is higher</li>
-<li class="fragment">For each level of balance, students default less</li>
-<li class="fragment">Their <strong>conditional</strong> default rate is lower</li>
+<ul>
+<li>Students tend to have higher balances than non-students</li>
+<li>Their <strong>marginal</strong> default rate is higher</li>
+<li>For each level of balance, students default less</li>
+<li>Their <strong>conditional</strong> default rate is lower</li>
 </ul>
 </section>
 <section id="logistic-regression-for-more-than-two-classes" class="slide level2 small">
 <h2>Logistic regression for more than two classes</h2>
 <p><span class="math display">\[P(Y=k|X) = \frac{e ^{\beta_{0k}+\beta_{1k}X_1+\dots+\beta_{pk}X_p}}{\sum_{l=1}^Ke^{\beta_{0l}+\beta_{1l}X_1+\dots+\beta_{pl}X_p}}\]</span></p>
 <ul>
-<li class="fragment">So far we’ve discussed <strong>binary</strong> outcome data</li>
-<li class="fragment">We can generalize this to situations with <strong>multiple</strong> classes</li>
-<li class="fragment">Here we have a linear function for <strong>each</strong> of the <span class="math inline">\(K\)</span> classes</li>
-<li class="fragment">This is known as <strong>multinomial logistic regression</strong></li>
+<li>So far we’ve discussed <strong>binary</strong> outcome data</li>
+<li>We can generalize this to situations with <strong>multiple</strong> classes</li>
+<li>Here we have a linear function for <strong>each</strong> of the <span class="math inline">\(K\)</span> classes</li>
+<li>This is known as <strong>multinomial logistic regression</strong></li>
 </ul>
 </section>
 <section id="a-bit-about-odds" class="slide level2 small">
 <h2>A bit about “odds”</h2>
 <ul>
-<li class="fragment">The “odds” tell you how likely an event is</li>
-<li class="fragment">🌂 Let’s say there is a 60% chance of rain today * What is the probability that it will rain?</li>
-<li class="fragment"><span class="math inline">\(p = 0.6\)</span></li>
-<li class="fragment">What is the probability that it <strong>won’t</strong> rain?</li>
-<li class="fragment"><span class="math inline">\(1-p = 0.4\)</span></li>
-<li class="fragment">What are the <strong>odds</strong> that it will rain?</li>
-<li class="fragment">3 to 2, 3:2, <span class="math inline">\(\frac{0.6}{0.4} = 1.5\)</span></li>
+<li>The “odds” tell you how likely an event is</li>
+<li>🌂 Let’s say there is a 60% chance of rain today * What is the probability that it will rain?</li>
+<li><span class="math inline">\(p = 0.6\)</span></li>
+<li>What is the probability that it <strong>won’t</strong> rain?</li>
+<li><span class="math inline">\(1-p = 0.4\)</span></li>
+<li>What are the <strong>odds</strong> that it will rain?</li>
+<li>3 to 2, 3:2, <span class="math inline">\(\frac{0.6}{0.4} = 1.5\)</span></li>
 </ul>
 </section>
 <section id="transforming-logs" class="slide level2 small">
 <h2>Transforming logs</h2>
 <ul>
-<li class="fragment">How do you “undo” a <span class="math inline">\(\log\)</span> base <span class="math inline">\(e\)</span>?</li>
-<li class="fragment">Use <span class="math inline">\(e\)</span>! For example:</li>
-<li class="fragment"><span class="math inline">\(e^{\log(10)} = 10\)</span></li>
-<li class="fragment"><span class="math inline">\(e^{\log(1283)} = 1283\)</span></li>
-<li class="fragment"><span class="math inline">\(e^{\log(x)} = x\)</span></li>
+<li>How do you “undo” a <span class="math inline">\(\log\)</span> base <span class="math inline">\(e\)</span>?</li>
+<li>Use <span class="math inline">\(e\)</span>! For example:</li>
+<li><span class="math inline">\(e^{\log(10)} = 10\)</span></li>
+<li><span class="math inline">\(e^{\log(1283)} = 1283\)</span></li>
+<li><span class="math inline">\(e^{\log(x)} = x\)</span></li>
 </ul>
 </section>
 <section id="transforming-logs-1" class="slide level2 small">
@@ -850,25 +608,25 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </ul>
 </div>
 <ul>
-<li class="fragment"><span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
+<li><span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
 </ul>
 </section>
 <section id="transforming-odds" class="slide level2 small">
 <h2>Transforming odds</h2>
 <ul>
-<li class="fragment">odds = <span class="math inline">\(\frac{\pi}{1-\pi}\)</span></li>
-<li class="fragment">Solving for <span class="math inline">\(\pi\)</span></li>
-<li class="fragment"><span class="math inline">\(\pi = \frac{\textrm{odds}}{1+\textrm{odds}}\)</span></li>
-<li class="fragment">Plugging in <span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
-<li class="fragment"><span class="math inline">\(\pi = \frac{e^{\log(odds)}}{1+e^{\log(odds)}}\)</span></li>
-<li class="fragment">Plugging in <span class="math inline">\(\log(odds) = \beta_0 + \beta_1x\)</span></li>
-<li class="fragment"><span class="math inline">\(\pi = \frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
+<li>odds = <span class="math inline">\(\frac{\pi}{1-\pi}\)</span></li>
+<li>Solving for <span class="math inline">\(\pi\)</span></li>
+<li><span class="math inline">\(\pi = \frac{\textrm{odds}}{1+\textrm{odds}}\)</span></li>
+<li>Plugging in <span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
+<li><span class="math inline">\(\pi = \frac{e^{\log(odds)}}{1+e^{\log(odds)}}\)</span></li>
+<li>Plugging in <span class="math inline">\(\log(odds) = \beta_0 + \beta_1x\)</span></li>
+<li><span class="math inline">\(\pi = \frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
 </ul>
 </section>
 <section id="the-logistic-model" class="slide level2">
 <h2>The logistic model</h2>
 <ul>
-<li class="fragment">✌️ forms</li>
+<li>✌️ forms</li>
 </ul>
 <table>
 <colgroup>
@@ -932,18 +690,18 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="the-logistic-model-2" class="slide level2 small">
 <h2>The logistic model</h2>
 <ul>
-<li class="fragment">✌️ forms</li>
-<li class="fragment"><strong>log(odds)</strong>: <span class="math inline">\(l = \beta_0 + \beta_1x\)</span></li>
-<li class="fragment"><strong>P(Outcome = Yes)</strong>: <span class="math inline">\(\Large\pi =\frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
+<li>✌️ forms</li>
+<li><strong>log(odds)</strong>: <span class="math inline">\(l = \beta_0 + \beta_1x\)</span></li>
+<li><strong>P(Outcome = Yes)</strong>: <span class="math inline">\(\Large\pi =\frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
 </ul>
 </section>
 <section id="odds-ratios" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p>A study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.</p>
 <ul>
-<li class="fragment">Researchers recruited 200 subjects who suffered from migraines</li>
-<li class="fragment">randomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment</li>
-<li class="fragment">Subjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later. (either <strong>Pain-free</strong> or <strong>Not pain-free</strong>)</li>
+<li>Researchers recruited 200 subjects who suffered from migraines</li>
+<li>randomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment</li>
+<li>Subjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later. (either <strong>Pain-free</strong> or <strong>Not pain-free</strong>)</li>
 </ul>
 </section>
 <section id="odds-ratios-1" class="slide level2 small">
@@ -1035,13 +793,13 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li class="fragment">We can compare the results using <strong>odds</strong></li>
-<li class="fragment">What are the odds of being pain-free for the placebo group?</li>
-<li class="fragment"><span class="math inline">\((22/100)/(78/100) = 22/78 = 0.282\)</span></li>
-<li class="fragment">What are the odds of being pain-free for the treatment group?</li>
-<li class="fragment"><span class="math inline">\(39/61 = 0.639\)</span></li>
-<li class="fragment">Comparing the <strong>odds</strong> what can we conclude?</li>
-<li class="fragment">TMS increases the likelihood of success</li>
+<li>We can compare the results using <strong>odds</strong></li>
+<li>What are the odds of being pain-free for the placebo group?</li>
+<li><span class="math inline">\((22/100)/(78/100) = 22/78 = 0.282\)</span></li>
+<li>What are the odds of being pain-free for the treatment group?</li>
+<li><span class="math inline">\(39/61 = 0.639\)</span></li>
+<li>Comparing the <strong>odds</strong> what can we conclude?</li>
+<li>TMS increases the likelihood of success</li>
 </ul>
 </section>
 <section id="odds-ratios-6" class="slide level2 small">
@@ -1077,9 +835,9 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li class="fragment">We can summarize this relationship with an <strong>odds ratio</strong>: the ratio of the two odds</li>
-<li class="fragment"><span class="math inline">\(\Large OR = \frac{39/61}{22/78} = \frac{0.639}{0.282} = 2.27\)</span></li>
-<li class="fragment"><em>“the odds of being pain free were 2.27 times higher with TMS than with the placebo”</em></li>
+<li>We can summarize this relationship with an <strong>odds ratio</strong>: the ratio of the two odds</li>
+<li><span class="math inline">\(\Large OR = \frac{39/61}{22/78} = \frac{0.639}{0.282} = 2.27\)</span></li>
+<li><em>“the odds of being pain free were 2.27 times higher with TMS than with the placebo”</em></li>
 </ul>
 </section>
 <section id="odds-ratios-7" class="slide level2 small">
@@ -1118,8 +876,8 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li class="fragment"><span class="math inline">\(\Large OR = \frac{61/39}{78/22} = \frac{1.564}{3.545} = 0.441\)</span></li>
-<li class="fragment"><em>the odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group</em></li>
+<li><span class="math inline">\(\Large OR = \frac{61/39}{78/22} = \frac{1.564}{3.545} = 0.441\)</span></li>
+<li><em>the odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group</em></li>
 </ul>
 </section>
 <section id="odds-ratios-8" class="slide level2 small">
@@ -1158,8 +916,8 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li class="fragment"><span class="math inline">\(\Large OR = \frac{78/22}{61/39} = \frac{3.545}{1.564} = 2.27\)</span></li>
-<li class="fragment"><em>the odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group</em></li>
+<li><span class="math inline">\(\Large OR = \frac{78/22}{61/39} = \frac{3.545}{1.564} = 2.27\)</span></li>
+<li><em>the odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group</em></li>
 </ul>
 </section>
 <section id="odds-ratios-9" class="slide level2 small">
@@ -1348,29 +1106,11 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="odds-ratios-14" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p><span class="math display">\[\Large \log(\textrm{odds of survival}) = \beta_0 + \beta_1 \textrm{Female}\]</span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic  p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68
-2 Sexfemale       2.30    0.135       17.1 2.91e-65</code></pre>
-</div>
-</div>
 </section>
 <section id="odds-ratios-15" class="slide level2 small">
 <h2>Odds Ratios</h2>
 <div class="question">
 <p>How do you interpret this result?</p>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic  p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68
-2 Sexfemale       2.30    0.135       17.1 2.91e-65</code></pre>
-</div>
 </div>
 </section>
 <section id="odds-ratios-16" class="slide level2 small">
@@ -1378,90 +1118,31 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <div class="question">
 <p>How do you interpret this result?</p>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic  p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)    0.200    0.0919     -17.5 1.70e-68
-2 Sexfemale      9.99     0.135       17.1 2.91e-65</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 9.99</code></pre>
-</div>
-</div>
 </section>
 <section id="odds-ratios-17" class="slide level2 small">
 <h2>Odds Ratios</h2>
 <div class="question">
 <p>How do you interpret this result?</p>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic  p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)    0.200    0.0919     -17.5 1.70e-68
-2 Sexfemale      9.99     0.135       17.1 2.91e-65</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 9.99</code></pre>
-</div>
-</div>
 <p><em>the odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers</em></p>
 </section>
 <section id="odds-ratios-18" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p>What if the explanatory variable is continuous?</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic  p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)   -19.2       5.63     -3.41 0.000644
-2 GPA             5.45      1.58      3.45 0.000553</code></pre>
-</div>
-</div>
 <p><em>A one unit increase in GPA yields a 5.45 increase in the log odds of acceptance</em></p>
 </section>
 <section id="odds-ratios-19" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p>What if the explanatory variable is continuous?</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic  p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)  4.56e-9      5.63     -3.41 0.000644
-2 GPA          2.34e+2      1.58      3.45 0.000553</code></pre>
-</div>
-</div>
 <p><em>A one unit increase in GPA yields a 234-fold increase in the odds of acceptance</em></p>
 <ul>
-<li class="fragment">😱 that seems huge! <strong>Remember:</strong> the interpretation of these coefficients depends on your units (the same as in ordinary linear regression).</li>
+<li>😱 that seems huge! <strong>Remember:</strong> the interpretation of these coefficients depends on your units (the same as in ordinary linear regression).</li>
 </ul>
 </section>
 <section id="odds-ratios-20" class="slide level2 small">
 <h2>Odds ratios</h2>
 <div class="question">
 <p>How could we get the odds associated with increasing GPA by 0.1?</p>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term        estimate std.error statistic  p.value
-  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept)   -19.2       5.63     -3.41 0.000644
-2 GPA             5.45      1.58      3.45 0.000553</code></pre>
-</div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 234</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.73</code></pre>
-</div>
 </div>
 <p><em>A one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance</em></p>
 </section>
@@ -1470,29 +1151,12 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <div class="question">
 <p>How could we get the odds associated with increasing GPA by 0.1?</p>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 5
-  term             estimate std.error statistic  p.value
-  &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 (Intercept) 0.00000000456     5.63      -3.41 0.000644
-2 GPA_10      1.73              0.158      3.45 0.000553</code></pre>
-</div>
-</div>
 <p><em>A one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance</em></p>
 </section>
 <section id="application-exercise" class="slide level2">
 <h2><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"></path></svg> <code>Application Exercise</code></h2>
 <p>Using the <code>Default</code> data from the <code>ISLR</code> package, fit a logistic regression model predicting whether a customer <code>defaults</code> with whether they are a <code>student</code> and their current <code>balance</code>.</p>
 <p>Here is some code to get you started:</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="countdown" id="timer_d09fe59b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="img/favicon.png" class="slide-logo"></p>
@@ -1656,10 +1320,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: true,
+        previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'fade',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
