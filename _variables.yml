@@ -32,3 +32,6 @@ course:
 college:
   name: Cornell College
   url: "www.cornellcollege.edu"
+
+citation:
+  websource: Dr. Lucy D’Agostino McGowan

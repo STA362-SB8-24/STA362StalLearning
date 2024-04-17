@@ -60,4 +60,5 @@ title: "Useful links"
 -   [General Social Survey](http://gss.norc.org/)
 -   [United Nations Data](http://data.un.org/)
 -   [United Nations Statistics Division](https://unstats.un.org/home/)
+-   [State of Iowa Open Geospatial Data](https://geodata.iowa.gov/)
 -   If you know of others, let me know!

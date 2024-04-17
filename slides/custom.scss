@@ -7,6 +7,11 @@ $presentation-heading-color: #523178;
 $body-color: #404040;
 $link-color: #3A5883;
 
+/*$code-block-bg: white;*/
+
+$code-block-color: #523178;
+/*$code-color: black;*/
+
 /*-- scss:rules --*/
 
 a {
@@ -14,7 +19,7 @@ a {
 }
 #title-slide {
   background-size: cover;
-  background-color: #fff;
+    background-color: #fff;
   color: #3A5883;
 }
 
@@ -109,7 +114,7 @@ ul li {
 }
 
 .reveal .slide .question code {
-  color: #fff;
+  color: #523178;
 }
 
 .reveal .slide .definition {
