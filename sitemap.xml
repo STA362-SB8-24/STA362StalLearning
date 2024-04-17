@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04-logistic.html</loc>
-    <lastmod>2024-04-17T20:45:59.709Z</lastmod>
+    <lastmod>2024-04-17T21:09:21.391Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/01-cv-tm.html</loc>
@@ -10,11 +10,11 @@
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/05-cv-tidymodels.html</loc>
-    <lastmod>2024-04-17T19:50:56.617Z</lastmod>
+    <lastmod>2024-04-17T21:09:26.083Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/03-linear-regression.html</loc>
-    <lastmod>2024-04-17T20:06:41.839Z</lastmod>
+    <lastmod>2024-04-17T21:09:14.561Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/03-logistic.html</loc>
@@ -43,5 +43,9 @@
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04-logistic_slides.html</loc>
     <lastmod>2024-04-17T20:45:59.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-03-logisitc.html</loc>
+    <lastmod>2024-04-17T20:49:31.466Z</lastmod>
   </url>
 </urlset>

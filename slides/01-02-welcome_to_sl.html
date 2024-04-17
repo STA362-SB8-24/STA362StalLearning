@@ -600,15 +600,7 @@ Tyler George
 <section id="auto-data" class="slide level2 smaller">
 <h2>Auto data</h2>
 <div class="center">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+
 </div>
 <p>Above are <code>mpg</code> vs <code>horsepower</code>, <code>weight</code>, and <code>acceleration</code>, with a blue linear-regression line fit separately to each. Can we predict <code>mpg</code> using these three?</p>
 <div class="fragment">
@@ -644,26 +636,22 @@ Tyler George
 </section>
 <section id="how-do-we-choose-fx" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
+<p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
 </section>
 <section id="how-do-we-choose-fx-1" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
+<p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
 </section>
 <section id="how-do-we-choose-fx-2" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
+<p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
 <ul>
 <li class="fragment">There are 17 points here, what value should I choose for f(100). What do you think the blue dot represents?</li>
 </ul>
 </section>
 <section id="how-do-we-choose-fx-3" class="slide level2 small">
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><p>A good value is</p>
+<p>A good value is</p>
 <p><span class="math display">\[f(100) = E(Y|X = 100)\]</span></p>
 <div class="fragment">
 <p><span class="math inline">\(E(Y|X = 100)\)</span> means <strong>expected value</strong> (average) of <span class="math inline">\(Y\)</span> given <span class="math inline">\(X = 100\)</span></p>
@@ -694,12 +682,10 @@ Tyler George
 </section>
 <section id="regression-function-fx-2" class="slide level2 small">
 <h2>Regression function, <span class="math inline">\(f(X)\)</span></h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+</section>
 <section id="regression-function-fx-3" class="slide level2 small">
 <h2>Regression function, <span class="math inline">\(f(X)\)</span></h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><div class="question">
+<div class="question">
 <p>Using these points, how would I calculate the <strong>regression function</strong>?</p>
 </div>
 <div class="fragment">
@@ -710,8 +696,7 @@ Tyler George
 </section>
 <section id="regression-function-fx-4" class="slide level2 small">
 <h2>Regression function, <span class="math inline">\(f(X)\)</span></h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"><div class="question">
+<div class="question">
 <p>This point has a <span class="math inline">\(Y\)</span> value of 32.9. What is <span class="math inline">\(\hat\varepsilon\)</span>?</p>
 </div>
 <ul>
@@ -737,15 +722,7 @@ Tyler George
 <li>For example, what if we were interested in estimating miles per gallon when horsepower was 104.</li>
 </ul>
 <div class="center">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
-</figure>
-</div>
-</div>
-</div>
+
 </div>
 <div class="fragment">
 <p>💡 We can <em>relax</em> the definition and let</p>
@@ -868,24 +845,21 @@ Tyler George
 </section>
 <section id="accuracy-1" class="slide level2">
 <h2>Accuracy</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"><div class="question">
+<div class="question">
 <p>I have some <code>train</code> data, plotted above. What <span class="math inline">\(\hat{f}(x)\)</span> would minimize the <span class="math inline">\(MSE_{\texttt{train}}\)</span>?</p>
 </div>
 <p><span class="math display">\[MSE_{\texttt{train}} = \textrm{Ave}_{train}[y_i-\hat{f}(x_i)]^2\]</span></p>
 </section>
 <section id="accuracy-2" class="slide level2">
 <h2>Accuracy</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"><div class="question">
+<div class="question">
 <p>I have some <code>train</code> data, plotted above. What <span class="math inline">\(\hat{f}(x)\)</span> would minimize the <span class="math inline">\(MSE_{\texttt{train}}\)</span>?</p>
 </div>
 <p><span class="math display">\[MSE_{train} = \textrm{Ave}_{i\in\texttt{train}}[y_i-\hat{f}(x_i)]^2\]</span></p>
 </section>
 <section id="accuracy-3" class="slide level2">
 <h2>Accuracy</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"><div class="question">
+<div class="question">
 <p>What is wrong with this?</p>
 </div>
 <div class="fragment">
@@ -894,8 +868,7 @@ Tyler George
 </section>
 <section id="accuracy-4" class="slide level2">
 <h2>Accuracy</h2>
-
-<img data-src="01-02-welcome_to_sl_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"><p>If we get a new sample, that overfit model is probably going to be terrible!</p>
+<p>If we get a new sample, that overfit model is probably going to be terrible!</p>
 </section>
 <section id="accuracy-5" class="slide level2">
 <h2>Accuracy</h2>
