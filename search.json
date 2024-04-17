@@ -15,7 +15,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nExercises\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -1634,7 +1634,7 @@
     "href": "slides/03-linear-regression.html#linear-regression-accuracy-1",
     "title": "Chapter 3 - Linear Regresion",
     "section": "Linear Regression Accuracy",
-    "text": "Linear Regression Accuracy\n\nThe total sum of squares represents the variability of the outcome, it is equivalent to the variability described by the model plus the remaining residual sum of squares\n\n\\[TSS = \\sum(y_i - \\bar{y})^2\\]"
+    "text": "Linear Regression Accuracy\n\n\nThe total sum of squares represents the variability of the outcome, it is equivalent to the variability described by the model plus the remaining residual sum of squares\n\n\\[TSS = \\sum(y_i - \\bar{y})^2\\]"
   },
   {
     "objectID": "slides/03-linear-regression.html#linear-regression-accuracy-2",
