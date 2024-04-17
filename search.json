@@ -15,7 +15,7 @@
     "href": "slides/04-logistic.html#recap",
     "title": "Chapter 4 Part 1",
     "section": "Recap",
-    "text": "Recap\n\nWe had a linear regression refresher\nLinear regression is a great tool when we have a continuous outcome\nWe are going to learn some fancy ways to do even better in the future\n\nSetup:"
+    "text": "Recap\n\nWe had a linear regression refresher\nLinear regression is a great tool when we have a continuous outcome\nWe are going to learn some fancy ways to do even better in the future\n\nSetup:\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)"
   },
   {
     "objectID": "slides/04-logistic.html#classification-1",
@@ -29,7 +29,7 @@
     "href": "slides/04-logistic.html#example-credit-card-default",
     "title": "Chapter 4 Part 1",
     "section": "Example: Credit card default",
-    "text": "Example: Credit card default"
+    "text": "Example: Credit card default\n\n\nCode\nset.seed(1)\nDefault |&gt;\n  sample_frac(size = 0.25) |&gt;\n  ggplot(aes(balance, income, color = default)) +\n  geom_point(pch = 4) +\n  scale_color_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"top\") -&gt; p1\n\np2 &lt;- ggplot(Default, aes(x = default, y = balance, fill = default)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"none\")\n\np3 &lt;- ggplot(Default, aes(x = default, y = income, fill = default)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"none\")\ngrid.arrange(p1, p2, p3, ncol = 3, widths = c(2, 1, 1))"
   },
   {
     "objectID": "slides/04-logistic.html#can-we-use-linear-regression",
@@ -50,7 +50,7 @@
     "href": "slides/04-logistic.html#linear-versus-logistic-regression",
     "title": "Chapter 4 Part 1",
     "section": "Linear versus logistic regression",
-    "text": "Linear versus logistic regression\n\nWhich does a better job at predicting the probability of default?\n\n\nThe orange marks represent the response \\(Y\\in\\{0,1\\}\\)"
+    "text": "Linear versus logistic regression\n\n\nCode\nDefault &lt;- Default |&gt;\n  mutate(\n  p = glm(default ~ balance, data = Default, family = \"binomial\") |&gt;\n  predict(type = \"response\"),\n  p2 = lm(I(default == \"Yes\") ~ balance, data = Default) |&gt; predict(),\n  def = ifelse(default == \"Yes\", 1, 0)\n)\n\n\nDefault |&gt;\n  sample_frac(0.25) |&gt;\nggplot(aes(balance, p2)) +\n  geom_hline(yintercept = c(0, 1), lty = 2, size = 0.2) +\n  geom_line(color = \"cornflower blue\") +\n  geom_point(aes(balance, def), shape = \"|\", color = \"orange\") +\n  theme_classic() +\n  labs(y = \"probability of default\") -&gt; p1\n\nDefault |&gt;\n  sample_frac(0.25) |&gt;\nggplot(aes(balance, p)) +\n  geom_hline(yintercept = c(0, 1), lty = 2, size = 0.2) +\n  geom_line(color = \"cornflower blue\") +\n  geom_point(aes(balance, def), shape = \"|\", color = \"orange\") +\n  theme_classic() +\n  labs(y = \"probability of default\") -&gt; p2\n\ngrid.arrange(p1, p2, ncol = 2)\n\n\n\n\nWhich does a better job at predicting the probability of default?\n\n\nThe orange marks represent the response \\(Y\\in\\{0,1\\}\\)"
   },
   {
     "objectID": "slides/04-logistic.html#linear-regression",
@@ -85,7 +85,7 @@
     "href": "slides/04-logistic.html#linear-versus-logistic-regression-1",
     "title": "Chapter 4 Part 1",
     "section": "Linear versus logistic regression",
-    "text": "Linear versus logistic regression\nLogistic regression ensures that our estimates for \\(p(X)\\) are between 0 and 1 🎉"
+    "text": "Linear versus logistic regression\n\nLogistic regression ensures that our estimates for \\(p(X)\\) are between 0 and 1 🎉"
   },
   {
     "objectID": "slides/04-logistic.html#maximum-likelihood",
@@ -106,49 +106,49 @@
     "href": "slides/04-logistic.html#lets-see-it-in-r",
     "title": "Chapter 4 Part 1",
     "section": "Let’s see it in R",
-    "text": "Let’s see it in R\n\nUse the logistic_reg() function in R with the glm engine"
+    "text": "Let’s see it in R\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(default ~ balance, \n      data = Default) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term         estimate std.error statistic   p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept) -10.7      0.361        -29.5 3.62e-191\n2 balance       0.00550  0.000220      25.0 1.98e-137\n\n\n\nUse the logistic_reg() function in R with the glm engine"
   },
   {
     "objectID": "slides/04-logistic.html#making-predictions",
     "href": "slides/04-logistic.html#making-predictions",
     "title": "Chapter 4 Part 1",
     "section": "Making predictions",
-    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $1000?\n\n\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 1000}}{1+e^{-10.65+0.0055\\times 1000}}=0.006\n\\]"
+    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $1000?\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.6513306\n0.3611574\n-29.49221\n0\n\n\nbalance\n0.0054989\n0.0002204\n24.95309\n0\n\n\n\n\n\n\n\n\n\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 1000}}{1+e^{-10.65+0.0055\\times 1000}}=0.006\n\\]"
   },
   {
     "objectID": "slides/04-logistic.html#making-predictions-1",
     "href": "slides/04-logistic.html#making-predictions-1",
     "title": "Chapter 4 Part 1",
     "section": "Making predictions",
-    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $2000?\n\n\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 2000}}{1+e^{-10.65+0.0055\\times 2000}}=0.586\n\\]"
+    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $2000?\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.6513306\n0.3611574\n-29.49221\n0\n\n\nbalance\n0.0054989\n0.0002204\n24.95309\n0\n\n\n\n\n\n\n\n\n\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 2000}}{1+e^{-10.65+0.0055\\times 2000}}=0.586\n\\]"
   },
   {
     "objectID": "slides/04-logistic.html#logistic-regression-example",
     "href": "slides/04-logistic.html#logistic-regression-example",
     "title": "Chapter 4 Part 1",
     "section": "Logistic regression example",
-    "text": "Logistic regression example\nLet’s refit the model to predict the probability of default given the customer is a student\n\\[P(\\texttt{default = Yes}|\\texttt{student = Yes}) = \\frac{e^{-3.5041+0.4049\\times1}}{1+e^{-3.5041+0.4049\\times1}}=0.0431\\]\n\n\nHow will this change if student = No?\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = No}) = \\frac{e^{-3.5041+0.4049\\times0}}{1+e^{-3.5041+0.4049\\times0}}=0.0292\\]"
+    "text": "Logistic regression example\nLet’s refit the model to predict the probability of default given the customer is a student\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-3.5041278\n0.0707130\n-49.554219\n0.0000000\n\n\nstudentYes\n0.4048871\n0.1150188\n3.520181\n0.0004313\n\n\n\n\n\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = Yes}) = \\frac{e^{-3.5041+0.4049\\times1}}{1+e^{-3.5041+0.4049\\times1}}=0.0431\\]\n\n\nHow will this change if student = No?\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = No}) = \\frac{e^{-3.5041+0.4049\\times0}}{1+e^{-3.5041+0.4049\\times0}}=0.0292\\]"
   },
   {
     "objectID": "slides/04-logistic.html#multiple-logistic-regression",
     "href": "slides/04-logistic.html#multiple-logistic-regression",
     "title": "Chapter 4 Part 1",
     "section": "Multiple logistic regression",
-    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\nWhy is the coefficient for student negative now when it was positive before?"
+    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
   },
   {
     "objectID": "slides/04-logistic.html#confounding",
     "href": "slides/04-logistic.html#confounding",
     "title": "Chapter 4 Part 1",
     "section": "Confounding",
-    "text": "Confounding\n\nWhat is going on here?"
+    "text": "Confounding\n\n\nWhat is going on here?"
   },
   {
     "objectID": "slides/04-logistic.html#confounding-1",
     "href": "slides/04-logistic.html#confounding-1",
     "title": "Chapter 4 Part 1",
     "section": "Confounding",
-    "text": "Confounding\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
+    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
   },
   {
     "objectID": "slides/04-logistic.html#logistic-regression-for-more-than-two-classes",
@@ -309,63 +309,63 @@
     "href": "slides/04-logistic.html#odds-ratios-14",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]"
+    "text": "Odds ratios\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68\n2 Sexfemale       2.30    0.135       17.1 2.91e-65"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-15",
     "href": "slides/04-logistic.html#odds-ratios-15",
     "title": "Chapter 4 Part 1",
     "section": "Odds Ratios",
-    "text": "Odds Ratios\n\nHow do you interpret this result?"
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68\n2 Sexfemale       2.30    0.135       17.1 2.91e-65"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-16",
     "href": "slides/04-logistic.html#odds-ratios-16",
     "title": "Chapter 4 Part 1",
     "section": "Odds Ratios",
-    "text": "Odds Ratios\n\nHow do you interpret this result?"
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    0.200    0.0919     -17.5 1.70e-68\n2 Sexfemale      9.99     0.135       17.1 2.91e-65\n\nexp(2.301176)\n\n[1] 9.99"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-17",
     "href": "slides/04-logistic.html#odds-ratios-17",
     "title": "Chapter 4 Part 1",
     "section": "Odds Ratios",
-    "text": "Odds Ratios\n\nHow do you interpret this result?\n\nthe odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    0.200    0.0919     -17.5 1.70e-68\n2 Sexfemale      9.99     0.135       17.1 2.91e-65\n\nexp(2.301176)\n\n[1] 9.99\n\n\nthe odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-18",
     "href": "slides/04-logistic.html#odds-ratios-18",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\nA one unit increase in GPA yields a 5.45 increase in the log odds of acceptance"
+    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)   -19.2       5.63     -3.41 0.000644\n2 GPA             5.45      1.58      3.45 0.000553\n\n\nA one unit increase in GPA yields a 5.45 increase in the log odds of acceptance"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-19",
     "href": "slides/04-logistic.html#odds-ratios-19",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\nA one unit increase in GPA yields a 234-fold increase in the odds of acceptance\n\n😱 that seems huge! Remember: the interpretation of these coefficients depends on your units (the same as in ordinary linear regression)."
+    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)  4.56e-9      5.63     -3.41 0.000644\n2 GPA          2.34e+2      1.58      3.45 0.000553\n\n\nA one unit increase in GPA yields a 234-fold increase in the odds of acceptance\n\n😱 that seems huge! Remember: the interpretation of these coefficients depends on your units (the same as in ordinary linear regression)."
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-20",
     "href": "slides/04-logistic.html#odds-ratios-20",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
+    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)   -19.2       5.63     -3.41 0.000644\n2 GPA             5.45      1.58      3.45 0.000553\n\n\n\nexp(5.454) ## a one unit increase in GPA\n\n[1] 234\n\nexp(5.454 * 0.1) ## a 0.1 increase in GPA\n\n[1] 1.73\n\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-21",
     "href": "slides/04-logistic.html#odds-ratios-21",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
+    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\n\nMedGPA &lt;- MedGPA |&gt;\n  mutate(GPA_10 = GPA * 10)\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA_10, data = MedGPA) |&gt;\n  tidy(exponentiate = TRUE)\n\n# A tibble: 2 × 5\n  term             estimate std.error statistic  p.value\n  &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept) 0.00000000456     5.63      -3.41 0.000644\n2 GPA_10      1.73              0.158      3.45 0.000553\n\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
   },
   {
     "objectID": "slides/04-logistic.html#application-exercise",
     "href": "slides/04-logistic.html#application-exercise",
     "title": "Chapter 4 Part 1",
     "section": " Application Exercise",
-    "text": "Application Exercise\nUsing the Default data from the ISLR package, fit a logistic regression model predicting whether a customer defaults with whether they are a student and their current balance.\nHere is some code to get you started:\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+    "text": "Application Exercise\nUsing the Default data from the ISLR package, fit a logistic regression model predicting whether a customer defaults with whether they are a student and their current balance.\nHere is some code to get you started:\n\nlibrary(ISLR)\ndata(\"Default\")\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#section",
@@ -1053,28 +1053,28 @@
     "href": "slides/03-linear-regression.html#lets-look-at-an-example",
     "title": "Chapter 3 - Linear Regression",
     "section": "Let’s look at an example",
-    "text": "Let’s look at an example\nLet’s look at a sample of 116 sparrows from Kent Island. We are interested in the relationship between Weight and Wing Length\n\nthe standard error of \\(\\hat{\\beta_1}\\) ( \\(SE_{\\hat{\\beta}_1}\\) ) is how much we expect the sample slope to vary from one random sample to another."
+    "text": "Let’s look at an example\nLet’s look at a sample of 116 sparrows from Kent Island. We are interested in the relationship between Weight and Wing Length\n\n\nthe standard error of \\(\\hat{\\beta_1}\\) ( \\(SE_{\\hat{\\beta}_1}\\) ) is how much we expect the sample slope to vary from one random sample to another."
   },
   {
     "objectID": "slides/03-linear-regression.html#sparrows",
     "href": "slides/03-linear-regression.html#sparrows",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nHow can we quantify how much we’d expect the slope to differ from one random sample to another?"
+    "text": "Sparrows\n\nHow can we quantify how much we’d expect the slope to differ from one random sample to another?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
   },
   {
     "objectID": "slides/03-linear-regression.html#sparrows-1",
     "href": "slides/03-linear-regression.html#sparrows-1",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nHow do we interpret this?\n\n\n“the sample slope is more than 13 standard errors above a slope of zero”"
+    "text": "Sparrows\n\nHow do we interpret this?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n“the sample slope is more than 13 standard errors above a slope of zero”"
   },
   {
     "objectID": "slides/03-linear-regression.html#sparrows-2",
     "href": "slides/03-linear-regression.html#sparrows-2",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nHow do we know what values of this statistic are worth paying attention to?\n\n\n\nconfidence intervals\np-values"
+    "text": "Sparrows\n\nHow do we know what values of this statistic are worth paying attention to?\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\nconfidence intervals\np-values"
   },
   {
     "objectID": "slides/03-linear-regression.html#application-exercise-1",
@@ -1088,21 +1088,21 @@
     "href": "slides/03-linear-regression.html#sparrows-3",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nHow are these statistics distributed under the null hypothesis?"
+    "text": "Sparrows\n\nHow are these statistics distributed under the null hypothesis?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy() \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
   },
   {
     "objectID": "slides/03-linear-regression.html#sparrows-4",
     "href": "slides/03-linear-regression.html#sparrows-4",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nI’ve generated some data under a null hypothesis where \\(n = 20\\)"
+    "text": "Sparrows\n\n\nI’ve generated some data under a null hypothesis where \\(n = 20\\)"
   },
   {
     "objectID": "slides/03-linear-regression.html#sparrows-5",
     "href": "slides/03-linear-regression.html#sparrows-5",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nthis is a t-distribution with n-p-1 degrees of freedom."
+    "text": "Sparrows\n\n\nthis is a t-distribution with n-p-1 degrees of freedom."
   },
   {
     "objectID": "slides/03-linear-regression.html#sparrows-6",
@@ -1123,42 +1123,42 @@
     "href": "slides/03-linear-regression.html#sparrows-8",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nHow can we compare this line to the distribution under the null?\n\n\np-value"
+    "text": "Sparrows\n\nHow can we compare this line to the distribution under the null?\n\n\n\np-value"
   },
   {
     "objectID": "slides/03-linear-regression.html#sparrows-9",
     "href": "slides/03-linear-regression.html#sparrows-9",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows"
+    "text": "Sparrows\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
   },
   {
     "objectID": "slides/03-linear-regression.html#return-to-generated-data-n-20",
     "href": "slides/03-linear-regression.html#return-to-generated-data-n-20",
     "title": "Chapter 3 - Linear Regression",
     "section": "Return to generated data, n = 20",
-    "text": "Return to generated data, n = 20\n\nLet’s say we get a statistic of 1.5 in a sample"
+    "text": "Return to generated data, n = 20\n\n\nLet’s say we get a statistic of 1.5 in a sample"
   },
   {
     "objectID": "slides/03-linear-regression.html#lets-do-it-in-r",
     "href": "slides/03-linear-regression.html#lets-do-it-in-r",
     "title": "Chapter 3 - Linear Regression",
     "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\nThe proportion of area less than 1.5"
+    "text": "Let’s do it in R!\nThe proportion of area less than 1.5\n\n\npt(1.5, df = 18)\n\n[1] 0.9245248"
   },
   {
     "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-1",
     "href": "slides/03-linear-regression.html#lets-do-it-in-r-1",
     "title": "Chapter 3 - Linear Regression",
     "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5"
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5\n\n\npt(1.5, df = 18, lower.tail = FALSE)\n\n[1] 0.07547523"
   },
   {
     "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-2",
     "href": "slides/03-linear-regression.html#lets-do-it-in-r-2",
     "title": "Chapter 3 - Linear Regression",
     "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5 or less than -1.5."
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5 or less than -1.5.\n\n\n\npt(1.5, df = 18, lower.tail = FALSE) * 2\n\n[1] 0.1509505"
   },
   {
     "objectID": "slides/03-linear-regression.html#hypothesis-test",
@@ -1179,7 +1179,7 @@
     "href": "slides/03-linear-regression.html#lets-do-it-in-r-3",
     "title": "Chapter 3 - Linear Regression",
     "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\n\n\\(t^* = t_{n-p-1} = t_{114} = 1.98\\)\n\\(LB = 0.47 - 1.98\\times 0.0347 = 0.399\\)\n\\(UB = 0.47+1.98 \\times 0.0347 = 0.536\\)"
+    "text": "Let’s do it in R!\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\n\\(t^* = t_{n-p-1} = t_{114} = 1.98\\)\n\\(LB = 0.47 - 1.98\\times 0.0347 = 0.399\\)\n\\(UB = 0.47+1.98 \\times 0.0347 = 0.536\\)"
   },
   {
     "objectID": "slides/03-linear-regression.html#linear-regression-questions",
@@ -1193,7 +1193,7 @@
     "href": "slides/03-linear-regression.html#sparrows-10",
     "title": "Chapter 3 - Linear Regression",
     "section": "Sparrows",
-    "text": "Sparrows\n\nUsing the information here, how could I predict a new sparrow’s weight if I knew the wing length was 30?\n\n\n\\(1.37 + 0.467 \\times 30 = 15.38\\)"
+    "text": "Sparrows\n\nUsing the information here, how could I predict a new sparrow’s weight if I knew the wing length was 30?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n\\(1.37 + 0.467 \\times 30 = 15.38\\)"
   },
   {
     "objectID": "slides/03-linear-regression.html#linear-regression-accuracy",
@@ -1221,7 +1221,7 @@
     "href": "slides/03-linear-regression.html#lets-do-it-in-r-4",
     "title": "Chapter 3 - Linear Regression",
     "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\n\n\nIs this testing \\(R^2\\) or training \\(R^2\\)?"
+    "text": "Let’s do it in R!\n\nlm_fit &lt;- linear_reg() |&gt; \n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows)\n\nlm_fit |&gt;\n  predict(new_data = Sparrows) |&gt;\n  bind_cols(Sparrows) |&gt;\n  rsq(truth = Weight, estimate = .pred) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rsq     standard       0.614\n\n\n\n\nIs this testing \\(R^2\\) or training \\(R^2\\)?"
   },
   {
     "objectID": "slides/03-linear-regression.html#application-exercise-3",
@@ -1249,7 +1249,7 @@
     "href": "slides/05-cv-tidymodels.html#setup",
     "title": "Chapter 5 and tidymodels",
     "section": "Setup",
-    "text": "Setup"
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(ISLR)\nlibrary(tidymodels)\nlibrary(gridExtra)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#cross-validation",
@@ -1312,7 +1312,7 @@
     "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-2",
     "title": "Chapter 5 and tidymodels",
     "section": "Approach #1: Validation set",
-    "text": "Approach #1: Validation set\n\n\\[\\Large\\color{orange}{MSE_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}[y_i-\\hat{f}(x_i)]^2}\\]\n\n\n\\[\\Large\\color{orange}{Err_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]}\\]"
+    "text": "Approach #1: Validation set\n\n\n\\[\\Large\\color{orange}{MSE_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}[y_i-\\hat{f}(x_i)]^2}\\]\n\n\n\\[\\Large\\color{orange}{Err_{\\texttt{test-split}} = \\textrm{Ave}_{i\\in\\texttt{test-split}}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]}\\]"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-3",
@@ -1326,7 +1326,7 @@
     "href": "slides/05-cv-tidymodels.html#approach-1-validation-set-4",
     "title": "Chapter 5 and tidymodels",
     "section": "Approach #1: Validation set",
-    "text": "Approach #1: Validation set\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)"
+    "text": "Approach #1: Validation set\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split}}}\\)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#approach-1-validation-set-5",
@@ -1354,14 +1354,14 @@
     "href": "slides/05-cv-tidymodels.html#k-fold-cross-validation",
     "title": "Chapter 5 and tidymodels",
     "section": "K-fold cross validation",
-    "text": "K-fold cross validation\n\\(\\color{orange}{MSE_{\\texttt{test-split-1}}}\\)\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-2}}}\\)\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-3}}}\\)\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-4}}}\\)\nTake the mean of the \\(k\\) MSE values"
+    "text": "K-fold cross validation\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-1}}}\\)\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-2}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-3}}}\\)\n\n\n\n\n\n\n\n\n\n\n\n\\(\\color{orange}{MSE_{\\texttt{test-split-4}}}\\)\nTake the mean of the \\(k\\) MSE values"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#application-exercise",
     "href": "slides/05-cv-tidymodels.html#application-exercise",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\nCreate a new R project, then a new quarto file with cv in its name in that project. Answer the questions in that file.\nIf we use 10 folds:\n\n\nWhat percentage of the training data is used in each analysis for each fold?\nWhat percentage of the training data is used in the assessment for each fold?"
+    "text": "Application Exercise\nCreate a new R project, then a new quarto file with cv in its name in that project. Answer the questions in that file.\nIf we use 10 folds:\n\n\nWhat percentage of the training data is used in each analysis for each fold?\nWhat percentage of the training data is used in the assessment for each fold?\n\n\n\ncountdown::countdown(2)\n\n\n−+\n02:00"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#estimating-prediction-error-quantitative-outcome",
@@ -1382,7 +1382,7 @@
     "href": "slides/05-cv-tidymodels.html#leave-one-out-cross-validation",
     "title": "Chapter 5 and tidymodels",
     "section": "Leave-one-out cross validation",
-    "text": "Leave-one-out cross validation\n\n\\[\\dots\\]"
+    "text": "Leave-one-out cross validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\dots\\)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#special-case",
@@ -1431,7 +1431,7 @@
     "href": "slides/05-cv-tidymodels.html#application-exercise-1",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nCreate a new quarto file in your project and add tidymodels in the name.\nLoad the packages by running the top chunk of R code"
+    "text": "Application Exercise\n\n\nCreate a new quarto file in your project and add tidymodels in the name.\nLoad the packages by running the top chunk of R code\n\n\n\nlibrary(tidymodels)\nlibrary(broom)\nlibrary(ISLR)\nlibrary(countdown)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#tidymodels-1",
@@ -1452,28 +1452,28 @@
     "href": "slides/05-cv-tidymodels.html#specify-the-model",
     "title": "Chapter 5 and tidymodels",
     "section": "Specify the model",
-    "text": "Specify the model"
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"lm\")"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#specify-the-model-1",
     "href": "slides/05-cv-tidymodels.html#specify-the-model-1",
     "title": "Chapter 5 and tidymodels",
     "section": "Specify the model",
-    "text": "Specify the model"
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"glmnet\")"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#specify-the-model-2",
     "href": "slides/05-cv-tidymodels.html#specify-the-model-2",
     "title": "Chapter 5 and tidymodels",
     "section": "Specify the model",
-    "text": "Specify the model"
+    "text": "Specify the model\n\nlinear_reg() |&gt;\n  set_engine(\"spark\")"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#specify-the-model-3",
     "href": "slides/05-cv-tidymodels.html#specify-the-model-3",
     "title": "Chapter 5 and tidymodels",
     "section": "Specify the model",
-    "text": "Specify the model"
+    "text": "Specify the model\n\ndecision_tree() |&gt;\n  set_engine(\"rpart\")"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#specify-the-model-4",
@@ -1487,119 +1487,119 @@
     "href": "slides/05-cv-tidymodels.html#application-exercise-2",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nWrite a pipe that creates a model that uses lm() to fit a linear regression using tidymodels. Save it as lm_spec and look at the object. What does it return?\n\n\nHint: you’ll need https://www.tidymodels.org"
+    "text": "Application Exercise\n\n\nWrite a pipe that creates a model that uses lm() to fit a linear regression using tidymodels. Save it as lm_spec and look at the object. What does it return?\n\n\nHint: you’ll need https://www.tidymodels.org\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#answer",
     "href": "slides/05-cv-tidymodels.html#answer",
     "title": "Chapter 5 and tidymodels",
     "section": "Answer",
-    "text": "Answer"
+    "text": "Answer\n\nlm_spec &lt;- \n  linear_reg() |&gt; # Pick linear regression\n  set_engine(engine = \"lm\") # set engine\nlm_spec\n\nLinear Regression Model Specification (regression)\n\nComputational engine: lm"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#fit-the-data",
     "href": "slides/05-cv-tidymodels.html#fit-the-data",
     "title": "Chapter 5 and tidymodels",
     "section": "Fit the data",
-    "text": "Fit the data\n\n\nYou can train your model using the fit() function"
+    "text": "Fit the data\n\n\nYou can train your model using the fit() function\n\n\nfit(lm_spec,\n    mpg ~ horsepower,\n    data = Auto)\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#application-exercise-3",
     "href": "slides/05-cv-tidymodels.html#application-exercise-3",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nFit the model:\n\nDoes this give the same results as"
+    "text": "Application Exercise\n\n\nFit the model:\n\n\nlibrary(ISLR)\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nDoes this give the same results as\n\nlm(mpg ~ horsepower, data = Auto)\n\n\n\n\n−+\n03:00"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#answer-1",
     "href": "slides/05-cv-tidymodels.html#answer-1",
     "title": "Chapter 5 and tidymodels",
     "section": "Answer",
-    "text": "Answer"
+    "text": "Answer\n\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)\nlm_fit\n\nparsnip model object\n\n\nCall:\nstats::lm(formula = mpg ~ horsepower, data = data)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578  \n\nlm(mpg ~ horsepower, data = Auto)\n\n\nCall:\nlm(formula = mpg ~ horsepower, data = Auto)\n\nCoefficients:\n(Intercept)   horsepower  \n    39.9359      -0.1578"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#get-predictions",
     "href": "slides/05-cv-tidymodels.html#get-predictions",
     "title": "Chapter 5 and tidymodels",
     "section": "Get predictions",
-    "text": "Get predictions\n\nUses the predict() function\n‼️ new_data has an underscore\n😄 This automagically creates a data frame"
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto)\n\n\nUses the predict() function\n‼️ new_data has an underscore\n😄 This automagically creates a data frame"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#get-predictions-1",
     "href": "slides/05-cv-tidymodels.html#get-predictions-1",
     "title": "Chapter 5 and tidymodels",
     "section": "Get predictions",
-    "text": "Get predictions\n\n\nWhat does bind_cols do?"
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows\n\n\n\n\nWhat does bind_cols do?"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#get-predictions-2",
     "href": "slides/05-cv-tidymodels.html#get-predictions-2",
     "title": "Chapter 5 and tidymodels",
     "section": "Get predictions",
-    "text": "Get predictions\n\nWhich column has the predicted values?"
+    "text": "Get predictions\n\nlm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows\n\n\n\nWhich column has the predicted values?"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#application-exercise-4",
     "href": "slides/05-cv-tidymodels.html#application-exercise-4",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nEdit the code below to add the original data to the predicted data."
+    "text": "Application Exercise\n\n\n\n−+\n03:00\n\n\n\n\n\nEdit the code below to add the original data to the predicted data.\n\n\n\nmpg_pred &lt;- lm_fit |&gt; \n  predict(new_data = Auto) |&gt; \n  ---"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#get-predictions-3",
     "href": "slides/05-cv-tidymodels.html#get-predictions-3",
     "title": "Chapter 5 and tidymodels",
     "section": "Get predictions",
-    "text": "Get predictions"
+    "text": "Get predictions\n\nmpg_pred &lt;- lm_fit |&gt;\n  predict(new_data = Auto) |&gt;\n  bind_cols(Auto)\n\nmpg_pred\n\n# A tibble: 392 × 10\n   .pred   mpg cylinders displacement horsepower weight acceleration  year origin name    \n * &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;   \n 1 19.4     18         8          307        130   3504         12      70      1 chevrol…\n 2 13.9     15         8          350        165   3693         11.5    70      1 buick s…\n 3 16.3     18         8          318        150   3436         11      70      1 plymout…\n 4 16.3     16         8          304        150   3433         12      70      1 amc reb…\n 5 17.8     17         8          302        140   3449         10.5    70      1 ford to…\n 6  8.68    15         8          429        198   4341         10      70      1 ford ga…\n 7  5.21    14         8          454        220   4354          9      70      1 chevrol…\n 8  6.00    14         8          440        215   4312          8.5    70      1 plymout…\n 9  4.42    14         8          455        225   4425         10      70      1 pontiac…\n10  9.95    15         8          390        190   3850          8.5    70      1 amc amb…\n# ℹ 382 more rows"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#calculate-the-error",
     "href": "slides/05-cv-tidymodels.html#calculate-the-error",
     "title": "Chapter 5 and tidymodels",
     "section": "Calculate the error",
-    "text": "Calculate the error\n\n\nRoot mean square error\n\n\n\n\nWhat is this estimate? (training error? testing error?)"
+    "text": "Calculate the error\n\n\nRoot mean square error\n\n\n\nmpg_pred |&gt;\n  rmse(truth = mpg, estimate = .pred)\n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rmse    standard        4.89\n\n\n\n\nWhat is this estimate? (training error? testing error?)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#validation-set-approach",
     "href": "slides/05-cv-tidymodels.html#validation-set-approach",
     "title": "Chapter 5 and tidymodels",
     "section": "Validation set approach",
-    "text": "Validation set approach\n\n\nHow many observations are in the training set?"
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\n\nHow many observations are in the training set?"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-1",
     "href": "slides/05-cv-tidymodels.html#validation-set-approach-1",
     "title": "Chapter 5 and tidymodels",
     "section": "Validation set approach",
-    "text": "Validation set approach\n\nHow many observations are in the test set?"
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\nHow many observations are in the test set?"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-2",
     "href": "slides/05-cv-tidymodels.html#validation-set-approach-2",
     "title": "Chapter 5 and tidymodels",
     "section": "Validation set approach",
-    "text": "Validation set approach\n\nHow many observations are there in total?"
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\nHow many observations are there in total?"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-3",
     "href": "slides/05-cv-tidymodels.html#validation-set-approach-3",
     "title": "Chapter 5 and tidymodels",
     "section": "Validation set approach",
-    "text": "Validation set approach\n\n\nExtract the training and testing data"
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\n\nExtract the training and testing data\n\n\n\ntraining(Auto_split)\ntesting(Auto_split)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#validation-set-approach-4",
     "href": "slides/05-cv-tidymodels.html#validation-set-approach-4",
     "title": "Chapter 5 and tidymodels",
     "section": "Validation set approach",
-    "text": "Validation set approach"
+    "text": "Validation set approach\n\nAuto_train &lt;- training(Auto_split)\n\n\nAuto_train\n\n\n\n# A tibble: 196 × 9\n     mpg cylinders displacement horsepower weight acceleration  year origin name          \n   &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;fct&gt;         \n 1  37.7         4           89         62   2050         17.3    81      3 toyota tercel \n 2  27           4           97         60   1834         19      71      2 volkswagen mo…\n 3  22           6          232        112   2835         14.7    82      1 ford granada l\n 4  16           6          250        100   3781         17      74      1 chevrolet che…\n 5  25           4           90         71   2223         16.5    75      2 volkswagen da…\n 6  18           6          232        100   2945         16      73      1 amc hornet    \n 7  38.1         4           89         60   1968         18.8    80      3 toyota coroll…\n 8  23           4           97         54   2254         23.5    72      2 volkswagen ty…\n 9  15           8          302        130   4295         14.9    77      1 mercury couga…\n10  34           4          108         70   2245         16.9    82      3 toyota corolla\n# ℹ 186 more rows"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#application-exercise-5",
     "href": "slides/05-cv-tidymodels.html#application-exercise-5",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nCopy the code below, fill in the blanks to fit a model on the training data then calculate the test RMSE."
+    "text": "Application Exercise\n\n\nCopy the code below, fill in the blanks to fit a model on the training data then calculate the test RMSE.\n\n\nset.seed(100)\nAuto_split  &lt;- ________\nAuto_train  &lt;- ________\nAuto_test   &lt;- ________\nlm_fit      &lt;- fit(lm_spec, \n                   mpg ~ horsepower, \n                   data = ________)\nmpg_pred  &lt;- ________ |&gt; \n  predict(new_data = ________) |&gt; \n  bind_cols(________)\nrmse(________, truth = ________, estimate = ________)\n\n\n\n\n−+\n06:00"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#a-faster-way",
@@ -1613,55 +1613,55 @@
     "href": "slides/05-cv-tidymodels.html#a-faster-way-1",
     "title": "Chapter 5 and tidymodels",
     "section": "A faster way!",
-    "text": "A faster way!"
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#a-faster-way-2",
     "href": "slides/05-cv-tidymodels.html#a-faster-way-2",
     "title": "Chapter 5 and tidymodels",
     "section": "A faster way!",
-    "text": "A faster way!"
+    "text": "A faster way!\n\nset.seed(100)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.96  Preprocessor1_Model1\n2 rsq     standard       0.613 Preprocessor1_Model1"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation",
     "href": "slides/05-cv-tidymodels.html#what-about-cross-validation",
     "title": "Chapter 5 and tidymodels",
     "section": "What about cross validation?",
-    "text": "What about cross validation?"
+    "text": "What about cross validation?\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\nAuto_cv\n\n#  5-fold cross-validation \n# A tibble: 5 × 2\n  splits           id   \n  &lt;list&gt;           &lt;chr&gt;\n1 &lt;split [313/79]&gt; Fold1\n2 &lt;split [313/79]&gt; Fold2\n3 &lt;split [314/78]&gt; Fold3\n4 &lt;split [314/78]&gt; Fold4\n5 &lt;split [314/78]&gt; Fold5"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-1",
     "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-1",
     "title": "Chapter 5 and tidymodels",
     "section": "What about cross validation?",
-    "text": "What about cross validation?\n\nInstead of fit we will use fit_resamples"
+    "text": "What about cross validation?\n\nInstead of fit we will use fit_resamples\n\n\n\nfit_resamples(lm_spec, \n              mpg ~ horsepower,\n              resamples = Auto_cv)"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#what-about-cross-validation-2",
     "href": "slides/05-cv-tidymodels.html#what-about-cross-validation-2",
     "title": "Chapter 5 and tidymodels",
     "section": "What about cross validation?",
-    "text": "What about cross validation?\n\nHow do we get the metrics out? With collect_metrics() again!"
+    "text": "What about cross validation?\n\nHow do we get the metrics out? With collect_metrics() again!\n\n\n\nresults &lt;- fit_resamples(lm_spec,\n                         mpg ~ horsepower,\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.88      5  0.385  Preprocessor1_Model1\n2 rsq     standard   0.616     5  0.0220 Preprocessor1_Model1"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#application-exercise-6",
     "href": "slides/05-cv-tidymodels.html#application-exercise-6",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nEdit the code below to get the 5-fold cross validation error rate for the following model:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\nWhat do you think rsq is?"
+    "text": "Application Exercise\n\n\n\n\n−+\n05:00\n\n\n\n\nEdit the code below to get the 5-fold cross validation error rate for the following model:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nresults &lt;- fit_resamples(lm_spec,\n                         ----,\n                         resamples = ---)\n\nresults |&gt;\n  collect_metrics()\n\n\nWhat do you think rsq is?"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#answer-2",
     "href": "slides/05-cv-tidymodels.html#answer-2",
     "title": "Chapter 5 and tidymodels",
     "section": "Answer",
-    "text": "Answer"
+    "text": "Answer\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nresults &lt;- fit_resamples(lm_spec,\n                         mpg ~ horsepower + I(horsepower^2),\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.38      5  0.110  Preprocessor1_Model1\n2 rsq     standard   0.688     5  0.0177 Preprocessor1_Model1"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#application-exercise-7",
     "href": "slides/05-cv-tidymodels.html#application-exercise-7",
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nFit 3 models on the data using 5 fold cross validation:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\beta_3 horsepower^3 +\\epsilon\\)\n\nCollect the metrics from each model, saving the results as results_1, results_2, results_3\nWhich model is “best”?\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+    "text": "Application Exercise\n\n\nFit 3 models on the data using 5 fold cross validation:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\beta_3 horsepower^3 +\\epsilon\\)\n\nCollect the metrics from each model, saving the results as results_1, results_2, results_3\nWhich model is “best”?\n\n\n\n\n\n−+\n08:00\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
   }
 ]

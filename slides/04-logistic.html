@@ -30,6 +30,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #97947a;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #97947a;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2; background-color: #2b2b2b; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #dcc6e0; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #ffd700; } /* Attribute */
+    code span.bn { color: #dcc6e0; } /* BaseN */
+    code span.bu { color: #f5ab35; } /* BuiltIn */
+    code span.cf { color: #ffa07a; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffa07a; } /* Constant */
+    code span.co { color: #d4d0ab; } /* Comment */
+    code span.cv { color: #d4d0ab; font-style: italic; } /* CommentVar */
+    code span.do { color: #d4d0ab; font-style: italic; } /* Documentation */
+    code span.dt { color: #dcc6e0; } /* DataType */
+    code span.dv { color: #dcc6e0; } /* DecVal */
+    code span.er { color: #dcc6e0; } /* Error */
+    code span.ex { color: #ffd700; } /* Extension */
+    code span.fl { color: #f5ab35; } /* Float */
+    code span.fu { color: #ffd700; } /* Function */
+    code span.im { color: #f8f8f2; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; } /* Keyword */
+    code span.op { color: #00e0e0; } /* Operator */
+    code span.ot { color: #ffa07a; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.sc { color: #00e0e0; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #f5ab35; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #d4d0ab; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -366,6 +431,13 @@ Tyler George
 <li>We are going to learn some fancy ways to do even better in the future</li>
 </ul>
 <p><em>Setup:</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(broom)</span>
+<span id="cb1-3"><a></a><span class="fu">library</span>(tidymodels)</span>
+<span id="cb1-4"><a></a><span class="fu">library</span>(gridExtra)</span>
+<span id="cb1-5"><a></a><span class="fu">library</span>(ISLR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section>
 <section id="classification" class="title-slide slide level1 center">
@@ -389,7 +461,34 @@ Tyler George
 </section>
 <section id="example-credit-card-default" class="slide level2">
 <h2>Example: Credit card default</h2>
-</section>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb2-2"><a></a>Default <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a></a>  <span class="fu">sample_frac</span>(<span class="at">size =</span> <span class="fl">0.25</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-4"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(balance, income, <span class="at">color =</span> default)) <span class="sc">+</span></span>
+<span id="cb2-5"><a></a>  <span class="fu">geom_point</span>(<span class="at">pch =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb2-6"><a></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"cornflower blue"</span>, <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb2-7"><a></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb2-8"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"top"</span>) <span class="ot">-&gt;</span> p1</span>
+<span id="cb2-9"><a></a></span>
+<span id="cb2-10"><a></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Default, <span class="fu">aes</span>(<span class="at">x =</span> default, <span class="at">y =</span> balance, <span class="at">fill =</span> default)) <span class="sc">+</span></span>
+<span id="cb2-11"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb2-12"><a></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"cornflower blue"</span>, <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb2-13"><a></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb2-14"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb2-15"><a></a></span>
+<span id="cb2-16"><a></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Default, <span class="fu">aes</span>(<span class="at">x =</span> default, <span class="at">y =</span> income, <span class="at">fill =</span> default)) <span class="sc">+</span></span>
+<span id="cb2-17"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb2-18"><a></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"cornflower blue"</span>, <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb2-19"><a></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb2-20"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb2-21"><a></a><span class="fu">grid.arrange</span>(p1, p2, p3, <span class="at">ncol =</span> <span class="dv">3</span>, <span class="at">widths =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="04-logistic_files/figure-revealjs/plot1-1.png" width="960" class="r-stretch"></section>
 <section id="can-we-use-linear-regression" class="slide level2 small">
 <h2>Can we use linear regression?</h2>
 <p>We can code <code>Default</code> as</p>
@@ -413,7 +512,41 @@ Tyler George
 </section>
 <section id="linear-versus-logistic-regression" class="slide level2 small">
 <h2>Linear versus logistic regression</h2>
-<div class="question">
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>Default <span class="ot">&lt;-</span> Default <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb3-3"><a></a>  <span class="at">p =</span> <span class="fu">glm</span>(default <span class="sc">~</span> balance, <span class="at">data =</span> Default, <span class="at">family =</span> <span class="st">"binomial"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-4"><a></a>  <span class="fu">predict</span>(<span class="at">type =</span> <span class="st">"response"</span>),</span>
+<span id="cb3-5"><a></a>  <span class="at">p2 =</span> <span class="fu">lm</span>(<span class="fu">I</span>(default <span class="sc">==</span> <span class="st">"Yes"</span>) <span class="sc">~</span> balance, <span class="at">data =</span> Default) <span class="sc">|&gt;</span> <span class="fu">predict</span>(),</span>
+<span id="cb3-6"><a></a>  <span class="at">def =</span> <span class="fu">ifelse</span>(default <span class="sc">==</span> <span class="st">"Yes"</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb3-7"><a></a>)</span>
+<span id="cb3-8"><a></a></span>
+<span id="cb3-9"><a></a></span>
+<span id="cb3-10"><a></a>Default <span class="sc">|&gt;</span></span>
+<span id="cb3-11"><a></a>  <span class="fu">sample_frac</span>(<span class="fl">0.25</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-12"><a></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(balance, p2)) <span class="sc">+</span></span>
+<span id="cb3-13"><a></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">size =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb3-14"><a></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"cornflower blue"</span>) <span class="sc">+</span></span>
+<span id="cb3-15"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(balance, def), <span class="at">shape =</span> <span class="st">"|"</span>, <span class="at">color =</span> <span class="st">"orange"</span>) <span class="sc">+</span></span>
+<span id="cb3-16"><a></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb3-17"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"probability of default"</span>) <span class="ot">-&gt;</span> p1</span>
+<span id="cb3-18"><a></a></span>
+<span id="cb3-19"><a></a>Default <span class="sc">|&gt;</span></span>
+<span id="cb3-20"><a></a>  <span class="fu">sample_frac</span>(<span class="fl">0.25</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-21"><a></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(balance, p)) <span class="sc">+</span></span>
+<span id="cb3-22"><a></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">size =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb3-23"><a></a>  <span class="fu">geom_line</span>(<span class="at">color =</span> <span class="st">"cornflower blue"</span>) <span class="sc">+</span></span>
+<span id="cb3-24"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(balance, def), <span class="at">shape =</span> <span class="st">"|"</span>, <span class="at">color =</span> <span class="st">"orange"</span>) <span class="sc">+</span></span>
+<span id="cb3-25"><a></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb3-26"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"probability of default"</span>) <span class="ot">-&gt;</span> p2</span>
+<span id="cb3-27"><a></a></span>
+<span id="cb3-28"><a></a><span class="fu">grid.arrange</span>(p1, p2, <span class="at">ncol =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="04-logistic_files/figure-revealjs/plot2-1.png" width="960" class="r-stretch"><div class="question">
 <p>Which does a better job at predicting the probability of default?</p>
 </div>
 <ul>
@@ -477,7 +610,8 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </section>
 <section id="linear-versus-logistic-regression-1" class="slide level2">
 <h2>Linear versus logistic regression</h2>
-<p>Logistic regression ensures that our estimates for <span class="math inline">\(p(X)\)</span> are between 0 and 1 🎉</p>
+
+<img data-src="04-logistic_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p>Logistic regression ensures that our estimates for <span class="math inline">\(p(X)\)</span> are between 0 and 1 🎉</p>
 </section>
 <section id="maximum-likelihood" class="slide level2">
 <h2>Maximum Likelihood</h2>
@@ -500,6 +634,20 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </section>
 <section id="lets-see-it-in-r" class="slide level2 small">
 <h2>Let’s see it in R</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a></a>  <span class="fu">fit</span>(default <span class="sc">~</span> balance, </span>
+<span id="cb4-4"><a></a>      <span class="at">data =</span> Default) <span class="sc">|&gt;</span></span>
+<span id="cb4-5"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term         estimate std.error statistic   p.value
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+1 (Intercept) -10.7      0.361        -29.5 3.62e-191
+2 balance       0.00550  0.000220      25.0 1.98e-137</code></pre>
+</div>
+</div>
 <ul>
 <li>Use the <code>logistic_reg()</code> function in R with the <code>glm</code> engine</li>
 </ul>
@@ -508,6 +656,41 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <h2>Making predictions</h2>
 <div class="question">
 <p>What is our estimated probability of default for someone with a balance of $1000?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-10.6513306</td>
+<td style="text-align: right;">0.3611574</td>
+<td style="text-align: right;">-29.49221</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">balance</td>
+<td style="text-align: right;">0.0054989</td>
+<td style="text-align: right;">0.0002204</td>
+<td style="text-align: right;">24.95309</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
 </div>
 <div class="fragment">
 <p><span class="math display">\[
@@ -520,6 +703,41 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <div class="question">
 <p>What is our estimated probability of default for someone with a balance of $2000?</p>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-10.6513306</td>
+<td style="text-align: right;">0.3611574</td>
+<td style="text-align: right;">-29.49221</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">balance</td>
+<td style="text-align: right;">0.0054989</td>
+<td style="text-align: right;">0.0002204</td>
+<td style="text-align: right;">24.95309</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</div>
 <div class="fragment">
 <p><span class="math display">\[
 \hat{p}(X) = \frac{e^{\hat{\beta}_0+\hat{\beta}_1X}}{1+e^{\hat{\beta}_0+\hat{\beta}_1X}}=\frac{e^{-10.65+0.0055\times 2000}}{1+e^{-10.65+0.0055\times 2000}}=0.586
@@ -529,6 +747,41 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="logistic-regression-example" class="slide level2 small">
 <h2>Logistic regression example</h2>
 <p>Let’s refit the model to predict the probability of default given the customer is a <code>student</code></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-3.5041278</td>
+<td style="text-align: right;">0.0707130</td>
+<td style="text-align: right;">-49.554219</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">studentYes</td>
+<td style="text-align: right;">0.4048871</td>
+<td style="text-align: right;">0.1150188</td>
+<td style="text-align: right;">3.520181</td>
+<td style="text-align: right;">0.0004313</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</div>
 <p><span class="math display">\[P(\texttt{default = Yes}|\texttt{student = Yes}) = \frac{e^{-3.5041+0.4049\times1}}{1+e^{-3.5041+0.4049\times1}}=0.0431\]</span></p>
 <div class="fragment">
 <div class="question">
@@ -542,19 +795,70 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="multiple-logistic-regression" class="slide level2 small">
 <h2>Multiple logistic regression</h2>
 <p><span class="math display">\[\log\left(\frac{p(X)}{1-p(X)}\right)=\beta_0+\beta_1X_1+\dots+\beta_pX_p\]</span> <span class="math display">\[p(X) = \frac{e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}{1+e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-10.8690452</td>
+<td style="text-align: right;">0.4922555</td>
+<td style="text-align: right;">-22.080088</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">balance</td>
+<td style="text-align: right;">0.0057365</td>
+<td style="text-align: right;">0.0002319</td>
+<td style="text-align: right;">24.737563</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">income</td>
+<td style="text-align: right;">0.0000030</td>
+<td style="text-align: right;">0.0000082</td>
+<td style="text-align: right;">0.369815</td>
+<td style="text-align: right;">0.7115203</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">studentYes</td>
+<td style="text-align: right;">-0.6467758</td>
+<td style="text-align: right;">0.2362525</td>
+<td style="text-align: right;">-2.737646</td>
+<td style="text-align: right;">0.0061881</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</div>
 <ul>
 <li>Why is the coefficient for <code>student</code> negative now when it was positive before?</li>
 </ul>
 </section>
 <section id="confounding" class="slide level2 small">
 <h2>Confounding</h2>
-<div class="question">
+
+<img data-src="04-logistic_files/figure-revealjs/plot3-1.png" width="960" class="r-stretch"><div class="question">
 <p>What is going on here?</p>
 </div>
 </section>
 <section id="confounding-1" class="slide level2 small">
 <h2>Confounding</h2>
-<ul>
+
+<img data-src="04-logistic_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><ul>
 <li>Students tend to have higher balances than non-students</li>
 <li>Their <strong>marginal</strong> default rate is higher</li>
 <li>For each level of balance, students default less</li>
@@ -1106,11 +1410,37 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="odds-ratios-14" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p><span class="math display">\[\Large \log(\textrm{odds of survival}) = \beta_0 + \beta_1 \textrm{Female}\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">fit</span>(Survived <span class="sc">~</span> Sex, <span class="at">data =</span> Titanic) <span class="sc">|&gt;</span></span>
+<span id="cb6-4"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68
+2 Sexfemale       2.30    0.135       17.1 2.91e-65</code></pre>
+</div>
+</div>
 </section>
 <section id="odds-ratios-15" class="slide level2 small">
 <h2>Odds Ratios</h2>
 <div class="question">
 <p>How do you interpret this result?</p>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a></a>  <span class="fu">fit</span>(Survived <span class="sc">~</span> Sex, <span class="at">data =</span> Titanic) <span class="sc">|&gt;</span></span>
+<span id="cb8-4"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68
+2 Sexfemale       2.30    0.135       17.1 2.91e-65</code></pre>
+</div>
 </div>
 </section>
 <section id="odds-ratios-16" class="slide level2 small">
@@ -1118,22 +1448,82 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <div class="question">
 <p>How do you interpret this result?</p>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a></a>  <span class="fu">fit</span>(Survived <span class="sc">~</span> Sex, <span class="at">data =</span> Titanic) <span class="sc">|&gt;</span></span>
+<span id="cb10-4"><a></a>  <span class="fu">tidy</span>(<span class="at">exponentiate =</span> <span class="cn">TRUE</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)    0.200    0.0919     -17.5 1.70e-68
+2 Sexfemale      9.99     0.135       17.1 2.91e-65</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">exp</span>(<span class="fl">2.301176</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 9.99</code></pre>
+</div>
+</div>
 </section>
 <section id="odds-ratios-17" class="slide level2 small">
 <h2>Odds Ratios</h2>
 <div class="question">
 <p>How do you interpret this result?</p>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-3"><a></a>  <span class="fu">fit</span>(Survived <span class="sc">~</span> Sex, <span class="at">data =</span> Titanic) <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a></a>  <span class="fu">tidy</span>(<span class="at">exponentiate =</span> <span class="cn">TRUE</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)    0.200    0.0919     -17.5 1.70e-68
+2 Sexfemale      9.99     0.135       17.1 2.91e-65</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">exp</span>(<span class="fl">2.301176</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 9.99</code></pre>
+</div>
+</div>
 <p><em>the odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers</em></p>
 </section>
 <section id="odds-ratios-18" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p>What if the explanatory variable is continuous?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-3"><a></a>  <span class="fu">fit</span>(Acceptance <span class="sc">~</span> GPA, <span class="at">data =</span> MedGPA) <span class="sc">|&gt;</span></span>
+<span id="cb18-4"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)   -19.2       5.63     -3.41 0.000644
+2 GPA             5.45      1.58      3.45 0.000553</code></pre>
+</div>
+</div>
 <p><em>A one unit increase in GPA yields a 5.45 increase in the log odds of acceptance</em></p>
 </section>
 <section id="odds-ratios-19" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p>What if the explanatory variable is continuous?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb20-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb20-3"><a></a>  <span class="fu">fit</span>(Acceptance <span class="sc">~</span> GPA, <span class="at">data =</span> MedGPA) <span class="sc">|&gt;</span></span>
+<span id="cb20-4"><a></a>  <span class="fu">tidy</span>(<span class="at">exponentiate =</span> <span class="cn">TRUE</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)  4.56e-9      5.63     -3.41 0.000644
+2 GPA          2.34e+2      1.58      3.45 0.000553</code></pre>
+</div>
+</div>
 <p><em>A one unit increase in GPA yields a 234-fold increase in the odds of acceptance</em></p>
 <ul>
 <li>😱 that seems huge! <strong>Remember:</strong> the interpretation of these coefficients depends on your units (the same as in ordinary linear regression).</li>
@@ -1144,6 +1534,29 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <div class="question">
 <p>How could we get the odds associated with increasing GPA by 0.1?</p>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb22-3"><a></a>  <span class="fu">fit</span>(Acceptance <span class="sc">~</span> GPA, <span class="at">data =</span> MedGPA) <span class="sc">|&gt;</span></span>
+<span id="cb22-4"><a></a>  <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term        estimate std.error statistic  p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)   -19.2       5.63     -3.41 0.000644
+2 GPA             5.45      1.58      3.45 0.000553</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">exp</span>(<span class="fl">5.454</span>) <span class="do">## a one unit increase in GPA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 234</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">exp</span>(<span class="fl">5.454</span> <span class="sc">*</span> <span class="fl">0.1</span>) <span class="do">## a 0.1 increase in GPA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.73</code></pre>
+</div>
+</div>
 <p><em>A one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance</em></p>
 </section>
 <section id="odds-ratios-21" class="slide level2 small">
@@ -1151,12 +1564,32 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <div class="question">
 <p>How could we get the odds associated with increasing GPA by 0.1?</p>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>MedGPA <span class="ot">&lt;-</span> MedGPA <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a></a>  <span class="fu">mutate</span>(<span class="at">GPA_10 =</span> GPA <span class="sc">*</span> <span class="dv">10</span>)</span>
+<span id="cb28-3"><a></a></span>
+<span id="cb28-4"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb28-5"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-6"><a></a>  <span class="fu">fit</span>(Acceptance <span class="sc">~</span> GPA_10, <span class="at">data =</span> MedGPA) <span class="sc">|&gt;</span></span>
+<span id="cb28-7"><a></a>  <span class="fu">tidy</span>(<span class="at">exponentiate =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  term             estimate std.error statistic  p.value
+  &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept) 0.00000000456     5.63      -3.41 0.000644
+2 GPA_10      1.73              0.158      3.45 0.000553</code></pre>
+</div>
+</div>
 <p><em>A one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance</em></p>
 </section>
 <section id="application-exercise" class="slide level2">
 <h2><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"></path></svg> <code>Application Exercise</code></h2>
 <p>Using the <code>Default</code> data from the <code>ISLR</code> package, fit a logistic regression model predicting whether a customer <code>defaults</code> with whether they are a <code>student</code> and their current <code>balance</code>.</p>
 <p>Here is some code to get you started:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">library</span>(ISLR)</span>
+<span id="cb30-2"><a></a><span class="fu">data</span>(<span class="st">"Default"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="img/favicon.png" class="slide-logo"></p>
