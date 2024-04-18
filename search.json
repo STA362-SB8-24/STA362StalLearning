@@ -141,7 +141,7 @@
     "href": "slides/04-logistic.html#confounding",
     "title": "Chapter 4 Part 1",
     "section": "Confounding",
-    "text": "Confounding\n\n\nWhat is going on here?"
+    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
   },
   {
     "objectID": "slides/04-logistic.html#confounding-1",
@@ -246,63 +246,63 @@
     "href": "slides/04-logistic.html#odds-ratios-5",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\n\n\nTMS\nPlacebo\nTotal\n\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can compare the results using odds\nWhat are the odds of being pain-free for the placebo group?\n\\((22/100)/(78/100) = 22/78 = 0.282\\)\nWhat are the odds of being pain-free for the treatment group?\n\\(39/61 = 0.639\\)\nComparing the odds what can we conclude?\nTMS increases the likelihood of success"
+    "text": "Odds ratios\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can compare the results using odds\nWhat are the odds of being pain-free for the placebo group?\n\\((22/100)/(78/100) = 22/78 = 0.282\\)\nWhat are the odds of being pain-free for the treatment group?\n\\(39/61 = 0.639\\)\nComparing the odds what can we conclude?\nTMS increases the likelihood of success"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-6",
     "href": "slides/04-logistic.html#odds-ratios-6",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\n\n\nTMS\nPlacebo\nTotal\n\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can summarize this relationship with an odds ratio: the ratio of the two odds\n\\(\\Large OR = \\frac{39/61}{22/78} = \\frac{0.639}{0.282} = 2.27\\)\n“the odds of being pain free were 2.27 times higher with TMS than with the placebo”"
+    "text": "Odds ratios\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can summarize this relationship with an odds ratio: the ratio of the two odds\n\\(\\Large OR = \\frac{39/61}{22/78} = \\frac{0.639}{0.282} = 2.27\\)\n“the odds of being pain free were 2.27 times higher with TMS than with the placebo”"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-7",
     "href": "slides/04-logistic.html#odds-ratios-7",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\nWhat if we wanted to calculate this in terms of Not pain-free (with pain-free) as the referent?\n\n\n\n\nTMS\nPlacebo\nTotal\n\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{61/39}{78/22} = \\frac{1.564}{3.545} = 0.441\\)\nthe odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group"
+    "text": "Odds ratios\n\nWhat if we wanted to calculate this in terms of Not pain-free (with pain-free) as the referent?\n\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{61/39}{78/22} = \\frac{1.564}{3.545} = 0.441\\)\nthe odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-8",
     "href": "slides/04-logistic.html#odds-ratios-8",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\nWhat changed here?\n\n\n\n\nTMS\nPlacebo\nTotal\n\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
+    "text": "Odds ratios\n\nWhat changed here?\n\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-9",
     "href": "slides/04-logistic.html#odds-ratios-9",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\nIn general, it’s more natural to interpret odds ratios &gt; 1, you can flip the referent to do so\n\n\n\nTMS\nPlacebo\nTotal\n\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
+    "text": "Odds ratios\nIn general, it’s more natural to interpret odds ratios &gt; 1, you can flip the referent to do so\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-10",
     "href": "slides/04-logistic.html#odds-ratios-10",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\nLet’s look at some Titanic data. We are interested in whether the passenger reported being female is related to whether they survived.\n\n\n\nFemale\nMale\nTotal\n\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313"
+    "text": "Odds ratios\nLet’s look at some Titanic data. We are interested in whether the passenger reported being female is related to whether they survived.\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-11",
     "href": "slides/04-logistic.html#odds-ratios-11",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\nWhat are the odds of surviving for females versus males?\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\]"
+    "text": "Odds ratios\n\nWhat are the odds of surviving for females versus males?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\]"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-12",
     "href": "slides/04-logistic.html#odds-ratios-12",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\nHow do you interpret this?\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\] the odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
+    "text": "Odds ratios\n\nHow do you interpret this?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\] the odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-13",
     "href": "slides/04-logistic.html#odds-ratios-13",
     "title": "Chapter 4 Part 1",
     "section": "Odds ratios",
-    "text": "Odds ratios\n\nWhat if we wanted to fit a model? What would the equation be?\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]"
+    "text": "Odds ratios\n\nWhat if we wanted to fit a model? What would the equation be?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]"
   },
   {
     "objectID": "slides/04-logistic.html#odds-ratios-14",
@@ -365,7 +365,7 @@
     "href": "slides/04-logistic.html#application-exercise",
     "title": "Chapter 4 Part 1",
     "section": " Application Exercise",
-    "text": "Application Exercise\nUsing the Default data from the ISLR package, fit a logistic regression model predicting whether a customer defaults with whether they are a student and their current balance.\nHere is some code to get you started:\n\nlibrary(ISLR)\ndata(\"Default\")\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+    "text": "Application Exercise\nUsing the Default data from the ISLR package. Fit two logistic regression models that predict whether a customer defaults\n\nOne model with student as a predictor. Interpret the coefficient of studentYes.\nAnother model with balance as a predictor. Interpret the coefficient of balance.\n\nHere is some code to get you started:\n\nlibrary(ISLR)\ndata(\"Default\")\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#section",
@@ -1039,7 +1039,7 @@
     "href": "labs/02-logistic.html#logistic-regression",
     "title": "Lab 02",
     "section": "Logistic Regression",
-    "text": "Logistic Regression\n\nFor this lab we are using the Smarket data. Examine this data set - how many observations are there? How many columns? What are the variables?\nLet’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?\n\n\nggpairs(Smarket, \n        lower = list(combo = wrap(ggally_facethist, binwidth = 0.5)), \n        progress = FALSE)\n\n\nInference Fit a logistic regression model to predict Direction using Lag1, Lag2, Lag3, Lag4, Lag5, and Volume. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 6 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 4. Interpret the odds ratio for the same predictor you selected in Exercise 4.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 5. What is the test Accuracy for this model? Interpret this result.\nInference Fit a logistic regression model to predict Direction using only Lag1 and Lag2. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 2 predictors. Which predictor has the smallest p-value?\nInference Exponentiate the results from the previous Exercise. Interpret the odds ratio for the same predictor you selected in the previous exercise.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.\nIf you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?"
+    "text": "Logistic Regression\n\nFor this lab we are using the Smarket data. Examine this data set - how many observations are there? How many columns? What are the variables?\nLet’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?\n\n\nggpairs(Smarket, \n        lower = list(combo = wrap(ggally_facethist, binwidth = 0.5)), \n        progress = FALSE)\n\n\nInference Fit a logistic regression model to predict Direction using Today. Show a table that contains the coefficients and p-values along with the confidence intervals. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for Today.\nInference Exponentiate the results from Exercise 4. Interpret the odds ratio for the same predictor.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 5. What is the test Accuracy for this model? Interpret this result.\nInference Fit a logistic regression model to predict Direction using Volume. Show a table that contains the coefficients and p-values along with the confidence intervals.\nInference Exponentiate the results from the previous Exercise. Interpret the odds ratio for Volume.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.\nIf you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?"
   },
   {
     "objectID": "slides/03-linear-regression.html#application-exercise",
@@ -1663,5 +1663,89 @@
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
     "text": "Application Exercise\n\n\nFit 3 models on the data using 5 fold cross validation:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\beta_3 horsepower^3 +\\epsilon\\)\n\nCollect the metrics from each model, saving the results as results_1, results_2, results_3\nWhich model is “best”?\n\n\n\n\n\n−+\n08:00\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#recap",
+    "href": "slides/04_2-lda_qda.html#recap",
+    "title": "Chapter 4 Part 2",
+    "section": "",
+    "text": "We had a logistic regression refresher\n\n\n\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#setup",
+    "href": "slides/04_2-lda_qda.html#setup",
+    "title": "Chapter 4 Part 2",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#multinomial-logistic",
+    "href": "slides/04_2-lda_qda.html#multinomial-logistic",
+    "title": "Chapter 4 Part 2",
+    "section": "Multinomial Logistic",
+    "text": "Multinomial Logistic\n\nSo far we have discussed logistic regression with two classes.\nIt is easily generalized to more than two classes."
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#confounding",
+    "href": "slides/04_2-lda_qda.html#confounding",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\n`summarise()` has grouped output by 'balance_bin'. You can override using the `.groups`\nargument.\n\n\nWarning: Removed 4 rows containing missing values or values outside the scale range\n(`geom_line()`).\n\n\n\n\n\n\n\n\n\n\nWhat is going on here?"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#confounding-1",
+    "href": "slides/04_2-lda_qda.html#confounding-1",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\n\n\nWarning: Removed 4 rows containing missing values or values outside the scale range\n(`geom_line()`).\n\n\n\n\n\n\n\n\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#logistic-regression-for-more-than-two-classes",
+    "href": "slides/04_2-lda_qda.html#logistic-regression-for-more-than-two-classes",
+    "title": "Chapter 4 Part 2",
+    "section": "Logistic regression for more than two classes",
+    "text": "Logistic regression for more than two classes\n\\[P(Y=k|X) = \\frac{e ^{\\beta_{0k}+\\beta_{1k}X_1+\\dots+\\beta_{pk}X_p}}{\\sum_{l=1}^Ke^{\\beta_{0l}+\\beta_{1l}X_1+\\dots+\\beta_{pl}X_p}}\\]\n\nWe generalize this to situations with multiple classes\nHere we have a linear function for each of the \\(K\\) classes\nThis is known as multinomial logistic regression"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#multiple-logistic-regression",
+    "href": "slides/04_2-lda_qda.html#multiple-logistic-regression",
+    "title": "Chapter 4 Part 2",
+    "section": "Multiple logistic regression",
+    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#the-unforuntate-truth-logistic-regression",
+    "href": "slides/04_2-lda_qda.html#the-unforuntate-truth-logistic-regression",
+    "title": "Chapter 4 Part 2",
+    "section": "The Unforuntate truth logistic regression",
+    "text": "The Unforuntate truth logistic regression"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#bayes-rule",
+    "href": "slides/04_2-lda_qda.html#bayes-rule",
+    "title": "Chapter 4 Part 2",
+    "section": "Bayes Rule",
+    "text": "Bayes Rule"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html#linear-descriminant-analysis",
+    "href": "slides/04_2-lda_qda.html#linear-descriminant-analysis",
+    "title": "Chapter 4 Part 2",
+    "section": "Linear Descriminant Analysis",
+    "text": "Linear Descriminant Analysis"
+  },
+  {
+    "objectID": "slides/04-logistic.html#potential-confounding",
+    "href": "slides/04-logistic.html#potential-confounding",
+    "title": "Chapter 4 Part 1",
+    "section": "Potential Confounding",
+    "text": "Potential Confounding\n\n\nWhat is going on here?"
+  },
+  {
+    "objectID": "slides/04_2-lda_qda.html",
+    "href": "slides/04_2-lda_qda.html",
+    "title": "Chapter 4 Part 2",
+    "section": "",
+    "text": "We had a logistic regression refresher\n\n\n\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
   }
 ]

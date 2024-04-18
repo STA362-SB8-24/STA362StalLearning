@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Lucy D’Agostino McGowan modfied by Dr.&nbsp;Tyler George">
+<meta name="author" content="Tyler George">
 
-<title>Introduction to Statistical Learning - Lab 02</title>
+<title>Introduction to Statistical Learning - Chapter 4 Part 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,16 +104,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="Introduction to Statistical Learning - Lab 02">
-<meta property="og:description" content="Logistic Regression">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Introduction to Statistical Learning - Chapter 4 Part 2">
+<meta property="og:description" content="Multinomial Logisitc, LDA, and QDA">
 <meta property="og:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta property="og:site_name" content="{{< var course.title >}}">
 <meta property="og:locale" content="en_US">
 <meta property="og:image:height" content="670">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Introduction to Statistical Learning - Lab 02">
-<meta name="twitter:description" content="Logistic Regression">
+<meta name="twitter:title" content="Introduction to Statistical Learning - Chapter 4 Part 2">
+<meta name="twitter:description" content="Multinomial Logisitc, LDA, and QDA">
 <meta name="twitter:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta name="twitter:creator" content="@stats_tgeorge">
 <meta name="twitter:card" content="summary_large_image">
@@ -130,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 02</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 4 Part 2</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -254,40 +283,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting started</a>
+  <li><a href="#recap" id="toc-recap" class="nav-link active" data-scroll-target="#recap">Recap</a>
   <ul class="collapse">
-  <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml">YAML:</a></li>
+  <li><a href="#now" id="toc-now" class="nav-link" data-scroll-target="#now">Now…</a></li>
   </ul></li>
-  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
-  <ul class="collapse">
-  <li><a href="#conceptual-questions" id="toc-conceptual-questions" class="nav-link" data-scroll-target="#conceptual-questions">Conceptual questions</a></li>
-  <li><a href="#logistic-regression" id="toc-logistic-regression" class="nav-link" data-scroll-target="#logistic-regression">Logistic Regression</a></li>
-  </ul></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#multinomial-logistic" id="toc-multinomial-logistic" class="nav-link" data-scroll-target="#multinomial-logistic">Multinomial Logistic</a></li>
+  <li><a href="#confounding" id="toc-confounding" class="nav-link" data-scroll-target="#confounding">Confounding</a></li>
+  <li><a href="#confounding-1" id="toc-confounding-1" class="nav-link" data-scroll-target="#confounding-1">Confounding</a></li>
+  <li><a href="#logistic-regression-for-more-than-two-classes" id="toc-logistic-regression-for-more-than-two-classes" class="nav-link" data-scroll-target="#logistic-regression-for-more-than-two-classes">Logistic regression for more than two classes</a></li>
+  <li><a href="#multiple-logistic-regression" id="toc-multiple-logistic-regression" class="nav-link" data-scroll-target="#multiple-logistic-regression">Multiple logistic regression</a></li>
+  <li><a href="#the-unforuntate-truth-logistic-regression" id="toc-the-unforuntate-truth-logistic-regression" class="nav-link" data-scroll-target="#the-unforuntate-truth-logistic-regression">The Unforuntate truth logistic regression</a></li>
+  <li><a href="#bayes-rule" id="toc-bayes-rule" class="nav-link" data-scroll-target="#bayes-rule">Bayes Rule</a></li>
+  <li><a href="#linear-descriminant-analysis" id="toc-linear-descriminant-analysis" class="nav-link" data-scroll-target="#linear-descriminant-analysis">Linear Descriminant Analysis</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="04_2-lda_qda.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 02</h1>
-<p class="subtitle lead">Logistic Regression</p>
+<h1 class="title">Chapter 4 Part 2</h1>
+<p class="subtitle lead">Multinomial Logisitc, LDA, and QDA</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tyler George </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Cornell College <br> STA 362 Spring 2024 Block 8
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Lucy D’Agostino McGowan modfied by Dr.&nbsp;Tyler George </p>
-          </div>
-  </div>
-    
+      
   
     
   </div>
@@ -297,59 +335,157 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="getting-started" class="level1">
-<h1>Getting started</h1>
-<p>Go to our RStudio and create a new R project inside your class folder.</p>
-<section id="yaml" class="level2">
-<h2 class="anchored" data-anchor-id="yaml">YAML:</h2>
-<p>Create a <code>.qmd</code> file for your lab, make sure the author is your name, and Render the document.</p>
+<section id="recap" class="level2 small">
+<h2 class="small anchored" data-anchor-id="recap">Recap</h2>
+<ul>
+<li>We had a <em>logistic regression</em> refresher</li>
+</ul>
+<section id="now" class="level3">
+<h3 class="anchored" data-anchor-id="now">Now…</h3>
+<ul>
+<li>What if our response has more than two levels?</li>
+<li>What if logistic regression is a poor fit?</li>
+</ul>
 </section>
 </section>
-<section id="packages" class="level1">
-<h1>Packages</h1>
-<p>In this lab we will work with four packages: <code>ISLR</code> which is a package that accompanies your textbook, <code>tidyverse</code> which is a collection of packages for doing data analysis in a “tidy” way, <code>tidymodels</code> a collection of packages for statistical modeling, and <code>GGally</code>, a package to help us visualize the data.</p>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ISLR)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gridExtra)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ISLR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="data" class="level1">
-<h1>Data</h1>
-<p>For this lab, we are using the <code>Smarket</code> data from the <code>ISLR</code> package.</p>
+<section id="multinomial-logistic" class="level2">
+<h2 class="anchored" data-anchor-id="multinomial-logistic">Multinomial Logistic</h2>
+<ul>
+<li><p>So far we have discussed logistic regression with two classes.</p></li>
+<li><p>It is easily generalized to more than two classes.</p></li>
+</ul>
 </section>
-<section id="exercises" class="level1">
-<h1>Exercises</h1>
-<section id="conceptual-questions" class="level2">
-<h2 class="anchored" data-anchor-id="conceptual-questions">Conceptual questions</h2>
-<ol type="1">
-<li>Suppose that an individual has a 23% chance of defaulting on their credit card payment. What are the odds that they will default?</li>
-</ol>
-</section>
-<section id="logistic-regression" class="level2">
-<h2 class="anchored" data-anchor-id="logistic-regression">Logistic Regression</h2>
-<ol start="2" type="1">
-<li><p>For this lab we are using the <code>Smarket</code> data. Examine this data set - how many observations are there? How many columns? What are the variables?</p></li>
-<li><p>Let’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?</p></li>
-</ol>
+<section id="confounding" class="level2 small">
+<h2 class="small anchored" data-anchor-id="confounding">Confounding</h2>
+<p>Recall our defaults data with variable <code>default</code>, <code>student</code>, and <code>balance</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpairs</span>(Smarket, </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">lower =</span> <span class="fu">list</span>(<span class="at">combo =</span> <span class="fu">wrap</span>(ggally_facethist, <span class="at">binwidth =</span> <span class="fl">0.5</span>)), </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">progress =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'balance_bin'. You can override using the `.groups`
+argument.</code></pre>
 </div>
-<ol start="4" type="1">
-<li><p><strong>Inference</strong> Fit a logistic regression model to predict <code>Direction</code> using <code>Today</code>. Show a table that contains the coefficients and p-values along with the confidence intervals. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for <code>Today</code>.</p></li>
-<li><p><strong>Inference</strong> Exponentiate the results from Exercise 4. Interpret the <em>odds ratio</em> for the same predictor.</p></li>
-<li><p><strong>Prediction</strong> Using 5-fold cross validation, fit the same logistic regression model as Exercise 5. What is the test Accuracy for this model? Interpret this result.</p></li>
-<li><p><strong>Inference</strong> Fit a logistic regression model to predict <code>Direction</code> using <code>Volume</code>. Show a table that contains the coefficients and p-values along with the confidence intervals.</p></li>
-<li><p><strong>Inference</strong> Exponentiate the results from the previous Exercise. Interpret the <em>odds ratio</em> for <code>Volume</code>.</p></li>
-<li><p><strong>Prediction</strong> Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.</p></li>
-<li><p>If you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?</p></li>
-</ol>
-
-
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 4 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="04_2-lda_qda_files/figure-html/plot3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="question">
+<p>What is going on here?</p>
+</div>
 </section>
+<section id="confounding-1" class="level2 small">
+<h2 class="small anchored" data-anchor-id="confounding-1">Confounding</h2>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 4 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="04_2-lda_qda_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Students tend to have higher balances than non-students</li>
+<li>Their <strong>marginal</strong> default rate is higher</li>
+<li>For each level of balance, students default less</li>
+<li>Their <strong>conditional</strong> default rate is lower</li>
+</ul>
+</section>
+<section id="logistic-regression-for-more-than-two-classes" class="level2 small">
+<h2 class="small anchored" data-anchor-id="logistic-regression-for-more-than-two-classes">Logistic regression for more than two classes</h2>
+<p><span class="math display">\[P(Y=k|X) = \frac{e ^{\beta_{0k}+\beta_{1k}X_1+\dots+\beta_{pk}X_p}}{\sum_{l=1}^Ke^{\beta_{0l}+\beta_{1l}X_1+\dots+\beta_{pl}X_p}}\]</span></p>
+<ul>
+<li>We generalize this to situations with <strong>multiple</strong> classes</li>
+<li>Here we have a linear function for <strong>each</strong> of the <span class="math inline">\(K\)</span> classes</li>
+<li>This is known as <strong>multinomial logistic regression</strong></li>
+</ul>
+</section>
+<section id="multiple-logistic-regression" class="level2 small">
+<h2 class="small anchored" data-anchor-id="multiple-logistic-regression">Multiple logistic regression</h2>
+<p><span class="math display">\[\log\left(\frac{p(X)}{1-p(X)}\right)=\beta_0+\beta_1X_1+\dots+\beta_pX_p\]</span> <span class="math display">\[p(X) = \frac{e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}{1+e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-10.8690452</td>
+<td style="text-align: right;">0.4922555</td>
+<td style="text-align: right;">-22.080088</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">balance</td>
+<td style="text-align: right;">0.0057365</td>
+<td style="text-align: right;">0.0002319</td>
+<td style="text-align: right;">24.737563</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">income</td>
+<td style="text-align: right;">0.0000030</td>
+<td style="text-align: right;">0.0000082</td>
+<td style="text-align: right;">0.369815</td>
+<td style="text-align: right;">0.7115203</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">studentYes</td>
+<td style="text-align: right;">-0.6467758</td>
+<td style="text-align: right;">0.2362525</td>
+<td style="text-align: right;">-2.737646</td>
+<td style="text-align: right;">0.0061881</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</div>
+<ul>
+<li>Why is the coefficient for <code>student</code> negative now when it was positive before?</li>
+</ul>
+</section>
+<section id="the-unforuntate-truth-logistic-regression" class="level2">
+<h2 class="anchored" data-anchor-id="the-unforuntate-truth-logistic-regression">The Unforuntate truth logistic regression</h2>
+</section>
+<section id="bayes-rule" class="level2">
+<h2 class="anchored" data-anchor-id="bayes-rule">Bayes Rule</h2>
+</section>
+<section id="linear-descriminant-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="linear-descriminant-analysis">Linear Descriminant Analysis</h2>
+
+
 </section>
 
 </main> <!-- /main -->

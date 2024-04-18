@@ -785,94 +785,28 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <p><span class="math display">\[P(\texttt{default = Yes}|\texttt{student = Yes}) = \frac{e^{-3.5041+0.4049\times1}}{1+e^{-3.5041+0.4049\times1}}=0.0431\]</span></p>
 <div class="fragment">
 <div class="question">
-<p>How will this change if <code>student = No</code>?</p>
+<p>How will this change if student = No?</p>
 </div>
 </div>
 <div class="fragment">
 <p><span class="math display">\[P(\texttt{default = Yes}|\texttt{student = No}) = \frac{e^{-3.5041+0.4049\times0}}{1+e^{-3.5041+0.4049\times0}}=0.0292\]</span></p>
 </div>
 </section>
-<section id="multiple-logistic-regression" class="slide level2 small">
-<h2>Multiple logistic regression</h2>
-<p><span class="math display">\[\log\left(\frac{p(X)}{1-p(X)}\right)=\beta_0+\beta_1X_1+\dots+\beta_pX_p\]</span> <span class="math display">\[p(X) = \frac{e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}{1+e^{\beta_0+\beta_1X_1+\dots+\beta_pX_p}}\]</span></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<table data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">term</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">std.error</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">statistic</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">p.value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">(Intercept)</td>
-<td style="text-align: right;">-10.8690452</td>
-<td style="text-align: right;">0.4922555</td>
-<td style="text-align: right;">-22.080088</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">balance</td>
-<td style="text-align: right;">0.0057365</td>
-<td style="text-align: right;">0.0002319</td>
-<td style="text-align: right;">24.737563</td>
-<td style="text-align: right;">0.0000000</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">income</td>
-<td style="text-align: right;">0.0000030</td>
-<td style="text-align: right;">0.0000082</td>
-<td style="text-align: right;">0.369815</td>
-<td style="text-align: right;">0.7115203</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">studentYes</td>
-<td style="text-align: right;">-0.6467758</td>
-<td style="text-align: right;">0.2362525</td>
-<td style="text-align: right;">-2.737646</td>
-<td style="text-align: right;">0.0061881</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-</div>
-</div>
-<ul>
-<li>Why is the coefficient for <code>student</code> negative now when it was positive before?</li>
-</ul>
-</section>
-<section id="confounding" class="slide level2 small">
-<h2>Confounding</h2>
+<section id="potential-confounding" class="slide level2 small">
+<h2>Potential Confounding</h2>
 
 <img data-src="04-logistic_files/figure-revealjs/plot3-1.png" width="960" class="r-stretch"><div class="question">
 <p>What is going on here?</p>
 </div>
 </section>
-<section id="confounding-1" class="slide level2 small">
+<section id="confounding" class="slide level2 small">
 <h2>Confounding</h2>
 
-<img data-src="04-logistic_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"><ul>
+<img data-src="04-logistic_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"><ul>
 <li>Students tend to have higher balances than non-students</li>
 <li>Their <strong>marginal</strong> default rate is higher</li>
 <li>For each level of balance, students default less</li>
 <li>Their <strong>conditional</strong> default rate is lower</li>
-</ul>
-</section>
-<section id="logistic-regression-for-more-than-two-classes" class="slide level2 small">
-<h2>Logistic regression for more than two classes</h2>
-<p><span class="math display">\[P(Y=k|X) = \frac{e ^{\beta_{0k}+\beta_{1k}X_1+\dots+\beta_{pk}X_p}}{\sum_{l=1}^Ke^{\beta_{0l}+\beta_{1l}X_1+\dots+\beta_{pl}X_p}}\]</span></p>
-<ul>
-<li>So far we’ve discussed <strong>binary</strong> outcome data</li>
-<li>We can generalize this to situations with <strong>multiple</strong> classes</li>
-<li>Here we have a linear function for <strong>each</strong> of the <span class="math inline">\(K\)</span> classes</li>
-<li>This is known as <strong>multinomial logistic regression</strong></li>
 </ul>
 </section>
 <section id="a-bit-about-odds" class="slide level2 small">
@@ -900,7 +834,7 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="transforming-logs-1" class="slide level2 small">
 <h2>Transforming logs</h2>
 <div class="question">
-<p>How would you get the <strong>odds</strong> from the <strong>log(odds)</strong>?</p>
+<p>How would you get the odds from the log(odds)?</p>
 </div>
 <div>
 <ul>
@@ -1069,10 +1003,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <table>
 <thead>
 <tr class="header">
+<th>Treatment</th>
 <th>TMS</th>
 <th>Placebo</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1111,10 +1045,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <table>
 <thead>
 <tr class="header">
+<th>Treatment</th>
 <th>TMS</th>
 <th>Placebo</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1147,15 +1081,15 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="odds-ratios-7" class="slide level2 small">
 <h2>Odds ratios</h2>
 <div class="question">
-<p>What if we wanted to calculate this in terms of <em>Not pain-free</em> (with <em>pain-free</em>) as the referent?</p>
+<p>What if we wanted to calculate this in terms of Not pain-free (with pain-free) as the referent?</p>
 </div>
 <table>
 <thead>
 <tr class="header">
+<th>Treatment</th>
 <th>TMS</th>
 <th>Placebo</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1192,10 +1126,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <table>
 <thead>
 <tr class="header">
+<th>Treatment</th>
 <th>TMS</th>
 <th>Placebo</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1230,10 +1164,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <table>
 <thead>
 <tr class="header">
+<th>Treatment</th>
 <th>TMS</th>
 <th>Placebo</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1266,10 +1200,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <table>
 <thead>
 <tr class="header">
+<th></th>
 <th>Female</th>
 <th>Male</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1302,10 +1236,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <table>
 <thead>
 <tr class="header">
+<th></th>
 <th>Female</th>
 <th>Male</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1339,10 +1273,10 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <table>
 <thead>
 <tr class="header">
+<th></th>
 <th>Female</th>
 <th>Male</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1371,15 +1305,15 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="odds-ratios-13" class="slide level2 small">
 <h2>Odds ratios</h2>
 <div class="question">
-<p>What if we wanted to fit a <strong>model</strong>? What would the equation be?</p>
+<p>What if we wanted to fit a model? What would the equation be?</p>
 </div>
 <table>
 <thead>
 <tr class="header">
+<th></th>
 <th>Female</th>
 <th>Male</th>
 <th>Total</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1584,7 +1518,11 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </section>
 <section id="application-exercise" class="slide level2">
 <h2><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"></path></svg> <code>Application Exercise</code></h2>
-<p>Using the <code>Default</code> data from the <code>ISLR</code> package, fit a logistic regression model predicting whether a customer <code>defaults</code> with whether they are a <code>student</code> and their current <code>balance</code>.</p>
+<p>Using the <code>Default</code> data from the <code>ISLR</code> package. Fit two logistic regression models that predict whether a customer <code>defaults</code></p>
+<ul>
+<li>One model with <code>student</code> as a predictor. Interpret the coefficient of <code>studentYes</code>.</li>
+<li>Another model with <code>balance</code> as a predictor. Interpret the coefficient of <code>balance</code>.</li>
+</ul>
 <p>Here is some code to get you started:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">library</span>(ISLR)</span>

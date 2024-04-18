@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Lucy D’Agostino McGowan modfied by Dr.&nbsp;Tyler George">
 
-<title>Introduction to Statistical Learning - Lab 02</title>
+<title>Introduction to Statistical Learning - Tentative Homework 3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,15 +104,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="Introduction to Statistical Learning - Lab 02">
-<meta property="og:description" content="Logistic Regression">
+<meta property="og:title" content="Introduction to Statistical Learning - Tentative Homework 3">
+<meta property="og:description" content="Logistic, LDA, QDA">
 <meta property="og:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta property="og:site_name" content="{{< var course.title >}}">
 <meta property="og:locale" content="en_US">
 <meta property="og:image:height" content="670">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Introduction to Statistical Learning - Lab 02">
-<meta name="twitter:description" content="Logistic Regression">
+<meta name="twitter:title" content="Introduction to Statistical Learning - Tentative Homework 3">
+<meta name="twitter:description" content="Logistic, LDA, QDA">
 <meta name="twitter:image" content="https://sta362-sb8-24.github.io/STA362StatLearning//img/twitter.png">
 <meta name="twitter:creator" content="@stats_tgeorge">
 <meta name="twitter:card" content="summary_large_image">
@@ -130,7 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 02</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tentative Homework 3</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -254,17 +253,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link active" data-scroll-target="#getting-started">Getting started</a>
-  <ul class="collapse">
-  <li><a href="#yaml" id="toc-yaml" class="nav-link" data-scroll-target="#yaml">YAML:</a></li>
-  </ul></li>
-  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
-  <ul class="collapse">
-  <li><a href="#conceptual-questions" id="toc-conceptual-questions" class="nav-link" data-scroll-target="#conceptual-questions">Conceptual questions</a></li>
-  <li><a href="#logistic-regression" id="toc-logistic-regression" class="nav-link" data-scroll-target="#logistic-regression">Logistic Regression</a></li>
-  </ul></li>
+  <li><a href="#due-4222024-at-9am" id="toc-due-4222024-at-9am" class="nav-link active" data-scroll-target="#due-4222024-at-9am">Due 4/22/2024 at 9am</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#exercises---note-the-chapter-number" id="toc-exercises---note-the-chapter-number" class="nav-link" data-scroll-target="#exercises---note-the-chapter-number">Exercises - NOTE THE CHAPTER NUMBER</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul>
 </nav>
     </div>
@@ -273,20 +265,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 02</h1>
-<p class="subtitle lead">Logistic Regression</p>
+<h1 class="title">Tentative Homework 3</h1>
+<p class="subtitle lead">Logistic, LDA, QDA</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Lucy D’Agostino McGowan modfied by Dr.&nbsp;Tyler George </p>
-          </div>
-  </div>
     
   
     
@@ -297,59 +283,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="getting-started" class="level1">
-<h1>Getting started</h1>
-<p>Go to our RStudio and create a new R project inside your class folder.</p>
-<section id="yaml" class="level2">
-<h2 class="anchored" data-anchor-id="yaml">YAML:</h2>
-<p>Create a <code>.qmd</code> file for your lab, make sure the author is your name, and Render the document.</p>
+<section id="due-4222024-at-9am" class="level2">
+<h2 class="anchored" data-anchor-id="due-4222024-at-9am">Due 4/22/2024 at 9am</h2>
 </section>
-</section>
-<section id="packages" class="level1">
-<h1>Packages</h1>
-<p>In this lab we will work with four packages: <code>ISLR</code> which is a package that accompanies your textbook, <code>tidyverse</code> which is a collection of packages for doing data analysis in a “tidy” way, <code>tidymodels</code> a collection of packages for statistical modeling, and <code>GGally</code>, a package to help us visualize the data.</p>
+<section id="instructions" class="level1">
+<h1>Instructions</h1>
+<ul>
+<li><p>Creating a new <em>project.</em> and giving it a sensible name such as homework3 and having that project in the course folder you created.</p></li>
+<li><p>Create a new quarto document and give it a sensible name such as hw3.</p></li>
+<li><p>In the <code>YAML</code> add the following (add what you don’t have). The embed-resources component will make your final rendered <code>html</code> self-contained.</p></li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ISLR)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Document title"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> <span class="st">"Your Name"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    embed<span class="sc">-</span>resources<span class="sc">:</span> true</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<ul>
+<li>Though the book used R code for base R, I want you to complete the exercises using functions from <em>tidymodels</em>.</li>
+<li>Set a seed before each problem.</li>
+<li>Make sure your answers print results. If the output is a large table, use the head() function to shorten the output.</li>
+</ul>
 </section>
-<section id="data" class="level1">
-<h1>Data</h1>
-<p>For this lab, we are using the <code>Smarket</code> data from the <code>ISLR</code> package.</p>
-</section>
-<section id="exercises" class="level1">
-<h1>Exercises</h1>
-<section id="conceptual-questions" class="level2">
-<h2 class="anchored" data-anchor-id="conceptual-questions">Conceptual questions</h2>
+<section id="exercises---note-the-chapter-number" class="level1">
+<h1>Exercises - NOTE THE CHAPTER NUMBER</h1>
 <ol type="1">
-<li>Suppose that an individual has a 23% chance of defaulting on their credit card payment. What are the odds that they will default?</li>
+<li><p><strong>Complete exercise chapter 5, number 5 in ISLR.</strong></p></li>
+<li><p><strong>Complete exercise chapter 5, number 5 in ISLR.</strong></p></li>
 </ol>
 </section>
-<section id="logistic-regression" class="level2">
-<h2 class="anchored" data-anchor-id="logistic-regression">Logistic Regression</h2>
-<ol start="2" type="1">
-<li><p>For this lab we are using the <code>Smarket</code> data. Examine this data set - how many observations are there? How many columns? What are the variables?</p></li>
-<li><p>Let’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?</p></li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpairs</span>(Smarket, </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">lower =</span> <span class="fu">list</span>(<span class="at">combo =</span> <span class="fu">wrap</span>(ggally_facethist, <span class="at">binwidth =</span> <span class="fl">0.5</span>)), </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">progress =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ol start="4" type="1">
-<li><p><strong>Inference</strong> Fit a logistic regression model to predict <code>Direction</code> using <code>Today</code>. Show a table that contains the coefficients and p-values along with the confidence intervals. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for <code>Today</code>.</p></li>
-<li><p><strong>Inference</strong> Exponentiate the results from Exercise 4. Interpret the <em>odds ratio</em> for the same predictor.</p></li>
-<li><p><strong>Prediction</strong> Using 5-fold cross validation, fit the same logistic regression model as Exercise 5. What is the test Accuracy for this model? Interpret this result.</p></li>
-<li><p><strong>Inference</strong> Fit a logistic regression model to predict <code>Direction</code> using <code>Volume</code>. Show a table that contains the coefficients and p-values along with the confidence intervals.</p></li>
-<li><p><strong>Inference</strong> Exponentiate the results from the previous Exercise. Interpret the <em>odds ratio</em> for <code>Volume</code>.</p></li>
-<li><p><strong>Prediction</strong> Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.</p></li>
-<li><p>If you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?</p></li>
-</ol>
+<section id="submission" class="level1">
+<h1>Submission</h1>
+<p>When you are finished with your homework, be sure to Render the final document. Once rendered, you can download your file by:</p>
+<ul>
+<li>Finding the .html file in your File pane (on the bottom right of the screen)</li>
+<li>Click the check box next to the file</li>
+<li>Click the blue gear above and then click “Export” to download</li>
+<li>Submit your final html document to the respective assignment on <a href="{{< var course.moodle >}}">Moodle</a></li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

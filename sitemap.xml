@@ -6,7 +6,7 @@
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04-logistic.html</loc>
-    <lastmod>2024-04-17T21:30:47.419Z</lastmod>
+    <lastmod>2024-04-18T16:48:18.400Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/01-02-welcome_to_sl.html</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/02-logistic.html</loc>
-    <lastmod>2024-04-17T20:13:12.798Z</lastmod>
+    <lastmod>2024-04-18T16:40:31.324Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/03-linear-regression.html</loc>
@@ -63,5 +63,13 @@
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/05-cv-tidymodels.html</loc>
     <lastmod>2024-04-17T21:38:49.137Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04_2-lda_qda.html</loc>
+    <lastmod>2024-04-18T16:29:28.921Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-03-logistic_lda_qda.html</loc>
+    <lastmod>2024-04-18T13:26:16.312Z</lastmod>
   </url>
 </urlset>
