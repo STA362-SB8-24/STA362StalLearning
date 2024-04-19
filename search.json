@@ -130,11 +130,11 @@
     "text": "Logistic regression example\nLet’s refit the model to predict the probability of default given the customer is a student\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-3.5041278\n0.0707130\n-49.554219\n0.0000000\n\n\nstudentYes\n0.4048871\n0.1150188\n3.520181\n0.0004313\n\n\n\n\n\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = Yes}) = \\frac{e^{-3.5041+0.4049\\times1}}{1+e^{-3.5041+0.4049\\times1}}=0.0431\\]\n\n\nHow will this change if student = No?\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = No}) = \\frac{e^{-3.5041+0.4049\\times0}}{1+e^{-3.5041+0.4049\\times0}}=0.0292\\]"
   },
   {
-    "objectID": "slides/04-logistic.html#multiple-logistic-regression",
-    "href": "slides/04-logistic.html#multiple-logistic-regression",
+    "objectID": "slides/04-logistic.html#potential-confounding",
+    "href": "slides/04-logistic.html#potential-confounding",
     "title": "Chapter 4 Part 1",
-    "section": "Multiple logistic regression",
-    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
+    "section": "Potential Confounding",
+    "text": "Potential Confounding\n\n\nWhat is going on here?"
   },
   {
     "objectID": "slides/04-logistic.html#confounding",
@@ -142,20 +142,6 @@
     "title": "Chapter 4 Part 1",
     "section": "Confounding",
     "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
-  },
-  {
-    "objectID": "slides/04-logistic.html#confounding-1",
-    "href": "slides/04-logistic.html#confounding-1",
-    "title": "Chapter 4 Part 1",
-    "section": "Confounding",
-    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
-  },
-  {
-    "objectID": "slides/04-logistic.html#logistic-regression-for-more-than-two-classes",
-    "href": "slides/04-logistic.html#logistic-regression-for-more-than-two-classes",
-    "title": "Chapter 4 Part 1",
-    "section": "Logistic regression for more than two classes",
-    "text": "Logistic regression for more than two classes\n\\[P(Y=k|X) = \\frac{e ^{\\beta_{0k}+\\beta_{1k}X_1+\\dots+\\beta_{pk}X_p}}{\\sum_{l=1}^Ke^{\\beta_{0l}+\\beta_{1l}X_1+\\dots+\\beta_{pl}X_p}}\\]\n\nSo far we’ve discussed binary outcome data\nWe can generalize this to situations with multiple classes\nHere we have a linear function for each of the \\(K\\) classes\nThis is known as multinomial logistic regression"
   },
   {
     "objectID": "slides/04-logistic.html#a-bit-about-odds",
@@ -366,6 +352,526 @@
     "title": "Chapter 4 Part 1",
     "section": " Application Exercise",
     "text": "Application Exercise\nUsing the Default data from the ISLR package. Fit two logistic regression models that predict whether a customer defaults\n\nOne model with student as a predictor. Interpret the coefficient of studentYes.\nAnother model with balance as a predictor. Interpret the coefficient of balance.\n\nHere is some code to get you started:\n\nlibrary(ISLR)\ndata(\"Default\")\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#application-exercise",
+    "href": "slides/03-linear-regression.html#application-exercise",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\nCreate a new quarto file for this homework in your exercises R project."
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#lets-look-at-an-example",
+    "href": "slides/03-linear-regression.html#lets-look-at-an-example",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s look at an example",
+    "text": "Let’s look at an example\nLet’s look at a sample of 116 sparrows from Kent Island. We are interested in the relationship between Weight and Wing Length\n\n\nthe standard error of \\(\\hat{\\beta_1}\\) ( \\(SE_{\\hat{\\beta}_1}\\) ) is how much we expect the sample slope to vary from one random sample to another."
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows",
+    "href": "slides/03-linear-regression.html#sparrows",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow can we quantify how much we’d expect the slope to differ from one random sample to another?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-1",
+    "href": "slides/03-linear-regression.html#sparrows-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow do we interpret this?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n“the sample slope is more than 13 standard errors above a slope of zero”"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-2",
+    "href": "slides/03-linear-regression.html#sparrows-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow do we know what values of this statistic are worth paying attention to?\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\nconfidence intervals\np-values"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#application-exercise-1",
+    "href": "slides/03-linear-regression.html#application-exercise-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp).\nPull out the coefficients and confidence intervals using the tidy() function demonstrated. How do you interpret these?"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-3",
+    "href": "slides/03-linear-regression.html#sparrows-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow are these statistics distributed under the null hypothesis?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy() \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-4",
+    "href": "slides/03-linear-regression.html#sparrows-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\nI’ve generated some data under a null hypothesis where \\(n = 20\\)"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-5",
+    "href": "slides/03-linear-regression.html#sparrows-5",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\nthis is a t-distribution with n-p-1 degrees of freedom."
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-6",
+    "href": "slides/03-linear-regression.html#sparrows-6",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\nThe distribution of test statistics we would expect given the null hypothesis is true, \\(\\beta_1 = 0\\), is t-distribution with n-2 degrees of freedom."
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-7",
+    "href": "slides/03-linear-regression.html#sparrows-7",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-8",
+    "href": "slides/03-linear-regression.html#sparrows-8",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow can we compare this line to the distribution under the null?\n\n\n\np-value"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-9",
+    "href": "slides/03-linear-regression.html#sparrows-9",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#return-to-generated-data-n-20",
+    "href": "slides/03-linear-regression.html#return-to-generated-data-n-20",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Return to generated data, n = 20",
+    "text": "Return to generated data, n = 20\n\n\nLet’s say we get a statistic of 1.5 in a sample"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r",
+    "href": "slides/03-linear-regression.html#lets-do-it-in-r",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area less than 1.5\n\n\npt(1.5, df = 18)\n\n[1] 0.9245248"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-1",
+    "href": "slides/03-linear-regression.html#lets-do-it-in-r-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5\n\n\npt(1.5, df = 18, lower.tail = FALSE)\n\n[1] 0.07547523"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-2",
+    "href": "slides/03-linear-regression.html#lets-do-it-in-r-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5 or less than -1.5.\n\n\n\npt(1.5, df = 18, lower.tail = FALSE) * 2\n\n[1] 0.1509505"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#hypothesis-test",
+    "href": "slides/03-linear-regression.html#hypothesis-test",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Hypothesis test",
+    "text": "Hypothesis test\n\nnull hypothesis \\(H_0: \\beta_1 = 0\\)\nalternative hypothesis \\(H_A: \\beta_1 \\ne 0\\)\np-value: 0.15\nOften, we have an \\(\\alpha\\)-level cutoff to compare this to, for example 0.05. Since this is greater than 0.05, we fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#application-exercise-2",
+    "href": "slides/03-linear-regression.html#application-exercise-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nUsing the linear model you fit previously (mpg from wt and hp) - calculate the p-value for the coefficient for weight\nInterpret this value. What is the null hypothesis? What is the alternative hypothesis? Do you reject the null?"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-3",
+    "href": "slides/03-linear-regression.html#lets-do-it-in-r-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\n\\(t^* = t_{n-p-1} = t_{114} = 1.98\\)\n\\(LB = 0.47 - 1.98\\times 0.0347 = 0.399\\)\n\\(UB = 0.47+1.98 \\times 0.0347 = 0.536\\)"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#linear-regression-questions",
+    "href": "slides/03-linear-regression.html#linear-regression-questions",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Questions",
+    "text": "Linear Regression Questions\n\n✔️ Is there a relationship between a response variable and predictors?\n✔️ How strong is the relationship?\n✔️ What is the uncertainty?\nHow accurately can we predict a future outcome?"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#sparrows-10",
+    "href": "slides/03-linear-regression.html#sparrows-10",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nUsing the information here, how could I predict a new sparrow’s weight if I knew the wing length was 30?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n\\(1.37 + 0.467 \\times 30 = 15.38\\)"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#linear-regression-accuracy",
+    "href": "slides/03-linear-regression.html#linear-regression-accuracy",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\nWhat is the residual sum of squares again?\n\n\nNote: In previous classes, this may have been referred to as SSE (sum of squares error), the book uses RSS, so we will stick with that!\n\n\n\\[RSS = \\sum(y_i - \\hat{y}_i)^2\\]"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#linear-regression-accuracy-1",
+    "href": "slides/03-linear-regression.html#linear-regression-accuracy-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\n\nThe total sum of squares represents the variability of the outcome, it is equivalent to the variability described by the model plus the remaining residual sum of squares\n\n\\[TSS = \\sum(y_i - \\bar{y})^2\\]"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#linear-regression-accuracy-2",
+    "href": "slides/03-linear-regression.html#linear-regression-accuracy-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\nThere are many ways “model fit” can be assessed. Two common ones are:\n\nResidual Standard Error (RSE)\n\\(R^2\\) - the fraction of the variance explained\n\n\\(RSE = \\sqrt{\\frac{1}{n-p-1}RSS}\\)\n\\(R^2 = 1 - \\frac{RSS}{TSS}\\)"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-4",
+    "href": "slides/03-linear-regression.html#lets-do-it-in-r-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\n\nlm_fit &lt;- linear_reg() |&gt; \n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows)\n\nlm_fit |&gt;\n  predict(new_data = Sparrows) |&gt;\n  bind_cols(Sparrows) |&gt;\n  rsq(truth = Weight, estimate = .pred) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rsq     standard       0.614\n\n\n\n\nIs this testing \\(R^2\\) or training \\(R^2\\)?"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#application-exercise-3",
+    "href": "slides/03-linear-regression.html#application-exercise-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp), using polynomials with 4 degrees of freedom for both.\nEstimate the training \\(R^2\\) using the rsq function.\nInterpret this values."
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#application-exercise-4",
+    "href": "slides/03-linear-regression.html#application-exercise-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nCreate a cross validation object to do 5 fold cross validation using the mtcars data\nRefit the model on this object (using fit_resamples)\nUse collect_metrics to estimate the test \\(R^2\\) - how does this compare to the training \\(R^2\\) calculated in the previous exercise?"
+  },
+  {
+    "objectID": "slides/03-linear-regression.html#additional-linear-regression-topics",
+    "href": "slides/03-linear-regression.html#additional-linear-regression-topics",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Additional Linear Regression Topics",
+    "text": "Additional Linear Regression Topics\n\nPolynomial terms\nInteractions\nOutliers\nNon-constant variance of error terms\nHigh leverage points\nCollinearity\n\nRefer to Chapter 3 for more details on these topics if you need a refresher.\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "labs/03-lda_qda.html",
+    "href": "labs/03-lda_qda.html",
+    "title": "Lab 03",
+    "section": "",
+    "text": "Go to our RStudio and create a new R project inside your class folder.\n\n\nCreate a .qmd file for your lab, make sure the author is your name, and Render the document."
+  },
+  {
+    "objectID": "labs/03-lda_qda.html#yaml",
+    "href": "labs/03-lda_qda.html#yaml",
+    "title": "Lab 03",
+    "section": "",
+    "text": "Create a .qmd file for your lab, make sure the author is your name, and Render the document."
+  },
+  {
+    "objectID": "labs/03-lda_qda.html#conceptual-questions",
+    "href": "labs/03-lda_qda.html#conceptual-questions",
+    "title": "Lab 03",
+    "section": "Conceptual questions",
+    "text": "Conceptual questions\n\nSuppose that an individual has a 23% chance of defaulting on their credit card payment. What are the odds that they will default?"
+  },
+  {
+    "objectID": "labs/03-lda_qda.html#logistic-regression",
+    "href": "labs/03-lda_qda.html#logistic-regression",
+    "title": "Lab 03",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\nFor this lab we are using the Smarket data. Examine this data set - how many observations are there? How many columns? What are the variables?\nLet’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?\n\n\nggpairs(Smarket, \n        lower = list(combo = wrap(ggally_facethist, binwidth = 0.5)), \n        progress = FALSE)\n\n\nInference Fit a logistic regression model to predict Direction using Lag1, Lag2, Lag3, Lag4, Lag5, and Volume. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 6 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 4. Interpret the odds ratio for the same predictor you selected in Exercise 4.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 4. What is the test Accuracy for this model? Interpret this result.\nInference Fit a logistic regression model to predict Direction using only Lag1 and Lag2. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 2 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 7. Interpret the odds ratio for the same predictor you selected in Exercise 7.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.\nIf you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?"
+  },
+  {
+    "objectID": "labs/01-cv-tm.html",
+    "href": "labs/01-cv-tm.html",
+    "title": "Lab 01",
+    "section": "",
+    "text": "Go to our RStudio and create a new R project inside your class folder."
+  },
+  {
+    "objectID": "labs/01-cv-tm.html#yaml",
+    "href": "labs/01-cv-tm.html#yaml",
+    "title": "Lab 01",
+    "section": "YAML:",
+    "text": "YAML:\nOpen the .qmd file in your project, make sure the author is your name, and Render the document."
+  },
+  {
+    "objectID": "labs/01-cv-tm.html#conceptual-questions",
+    "href": "labs/01-cv-tm.html#conceptual-questions",
+    "title": "Lab 01",
+    "section": "Conceptual questions",
+    "text": "Conceptual questions\n\nExplain how k-fold Cross Validation is implemented.\nWhat are the advantages / disadvantages of k-fold Cross Validation compared to the Validation Set approach? What are the advantages / disadvantages of k-fold Cross Validation compared to Leave-one-out Cross Validation?"
+  },
+  {
+    "objectID": "labs/01-cv-tm.html#data-exploration",
+    "href": "labs/01-cv-tm.html#data-exploration",
+    "title": "Lab 01",
+    "section": "Data exploration",
+    "text": "Data exploration\n\nFor this analysis, we are using the Auto dataset from the ISLR package. How many rows are in this dataset? How many columns? Is there any missing data?\nOur outcome of interest is miles per gallon: mpg. Create a publication-ready figure examining the distribution of this variable.\nOur main predictor of interest is horsepower. Create a publication-ready figure looking at the relationship between miles per gallon and horsepower."
+  },
+  {
+    "objectID": "labs/01-cv-tm.html#k-fold-cross-validation",
+    "href": "labs/01-cv-tm.html#k-fold-cross-validation",
+    "title": "Lab 01",
+    "section": "K-fold cross validation",
+    "text": "K-fold cross validation\nWe are trying to decide between three models of varying flexibility:\n\nModel 1: \\(\\texttt{mpg} = \\beta_0 + \\beta_1 \\texttt{horsepower} + \\epsilon\\)\nModel 2: \\(\\texttt{mpg} = \\beta_0 + \\beta_1 \\texttt{horsepower} + \\beta_2 \\texttt{horsepower}^2 + \\epsilon\\)\nModel 3: \\(\\texttt{mpg} = \\beta_0 + \\beta_1 \\texttt{horsepower} + \\beta_2 \\texttt{horsepower}^2 + \\beta_3 \\texttt{horsepower}^3 + \\epsilon\\)\n\n\nUsing the Auto data, split the data into two groups a training data set, saved as Auto_train and a testing data set, saved as Auto_test. Be sure to set a seed to ensure that you get the same result each time you Render your document.\n\n\n\nYou can use the poly() function to fit a model with a polynomial term. For example, to fit the model \\(y = \\beta_0 + \\beta_1 \\texttt{x} + \\beta_2 \\texttt{x}^2 + \\beta_3 \\texttt{x}^3 + \\epsilon\\), you would run fit(lm_spec, y ~ poly(x, 3), data = data)\n\nFit the three models outlined above on the training data. Using the model created on the training data, predict mpg in the test data set for each model. What is the test RMSE for the three models? Which model would you choose?\nFit the same three models, but instead of the validation set approach, perform 5-fold cross validation. Make sure to set a seed so you get the same answer each time you run the analysis. Calculate the overall 5-fold cross validation error for each of the three models. Which model would you chose?\nThe tidymodels package allows you to do this faster! Instead of having a fit 3 (or more!) different models to determine the best flexibility, you can (1) create a recipe to specify how you would like to fit a model and then (2) tune this model to determine the best output. Copy the code below. What do you think the line step_poly(horsepower, degree = tune()) does? Hint: you can run ?step_poly in the Console to learn more about this function.\n\n\nauto_prep &lt;- Auto |&gt;\n  recipe(mpg ~ horsepower) |&gt;\n  step_poly(horsepower, degree = tune())\n\n\nTo tune this model, you will replace fit_resamples with tune_grid. The pseudo code to do this is below - you may need to update some names to match what you have named objects in your document. Add the code to tune your model based on the code below.\n\n\nauto_tune &lt;- tune_grid(lm_spec,\n          auto_prep,\n          resamples = auto_cv)\n\n\nUsing the collect_metrics function, look at the RMSE for auto_tune. Which degree is preferable?\nYou can plot the output from Exercise 11 to make it a bit easier to determine. First, save your output from Exercise 11 as auto_metrics. Then filter this data frame to only include rows where .metric == \"rmse\". Save this filtered data frame as auto_rmse. Edit the code below to plot the degree on the x-axis and mean on the y-axis. Describe what this plot shows.\n\n\nggplot(auto_rmse, aes(x = ----, y = ----)) + \n  geom_line() +\n  geom_pointrange(aes(ymin = mean - std_err, ymax = mean + std_err)) + \n  labs(x = \"Degree\",\n       y = \"Cross validation error\",\n       title = ---)"
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html",
+    "href": "hw/hw-01-intro-review.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "R is the name of the programming language itself and RStudio is a convenient interface.\nThe main goal of this homework is to re-introduce you to R and RStudio, which we will be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions.\nAs the homework’s progress, you are encouraged to explore beyond what the homework dictates; a willingness to experiment will make you a much better programmer. Before we get to that stage, however, you need to build some basic fluency in R. Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands."
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html#this-one-time",
+    "href": "hw/hw-01-intro-review.html#this-one-time",
+    "title": "Homework 1",
+    "section": "This One Time",
+    "text": "This One Time\n\nGo to our RStudio Server at http://turing.cornellcollege.edu:8787/\nClick File tab on the bottom right and then click the work Home.\nCreate a new folder using the little folder icon with the green plus on it. Use STA 362 in the folder name."
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html#every-homeworklabactivity",
+    "href": "hw/hw-01-intro-review.html#every-homeworklabactivity",
+    "title": "Homework 1",
+    "section": "Every Homework/lab/activity",
+    "text": "Every Homework/lab/activity\nEach of your assignments will begin with the following steps.\n\nFinding the instructions on our website: https://sta362-sb8-24.github.io/STA362StatLearning/\nGoing to our RStudio Server at http://turing.cornellcollege.edu:8787/\nCreating a new project. and giving it a sensible name such as homework_1 and having that project in the course folder you created.\nCreate a new quarto document and give it a sensible name such as hw1.\nIn the YAML add the following (add what you don’t have). The embed-resources component will make your final rendered html self-contained.\n\n---\ntitle: \"Document title\"\nauthor: \"my name\"\nformat:\n  html:\n    embed-resources: true\n---"
+  },
+  {
+    "objectID": "hw/hw-01-intro-review.html#yaml",
+    "href": "hw/hw-01-intro-review.html#yaml",
+    "title": "Homework 1",
+    "section": "YAML",
+    "text": "YAML\nIn your Quarto (qmd) file in your project, change the author name to your name, and render the document. Make sure that you also have added the extra YAML clode above."
+  },
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "Introduction to Statistical Learning",
+    "section": "",
+    "text": "Course Description\nThis course will introduce students to relatively new and powerful statistical techniques used to analyze data. The course will begin with a review of linear regression and an introduction to computer-based variable and model selection methods. Other topics will include classification methods, resampling methods for model-building, non-linear models, and tree-based methods. The computer software program R will be used throughout.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "course-instructor.html",
+    "href": "course-instructor.html",
+    "title": "Instructor",
+    "section": "",
+    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
+    "crumbs": [
+      "Course information",
+      "Instructor"
+    ]
+  },
+  {
+    "objectID": "course-instructor.html#instructor",
+    "href": "course-instructor.html#instructor",
+    "title": "Instructor",
+    "section": "",
+    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
+    "crumbs": [
+      "Course information",
+      "Instructor"
+    ]
+  },
+  {
+    "objectID": "computing-access.html",
+    "href": "computing-access.html",
+    "title": "Computing access",
+    "section": "",
+    "text": "To access computing resources the course, Introduction to Data Science, offered by the Cornell College Department of Mathematics and Statistics, go to the RStudio Server while on campus and connected to campus internet.\nYour account will be pre-created before the class begins and will use your Cornell College username. The default password will be shared in class and you will need to change it.",
+    "crumbs": [
+      "Course information",
+      "R/RStudio Access"
+    ]
+  },
+  {
+    "objectID": "course-links.html",
+    "href": "course-links.html",
+    "title": "Useful links",
+    "section": "",
+    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#course-links",
+    "href": "course-links.html#course-links",
+    "title": "Useful links",
+    "section": "",
+    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#other-useful-links",
+    "href": "course-links.html#other-useful-links",
+    "title": "Useful links",
+    "section": "Other Useful Links",
+    "text": "Other Useful Links\n\nData Wrangling and Viz Interactive Tutorials\nRStudio Cheatsheets\nIntroduction to dplyr\nR Date Examples\nNY Times Cornell College Sign-up\nR for Data Science 2nd Ed\nQuarto Documentation\nData visualization\n\nggplot2 Reference\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A Practice Introduction\nPatchwork R Package",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#data-links",
+    "href": "course-links.html#data-links",
+    "title": "Useful links",
+    "section": "Data Links",
+    "text": "Data Links\n\nTidyTuesday\nR Data Sources for Regression Analysis\nFiveThirtyEight data\nAmazon Registry of Open Data\nOpen data StackExchange\nMicrosoft R Application Window\nData.gov\nUS Census\nNew York City data\nGeorge Mason University Data Link List\nToward Data Science list of Data Sources\nNHS Scotland Open Data\nEdinburgh Open Data\nOpen access to Scotland’s official statistics\nBikeshare data portal\nUK Gov Data\nKaggle datasets\nOpenIntro datasets\nAwesome public datasets\nYouth Risk Behavior Surveillance System (YRBSS)\nPRISM Data Archive Project\nHarvard Dataverse\nAndrew G. Reiter Poly Scie Datasets\nEuropean Statistics\nStatistics Canada\nPew Research\nUNICEF\nCDC\nWorld Bank\nElection Studies\nU.S. Data\nWorld Health Organization\nThe National Bureau of Economic Research\nInternational Monetary Fund\nGeneral Social Survey\nUnited Nations Data\nUnited Nations Statistics Division\nState of Iowa Open Geospatial Data\nIf you know of others, let me know!",
+    "crumbs": [
+      "Course Contents",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-support.html",
+    "href": "course-support.html",
+    "title": "Course support",
+    "section": "",
+    "text": "Most of you will need help at some point and we want to make sure you can identify when that is without getting too frustrated and feel comfortable seeking help.\nYou can ask anonymous course questions by adding them at https://docs.google.com/spreadsheets/d/1R33yYyRdFoRMDtSnD-CzLOqIEwYNrC3kepMm4ZN_PWM/edit?usp=sharing.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#lectures-and-labs",
+    "href": "course-support.html#lectures-and-labs",
+    "title": "Course support",
+    "section": "Lectures and labs",
+    "text": "Lectures and labs\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#office-hours",
+    "href": "course-support.html#office-hours",
+    "title": "Course support",
+    "section": "Office hours",
+    "text": "Office hours\nYou are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. I encourage each and every one of you to take advantage of this resource! Make a pledge to stop by office hours at least once during the first few days of class. If you truly have no questions to ask, just stop by and say hi and introduce yourself. You can find a list of your professors office hours here.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#academic-support",
+    "href": "course-support.html#academic-support",
+    "title": "Course support",
+    "section": "Academic support",
+    "text": "Academic support\n\nQuantitative Reasoning Studio (QRS)\nThere are times you may need help outside of class or office hours. Or, maybe you need something explained in a different way. In those instances, I encourage you to visit the Quantitative Reasoning Studio in Cole Library room 322. The Quantitative Reasoning Studio (QRS) offers free tutoring to all students at Cornell College. There will be at least 1 peer tutor that has taken this course and will be able to help you, if you arrive at a time they are working. Feel free to email Jessica Johanningmeier at QRS@cornellcollege.edu to ask when the tutor for this class will be available. They often will have a schedule posted on the wall in the studio.\n\n\nQRS Hours\n\n\n\nDay(s)\nTimes\n\n\n\n\nMonday-Thursday\n8 a.m. - 5 p.m. and 7 p.m. - 10 p.m.\n\n\nFriday\n8 a.m. - 5 p.m.\n\n\nSunday\n3 p.m. - 5 p.m. and 7 p.m. - 10 p.m.\n\n\n\n\n\nDungy Writing Studio\nFor help with your writing, visit the Dungy Writing Studio. You can make online appointments individual or groups to get help with items such as your group project. If you have any questions about the studio, email Dungy Writing Studio Director and Director of Fellowships and Scholarships, Laura Farmer, at lfarmer@cornellcollege.edu.\n\n\nWriting Studio Hours\n\n\n\nDay(s)\nTimes\n\n\n\n\nMonday-Thursday\n8 a.m. - 5 p.m. and 7 p.m. - 10 p.m.\n\n\nFriday\n8 a.m. - 5 p.m.\n\n\nSunday\n1 p.m. - 5 p.m.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#student-success-center",
+    "href": "course-support.html#student-success-center",
+    "title": "Course support",
+    "section": "Student Success Center",
+    "text": "Student Success Center\nThe Student Success Center is a resource for all students. Their staff serves as student success coaches for all students and welcome students to visit us to talk about academic concerns, study plans, finding their place at Cornell, or any questions you have and aren’t sure where to start! You can walk in to chat or contact a staff member directly to set up an appointment! See the website for more information.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#professor-email",
+    "href": "course-support.html#professor-email",
+    "title": "Course support",
+    "section": "Professor Email",
+    "text": "Professor Email\nIf you are not available during office hours times or have a questions later in the evening or other times outside of class, email your professor at tgeorge@cornellcollege.edu. If your question involves code - it is very likely you will need to meet with him to get help. Please reach out with any concerns you have during the course!",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#ebersole-health-and-wellbeing-center",
+    "href": "course-support.html#ebersole-health-and-wellbeing-center",
+    "title": "Course support",
+    "section": "Ebersole Health and Wellbeing Center",
+    "text": "Ebersole Health and Wellbeing Center\nThe mission of Cornell College Student Health Services complements the mission of the college by promoting the optimal well-being of students. We do this by:\n\nproviding and coordinating quality health care services\nadvocating for students in their pursuit of health and wellness\npreparing students to be their own health advocates and informed consumers of appropriate health care services\nproviding health education to promote the development of healthy lifestyles\n\nThe Student Health Center is located in the Ebersole Building, directly south of the Thomas Commons. Appointments are preferred. You can schedule an appointment online or by phone at 319-895-4292. Walk-ins will be accommodated as time permits. Appointments with the nurse are free.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#technology-support",
+    "href": "course-support.html#technology-support",
+    "title": "Course support",
+    "section": "Technology Support",
+    "text": "Technology Support\nIf you have issues with your computer during the block, IT may be able to help. Please submit a ticket.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#course-materials-costs",
+    "href": "course-support.html#course-materials-costs",
+    "title": "Course support",
+    "section": "Course materials costs",
+    "text": "Course materials costs\nThere are no costs associated with this course. All readings will come from freely available, open resources (open-source textbooks, journal articles, etc.).",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Statistical Learning Schedule",
+    "section": "",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "crumbs": [
+      "Course Contents",
+      "Schedule & Assignments"
+    ]
+  },
+  {
+    "objectID": "labs/02-logistic.html",
+    "href": "labs/02-logistic.html",
+    "title": "Lab 02",
+    "section": "",
+    "text": "Go to our RStudio and create a new R project inside your class folder.\n\n\nCreate a .qmd file for your lab, make sure the author is your name, and Render the document."
+  },
+  {
+    "objectID": "labs/02-logistic.html#yaml",
+    "href": "labs/02-logistic.html#yaml",
+    "title": "Lab 02",
+    "section": "",
+    "text": "Create a .qmd file for your lab, make sure the author is your name, and Render the document."
+  },
+  {
+    "objectID": "labs/02-logistic.html#conceptual-questions",
+    "href": "labs/02-logistic.html#conceptual-questions",
+    "title": "Lab 02",
+    "section": "Conceptual questions",
+    "text": "Conceptual questions\n\nSuppose that an individual has a 23% chance of defaulting on their credit card payment. What are the odds that they will default?"
+  },
+  {
+    "objectID": "labs/02-logistic.html#logistic-regression",
+    "href": "labs/02-logistic.html#logistic-regression",
+    "title": "Lab 02",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\nFor this lab we are using the Smarket data. Examine this data set - how many observations are there? How many columns? What are the variables?\nLet’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?\n\n\nggpairs(Smarket, \n        lower = list(combo = wrap(ggally_facethist, binwidth = 0.5)), \n        progress = FALSE)\n\n\nInference Fit a logistic regression model to predict Direction using Lag1, Lag2, Lag3, Lag4, Lag5, and Volume. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 6 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 4. Interpret the odds ratio for the same predictor you selected in Exercise 4.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 4. What is the test Accuracy for this model? Interpret this result.\nInference Fit a logistic regression model to predict Direction using only Lag1 and Lag2. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 2 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 7. Interpret the odds ratio for the same predictor you selected in Exercise 7.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.\nIf you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?"
   },
   {
     "objectID": "slides/01-02-welcome_to_sl.html#section",
@@ -753,496 +1259,298 @@
     "text": "Accuracy\n\nMisclassification error rate\n\n\\[Err_{\\texttt{test}} = \\frac{\\#correct predictions}{total predictions} = \\textrm{Ave}_{test}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]\\] &gt; * \\(I(\\cdot)\\) is an indicator function and will only be eitehr 0 or 1.\n\nThe Bayes Classifier using the true \\(p_k(x)\\) has the smallest error\nSome of the methods we (may) learn build structured models for \\(\\mathcal{C}(x)\\) (support vector machines, for example)\nSome build structured models for \\(p_k(x)\\) (logistic regression, for example)\n\n\n\nthe test error rate \\(\\textrm{Ave}_{i\\in\\texttt{test}}I[y_i\\neq \\mathcal{\\hat{C}}(x_i)]\\) is minimized on average by very simple classifier that assigns each observation to the most likely class, given its predictor values (that’s the Bayes classifier)\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
   },
   {
-    "objectID": "labs/01-cv-tm.html",
-    "href": "labs/01-cv-tm.html",
-    "title": "Lab 01",
-    "section": "",
-    "text": "Go to our RStudio and create a new R project inside your class folder."
+    "objectID": "slides/04-2-lda-qda.html#recap",
+    "href": "slides/04-2-lda-qda.html#recap",
+    "title": "Chapter 4 Part 2",
+    "section": "Recap",
+    "text": "Recap\n\nWe had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
   },
   {
-    "objectID": "labs/01-cv-tm.html#yaml",
-    "href": "labs/01-cv-tm.html#yaml",
-    "title": "Lab 01",
-    "section": "YAML:",
-    "text": "YAML:\nOpen the .qmd file in your project, make sure the author is your name, and Render the document."
+    "objectID": "slides/04-2-lda-qda.html#setup",
+    "href": "slides/04-2-lda-qda.html#setup",
+    "title": "Chapter 4 Part 2",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)\nlibrary(Stat2Data)\n#install.packages(\"discrim\")"
   },
   {
-    "objectID": "labs/01-cv-tm.html#conceptual-questions",
-    "href": "labs/01-cv-tm.html#conceptual-questions",
-    "title": "Lab 01",
-    "section": "Conceptual questions",
-    "text": "Conceptual questions\n\nExplain how k-fold Cross Validation is implemented.\nWhat are the advantages / disadvantages of k-fold Cross Validation compared to the Validation Set approach? What are the advantages / disadvantages of k-fold Cross Validation compared to Leave-one-out Cross Validation?"
+    "objectID": "slides/04-2-lda-qda.html#multinomial-logistic",
+    "href": "slides/04-2-lda-qda.html#multinomial-logistic",
+    "title": "Chapter 4 Part 2",
+    "section": "Multinomial Logistic",
+    "text": "Multinomial Logistic\n\nSo far we have discussed logistic regression with two classes.\nIt is easily generalized to more than two classes."
   },
   {
-    "objectID": "labs/01-cv-tm.html#data-exploration",
-    "href": "labs/01-cv-tm.html#data-exploration",
-    "title": "Lab 01",
-    "section": "Data exploration",
-    "text": "Data exploration\n\nFor this analysis, we are using the Auto dataset from the ISLR package. How many rows are in this dataset? How many columns? Is there any missing data?\nOur outcome of interest is miles per gallon: mpg. Create a publication-ready figure examining the distribution of this variable.\nOur main predictor of interest is horsepower. Create a publication-ready figure looking at the relationship between miles per gallon and horsepower."
+    "objectID": "slides/04-2-lda-qda.html#confounding",
+    "href": "slides/04-2-lda-qda.html#confounding",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\nWhat is going on here?"
   },
   {
-    "objectID": "labs/01-cv-tm.html#k-fold-cross-validation",
-    "href": "labs/01-cv-tm.html#k-fold-cross-validation",
-    "title": "Lab 01",
-    "section": "K-fold cross validation",
-    "text": "K-fold cross validation\nWe are trying to decide between three models of varying flexibility:\n\nModel 1: \\(\\texttt{mpg} = \\beta_0 + \\beta_1 \\texttt{horsepower} + \\epsilon\\)\nModel 2: \\(\\texttt{mpg} = \\beta_0 + \\beta_1 \\texttt{horsepower} + \\beta_2 \\texttt{horsepower}^2 + \\epsilon\\)\nModel 3: \\(\\texttt{mpg} = \\beta_0 + \\beta_1 \\texttt{horsepower} + \\beta_2 \\texttt{horsepower}^2 + \\beta_3 \\texttt{horsepower}^3 + \\epsilon\\)\n\n\nUsing the Auto data, split the data into two groups a training data set, saved as Auto_train and a testing data set, saved as Auto_test. Be sure to set a seed to ensure that you get the same result each time you Render your document.\n\n\n\nYou can use the poly() function to fit a model with a polynomial term. For example, to fit the model \\(y = \\beta_0 + \\beta_1 \\texttt{x} + \\beta_2 \\texttt{x}^2 + \\beta_3 \\texttt{x}^3 + \\epsilon\\), you would run fit(lm_spec, y ~ poly(x, 3), data = data)\n\nFit the three models outlined above on the training data. Using the model created on the training data, predict mpg in the test data set for each model. What is the test RMSE for the three models? Which model would you choose?\nFit the same three models, but instead of the validation set approach, perform 5-fold cross validation. Make sure to set a seed so you get the same answer each time you run the analysis. Calculate the overall 5-fold cross validation error for each of the three models. Which model would you chose?\nThe tidymodels package allows you to do this faster! Instead of having a fit 3 (or more!) different models to determine the best flexibility, you can (1) create a recipe to specify how you would like to fit a model and then (2) tune this model to determine the best output. Copy the code below. What do you think the line step_poly(horsepower, degree = tune()) does? Hint: you can run ?step_poly in the Console to learn more about this function.\n\n\nauto_prep &lt;- Auto |&gt;\n  recipe(mpg ~ horsepower) |&gt;\n  step_poly(horsepower, degree = tune())\n\n\nTo tune this model, you will replace fit_resamples with tune_grid. The pseudo code to do this is below - you may need to update some names to match what you have named objects in your document. Add the code to tune your model based on the code below.\n\n\nauto_tune &lt;- tune_grid(lm_spec,\n          auto_prep,\n          resamples = auto_cv)\n\n\nUsing the collect_metrics function, look at the RMSE for auto_tune. Which degree is preferable?\nYou can plot the output from Exercise 11 to make it a bit easier to determine. First, save your output from Exercise 11 as auto_metrics. Then filter this data frame to only include rows where .metric == \"rmse\". Save this filtered data frame as auto_rmse. Edit the code below to plot the degree on the x-axis and mean on the y-axis. Describe what this plot shows.\n\n\nggplot(auto_rmse, aes(x = ----, y = ----)) + \n  geom_line() +\n  geom_pointrange(aes(ymin = mean - std_err, ymax = mean + std_err)) + \n  labs(x = \"Degree\",\n       y = \"Cross validation error\",\n       title = ---)"
+    "objectID": "slides/04-2-lda-qda.html#confounding-1",
+    "href": "slides/04-2-lda-qda.html#confounding-1",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
   },
   {
-    "objectID": "hw/hw-01-intro-review.html",
-    "href": "hw/hw-01-intro-review.html",
-    "title": "Homework 1",
-    "section": "",
-    "text": "R is the name of the programming language itself and RStudio is a convenient interface.\nThe main goal of this homework is to re-introduce you to R and RStudio, which we will be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions.\nAs the homework’s progress, you are encouraged to explore beyond what the homework dictates; a willingness to experiment will make you a much better programmer. Before we get to that stage, however, you need to build some basic fluency in R. Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands."
+    "objectID": "slides/04-2-lda-qda.html#multiple-logistic-regression",
+    "href": "slides/04-2-lda-qda.html#multiple-logistic-regression",
+    "title": "Chapter 4 Part 2",
+    "section": "Multiple logistic regression",
+    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
   },
   {
-    "objectID": "hw/hw-01-intro-review.html#this-one-time",
-    "href": "hw/hw-01-intro-review.html#this-one-time",
-    "title": "Homework 1",
-    "section": "This One Time",
-    "text": "This One Time\n\nGo to our RStudio Server at http://turing.cornellcollege.edu:8787/\nClick File tab on the bottom right and then click the work Home.\nCreate a new folder using the little folder icon with the green plus on it. Use STA 362 in the folder name."
+    "objectID": "slides/04-2-lda-qda.html#logistic-regression-for-more-than-two-classes",
+    "href": "slides/04-2-lda-qda.html#logistic-regression-for-more-than-two-classes",
+    "title": "Chapter 4 Part 2",
+    "section": "Logistic regression for more than two classes",
+    "text": "Logistic regression for more than two classes\n\\[P(Y=k|X) = \\frac{e ^{\\beta_{0k}+\\beta_{1k}X_1+\\dots+\\beta_{pk}X_p}}{\\sum_{l=1}^Ke^{\\beta_{0l}+\\beta_{1l}X_1+\\dots+\\beta_{pl}X_p}}\\]\n\nWe generalize this to situations with multiple classes\nHere we have a linear function for each of the \\(K\\) classes\nThis is known as multinomial logistic regression"
   },
   {
-    "objectID": "hw/hw-01-intro-review.html#every-homeworklabactivity",
-    "href": "hw/hw-01-intro-review.html#every-homeworklabactivity",
-    "title": "Homework 1",
-    "section": "Every Homework/lab/activity",
-    "text": "Every Homework/lab/activity\nEach of your assignments will begin with the following steps.\n\nFinding the instructions on our website: https://sta362-sb8-24.github.io/STA362StatLearning/\nGoing to our RStudio Server at http://turing.cornellcollege.edu:8787/\nCreating a new project. and giving it a sensible name such as homework_1 and having that project in the course folder you created.\nCreate a new quarto document and give it a sensible name such as hw1.\nIn the YAML add the following (add what you don’t have). The embed-resources component will make your final rendered html self-contained.\n\n---\ntitle: \"Document title\"\nauthor: \"my name\"\nformat:\n  html:\n    embed-resources: true\n---"
+    "objectID": "slides/04-2-lda-qda.html#lda-warmup",
+    "href": "slides/04-2-lda-qda.html#lda-warmup",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Warmup",
+    "text": "LDA Warmup\nTo give us a general overview, we are going to watch the StatQuest video on the topic: https://www.youtube.com/watch?v=azXCzI57Yfc"
   },
   {
-    "objectID": "hw/hw-01-intro-review.html#yaml",
-    "href": "hw/hw-01-intro-review.html#yaml",
-    "title": "Homework 1",
-    "section": "YAML",
-    "text": "YAML\nIn your Quarto (qmd) file in your project, change the author name to your name, and render the document. Make sure that you also have added the extra YAML clode above."
+    "objectID": "slides/04-2-lda-qda.html#discriminant-analysis",
+    "href": "slides/04-2-lda-qda.html#discriminant-analysis",
+    "title": "Chapter 4 Part 2",
+    "section": "Discriminant Analysis",
+    "text": "Discriminant Analysis\n\nHere the approach is to model the distribution of X in each of the classes separately, and then use Bayes theorem to flip things around and obtain \\(P(Y|X)\\).\nWhen we use normal (Gaussian) distributions for each class, this leads to linear or quadratic discriminant analysis.\nHowever, this approach is quite general, and other distributions can be used as well. We will focus on normal distributions."
   },
   {
-    "objectID": "course-overview.html",
-    "href": "course-overview.html",
-    "title": "Introduction to Statistical Learning",
-    "section": "",
-    "text": "Course Description\nThis course will introduce students to relatively new and powerful statistical techniques used to analyze data. The course will begin with a review of linear regression and an introduction to computer-based variable and model selection methods. Other topics will include classification methods, resampling methods for model-building, non-linear models, and tree-based methods. The computer software program R will be used throughout.",
-    "crumbs": [
-      "Course information",
-      "Overview"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#why-another-approach",
+    "href": "slides/04-2-lda-qda.html#why-another-approach",
+    "title": "Chapter 4 Part 2",
+    "section": "Why Another Approach?",
+    "text": "Why Another Approach?\n\nWhen the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.\nIf n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.\nLinear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data."
   },
   {
-    "objectID": "course-instructor.html",
-    "href": "course-instructor.html",
-    "title": "Instructor",
-    "section": "",
-    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
-    "crumbs": [
-      "Course information",
-      "Instructor"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#bayes-theorem-classification",
+    "href": "slides/04-2-lda-qda.html#bayes-theorem-classification",
+    "title": "Chapter 4 Part 2",
+    "section": "Bayes Theorem (classification)",
+    "text": "Bayes Theorem (classification)\nThomas Bayes was a famous mathematician whose name represents a big subfield of statistical and probabilistic modeling. Here we focus on a simple result, known as Bayes theorem:\n\\[P(Y=k|X=x) = \\frac{P(X=x|Y=k)\\cdot P(Y=k)}{P(X=x)}\\]"
   },
   {
-    "objectID": "course-instructor.html#instructor",
-    "href": "course-instructor.html#instructor",
-    "title": "Instructor",
-    "section": "",
-    "text": "Dr. Tyler George (he/him) is a Assistant Professor of Statistics at Cornell College. He received his PhD in Statistics and Analytics from Central Michigan University. During his PhD he also studied mathematics and statistics education. His dissertation work involved creating a new lack of fit test for linear regression models. His interests are broadly in statistics, data science and best pedagogy to teach them.\n\n\n\nOffice hours\nLocation\n\n\n\n\nMonday - Thursday 3:05pm - 4:05pm\nWest 311\n\n\nOther Times by Appointment\nWest 311\n\n\n\nOffice hours are for STUDENTS. Please take advantage of them to get help with class, advising, and/or getting to know your professor! If you miss class, check out course calendar to verify there have been no changes.",
-    "crumbs": [
-      "Course information",
-      "Instructor"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#bayes-for-discriminant-analysis",
+    "href": "slides/04-2-lda-qda.html#bayes-for-discriminant-analysis",
+    "title": "Chapter 4 Part 2",
+    "section": "Bayes for Discriminant Analysis",
+    "text": "Bayes for Discriminant Analysis\n\\[P(Y=k|X=x) = \\frac{\\pi_kf_k(x)}{\\sum_{l=1}^K\\pi_lf_l(x)} \\text{, where}\\]\n\n\\(f_k(x)=P(X=x|Y=k)\\) is the density for \\(X\\) in class \\(k\\). Here we use normal’s but they could be other distributions (such as \\(\\chi^2\\))\n\\(\\pi_k = P(Y=k)\\) is the marginal or prior probability for class \\(k\\)."
   },
   {
-    "objectID": "computing-access.html",
-    "href": "computing-access.html",
-    "title": "Computing access",
-    "section": "",
-    "text": "To access computing resources the course, Introduction to Data Science, offered by the Cornell College Department of Mathematics and Statistics, go to the RStudio Server while on campus and connected to campus internet.\nYour account will be pre-created before the class begins and will use your Cornell College username. The default password will be shared in class and you will need to change it.",
-    "crumbs": [
-      "Course information",
-      "R/RStudio Access"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#classify-to-the-highest-density",
+    "href": "slides/04-2-lda-qda.html#classify-to-the-highest-density",
+    "title": "Chapter 4 Part 2",
+    "section": "Classify to the highest density",
+    "text": "Classify to the highest density\n\\[\\pi_1=.5, \\pi_2=.5\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe classify a new point according to which density is highest.\nWhen the priors are different, we take them into account as well, and compare \\(\\pi_kf_k(x)\\).\nOn the right, we favor the pink class - the decision boundary has shifted to the left."
   },
   {
-    "objectID": "course-links.html",
-    "href": "course-links.html",
-    "title": "Useful links",
-    "section": "",
-    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#lda-when-p1",
+    "href": "slides/04-2-lda-qda.html#lda-when-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA (when \\(p=1\\))",
+    "text": "LDA (when \\(p=1\\))\nThe Gaussian (normal) density has the form\n\\[f_k(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma_k}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}\\]\n\n\\(\\mu_k\\) is the mean, \\(\\sigma_k^2\\) the variance (in class \\(k\\))\nFor now, we assume \\(\\sigma_k=\\sigma\\) for all groups (we will need to check this with real data)"
   },
   {
-    "objectID": "course-links.html#course-links",
-    "href": "course-links.html#course-links",
-    "title": "Useful links",
-    "section": "",
-    "text": "RStudio Server\n🔗 on Cornell College Cluster\n\n\nCourse GitHub organization\n🔗 on GitHub\n\n\nGradebook\n🔗 on Moodle",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#lda-when-p1-1",
+    "href": "slides/04-2-lda-qda.html#lda-when-p1-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA (when \\(p=1\\))",
+    "text": "LDA (when \\(p=1\\))\nWe plug this \\(f_k(x)\\) into Bayes formula and after some simplifying we get:\n\\[p_k(x) = \\frac{\\pi_k\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}{\\sum_{l=1}^K\\pi_l\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}\\]"
   },
   {
-    "objectID": "course-links.html#other-useful-links",
-    "href": "course-links.html#other-useful-links",
-    "title": "Useful links",
-    "section": "Other Useful Links",
-    "text": "Other Useful Links\n\nData Wrangling and Viz Interactive Tutorials\nRStudio Cheatsheets\nIntroduction to dplyr\nR Date Examples\nNY Times Cornell College Sign-up\nR for Data Science 2nd Ed\nQuarto Documentation\nData visualization\n\nggplot2 Reference\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A Practice Introduction\nPatchwork R Package",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#discriminant-function",
+    "href": "slides/04-2-lda-qda.html#discriminant-function",
+    "title": "Chapter 4 Part 2",
+    "section": "Discriminant Function",
+    "text": "Discriminant Function\nTo classify at the value X = x, we need to see which of the \\(p_k(x)\\) is largest. Taking logs, and discarding terms that do not depend on \\(k\\), we see that this is equivalent to assigning x to the class with the largest discriminant score:\n\\[\\delta_k(x) = x\\cdot \\frac{\\mu_k}{\\sigma^2}-\\frac{\\mu_k^2}{2\\sigma^2}+log(\\pi_k)\\]\n\nImportantly, \\(\\delta_k(x)\\) is a linear function of \\(x\\).\nIf there are \\(K=2\\) classes and \\(\\pi_1=\\pi_2=.5\\), then the decision boundry is at\n\n\\[x=\\frac{\\mu_1+\\mu_2}{2}\\]"
   },
   {
-    "objectID": "course-links.html#data-links",
-    "href": "course-links.html#data-links",
-    "title": "Useful links",
-    "section": "Data Links",
-    "text": "Data Links\n\nTidyTuesday\nR Data Sources for Regression Analysis\nFiveThirtyEight data\nAmazon Registry of Open Data\nOpen data StackExchange\nMicrosoft R Application Window\nData.gov\nUS Census\nNew York City data\nGeorge Mason University Data Link List\nToward Data Science list of Data Sources\nNHS Scotland Open Data\nEdinburgh Open Data\nOpen access to Scotland’s official statistics\nBikeshare data portal\nUK Gov Data\nKaggle datasets\nOpenIntro datasets\nAwesome public datasets\nYouth Risk Behavior Surveillance System (YRBSS)\nPRISM Data Archive Project\nHarvard Dataverse\nAndrew G. Reiter Poly Scie Datasets\nEuropean Statistics\nStatistics Canada\nPew Research\nUNICEF\nCDC\nWorld Bank\nElection Studies\nU.S. Data\nWorld Health Organization\nThe National Bureau of Economic Research\nInternational Monetary Fund\nGeneral Social Survey\nUnited Nations Data\nUnited Nations Statistics Division\nState of Iowa Open Geospatial Data\nIf you know of others, let me know!",
-    "crumbs": [
-      "Course Contents",
-      "Useful links"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#maximizing-delta_kx",
+    "href": "slides/04-2-lda-qda.html#maximizing-delta_kx",
+    "title": "Chapter 4 Part 2",
+    "section": "Maximizing \\(\\delta_k(x)\\)",
+    "text": "Maximizing \\(\\delta_k(x)\\)\n\nIn order to maximize this, we need estimates for all the parameters\n\n\nWhat should we estimate \\(\\hat{\\pi_k}\\), \\(\\mu_k\\), and \\(\\sigma^2\\) with?"
   },
   {
-    "objectID": "course-support.html",
-    "href": "course-support.html",
-    "title": "Course support",
-    "section": "",
-    "text": "Most of you will need help at some point and we want to make sure you can identify when that is without getting too frustrated and feel comfortable seeking help.\nYou can ask anonymous course questions by adding them at https://docs.google.com/spreadsheets/d/1R33yYyRdFoRMDtSnD-CzLOqIEwYNrC3kepMm4ZN_PWM/edit?usp=sharing.",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#maximizing-delta_kx-1",
+    "href": "slides/04-2-lda-qda.html#maximizing-delta_kx-1",
+    "title": "Chapter 4 Part 2",
+    "section": "Maximizing \\(\\delta_k(x)\\)",
+    "text": "Maximizing \\(\\delta_k(x)\\)\n\\[\\hat{\\pi}_k = \\frac{n_k}{n}\\]\n\\[\\hat{\\mu}_k = \\frac{1}{n_k}\\sum_{i:y_k=k}x_i\\]\n\\[\\hat{\\sigma}^2 = \\frac{1}{n-K}\\sum_{k=1}^K\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2 = \\sum_{k=1}^K\\frac{n_k-1}{n-K}\\cdot \\hat{\\sigma}_k^2\\]\nWhere \\[\\hat{\\sigma}_k^2 = \\frac{1}{n_k-1}\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2\\]"
   },
   {
-    "objectID": "course-support.html#lectures-and-labs",
-    "href": "course-support.html#lectures-and-labs",
-    "title": "Course support",
-    "section": "Lectures and labs",
-    "text": "Lectures and labs\nIf you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#lda-in-r-example-p1",
+    "href": "slides/04-2-lda-qda.html#lda-in-r-example-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA In R Example (\\(p=1\\))",
+    "text": "LDA In R Example (\\(p=1\\))\n\ndata(\"BlueJays\") # Bring data into environment\nlibrary(Stat2Data)\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(discrim)\n\n\nCan we determine the sex of a blue jay by measuring the distance from the tip of the bill to the back of the head (Head)?"
   },
   {
-    "objectID": "course-support.html#office-hours",
-    "href": "course-support.html#office-hours",
-    "title": "Course support",
-    "section": "Office hours",
-    "text": "Office hours\nYou are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. I encourage each and every one of you to take advantage of this resource! Make a pledge to stop by office hours at least once during the first few days of class. If you truly have no questions to ask, just stop by and say hi and introduce yourself. You can find a list of your professors office hours here.",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda",
+    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA",
+    "text": "LDA Bluejays EDA\n\ntt_split &lt;- initial_split(BlueJays,prop=.7)\n\nBJ_train &lt;- training(tt_split)\n\nBJ_train |&gt; ggplot(aes(x = Head,y=KnownSex)) +\n  geom_boxplot() +\n  theme_bw()"
   },
   {
-    "objectID": "course-support.html#academic-support",
-    "href": "course-support.html#academic-support",
-    "title": "Course support",
-    "section": "Academic support",
-    "text": "Academic support\n\nQuantitative Reasoning Studio (QRS)\nThere are times you may need help outside of class or office hours. Or, maybe you need something explained in a different way. In those instances, I encourage you to visit the Quantitative Reasoning Studio in Cole Library room 322. The Quantitative Reasoning Studio (QRS) offers free tutoring to all students at Cornell College. There will be at least 1 peer tutor that has taken this course and will be able to help you, if you arrive at a time they are working. Feel free to email Jessica Johanningmeier at QRS@cornellcollege.edu to ask when the tutor for this class will be available. They often will have a schedule posted on the wall in the studio.\n\n\nQRS Hours\n\n\n\nDay(s)\nTimes\n\n\n\n\nMonday-Thursday\n8 a.m. - 5 p.m. and 7 p.m. - 10 p.m.\n\n\nFriday\n8 a.m. - 5 p.m.\n\n\nSunday\n3 p.m. - 5 p.m. and 7 p.m. - 10 p.m.\n\n\n\n\n\nDungy Writing Studio\nFor help with your writing, visit the Dungy Writing Studio. You can make online appointments individual or groups to get help with items such as your group project. If you have any questions about the studio, email Dungy Writing Studio Director and Director of Fellowships and Scholarships, Laura Farmer, at lfarmer@cornellcollege.edu.\n\n\nWriting Studio Hours\n\n\n\nDay(s)\nTimes\n\n\n\n\nMonday-Thursday\n8 a.m. - 5 p.m. and 7 p.m. - 10 p.m.\n\n\nFriday\n8 a.m. - 5 p.m.\n\n\nSunday\n1 p.m. - 5 p.m.",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda-1",
+    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA",
+    "text": "LDA Bluejays EDA\n\nWhat assumptions should we check?\n\n\nNormality of our predictor\nConstant variance between groups."
   },
   {
-    "objectID": "course-support.html#student-success-center",
-    "href": "course-support.html#student-success-center",
-    "title": "Course support",
-    "section": "Student Success Center",
-    "text": "Student Success Center\nThe Student Success Center is a resource for all students. Their staff serves as student success coaches for all students and welcome students to visit us to talk about academic concerns, study plans, finding their place at Cornell, or any questions you have and aren’t sure where to start! You can walk in to chat or contact a staff member directly to set up an appointment! See the website for more information.",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda---normality",
+    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---normality",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA - Normality",
+    "text": "LDA Bluejays EDA - Normality\n\nlibrary(patchwork)\n\n(BJ_train |&gt; ggplot(aes(sample = Head)) + geom_qq())+\n  (BJ_train |&gt; ggplot(aes(x = Head)) + geom_histogram())"
   },
   {
-    "objectID": "course-support.html#professor-email",
-    "href": "course-support.html#professor-email",
-    "title": "Course support",
-    "section": "Professor Email",
-    "text": "Professor Email\nIf you are not available during office hours times or have a questions later in the evening or other times outside of class, email your professor at tgeorge@cornellcollege.edu. If your question involves code - it is very likely you will need to meet with him to get help. Please reach out with any concerns you have during the course!",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
+    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA - Variance",
+    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.27\n2 M           1.00\n\n\n\nVery similar standard deviations (and thus variances)"
   },
   {
-    "objectID": "course-support.html#ebersole-health-and-wellbeing-center",
-    "href": "course-support.html#ebersole-health-and-wellbeing-center",
-    "title": "Course support",
-    "section": "Ebersole Health and Wellbeing Center",
-    "text": "Ebersole Health and Wellbeing Center\nThe mission of Cornell College Student Health Services complements the mission of the college by promoting the optimal well-being of students. We do this by:\n\nproviding and coordinating quality health care services\nadvocating for students in their pursuit of health and wellness\npreparing students to be their own health advocates and informed consumers of appropriate health care services\nproviding health education to promote the development of healthy lifestyles\n\nThe Student Health Center is located in the Ebersole Building, directly south of the Thomas Commons. Appointments are preferred. You can schedule an appointment online or by phone at 319-895-4292. Walk-ins will be accommodated as time permits. Appointments with the nurse are free.",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#fit-lda",
+    "href": "slides/04-2-lda-qda.html#fit-lda",
+    "title": "Chapter 4 Part 2",
+    "section": "Fit LDA",
+    "text": "Fit LDA\n\nlda_spec &lt;- discrim_linear() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")\n\nlda_fit&lt;-  lda_spec |&gt; \n  fit(KnownSex ~ Head,\n      data = BJ_train)"
   },
   {
-    "objectID": "course-support.html#technology-support",
-    "href": "course-support.html#technology-support",
-    "title": "Course support",
-    "section": "Technology Support",
-    "text": "Technology Support\nIf you have issues with your computer during the block, IT may be able to help. Please submit a ticket.",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#check-the-fit",
+    "href": "slides/04-2-lda-qda.html#check-the-fit",
+    "title": "Chapter 4 Part 2",
+    "section": "Check The Fit",
+    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 12  2\n         M  4 19\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.838"
   },
   {
-    "objectID": "course-support.html#course-materials-costs",
-    "href": "course-support.html#course-materials-costs",
-    "title": "Course support",
-    "section": "Course materials costs",
-    "text": "Course materials costs\nThere are no costs associated with this course. All readings will come from freely available, open resources (open-source textbooks, journal articles, etc.).",
-    "crumbs": [
-      "Course information",
-      "Support"
-    ]
+    "objectID": "slides/04-2-lda-qda.html#compare-to-logistic",
+    "href": "slides/04-2-lda-qda.html#compare-to-logistic",
+    "title": "Chapter 4 Part 2",
+    "section": "Compare to Logistic",
+    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.865"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to Statistical Learning Schedule",
-    "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
-    "crumbs": [
-      "Course Contents",
-      "Schedule & Assignments"
-    ]
-  },
-  {
-    "objectID": "labs/02-logistic.html",
-    "href": "labs/02-logistic.html",
-    "title": "Lab 02",
-    "section": "",
-    "text": "Go to our RStudio and create a new R project inside your class folder.\n\n\nCreate a .qmd file for your lab, make sure the author is your name, and Render the document."
-  },
-  {
-    "objectID": "labs/02-logistic.html#yaml",
-    "href": "labs/02-logistic.html#yaml",
-    "title": "Lab 02",
-    "section": "",
-    "text": "Create a .qmd file for your lab, make sure the author is your name, and Render the document."
-  },
-  {
-    "objectID": "labs/02-logistic.html#conceptual-questions",
-    "href": "labs/02-logistic.html#conceptual-questions",
-    "title": "Lab 02",
-    "section": "Conceptual questions",
-    "text": "Conceptual questions\n\nSuppose that an individual has a 23% chance of defaulting on their credit card payment. What are the odds that they will default?"
-  },
-  {
-    "objectID": "labs/02-logistic.html#logistic-regression",
-    "href": "labs/02-logistic.html#logistic-regression",
-    "title": "Lab 02",
-    "section": "Logistic Regression",
-    "text": "Logistic Regression\n\nFor this lab we are using the Smarket data. Examine this data set - how many observations are there? How many columns? What are the variables?\nLet’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?\n\n\nggpairs(Smarket, \n        lower = list(combo = wrap(ggally_facethist, binwidth = 0.5)), \n        progress = FALSE)\n\n\nInference Fit a logistic regression model to predict Direction using Lag1, Lag2, Lag3, Lag4, Lag5, and Volume. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 6 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 4. Interpret the odds ratio for the same predictor you selected in Exercise 4.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 4. What is the test Accuracy for this model? Interpret this result.\nInference Fit a logistic regression model to predict Direction using only Lag1 and Lag2. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 2 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 7. Interpret the odds ratio for the same predictor you selected in Exercise 7.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.\nIf you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#application-exercise",
-    "href": "slides/03-linear-regression.html#application-exercise",
-    "title": "Chapter 3 - Linear Regression",
+    "objectID": "slides/04-2-lda-qda.html#application-exercise",
+    "href": "slides/04-2-lda-qda.html#application-exercise",
+    "title": "Chapter 4 Part 2",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\nCreate a new quarto file for this homework in your exercises R project."
+    "text": "Application Exercise\nWe are going to use the penguins data from the palmerpeguins package.\n\nConduct basic EDA to see if penguin bill length is different by sex and if LDA is an appropriate model choice.\nUse LDA to predict penguin sex based on their bill length using training and testing data. Get the accuracy on the testing set.\nFit a logistic regression model and get it’s accuracy to see which did better."
   },
   {
-    "objectID": "slides/03-linear-regression.html#lets-look-at-an-example",
-    "href": "slides/03-linear-regression.html#lets-look-at-an-example",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Let’s look at an example",
-    "text": "Let’s look at an example\nLet’s look at a sample of 116 sparrows from Kent Island. We are interested in the relationship between Weight and Wing Length\n\n\nthe standard error of \\(\\hat{\\beta_1}\\) ( \\(SE_{\\hat{\\beta}_1}\\) ) is how much we expect the sample slope to vary from one random sample to another."
+    "objectID": "slides/04-2-lda-qda.html#lda-with-p1",
+    "href": "slides/04-2-lda-qda.html#lda-with-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA with \\(p>1\\)",
+    "text": "LDA with \\(p&gt;1\\)\n\nWhen we have 2 or more predictors, the distribution becomes multivariate.\nIf the covariance between predictors is 0 within each class of the response, LDA is still appropriate."
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows",
-    "href": "slides/03-linear-regression.html#sparrows",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\nHow can we quantify how much we’d expect the slope to differ from one random sample to another?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+    "objectID": "slides/04-2-lda-qda.html#lda-with-p1-1",
+    "href": "slides/04-2-lda-qda.html#lda-with-p1-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA with \\(p>1\\)",
+    "text": "LDA with \\(p&gt;1\\)\n\nFor example, with 2 normal predictors, their distributions in 3d would like like this:\n\n\n\nLuckily, the discriminate function remains linear\n\n\\[\\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\\]"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-1",
-    "href": "slides/03-linear-regression.html#sparrows-1",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\nHow do we interpret this?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n“the sample slope is more than 13 standard errors above a slope of zero”"
+    "objectID": "slides/04-2-lda-qda.html#example-p2k3",
+    "href": "slides/04-2-lda-qda.html#example-p2k3",
+    "title": "Chapter 4 Part 2",
+    "section": "Example: \\(p=2,K=3\\)",
+    "text": "Example: \\(p=2,K=3\\)\n\nThere is no limit on the number of levels of the categorical response for LDA\nSuppose \\(\\pi_1=\\pi_2\\pi_3=1/3\\)\n\n - The dashed lines are known as the Bayes decision boundaries"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-2",
-    "href": "slides/03-linear-regression.html#sparrows-2",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\nHow do we know what values of this statistic are worth paying attention to?\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\nconfidence intervals\np-values"
+    "objectID": "slides/04-2-lda-qda.html#probabilities",
+    "href": "slides/04-2-lda-qda.html#probabilities",
+    "title": "Chapter 4 Part 2",
+    "section": "Probabilities",
+    "text": "Probabilities\n\nOnce the estimates for the \\(\\hat{\\delta}_k(x)\\) have been found, we can plug them in and get:\n\\[\\hat{P}(Y=k|X=x)=\\frac{e^{\\hat{\\delta}_k(x)}}{\\sum_{l=1}^Ke^{\\hat{\\delta}^l(x)}}\\]\nClassifying to the largest \\(\\hat{\\delta}_k(x)\\) amounts to classifying to the class for which \\(\\hat{P}(Y = k|X = x)\\) is largest.\nWhen \\(K = 2\\), we classify to class 2 if \\(\\hat{P}(Y = 2|X = x)\\geq 0.5\\), else to class 1."
   },
   {
-    "objectID": "slides/03-linear-regression.html#application-exercise-1",
-    "href": "slides/03-linear-regression.html#application-exercise-1",
-    "title": "Chapter 3 - Linear Regression",
-    "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp).\nPull out the coefficients and confidence intervals using the tidy() function demonstrated. How do you interpret these?"
+    "objectID": "slides/04-2-lda-qda.html#example---credit-card-fraud",
+    "href": "slides/04-2-lda-qda.html#example---credit-card-fraud",
+    "title": "Chapter 4 Part 2",
+    "section": "Example - Credit Card Fraud",
+    "text": "Example - Credit Card Fraud\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.972\n\n\n\nAccuracy of 97.7% on a testing set!\nWhat about the different types of errors?"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-3",
-    "href": "slides/03-linear-regression.html#sparrows-3",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\nHow are these statistics distributed under the null hypothesis?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy() \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+    "objectID": "slides/04-2-lda-qda.html#errors",
+    "href": "slides/04-2-lda-qda.html#errors",
+    "title": "Chapter 4 Part 2",
+    "section": "Errors",
+    "text": "Errors\n\nOf the true yes, we made errors at the rate of 83/(83+26), 76%\nOf the true no, we made errors at the rate of 2/(2889+2), .069%"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-4",
-    "href": "slides/03-linear-regression.html#sparrows-4",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\n\nI’ve generated some data under a null hypothesis where \\(n = 20\\)"
+    "objectID": "slides/04-2-lda-qda.html#types-of-errors",
+    "href": "slides/04-2-lda-qda.html#types-of-errors",
+    "title": "Chapter 4 Part 2",
+    "section": "Types of Errors",
+    "text": "Types of Errors\n\nRecall:\n\nFalse positive rate: The fraction of negative examples that are classified as positive.\nFalse negative rate: The fraction of positive examples that are classified as negative.\n\nRemember the model gave probabilities, the final yes or no is decided by\n\\[\\hat{P}(Default=Yes|Balance,Student) \\geq .5\\]\n\nWe can adjust our error rates by changing that threshold"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-5",
-    "href": "slides/03-linear-regression.html#sparrows-5",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\n\nthis is a t-distribution with n-p-1 degrees of freedom."
+    "objectID": "slides/04-2-lda-qda.html#sensitivity-and-specificity",
+    "href": "slides/04-2-lda-qda.html#sensitivity-and-specificity",
+    "title": "Chapter 4 Part 2",
+    "section": "Sensitivity and Specificity",
+    "text": "Sensitivity and Specificity\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n\nThe sensitivity is the true positive rate.\n\nThe rate at which we correctly predict a person will default.\n26/(83+26) = .24 (24%)\n\nThe specificity is the true negative rate.\n\nThe rate at which we correctly predict a person will not default.\n2889/(2889+2) =.999 (99.9%)"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-6",
-    "href": "slides/03-linear-regression.html#sparrows-6",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\nThe distribution of test statistics we would expect given the null hypothesis is true, \\(\\beta_1 = 0\\), is t-distribution with n-2 degrees of freedom."
+    "objectID": "slides/04-2-lda-qda.html#varying-the-threshold",
+    "href": "slides/04-2-lda-qda.html#varying-the-threshold",
+    "title": "Chapter 4 Part 2",
+    "section": "Varying the threshold",
+    "text": "Varying the threshold\n\nIn order to determine the best threshold, we want to maximize the specificty and sensitivity.\nOR - maximize the sensitivty and minimize 1-specificity.\nIn order to to do this we use an \\(ROC\\) curve which stands for receiver operating characteristic curve."
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-7",
-    "href": "slides/03-linear-regression.html#sparrows-7",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows"
+    "objectID": "slides/04-2-lda-qda.html#roc-curve",
+    "href": "slides/04-2-lda-qda.html#roc-curve",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC Curve",
+    "text": "ROC Curve\nWe want to maximize the area under this curve, called ROC AUC\n\nlda_roc&lt;- lda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_curve(truth = default,.pred_No) \n\nhead(lda_roc)\n\n# A tibble: 6 × 3\n  .threshold specificity sensitivity\n       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;\n1  -Inf          0                 1\n2     0.0819     0                 1\n3     0.129      0.00917           1\n4     0.151      0.0183            1\n5     0.154      0.0275            1\n6     0.201      0.0367            1"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-8",
-    "href": "slides/03-linear-regression.html#sparrows-8",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\nHow can we compare this line to the distribution under the null?\n\n\n\np-value"
+    "objectID": "slides/04-2-lda-qda.html#roc-curve-1",
+    "href": "slides/04-2-lda-qda.html#roc-curve-1",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC Curve",
+    "text": "ROC Curve\n\nautoplot(lda_roc)"
   },
   {
-    "objectID": "slides/03-linear-regression.html#sparrows-9",
-    "href": "slides/03-linear-regression.html#sparrows-9",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+    "objectID": "slides/04-2-lda-qda.html#roc-auc",
+    "href": "slides/04-2-lda-qda.html#roc-auc",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC AUC",
+    "text": "ROC AUC\n\nlda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957\n\n\nIf we want to tune our model better, we can optimize the ROC AUC by changing the threshold.\n\nI did a train/test approach here. What should I do different if I want to tune for threshold?"
   },
   {
-    "objectID": "slides/03-linear-regression.html#return-to-generated-data-n-20",
-    "href": "slides/03-linear-regression.html#return-to-generated-data-n-20",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Return to generated data, n = 20",
-    "text": "Return to generated data, n = 20\n\n\nLet’s say we get a statistic of 1.5 in a sample"
+    "objectID": "slides/04-2-lda-qda.html#qda",
+    "href": "slides/04-2-lda-qda.html#qda",
+    "title": "Chapter 4 Part 2",
+    "section": "QDA",
+    "text": "QDA\n\nQDA arises when \\(p&gt;1\\) and the is a covariance structure between the predictors within the same level of the response.\nThis introduces a squared term into the maximization problem of the \\(\\delta_k(x)\\), thus the name."
   },
   {
-    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r",
-    "href": "slides/03-linear-regression.html#lets-do-it-in-r",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\nThe proportion of area less than 1.5\n\n\npt(1.5, df = 18)\n\n[1] 0.9245248"
+    "objectID": "slides/04-2-lda-qda.html#qda-in-r",
+    "href": "slides/04-2-lda-qda.html#qda-in-r",
+    "title": "Chapter 4 Part 2",
+    "section": "QDA In R",
+    "text": "QDA In R\n\nqda_fit&lt;-discrim_quad() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")|&gt; \n  fit(default ~ balance + student,\n      data = training(def_splits))\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  conf_mat(truth = default, estimate = .pred_class) \n\n          Truth\nPrediction   No  Yes\n       No  2888   80\n       Yes    3   29\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957"
   },
   {
-    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-1",
-    "href": "slides/03-linear-regression.html#lets-do-it-in-r-1",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5\n\n\npt(1.5, df = 18, lower.tail = FALSE)\n\n[1] 0.07547523"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-2",
-    "href": "slides/03-linear-regression.html#lets-do-it-in-r-2",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5 or less than -1.5.\n\n\n\npt(1.5, df = 18, lower.tail = FALSE) * 2\n\n[1] 0.1509505"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#hypothesis-test",
-    "href": "slides/03-linear-regression.html#hypothesis-test",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Hypothesis test",
-    "text": "Hypothesis test\n\nnull hypothesis \\(H_0: \\beta_1 = 0\\)\nalternative hypothesis \\(H_A: \\beta_1 \\ne 0\\)\np-value: 0.15\nOften, we have an \\(\\alpha\\)-level cutoff to compare this to, for example 0.05. Since this is greater than 0.05, we fail to reject the null hypothesis"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#application-exercise-2",
-    "href": "slides/03-linear-regression.html#application-exercise-2",
-    "title": "Chapter 3 - Linear Regression",
-    "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nUsing the linear model you fit previously (mpg from wt and hp) - calculate the p-value for the coefficient for weight\nInterpret this value. What is the null hypothesis? What is the alternative hypothesis? Do you reject the null?"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-3",
-    "href": "slides/03-linear-regression.html#lets-do-it-in-r-3",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\n\\(t^* = t_{n-p-1} = t_{114} = 1.98\\)\n\\(LB = 0.47 - 1.98\\times 0.0347 = 0.399\\)\n\\(UB = 0.47+1.98 \\times 0.0347 = 0.536\\)"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#linear-regression-questions",
-    "href": "slides/03-linear-regression.html#linear-regression-questions",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Linear Regression Questions",
-    "text": "Linear Regression Questions\n\n✔️ Is there a relationship between a response variable and predictors?\n✔️ How strong is the relationship?\n✔️ What is the uncertainty?\nHow accurately can we predict a future outcome?"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#sparrows-10",
-    "href": "slides/03-linear-regression.html#sparrows-10",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Sparrows",
-    "text": "Sparrows\n\nUsing the information here, how could I predict a new sparrow’s weight if I knew the wing length was 30?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n\\(1.37 + 0.467 \\times 30 = 15.38\\)"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#linear-regression-accuracy",
-    "href": "slides/03-linear-regression.html#linear-regression-accuracy",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Linear Regression Accuracy",
-    "text": "Linear Regression Accuracy\n\nWhat is the residual sum of squares again?\n\n\nNote: In previous classes, this may have been referred to as SSE (sum of squares error), the book uses RSS, so we will stick with that!\n\n\n\\[RSS = \\sum(y_i - \\hat{y}_i)^2\\]"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#linear-regression-accuracy-1",
-    "href": "slides/03-linear-regression.html#linear-regression-accuracy-1",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Linear Regression Accuracy",
-    "text": "Linear Regression Accuracy\n\n\nThe total sum of squares represents the variability of the outcome, it is equivalent to the variability described by the model plus the remaining residual sum of squares\n\n\\[TSS = \\sum(y_i - \\bar{y})^2\\]"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#linear-regression-accuracy-2",
-    "href": "slides/03-linear-regression.html#linear-regression-accuracy-2",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Linear Regression Accuracy",
-    "text": "Linear Regression Accuracy\n\nThere are many ways “model fit” can be assessed. Two common ones are:\n\nResidual Standard Error (RSE)\n\\(R^2\\) - the fraction of the variance explained\n\n\\(RSE = \\sqrt{\\frac{1}{n-p-1}RSS}\\)\n\\(R^2 = 1 - \\frac{RSS}{TSS}\\)"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#lets-do-it-in-r-4",
-    "href": "slides/03-linear-regression.html#lets-do-it-in-r-4",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Let’s do it in R!",
-    "text": "Let’s do it in R!\n\nlm_fit &lt;- linear_reg() |&gt; \n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows)\n\nlm_fit |&gt;\n  predict(new_data = Sparrows) |&gt;\n  bind_cols(Sparrows) |&gt;\n  rsq(truth = Weight, estimate = .pred) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rsq     standard       0.614\n\n\n\n\nIs this testing \\(R^2\\) or training \\(R^2\\)?"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#application-exercise-3",
-    "href": "slides/03-linear-regression.html#application-exercise-3",
-    "title": "Chapter 3 - Linear Regression",
-    "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp), using polynomials with 4 degrees of freedom for both.\nEstimate the training \\(R^2\\) using the rsq function.\nInterpret this values."
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#application-exercise-4",
-    "href": "slides/03-linear-regression.html#application-exercise-4",
-    "title": "Chapter 3 - Linear Regression",
-    "section": " Application Exercise",
-    "text": "Application Exercise\n\n\nCreate a cross validation object to do 5 fold cross validation using the mtcars data\nRefit the model on this object (using fit_resamples)\nUse collect_metrics to estimate the test \\(R^2\\) - how does this compare to the training \\(R^2\\) calculated in the previous exercise?"
-  },
-  {
-    "objectID": "slides/03-linear-regression.html#additional-linear-regression-topics",
-    "href": "slides/03-linear-regression.html#additional-linear-regression-topics",
-    "title": "Chapter 3 - Linear Regression",
-    "section": "Additional Linear Regression Topics",
-    "text": "Additional Linear Regression Topics\n\nPolynomial terms\nInteractions\nOutliers\nNon-constant variance of error terms\nHigh leverage points\nCollinearity\n\nRefer to Chapter 3 for more details on these topics if you need a refresher.\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+    "objectID": "slides/04-2-lda-qda.html#tuning-by-threhold",
+    "href": "slides/04-2-lda-qda.html#tuning-by-threhold",
+    "title": "Chapter 4 Part 2",
+    "section": "Tuning By Threhold",
+    "text": "Tuning By Threhold\nhttps://www.tidymodels.org/start/case-study/\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#setup",
@@ -1663,509 +1971,5 @@
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
     "text": "Application Exercise\n\n\nFit 3 models on the data using 5 fold cross validation:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\beta_3 horsepower^3 +\\epsilon\\)\n\nCollect the metrics from each model, saving the results as results_1, results_2, results_3\nWhich model is “best”?\n\n\n\n\n\n−+\n08:00\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#recap",
-    "href": "slides/04_2-lda_qda.html#recap",
-    "title": "Chapter 4 Part 2",
-    "section": "Recap",
-    "text": "Recap\n\nWe had a logistic regression refresher\n\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#setup",
-    "href": "slides/04_2-lda_qda.html#setup",
-    "title": "Chapter 4 Part 2",
-    "section": "Setup",
-    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#multinomial-logistic",
-    "href": "slides/04_2-lda_qda.html#multinomial-logistic",
-    "title": "Chapter 4 Part 2",
-    "section": "Multinomial Logistic",
-    "text": "Multinomial Logistic\n\nSo far we have discussed logistic regression with two classes.\nIt is easily generalized to more than two classes."
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#confounding",
-    "href": "slides/04_2-lda_qda.html#confounding",
-    "title": "Chapter 4 Part 2",
-    "section": "Confounding",
-    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\nWhat is going on here?"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#confounding-1",
-    "href": "slides/04_2-lda_qda.html#confounding-1",
-    "title": "Chapter 4 Part 2",
-    "section": "Confounding",
-    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#logistic-regression-for-more-than-two-classes",
-    "href": "slides/04_2-lda_qda.html#logistic-regression-for-more-than-two-classes",
-    "title": "Chapter 4 Part 2",
-    "section": "Logistic regression for more than two classes",
-    "text": "Logistic regression for more than two classes\n\\[P(Y=k|X) = \\frac{e ^{\\beta_{0k}+\\beta_{1k}X_1+\\dots+\\beta_{pk}X_p}}{\\sum_{l=1}^Ke^{\\beta_{0l}+\\beta_{1l}X_1+\\dots+\\beta_{pl}X_p}}\\]\n\nWe generalize this to situations with multiple classes\nHere we have a linear function for each of the \\(K\\) classes\nThis is known as multinomial logistic regression"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#multiple-logistic-regression",
-    "href": "slides/04_2-lda_qda.html#multiple-logistic-regression",
-    "title": "Chapter 4 Part 2",
-    "section": "Multiple logistic regression",
-    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#the-unforuntate-truth-logistic-regression",
-    "href": "slides/04_2-lda_qda.html#the-unforuntate-truth-logistic-regression",
-    "title": "Chapter 4 Part 2",
-    "section": "The Unforuntate truth logistic regression",
-    "text": "The Unforuntate truth logistic regression"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#bayes-rule",
-    "href": "slides/04_2-lda_qda.html#bayes-rule",
-    "title": "Chapter 4 Part 2",
-    "section": "Bayes Rule",
-    "text": "Bayes Rule"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#linear-descriminant-analysis",
-    "href": "slides/04_2-lda_qda.html#linear-descriminant-analysis",
-    "title": "Chapter 4 Part 2",
-    "section": "Linear Descriminant Analysis",
-    "text": "Linear Descriminant Analysis"
-  },
-  {
-    "objectID": "slides/04-logistic.html#potential-confounding",
-    "href": "slides/04-logistic.html#potential-confounding",
-    "title": "Chapter 4 Part 1",
-    "section": "Potential Confounding",
-    "text": "Potential Confounding\n\n\nWhat is going on here?"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html",
-    "href": "slides/04_2-lda_qda.html",
-    "title": "Chapter 4 Part 2",
-    "section": "",
-    "text": "We had a logistic regression refresher\n\n\n\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#lda-warmup",
-    "href": "slides/04_2-lda_qda.html#lda-warmup",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA Warmup",
-    "text": "LDA Warmup\nTo give us a general overview, we are going to watch the StatQuest video on the topic: https://www.youtube.com/watch?v=azXCzI57Yfc"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#discriminant-analysis",
-    "href": "slides/04_2-lda_qda.html#discriminant-analysis",
-    "title": "Chapter 4 Part 2",
-    "section": "Discriminant Analysis",
-    "text": "Discriminant Analysis\n\nHere the approach is to model the distribution of X in each of the classes separately, and then use Bayes theorem to flip things around and obtain \\(P(Y jX)\\).\nWhen we use normal (Gaussian) distributions for each class, this leads to linear or quadratic discriminant analysis.\nHowever, this approach is quite general, and other distributions can be used as well. We will focus on normal distributions."
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#why",
-    "href": "slides/04_2-lda_qda.html#why",
-    "title": "Chapter 4 Part 2",
-    "section": "Why?",
-    "text": "Why?\n\nWhen the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.\nIf n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.\nLinear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data."
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#bayes-theorem-classification",
-    "href": "slides/04_2-lda_qda.html#bayes-theorem-classification",
-    "title": "Chapter 4 Part 2",
-    "section": "Bayes Theorem (classification)",
-    "text": "Bayes Theorem (classification)\nThomas Bayes was a famous mathematician whose name represents a big subfield of statistical and probabilistic modeling. Here we focus on a simple result, known as Bayes theorem:\n\\[P(Y=k|X=x) = \\frac{P(X=x|Y=k)\\cdot P(Y=k)}{P(X=x)}\\]"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#bayes-for-discriminant-analysis",
-    "href": "slides/04_2-lda_qda.html#bayes-for-discriminant-analysis",
-    "title": "Chapter 4 Part 2",
-    "section": "Bayes for Discriminant Analysis",
-    "text": "Bayes for Discriminant Analysis\n\\[P(Y=k|X=x) = \\frac{\\pi_kf_k(x)}{\\sum_{l=1}^K\\pi_lf_l(x)}\\], where\n\n\\(f_k(x)=P(X=x|Y=k)\\) is the density for \\(X\\) in class \\(k\\). Here we use normal’s but they could be other distributions (such as \\(\\Chi^2\\))\n\\(\\pi_k = P(Y=k)\\) is the marginal or prior probability for class \\(k\\)."
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#classify-to-the-highest-density",
-    "href": "slides/04_2-lda_qda.html#classify-to-the-highest-density",
-    "title": "Chapter 4 Part 2",
-    "section": "Classify to the highest density",
-    "text": "Classify to the highest density\n\n\n\\[\\pi_1=.5, \\pi_2=.5\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe classify a new point according to which density is highest.\nWhen the priors are different, we take them into account as well, and compare \\(\\pi_kf_k(x)\\).\nOn the right, we favor the pink class - the decision boundary has shifted to the left."
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#linear-descriminant-analysis-when-p1",
-    "href": "slides/04_2-lda_qda.html#linear-descriminant-analysis-when-p1",
-    "title": "Chapter 4 Part 2",
-    "section": "Linear Descriminant Analysis (when \\(p=1\\))",
-    "text": "Linear Descriminant Analysis (when \\(p=1\\))\nThe Gaussian (normal) density has the form\n\\[f_k(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma_k}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}\\]\n\n\\(\\mu_k\\) is the mean, \\(\\sigma_k^2\\) the variance (in class \\(k\\))\nFor now, we assume \\(\\sigma_k=\\sigma\\) for all groups (we will need to check this with real data)"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#linear-descriminant-analysis-when-p1-1",
-    "href": "slides/04_2-lda_qda.html#linear-descriminant-analysis-when-p1-1",
-    "title": "Chapter 4 Part 2",
-    "section": "Linear Descriminant Analysis (when \\(p=1\\))",
-    "text": "Linear Descriminant Analysis (when \\(p=1\\))\nWe plug this \\(f_k(x)\\) into Bayes formula and after some simplifying we get:\n\\[p_k(x) = \\frac{\\pi_k\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}{\\sum_{l=1}^K\\pi_l\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}\\]"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#discriminant-function-when-p1",
-    "href": "slides/04_2-lda_qda.html#discriminant-function-when-p1",
-    "title": "Chapter 4 Part 2",
-    "section": "Discriminant Function (when \\(p=1\\))",
-    "text": "Discriminant Function (when \\(p=1\\))\nTo classify at the value X = x, we need to see which of the \\(p_k(x)\\) is largest. Taking logs, and discarding terms that do not depend on \\(k\\), we see that this is equivalent to assigning x to the class with the largest discriminant score:\n\\[\\delta_k(x) = x\\cdot \\frac{\\mu_k}{\\sigma^2}-\\frac{\\mu_k^2}{2\\sigma^2}+log(\\pi_k)\\]\n\nImportantly, \\(\\delta_k(x)\\) is a linear function of \\(x\\).\nIf there are \\(K=2\\) classes and \\(\\pi_1=\\pi_2=.5\\), then the decision boundry is at\n\n\\[x=\\frac{\\mu_1+\\mu_2}{2}\\]"
-  },
-  {
-    "objectID": "slides/04_2-lda_qda.html#example",
-    "href": "slides/04_2-lda_qda.html#example",
-    "title": "Chapter 4 Part 2",
-    "section": "Example",
-    "text": "Example\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#recap",
-    "href": "slides/04-2-lda-qda.html#recap",
-    "title": "Chapter 4 Part 2",
-    "section": "Recap",
-    "text": "Recap\n\nWe had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#setup",
-    "href": "slides/04-2-lda-qda.html#setup",
-    "title": "Chapter 4 Part 2",
-    "section": "Setup",
-    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)\nlibrary(Stat2Data)\n#install.packages(\"discrim\")"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#multinomial-logistic",
-    "href": "slides/04-2-lda-qda.html#multinomial-logistic",
-    "title": "Chapter 4 Part 2",
-    "section": "Multinomial Logistic",
-    "text": "Multinomial Logistic\n\nSo far we have discussed logistic regression with two classes.\nIt is easily generalized to more than two classes."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#confounding",
-    "href": "slides/04-2-lda-qda.html#confounding",
-    "title": "Chapter 4 Part 2",
-    "section": "Confounding",
-    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\nWhat is going on here?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#confounding-1",
-    "href": "slides/04-2-lda-qda.html#confounding-1",
-    "title": "Chapter 4 Part 2",
-    "section": "Confounding",
-    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#logistic-regression-for-more-than-two-classes",
-    "href": "slides/04-2-lda-qda.html#logistic-regression-for-more-than-two-classes",
-    "title": "Chapter 4 Part 2",
-    "section": "Logistic regression for more than two classes",
-    "text": "Logistic regression for more than two classes\n\\[P(Y=k|X) = \\frac{e ^{\\beta_{0k}+\\beta_{1k}X_1+\\dots+\\beta_{pk}X_p}}{\\sum_{l=1}^Ke^{\\beta_{0l}+\\beta_{1l}X_1+\\dots+\\beta_{pl}X_p}}\\]\n\nWe generalize this to situations with multiple classes\nHere we have a linear function for each of the \\(K\\) classes\nThis is known as multinomial logistic regression"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#multiple-logistic-regression",
-    "href": "slides/04-2-lda-qda.html#multiple-logistic-regression",
-    "title": "Chapter 4 Part 2",
-    "section": "Multiple logistic regression",
-    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-warmup",
-    "href": "slides/04-2-lda-qda.html#lda-warmup",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA Warmup",
-    "text": "LDA Warmup\nTo give us a general overview, we are going to watch the StatQuest video on the topic: https://www.youtube.com/watch?v=azXCzI57Yfc"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#discriminant-analysis",
-    "href": "slides/04-2-lda-qda.html#discriminant-analysis",
-    "title": "Chapter 4 Part 2",
-    "section": "Discriminant Analysis",
-    "text": "Discriminant Analysis\n\nHere the approach is to model the distribution of X in each of the classes separately, and then use Bayes theorem to flip things around and obtain \\(P(Y|X)\\).\nWhen we use normal (Gaussian) distributions for each class, this leads to linear or quadratic discriminant analysis.\nHowever, this approach is quite general, and other distributions can be used as well. We will focus on normal distributions."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#why",
-    "href": "slides/04-2-lda-qda.html#why",
-    "title": "Chapter 4 Part 2",
-    "section": "Why?",
-    "text": "Why?\n\nWhen the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.\nIf n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.\nLinear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#bayes-theorem-classification",
-    "href": "slides/04-2-lda-qda.html#bayes-theorem-classification",
-    "title": "Chapter 4 Part 2",
-    "section": "Bayes Theorem (classification)",
-    "text": "Bayes Theorem (classification)\nThomas Bayes was a famous mathematician whose name represents a big subfield of statistical and probabilistic modeling. Here we focus on a simple result, known as Bayes theorem:\n\\[P(Y=k|X=x) = \\frac{P(X=x|Y=k)\\cdot P(Y=k)}{P(X=x)}\\]"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#bayes-for-discriminant-analysis",
-    "href": "slides/04-2-lda-qda.html#bayes-for-discriminant-analysis",
-    "title": "Chapter 4 Part 2",
-    "section": "Bayes for Discriminant Analysis",
-    "text": "Bayes for Discriminant Analysis\n\\[P(Y=k|X=x) = \\frac{\\pi_kf_k(x)}{\\sum_{l=1}^K\\pi_lf_l(x)} \\text{, where}\\]\n\n\\(f_k(x)=P(X=x|Y=k)\\) is the density for \\(X\\) in class \\(k\\). Here we use normal’s but they could be other distributions (such as \\(\\chi^2\\))\n\\(\\pi_k = P(Y=k)\\) is the marginal or prior probability for class \\(k\\)."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#classify-to-the-highest-density",
-    "href": "slides/04-2-lda-qda.html#classify-to-the-highest-density",
-    "title": "Chapter 4 Part 2",
-    "section": "Classify to the highest density",
-    "text": "Classify to the highest density\n\\[\\pi_1=.5, \\pi_2=.5\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe classify a new point according to which density is highest.\nWhen the priors are different, we take them into account as well, and compare \\(\\pi_kf_k(x)\\).\nOn the right, we favor the pink class - the decision boundary has shifted to the left."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#linear-descriminant-analysis-when-p1",
-    "href": "slides/04-2-lda-qda.html#linear-descriminant-analysis-when-p1",
-    "title": "Chapter 4 Part 2",
-    "section": "Linear Descriminant Analysis (when \\(p=1\\))",
-    "text": "Linear Descriminant Analysis (when \\(p=1\\))\nThe Gaussian (normal) density has the form\n\\[f_k(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma_k}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}\\]\n\n\\(\\mu_k\\) is the mean, \\(\\sigma_k^2\\) the variance (in class \\(k\\))\nFor now, we assume \\(\\sigma_k=\\sigma\\) for all groups (we will need to check this with real data)"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#linear-descriminant-analysis-when-p1-1",
-    "href": "slides/04-2-lda-qda.html#linear-descriminant-analysis-when-p1-1",
-    "title": "Chapter 4 Part 2",
-    "section": "Linear Descriminant Analysis (when \\(p=1\\))",
-    "text": "Linear Descriminant Analysis (when \\(p=1\\))\nWe plug this \\(f_k(x)\\) into Bayes formula and after some simplifying we get:\n\\[p_k(x) = \\frac{\\pi_k\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}{\\sum_{l=1}^K\\pi_l\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}\\]"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#discriminant-function-when-p1",
-    "href": "slides/04-2-lda-qda.html#discriminant-function-when-p1",
-    "title": "Chapter 4 Part 2",
-    "section": "Discriminant Function (when \\(p=1\\))",
-    "text": "Discriminant Function (when \\(p=1\\))\nTo classify at the value X = x, we need to see which of the \\(p_k(x)\\) is largest. Taking logs, and discarding terms that do not depend on \\(k\\), we see that this is equivalent to assigning x to the class with the largest discriminant score:\n\\[\\delta_k(x) = x\\cdot \\frac{\\mu_k}{\\sigma^2}-\\frac{\\mu_k^2}{2\\sigma^2}+log(\\pi_k)\\]\n\nImportantly, \\(\\delta_k(x)\\) is a linear function of \\(x\\).\nIf there are \\(K=2\\) classes and \\(\\pi_1=\\pi_2=.5\\), then the decision boundry is at\n\n\\[x=\\frac{\\mu_1+\\mu_2}{2}\\]"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#maximizing-delta_kx",
-    "href": "slides/04-2-lda-qda.html#maximizing-delta_kx",
-    "title": "Chapter 4 Part 2",
-    "section": "Maximizing \\(\\delta_k(x)\\)",
-    "text": "Maximizing \\(\\delta_k(x)\\)\n\nIn order to maximize this, we need estimates for all the parameters\n\n\nWhat should we estimate \\(\\hat{\\pi_k}\\), \\(\\mu_k\\), and \\(\\sigma^2\\) with?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#maximizing-delta_kx-1",
-    "href": "slides/04-2-lda-qda.html#maximizing-delta_kx-1",
-    "title": "Chapter 4 Part 2",
-    "section": "Maximizing \\(\\delta_k(x)\\)",
-    "text": "Maximizing \\(\\delta_k(x)\\)\n\\[\\hat{\\pi}_k = \\frac{n_k}{n}\\]\n\\[\\hat{\\mu}_k = \\frac{1}{n_k}\\sum_{i:y_k=k}x_i\\]\n\\[\\hat{\\sigma}^2 = \\frac{1}{n-K}\\sum_{k=1}^K\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2 = \\sum_{k=1}^K\\frac{n_k-1}{n-K}\\cdot \\hat{\\sigma}_k^2\\]\nWhere \\[\\hat{\\sigma}_k^2 = \\frac{1}{n_k-1}\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2\\]"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-in-r-example-p1",
-    "href": "slides/04-2-lda-qda.html#lda-in-r-example-p1",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA In R Example (\\(p=1\\))",
-    "text": "LDA In R Example (\\(p=1\\))\n\ndata(\"BlueJays\") # Bring data into environment\nlibrary(Stat2Data)\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(discrim)\n\n\nCan we determine the sex of a blue jay by measuring the distance from the tip of the bill to the back of the head (Head)?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda",
-    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA Bluejays EDA",
-    "text": "LDA Bluejays EDA\n\ntt_split &lt;- initial_split(BlueJays,prop=.7)\n\nBJ_train &lt;- training(tt_split)\n\nBJ_train |&gt; ggplot(aes(x = Head,y=KnownSex)) +\n  geom_boxplot() +\n  theme_bw()"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda-1",
-    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda-1",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA Bluejays EDA",
-    "text": "LDA Bluejays EDA\n\nWhat assumptions should we check?\n\n\nNormality of our predictor\nConstant variance between groups."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda---normality",
-    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---normality",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA Bluejays EDA - Normality",
-    "text": "LDA Bluejays EDA - Normality\n\nlibrary(patchwork)\n\n(BJ_train |&gt; ggplot(aes(sample = Head)) + geom_qq())+\n  (BJ_train |&gt; ggplot(aes(x = Head)) + geom_histogram())"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
-    "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA Bluejays EDA - Variance",
-    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.14\n2 M           1.27\n\n\n\nVery similar standard deviations (and thus variances)"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#application-exercise",
-    "href": "slides/04-2-lda-qda.html#application-exercise",
-    "title": "Chapter 4 Part 2",
-    "section": " Application Exercise",
-    "text": "Application Exercise\nWe are going to use the penguins data from the palmerpeguins package.\n\nConduct basic EDA to see if penguin bill length is different by sex and if LDA is an appropriate model choice.\nUse LDA to predict penguin sex based on their bill length using training and testing data. Get the accuracy on the testing set.\nFit a logistic regression model and get it’s accuracy to see which did better."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#fit-lda",
-    "href": "slides/04-2-lda-qda.html#fit-lda",
-    "title": "Chapter 4 Part 2",
-    "section": "Fit LDA",
-    "text": "Fit LDA\n\nlda_spec &lt;- discrim_linear() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")\n\nlda_fit&lt;-  lda_spec |&gt; \n  fit(KnownSex ~ Head,\n      data = BJ_train)"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#check-the-fit",
-    "href": "slides/04-2-lda-qda.html#check-the-fit",
-    "title": "Chapter 4 Part 2",
-    "section": "Check The Fit",
-    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 12  0\n         M 10 15\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.730"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#compare-to-logistic",
-    "href": "slides/04-2-lda-qda.html#compare-to-logistic",
-    "title": "Chapter 4 Part 2",
-    "section": "Compare to Logistic",
-    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.730"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-with-p1",
-    "href": "slides/04-2-lda-qda.html#lda-with-p1",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA with \\(p>1\\)",
-    "text": "LDA with \\(p&gt;1\\)\n\nWhen we have 2 or more predictors, the distribution becomes multivariate.\nIf the covariance between predictors is 0 within each class of the response, LDA is still appropriate."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#qda",
-    "href": "slides/04-2-lda-qda.html#qda",
-    "title": "Chapter 4 Part 2",
-    "section": "QDA",
-    "text": "QDA\n\nQDA arises when \\(p&gt;1\\) and the is a covariance structure between the predictors within the same level of the response.\nThis introduces a squared term into the maximization problem of the \\(\\delta_k(x)\\), thus the name."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#probabilities",
-    "href": "slides/04-2-lda-qda.html#probabilities",
-    "title": "Chapter 4 Part 2",
-    "section": "Probabilities",
-    "text": "Probabilities\n\nOnce the estimates for the \\(\\hat{\\delta}_k(x)\\) have been found, we can plug them in and get:\n\\[\\hat{P}(Y=k|X=x)=\\frac{e^{\\hat{\\delta}_k(x)}}{\\sum_{l=1}^Ke^{\\hat{\\delta}^l(x)}}\\]\nClassifying to the largest \\(\\hat{\\delta}_k(x)\\) amounts to classifying to the class for which \\(\\hat{P}(Y = k|X = x)\\) is largest.\nWhen \\(K = 2\\), we classify to class 2 if \\(\\hat{P}(Y = 2|X = x)\\geq 0.5\\), else to class 1."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#example---credit-card-fraud",
-    "href": "slides/04-2-lda-qda.html#example---credit-card-fraud",
-    "title": "Chapter 4 Part 2",
-    "section": "Example - Credit Card Fraud",
-    "text": "Example - Credit Card Fraud\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.972\n\n\n\nAccuracy of 97.7% on a testing set!\nWhat about the different types of errors?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#errors",
-    "href": "slides/04-2-lda-qda.html#errors",
-    "title": "Chapter 4 Part 2",
-    "section": "Errors",
-    "text": "Errors\n\nOf the true yes, we made errors at the rate of 83/(83+26), 76%\nOf the true no, we made errors at the rate of 2/(2889+2), .069%"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#types-of-errors",
-    "href": "slides/04-2-lda-qda.html#types-of-errors",
-    "title": "Chapter 4 Part 2",
-    "section": "Types of Errors",
-    "text": "Types of Errors\n\nRecall:\n\nFalse positive rate: The fraction of negative examples that are classified as positive.\nFalse negative rate: The fraction of positive examples that are classified as negative.\n\nRemember the model gave probabilities, the final yes or no is decided by\n\\[\\hat{P}(Default=Yes|Balance,Student) \\geq .5\\]\n\nWe can adjust our error rates by changing that threshold"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#varying-the-threshold",
-    "href": "slides/04-2-lda-qda.html#varying-the-threshold",
-    "title": "Chapter 4 Part 2",
-    "section": "Varying the threshold",
-    "text": "Varying the threshold\n\nIn order to determine the best threshold, we want to maximize the specificty and sensitivity.\nOR - maximize the sensitivty and minimize 1-specificity.\nIn order to to do this we use an \\(ROC\\) curve which stands for receiver operating characteristic curve."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#sensitivity-and-specificity",
-    "href": "slides/04-2-lda-qda.html#sensitivity-and-specificity",
-    "title": "Chapter 4 Part 2",
-    "section": "Sensitivity and Specificity",
-    "text": "Sensitivity and Specificity\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n\nThe sensitivity is the true positive rate.\n\nThe rate at which we correctly predict a person will default.\n26/(83+26) = .24 (24%)\n\nThe specificity is the true negative rate.\n\nThe rate at which we correctly predict a person will not default.\n2889/(2889+2) =.999 (99.9%)"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#roc-curve",
-    "href": "slides/04-2-lda-qda.html#roc-curve",
-    "title": "Chapter 4 Part 2",
-    "section": "ROC Curve",
-    "text": "ROC Curve\nWe want to maximize the area under this curve, called ROC AUC\n\nlda_roc&lt;- lda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_curve(truth = default,.pred_No) \n\nhead(lda_roc)\n\n# A tibble: 6 × 3\n  .threshold specificity sensitivity\n       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;\n1  -Inf          0                 1\n2     0.0819     0                 1\n3     0.129      0.00917           1\n4     0.151      0.0183            1\n5     0.154      0.0275            1\n6     0.201      0.0367            1"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#roc-auc",
-    "href": "slides/04-2-lda-qda.html#roc-auc",
-    "title": "Chapter 4 Part 2",
-    "section": "ROC AUC",
-    "text": "ROC AUC\n\nlda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957\n\n\nIf we want to tune our model better, we can optimize the ROC AUC by changing the threshold.\n\nI did a train/test approach here. What should I do different if I want to tune for threshold?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#qda-in-r",
-    "href": "slides/04-2-lda-qda.html#qda-in-r",
-    "title": "Chapter 4 Part 2",
-    "section": "QDA In R",
-    "text": "QDA In R\n\nqda_fit&lt;-discrim_quad() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")|&gt; \n  fit(default ~ balance + student,\n      data = training(def_splits))\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  conf_mat(truth = default, estimate = .pred_class) \n\n          Truth\nPrediction   No  Yes\n       No  2888   80\n       Yes    3   29\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#tuning-by-threhold",
-    "href": "slides/04-2-lda-qda.html#tuning-by-threhold",
-    "title": "Chapter 4 Part 2",
-    "section": "Tuning By Threhold",
-    "text": "Tuning By Threhold\nhttps://www.tidymodels.org/start/case-study/\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#roc-curve-1",
-    "href": "slides/04-2-lda-qda.html#roc-curve-1",
-    "title": "Chapter 4 Part 2",
-    "section": "ROC Curve",
-    "text": "ROC Curve\n\nautoplot(lda_roc)"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#why-another-approach",
-    "href": "slides/04-2-lda-qda.html#why-another-approach",
-    "title": "Chapter 4 Part 2",
-    "section": "Why Another Approach?",
-    "text": "Why Another Approach?\n\nWhen the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.\nIf n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.\nLinear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data."
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-when-p1",
-    "href": "slides/04-2-lda-qda.html#lda-when-p1",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA (when \\(p=1\\))",
-    "text": "LDA (when \\(p=1\\))\nThe Gaussian (normal) density has the form\n\\[f_k(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma_k}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}\\]\n\n\\(\\mu_k\\) is the mean, \\(\\sigma_k^2\\) the variance (in class \\(k\\))\nFor now, we assume \\(\\sigma_k=\\sigma\\) for all groups (we will need to check this with real data)"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-when-p1-1",
-    "href": "slides/04-2-lda-qda.html#lda-when-p1-1",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA (when \\(p=1\\))",
-    "text": "LDA (when \\(p=1\\))\nWe plug this \\(f_k(x)\\) into Bayes formula and after some simplifying we get:\n\\[p_k(x) = \\frac{\\pi_k\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}{\\sum_{l=1}^K\\pi_l\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}\\]"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#discriminant-function",
-    "href": "slides/04-2-lda-qda.html#discriminant-function",
-    "title": "Chapter 4 Part 2",
-    "section": "Discriminant Function",
-    "text": "Discriminant Function\nTo classify at the value X = x, we need to see which of the \\(p_k(x)\\) is largest. Taking logs, and discarding terms that do not depend on \\(k\\), we see that this is equivalent to assigning x to the class with the largest discriminant score:\n\\[\\delta_k(x) = x\\cdot \\frac{\\mu_k}{\\sigma^2}-\\frac{\\mu_k^2}{2\\sigma^2}+log(\\pi_k)\\]\n\nImportantly, \\(\\delta_k(x)\\) is a linear function of \\(x\\).\nIf there are \\(K=2\\) classes and \\(\\pi_1=\\pi_2=.5\\), then the decision boundry is at\n\n\\[x=\\frac{\\mu_1+\\mu_2}{2}\\]"
-  },
-  {
-    "objectID": "labs/03-lda_qda.html",
-    "href": "labs/03-lda_qda.html",
-    "title": "Lab 03",
-    "section": "",
-    "text": "Go to our RStudio and create a new R project inside your class folder.\n\n\nCreate a .qmd file for your lab, make sure the author is your name, and Render the document."
-  },
-  {
-    "objectID": "labs/03-lda_qda.html#yaml",
-    "href": "labs/03-lda_qda.html#yaml",
-    "title": "Lab 03",
-    "section": "",
-    "text": "Create a .qmd file for your lab, make sure the author is your name, and Render the document."
-  },
-  {
-    "objectID": "labs/03-lda_qda.html#conceptual-questions",
-    "href": "labs/03-lda_qda.html#conceptual-questions",
-    "title": "Lab 03",
-    "section": "Conceptual questions",
-    "text": "Conceptual questions\n\nSuppose that an individual has a 23% chance of defaulting on their credit card payment. What are the odds that they will default?"
-  },
-  {
-    "objectID": "labs/03-lda_qda.html#logistic-regression",
-    "href": "labs/03-lda_qda.html#logistic-regression",
-    "title": "Lab 03",
-    "section": "Logistic Regression",
-    "text": "Logistic Regression\n\nFor this lab we are using the Smarket data. Examine this data set - how many observations are there? How many columns? What are the variables?\nLet’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?\n\n\nggpairs(Smarket, \n        lower = list(combo = wrap(ggally_facethist, binwidth = 0.5)), \n        progress = FALSE)\n\n\nInference Fit a logistic regression model to predict Direction using Lag1, Lag2, Lag3, Lag4, Lag5, and Volume. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 6 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 4. Interpret the odds ratio for the same predictor you selected in Exercise 4.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 4. What is the test Accuracy for this model? Interpret this result.\nInference Fit a logistic regression model to predict Direction using only Lag1 and Lag2. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 2 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 7. Interpret the odds ratio for the same predictor you selected in Exercise 7.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.\nIf you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#lda-with-p1-1",
-    "href": "slides/04-2-lda-qda.html#lda-with-p1-1",
-    "title": "Chapter 4 Part 2",
-    "section": "LDA with \\(p>1\\)",
-    "text": "LDA with \\(p&gt;1\\)\n\nFor example, with 2 normal predictors, their distributions in 3d would like like this:\n\n\n\nLuckily, the discriminate function remains linear\n\n\\[\\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\\]"
-  },
-  {
-    "objectID": "slides/04-2-lda-qda.html#example-p2k3",
-    "href": "slides/04-2-lda-qda.html#example-p2k3",
-    "title": "Chapter 4 Part 2",
-    "section": "Example: \\(p=2,K=3\\)",
-    "text": "Example: \\(p=2,K=3\\)\n\nThere is no limit on the number of levels of the categorical response for LDA\nSuppose \\(\\pi_1=\\pi_2\\pi_3=1/3\\)\n\n - The dashed lines are known as the Bayes decision boundaries"
   }
 ]

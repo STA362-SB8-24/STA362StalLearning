@@ -433,7 +433,7 @@ Tyler George
 <p>Let’s look at a sample of 116 sparrows from Kent Island. We are interested in the relationship between <code>Weight</code> and <code>Wing Length</code></p>
 
 <img data-src="03-linear-regression_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><ul>
-<li>the <strong>standard error</strong> of <span class="math inline">\(\hat{\beta_1}\)</span> ( <span class="math inline">\(SE_{\hat{\beta}_1}\)</span> ) is how much we expect the sample slope to vary from one random sample to another.</li>
+<li class="fragment">the <strong>standard error</strong> of <span class="math inline">\(\hat{\beta_1}\)</span> ( <span class="math inline">\(SE_{\hat{\beta}_1}\)</span> ) is how much we expect the sample slope to vary from one random sample to another.</li>
 </ul>
 </section>
 <section id="sparrows" class="slide level2">
@@ -474,7 +474,7 @@ Tyler George
 </div>
 </div>
 <ul>
-<li>“the sample slope is more than 13 standard errors above a slope of zero”</li>
+<li class="fragment">“the sample slope is more than 13 standard errors above a slope of zero”</li>
 </ul>
 </section>
 <section id="sparrows-2" class="slide level2 small">
@@ -497,8 +497,8 @@ Tyler George
 </div>
 </div>
 <ul>
-<li>confidence intervals</li>
-<li>p-values</li>
+<li class="fragment">confidence intervals</li>
+<li class="fragment">p-values</li>
 </ul>
 </div>
 </section>
@@ -534,14 +534,14 @@ Tyler George
 <h2>Sparrows</h2>
 
 <img data-src="03-linear-regression_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"><ul>
-<li>I’ve generated some data under a null hypothesis where <span class="math inline">\(n = 20\)</span></li>
+<li class="fragment">I’ve generated some data under a null hypothesis where <span class="math inline">\(n = 20\)</span></li>
 </ul>
 </section>
 <section id="sparrows-5" class="slide level2">
 <h2>Sparrows</h2>
 
 <img data-src="03-linear-regression_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"><ul>
-<li>this is a <strong>t-distribution</strong> with <strong>n-p-1</strong> degrees of freedom.</li>
+<li class="fragment">this is a <strong>t-distribution</strong> with <strong>n-p-1</strong> degrees of freedom.</li>
 </ul>
 </section>
 <section id="sparrows-6" class="slide level2">
@@ -560,7 +560,7 @@ Tyler George
 </div>
 
 <img data-src="03-linear-regression_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"><ul>
-<li>p-value</li>
+<li class="fragment">p-value</li>
 </ul>
 </section>
 <section>
@@ -591,7 +591,7 @@ Tyler George
 <h2>Return to generated data, n = 20</h2>
 
 <img data-src="03-linear-regression_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"><ul>
-<li>Let’s say we get a statistic of <strong>1.5</strong> in a sample</li>
+<li class="fragment">Let’s say we get a statistic of <strong>1.5</strong> in a sample</li>
 </ul>
 </section>
 <section id="lets-do-it-in-r" class="slide level2">
@@ -637,10 +637,10 @@ Tyler George
 <section id="hypothesis-test" class="slide level2">
 <h2>Hypothesis test</h2>
 <ul>
-<li><strong>null hypothesis</strong> <span class="math inline">\(H_0: \beta_1 = 0\)</span></li>
-<li><strong>alternative hypothesis</strong> <span class="math inline">\(H_A: \beta_1 \ne 0\)</span></li>
-<li><strong>p-value</strong>: 0.15</li>
-<li>Often, we have an <span class="math inline">\(\alpha\)</span>-level cutoff to compare this to, for example <strong>0.05</strong>. Since this is greater than <strong>0.05</strong>, we <strong>fail to reject the null hypothesis</strong></li>
+<li class="fragment"><strong>null hypothesis</strong> <span class="math inline">\(H_0: \beta_1 = 0\)</span></li>
+<li class="fragment"><strong>alternative hypothesis</strong> <span class="math inline">\(H_A: \beta_1 \ne 0\)</span></li>
+<li class="fragment"><strong>p-value</strong>: 0.15</li>
+<li class="fragment">Often, we have an <span class="math inline">\(\alpha\)</span>-level cutoff to compare this to, for example <strong>0.05</strong>. Since this is greater than <strong>0.05</strong>, we <strong>fail to reject the null hypothesis</strong></li>
 </ul>
 </section>
 <section id="application-exercise-2" class="slide level2 small">
@@ -662,8 +662,8 @@ Tyler George
 <h1>Confidence interval</h1>
 <p><span class="math display">\[\Huge \hat\beta_1 \pm t^∗ \times SE_{\hat\beta_1}\]</span></p>
 <ul>
-<li><span class="math inline">\(t^*\)</span> is the critical value for the <span class="math inline">\(t_{n−p-1}\)</span> density curve to obtain the desired confidence level</li>
-<li>Often we want a <strong>95% confidence level</strong>.</li>
+<li class="fragment"><span class="math inline">\(t^*\)</span> is the critical value for the <span class="math inline">\(t_{n−p-1}\)</span> density curve to obtain the desired confidence level</li>
+<li class="fragment">Often we want a <strong>95% confidence level</strong>.</li>
 </ul>
 </section>
 <section id="lets-do-it-in-r-3" class="slide level2 small">
@@ -682,9 +682,9 @@ Tyler George
 </div>
 </div>
 <ul>
-<li><span class="math inline">\(t^* = t_{n-p-1} = t_{114} = 1.98\)</span></li>
-<li><span class="math inline">\(LB = 0.47 - 1.98\times 0.0347 = 0.399\)</span></li>
-<li><span class="math inline">\(UB = 0.47+1.98 \times 0.0347 = 0.536\)</span></li>
+<li class="fragment"><span class="math inline">\(t^* = t_{n-p-1} = t_{114} = 1.98\)</span></li>
+<li class="fragment"><span class="math inline">\(LB = 0.47 - 1.98\times 0.0347 = 0.399\)</span></li>
+<li class="fragment"><span class="math inline">\(UB = 0.47+1.98 \times 0.0347 = 0.536\)</span></li>
 </ul>
 </section></section>
 <section>
@@ -695,10 +695,10 @@ Tyler George
 <section id="linear-regression-questions" class="slide level2">
 <h2>Linear Regression Questions</h2>
 <ul>
-<li>✔️ Is there a relationship between a response variable and predictors?</li>
-<li>✔️ How strong is the relationship?</li>
-<li>✔️ What is the uncertainty?</li>
-<li>How accurately can we predict a future outcome?</li>
+<li class="fragment">✔️ Is there a relationship between a response variable and predictors?</li>
+<li class="fragment">✔️ How strong is the relationship?</li>
+<li class="fragment">✔️ What is the uncertainty?</li>
+<li class="fragment">How accurately can we predict a future outcome?</li>
 </ul>
 </section>
 <section id="sparrows-10" class="slide level2 small">
@@ -720,7 +720,7 @@ Tyler George
 </div>
 </div>
 <ul>
-<li><span class="math inline">\(1.37 + 0.467 \times 30 = 15.38\)</span></li>
+<li class="fragment"><span class="math inline">\(1.37 + 0.467 \times 30 = 15.38\)</span></li>
 </ul>
 </section>
 <section id="linear-regression-accuracy" class="slide level2 small">
@@ -729,7 +729,7 @@ Tyler George
 <p>What is the residual sum of squares again?</p>
 </div>
 <ul>
-<li>Note: In previous classes, this may have been referred to as SSE (sum of squares error), the book uses RSS, so we will stick with that!</li>
+<li class="fragment">Note: In previous classes, this may have been referred to as SSE (sum of squares error), the book uses RSS, so we will stick with that!</li>
 </ul>
 <div class="fragment">
 <p><span class="math display">\[RSS = \sum(y_i - \hat{y}_i)^2\]</span></p>
@@ -747,13 +747,13 @@ Tyler George
 <section id="linear-regression-accuracy-2" class="slide level2 small">
 <h2>Linear Regression Accuracy</h2>
 <ul>
-<li>There are many ways “model fit” can be assessed. Two common ones are:
+<li class="fragment">There are many ways “model fit” can be assessed. Two common ones are:
 <ul>
-<li>Residual Standard Error (RSE)</li>
-<li><span class="math inline">\(R^2\)</span> - the fraction of the variance explained</li>
+<li class="fragment">Residual Standard Error (RSE)</li>
+<li class="fragment"><span class="math inline">\(R^2\)</span> - the fraction of the variance explained</li>
 </ul></li>
-<li><span class="math inline">\(RSE = \sqrt{\frac{1}{n-p-1}RSS}\)</span></li>
-<li><span class="math inline">\(R^2 = 1 - \frac{RSS}{TSS}\)</span></li>
+<li class="fragment"><span class="math inline">\(RSE = \sqrt{\frac{1}{n-p-1}RSS}\)</span></li>
+<li class="fragment"><span class="math inline">\(R^2 = 1 - \frac{RSS}{TSS}\)</span></li>
 </ul>
 </section>
 <section id="lets-do-it-in-r-4" class="slide level2">
@@ -803,12 +803,12 @@ Tyler George
 <section id="additional-linear-regression-topics" class="slide level2">
 <h2>Additional Linear Regression Topics</h2>
 <ul>
-<li>Polynomial terms</li>
-<li>Interactions</li>
-<li>Outliers</li>
-<li>Non-constant variance of error terms</li>
-<li>High leverage points</li>
-<li>Collinearity</li>
+<li class="fragment">Polynomial terms</li>
+<li class="fragment">Interactions</li>
+<li class="fragment">Outliers</li>
+<li class="fragment">Non-constant variance of error terms</li>
+<li class="fragment">High leverage points</li>
+<li class="fragment">Collinearity</li>
 </ul>
 <p><em>Refer to Chapter 3 for more details on these topics if you need a refresher.</em></p>
 

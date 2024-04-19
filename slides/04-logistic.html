@@ -426,9 +426,9 @@ Tyler George
 <section id="recap" class="slide level2 small">
 <h2>Recap</h2>
 <ul>
-<li>We had a <em>linear regression</em> refresher</li>
-<li>Linear regression is a great tool when we have a continuous outcome</li>
-<li>We are going to learn some fancy ways to do even better in the future</li>
+<li class="fragment">We had a <em>linear regression</em> refresher</li>
+<li class="fragment">Linear regression is a great tool when we have a continuous outcome</li>
+<li class="fragment">We are going to learn some fancy ways to do even better in the future</li>
 </ul>
 <p><em>Setup:</em></p>
 <div class="cell">
@@ -450,13 +450,13 @@ Tyler George
 <p>What are some examples of classification problems?</p>
 </div>
 <ul>
-<li>Qualitative response variable in an <em>unordered set</em>, <span class="math inline">\(\mathcal{C}\)</span></li>
-<li><code>eye color</code> <span class="math inline">\(\in\)</span> <code>{blue, brown, green}</code></li>
-<li><code>email</code> <span class="math inline">\(\in\)</span> <code>{spam, not spam}</code></li>
-<li>Response, <span class="math inline">\(Y\)</span> takes on values in <span class="math inline">\(\mathcal{C}\)</span></li>
-<li>Predictors are a vector, <span class="math inline">\(X\)</span></li>
-<li>The task: build a function <span class="math inline">\(C(X)\)</span> that takes <span class="math inline">\(X\)</span> and predicts <span class="math inline">\(Y\)</span>, <span class="math inline">\(C(X)\in\mathcal{C}\)</span></li>
-<li>Many times we are actually more interested in the <em>probabilities</em> that <span class="math inline">\(X\)</span> belongs to each category in <span class="math inline">\(\mathcal{C}\)</span></li>
+<li class="fragment">Qualitative response variable in an <em>unordered set</em>, <span class="math inline">\(\mathcal{C}\)</span></li>
+<li class="fragment"><code>eye color</code> <span class="math inline">\(\in\)</span> <code>{blue, brown, green}</code></li>
+<li class="fragment"><code>email</code> <span class="math inline">\(\in\)</span> <code>{spam, not spam}</code></li>
+<li class="fragment">Response, <span class="math inline">\(Y\)</span> takes on values in <span class="math inline">\(\mathcal{C}\)</span></li>
+<li class="fragment">Predictors are a vector, <span class="math inline">\(X\)</span></li>
+<li class="fragment">The task: build a function <span class="math inline">\(C(X)\)</span> that takes <span class="math inline">\(X\)</span> and predicts <span class="math inline">\(Y\)</span>, <span class="math inline">\(C(X)\in\mathcal{C}\)</span></li>
+<li class="fragment">Many times we are actually more interested in the <em>probabilities</em> that <span class="math inline">\(X\)</span> belongs to each category in <span class="math inline">\(\mathcal{C}\)</span></li>
 </ul>
 </section>
 <section id="example-credit-card-default" class="slide level2">
@@ -494,9 +494,9 @@ Tyler George
 <p>We can code <code>Default</code> as</p>
 <p><span class="math display">\[Y = \begin{cases} 0 &amp; \textrm{if }\texttt{No}\\ 1&amp;\textrm{if }\texttt{Yes}\end{cases}\]</span> Can we fit a linear regression of <span class="math inline">\(Y\)</span> on <span class="math inline">\(X\)</span> and classify as <code>Yes</code> if <span class="math inline">\(\hat{Y}&gt; 0.5\)</span>?</p>
 <ul>
-<li>In this case of a <strong>binary</strong> outcome, linear regression is okay (it is equivalent to <strong>linear discriminant analysis</strong>, you can read more about that in your book!)</li>
-<li><span class="math inline">\(E[Y|X=x] = P(Y=1|X=x)\)</span>, so it seems like this is a pretty good idea!</li>
-<li><strong>The problem</strong>: Linear regression can produce probabilities less than 0 or greater than 1 😱</li>
+<li class="fragment">In this case of a <strong>binary</strong> outcome, linear regression is okay (it is equivalent to <strong>linear discriminant analysis</strong>, you can read more about that in your book!)</li>
+<li class="fragment"><span class="math inline">\(E[Y|X=x] = P(Y=1|X=x)\)</span>, so it seems like this is a pretty good idea!</li>
+<li class="fragment"><strong>The problem</strong>: Linear regression can produce probabilities less than 0 or greater than 1 😱</li>
 </ul>
 </section>
 <section id="can-we-use-linear-regression-1" class="slide level2 small">
@@ -507,7 +507,7 @@ Tyler George
 <p>What may do a better job?</p>
 </div>
 <ul>
-<li><strong>Logistic regression!</strong></li>
+<li class="fragment"><strong>Logistic regression!</strong></li>
 </ul>
 </section>
 <section id="linear-versus-logistic-regression" class="slide level2 small">
@@ -550,7 +550,7 @@ Tyler George
 <p>Which does a better job at predicting the probability of default?</p>
 </div>
 <ul>
-<li>The orange marks represent the response <span class="math inline">\(Y\in\{0,1\}\)</span></li>
+<li class="fragment">The orange marks represent the response <span class="math inline">\(Y\in\{0,1\}\)</span></li>
 </ul>
 </section>
 <section id="linear-regression" class="slide level2 small">
@@ -565,8 +565,8 @@ Y = \begin{cases} 1&amp; \textrm{if }\texttt{stroke}\\2&amp;\textrm{if }\texttt{
 <p>What could go wrong here?</p>
 </div>
 <ul>
-<li>The coding implies an <em>ordering</em></li>
-<li>The coding implies <em>equal spacing</em> (that is the difference between <code>stroke</code> and <code>drug overdose</code> is the same as <code>drug overdose</code> and <code>epileptic seizure</code>)</li>
+<li class="fragment">The coding implies an <em>ordering</em></li>
+<li class="fragment">The coding implies <em>equal spacing</em> (that is the difference between <code>stroke</code> and <code>drug overdose</code> is the same as <code>drug overdose</code> and <code>epileptic seizure</code>)</li>
 </ul>
 </section>
 <section id="linear-regression-1" class="slide level2 small">
@@ -578,8 +578,8 @@ Y = \begin{cases} 1&amp; \textrm{if }\texttt{stroke}\\2&amp;\textrm{if }\texttt{
 \end{align}
 \]</span></p>
 <ul>
-<li>Linear regression is <strong>not</strong> appropriate here</li>
-<li><strong>Mutliclass logistic regression</strong> or <strong>discriminant analysis</strong> are more appropriate</li>
+<li class="fragment">Linear regression is <strong>not</strong> appropriate here</li>
+<li class="fragment"><strong>Mutliclass logistic regression</strong> or <strong>discriminant analysis</strong> are more appropriate</li>
 </ul>
 </section>
 <section id="logistic-regression" class="slide level2 small">
@@ -588,8 +588,8 @@ Y = \begin{cases} 1&amp; \textrm{if }\texttt{stroke}\\2&amp;\textrm{if }\texttt{
 p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 \]</span></p>
 <ul>
-<li>Note: <span class="math inline">\(p(X)\)</span> is shorthand for <span class="math inline">\(P(Y=1|X)\)</span></li>
-<li>No matter what values <span class="math inline">\(\beta_0\)</span>, <span class="math inline">\(\beta_1\)</span>, or <span class="math inline">\(X\)</span> take <span class="math inline">\(p(X)\)</span> will always be between 0 and 1</li>
+<li class="fragment">Note: <span class="math inline">\(p(X)\)</span> is shorthand for <span class="math inline">\(P(Y=1|X)\)</span></li>
+<li class="fragment">No matter what values <span class="math inline">\(\beta_0\)</span>, <span class="math inline">\(\beta_1\)</span>, or <span class="math inline">\(X\)</span> take <span class="math inline">\(p(X)\)</span> will always be between 0 and 1</li>
 </ul>
 </section>
 <section id="logistic-regression-1" class="slide level2 small">
@@ -605,7 +605,7 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <p>What is this transformation called?</p>
 </div>
 <ul>
-<li>This is a <strong>log odds</strong> or <strong>logit</strong> transformation of <span class="math inline">\(p(X)\)</span></li>
+<li class="fragment">This is a <strong>log odds</strong> or <strong>logit</strong> transformation of <span class="math inline">\(p(X)\)</span></li>
 </ul>
 </section>
 <section id="linear-versus-logistic-regression-1" class="slide level2">
@@ -627,9 +627,9 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <p>In logistic regression, we use <strong>maximum likelihood</strong> to estimate the parameters</p>
 <p><span class="math display">\[\mathcal{l}(\beta_0,\beta_1)=\prod_{i:y_i=1}p(x_i)\prod_{i:y_i=0}(1-p(x_i))\]</span></p>
 <ul>
-<li>This <strong>likelihood</strong> give the probability of the observed ones and zeros in the data</li>
-<li>We pick <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> to maximize the likelihood</li>
-<li><em>We’ll let <code>R</code> do the heavy lifting here</em></li>
+<li class="fragment">This <strong>likelihood</strong> give the probability of the observed ones and zeros in the data</li>
+<li class="fragment">We pick <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> to maximize the likelihood</li>
+<li class="fragment"><em>We’ll let <code>R</code> do the heavy lifting here</em></li>
 </ul>
 </section>
 <section id="lets-see-it-in-r" class="slide level2 small">
@@ -649,7 +649,7 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </div>
 </div>
 <ul>
-<li>Use the <code>logistic_reg()</code> function in R with the <code>glm</code> engine</li>
+<li class="fragment">Use the <code>logistic_reg()</code> function in R with the <code>glm</code> engine</li>
 </ul>
 </section>
 <section id="making-predictions" class="slide level2">
@@ -803,32 +803,32 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <h2>Confounding</h2>
 
 <img data-src="04-logistic_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"><ul>
-<li>Students tend to have higher balances than non-students</li>
-<li>Their <strong>marginal</strong> default rate is higher</li>
-<li>For each level of balance, students default less</li>
-<li>Their <strong>conditional</strong> default rate is lower</li>
+<li class="fragment">Students tend to have higher balances than non-students</li>
+<li class="fragment">Their <strong>marginal</strong> default rate is higher</li>
+<li class="fragment">For each level of balance, students default less</li>
+<li class="fragment">Their <strong>conditional</strong> default rate is lower</li>
 </ul>
 </section>
 <section id="a-bit-about-odds" class="slide level2 small">
 <h2>A bit about “odds”</h2>
 <ul>
-<li>The “odds” tell you how likely an event is</li>
-<li>🌂 Let’s say there is a 60% chance of rain today * What is the probability that it will rain?</li>
-<li><span class="math inline">\(p = 0.6\)</span></li>
-<li>What is the probability that it <strong>won’t</strong> rain?</li>
-<li><span class="math inline">\(1-p = 0.4\)</span></li>
-<li>What are the <strong>odds</strong> that it will rain?</li>
-<li>3 to 2, 3:2, <span class="math inline">\(\frac{0.6}{0.4} = 1.5\)</span></li>
+<li class="fragment">The “odds” tell you how likely an event is</li>
+<li class="fragment">🌂 Let’s say there is a 60% chance of rain today * What is the probability that it will rain?</li>
+<li class="fragment"><span class="math inline">\(p = 0.6\)</span></li>
+<li class="fragment">What is the probability that it <strong>won’t</strong> rain?</li>
+<li class="fragment"><span class="math inline">\(1-p = 0.4\)</span></li>
+<li class="fragment">What are the <strong>odds</strong> that it will rain?</li>
+<li class="fragment">3 to 2, 3:2, <span class="math inline">\(\frac{0.6}{0.4} = 1.5\)</span></li>
 </ul>
 </section>
 <section id="transforming-logs" class="slide level2 small">
 <h2>Transforming logs</h2>
 <ul>
-<li>How do you “undo” a <span class="math inline">\(\log\)</span> base <span class="math inline">\(e\)</span>?</li>
-<li>Use <span class="math inline">\(e\)</span>! For example:</li>
-<li><span class="math inline">\(e^{\log(10)} = 10\)</span></li>
-<li><span class="math inline">\(e^{\log(1283)} = 1283\)</span></li>
-<li><span class="math inline">\(e^{\log(x)} = x\)</span></li>
+<li class="fragment">How do you “undo” a <span class="math inline">\(\log\)</span> base <span class="math inline">\(e\)</span>?</li>
+<li class="fragment">Use <span class="math inline">\(e\)</span>! For example:</li>
+<li class="fragment"><span class="math inline">\(e^{\log(10)} = 10\)</span></li>
+<li class="fragment"><span class="math inline">\(e^{\log(1283)} = 1283\)</span></li>
+<li class="fragment"><span class="math inline">\(e^{\log(x)} = x\)</span></li>
 </ul>
 </section>
 <section id="transforming-logs-1" class="slide level2 small">
@@ -846,25 +846,25 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </ul>
 </div>
 <ul>
-<li><span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
+<li class="fragment"><span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
 </ul>
 </section>
 <section id="transforming-odds" class="slide level2 small">
 <h2>Transforming odds</h2>
 <ul>
-<li>odds = <span class="math inline">\(\frac{\pi}{1-\pi}\)</span></li>
-<li>Solving for <span class="math inline">\(\pi\)</span></li>
-<li><span class="math inline">\(\pi = \frac{\textrm{odds}}{1+\textrm{odds}}\)</span></li>
-<li>Plugging in <span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
-<li><span class="math inline">\(\pi = \frac{e^{\log(odds)}}{1+e^{\log(odds)}}\)</span></li>
-<li>Plugging in <span class="math inline">\(\log(odds) = \beta_0 + \beta_1x\)</span></li>
-<li><span class="math inline">\(\pi = \frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
+<li class="fragment">odds = <span class="math inline">\(\frac{\pi}{1-\pi}\)</span></li>
+<li class="fragment">Solving for <span class="math inline">\(\pi\)</span></li>
+<li class="fragment"><span class="math inline">\(\pi = \frac{\textrm{odds}}{1+\textrm{odds}}\)</span></li>
+<li class="fragment">Plugging in <span class="math inline">\(e^{\log(odds)}\)</span> = odds</li>
+<li class="fragment"><span class="math inline">\(\pi = \frac{e^{\log(odds)}}{1+e^{\log(odds)}}\)</span></li>
+<li class="fragment">Plugging in <span class="math inline">\(\log(odds) = \beta_0 + \beta_1x\)</span></li>
+<li class="fragment"><span class="math inline">\(\pi = \frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
 </ul>
 </section>
 <section id="the-logistic-model" class="slide level2">
 <h2>The logistic model</h2>
 <ul>
-<li>✌️ forms</li>
+<li class="fragment">✌️ forms</li>
 </ul>
 <table>
 <colgroup>
@@ -928,18 +928,18 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <section id="the-logistic-model-2" class="slide level2 small">
 <h2>The logistic model</h2>
 <ul>
-<li>✌️ forms</li>
-<li><strong>log(odds)</strong>: <span class="math inline">\(l = \beta_0 + \beta_1x\)</span></li>
-<li><strong>P(Outcome = Yes)</strong>: <span class="math inline">\(\Large\pi =\frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
+<li class="fragment">✌️ forms</li>
+<li class="fragment"><strong>log(odds)</strong>: <span class="math inline">\(l = \beta_0 + \beta_1x\)</span></li>
+<li class="fragment"><strong>P(Outcome = Yes)</strong>: <span class="math inline">\(\Large\pi =\frac{e^{\beta_0 + \beta_1x}}{1+e^{\beta_0 + \beta_1x}}\)</span></li>
 </ul>
 </section>
 <section id="odds-ratios" class="slide level2 small">
 <h2>Odds ratios</h2>
 <p>A study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.</p>
 <ul>
-<li>Researchers recruited 200 subjects who suffered from migraines</li>
-<li>randomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment</li>
-<li>Subjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later. (either <strong>Pain-free</strong> or <strong>Not pain-free</strong>)</li>
+<li class="fragment">Researchers recruited 200 subjects who suffered from migraines</li>
+<li class="fragment">randomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment</li>
+<li class="fragment">Subjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later. (either <strong>Pain-free</strong> or <strong>Not pain-free</strong>)</li>
 </ul>
 </section>
 <section id="odds-ratios-1" class="slide level2 small">
@@ -1031,13 +1031,13 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li>We can compare the results using <strong>odds</strong></li>
-<li>What are the odds of being pain-free for the placebo group?</li>
-<li><span class="math inline">\((22/100)/(78/100) = 22/78 = 0.282\)</span></li>
-<li>What are the odds of being pain-free for the treatment group?</li>
-<li><span class="math inline">\(39/61 = 0.639\)</span></li>
-<li>Comparing the <strong>odds</strong> what can we conclude?</li>
-<li>TMS increases the likelihood of success</li>
+<li class="fragment">We can compare the results using <strong>odds</strong></li>
+<li class="fragment">What are the odds of being pain-free for the placebo group?</li>
+<li class="fragment"><span class="math inline">\((22/100)/(78/100) = 22/78 = 0.282\)</span></li>
+<li class="fragment">What are the odds of being pain-free for the treatment group?</li>
+<li class="fragment"><span class="math inline">\(39/61 = 0.639\)</span></li>
+<li class="fragment">Comparing the <strong>odds</strong> what can we conclude?</li>
+<li class="fragment">TMS increases the likelihood of success</li>
 </ul>
 </section>
 <section id="odds-ratios-6" class="slide level2 small">
@@ -1073,9 +1073,9 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li>We can summarize this relationship with an <strong>odds ratio</strong>: the ratio of the two odds</li>
-<li><span class="math inline">\(\Large OR = \frac{39/61}{22/78} = \frac{0.639}{0.282} = 2.27\)</span></li>
-<li><em>“the odds of being pain free were 2.27 times higher with TMS than with the placebo”</em></li>
+<li class="fragment">We can summarize this relationship with an <strong>odds ratio</strong>: the ratio of the two odds</li>
+<li class="fragment"><span class="math inline">\(\Large OR = \frac{39/61}{22/78} = \frac{0.639}{0.282} = 2.27\)</span></li>
+<li class="fragment"><em>“the odds of being pain free were 2.27 times higher with TMS than with the placebo”</em></li>
 </ul>
 </section>
 <section id="odds-ratios-7" class="slide level2 small">
@@ -1114,8 +1114,8 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li><span class="math inline">\(\Large OR = \frac{61/39}{78/22} = \frac{1.564}{3.545} = 0.441\)</span></li>
-<li><em>the odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group</em></li>
+<li class="fragment"><span class="math inline">\(\Large OR = \frac{61/39}{78/22} = \frac{1.564}{3.545} = 0.441\)</span></li>
+<li class="fragment"><em>the odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group</em></li>
 </ul>
 </section>
 <section id="odds-ratios-8" class="slide level2 small">
@@ -1154,8 +1154,8 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </tbody>
 </table>
 <ul>
-<li><span class="math inline">\(\Large OR = \frac{78/22}{61/39} = \frac{3.545}{1.564} = 2.27\)</span></li>
-<li><em>the odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group</em></li>
+<li class="fragment"><span class="math inline">\(\Large OR = \frac{78/22}{61/39} = \frac{3.545}{1.564} = 2.27\)</span></li>
+<li class="fragment"><em>the odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group</em></li>
 </ul>
 </section>
 <section id="odds-ratios-9" class="slide level2 small">
@@ -1460,7 +1460,7 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 </div>
 <p><em>A one unit increase in GPA yields a 234-fold increase in the odds of acceptance</em></p>
 <ul>
-<li>😱 that seems huge! <strong>Remember:</strong> the interpretation of these coefficients depends on your units (the same as in ordinary linear regression).</li>
+<li class="fragment">😱 that seems huge! <strong>Remember:</strong> the interpretation of these coefficients depends on your units (the same as in ordinary linear regression).</li>
 </ul>
 </section>
 <section id="odds-ratios-20" class="slide level2 small">
@@ -1520,8 +1520,8 @@ p(X) = \frac{e^{\beta_0+\beta_1X}}{1+e^{\beta_0+\beta_1X}}
 <h2><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"></path></svg> <code>Application Exercise</code></h2>
 <p>Using the <code>Default</code> data from the <code>ISLR</code> package. Fit two logistic regression models that predict whether a customer <code>defaults</code></p>
 <ul>
-<li>One model with <code>student</code> as a predictor. Interpret the coefficient of <code>studentYes</code>.</li>
-<li>Another model with <code>balance</code> as a predictor. Interpret the coefficient of <code>balance</code>.</li>
+<li class="fragment">One model with <code>student</code> as a predictor. Interpret the coefficient of <code>studentYes</code>.</li>
+<li class="fragment">Another model with <code>balance</code> as a predictor. Interpret the coefficient of <code>balance</code>.</li>
 </ul>
 <p>Here is some code to get you started:</p>
 <div class="cell">

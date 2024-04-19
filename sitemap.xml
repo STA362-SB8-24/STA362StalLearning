@@ -9,16 +9,20 @@
     <lastmod>2024-04-18T16:48:18.400Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/01-02-welcome_to_sl.html</loc>
-    <lastmod>2024-04-15T01:58:50.297Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/03-linear-regression.html</loc>
+    <lastmod>2024-04-17T21:32:33.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/03-lda_qda.html</loc>
+    <lastmod>2024-04-19T13:42:35.135Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/01-cv-tm.html</loc>
     <lastmod>2024-04-17T19:39:20.709Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-03-logisitc.html</loc>
-    <lastmod>2024-04-17T21:40:34.166Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-03-logistic_lda_qda.html</loc>
+    <lastmod>2024-04-19T19:35:55.447Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-01-intro-review.html</loc>
@@ -57,27 +61,15 @@
     <lastmod>2024-04-18T17:53:31.932Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/03-linear-regression.html</loc>
-    <lastmod>2024-04-17T21:32:33.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/05-cv-tidymodels.html</loc>
-    <lastmod>2024-04-17T21:38:49.137Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04_2-lda_qda.html</loc>
-    <lastmod>2024-04-18T22:01:28.454Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-03-logistic_lda_qda.html</loc>
-    <lastmod>2024-04-19T19:32:38.053Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/01-02-welcome_to_sl.html</loc>
+    <lastmod>2024-04-15T01:58:50.297Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04-2-lda-qda.html</loc>
     <lastmod>2024-04-19T19:27:36.148Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/03-lda_qda.html</loc>
-    <lastmod>2024-04-19T13:42:35.135Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/05-cv-tidymodels.html</loc>
+    <lastmod>2024-04-17T21:38:49.137Z</lastmod>
   </url>
 </urlset>

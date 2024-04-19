@@ -373,9 +373,9 @@ Tyler George
 <section id="intros" class="slide level2">
 <h2>Intros</h2>
 <ul>
-<li>Name</li>
-<li>Major</li>
-<li>Fun OR boring fact</li>
+<li class="fragment">Name</li>
+<li class="fragment">Major</li>
+<li class="fragment">Fun OR boring fact</li>
 </ul>
 </section>
 <section id="statistical-learning-problems" class="slide level2 small">
@@ -383,7 +383,7 @@ Tyler George
 <div class="columns">
 <div class="column">
 <ul>
-<li>Identify risk factors for breast cancer</li>
+<li class="fragment">Identify risk factors for breast cancer</li>
 </ul>
 </div><div class="column">
 <p><img data-src="img/01/breast-cancer.jpg"></p>
@@ -398,12 +398,12 @@ Tyler George
 <div class="columns">
 <div class="column">
 <ul>
-<li>Customize an email spam detection system</li>
+<li class="fragment">Customize an email spam detection system</li>
 </ul>
 </div><div class="column">
 <ul>
-<li><strong>Data</strong>: 4601 labeled emails sent to <em>George</em> who works at <em>HP Labs</em></li>
-<li><strong>Input features</strong>: frequencies of words and punctuation</li>
+<li class="fragment"><strong>Data</strong>: 4601 labeled emails sent to <em>George</em> who works at <em>HP Labs</em></li>
+<li class="fragment"><strong>Input features</strong>: frequencies of words and punctuation</li>
 </ul>
 </div>
 </div>
@@ -452,7 +452,7 @@ Tyler George
 <div class="columns">
 <div class="column">
 <ul>
-<li>Identify numbers in handwritten zip code<br>
+<li class="fragment">Identify numbers in handwritten zip code<br>
 </li>
 </ul>
 </div><div class="column">
@@ -483,7 +483,7 @@ Tyler George
 <div class="columns">
 <div class="column">
 <ul>
-<li>Classify pixels of an image</li>
+<li class="fragment">Classify pixels of an image</li>
 </ul>
 </div><div class="column">
 <p><img src="img/01/land-use.png" height="300"></p>
@@ -497,8 +497,8 @@ Tyler George
 <section id="types-of-statistical-learning" class="slide level2">
 <h2>✌️ types of statistical learning</h2>
 <ul>
-<li><p>Supervised Learning</p></li>
-<li><p>Unsupervised Learning</p></li>
+<li class="fragment"><p>Supervised Learning</p></li>
+<li class="fragment"><p>Unsupervised Learning</p></li>
 </ul>
 </section>
 <section id="supervised-learning" class="slide level2 small">
@@ -507,11 +507,11 @@ Tyler George
 <p>Dr.&nbsp;Tyler George <em>adapted from slides by Hastie &amp; Tibshirani</em></p>
 </div>
 <ul>
-<li class="fragment"><strong>outcome variable</strong>: <span class="math inline">\(Y\)</span>, (dependent variable, response, target)</li>
-<li class="fragment"><strong>predictors</strong>: vector of <span class="math inline">\(p\)</span> predictors, <span class="math inline">\(X\)</span>, (inputs, regressors, covariates, features, independent variables)</li>
-<li class="fragment">In the <strong>regression problem</strong>, <span class="math inline">\(Y\)</span> is quantitative (e.g price, blood pressure)</li>
-<li class="fragment">In the <strong>classification</strong> problem, <span class="math inline">\(Y\)</span> takes values in a finite, unordered set (survived/died, digit 0-9, cancer class of tissue sample)</li>
-<li class="fragment">We have <strong>training data</strong> <span class="math inline">\((x_1, y_1), \dots, (x_N, y_N)\)</span>. These are observations (examples, instances) of these measurements</li>
+<li><strong>outcome variable</strong>: <span class="math inline">\(Y\)</span>, (dependent variable, response, target)</li>
+<li><strong>predictors</strong>: vector of <span class="math inline">\(p\)</span> predictors, <span class="math inline">\(X\)</span>, (inputs, regressors, covariates, features, independent variables)</li>
+<li>In the <strong>regression problem</strong>, <span class="math inline">\(Y\)</span> is quantitative (e.g price, blood pressure)</li>
+<li>In the <strong>classification</strong> problem, <span class="math inline">\(Y\)</span> takes values in a finite, unordered set (survived/died, digit 0-9, cancer class of tissue sample)</li>
+<li>We have <strong>training data</strong> <span class="math inline">\((x_1, y_1), \dots, (x_N, y_N)\)</span>. These are observations (examples, instances) of these measurements</li>
 </ul>
 </section>
 <section id="supervised-learning-1" class="slide level2">
@@ -521,9 +521,9 @@ Tyler George
 </div>
 <h3 id="objectives">Objectives</h3>
 <ul>
-<li>Accurately predict unseen test cases</li>
-<li>Understand which inputs affect the outcome, and how</li>
-<li>Assess the quality of our predictions and inferences</li>
+<li class="fragment">Accurately predict unseen test cases</li>
+<li class="fragment">Understand which inputs affect the outcome, and how</li>
+<li class="fragment">Assess the quality of our predictions and inferences</li>
 </ul>
 <div class="footer">
 <p>Dr.&nbsp;Tyler George <em>adapted from slides by Hastie &amp; Tibshirani</em></p>
@@ -535,10 +535,10 @@ Tyler George
 <p>Dr.&nbsp;Tyler George <em>adapted from slides by Hastie &amp; Tibshirani</em></p>
 </div>
 <ul>
-<li class="fragment">No outcome variable, just a set of predictors (features) measured on a set of samples</li>
-<li class="fragment">objective is more fuzzy – find groups of samples that behave similarly, find features that behave similarly, find linear combinations of features with the most variation</li>
-<li class="fragment">difficult to know how well your are doing</li>
-<li class="fragment">different from supervised learning, but can be useful as a pre-processing step for supervised learning</li>
+<li>No outcome variable, just a set of predictors (features) measured on a set of samples</li>
+<li>objective is more fuzzy – find groups of samples that behave similarly, find features that behave similarly, find linear combinations of features with the most variation</li>
+<li>difficult to know how well your are doing</li>
+<li>different from supervised learning, but can be useful as a pre-processing step for supervised learning</li>
 </ul>
 </section>
 <section id="lets-take-a-tour---class-website" class="slide level2 small">
@@ -548,13 +548,13 @@ Tyler George
 <p><img data-src="img/demo.png"></p>
 </div><div class="column">
 <ul>
-<li>Concepts introduced:
+<li class="fragment">Concepts introduced:
 <ul>
-<li>How to find slides</li>
-<li>How to find assignments</li>
-<li>How to find RStudio</li>
-<li>How to get help</li>
-<li>How to find policies</li>
+<li class="fragment">How to find slides</li>
+<li class="fragment">How to find assignments</li>
+<li class="fragment">How to find RStudio</li>
+<li class="fragment">How to get help</li>
+<li class="fragment">How to find policies</li>
 </ul></li>
 </ul>
 </div>
@@ -568,8 +568,8 @@ Tyler George
 <section id="regression-and-classification" class="slide level2">
 <h2>Regression and Classification</h2>
 <ul>
-<li>Regression: quantitative response</li>
-<li>Classification: qualitative (categorical) response</li>
+<li class="fragment">Regression: quantitative response</li>
+<li class="fragment">Classification: qualitative (categorical) response</li>
 </ul>
 </section>
 <section id="regression-and-classification-1" class="slide level2">
@@ -578,8 +578,8 @@ Tyler George
 <p>What would be an example of a <strong>regression</strong> problem?</p>
 </div>
 <ul>
-<li>Regression: quantitative response</li>
-<li>Classification: qualitative (categorical) response</li>
+<li class="fragment">Regression: quantitative response</li>
+<li class="fragment">Classification: qualitative (categorical) response</li>
 </ul>
 </section>
 <section id="regression-and-classification-2" class="slide level2">
@@ -588,8 +588,8 @@ Tyler George
 <p>What would be an example of a <strong>classification</strong> problem?</p>
 </div>
 <ul>
-<li>Regression: quantitative response</li>
-<li>Classification: qualitative (categorical) response</li>
+<li class="fragment">Regression: quantitative response</li>
+<li class="fragment">Classification: qualitative (categorical) response</li>
 </ul>
 </section></section>
 <section>
@@ -611,27 +611,27 @@ Tyler George
 <section id="notation" class="slide level2 smaller">
 <h2>Notation</h2>
 <ul>
-<li class="fragment"><code>mpg</code> is the <strong>response</strong> variable, the <strong>outcome</strong> variable, we refer to this as <span class="math inline">\(Y\)</span></li>
-<li class="fragment"><code>horsepower</code> is a <strong>feature</strong>, <strong>input</strong>, <strong>predictor</strong>, we refer to this as <span class="math inline">\(X_1\)</span></li>
-<li class="fragment"><code>weight</code> is <span class="math inline">\(X_2\)</span></li>
-<li class="fragment"><code>acceleration</code> is <span class="math inline">\(X_3\)</span></li>
-<li class="fragment">Our <strong>input vector</strong> is:
+<li><code>mpg</code> is the <strong>response</strong> variable, the <strong>outcome</strong> variable, we refer to this as <span class="math inline">\(Y\)</span></li>
+<li><code>horsepower</code> is a <strong>feature</strong>, <strong>input</strong>, <strong>predictor</strong>, we refer to this as <span class="math inline">\(X_1\)</span></li>
+<li><code>weight</code> is <span class="math inline">\(X_2\)</span></li>
+<li><code>acceleration</code> is <span class="math inline">\(X_3\)</span></li>
+<li>Our <strong>input vector</strong> is:
 <ul>
-<li class="fragment"><span class="math inline">\(X = \begin{bmatrix} X_1 \\X_2 \\X_3\end{bmatrix}\)</span></li>
+<li><span class="math inline">\(X = \begin{bmatrix} X_1 \\X_2 \\X_3\end{bmatrix}\)</span></li>
 </ul></li>
-<li class="fragment">Our <strong>model</strong> is
+<li>Our <strong>model</strong> is
 <ul>
-<li class="fragment"><span class="math inline">\(Y = f(X) + \varepsilon\)</span></li>
+<li><span class="math inline">\(Y = f(X) + \varepsilon\)</span></li>
 </ul></li>
-<li class="fragment"><span class="math inline">\(\varepsilon\)</span> is our error</li>
+<li><span class="math inline">\(\varepsilon\)</span> is our error</li>
 </ul>
 </section>
 <section id="why-do-we-care-about-fx" class="slide level2 small">
 <h2>Why do we care about <span class="math inline">\(f(X)\)</span>?</h2>
 <ul>
-<li class="fragment">We can use <span class="math inline">\(f(X)\)</span> to make predictions of <span class="math inline">\(Y\)</span> for new values of <span class="math inline">\(X = x\)</span></li>
-<li class="fragment">We can gain a better understanding of which components of <span class="math inline">\(X = (X_1, X_2, \dots, X_p)\)</span> are important for explaining <span class="math inline">\(Y\)</span></li>
-<li class="fragment">Depending on how complex <span class="math inline">\(f\)</span> is, maybe we can understand how each component ( <span class="math inline">\(X_j\)</span> ) of <span class="math inline">\(X\)</span> affects <span class="math inline">\(Y\)</span></li>
+<li>We can use <span class="math inline">\(f(X)\)</span> to make predictions of <span class="math inline">\(Y\)</span> for new values of <span class="math inline">\(X = x\)</span></li>
+<li>We can gain a better understanding of which components of <span class="math inline">\(X = (X_1, X_2, \dots, X_p)\)</span> are important for explaining <span class="math inline">\(Y\)</span></li>
+<li>Depending on how complex <span class="math inline">\(f\)</span> is, maybe we can understand how each component ( <span class="math inline">\(X_j\)</span> ) of <span class="math inline">\(X\)</span> affects <span class="math inline">\(Y\)</span></li>
 </ul>
 </section>
 <section id="how-do-we-choose-fx" class="slide level2 small">
@@ -646,7 +646,7 @@ Tyler George
 <h2>How do we choose <span class="math inline">\(f(X)\)</span>?</h2>
 <p>What is a good value for <span class="math inline">\(f(X)\)</span> at any selected value of <span class="math inline">\(X\)</span>, say <span class="math inline">\(X = 100\)</span>? There can be many <span class="math inline">\(Y\)</span> values at <span class="math inline">\(X = 100\)</span>.</p>
 <ul>
-<li class="fragment">There are 17 points here, what value should I choose for f(100). What do you think the blue dot represents?</li>
+<li>There are 17 points here, what value should I choose for f(100). What do you think the blue dot represents?</li>
 </ul>
 </section>
 <section id="how-do-we-choose-fx-3" class="slide level2 small">
@@ -663,11 +663,11 @@ Tyler George
 <section id="regression-function-fx" class="slide level2">
 <h2>Regression function, <span class="math inline">\(f(X)\)</span></h2>
 <ul>
-<li>Also works or a vector, <span class="math inline">\(X\)</span>, for example,</li>
+<li class="fragment">Also works or a vector, <span class="math inline">\(X\)</span>, for example,</li>
 </ul>
 <p><span class="math display">\[f(x) = f(x_1, x_2, x_3) = E[Y | X_1 = x_1, X_2 = x_2, X_3 = x_3]\]</span></p>
 <ul>
-<li>This is the <strong>optimal</strong> predictor of <span class="math inline">\(Y\)</span> in terms of <strong>mean-squared prediction error</strong></li>
+<li class="fragment">This is the <strong>optimal</strong> predictor of <span class="math inline">\(Y\)</span> in terms of <strong>mean-squared prediction error</strong></li>
 </ul>
 </section>
 <section id="regression-function-fx-1" class="slide level2">
@@ -676,8 +676,8 @@ Tyler George
 <p><span class="math inline">\(f(x) = E(Y|X = x)\)</span> is the function that <strong>minimizes</strong> <span class="math inline">\(E[(Y - g(X))^2 |X = x]\)</span> over all functions <span class="math inline">\(g\)</span> at all points <span class="math inline">\(X = x\)</span></p>
 </div>
 <ul>
-<li class="fragment"><span class="math inline">\(\varepsilon = Y - f(x)\)</span> is the <strong>irreducible error</strong></li>
-<li class="fragment">even if we knew <span class="math inline">\(f(x)\)</span>, we would still make errors in prediction, since at each <span class="math inline">\(X = x\)</span> there is typically a distribution of possible <span class="math inline">\(Y\)</span> values</li>
+<li><span class="math inline">\(\varepsilon = Y - f(x)\)</span> is the <strong>irreducible error</strong></li>
+<li>even if we knew <span class="math inline">\(f(x)\)</span>, we would still make errors in prediction, since at each <span class="math inline">\(X = x\)</span> there is typically a distribution of possible <span class="math inline">\(Y\)</span> values</li>
 </ul>
 </section>
 <section id="regression-function-fx-2" class="slide level2 small">
@@ -690,7 +690,7 @@ Tyler George
 </div>
 <div class="fragment">
 <ul>
-<li>Take the average! <span class="math inline">\(f(100) = E[\texttt{mpg}|\texttt{horsepower} = 100] = 19.6\)</span></li>
+<li class="fragment">Take the average! <span class="math inline">\(f(100) = E[\texttt{mpg}|\texttt{horsepower} = 100] = 19.6\)</span></li>
 </ul>
 </div>
 </section>
@@ -700,7 +700,7 @@ Tyler George
 <p>This point has a <span class="math inline">\(Y\)</span> value of 32.9. What is <span class="math inline">\(\hat\varepsilon\)</span>?</p>
 </div>
 <ul>
-<li class="fragment"><span class="math inline">\(\hat\varepsilon = Y - \hat{f}(X) = 32.9 - 19.6 = \color{red}{13.3}\)</span></li>
+<li><span class="math inline">\(\hat\varepsilon = Y - \hat{f}(X) = 32.9 - 19.6 = \color{red}{13.3}\)</span></li>
 </ul>
 </section>
 <section id="the-error" class="slide level2 smaller">
@@ -708,18 +708,18 @@ Tyler George
 <p>For any estimate, <span class="math inline">\(\hat{f}(x)\)</span>, of <span class="math inline">\(f(x)\)</span>, we have</p>
 <p><span class="math display">\[E[(Y - \hat{f}(x))^2 | X = x] = \underbrace{[f(x) - \hat{f}(x)]^2}_{\textrm{reducible error}} + \underbrace{Var(\varepsilon)}_{\textrm{irreducible error}}\]</span></p>
 <ul>
-<li class="fragment">Assume for a moment that both <span class="math inline">\(\hat{f}\)</span> and X are fixed.</li>
-<li class="fragment"><span class="math inline">\(E(Y − \hat{Y})^2\)</span> represents the average, or expected value, of the squared difference between the predicted and actual value of Y, and Var( <span class="math inline">\(\varepsilon\)</span> ) represents the variance associated with the error term</li>
-<li class="fragment">The focus of this class is on techniques for estimating f with the aim of minimizing the <strong>reducible error</strong>.</li>
-<li class="fragment">the <strong>irreducible error</strong> will always provide an upper bound on the accuracy of our prediction for Y</li>
-<li class="fragment">This bound is almost always unknown in practice</li>
+<li>Assume for a moment that both <span class="math inline">\(\hat{f}\)</span> and X are fixed.</li>
+<li><span class="math inline">\(E(Y − \hat{Y})^2\)</span> represents the average, or expected value, of the squared difference between the predicted and actual value of Y, and Var( <span class="math inline">\(\varepsilon\)</span> ) represents the variance associated with the error term</li>
+<li>The focus of this class is on techniques for estimating f with the aim of minimizing the <strong>reducible error</strong>.</li>
+<li>the <strong>irreducible error</strong> will always provide an upper bound on the accuracy of our prediction for Y</li>
+<li>This bound is almost always unknown in practice</li>
 </ul>
 </section>
 <section id="estimating-f" class="slide level2 smaller">
 <h2>Estimating <span class="math inline">\(f\)</span></h2>
 <ul>
-<li>Typically we have very few (if any!) data points at <span class="math inline">\(X=x\)</span> exactly, so we cannot compute <span class="math inline">\(E[Y|X=x]\)</span></li>
-<li>For example, what if we were interested in estimating miles per gallon when horsepower was 104.</li>
+<li class="fragment">Typically we have very few (if any!) data points at <span class="math inline">\(X=x\)</span> exactly, so we cannot compute <span class="math inline">\(E[Y|X=x]\)</span></li>
+<li class="fragment">For example, what if we were interested in estimating miles per gallon when horsepower was 104.</li>
 </ul>
 <div class="center">
 
@@ -728,7 +728,7 @@ Tyler George
 <p>💡 We can <em>relax</em> the definition and let</p>
 <p><span class="math display">\[\hat{f}(x) = E[Y | X\in \mathcal{N}(x)]\]</span></p>
 <ul>
-<li class="fragment">Where <span class="math inline">\(\mathcal{N}(x)\)</span> is some <strong>neighborhood</strong> of <span class="math inline">\(x\)</span></li>
+<li>Where <span class="math inline">\(\mathcal{N}(x)\)</span> is some <strong>neighborhood</strong> of <span class="math inline">\(x\)</span></li>
 </ul>
 </div>
 </section>
@@ -747,8 +747,8 @@ Tyler George
 <p>💡 We can <em>relax</em> the definition and let</p>
 <p><span class="math display">\[\hat{f}(x) = E[Y | X\in \mathcal{N}(x)]\]</span></p>
 <ul>
-<li class="fragment">Nearest neighbor averaging does pretty well with small <span class="math inline">\(p\)</span> ( <span class="math inline">\(p\leq 4\)</span> ) and large <span class="math inline">\(n\)</span></li>
-<li class="fragment">Nearest neighbor is <em>not great</em> when <span class="math inline">\(p\)</span> is large because of the <strong>curse of dimensionality</strong> (because nearest neighbors tend to be far away in high dimensions)</li>
+<li>Nearest neighbor averaging does pretty well with small <span class="math inline">\(p\)</span> ( <span class="math inline">\(p\leq 4\)</span> ) and large <span class="math inline">\(n\)</span></li>
+<li>Nearest neighbor is <em>not great</em> when <span class="math inline">\(p\)</span> is large because of the <strong>curse of dimensionality</strong> (because nearest neighbors tend to be far away in high dimensions)</li>
 </ul>
 <div class="fragment">
 <div class="question">
@@ -761,9 +761,9 @@ Tyler George
 <p>A common parametric model is a <strong>linear</strong> model</p>
 <p><span class="math display">\[f(X) = \beta_0 + \beta_1X_1 + \beta_2X_2 + \dots + \beta_pX_p\]</span></p>
 <ul>
-<li class="fragment">A linear model has <span class="math inline">\(p + 1\)</span> parameters ( <span class="math inline">\(\beta_0,\dots,\beta_p\)</span> )</li>
-<li class="fragment">We estimate these parameters by <strong>fitting</strong> a model to <strong>training</strong> data</li>
-<li class="fragment">Although this model is <em>almost never correct</em> it can often be a good interpretable approximation to the unknown true function, <span class="math inline">\(f(X)\)</span></li>
+<li>A linear model has <span class="math inline">\(p + 1\)</span> parameters ( <span class="math inline">\(\beta_0,\dots,\beta_p\)</span> )</li>
+<li>We estimate these parameters by <strong>fitting</strong> a model to <strong>training</strong> data</li>
+<li>Although this model is <em>almost never correct</em> it can often be a good interpretable approximation to the unknown true function, <span class="math inline">\(f(X)\)</span></li>
 </ul>
 </section></section>
 <section>
@@ -777,11 +777,11 @@ Tyler George
 <img src="img/03/sim1.png" height="400"> 
 </center>
 <ul>
-<li>The <font color="red"> red </font> points are simulated values for <code>income</code> from the model:</li>
+<li class="fragment">The <font color="red"> red </font> points are simulated values for <code>income</code> from the model:</li>
 </ul>
 <p><span class="math display">\[\texttt{income} = f(\texttt{education, senority}) + \varepsilon\]</span></p>
 <ul>
-<li><span class="math inline">\(f\)</span> is the <font color="blue"> blue </font> surface</li>
+<li class="fragment"><span class="math inline">\(f\)</span> is the <font color="blue"> blue </font> surface</li>
 </ul>
 </section>
 <section id="section-2" class="slide level2 small">
@@ -798,8 +798,8 @@ Tyler George
 <img src="img/03/sim3.png" height="400"> 
 </center>
 <ul>
-<li>More flexible regression model <span class="math inline">\(\hat{f}_S(\texttt{education, seniority})\)</span> fit to the simulated data.</li>
-<li>Here we use a technique called a <strong>thin-plate spline</strong> to fit a flexible surface</li>
+<li class="fragment">More flexible regression model <span class="math inline">\(\hat{f}_S(\texttt{education, seniority})\)</span> fit to the simulated data.</li>
+<li class="fragment">Here we use a technique called a <strong>thin-plate spline</strong> to fit a flexible surface</li>
 </ul>
 </section>
 <section id="section-4" class="slide level2 small">
@@ -809,18 +809,18 @@ Tyler George
 </center>
 <p>And even <strong>MORE flexible</strong> 😱 model <span class="math inline">\(\hat{f}(\texttt{education, seniority})\)</span>.</p>
 <ul>
-<li>Here we’ve basically drawn the surface to hit every point, minimizing the error, but completely <strong>overfitting</strong></li>
+<li class="fragment">Here we’ve basically drawn the surface to hit every point, minimizing the error, but completely <strong>overfitting</strong></li>
 </ul>
 </section>
 <section id="finding-balance" class="slide level2 small">
 <h2>🤹 Finding balance</h2>
 <ul>
-<li class="fragment"><strong>Prediction accuracy</strong> versus <strong>interpretability</strong></li>
-<li class="fragment">Linear models are easy to interpret, thin-plate splines are not</li>
-<li class="fragment">Good fit versus <strong>overfit</strong> or <strong>underfit</strong></li>
-<li class="fragment">How do we know when the fit is just right?</li>
-<li class="fragment"><strong>Parsimony</strong> versus <strong>black-box</strong></li>
-<li class="fragment">We often prefer a simpler model involving fewer variables over a black-box predictor involving them all</li>
+<li><strong>Prediction accuracy</strong> versus <strong>interpretability</strong></li>
+<li>Linear models are easy to interpret, thin-plate splines are not</li>
+<li>Good fit versus <strong>overfit</strong> or <strong>underfit</strong></li>
+<li>How do we know when the fit is just right?</li>
+<li><strong>Parsimony</strong> versus <strong>black-box</strong></li>
+<li>We often prefer a simpler model involving fewer variables over a black-box predictor involving them all</li>
 </ul>
 </section>
 <section id="section-5" class="slide level2">
@@ -830,8 +830,8 @@ Tyler George
 <section id="accuracy" class="slide level2 small">
 <h2>Accuracy</h2>
 <ul>
-<li><p>We’ve fit a model <span class="math inline">\(\hat{f}(x)\)</span> to some <code>training data</code>.</p></li>
-<li><p>We can measure <strong>accuracy</strong> as the average squared prediction error over that <code>train</code> data</p></li>
+<li class="fragment"><p>We’ve fit a model <span class="math inline">\(\hat{f}(x)\)</span> to some <code>training data</code>.</p></li>
+<li class="fragment"><p>We can measure <strong>accuracy</strong> as the average squared prediction error over that <code>train</code> data</p></li>
 </ul>
 <p><span class="math display">\[MSE_{\texttt{train}} = \textrm{Ave}_{train}[y_i-\hat{f}(x_i)]^2\]</span></p>
 <div class="fragment">
@@ -839,7 +839,7 @@ Tyler George
 <p>What can go wrong here?</p>
 </div>
 <ul>
-<li class="fragment">This may be biased towards <strong>overfit</strong> models</li>
+<li>This may be biased towards <strong>overfit</strong> models</li>
 </ul>
 </div>
 </section>
@@ -873,8 +873,8 @@ Tyler George
 <section id="accuracy-5" class="slide level2">
 <h2>Accuracy</h2>
 <ul>
-<li>We’ve fit a model <span class="math inline">\(\hat{f}(x)\)</span> to some <code>training data</code>.</li>
-<li>Instead of measuring <strong>accuracy</strong> as the average squared prediction error over that <code>train</code> data, we can compute it using fresh <code>test</code> data.</li>
+<li class="fragment">We’ve fit a model <span class="math inline">\(\hat{f}(x)\)</span> to some <code>training data</code>.</li>
+<li class="fragment">Instead of measuring <strong>accuracy</strong> as the average squared prediction error over that <code>train</code> data, we can compute it using fresh <code>test</code> data.</li>
 </ul>
 <p><span class="math display">\[MSE_{\texttt{test}} = \textrm{Ave}_{test}[y_i-\hat{f}(x_i)]^2\]</span></p>
 </section>
@@ -896,10 +896,10 @@ Tyler George
 <section id="bias-variance-trade-off" class="slide level2 small">
 <h2>Bias-variance trade-off</h2>
 <ul>
-<li class="fragment">We’ve fit a model, <span class="math inline">\(\hat{f}(x)\)</span>, to some training data</li>
-<li class="fragment">Let’s pull a test observation from this population ( <span class="math inline">\(x_0, y_0\)</span> )</li>
-<li class="fragment">The <em>true</em> model is <span class="math inline">\(Y = f(x) + \varepsilon\)</span></li>
-<li class="fragment"><span class="math inline">\(f(x) = E[Y|X=x]\)</span></li>
+<li>We’ve fit a model, <span class="math inline">\(\hat{f}(x)\)</span>, to some training data</li>
+<li>Let’s pull a test observation from this population ( <span class="math inline">\(x_0, y_0\)</span> )</li>
+<li>The <em>true</em> model is <span class="math inline">\(Y = f(x) + \varepsilon\)</span></li>
+<li><span class="math inline">\(f(x) = E[Y|X=x]\)</span></li>
 </ul>
 <div class="fragment">
 <p><span class="math display">\[E(y_0 - \hat{f}(x_0))^2 = \textrm{Var}(\hat{f}(x_0)) + [\textrm{Bias}(\hat{f}(x_0))]^2 + \textrm{Var}(\varepsilon)\]</span></p>
@@ -907,8 +907,8 @@ Tyler George
 <div class="fragment">
 <p>The expectation averages over the variability of <span class="math inline">\(y_0\)</span> as well as the variability of the training data. <span class="math inline">\(\textrm{Bias}(\hat{f}(x_0)) =E[\hat{f}(x_0)]-f(x_0)\)</span></p>
 <ul>
-<li class="fragment">As <strong>flexibility</strong> of <span class="math inline">\(\hat{f}\)</span> <span class="math inline">\(\uparrow\)</span>, its variance <span class="math inline">\(\uparrow\)</span> and its bias <span class="math inline">\(\downarrow\)</span></li>
-<li class="fragment">choosing the flexibility based on average test error amounts to a <strong>bias-variance trade-off</strong></li>
+<li>As <strong>flexibility</strong> of <span class="math inline">\(\hat{f}\)</span> <span class="math inline">\(\uparrow\)</span>, its variance <span class="math inline">\(\uparrow\)</span> and its bias <span class="math inline">\(\downarrow\)</span></li>
+<li>choosing the flexibility based on average test error amounts to a <strong>bias-variance trade-off</strong></li>
 </ul>
 <aside class="notes">
 <ul>
@@ -948,11 +948,11 @@ Tyler George
 <section id="notation-1" class="slide level2">
 <h2>Notation</h2>
 <ul>
-<li class="fragment"><span class="math inline">\(Y\)</span> is the response variable. It is <strong>qualitative</strong></li>
-<li class="fragment"><span class="math inline">\(\mathcal{C}(X)\)</span> is the classifier that assigns a class <span class="math inline">\(\mathcal{C}\)</span> to some future unlabeled observation, <span class="math inline">\(X\)</span></li>
-<li class="fragment">Examples:</li>
-<li class="fragment">Email can be classified as <span class="math inline">\(\mathcal{C}=(\texttt{spam, not spam})\)</span></li>
-<li class="fragment">Written number is one of <span class="math inline">\(\mathcal{C}=\{0, 1, 2, \dots, 9\}\)</span></li>
+<li><span class="math inline">\(Y\)</span> is the response variable. It is <strong>qualitative</strong></li>
+<li><span class="math inline">\(\mathcal{C}(X)\)</span> is the classifier that assigns a class <span class="math inline">\(\mathcal{C}\)</span> to some future unlabeled observation, <span class="math inline">\(X\)</span></li>
+<li>Examples:</li>
+<li>Email can be classified as <span class="math inline">\(\mathcal{C}=(\texttt{spam, not spam})\)</span></li>
+<li>Written number is one of <span class="math inline">\(\mathcal{C}=\{0, 1, 2, \dots, 9\}\)</span></li>
 </ul>
 </section>
 <section id="classification-problem" class="slide level2">
@@ -961,11 +961,11 @@ Tyler George
 <p>What is the goal?</p>
 </div>
 <ul>
-<li class="fragment">Build a classifier <span class="math inline">\(\mathcal{C}(X)\)</span> that assigns a class label from <span class="math inline">\(\mathcal{C}\)</span> to a future unlabeled observation <span class="math inline">\(X\)</span><br>
+<li>Build a classifier <span class="math inline">\(\mathcal{C}(X)\)</span> that assigns a class label from <span class="math inline">\(\mathcal{C}\)</span> to a future unlabeled observation <span class="math inline">\(X\)</span><br>
 </li>
-<li class="fragment">Assess the uncertainty in each classification<br>
+<li>Assess the uncertainty in each classification<br>
 </li>
-<li class="fragment">Understand the roles of the different predictors among <span class="math inline">\(X = (X_1, X_2, \dots, X_p)\)</span></li>
+<li>Understand the roles of the different predictors among <span class="math inline">\(X = (X_1, X_2, \dots, X_p)\)</span></li>
 </ul>
 </section>
 <section id="section-9" class="slide level2 small">
@@ -982,7 +982,7 @@ Tyler George
 </div>
 <div class="fragment">
 <ul>
-<li>In the plot, you could examine the mini-barplot at <span class="math inline">\(x = 5\)</span></li>
+<li class="fragment">In the plot, you could examine the mini-barplot at <span class="math inline">\(x = 5\)</span></li>
 </ul>
 </div>
 </section>
@@ -994,7 +994,7 @@ Tyler George
 <p>Suppose there are <span class="math inline">\(K\)</span> elements in <span class="math inline">\(\mathcal{C}\)</span>, numbered <span class="math inline">\(1, 2, \dots, K\)</span></p>
 <p><span class="math display">\[p_k(x) = P(Y = k|X=x), k = 1, 2, \dots, K\]</span> These are <strong>conditional class probabilities</strong> at <span class="math inline">\(x\)</span></p>
 <ul>
-<li>The <strong>Bayes optimal classifier</strong> at <span class="math inline">\(x\)</span> is</li>
+<li class="fragment">The <strong>Bayes optimal classifier</strong> at <span class="math inline">\(x\)</span> is</li>
 </ul>
 <p><span class="math display">\[\mathcal{C}(x) = j \textrm{ if } p_j(x) = \textrm{max}\{p_1(x), p_2(x), \dots, p_K(x)\}\]</span></p>
 <aside class="notes">
@@ -1024,20 +1024,20 @@ Tyler George
 <p>What if this was our data and there were no points at exactly <span class="math inline">\(x = 5\)</span>? Then how could we calculate this?</p>
 </div>
 <ul>
-<li class="fragment">Nearest neighbor like before!</li>
-<li class="fragment">This does break down as the dimensions grow, but the impact of <span class="math inline">\(\mathcal{\hat{C}}(x)\)</span> is less than on <span class="math inline">\(\hat{p}_k(x), k = 1,2,\dots,K\)</span></li>
+<li>Nearest neighbor like before!</li>
+<li>This does break down as the dimensions grow, but the impact of <span class="math inline">\(\mathcal{\hat{C}}(x)\)</span> is less than on <span class="math inline">\(\hat{p}_k(x), k = 1,2,\dots,K\)</span></li>
 </ul>
 </section>
 <section id="accuracy-6" class="slide level2 smaller">
 <h2>Accuracy</h2>
 <ul>
-<li>Misclassification error rate</li>
+<li class="fragment">Misclassification error rate</li>
 </ul>
 <p><span class="math display">\[Err_{\texttt{test}} = \frac{\#correct predictions}{total predictions} = \textrm{Ave}_{test}I[y_i\neq \mathcal{\hat{C}}(x_i)]\]</span> &gt; * <span class="math inline">\(I(\cdot)\)</span> is an indicator function and will only be eitehr 0 or 1.</p>
 <ul>
-<li class="fragment">The <strong>Bayes Classifier</strong> using the true <span class="math inline">\(p_k(x)\)</span> has the smallest error</li>
-<li class="fragment">Some of the methods we (may) learn build structured models for <span class="math inline">\(\mathcal{C}(x)\)</span> (support vector machines, for example)</li>
-<li class="fragment">Some build structured models for <span class="math inline">\(p_k(x)\)</span> (logistic regression, for example)</li>
+<li>The <strong>Bayes Classifier</strong> using the true <span class="math inline">\(p_k(x)\)</span> has the smallest error</li>
+<li>Some of the methods we (may) learn build structured models for <span class="math inline">\(\mathcal{C}(x)\)</span> (support vector machines, for example)</li>
+<li>Some build structured models for <span class="math inline">\(p_k(x)\)</span> (logistic regression, for example)</li>
 </ul>
 <aside class="notes">
 <ul>

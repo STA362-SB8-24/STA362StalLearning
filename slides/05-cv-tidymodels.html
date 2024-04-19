@@ -483,9 +483,9 @@ Tyler George
 <p>What is the difference? Which is typically larger?</p>
 </div>
 <ul>
-<li>The <strong>training error</strong> is calculated by using the same observations used to fit the statistical learning model</li>
-<li>The <strong>test error</strong> is calculated by using a statistical learning method to predict the response of <strong>new</strong> observations</li>
-<li>The <strong>training error rate</strong> typically <em>underestimates</em> the true prediction error rate</li>
+<li class="fragment">The <strong>training error</strong> is calculated by using the same observations used to fit the statistical learning model</li>
+<li class="fragment">The <strong>test error</strong> is calculated by using a statistical learning method to predict the response of <strong>new</strong> observations</li>
+<li class="fragment">The <strong>training error rate</strong> typically <em>underestimates</em> the true prediction error rate</li>
 </ul>
 </section>
 <section id="section" class="slide level2">
@@ -495,8 +495,8 @@ Tyler George
 <section id="estimating-prediction-error" class="slide level2 small">
 <h2>Estimating prediction error</h2>
 <ul>
-<li>Best case scenario: We have a large data set to test our model on</li>
-<li>This is not always the case!</li>
+<li class="fragment">Best case scenario: We have a large data set to test our model on</li>
+<li class="fragment">This is not always the case!</li>
 </ul>
 <div class="fragment">
 <p>💡 Let’s instead find a way to estimate the test error by holding out a subset of the training observations from the model fitting process, and then applying the statistical learning method to those held out observations</p>
@@ -505,15 +505,15 @@ Tyler George
 <section id="approach-1-validation-set" class="slide level2 small">
 <h2>Approach #1: Validation set</h2>
 <ul>
-<li>Randomly divide the available set up samples into two parts: a <strong>training set</strong> and a <strong>validation set</strong></li>
-<li>Fit the model on the <strong>training set</strong>, calculate the prediction error on the <strong>validation set</strong></li>
+<li class="fragment">Randomly divide the available set up samples into two parts: a <strong>training set</strong> and a <strong>validation set</strong></li>
+<li class="fragment">Fit the model on the <strong>training set</strong>, calculate the prediction error on the <strong>validation set</strong></li>
 </ul>
 <div class="fragment">
 <div class="question">
 <p>If we have a <strong>quantitative predictor</strong> what metric would we use to calculate this test error?</p>
 </div>
 <ul>
-<li>Often we use Mean Squared Error (MSE)</li>
+<li class="fragment">Often we use Mean Squared Error (MSE)</li>
 </ul>
 </div>
 </section>
@@ -529,7 +529,7 @@ Tyler George
 <p>If we have a <strong>qualitative predictor</strong> what metric would we use to calculate this test error?</p>
 </div>
 <ul>
-<li>Often we use misclassification rate</li>
+<li class="fragment">Often we use misclassification rate</li>
 </ul>
 </section>
 <section id="approach-1-validation-set-2" class="slide level2 small">
@@ -616,19 +616,19 @@ Tyler George
 <section id="approach-1-validation-set-drawbacks" class="slide level2 small">
 <h2>Approach #1: Validation set (Drawbacks)</h2>
 <ul>
-<li>the validation estimate of the test error can be highly variable, depending on which observations are included in the training set and which observations are included in the validation set</li>
-<li>In the validation approach, only a subset of the observations (those that are included in the training set rather than in the validation set) are used to fit the model</li>
-<li>Therefore, the validation set error may tend to <strong>overestimate</strong> the test error for the model fit on the entire data set</li>
+<li class="fragment">the validation estimate of the test error can be highly variable, depending on which observations are included in the training set and which observations are included in the validation set</li>
+<li class="fragment">In the validation approach, only a subset of the observations (those that are included in the training set rather than in the validation set) are used to fit the model</li>
+<li class="fragment">Therefore, the validation set error may tend to <strong>overestimate</strong> the test error for the model fit on the entire data set</li>
 </ul>
 </section>
 <section id="approach-2-k-fold-cross-validation" class="slide level2 small">
 <h2>Approach #2: K-fold cross validation</h2>
 <p>💡 The idea is to do the following:</p>
 <ul>
-<li>Randomly divide the data into <span class="math inline">\(K\)</span> equal-sized parts</li>
-<li>Leave out part <span class="math inline">\(k\)</span>, fit the model to the other <span class="math inline">\(K - 1\)</span> parts (combined)</li>
-<li>Obtain predictions for the left-out <span class="math inline">\(k\)</span>th part</li>
-<li>Do this for each part <span class="math inline">\(k = 1, 2,\dots K\)</span>, and then combine the result</li>
+<li class="fragment">Randomly divide the data into <span class="math inline">\(K\)</span> equal-sized parts</li>
+<li class="fragment">Leave out part <span class="math inline">\(k\)</span>, fit the model to the other <span class="math inline">\(K - 1\)</span> parts (combined)</li>
+<li class="fragment">Obtain predictions for the left-out <span class="math inline">\(k\)</span>th part</li>
+<li class="fragment">Do this for each part <span class="math inline">\(k = 1, 2,\dots K\)</span>, and then combine the result</li>
 </ul>
 </section>
 <section id="k-fold-cross-validation" class="slide level2 smaller">
@@ -704,12 +704,12 @@ Tyler George
 <section id="estimating-prediction-error-quantitative-outcome" class="slide level2 smaller">
 <h2>Estimating prediction error (quantitative outcome)</h2>
 <ul>
-<li>Split the data into K parts, where <span class="math inline">\(C_1, C_2, \dots, C_k\)</span> indicate the indices of observations in part <span class="math inline">\(k\)</span></li>
-<li><span class="math inline">\(CV_{(K)} = \sum_{k=1}^K\frac{n_k}{n}MSE_k\)</span></li>
-<li><span class="math inline">\(MSE_k = \sum_{i \in C_k} (y_i - \hat{y}_i)^2/n_k\)</span></li>
-<li><span class="math inline">\(n_k\)</span> is the number of observations in group <span class="math inline">\(k\)</span></li>
-<li><span class="math inline">\(\hat{y}_i\)</span> is the fit for observation <span class="math inline">\(i\)</span> obtained from the data with the part <span class="math inline">\(k\)</span> removed</li>
-<li>If we set <span class="math inline">\(K = n\)</span>, we’d have <span class="math inline">\(n-fold\)</span> cross validation which is the same as <strong>leave-one-out cross validation</strong> (LOOCV)</li>
+<li class="fragment">Split the data into K parts, where <span class="math inline">\(C_1, C_2, \dots, C_k\)</span> indicate the indices of observations in part <span class="math inline">\(k\)</span></li>
+<li class="fragment"><span class="math inline">\(CV_{(K)} = \sum_{k=1}^K\frac{n_k}{n}MSE_k\)</span></li>
+<li class="fragment"><span class="math inline">\(MSE_k = \sum_{i \in C_k} (y_i - \hat{y}_i)^2/n_k\)</span></li>
+<li class="fragment"><span class="math inline">\(n_k\)</span> is the number of observations in group <span class="math inline">\(k\)</span></li>
+<li class="fragment"><span class="math inline">\(\hat{y}_i\)</span> is the fit for observation <span class="math inline">\(i\)</span> obtained from the data with the part <span class="math inline">\(k\)</span> removed</li>
+<li class="fragment">If we set <span class="math inline">\(K = n\)</span>, we’d have <span class="math inline">\(n-fold\)</span> cross validation which is the same as <strong>leave-one-out cross validation</strong> (LOOCV)</li>
 </ul>
 </section>
 <section id="estimating-prediction-error-quantitative-outcome-1" class="slide level2 smaller">
@@ -781,26 +781,26 @@ Tyler George
 <section id="special-case" class="slide level2">
 <h2>Special Case!</h2>
 <ul>
-<li>With <em>linear</em> regression, you can actually calculate the LOOCV error without having to iterate!</li>
-<li><span class="math inline">\(CV_{(n)} = \frac{1}{n}\sum_{i=1}^n\left(\frac{y_i-\hat{y}_i}{1-h_i}\right)^2\)</span></li>
-<li><span class="math inline">\(\hat{y}_i\)</span> is the <span class="math inline">\(i\)</span>th fitted value from the linear model</li>
-<li><span class="math inline">\(h_i\)</span> is the diagonal of the “hat” matrix (remember that! 🎓)</li>
+<li class="fragment">With <em>linear</em> regression, you can actually calculate the LOOCV error without having to iterate!</li>
+<li class="fragment"><span class="math inline">\(CV_{(n)} = \frac{1}{n}\sum_{i=1}^n\left(\frac{y_i-\hat{y}_i}{1-h_i}\right)^2\)</span></li>
+<li class="fragment"><span class="math inline">\(\hat{y}_i\)</span> is the <span class="math inline">\(i\)</span>th fitted value from the linear model</li>
+<li class="fragment"><span class="math inline">\(h_i\)</span> is the diagonal of the “hat” matrix (remember that! 🎓)</li>
 </ul>
 </section>
 <section id="picking-k" class="slide level2 small">
 <h2>Picking <span class="math inline">\(K\)</span></h2>
 <ul>
-<li><span class="math inline">\(K\)</span> can vary from 2 (splitting the data in half each time) to <span class="math inline">\(n\)</span> (LOOCV)</li>
-<li>LOOCV is sometimes useful but usually the estimates from each fold are very correlated, so their average can have a <strong>high variance</strong></li>
-<li>A better choice tends to be <span class="math inline">\(K=5\)</span> or <span class="math inline">\(K=10\)</span></li>
+<li class="fragment"><span class="math inline">\(K\)</span> can vary from 2 (splitting the data in half each time) to <span class="math inline">\(n\)</span> (LOOCV)</li>
+<li class="fragment">LOOCV is sometimes useful but usually the estimates from each fold are very correlated, so their average can have a <strong>high variance</strong></li>
+<li class="fragment">A better choice tends to be <span class="math inline">\(K=5\)</span> or <span class="math inline">\(K=10\)</span></li>
 </ul>
 </section>
 <section id="bias-variance-trade-off" class="slide level2">
 <h2>Bias variance trade-off</h2>
 <ul>
-<li>Since each training set is only <span class="math inline">\((K - 1)/K\)</span> as big as the original training set, the estimates of prediction error will typically be <strong>biased</strong> upward</li>
-<li>This bias is minimized when <span class="math inline">\(K = n\)</span> (LOOCV), but this estimate has a <strong>high variance</strong></li>
-<li><span class="math inline">\(K =5\)</span> or <span class="math inline">\(K=10\)</span> provides a nice compromise for the bias-variance trade-off</li>
+<li class="fragment">Since each training set is only <span class="math inline">\((K - 1)/K\)</span> as big as the original training set, the estimates of prediction error will typically be <strong>biased</strong> upward</li>
+<li class="fragment">This bias is minimized when <span class="math inline">\(K = n\)</span> (LOOCV), but this estimate has a <strong>high variance</strong></li>
+<li class="fragment"><span class="math inline">\(K =5\)</span> or <span class="math inline">\(K=10\)</span> provides a nice compromise for the bias-variance trade-off</li>
 </ul>
 </section>
 <section id="approach-2-k-fold-cross-validation-1" class="slide level2 small">
@@ -816,12 +816,12 @@ Tyler George
 <section id="estimating-prediction-error-qualitative-outcome" class="slide level2 small">
 <h2>Estimating prediction error (qualitative outcome)</h2>
 <ul>
-<li>The premise is the same as cross valiation for quantitative outcomes</li>
-<li>Split the data into K parts, where <span class="math inline">\(C_1, C_2, \dots, C_k\)</span> indicate the indices of observations in part <span class="math inline">\(k\)</span></li>
-<li><span class="math inline">\(CV_K = \sum_{k=1}^K\frac{n_k}{n}Err_k\)</span></li>
-<li><span class="math inline">\(Err_k = \sum_{i\in C_k}I(y_i\neq\hat{y}_i)/n_k\)</span> (misclassification rate)</li>
-<li><span class="math inline">\(n_k\)</span> is the number of observations in group <span class="math inline">\(k\)</span></li>
-<li><span class="math inline">\(\hat{y}_i\)</span> is the fit for observation <span class="math inline">\(i\)</span> obtained from the data with the part <span class="math inline">\(k\)</span> removed</li>
+<li class="fragment">The premise is the same as cross valiation for quantitative outcomes</li>
+<li class="fragment">Split the data into K parts, where <span class="math inline">\(C_1, C_2, \dots, C_k\)</span> indicate the indices of observations in part <span class="math inline">\(k\)</span></li>
+<li class="fragment"><span class="math inline">\(CV_K = \sum_{k=1}^K\frac{n_k}{n}Err_k\)</span></li>
+<li class="fragment"><span class="math inline">\(Err_k = \sum_{i\in C_k}I(y_i\neq\hat{y}_i)/n_k\)</span> (misclassification rate)</li>
+<li class="fragment"><span class="math inline">\(n_k\)</span> is the number of observations in group <span class="math inline">\(k\)</span></li>
+<li class="fragment"><span class="math inline">\(\hat{y}_i\)</span> is the fit for observation <span class="math inline">\(i\)</span> obtained from the data with the part <span class="math inline">\(k\)</span> removed</li>
 </ul>
 </section>
 <section id="estimating-prediction-error-qualitative-outcome-1" class="slide level2 small">
@@ -865,8 +865,8 @@ Tyler George
 </div><div class="column">
 <p><a href="https://www.tidymodels.org/">tidymodels.org</a></p>
 <ul>
-<li>tidymodels is an opinionated collection of R packages designed for modeling and statistical analysis.</li>
-<li>All packages share an underlying philosophy and a common grammar.</li>
+<li class="fragment">tidymodels is an opinionated collection of R packages designed for modeling and statistical analysis.</li>
+<li class="fragment">All packages share an underlying philosophy and a common grammar.</li>
 </ul>
 </div>
 </div>
@@ -874,8 +874,8 @@ Tyler George
 <section id="step-1-specify-the-model" class="slide level2">
 <h2>Step 1: Specify the model</h2>
 <ul>
-<li>Pick the <strong>model</strong></li>
-<li>Set the <strong>engine</strong></li>
+<li class="fragment">Pick the <strong>model</strong></li>
+<li class="fragment">Set the <strong>engine</strong></li>
 </ul>
 </section>
 <section id="specify-the-model" class="slide level2">
@@ -1034,9 +1034,9 @@ Coefficients:
 <span id="cb18-2"><a></a>  <span class="fu">predict</span>(<span class="at">new_data =</span> Auto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>Uses the <code>predict()</code> function</li>
-<li>‼️ <code>new_data</code> has an underscore</li>
-<li>😄 This automagically creates a data frame</li>
+<li class="fragment">Uses the <code>predict()</code> function</li>
+<li class="fragment">‼️ <code>new_data</code> has an underscore</li>
+<li class="fragment">😄 This automagically creates a data frame</li>
 </ul>
 </section>
 <section id="get-predictions-1" class="slide level2 small">
@@ -1288,9 +1288,9 @@ Coefficients:
 <section id="a-faster-way" class="slide level2 small">
 <h2>A faster way!</h2>
 <ul>
-<li>You can use <code>last_fit()</code> and specify the split</li>
-<li>This will automatically train the data on the <code>train</code> data from the split</li>
-<li>Instead of specifying which metric to calculate (with <code>rmse</code> as before) you can just use <code>collect_metrics()</code> and it will automatically calculate the metrics on the <code>test</code> data from the split</li>
+<li class="fragment">You can use <code>last_fit()</code> and specify the split</li>
+<li class="fragment">This will automatically train the data on the <code>train</code> data from the split</li>
+<li class="fragment">Instead of specifying which metric to calculate (with <code>rmse</code> as before) you can just use <code>collect_metrics()</code> and it will automatically calculate the metrics on the <code>test</code> data from the split</li>
 </ul>
 </section>
 <section id="a-faster-way-1" class="slide level2 small">
@@ -1356,7 +1356,7 @@ Coefficients:
 <section id="what-about-cross-validation-1" class="slide level2">
 <h2>What about cross validation?</h2>
 <ul>
-<li>Instead of <code>fit</code> we will use <code>fit_resamples</code></li>
+<li class="fragment">Instead of <code>fit</code> we will use <code>fit_resamples</code></li>
 </ul>
 <div class="fragment">
 <div class="cell">
