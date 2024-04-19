@@ -426,12 +426,12 @@ Tyler George
 <section id="recap" class="slide level2 small">
 <h2>Recap</h2>
 <ul>
-<li>We had a <em>logistic regression</em> refresher</li>
+<li class="fragment">We had a <em>logistic regression</em> refresher</li>
 </ul>
 <h3 id="now">Now…</h3>
 <ul>
-<li>What if our response has more than two levels?</li>
-<li>What if logistic regression is a poor fit?</li>
+<li class="fragment">What if our response has more than two levels?</li>
+<li class="fragment">What if logistic regression is a poor fit?</li>
 </ul>
 </section>
 <section id="setup" class="slide level2">
@@ -441,41 +441,34 @@ Tyler George
 <span id="cb1-2"><a></a><span class="fu">library</span>(broom)</span>
 <span id="cb1-3"><a></a><span class="fu">library</span>(tidymodels)</span>
 <span id="cb1-4"><a></a><span class="fu">library</span>(gridExtra)</span>
-<span id="cb1-5"><a></a><span class="fu">library</span>(ISLR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a></a><span class="fu">library</span>(ISLR)</span>
+<span id="cb1-6"><a></a><span class="fu">library</span>(Stat2Data)</span>
+<span id="cb1-7"><a></a><span class="co">#install.packages("discrim")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="multinomial-logistic" class="slide level2">
 <h2>Multinomial Logistic</h2>
 <ul>
-<li><p>So far we have discussed logistic regression with two classes.</p></li>
-<li><p>It is easily generalized to more than two classes.</p></li>
+<li class="fragment"><p>So far we have discussed logistic regression with two classes.</p></li>
+<li class="fragment"><p>It is easily generalized to more than two classes.</p></li>
 </ul>
 </section>
 <section id="confounding" class="slide level2 small">
 <h2>Confounding</h2>
 <p>Recall our defaults data with variable <code>default</code>, <code>student</code>, and <code>balance</code></p>
 
-<img data-src="04_2-lda_qda_files/figure-revealjs/plot3-1.png" width="960" class="r-stretch"><div class="question">
+<img data-src="04-2-lda-qda_files/figure-revealjs/plot3-1.png" width="960" class="r-stretch"><div class="question">
 <p>What is going on here?</p>
 </div>
 </section>
 <section id="confounding-1" class="slide level2 small">
 <h2>Confounding</h2>
 
-<img data-src="04_2-lda_qda_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><ul>
-<li>Students tend to have higher balances than non-students</li>
-<li>Their <strong>marginal</strong> default rate is higher</li>
-<li>For each level of balance, students default less</li>
-<li>Their <strong>conditional</strong> default rate is lower</li>
-</ul>
-</section>
-<section id="logistic-regression-for-more-than-two-classes" class="slide level2 small">
-<h2>Logistic regression for more than two classes</h2>
-<p><span class="math display">\[P(Y=k|X) = \frac{e ^{\beta_{0k}+\beta_{1k}X_1+\dots+\beta_{pk}X_p}}{\sum_{l=1}^Ke^{\beta_{0l}+\beta_{1l}X_1+\dots+\beta_{pl}X_p}}\]</span></p>
-<ul>
-<li>We generalize this to situations with <strong>multiple</strong> classes</li>
-<li>Here we have a linear function for <strong>each</strong> of the <span class="math inline">\(K\)</span> classes</li>
-<li>This is known as <strong>multinomial logistic regression</strong></li>
+<img data-src="04-2-lda-qda_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><ul>
+<li class="fragment">Students tend to have higher balances than non-students</li>
+<li class="fragment">Their <strong>marginal</strong> default rate is higher</li>
+<li class="fragment">For each level of balance, students default less</li>
+<li class="fragment">Their <strong>conditional</strong> default rate is lower</li>
 </ul>
 </section>
 <section id="multiple-logistic-regression" class="slide level2 small">
@@ -531,8 +524,22 @@ Tyler George
 </div>
 </div>
 <ul>
-<li>Why is the coefficient for <code>student</code> negative now when it was positive before?</li>
+<li class="fragment">Why is the coefficient for <code>student</code> negative now when it was positive before?</li>
 </ul>
+</section>
+<section id="logistic-regression-for-more-than-two-classes" class="slide level2 small">
+<h2>Logistic regression for more than two classes</h2>
+<p><span class="math display">\[P(Y=k|X) = \frac{e ^{\beta_{0k}+\beta_{1k}X_1+\dots+\beta_{pk}X_p}}{\sum_{l=1}^Ke^{\beta_{0l}+\beta_{1l}X_1+\dots+\beta_{pl}X_p}}\]</span></p>
+<ul>
+<li class="fragment">We generalize this to situations with <strong>multiple</strong> classes</li>
+<li class="fragment">Here we have a linear function for <strong>each</strong> of the <span class="math inline">\(K\)</span> classes</li>
+<li class="fragment">This is known as <strong>multinomial logistic regression</strong></li>
+</ul>
+</section>
+<section>
+<section id="linear-discriminant-analysis-lda" class="title-slide slide level1 center">
+<h1>Linear Discriminant Analysis (LDA)</h1>
+
 </section>
 <section id="lda-warmup" class="slide level2">
 <h2>LDA Warmup</h2>
@@ -541,17 +548,17 @@ Tyler George
 <section id="discriminant-analysis" class="slide level2">
 <h2>Discriminant Analysis</h2>
 <ul>
-<li><p>Here the approach is to model the distribution of X in each of the classes separately, and then use Bayes theorem to flip things around and obtain <span class="math inline">\(P(Y jX)\)</span>.</p></li>
-<li><p>When we use normal (Gaussian) distributions for each class, this leads to linear or quadratic discriminant analysis.</p></li>
-<li><p>However, this approach is quite general, and other distributions can be used as well. We will focus on normal distributions.</p></li>
+<li class="fragment"><p>Here the approach is to model the distribution of X in each of the classes separately, and then use Bayes theorem to flip things around and obtain <span class="math inline">\(P(Y|X)\)</span>.</p></li>
+<li class="fragment"><p>When we use normal (Gaussian) distributions for each class, this leads to linear or quadratic discriminant analysis.</p></li>
+<li class="fragment"><p>However, this approach is quite general, and other distributions can be used as well. We will focus on normal distributions.</p></li>
 </ul>
 </section>
-<section id="why" class="slide level2">
-<h2>Why?</h2>
+<section id="why-another-approach" class="slide level2 smaller">
+<h2>Why Another Approach?</h2>
 <ul>
-<li><p>When the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.</p></li>
-<li><p>If n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.</p></li>
-<li><p>Linear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data.</p></li>
+<li class="fragment"><p>When the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.</p></li>
+<li class="fragment"><p>If n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.</p></li>
+<li class="fragment"><p>Linear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data.</p></li>
 </ul>
 </section>
 <section id="bayes-theorem-classification" class="slide level2">
@@ -561,22 +568,22 @@ Tyler George
 </section>
 <section id="bayes-for-discriminant-analysis" class="slide level2">
 <h2>Bayes for Discriminant Analysis</h2>
-<p><span class="math display">\[P(Y=k|X=x) = \frac{\pi_kf_k(x)}{\sum_{l=1}^K\pi_lf_l(x)}\]</span>, where</p>
+<p><span class="math display">\[P(Y=k|X=x) = \frac{\pi_kf_k(x)}{\sum_{l=1}^K\pi_lf_l(x)} \text{, where}\]</span></p>
 <ul>
-<li><p><span class="math inline">\(f_k(x)=P(X=x|Y=k)\)</span> is the <em>density</em> for <span class="math inline">\(X\)</span> in class <span class="math inline">\(k\)</span>. Here we use normal’s but they could be other distributions (such as <span class="math inline">\(\Chi^2\)</span>)</p></li>
-<li><p><span class="math inline">\(\pi_k = P(Y=k)\)</span> is the marginal or prior probability for class <span class="math inline">\(k\)</span>.</p></li>
+<li class="fragment"><p><span class="math inline">\(f_k(x)=P(X=x|Y=k)\)</span> is the <em>density</em> for <span class="math inline">\(X\)</span> in class <span class="math inline">\(k\)</span>. Here we use normal’s but they could be other distributions (such as <span class="math inline">\(\chi^2\)</span>)</p></li>
+<li class="fragment"><p><span class="math inline">\(\pi_k = P(Y=k)\)</span> is the marginal or prior probability for class <span class="math inline">\(k\)</span>.</p></li>
 </ul>
 </section>
-<section id="classify-to-the-highest-density" class="slide level2">
+<section id="classify-to-the-highest-density" class="slide level2 smaller">
 <h2>Classify to the highest density</h2>
+<p><span class="math display">\[\pi_1=.5, \pi_2=.5\]</span></p>
 <div class="columns">
 <div class="column">
-<p><span class="math display">\[\pi_1=.5, \pi_2=.5\]</span></p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="04_2-lda_qda_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+<p><img data-src="04-2-lda-qda_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -586,7 +593,7 @@ Tyler George
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="04_2-lda_qda_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
+<p><img data-src="04-2-lda-qda_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -594,46 +601,373 @@ Tyler George
 </div>
 </div>
 <ul>
-<li><p>We classify a new point according to which density is highest.</p></li>
-<li><p>When the priors are different, we take them into account as well, and compare <span class="math inline">\(\pi_kf_k(x)\)</span>.</p></li>
-<li><p>On the right, we favor the pink class - the decision boundary has shifted to the left.</p></li>
+<li class="fragment"><p>We classify a new point according to which density is highest.</p></li>
+<li class="fragment"><p>When the priors are different, we take them into account as well, and compare <span class="math inline">\(\pi_kf_k(x)\)</span>.</p></li>
+<li class="fragment"><p>On the right, we favor the pink class - the decision boundary has shifted to the left.</p></li>
 </ul>
 </section>
-<section id="linear-descriminant-analysis-when-p1" class="slide level2">
-<h2>Linear Descriminant Analysis (when <span class="math inline">\(p=1\)</span>)</h2>
+<section id="lda-when-p1" class="slide level2">
+<h2>LDA (when <span class="math inline">\(p=1\)</span>)</h2>
 <p>The Gaussian (normal) density has the form</p>
 <p><span class="math display">\[f_k(x) = \frac{1}{\sqrt{2\pi}\sigma_k}e^{-\frac{1}{2}(\frac{x-\mu_k}{\sigma_k})^2}\]</span></p>
 <ul>
-<li><p><span class="math inline">\(\mu_k\)</span> is the mean, <span class="math inline">\(\sigma_k^2\)</span> the variance (in class <span class="math inline">\(k\)</span>)</p></li>
-<li><p>For now, we assume <span class="math inline">\(\sigma_k=\sigma\)</span> for all groups (we will need to check this with real data)</p></li>
+<li class="fragment"><p><span class="math inline">\(\mu_k\)</span> is the mean, <span class="math inline">\(\sigma_k^2\)</span> the variance (in class <span class="math inline">\(k\)</span>)</p></li>
+<li class="fragment"><p>For now, we assume <span class="math inline">\(\sigma_k=\sigma\)</span> for all groups (we will need to check this with real data)</p></li>
 </ul>
 </section>
-<section id="linear-descriminant-analysis-when-p1-1" class="slide level2">
-<h2>Linear Descriminant Analysis (when <span class="math inline">\(p=1\)</span>)</h2>
+<section id="lda-when-p1-1" class="slide level2">
+<h2>LDA (when <span class="math inline">\(p=1\)</span>)</h2>
 <p>We plug this <span class="math inline">\(f_k(x)\)</span> into Bayes formula and after some simplifying we get:</p>
 <p><span class="math display">\[p_k(x) = \frac{\pi_k\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}(\frac{x-\mu_k}{\sigma_k})^2}}{\sum_{l=1}^K\pi_l\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}(\frac{x-\mu_k}{\sigma_k})^2}}\]</span></p>
 </section>
-<section id="discriminant-function-when-p1" class="slide level2">
-<h2>Discriminant Function (when <span class="math inline">\(p=1\)</span>)</h2>
+<section id="discriminant-function" class="slide level2 smaller">
+<h2>Discriminant Function</h2>
 <p>To classify at the value X = x, we need to see which of the <span class="math inline">\(p_k(x)\)</span> is largest. Taking logs, and discarding terms that do not depend on <span class="math inline">\(k\)</span>, we see that this is equivalent to assigning x to the class with the largest <em>discriminant</em> score:</p>
 <p><span class="math display">\[\delta_k(x) = x\cdot \frac{\mu_k}{\sigma^2}-\frac{\mu_k^2}{2\sigma^2}+log(\pi_k)\]</span></p>
 <ul>
-<li><p>Importantly, <span class="math inline">\(\delta_k(x)\)</span> is a <em>linear</em> function of <span class="math inline">\(x\)</span>.</p></li>
-<li><p>If there are <span class="math inline">\(K=2\)</span> classes and <span class="math inline">\(\pi_1=\pi_2=.5\)</span>, then the <em>decision boundry</em> is at</p></li>
+<li class="fragment"><p>Importantly, <span class="math inline">\(\delta_k(x)\)</span> is a <em>linear</em> function of <span class="math inline">\(x\)</span>.</p></li>
+<li class="fragment"><p>If there are <span class="math inline">\(K=2\)</span> classes and <span class="math inline">\(\pi_1=\pi_2=.5\)</span>, then the <em>decision boundry</em> is at</p></li>
 </ul>
 <p><span class="math display">\[x=\frac{\mu_1+\mu_2}{2}\]</span></p>
 </section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
+<section id="maximizing-delta_kx" class="slide level2 smaller">
+<h2>Maximizing <span class="math inline">\(\delta_k(x)\)</span></h2>
+<ul>
+<li class="fragment">In order to maximize this, we need estimates for all the parameters</li>
+</ul>
+<div class="question">
+<p>What should we estimate <span class="math inline">\(\hat{\pi_k}\)</span>, <span class="math inline">\(\mu_k\)</span>, and <span class="math inline">\(\sigma^2\)</span> with?</p>
+</div>
+</section>
+<section id="maximizing-delta_kx-1" class="slide level2 smaller">
+<h2>Maximizing <span class="math inline">\(\delta_k(x)\)</span></h2>
+<p><span class="math display">\[\hat{\pi}_k = \frac{n_k}{n}\]</span></p>
+<p><span class="math display">\[\hat{\mu}_k = \frac{1}{n_k}\sum_{i:y_k=k}x_i\]</span></p>
+<p><span class="math display">\[\hat{\sigma}^2 = \frac{1}{n-K}\sum_{k=1}^K\sum_{i:y_i=k}(x_i-\hat{\mu}_k)^2 = \sum_{k=1}^K\frac{n_k-1}{n-K}\cdot \hat{\sigma}_k^2\]</span></p>
+<p>Where <span class="math display">\[\hat{\sigma}_k^2 = \frac{1}{n_k-1}\sum_{i:y_i=k}(x_i-\hat{\mu}_k)^2\]</span></p>
+</section>
+<section id="lda-in-r-example-p1" class="slide level2">
+<h2>LDA In R Example (<span class="math inline">\(p=1\)</span>)</h2>
 <div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="04_2-lda_qda_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
-</figure>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">data</span>(<span class="st">"BlueJays"</span>) <span class="co"># Bring data into environment</span></span>
+<span id="cb2-2"><a></a><span class="fu">library</span>(Stat2Data)</span>
+<span id="cb2-3"><a></a><span class="fu">library</span>(tidymodels)</span>
+<span id="cb2-4"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-5"><a></a><span class="fu">library</span>(discrim)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="question">
+<p>Can we determine the sex of a blue jay by measuring the distance from the tip of the bill to the back of the head (Head)?</p>
+</div>
+</section>
+<section id="lda-bluejays-eda" class="slide level2">
+<h2>LDA Bluejays EDA</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>tt_split <span class="ot">&lt;-</span> <span class="fu">initial_split</span>(BlueJays,<span class="at">prop=</span>.<span class="dv">7</span>)</span>
+<span id="cb3-2"><a></a></span>
+<span id="cb3-3"><a></a>BJ_train <span class="ot">&lt;-</span> <span class="fu">training</span>(tt_split)</span>
+<span id="cb3-4"><a></a></span>
+<span id="cb3-5"><a></a>BJ_train <span class="sc">|&gt;</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Head,<span class="at">y=</span>KnownSex)) <span class="sc">+</span></span>
+<span id="cb3-6"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb3-7"><a></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="04-2-lda-qda_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<section id="lda-bluejays-eda-1" class="slide level2">
+<h2>LDA Bluejays EDA</h2>
+<div class="question">
+<p>What assumptions should we check?</p>
+</div>
+<ul>
+<li class="fragment"><p>Normality of our predictor</p></li>
+<li class="fragment"><p>Constant variance between groups.</p></li>
+</ul>
+</section>
+<section id="lda-bluejays-eda---normality" class="slide level2">
+<h2>LDA Bluejays EDA - Normality</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb4-2"><a></a></span>
+<span id="cb4-3"><a></a>(BJ_train <span class="sc">|&gt;</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">sample =</span> Head)) <span class="sc">+</span> <span class="fu">geom_qq</span>())<span class="sc">+</span></span>
+<span id="cb4-4"><a></a>  (BJ_train <span class="sc">|&gt;</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Head)) <span class="sc">+</span> <span class="fu">geom_histogram</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="04-2-lda-qda_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<section id="lda-bluejays-eda---variance" class="slide level2">
+<h2>LDA Bluejays EDA - Variance</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>BJ_train <span class="sc">|&gt;</span> <span class="fu">group_by</span>(KnownSex)<span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">summarize</span>(<span class="at">Head_sd =</span> <span class="fu">sd</span>(Head))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  KnownSex Head_sd
+  &lt;fct&gt;      &lt;dbl&gt;
+1 F           1.31
+2 M           1.20</code></pre>
 </div>
 </div>
+<ul>
+<li class="fragment">Very similar standard deviations (and thus variances)</li>
+</ul>
+</section>
+<section id="fit-lda" class="slide level2">
+<h2>Fit LDA</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>lda_spec <span class="ot">&lt;-</span> <span class="fu">discrim_linear</span>() <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a></a>  <span class="fu">set_mode</span>(<span class="st">"classification"</span>)<span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a></a>  <span class="fu">set_engine</span>(<span class="st">"MASS"</span>)</span>
+<span id="cb7-4"><a></a></span>
+<span id="cb7-5"><a></a>lda_fit<span class="ot">&lt;-</span>  lda_spec <span class="sc">|&gt;</span> </span>
+<span id="cb7-6"><a></a>  <span class="fu">fit</span>(KnownSex <span class="sc">~</span> Head,</span>
+<span id="cb7-7"><a></a>      <span class="at">data =</span> BJ_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="check-the-fit" class="slide level2">
+<h2>Check The Fit</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>BJTest <span class="ot">&lt;-</span> <span class="fu">testing</span>(tt_split)</span>
+<span id="cb8-2"><a></a></span>
+<span id="cb8-3"><a></a>lda_fit <span class="sc">|&gt;</span> </span>
+<span id="cb8-4"><a></a>  <span class="fu">augment</span>(<span class="at">new_data =</span> BJTest) <span class="sc">%&gt;%</span></span>
+<span id="cb8-5"><a></a>  <span class="fu">conf_mat</span>(<span class="at">truth =</span> KnownSex, <span class="at">estimate =</span> .pred_class) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          Truth
+Prediction  F  M
+         F 16  1
+         M  4 16</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>lda_fit<span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a></a>  <span class="fu">augment</span>(<span class="at">new_data =</span> BJTest) <span class="sc">|&gt;</span> </span>
+<span id="cb10-3"><a></a>  <span class="fu">accuracy</span>(<span class="at">truth =</span> KnownSex,<span class="at">estimate=</span>.pred_class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric  .estimator .estimate
+  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+1 accuracy binary         0.865</code></pre>
+</div>
+</div>
+</section>
+<section id="compare-to-logistic" class="slide level2">
+<h2>Compare to Logistic</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">logistic_reg</span>() <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-3"><a></a>  <span class="fu">fit</span>(KnownSex <span class="sc">~</span> Head,</span>
+<span id="cb12-4"><a></a>      <span class="at">data =</span> BJ_train) <span class="sc">|&gt;</span></span>
+<span id="cb12-5"><a></a>  <span class="fu">augment</span>(<span class="at">new_data =</span> BJTest)<span class="sc">|&gt;</span></span>
+<span id="cb12-6"><a></a>    <span class="fu">accuracy</span>(<span class="at">truth =</span> KnownSex,<span class="at">estimate=</span>.pred_class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric  .estimator .estimate
+  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+1 accuracy binary         0.865</code></pre>
+</div>
+</div>
+</section>
+<section id="application-exercise" class="slide level2">
+<h2><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"></path></svg> <code>Application Exercise</code></h2>
+<p>We are going to use the <code>penguins</code> data from the <code>palmerpeguins</code> package.</p>
+<ul>
+<li class="fragment"><p>Conduct basic EDA to see if penguin bill length is different by sex and if LDA is an appropriate model choice.</p></li>
+<li class="fragment"><p>Use LDA to predict penguin sex based on their bill length using training and testing data. Get the accuracy on the testing set.</p></li>
+<li class="fragment"><p>Fit a logistic regression model and get it’s accuracy to see which did better.</p></li>
+</ul>
+</section>
+<section id="lda-with-p1" class="slide level2 smaller">
+<h2>LDA with <span class="math inline">\(p&gt;1\)</span></h2>
+<ul>
+<li class="fragment"><p>When we have 2 or more predictors, the distribution becomes multivariate.</p></li>
+<li class="fragment"><p>If the covariance between predictors is 0 within each class of the response, LDA is still appropriate.</p></li>
+<li class="fragment"><p>For example, with 2 normal predictors, their distributions in 3d would like like this:</p></li>
+<li class="fragment"><p><img data-src="img/ldap2.png"></p></li>
+<li class="fragment"><p>Luckly, the descrimintae function remains <code>linear</code></p></li>
+</ul>
+<p><span class="math display">\[\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\]</span></p>
+</section></section>
+<section>
+<section id="example-p2k3" class="title-slide slide level1 smaller center">
+<h1>Example: <span class="math inline">\(p=2,K=3\)</span></h1>
+<ul>
+<li class="fragment"><p>There is no limit on the number of levels of the categorical response for LDA</p></li>
+<li class="fragment"><p>Suppose <span class="math inline">\(\pi_1=\pi_2\pi_3=1/3\)</span></p></li>
+</ul>
+<p><img data-src="img/bayesdecboundry.png"> - The dashed lines are known as the <code>Bayes decision boundaries</code></p>
+</section>
+<section id="probabilities" class="slide level2 smaller">
+<h2>Probabilities</h2>
+<ul>
+<li class="fragment"><p>Once the estimates for the <span class="math inline">\(\hat{\delta}_k(x)\)</span> have been found, we can plug them in and get:</p></li>
+<li class="fragment"><p><span class="math display">\[\hat{P}(Y=k|X=x)=\frac{e^{\hat{\delta}_k(x)}}{\sum_{l=1}^Ke^{\hat{\delta}^l(x)}}\]</span></p></li>
+<li class="fragment"><p>Classifying to the largest <span class="math inline">\(\hat{\delta}_k(x)\)</span> amounts to classifying to the class for which <span class="math inline">\(\hat{P}(Y = k|X = x)\)</span> is largest.</p></li>
+<li class="fragment"><p>When <span class="math inline">\(K = 2\)</span>, we classify to class 2 if <span class="math inline">\(\hat{P}(Y = 2|X = x)\geq 0.5\)</span>, else to class 1.</p></li>
+</ul>
+</section>
+<section id="example---credit-card-fraud" class="slide level2">
+<h2>Example - Credit Card Fraud</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          Truth
+Prediction   No  Yes
+       No  2889   83
+       Yes    2   26</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric  .estimator .estimate
+  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
+1 accuracy binary         0.972</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment"><p>Accuracy of 97.7% on a testing set!</p></li>
+<li class="fragment"><p>What about the different types of errors?</p></li>
+</ul>
+</section>
+<section id="errors" class="slide level2">
+<h2>Errors</h2>
+<ul>
+<li class="fragment"><p>Of the true <code>yes</code>, we made errors at the rate of 83/(83+26), 76%</p></li>
+<li class="fragment"><p>Of the true <code>no</code>, we made errors at the rate of 2/(2889+2), .069%</p></li>
+</ul>
+</section>
+<section id="types-of-errors" class="slide level2">
+<h2>Types of Errors</h2>
+<ul>
+<li class="fragment"><p>Recall:</p>
+<ul>
+<li class="fragment"><p>False positive rate: The fraction of negative examples that are classified as positive.</p></li>
+<li class="fragment"><p>False negative rate: The fraction of positive examples that are classified as negative.</p></li>
+</ul></li>
+<li class="fragment"><p>Remember the model gave probabilities, the final <code>yes</code> or no is decided by</p></li>
+<li class="fragment"><p><span class="math display">\[\hat{P}(Default=Yes|Balance,Student) \geq .5\]</span></p>
+<ul>
+<li class="fragment">We can adjust our error rates by changing that <em>threshold</em></li>
+</ul></li>
+</ul>
+</section>
+<section id="sensitivity-and-specificity" class="slide level2 smaller">
+<h2>Sensitivity and Specificity</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          Truth
+Prediction   No  Yes
+       No  2889   83
+       Yes    2   26</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment">The <em>sensitivity</em> is the true positive rate.
+<ul>
+<li class="fragment">The rate at which we correctly predict a person will default.</li>
+<li class="fragment">26/(83+26) = .24 (24%)</li>
+</ul></li>
+<li class="fragment">The <em>specificity</em> is the true negative rate.
+<ul>
+<li class="fragment">The rate at which we correctly predict a person will not default.</li>
+<li class="fragment">2889/(2889+2) =.999 (99.9%)</li>
+</ul></li>
+</ul>
+</section>
+<section id="varying-the-threshold" class="slide level2">
+<h2>Varying the <em>threshold</em></h2>
+<ul>
+<li class="fragment"><p>In order to determine the best threshold, we want to maximize the <em>specificty</em> and <em>sensitivity</em>.</p></li>
+<li class="fragment"><p>OR - maximize the <em>sensitivty</em> and minimize <em>1-specificity</em>.</p></li>
+<li class="fragment"><p>In order to to do this we use an <span class="math inline">\(ROC\)</span> curve which stands for <em>receiver operating characteristic curve</em>.</p></li>
+</ul>
+</section>
+<section id="roc-curve" class="slide level2">
+<h2>ROC Curve</h2>
+<p>We want to maximize the area under this curve, called <em>ROC AUC</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>lda_roc<span class="ot">&lt;-</span> lda_fit_2 <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a></a>  <span class="fu">augment</span>(<span class="at">new_data =</span> <span class="fu">testing</span>(def_splits)) <span class="sc">|&gt;</span></span>
+<span id="cb17-3"><a></a>  <span class="fu">roc_curve</span>(<span class="at">truth =</span> default,.pred_No) </span>
+<span id="cb17-4"><a></a></span>
+<span id="cb17-5"><a></a><span class="fu">head</span>(lda_roc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  .threshold specificity sensitivity
+       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;
+1  -Inf          0                 1
+2     0.0819     0                 1
+3     0.129      0.00917           1
+4     0.151      0.0183            1
+5     0.154      0.0275            1
+6     0.201      0.0367            1</code></pre>
+</div>
+</div>
+</section>
+<section id="roc-curve-1" class="slide level2">
+<h2>ROC Curve</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">autoplot</span>(lda_roc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="04-2-lda-qda_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<section id="roc-auc" class="slide level2">
+<h2>ROC AUC</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>lda_fit_2 <span class="sc">|&gt;</span></span>
+<span id="cb20-2"><a></a>  <span class="fu">augment</span>(<span class="at">new_data =</span> <span class="fu">testing</span>(def_splits)) <span class="sc">|&gt;</span></span>
+<span id="cb20-3"><a></a>  <span class="fu">roc_auc</span>(<span class="at">truth =</span> default,.pred_No) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric .estimator .estimate
+  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+1 roc_auc binary         0.957</code></pre>
+</div>
+</div>
+<p>If we want to tune our model better, we can optimize the ROC AUC by changing the threshold.</p>
+<div class="question">
+<p>I did a train/test approach here. What should I do different if I want to tune for threshold?</p>
+</div>
+</section></section>
+<section>
+<section id="quadratic-discriminant-analysis-qda" class="title-slide slide level1 center">
+<h1>Quadratic Discriminant Analysis (QDA)</h1>
+
+</section>
+<section id="qda" class="slide level2">
+<h2>QDA</h2>
+<ul>
+<li class="fragment"><p>QDA arises when <span class="math inline">\(p&gt;1\)</span> and the is a covariance structure between the predictors within the same level of the response.</p></li>
+<li class="fragment"><p>This introduces a squared term into the maximization problem of the <span class="math inline">\(\delta_k(x)\)</span>, thus the name.</p></li>
+</ul>
+</section>
+<section id="qda-in-r" class="slide level2">
+<h2>QDA In R</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>qda_fit<span class="ot">&lt;-</span><span class="fu">discrim_quad</span>() <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a></a>  <span class="fu">set_mode</span>(<span class="st">"classification"</span>)<span class="sc">|&gt;</span></span>
+<span id="cb22-3"><a></a>  <span class="fu">set_engine</span>(<span class="st">"MASS"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb22-4"><a></a>  <span class="fu">fit</span>(default <span class="sc">~</span> balance <span class="sc">+</span> student,</span>
+<span id="cb22-5"><a></a>      <span class="at">data =</span> <span class="fu">training</span>(def_splits))</span>
+<span id="cb22-6"><a></a></span>
+<span id="cb22-7"><a></a>qda_fit <span class="sc">|&gt;</span></span>
+<span id="cb22-8"><a></a>  <span class="fu">augment</span>(<span class="at">new_data =</span> <span class="fu">testing</span>(def_splits)) <span class="sc">%&gt;%</span></span>
+<span id="cb22-9"><a></a>  <span class="fu">conf_mat</span>(<span class="at">truth =</span> default, <span class="at">estimate =</span> .pred_class) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          Truth
+Prediction   No  Yes
+       No  2888   80
+       Yes    3   29</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>qda_fit <span class="sc">|&gt;</span></span>
+<span id="cb24-2"><a></a>  <span class="fu">augment</span>(<span class="at">new_data =</span> <span class="fu">testing</span>(def_splits)) <span class="sc">%&gt;%</span></span>
+<span id="cb24-3"><a></a>  <span class="fu">roc_auc</span>(<span class="at">truth =</span> default,.pred_No) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric .estimator .estimate
+  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+1 roc_auc binary         0.957</code></pre>
+</div>
+</div>
+</section>
+<section id="tuning-by-threhold" class="slide level2">
+<h2>Tuning By Threhold</h2>
+<p><a href="https://www.tidymodels.org/start/case-study/" class="uri">https://www.tidymodels.org/start/case-study/</a></p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="img/favicon.png" class="slide-logo"></p>
@@ -641,7 +975,7 @@ Tyler George
 <p><a href="https://sta362-sb8-24.github.io/STA362StatLearning/">🔗 https://sta362-sb8-24.github.io/STA362StatLearning/</a></p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
