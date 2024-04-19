@@ -1823,7 +1823,7 @@
     "href": "slides/04-2-lda-qda.html#recap",
     "title": "Chapter 4 Part 2",
     "section": "Recap",
-    "text": "Recap\n\nWe had a logistic regression refresher\n\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
+    "text": "Recap\n\nWe had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#setup",
@@ -1977,7 +1977,7 @@
     "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
     "title": "Chapter 4 Part 2",
     "section": "LDA Bluejays EDA - Variance",
-    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.31\n2 M           1.20\n\n\n\nVery similar standard deviations (and thus variances)"
+    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.22\n2 M           1.33\n\n\n\nVery similar standard deviations (and thus variances)"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#application-exercise",
@@ -1998,14 +1998,14 @@
     "href": "slides/04-2-lda-qda.html#check-the-fit",
     "title": "Chapter 4 Part 2",
     "section": "Check The Fit",
-    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 16  1\n         M  4 16\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.865"
+    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 10  3\n         M  6 18\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.757"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#compare-to-logistic",
     "href": "slides/04-2-lda-qda.html#compare-to-logistic",
     "title": "Chapter 4 Part 2",
     "section": "Compare to Logistic",
-    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.865"
+    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.757"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#lda-with-p1",
