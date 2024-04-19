@@ -701,8 +701,8 @@ Tyler George
 <pre><code># A tibble: 2 × 2
   KnownSex Head_sd
   &lt;fct&gt;      &lt;dbl&gt;
-1 F           1.22
-2 M           1.33</code></pre>
+1 F           1.14
+2 M           1.27</code></pre>
 </div>
 </div>
 <ul>
@@ -732,8 +732,8 @@ Tyler George
 <div class="cell-output cell-output-stdout">
 <pre><code>          Truth
 Prediction  F  M
-         F 10  3
-         M  6 18</code></pre>
+         F 12  0
+         M 10 15</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -744,7 +744,7 @@ Prediction  F  M
 <pre><code># A tibble: 1 × 3
   .metric  .estimator .estimate
   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
-1 accuracy binary         0.757</code></pre>
+1 accuracy binary         0.730</code></pre>
 </div>
 </div>
 </section>
@@ -761,7 +761,7 @@ Prediction  F  M
 <pre><code># A tibble: 1 × 3
   .metric  .estimator .estimate
   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;
-1 accuracy binary         0.757</code></pre>
+1 accuracy binary         0.730</code></pre>
 </div>
 </div>
 </section>
@@ -774,20 +774,26 @@ Prediction  F  M
 <li class="fragment"><p>Fit a logistic regression model and get it’s accuracy to see which did better.</p></li>
 </ul>
 </section>
-<section id="lda-with-p1" class="slide level2 smaller">
+<section id="lda-with-p1" class="slide level2">
 <h2>LDA with <span class="math inline">\(p&gt;1\)</span></h2>
 <ul>
 <li class="fragment"><p>When we have 2 or more predictors, the distribution becomes multivariate.</p></li>
 <li class="fragment"><p>If the covariance between predictors is 0 within each class of the response, LDA is still appropriate.</p></li>
-<li class="fragment"><p>For example, with 2 normal predictors, their distributions in 3d would like like this:</p></li>
-<li class="fragment"><p><img data-src="img/ldap2.png"></p></li>
-<li class="fragment"><p>Luckly, the descrimintae function remains <code>linear</code></p></li>
+</ul>
+</section>
+<section id="lda-with-p1-1" class="slide level2 smaller">
+<h2>LDA with <span class="math inline">\(p&gt;1\)</span></h2>
+<ul>
+<li class="fragment">For example, with 2 normal predictors, their distributions in 3d would like like this:</li>
+</ul>
+
+<img data-src="img/ldap2.png" class="r-stretch"><ul>
+<li class="fragment">Luckily, the discriminate function remains <code>linear</code></li>
 </ul>
 <p><span class="math display">\[\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\]</span></p>
-</section></section>
-<section>
-<section id="example-p2k3" class="title-slide slide level1 smaller center">
-<h1>Example: <span class="math inline">\(p=2,K=3\)</span></h1>
+</section>
+<section id="example-p2k3" class="slide level2 smaller">
+<h2>Example: <span class="math inline">\(p=2,K=3\)</span></h2>
 <ul>
 <li class="fragment"><p>There is no limit on the number of levels of the categorical response for LDA</p></li>
 <li class="fragment"><p>Suppose <span class="math inline">\(\pi_1=\pi_2\pi_3=1/3\)</span></p></li>
@@ -831,7 +837,7 @@ Prediction   No  Yes
 <li class="fragment"><p>Of the true <code>no</code>, we made errors at the rate of 2/(2889+2), .069%</p></li>
 </ul>
 </section>
-<section id="types-of-errors" class="slide level2">
+<section id="types-of-errors" class="slide level2 smaller">
 <h2>Types of Errors</h2>
 <ul>
 <li class="fragment"><p>Recall:</p>

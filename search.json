@@ -1007,7 +1007,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -1977,7 +1977,7 @@
     "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
     "title": "Chapter 4 Part 2",
     "section": "LDA Bluejays EDA - Variance",
-    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.22\n2 M           1.33\n\n\n\nVery similar standard deviations (and thus variances)"
+    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.14\n2 M           1.27\n\n\n\nVery similar standard deviations (and thus variances)"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#application-exercise",
@@ -1998,21 +1998,21 @@
     "href": "slides/04-2-lda-qda.html#check-the-fit",
     "title": "Chapter 4 Part 2",
     "section": "Check The Fit",
-    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 10  3\n         M  6 18\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.757"
+    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 12  0\n         M 10 15\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.730"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#compare-to-logistic",
     "href": "slides/04-2-lda-qda.html#compare-to-logistic",
     "title": "Chapter 4 Part 2",
     "section": "Compare to Logistic",
-    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.757"
+    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.730"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#lda-with-p1",
     "href": "slides/04-2-lda-qda.html#lda-with-p1",
     "title": "Chapter 4 Part 2",
     "section": "LDA with \\(p>1\\)",
-    "text": "LDA with \\(p&gt;1\\)\n\nWhen we have 2 or more predictors, the distribution becomes multivariate.\nIf the covariance between predictors is 0 within each class of the response, LDA is still appropriate.\nFor example, with 2 normal predictors, their distributions in 3d would like like this:\n\nLuckly, the descrimintae function remains linear\n\n\\[\\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\\]"
+    "text": "LDA with \\(p&gt;1\\)\n\nWhen we have 2 or more predictors, the distribution becomes multivariate.\nIf the covariance between predictors is 0 within each class of the response, LDA is still appropriate."
   },
   {
     "objectID": "slides/04-2-lda-qda.html#qda",
@@ -2153,5 +2153,19 @@
     "title": "Lab 03",
     "section": "Logistic Regression",
     "text": "Logistic Regression\n\nFor this lab we are using the Smarket data. Examine this data set - how many observations are there? How many columns? What are the variables?\nLet’s look at the correlation between all of the variables. Add the code below to your .qmd file. What can you learn from this visualization? Which pair of variables have the highest correlation?\n\n\nggpairs(Smarket, \n        lower = list(combo = wrap(ggally_facethist, binwidth = 0.5)), \n        progress = FALSE)\n\n\nInference Fit a logistic regression model to predict Direction using Lag1, Lag2, Lag3, Lag4, Lag5, and Volume. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 6 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 4. Interpret the odds ratio for the same predictor you selected in Exercise 4.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 4. What is the test Accuracy for this model? Interpret this result.\nInference Fit a logistic regression model to predict Direction using only Lag1 and Lag2. Show a table that contains the coefficients and p-values along with the confidence intervals for each of the 2 predictors. Which predictor has the smallest p-value? Interpret the coefficient, confidence interval, and p-value for this predictor.\nInference Exponentiate the results from Exercise 7. Interpret the odds ratio for the same predictor you selected in Exercise 7.\nPrediction Using 5-fold cross validation, fit the same logistic regression model as Exercise 7. What is the test Accuracy for this model? Interpret this result.\nIf you had to choose between the model fit in Exercise 4 and the one fit in Exercise 7, which would you choose? Why?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.html#lda-with-p1-1",
+    "href": "slides/04-2-lda-qda.html#lda-with-p1-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA with \\(p>1\\)",
+    "text": "LDA with \\(p&gt;1\\)\n\nFor example, with 2 normal predictors, their distributions in 3d would like like this:\n\n\n\nLuckily, the discriminate function remains linear\n\n\\[\\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.html#example-p2k3",
+    "href": "slides/04-2-lda-qda.html#example-p2k3",
+    "title": "Chapter 4 Part 2",
+    "section": "Example: \\(p=2,K=3\\)",
+    "text": "Example: \\(p=2,K=3\\)\n\nThere is no limit on the number of levels of the categorical response for LDA\nSuppose \\(\\pi_1=\\pi_2\\pi_3=1/3\\)\n\n - The dashed lines are known as the Bayes decision boundaries"
   }
 ]
