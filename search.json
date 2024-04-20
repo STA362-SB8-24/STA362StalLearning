@@ -839,7 +839,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -1262,8 +1262,8 @@
     "objectID": "slides/04-2-lda-qda.html#recap",
     "href": "slides/04-2-lda-qda.html#recap",
     "title": "Chapter 4 Part 2",
-    "section": "Recap",
-    "text": "Recap\n\nWe had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
+    "section": "",
+    "text": "We had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#setup",
@@ -1284,14 +1284,14 @@
     "href": "slides/04-2-lda-qda.html#confounding",
     "title": "Chapter 4 Part 2",
     "section": "Confounding",
-    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\nWhat is going on here?"
+    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\n`summarise()` has grouped output by 'balance_bin'. You can override using the `.groups`\nargument.\n\n\nWarning: Removed 4 rows containing missing values or values outside the scale range\n(`geom_line()`).\n\n\n\n\n\n\n\n\n\n\nWhat is going on here?"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#confounding-1",
     "href": "slides/04-2-lda-qda.html#confounding-1",
     "title": "Chapter 4 Part 2",
     "section": "Confounding",
-    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
+    "text": "Confounding\n\n\nWarning: Removed 4 rows containing missing values or values outside the scale range\n(`geom_line()`).\n\n\n\n\n\n\n\n\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#multiple-logistic-regression",
@@ -1389,7 +1389,7 @@
     "href": "slides/04-2-lda-qda.html#lda-in-r-example-p1",
     "title": "Chapter 4 Part 2",
     "section": "LDA In R Example (\\(p=1\\))",
-    "text": "LDA In R Example (\\(p=1\\))\n\ndata(\"BlueJays\") # Bring data into environment\nlibrary(Stat2Data)\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(discrim)\n\n\nCan we determine the sex of a blue jay by measuring the distance from the tip of the bill to the back of the head (Head)?"
+    "text": "LDA In R Example (\\(p=1\\))\n\ndata(\"BlueJays\") # Bring data into environment\nlibrary(Stat2Data)\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(discrim)\n\nWarning: package 'discrim' was built under R version 4.3.3\n\n\n\nAttaching package: 'discrim'\n\n\nThe following object is masked from 'package:dials':\n\n    smoothness\n\n\n\nCan we determine the sex of a blue jay by measuring the distance from the tip of the bill to the back of the head (Head)?"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda",
@@ -1410,14 +1410,14 @@
     "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---normality",
     "title": "Chapter 4 Part 2",
     "section": "LDA Bluejays EDA - Normality",
-    "text": "LDA Bluejays EDA - Normality\n\nlibrary(patchwork)\n\n(BJ_train |&gt; ggplot(aes(sample = Head)) + geom_qq())+\n  (BJ_train |&gt; ggplot(aes(x = Head)) + geom_histogram())"
+    "text": "LDA Bluejays EDA - Normality\n\nlibrary(patchwork)\n\nWarning: package 'patchwork' was built under R version 4.3.2\n\n(BJ_train |&gt; ggplot(aes(sample = Head)) + geom_qq())+\n  (BJ_train |&gt; ggplot(aes(x = Head)) + geom_histogram())\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`."
   },
   {
     "objectID": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
     "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
     "title": "Chapter 4 Part 2",
     "section": "LDA Bluejays EDA - Variance",
-    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.27\n2 M           1.00\n\n\n\nVery similar standard deviations (and thus variances)"
+    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.22\n2 M           1.18\n\n\n\nVery similar standard deviations (and thus variances)"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#fit-lda",
@@ -1431,14 +1431,14 @@
     "href": "slides/04-2-lda-qda.html#check-the-fit",
     "title": "Chapter 4 Part 2",
     "section": "Check The Fit",
-    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 12  2\n         M  4 19\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.838"
+    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F  8  5\n         M  5 19\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.730"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#compare-to-logistic",
     "href": "slides/04-2-lda-qda.html#compare-to-logistic",
     "title": "Chapter 4 Part 2",
     "section": "Compare to Logistic",
-    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.865"
+    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.730"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#application-exercise",
@@ -1550,7 +1550,7 @@
     "href": "slides/04-2-lda-qda.html#tuning-by-threhold",
     "title": "Chapter 4 Part 2",
     "section": "Tuning By Threhold",
-    "text": "Tuning By Threhold\nhttps://www.tidymodels.org/start/case-study/\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+    "text": "Tuning By Threhold\nhttps://www.tidymodels.org/start/case-study/"
   },
   {
     "objectID": "slides/05-cv-tidymodels.html#setup",
@@ -1971,5 +1971,159 @@
     "title": "Chapter 5 and tidymodels",
     "section": " Application Exercise",
     "text": "Application Exercise\n\n\nFit 3 models on the data using 5 fold cross validation:\n\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\epsilon\\)\n\\(mpg = \\beta_0 + \\beta_1 horsepower + \\beta_2 horsepower^2+ \\beta_3 horsepower^3 +\\epsilon\\)\n\nCollect the metrics from each model, saving the results as results_1, results_2, results_3\nWhich model is “best”?\n\n\n\n\n\n−+\n08:00\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#knn-smaller",
+    "href": "slides/04-3-km-nb.html#knn-smaller",
+    "title": "Chapter 4 Part 3",
+    "section": "KNN {smaller}",
+    "text": "KNN {smaller}\n\nIn theory we would always like to predict qualitative responses using the Bayes classifier.\nFor real data, we do not know the conditional distribution of Y given X, and so computing the Bayes classifier is impossible.\nMany approaches attempt to estimate the conditional distribution of Y given X, and then classify a given observation to the class with highest estimated probability. One such method is the K-nearest neighbors (KNN) classifier."
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#knn-smaller-1",
+    "href": "slides/04-3-km-nb.html#knn-smaller-1",
+    "title": "Chapter 4 Part 3",
+    "section": "KNN {smaller}",
+    "text": "KNN {smaller}\n\nGiven positive integer \\(K\\), and a test observation \\(x_0\\), KNN identifies the \\(K\\) points in the training data that are closest to \\(x_0\\), represented by \\(\\mathcal{N}_0\\).\nKNN then estimates the conditional probabilities for each class \\(j\\) as the fraction of the points in \\(\\mathcal{N}_0\\) whose response values equal \\(j\\):\n\n\\[P(Y=j|X=x_0)=\\frac{1}{K}\\sum_{i\\in \\mathcal{N}}I(y_i=j)\\]\n\nLastly, KNN classifies \\(x_0\\) into the class with the largest probability"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#knn-example-smaller",
+    "href": "slides/04-3-km-nb.html#knn-example-smaller",
+    "title": "Chapter 4 Part 3",
+    "section": "KNN Example {smaller}",
+    "text": "KNN Example {smaller}\nThe KNN approach, using \\(K = 3\\), is illustrated in a situation with six blue observations and six orange observations.\n\n\nLeft: A test observation, \\(x_0\\), at which a predicted class label is desired is shown as a black cross.\n\nThe three closest points to the test observation are identified, and it is predicted that the test observation belongs to the most commonly-occurring class, in this case blue.\n\nRight: The KNN decision boundary for this example is shown in black. The blue grid indicates the region in which a test observation will be assigned to the blue class, and the orange grid indicates the regio in which it will be assigned to the orange class."
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#knn-example-knn-vs-bayes",
+    "href": "slides/04-3-km-nb.html#knn-example-knn-vs-bayes",
+    "title": "Chapter 4 Part 3",
+    "section": "KNN Example KNN vs Bayes",
+    "text": "KNN Example KNN vs Bayes\n\nThe black curve indicates the KNN decision boundary, using \\(K = 10\\). The Bayes decision boundary is shown as a purple dashed line.\nThe KNN and Bayes decision boundaries are very similar."
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#knn-low-and-high-flexibility",
+    "href": "slides/04-3-km-nb.html#knn-low-and-high-flexibility",
+    "title": "Chapter 4 Part 3",
+    "section": "KNN Low and High Flexibility",
+    "text": "KNN Low and High Flexibility\n\nComparison of the KNN decision boundaries (solid black curves) obtained using \\(K = 1\\) and \\(K = 100\\).\n\nThe \\(K = 1\\) decision boundary is overly flexible\nThe \\(K = 100\\) boundary is not sufficiently flexible.\n\nThe Bayes decision boundary is shown as a purple dashed line."
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#statquest",
+    "href": "slides/04-3-km-nb.html#statquest",
+    "title": "Chapter 4 Part 3",
+    "section": "Statquest",
+    "text": "Statquest\nhttps://www.youtube.com/watch?v=HVXime0nQeI&t=53s"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes-1",
+    "href": "slides/04-3-km-nb.html#naive-bayes-1",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes",
+    "text": "Naive Bayes\n\nIn LDA and QDA we assumed the predictors were Normal\n\nThis allow us to find the density functions \\(f_k(x)\\)’s by optimizing a linear or quadratic function \\(\\delta_k(x)\\).\nWith LDA, we assume the predictors have the same covariance structure between classes\nWith QDA, \\(X_j\\)s can have any covariance structure\nWith both, the predictors must be quantitative"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes-new-assumptions",
+    "href": "slides/04-3-km-nb.html#naive-bayes-new-assumptions",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes New Assumptions",
+    "text": "Naive Bayes New Assumptions\n\nThese two independence assumptions allows us to write, for \\(k=1,2,...,K\\),\n\\[f_k(x) = f_{k1}(x)f_{k2}(x)\\cdot \\cdot \\cdot f_{kp}\\]\n\nwhere \\(f_{kj}\\) is the density function for the \\(j\\)th predictor among observations in the \\(k\\)th class."
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes-probability-function",
+    "href": "slides/04-3-km-nb.html#naive-bayes-probability-function",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes Probability Function",
+    "text": "Naive Bayes Probability Function\nMaking these assumption, we now have:\n\\[P(Y=k|X=x) = \\frac{\\pi_k\\cdot f_{k1}(x_1)\\cdot \\cdot \\cdot f_{kp}(x_p)}{\\sum_{l=1}^K\\pi_l\\cdot f_{l1}(x_1)\\cdot \\cdot \\cdot f_{lp}(x_p)}\\] for \\(k=1,2,...,K\\)"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes---why",
+    "href": "slides/04-3-km-nb.html#naive-bayes---why",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes - Why?",
+    "text": "Naive Bayes - Why?\n\nEach \\(f\\) is one dimensional!\nIf \\(X_j\\) is quantitative can still assume each \\(X_j|Y=k\\) is univariate normal\nIf \\(X_j\\) is quantitative, then another option is to use a non-parametric estimate for \\(f_{kj}\\)\n\nMake a histogram for the observations of the \\(j\\)th predictor within each class.\nThen we can estimate \\(f_{kj}(x_j)\\) as the fraction of the training observations in the \\(k\\)th class that belong to the same histogram bin as \\(x_j\\) .\nWe can use a kernel density estimator, which is kernel density estimator (essentially a smoothed version of a histogram)"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes---why-1",
+    "href": "slides/04-3-km-nb.html#naive-bayes---why-1",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes - Why?",
+    "text": "Naive Bayes - Why?\n\nIf \\(X_j\\) is qualitative, then we can simply count the proportion of training observations for the \\(j\\)th predictor corresponding to each class.\n\nSuppose that \\(X_j \\in \\{1, 2, 3\\}\\), and we have 100 observations in the \\(k\\)th class.\nSuppose that the \\(j\\)th predictor takes on values of 1,2, and 3 in 32, 55, and 13 of those observations, respectively. Then we can estimate \\(f_{kj}\\) as\n\n\\[\\hat{f}_{kj}(x_j) = \\begin{cases}\n.32 \\quad \\text{if }x_j = 1\\\\\n.55 \\quad \\text{if }x_j = 2\\\\\n.13 \\quad \\text{if }x_j = 3\\\\\n\\end{cases}\\]"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes---why-2",
+    "href": "slides/04-3-km-nb.html#naive-bayes---why-2",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes - Why?",
+    "text": "Naive Bayes - Why?\nhttps://www.youtube.com/watch?v=O2L2Uv9pdDA\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes---statsquest",
+    "href": "slides/04-3-km-nb.html#naive-bayes---statsquest",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes - Statsquest",
+    "text": "Naive Bayes - Statsquest\nhttps://www.youtube.com/watch?v=O2L2Uv9pdDA"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#setup",
+    "href": "slides/04-3-km-nb.html#setup",
+    "title": "Chapter 4 Part 3",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)\nlibrary(Stat2Data)\n#install.packages(\"kknn\")"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#kmeans-classification-tidymodels",
+    "href": "slides/04-3-km-nb.html#kmeans-classification-tidymodels",
+    "title": "Chapter 4 Part 3",
+    "section": "KMeans Classification Tidymodels",
+    "text": "KMeans Classification Tidymodels\n\nset.seed(14546)\ndef_splits &lt;- initial_split(Default,.7)\n\ndefault_training &lt;- training(def_splits)\n\nknn_fit_1 &lt;- nearest_neighbor() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"kknn\")|&gt; \n    fit(default ~ balance + student,\n      data = default_training)"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#kmeans-classification-tidymodels-1",
+    "href": "slides/04-3-km-nb.html#kmeans-classification-tidymodels-1",
+    "title": "Chapter 4 Part 3",
+    "section": "KMeans Classification Tidymodels",
+    "text": "KMeans Classification Tidymodels\n\ndefault_testing &lt;- testing(def_splits)\n\nknn_fit_1 |&gt;\n  augment(new_data = default_testing) |&gt;\n  conf_mat(truth = default, estimate = .pred_class) \n\n          Truth\nPrediction   No  Yes\n       No  2865   69\n       Yes   26   40\n\nknn_fit_1 |&gt;\n  augment(new_data = default_testing) |&gt;\n  accuracy(truth = default,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.968"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#kmeans-classification-tidymodels-2",
+    "href": "slides/04-3-km-nb.html#kmeans-classification-tidymodels-2",
+    "title": "Chapter 4 Part 3",
+    "section": "KMeans Classification Tidymodels",
+    "text": "KMeans Classification Tidymodels\n\nknn_fit_1 |&gt;\n  augment(new_data = default_testing) |&gt;\n  roc_auc(truth = default,.pred_No)\n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.844\n\nknn_fit_1 |&gt;\n  augment(new_data = default_testing) |&gt;\n  roc_curve(truth = default,.pred_No) |&gt;\n  autoplot()"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#section",
+    "href": "slides/04-3-km-nb.html#section",
+    "title": "Chapter 4 Part 3",
+    "section": "",
+    "text": "🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#kmeans-roc-curve",
+    "href": "slides/04-3-km-nb.html#kmeans-roc-curve",
+    "title": "Chapter 4 Part 3",
+    "section": "KMeans ROC Curve",
+    "text": "KMeans ROC Curve\n\nknn_fit_1 |&gt;\n  augment(new_data = default_testing) |&gt;\n  roc_curve(truth = default,.pred_No) |&gt;\n  autoplot()"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#kmeans-roc-auc",
+    "href": "slides/04-3-km-nb.html#kmeans-roc-auc",
+    "title": "Chapter 4 Part 3",
+    "section": "KMeans ROC AUC",
+    "text": "KMeans ROC AUC\n\nknn_fit_1 |&gt;\n  augment(new_data = default_testing) |&gt;\n  roc_auc(truth = default,.pred_No)\n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.844"
+  },
+  {
+    "objectID": "slides/04-3-km-nb.html#naive-bayes-2",
+    "href": "slides/04-3-km-nb.html#naive-bayes-2",
+    "title": "Chapter 4 Part 3",
+    "section": "Naive Bayes",
+    "text": "Naive Bayes\n\nWith Naive Bayes we drop the normality assumption but introduce a must stronger assumption\n\nWithin a class \\(k\\),\nThe predictors are independent"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.html",
+    "href": "slides/04-2-lda-qda.html",
+    "title": "Chapter 4 Part 2",
+    "section": "",
+    "text": "We had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
   }
 ]
