@@ -1,16 +1,9 @@
 ---
-title: "Chapter 3 - Linear Regresion"
-format: 
-  kakashi-revealjs:
-    theme: [custom.scss]
-    slide-number: true
-    chalkboard: true
+title: "Chapter 3 - Linear Regression"
+format: revealjs
 ---
 
 ## {{< fa laptop >}} `Application Exercise` {.small}
-
-```{r child = "setup.Rmd"}
-```
 
 ::: nonincremental
 
@@ -458,10 +451,11 @@ $$RSS = \sum(y_i - \hat{y}_i)^2$$
 
 ## Linear Regression Accuracy {.small}
 
+::: nonincremental
 * The **total sum of squares** represents the variability of the outcome, it is equivalent to the variability described by the **model** plus the remaining **residual sum of squares**
 
 $$TSS = \sum(y_i - \bar{y})^2$$
-
+:::
 
 ## Linear Regression Accuracy {.small}
 

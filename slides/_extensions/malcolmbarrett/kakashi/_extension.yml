@@ -23,5 +23,4 @@ contributes:
       show-slide-number: all
       preview-links: true
       code-overflow: wrap
-      menu: true
       incremental: true

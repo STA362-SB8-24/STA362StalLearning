@@ -1,14 +1,10 @@
 ---
 title: "Chapter 5 and tidymodels"
 format: 
-  kakashi-revealjs:
-    theme: [custom.scss]
+  revealjs:
     slide-number: true
     chalkboard: true
 ---
-
-```{r child = "setup.Rmd"}
-```
 
 ## Setup
 
@@ -166,6 +162,7 @@ Auto example:
 :::
 
 ```{r, fig.height = 2}
+#| include: false
 data(Auto)
 set.seed(3)
 f <- function() {
@@ -243,6 +240,7 @@ Auto example:
 :::
 
 ```{r, fig.height = 2}
+#| include: false
 set.seed(1)
 d <- map_df(1:10, ~ f())
 d$z <- rep(LETTERS[1:10], each = 15)
@@ -372,7 +370,7 @@ plot_split(data = c(rep("Train", 17), rep("Test", 1), rep("Train", 2)))
 plot_split(data = c(rep("Train", 16), rep("Test", 1), rep("Train", 3)))
 ```
 
-$$\dots$$
+$\dots$
 
 
 ```{r echo=FALSE, fig.width = 10, fig.height = .5, fig.asp = 0.1}
@@ -415,6 +413,7 @@ Auto example:
 :::
 
 ```{r fig1, cache = TRUE, fig.height = 2}
+#| include: false
 ggplot(d, aes(x = x, y = y, group = z, color = z)) + 
   geom_line() +
   labs(x = "degree polynomial", y = "MSE", title = "50-50 Validation set") + 

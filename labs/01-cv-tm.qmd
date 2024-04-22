@@ -2,11 +2,7 @@
 title: "Lab 01"
 subtitle: "Cross Validation and tidymodels"
 author: "{{< var citation.websource >}} modfied by {{< var instructor.name >}}"
-format: 
-  html:
-    theme:
-      - flatly
-      - lab.css
+format: html
 ---
 
 ```{r include=FALSE}
@@ -20,9 +16,6 @@ library(ISLR)
 # Getting started
 
 Go to our RStudio and create a new R project inside your class folder.
-
-
-# Instructions
 
 # Packages
 

@@ -5,79 +5,75 @@
     <lastmod>2024-04-15T17:24:22.578Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/index.html</loc>
-    <lastmod>2024-04-15T01:48:19.407Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04-logistic.html</loc>
+    <lastmod>2024-04-18T16:48:18.400Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-support.html</loc>
-    <lastmod>2024-04-12T12:57:10.539Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/03-linear-regression.html</loc>
+    <lastmod>2024-04-17T21:32:33.489Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-links.html</loc>
-    <lastmod>2024-04-17T13:23:14.709Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/03-lda_qda.html</loc>
+    <lastmod>2024-04-19T13:42:35.135Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/computing-access.html</loc>
-    <lastmod>2024-04-12T12:57:10.532Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/01-cv-tm.html</loc>
+    <lastmod>2024-04-17T19:39:20.709Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-instructor.html</loc>
-    <lastmod>2024-04-12T12:57:10.534Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-overview.html</loc>
-    <lastmod>2024-04-12T12:57:10.537Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-03-logistic_lda_qda.html</loc>
+    <lastmod>2024-04-20T16:38:40.481Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-01-intro-review.html</loc>
     <lastmod>2024-04-15T20:02:22.346Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/01-02-welcome_to_sl.html</loc>
-    <lastmod>2024-04-15T01:58:50.297Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-overview.html</loc>
+    <lastmod>2024-04-12T12:57:10.537Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/05-cv-tidymodels.html</loc>
-    <lastmod>2024-04-17T15:22:28.483Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-instructor.html</loc>
+    <lastmod>2024-04-12T12:57:10.534Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/01-cv-tm.html</loc>
-    <lastmod>2024-04-17T15:33:01.759Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/computing-access.html</loc>
+    <lastmod>2024-04-12T12:57:10.532Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-links.html</loc>
+    <lastmod>2024-04-17T13:23:14.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/course-support.html</loc>
+    <lastmod>2024-04-12T12:57:10.539Z</lastmod>
   </url>
   <url>
     <loc>https://sta362-sb8-24.github.io/STA362StatLearning/hw/hw-02-cv-tm.html</loc>
     <lastmod>2024-04-16T21:03:14.513Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/ae/20-appex.html</loc>
-    <lastmod>2024-04-16T13:49:53.796Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/index.html</loc>
+    <lastmod>2024-04-17T17:28:53.107Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/ae/11-appex.html</loc>
-    <lastmod>2024-04-16T13:49:53.199Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/labs/02-logistic.html</loc>
+    <lastmod>2024-04-18T17:53:31.932Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/ae/08-appex.html</loc>
-    <lastmod>2024-04-16T13:49:52.499Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/01-02-welcome_to_sl.html</loc>
+    <lastmod>2024-04-15T01:58:50.297Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/ae/01-welcome-penguins.html</loc>
-    <lastmod>2024-04-16T13:49:51.870Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04-2-lda-qda.html</loc>
+    <lastmod>2024-04-20T21:27:19.938Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/ae/06-appex.html</loc>
-    <lastmod>2024-04-16T13:49:52.166Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/05-cv-tidymodels.html</loc>
+    <lastmod>2024-04-17T21:38:49.137Z</lastmod>
   </url>
   <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/ae/11-appex-solutions.html</loc>
-    <lastmod>2024-04-16T13:49:52.851Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/ae/17-appex.html</loc>
-    <lastmod>2024-04-16T13:49:53.494Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/03-linear-regression.html</loc>
-    <lastmod>2024-04-16T21:44:58.215Z</lastmod>
+    <loc>https://sta362-sb8-24.github.io/STA362StatLearning/slides/04-3-km-nb.html</loc>
+    <lastmod>2024-04-22T13:55:49.826Z</lastmod>
   </url>
 </urlset>
