@@ -2663,7 +2663,7 @@
     "href": "slides/06-subset.html#example---credit-data",
     "title": "Chapter 6 Part 1",
     "section": "Example - Credit Data",
-    "text": "Example - Credit Data\n::::{.columns} :::{.column}  :::\n\n\nRSS and \\(R^2\\) are displayed.\nRed frontier tracks the best model for a given number of predictors, according to RSS and \\(R^2\\).\nData set contains only ten predictors, the x-axis ranges from 1 to 11, since one of the variables is categorical and takes on three values, leading to the creation of two dummy variables"
+    "text": "Example - Credit Data\n\n\n\n\n\nRSS and \\(R^2\\) are displayed.\nRed frontier tracks the best model for a given number of predictors, according to RSS and \\(R^2\\).\nData set contains only ten predictors, the x-axis ranges from 1 to 11, since one of the variables is categorical and takes on three values, leading to the creation of two dummy variables"
   },
   {
     "objectID": "slides/06-subset.html#extensions",
@@ -2831,7 +2831,7 @@
     "href": "slides/06-subset.html#best-subsets---not-tidymodels-1",
     "title": "Chapter 6 Part 1",
     "section": "Best Subsets - not tidymodels",
-    "text": "Best Subsets - not tidymodels\n\nSave the summary and see whats included\n\n\n\nCode\nreg_summary &lt;- summary(best_ss_model)\nnames(reg_summary) # See what metrics are included \n\n\n[1] \"which\"  \"rsq\"    \"rss\"    \"adjr2\"  \"cp\"     \"bic\"    \"outmat\" \"obj\"   \n\n\n\nWe can access each of these with $\nThis gives you the value for each of the best models with different number of predictors\n\n\n\nCode\nreg_summary$rsq\n\n\n[1] 0.7458484 0.8751179 0.9498788 0.9535800 0.9541606 0.9546879 0.9548167 0.9548880"
+    "text": "Best Subsets - not tidymodels\n\nSave the summary and see whats included\n\n\nreg_summary &lt;- summary(best_ss_model)\nnames(reg_summary) # See what metrics are included \n\n[1] \"which\"  \"rsq\"    \"rss\"    \"adjr2\"  \"cp\"     \"bic\"    \"outmat\" \"obj\"   \n\n\n\nWe can access each of these with $\nThis gives you the value for each of the best models with different number of predictors\n\n\nreg_summary$rsq\n\n[1] 0.7458484 0.8751179 0.9498788 0.9535800 0.9541606 0.9546879 0.9548167 0.9548880"
   },
   {
     "objectID": "slides/06-subset.html#best-subsets---function",
@@ -3139,7 +3139,7 @@
     "href": "slides/06-subset.html#application-exercise-1",
     "title": "Chapter 6 Part 1",
     "section": " Application Exercise",
-    "text": "Application Exercise\n\nPerform forward stepwise and backward stepwise on the penguins dataset to find the best model to predict weight.\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+    "text": "Application Exercise\nPerform forward stepwise and backward stepwise on the penguins dataset to find the best model to predict weight.\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
   },
   {
     "objectID": "slides/04-2-lda-qda.qmd.html#recap",
@@ -4435,5 +4435,12 @@
     "title": "Chapter 4 Part 1",
     "section": " Application Exercise",
     "text": "Application Exercise\nUsing the Default data from the ISLR package. Fit two logistic regression models that predict whether a customer defaults\n\nOne model with student as a predictor. Interpret the coefficient of studentYes.\nAnother model with balance as a predictor. Interpret the coefficient of balance.\n\nHere is some code to get you started:\n\nlibrary(ISLR)\ndata(\"Default\")"
+  },
+  {
+    "objectID": "slides/06-subset.html#best-subsets",
+    "href": "slides/06-subset.html#best-subsets",
+    "title": "Chapter 6 Part 1",
+    "section": "Best Subsets",
+    "text": "Best Subsets\n\nSave the summary and see whats included\n\n\n\nCode\nreg_summary &lt;- summary(best_ss_model)\nnames(reg_summary) # See what metrics are included \n\n\n[1] \"which\"  \"rsq\"    \"rss\"    \"adjr2\"  \"cp\"     \"bic\"    \"outmat\" \"obj\"   \n\n\n\nWe can access each of these with $\nThis gives you the value for each of the best models with different number of predictors\n\n\n\nCode\nreg_summary$rsq\n\n\n[1] 0.7458484 0.8751179 0.9498788 0.9535800 0.9541606 0.9546879 0.9548167 0.9548880"
   }
 ]
