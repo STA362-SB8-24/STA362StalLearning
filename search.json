@@ -839,7 +839,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -1417,7 +1417,7 @@
     "href": "slides/04-2-lda-qda.html#lda-bluejays-eda---variance",
     "title": "Chapter 4 Part 2",
     "section": "LDA Bluejays EDA - Variance",
-    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.18\n2 M           1.25\n\n\n\nVery similar standard deviations (and thus variances)"
+    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F          1.21 \n2 M          0.999\n\n\n\nVery similar standard deviations (and thus variances)"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#fit-lda",
@@ -1431,14 +1431,14 @@
     "href": "slides/04-2-lda-qda.html#check-the-fit",
     "title": "Chapter 4 Part 2",
     "section": "Check The Fit",
-    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 10  0\n         M 12 15\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.676"
+    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 14  2\n         M  9 12\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.703"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#compare-to-logistic",
     "href": "slides/04-2-lda-qda.html#compare-to-logistic",
     "title": "Chapter 4 Part 2",
     "section": "Compare to Logistic",
-    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.676"
+    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.703"
   },
   {
     "objectID": "slides/04-2-lda-qda.html#application-exercise",
@@ -2992,7 +2992,7 @@
     "href": "slides/06-subset_o.html#application-exercise",
     "title": "Chapter 6 Part 1",
     "section": " Application Exercise",
-    "text": "Application Exercise\nTry best subset regression on the penguins data in the palmerpenguins package."
+    "text": "Application Exercise\nTry best subset regression on the penguins data in the palmerpenguins package to find the best model to predict weight."
   },
   {
     "objectID": "slides/06-subset_o.html#stepwise-selection",
@@ -3140,5 +3140,1300 @@
     "title": "Chapter 6 Part 1",
     "section": " Application Exercise",
     "text": "Application Exercise\n\nPerform forward stepwise and backward stepwise on the penguins dataset to find the best model to predict weight.\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#recap",
+    "href": "slides/04-2-lda-qda.qmd.html#recap",
+    "title": "Chapter 4 Part 2",
+    "section": "Recap",
+    "text": "Recap\n\nWe had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#setup",
+    "href": "slides/04-2-lda-qda.qmd.html#setup",
+    "title": "Chapter 4 Part 2",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)\nlibrary(Stat2Data)\n#install.packages(\"discrim\")"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#multinomial-logistic",
+    "href": "slides/04-2-lda-qda.qmd.html#multinomial-logistic",
+    "title": "Chapter 4 Part 2",
+    "section": "Multinomial Logistic",
+    "text": "Multinomial Logistic\n\nSo far we have discussed logistic regression with two classes.\nIt is easily generalized to more than two classes."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#confounding",
+    "href": "slides/04-2-lda-qda.qmd.html#confounding",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\nWhat is going on here?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#confounding-1",
+    "href": "slides/04-2-lda-qda.qmd.html#confounding-1",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#multiple-logistic-regression",
+    "href": "slides/04-2-lda-qda.qmd.html#multiple-logistic-regression",
+    "title": "Chapter 4 Part 2",
+    "section": "Multiple logistic regression",
+    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#logistic-regression-for-more-than-two-classes",
+    "href": "slides/04-2-lda-qda.qmd.html#logistic-regression-for-more-than-two-classes",
+    "title": "Chapter 4 Part 2",
+    "section": "Logistic regression for more than two classes",
+    "text": "Logistic regression for more than two classes\n\\[P(Y=k|X) = \\frac{e ^{\\beta_{0k}+\\beta_{1k}X_1+\\dots+\\beta_{pk}X_p}}{\\sum_{l=1}^Ke^{\\beta_{0l}+\\beta_{1l}X_1+\\dots+\\beta_{pl}X_p}}\\]\n\nWe generalize this to situations with multiple classes\nHere we have a linear function for each of the \\(K\\) classes\nThis is known as multinomial logistic regression"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-warmup",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-warmup",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Warmup",
+    "text": "LDA Warmup\nTo give us a general overview, we are going to watch the StatQuest video on the topic: https://www.youtube.com/watch?v=azXCzI57Yfc"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#discriminant-analysis",
+    "href": "slides/04-2-lda-qda.qmd.html#discriminant-analysis",
+    "title": "Chapter 4 Part 2",
+    "section": "Discriminant Analysis",
+    "text": "Discriminant Analysis\n\nHere the approach is to model the distribution of X in each of the classes separately, and then use Bayes theorem to flip things around and obtain \\(P(Y|X)\\).\nWhen we use normal (Gaussian) distributions for each class, this leads to linear or quadratic discriminant analysis.\nHowever, this approach is quite general, and other distributions can be used as well. We will focus on normal distributions."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#why-another-approach",
+    "href": "slides/04-2-lda-qda.qmd.html#why-another-approach",
+    "title": "Chapter 4 Part 2",
+    "section": "Why Another Approach?",
+    "text": "Why Another Approach?\n\nWhen the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.\nIf n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.\nLinear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#bayes-theorem-classification",
+    "href": "slides/04-2-lda-qda.qmd.html#bayes-theorem-classification",
+    "title": "Chapter 4 Part 2",
+    "section": "Bayes Theorem (classification)",
+    "text": "Bayes Theorem (classification)\nThomas Bayes was a famous mathematician whose name represents a big subfield of statistical and probabilistic modeling. Here we focus on a simple result, known as Bayes theorem:\n\\[P(Y=k|X=x) = \\frac{P(X=x|Y=k)\\cdot P(Y=k)}{P(X=x)}\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#bayes-for-discriminant-analysis",
+    "href": "slides/04-2-lda-qda.qmd.html#bayes-for-discriminant-analysis",
+    "title": "Chapter 4 Part 2",
+    "section": "Bayes for Discriminant Analysis",
+    "text": "Bayes for Discriminant Analysis\n\\[P(Y=k|X=x) = \\frac{\\pi_kf_k(x)}{\\sum_{l=1}^K\\pi_lf_l(x)} \\text{, where}\\]\n\n\\(f_k(x)=P(X=x|Y=k)\\) is the density for \\(X\\) in class \\(k\\). Here we use normal’s but they could be other distributions (such as \\(\\chi^2\\))\n\\(\\pi_k = P(Y=k)\\) is the marginal or prior probability for class \\(k\\)."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#classify-to-the-highest-density",
+    "href": "slides/04-2-lda-qda.qmd.html#classify-to-the-highest-density",
+    "title": "Chapter 4 Part 2",
+    "section": "Classify to the highest density",
+    "text": "Classify to the highest density\n\\[\\pi_1=.5, \\pi_2=.5\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe classify a new point according to which density is highest.\nWhen the priors are different, we take them into account as well, and compare \\(\\pi_kf_k(x)\\).\nOn the right, we favor the pink class - the decision boundary has shifted to the left."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-when-p1",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-when-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA (when \\(p=1\\))",
+    "text": "LDA (when \\(p=1\\))\nThe Gaussian (normal) density has the form\n\\[f_k(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma_k}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}\\]\n\n\\(\\mu_k\\) is the mean, \\(\\sigma_k^2\\) the variance (in class \\(k\\))\nFor now, we assume \\(\\sigma_k=\\sigma\\) for all groups (we will need to check this with real data)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-when-p1-1",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-when-p1-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA (when \\(p=1\\))",
+    "text": "LDA (when \\(p=1\\))\nWe plug this \\(f_k(x)\\) into Bayes formula and after some simplifying we get:\n\\[p_k(x) = \\frac{\\pi_k\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}{\\sum_{l=1}^K\\pi_l\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#discriminant-function",
+    "href": "slides/04-2-lda-qda.qmd.html#discriminant-function",
+    "title": "Chapter 4 Part 2",
+    "section": "Discriminant Function",
+    "text": "Discriminant Function\nTo classify at the value X = x, we need to see which of the \\(p_k(x)\\) is largest. Taking logs, and discarding terms that do not depend on \\(k\\), we see that this is equivalent to assigning x to the class with the largest discriminant score:\n\\[\\delta_k(x) = x\\cdot \\frac{\\mu_k}{\\sigma^2}-\\frac{\\mu_k^2}{2\\sigma^2}+log(\\pi_k)\\]\n\nImportantly, \\(\\delta_k(x)\\) is a linear function of \\(x\\).\nIf there are \\(K=2\\) classes and \\(\\pi_1=\\pi_2=.5\\), then the decision boundry is at\n\n\\[x=\\frac{\\mu_1+\\mu_2}{2}\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#maximizing-delta_kx",
+    "href": "slides/04-2-lda-qda.qmd.html#maximizing-delta_kx",
+    "title": "Chapter 4 Part 2",
+    "section": "Maximizing \\(\\delta_k(x)\\)",
+    "text": "Maximizing \\(\\delta_k(x)\\)\n\nIn order to maximize this, we need estimates for all the parameters\n\n\nWhat should we estimate \\(\\hat{\\pi_k}\\), \\(\\mu_k\\), and \\(\\sigma^2\\) with?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#maximizing-delta_kx-1",
+    "href": "slides/04-2-lda-qda.qmd.html#maximizing-delta_kx-1",
+    "title": "Chapter 4 Part 2",
+    "section": "Maximizing \\(\\delta_k(x)\\)",
+    "text": "Maximizing \\(\\delta_k(x)\\)\n\\[\\hat{\\pi}_k = \\frac{n_k}{n}\\]\n\\[\\hat{\\mu}_k = \\frac{1}{n_k}\\sum_{i:y_k=k}x_i\\]\n\\[\\hat{\\sigma}^2 = \\frac{1}{n-K}\\sum_{k=1}^K\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2 = \\sum_{k=1}^K\\frac{n_k-1}{n-K}\\cdot \\hat{\\sigma}_k^2\\]\nWhere \\[\\hat{\\sigma}_k^2 = \\frac{1}{n_k-1}\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-in-r-example-p1",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-in-r-example-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA In R Example (\\(p=1\\))",
+    "text": "LDA In R Example (\\(p=1\\))\n\ndata(\"BlueJays\") # Bring data into environment\nlibrary(Stat2Data)\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(discrim)\n\n\nCan we determine the sex of a blue jay by measuring the distance from the tip of the bill to the back of the head (Head)?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA",
+    "text": "LDA Bluejays EDA\n\ntt_split &lt;- initial_split(BlueJays,prop=.7)\n\nBJ_train &lt;- training(tt_split)\n\nBJ_train |&gt; ggplot(aes(x = Head,y=KnownSex)) +\n  geom_boxplot() +\n  theme_bw()"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda-1",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA",
+    "text": "LDA Bluejays EDA\n\nWhat assumptions should we check?\n\n\nNormality of our predictor\nConstant variance between groups."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda---normality",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda---normality",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA - Normality",
+    "text": "LDA Bluejays EDA - Normality\n\nlibrary(patchwork)\n\n(BJ_train |&gt; ggplot(aes(sample = Head)) + geom_qq())+\n  (BJ_train |&gt; ggplot(aes(x = Head)) + geom_histogram())"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda---variance",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-bluejays-eda---variance",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA - Variance",
+    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.27\n2 M           1.25\n\n\n\nVery similar standard deviations (and thus variances)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#fit-lda",
+    "href": "slides/04-2-lda-qda.qmd.html#fit-lda",
+    "title": "Chapter 4 Part 2",
+    "section": "Fit LDA",
+    "text": "Fit LDA\n\nlda_spec &lt;- discrim_linear() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")\n\nlda_fit&lt;-  lda_spec |&gt; \n  fit(KnownSex ~ Head,\n      data = BJ_train)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#check-the-fit",
+    "href": "slides/04-2-lda-qda.qmd.html#check-the-fit",
+    "title": "Chapter 4 Part 2",
+    "section": "Check The Fit",
+    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 10  1\n         M  5 21\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.838"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#compare-to-logistic",
+    "href": "slides/04-2-lda-qda.qmd.html#compare-to-logistic",
+    "title": "Chapter 4 Part 2",
+    "section": "Compare to Logistic",
+    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.865"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#application-exercise",
+    "href": "slides/04-2-lda-qda.qmd.html#application-exercise",
+    "title": "Chapter 4 Part 2",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nWe are going to use the penguins data from the palmerpeguins package.\n\nConduct basic EDA to see if penguin bill length is different by sex and if LDA is an appropriate model choice.\nUse LDA to predict penguin sex based on their bill length using training and testing data. Get the accuracy on the testing set.\nFit a logistic regression model and get it’s accuracy to see which did better."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-with-p1",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-with-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA with \\(p>1\\)",
+    "text": "LDA with \\(p&gt;1\\)\n\nWhen we have 2 or more predictors, the distribution becomes multivariate.\nIf the covariance between predictors is 0 within each class of the response, LDA is still appropriate."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#lda-with-p1-1",
+    "href": "slides/04-2-lda-qda.qmd.html#lda-with-p1-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA with \\(p>1\\)",
+    "text": "LDA with \\(p&gt;1\\)\n\nFor example, with 2 normal predictors, their distributions in 3d would like like this:\n\n\n\nLuckily, the discriminate function remains linear\n\n\\[\\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#example-p2k3",
+    "href": "slides/04-2-lda-qda.qmd.html#example-p2k3",
+    "title": "Chapter 4 Part 2",
+    "section": "Example: \\(p=2,K=3\\)",
+    "text": "Example: \\(p=2,K=3\\)\n\nThere is no limit on the number of levels of the categorical response for LDA\nSuppose \\(\\pi_1=\\pi_2\\pi_3=1/3\\)\n\n - The dashed lines are known as the Bayes decision boundaries"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#probabilities",
+    "href": "slides/04-2-lda-qda.qmd.html#probabilities",
+    "title": "Chapter 4 Part 2",
+    "section": "Probabilities",
+    "text": "Probabilities\n\nOnce the estimates for the \\(\\hat{\\delta}_k(x)\\) have been found, we can plug them in and get:\n\\[\\hat{P}(Y=k|X=x)=\\frac{e^{\\hat{\\delta}_k(x)}}{\\sum_{l=1}^Ke^{\\hat{\\delta}^l(x)}}\\]\nClassifying to the largest \\(\\hat{\\delta}_k(x)\\) amounts to classifying to the class for which \\(\\hat{P}(Y = k|X = x)\\) is largest.\nWhen \\(K = 2\\), we classify to class 2 if \\(\\hat{P}(Y = 2|X = x)\\geq 0.5\\), else to class 1."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#example---credit-card-fraud",
+    "href": "slides/04-2-lda-qda.qmd.html#example---credit-card-fraud",
+    "title": "Chapter 4 Part 2",
+    "section": "Example - Credit Card Fraud",
+    "text": "Example - Credit Card Fraud\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.972\n\n\n\nAccuracy of 97.7% on a testing set!\nWhat about the different types of errors?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#errors",
+    "href": "slides/04-2-lda-qda.qmd.html#errors",
+    "title": "Chapter 4 Part 2",
+    "section": "Errors",
+    "text": "Errors\n\nOf the true yes, we made errors at the rate of 83/(83+26), 76%\nOf the true no, we made errors at the rate of 2/(2889+2), .069%"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#types-of-errors",
+    "href": "slides/04-2-lda-qda.qmd.html#types-of-errors",
+    "title": "Chapter 4 Part 2",
+    "section": "Types of Errors",
+    "text": "Types of Errors\n\nRecall:\n\nFalse positive rate: The fraction of negative examples that are classified as positive.\nFalse negative rate: The fraction of positive examples that are classified as negative.\n\nRemember the model gave probabilities, the final yes or no is decided by\n\\[\\hat{P}(Default=Yes|Balance,Student) \\geq .5\\]\n\nWe can adjust our error rates by changing that threshold"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#sensitivity-and-specificity",
+    "href": "slides/04-2-lda-qda.qmd.html#sensitivity-and-specificity",
+    "title": "Chapter 4 Part 2",
+    "section": "Sensitivity and Specificity",
+    "text": "Sensitivity and Specificity\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n\nThe sensitivity is the true positive rate.\n\nThe rate at which we correctly predict a person will default.\n26/(83+26) = .24 (24%)\n\nThe specificity is the true negative rate.\n\nThe rate at which we correctly predict a person will not default.\n2889/(2889+2) =.999 (99.9%)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#varying-the-threshold",
+    "href": "slides/04-2-lda-qda.qmd.html#varying-the-threshold",
+    "title": "Chapter 4 Part 2",
+    "section": "Varying the threshold",
+    "text": "Varying the threshold\n\nIn order to determine the best threshold, we want to maximize the specificty and sensitivity.\nOR - maximize the sensitivty and minimize 1-specificity.\nIn order to to do this we use an \\(ROC\\) curve which stands for receiver operating characteristic curve."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#roc-curve",
+    "href": "slides/04-2-lda-qda.qmd.html#roc-curve",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC Curve",
+    "text": "ROC Curve\nWe want to maximize the area under this curve, called ROC AUC\n\nlda_roc&lt;- lda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_curve(truth = default,.pred_No) \n\nhead(lda_roc)\n\n# A tibble: 6 × 3\n  .threshold specificity sensitivity\n       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;\n1  -Inf          0                 1\n2     0.0819     0                 1\n3     0.129      0.00917           1\n4     0.151      0.0183            1\n5     0.154      0.0275            1\n6     0.201      0.0367            1"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#roc-curve-1",
+    "href": "slides/04-2-lda-qda.qmd.html#roc-curve-1",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC Curve",
+    "text": "ROC Curve\n\nautoplot(lda_roc)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#roc-auc",
+    "href": "slides/04-2-lda-qda.qmd.html#roc-auc",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC AUC",
+    "text": "ROC AUC\n\nlda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957\n\n\nIf we want to tune our model better, we can optimize the ROC AUC by changing the threshold.\n\nI did a train/test approach here. What should I do different if I want to tune for threshold?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#qda",
+    "href": "slides/04-2-lda-qda.qmd.html#qda",
+    "title": "Chapter 4 Part 2",
+    "section": "QDA",
+    "text": "QDA\n\nQDA arises when \\(p&gt;1\\) and the is a covariance structure between the predictors within the same level of the response.\nThis introduces a squared term into the maximization problem of the \\(\\delta_k(x)\\), thus the name."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#qda-in-r",
+    "href": "slides/04-2-lda-qda.qmd.html#qda-in-r",
+    "title": "Chapter 4 Part 2",
+    "section": "QDA In R",
+    "text": "QDA In R\n\nqda_fit&lt;-discrim_quad() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")|&gt; \n  fit(default ~ balance + student,\n      data = training(def_splits))\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  conf_mat(truth = default, estimate = .pred_class) \n\n          Truth\nPrediction   No  Yes\n       No  2888   80\n       Yes    3   29\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda.qmd.html#tuning-by-threhold",
+    "href": "slides/04-2-lda-qda.qmd.html#tuning-by-threhold",
+    "title": "Chapter 4 Part 2",
+    "section": "Tuning By Threhold",
+    "text": "Tuning By Threhold\nhttps://www.tidymodels.org/start/case-study/\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#recap",
+    "href": "slides/04-logistic.qmd.html#recap",
+    "title": "Chapter 4 Part 1",
+    "section": "Recap",
+    "text": "Recap\n\nWe had a linear regression refresher\nLinear regression is a great tool when we have a continuous outcome\nWe are going to learn some fancy ways to do even better in the future\n\nSetup:\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#classification-1",
+    "href": "slides/04-logistic.qmd.html#classification-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Classification",
+    "text": "Classification\n\nWhat are some examples of classification problems?\n\n\nQualitative response variable in an unordered set, \\(\\mathcal{C}\\)\neye color \\(\\in\\) {blue, brown, green}\nemail \\(\\in\\) {spam, not spam}\nResponse, \\(Y\\) takes on values in \\(\\mathcal{C}\\)\nPredictors are a vector, \\(X\\)\nThe task: build a function \\(C(X)\\) that takes \\(X\\) and predicts \\(Y\\), \\(C(X)\\in\\mathcal{C}\\)\nMany times we are actually more interested in the probabilities that \\(X\\) belongs to each category in \\(\\mathcal{C}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#example-credit-card-default",
+    "href": "slides/04-logistic.qmd.html#example-credit-card-default",
+    "title": "Chapter 4 Part 1",
+    "section": "Example: Credit card default",
+    "text": "Example: Credit card default\n\n\nCode\nset.seed(1)\nDefault |&gt;\n  sample_frac(size = 0.25) |&gt;\n  ggplot(aes(balance, income, color = default)) +\n  geom_point(pch = 4) +\n  scale_color_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"top\") -&gt; p1\n\np2 &lt;- ggplot(Default, aes(x = default, y = balance, fill = default)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"none\")\n\np3 &lt;- ggplot(Default, aes(x = default, y = income, fill = default)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"none\")\ngrid.arrange(p1, p2, p3, ncol = 3, widths = c(2, 1, 1))"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#can-we-use-linear-regression",
+    "href": "slides/04-logistic.qmd.html#can-we-use-linear-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Can we use linear regression?",
+    "text": "Can we use linear regression?\nWe can code Default as\n\\[Y = \\begin{cases} 0 & \\textrm{if }\\texttt{No}\\\\ 1&\\textrm{if }\\texttt{Yes}\\end{cases}\\] Can we fit a linear regression of \\(Y\\) on \\(X\\) and classify as Yes if \\(\\hat{Y}&gt; 0.5\\)?\n\nIn this case of a binary outcome, linear regression is okay (it is equivalent to linear discriminant analysis, you can read more about that in your book!)\n\\(E[Y|X=x] = P(Y=1|X=x)\\), so it seems like this is a pretty good idea!\nThe problem: Linear regression can produce probabilities less than 0 or greater than 1 😱"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#can-we-use-linear-regression-1",
+    "href": "slides/04-logistic.qmd.html#can-we-use-linear-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Can we use linear regression?",
+    "text": "Can we use linear regression?\nWe can code Default as\n\\[Y = \\begin{cases} 0 & \\textrm{if }\\texttt{No}\\\\ 1&\\textrm{if }\\texttt{Yes}\\end{cases}\\] Can we fit a linear regression of \\(Y\\) on \\(X\\) and classify as Yes if \\(\\hat{Y}&gt; 0.5\\)?\n\nWhat may do a better job?\n\n\nLogistic regression!"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#linear-versus-logistic-regression",
+    "href": "slides/04-logistic.qmd.html#linear-versus-logistic-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear versus logistic regression",
+    "text": "Linear versus logistic regression\n\n\nCode\nDefault &lt;- Default |&gt;\n  mutate(\n  p = glm(default ~ balance, data = Default, family = \"binomial\") |&gt;\n  predict(type = \"response\"),\n  p2 = lm(I(default == \"Yes\") ~ balance, data = Default) |&gt; predict(),\n  def = ifelse(default == \"Yes\", 1, 0)\n)\n\n\nDefault |&gt;\n  sample_frac(0.25) |&gt;\nggplot(aes(balance, p2)) +\n  geom_hline(yintercept = c(0, 1), lty = 2, size = 0.2) +\n  geom_line(color = \"cornflower blue\") +\n  geom_point(aes(balance, def), shape = \"|\", color = \"orange\") +\n  theme_classic() +\n  labs(y = \"probability of default\") -&gt; p1\n\nDefault |&gt;\n  sample_frac(0.25) |&gt;\nggplot(aes(balance, p)) +\n  geom_hline(yintercept = c(0, 1), lty = 2, size = 0.2) +\n  geom_line(color = \"cornflower blue\") +\n  geom_point(aes(balance, def), shape = \"|\", color = \"orange\") +\n  theme_classic() +\n  labs(y = \"probability of default\") -&gt; p2\n\ngrid.arrange(p1, p2, ncol = 2)\n\n\n\n\nWhich does a better job at predicting the probability of default?\n\n\nThe orange marks represent the response \\(Y\\in\\{0,1\\}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#linear-regression",
+    "href": "slides/04-logistic.qmd.html#linear-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear Regression",
+    "text": "Linear Regression\nWhat if we have \\(&gt;2\\) possible outcomes? For example, someone comes to the emergency room and we need to classify them according to their symptoms\n\\[\n\\begin{align}\nY = \\begin{cases} 1& \\textrm{if }\\texttt{stroke}\\\\2&\\textrm{if }\\texttt{drug overdose}\\\\3&\\textrm{if }\\texttt{epileptic seizure}\\end{cases}\n\\end{align}\n\\]\n\nWhat could go wrong here?\n\n\nThe coding implies an ordering\nThe coding implies equal spacing (that is the difference between stroke and drug overdose is the same as drug overdose and epileptic seizure)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#linear-regression-1",
+    "href": "slides/04-logistic.qmd.html#linear-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear Regression",
+    "text": "Linear Regression\nWhat if we have \\(&gt;2\\) possible outcomes? For example, someone comes to the emergency room and we need to classify them according to their symptoms\n\\[\n\\begin{align}\nY = \\begin{cases} 1& \\textrm{if }\\texttt{stroke}\\\\2&\\textrm{if }\\texttt{drug overdose}\\\\3&\\textrm{if }\\texttt{epileptic seizure}\\end{cases}\n\\end{align}\n\\]\n\nLinear regression is not appropriate here\nMutliclass logistic regression or discriminant analysis are more appropriate"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#logistic-regression",
+    "href": "slides/04-logistic.qmd.html#logistic-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\\[\np(X) = \\frac{e^{\\beta_0+\\beta_1X}}{1+e^{\\beta_0+\\beta_1X}}\n\\]\n\nNote: \\(p(X)\\) is shorthand for \\(P(Y=1|X)\\)\nNo matter what values \\(\\beta_0\\), \\(\\beta_1\\), or \\(X\\) take \\(p(X)\\) will always be between 0 and 1"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#logistic-regression-1",
+    "href": "slides/04-logistic.qmd.html#logistic-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\\[\np(X) = \\frac{e^{\\beta_0+\\beta_1X}}{1+e^{\\beta_0+\\beta_1X}}\n\\]\nWe can rearrange this into the following form:\n\\[\n\\log\\left(\\frac{p(X)}{1-p(X)}\\right) = \\beta_0 + \\beta_1 X\n\\]\n\nWhat is this transformation called?\n\n\nThis is a log odds or logit transformation of \\(p(X)\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#linear-versus-logistic-regression-1",
+    "href": "slides/04-logistic.qmd.html#linear-versus-logistic-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear versus logistic regression",
+    "text": "Linear versus logistic regression\n\nLogistic regression ensures that our estimates for \\(p(X)\\) are between 0 and 1 🎉"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#maximum-likelihood",
+    "href": "slides/04-logistic.qmd.html#maximum-likelihood",
+    "title": "Chapter 4 Part 1",
+    "section": "Maximum Likelihood",
+    "text": "Maximum Likelihood\n\nRefresher: How did we estimate \\(\\hat\\beta\\) in linear regression?"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#maximum-likelihood-1",
+    "href": "slides/04-logistic.qmd.html#maximum-likelihood-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Maximum Likelihood",
+    "text": "Maximum Likelihood\n\nRefresher: How did we estimate \\(\\hat\\beta\\) in linear regression?\n\nIn logistic regression, we use maximum likelihood to estimate the parameters\n\\[\\mathcal{l}(\\beta_0,\\beta_1)=\\prod_{i:y_i=1}p(x_i)\\prod_{i:y_i=0}(1-p(x_i))\\]\n\nThis likelihood give the probability of the observed ones and zeros in the data\nWe pick \\(\\beta_0\\) and \\(\\beta_1\\) to maximize the likelihood\nWe’ll let R do the heavy lifting here"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#lets-see-it-in-r",
+    "href": "slides/04-logistic.qmd.html#lets-see-it-in-r",
+    "title": "Chapter 4 Part 1",
+    "section": "Let’s see it in R",
+    "text": "Let’s see it in R\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(default ~ balance, \n      data = Default) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term         estimate std.error statistic   p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept) -10.7      0.361        -29.5 3.62e-191\n2 balance       0.00550  0.000220      25.0 1.98e-137\n\n\n\nUse the logistic_reg() function in R with the glm engine"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#making-predictions",
+    "href": "slides/04-logistic.qmd.html#making-predictions",
+    "title": "Chapter 4 Part 1",
+    "section": "Making predictions",
+    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $1000?\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.6513306\n0.3611574\n-29.49221\n0\n\n\nbalance\n0.0054989\n0.0002204\n24.95309\n0\n\n\n\n\n\n\n\n\n\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 1000}}{1+e^{-10.65+0.0055\\times 1000}}=0.006\n\\]"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#making-predictions-1",
+    "href": "slides/04-logistic.qmd.html#making-predictions-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Making predictions",
+    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $2000?\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.6513306\n0.3611574\n-29.49221\n0\n\n\nbalance\n0.0054989\n0.0002204\n24.95309\n0\n\n\n\n\n\n\n\n\n\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 2000}}{1+e^{-10.65+0.0055\\times 2000}}=0.586\n\\]"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#logistic-regression-example",
+    "href": "slides/04-logistic.qmd.html#logistic-regression-example",
+    "title": "Chapter 4 Part 1",
+    "section": "Logistic regression example",
+    "text": "Logistic regression example\nLet’s refit the model to predict the probability of default given the customer is a student\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-3.5041278\n0.0707130\n-49.554219\n0.0000000\n\n\nstudentYes\n0.4048871\n0.1150188\n3.520181\n0.0004313\n\n\n\n\n\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = Yes}) = \\frac{e^{-3.5041+0.4049\\times1}}{1+e^{-3.5041+0.4049\\times1}}=0.0431\\]\n\n\nHow will this change if student = No?\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = No}) = \\frac{e^{-3.5041+0.4049\\times0}}{1+e^{-3.5041+0.4049\\times0}}=0.0292\\]"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#potential-confounding",
+    "href": "slides/04-logistic.qmd.html#potential-confounding",
+    "title": "Chapter 4 Part 1",
+    "section": "Potential Confounding",
+    "text": "Potential Confounding\n\n\nWhat is going on here?"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#confounding",
+    "href": "slides/04-logistic.qmd.html#confounding",
+    "title": "Chapter 4 Part 1",
+    "section": "Confounding",
+    "text": "Confounding\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#a-bit-about-odds",
+    "href": "slides/04-logistic.qmd.html#a-bit-about-odds",
+    "title": "Chapter 4 Part 1",
+    "section": "A bit about “odds”",
+    "text": "A bit about “odds”\n\nThe “odds” tell you how likely an event is\n🌂 Let’s say there is a 60% chance of rain today * What is the probability that it will rain?\n\\(p = 0.6\\)\nWhat is the probability that it won’t rain?\n\\(1-p = 0.4\\)\nWhat are the odds that it will rain?\n3 to 2, 3:2, \\(\\frac{0.6}{0.4} = 1.5\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#transforming-logs",
+    "href": "slides/04-logistic.qmd.html#transforming-logs",
+    "title": "Chapter 4 Part 1",
+    "section": "Transforming logs",
+    "text": "Transforming logs\n\nHow do you “undo” a \\(\\log\\) base \\(e\\)?\nUse \\(e\\)! For example:\n\\(e^{\\log(10)} = 10\\)\n\\(e^{\\log(1283)} = 1283\\)\n\\(e^{\\log(x)} = x\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#transforming-logs-1",
+    "href": "slides/04-logistic.qmd.html#transforming-logs-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Transforming logs",
+    "text": "Transforming logs\n\nHow would you get the odds from the log(odds)?\n\n\n\nHow do you “undo” a \\(\\log\\) base \\(e\\)?\nUse \\(e\\)! For example:\n\\(e^{\\log(10)} = 10\\)\n\\(e^{\\log(1283)} = 1283\\)\n\\(e^{\\log(x)} = x\\)\n\n\n\n\\(e^{\\log(odds)}\\) = odds"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#transforming-odds",
+    "href": "slides/04-logistic.qmd.html#transforming-odds",
+    "title": "Chapter 4 Part 1",
+    "section": "Transforming odds",
+    "text": "Transforming odds\n\nodds = \\(\\frac{\\pi}{1-\\pi}\\)\nSolving for \\(\\pi\\)\n\\(\\pi = \\frac{\\textrm{odds}}{1+\\textrm{odds}}\\)\nPlugging in \\(e^{\\log(odds)}\\) = odds\n\\(\\pi = \\frac{e^{\\log(odds)}}{1+e^{\\log(odds)}}\\)\nPlugging in \\(\\log(odds) = \\beta_0 + \\beta_1x\\)\n\\(\\pi = \\frac{e^{\\beta_0 + \\beta_1x}}{1+e^{\\beta_0 + \\beta_1x}}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#the-logistic-model",
+    "href": "slides/04-logistic.qmd.html#the-logistic-model",
+    "title": "Chapter 4 Part 1",
+    "section": "The logistic model",
+    "text": "The logistic model\n\n✌️ forms\n\n\n\n\n\n\n\n\nForm\nModel\n\n\n\n\nLogit form\n\\(\\log\\left(\\frac{\\pi}{1-\\pi}\\right) = \\beta_0 + \\beta_1x\\)\n\n\nProbability form\n\\(\\Large\\pi = \\frac{e^{\\beta_0 + \\beta_1x}}{1+e^{\\beta_0 + \\beta_1x}}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#the-logistic-model-1",
+    "href": "slides/04-logistic.qmd.html#the-logistic-model-1",
+    "title": "Chapter 4 Part 1",
+    "section": "The logistic model",
+    "text": "The logistic model\n\n\n\nprobability\nodds\nlog(odds)\n\n\n\n\n\\(\\pi\\)\n\\(\\frac{\\pi}{1-\\pi}\\)\n\\(\\log\\left(\\frac{\\pi}{1-\\pi}\\right)=l\\)\n\n\n\n⬅️\n\n\n\nlog(odds)\nodds\nprobability\n\n\n\n\n\\(l\\)\n\\(e^l\\)\n\\(\\frac{e^l}{1+e^l} = \\pi\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#the-logistic-model-2",
+    "href": "slides/04-logistic.qmd.html#the-logistic-model-2",
+    "title": "Chapter 4 Part 1",
+    "section": "The logistic model",
+    "text": "The logistic model\n\n✌️ forms\nlog(odds): \\(l = \\beta_0 + \\beta_1x\\)\nP(Outcome = Yes): \\(\\Large\\pi =\\frac{e^{\\beta_0 + \\beta_1x}}{1+e^{\\beta_0 + \\beta_1x}}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios",
+    "href": "slides/04-logistic.qmd.html#odds-ratios",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later. (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-1",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat is the explanatory variable?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-2",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-2",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat type of variable is this?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-3",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-3",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat is the outcome variable?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-4",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-4",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat type of variable is this?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-5",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-5",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can compare the results using odds\nWhat are the odds of being pain-free for the placebo group?\n\\((22/100)/(78/100) = 22/78 = 0.282\\)\nWhat are the odds of being pain-free for the treatment group?\n\\(39/61 = 0.639\\)\nComparing the odds what can we conclude?\nTMS increases the likelihood of success"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-6",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-6",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can summarize this relationship with an odds ratio: the ratio of the two odds\n\\(\\Large OR = \\frac{39/61}{22/78} = \\frac{0.639}{0.282} = 2.27\\)\n“the odds of being pain free were 2.27 times higher with TMS than with the placebo”"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-7",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-7",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat if we wanted to calculate this in terms of Not pain-free (with pain-free) as the referent?\n\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{61/39}{78/22} = \\frac{1.564}{3.545} = 0.441\\)\nthe odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-8",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-8",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat changed here?\n\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-9",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-9",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nIn general, it’s more natural to interpret odds ratios &gt; 1, you can flip the referent to do so\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-10",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-10",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nLet’s look at some Titanic data. We are interested in whether the passenger reported being female is related to whether they survived.\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-11",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-11",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat are the odds of surviving for females versus males?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\]"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-12",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-12",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nHow do you interpret this?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\] the odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-13",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-13",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat if we wanted to fit a model? What would the equation be?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-14",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-14",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68\n2 Sexfemale       2.30    0.135       17.1 2.91e-65"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-15",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-15",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds Ratios",
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68\n2 Sexfemale       2.30    0.135       17.1 2.91e-65"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-16",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-16",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds Ratios",
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    0.200    0.0919     -17.5 1.70e-68\n2 Sexfemale      9.99     0.135       17.1 2.91e-65\n\nexp(2.301176)\n\n[1] 9.99"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-17",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-17",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds Ratios",
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    0.200    0.0919     -17.5 1.70e-68\n2 Sexfemale      9.99     0.135       17.1 2.91e-65\n\nexp(2.301176)\n\n[1] 9.99\n\n\nthe odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-18",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-18",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)   -19.2       5.63     -3.41 0.000644\n2 GPA             5.45      1.58      3.45 0.000553\n\n\nA one unit increase in GPA yields a 5.45 increase in the log odds of acceptance"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-19",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-19",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)  4.56e-9      5.63     -3.41 0.000644\n2 GPA          2.34e+2      1.58      3.45 0.000553\n\n\nA one unit increase in GPA yields a 234-fold increase in the odds of acceptance\n\n😱 that seems huge! Remember: the interpretation of these coefficients depends on your units (the same as in ordinary linear regression)."
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-20",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-20",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)   -19.2       5.63     -3.41 0.000644\n2 GPA             5.45      1.58      3.45 0.000553\n\n\n\nexp(5.454) ## a one unit increase in GPA\n\n[1] 234\n\nexp(5.454 * 0.1) ## a 0.1 increase in GPA\n\n[1] 1.73\n\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#odds-ratios-21",
+    "href": "slides/04-logistic.qmd.html#odds-ratios-21",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\n\nMedGPA &lt;- MedGPA |&gt;\n  mutate(GPA_10 = GPA * 10)\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA_10, data = MedGPA) |&gt;\n  tidy(exponentiate = TRUE)\n\n# A tibble: 2 × 5\n  term             estimate std.error statistic  p.value\n  &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept) 0.00000000456     5.63      -3.41 0.000644\n2 GPA_10      1.73              0.158      3.45 0.000553\n\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
+  },
+  {
+    "objectID": "slides/04-logistic.qmd.html#application-exercise",
+    "href": "slides/04-logistic.qmd.html#application-exercise",
+    "title": "Chapter 4 Part 1",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nUsing the Default data from the ISLR package. Fit two logistic regression models that predict whether a customer defaults\n\nOne model with student as a predictor. Interpret the coefficient of studentYes.\nAnother model with balance as a predictor. Interpret the coefficient of balance.\n\nHere is some code to get you started:\n\nlibrary(ISLR)\ndata(\"Default\")\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/06-subset_o.html#application-exercise-1",
+    "href": "slides/06-subset_o.html#application-exercise-1",
+    "title": "Chapter 6 Part 1",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\nPerform forward stepwise and backward stepwise on the penguins dataset to find the best model to predict weight."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html",
+    "href": "slides/04-2-lda-qda_o.qmd.html",
+    "title": "Chapter 4 Part 2",
+    "section": "",
+    "text": "We had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#recap",
+    "href": "slides/04-2-lda-qda_o.qmd.html#recap",
+    "title": "Chapter 4 Part 2",
+    "section": "",
+    "text": "We had a logistic regression refresher\nNow…\n\nWhat if our response has more than two levels?\nWhat if logistic regression is a poor fit?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#setup",
+    "href": "slides/04-2-lda-qda_o.qmd.html#setup",
+    "title": "Chapter 4 Part 2",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)\nlibrary(Stat2Data)\n#install.packages(\"discrim\")"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#multinomial-logistic",
+    "href": "slides/04-2-lda-qda_o.qmd.html#multinomial-logistic",
+    "title": "Chapter 4 Part 2",
+    "section": "Multinomial Logistic",
+    "text": "Multinomial Logistic\n\nSo far we have discussed logistic regression with two classes.\nIt is easily generalized to more than two classes."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#confounding",
+    "href": "slides/04-2-lda-qda_o.qmd.html#confounding",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\nRecall our defaults data with variable default, student, and balance\n\n\n\n\n\n\n\n\n\n\nWhat is going on here?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#confounding-1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#confounding-1",
+    "title": "Chapter 4 Part 2",
+    "section": "Confounding",
+    "text": "Confounding\n\n\n\n\n\n\n\n\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#multiple-logistic-regression",
+    "href": "slides/04-2-lda-qda_o.qmd.html#multiple-logistic-regression",
+    "title": "Chapter 4 Part 2",
+    "section": "Multiple logistic regression",
+    "text": "Multiple logistic regression\n\\[\\log\\left(\\frac{p(X)}{1-p(X)}\\right)=\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p\\] \\[p(X) = \\frac{e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}{1+e^{\\beta_0+\\beta_1X_1+\\dots+\\beta_pX_p}}\\]\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.8690452\n0.4922555\n-22.080088\n0.0000000\n\n\nbalance\n0.0057365\n0.0002319\n24.737563\n0.0000000\n\n\nincome\n0.0000030\n0.0000082\n0.369815\n0.7115203\n\n\nstudentYes\n-0.6467758\n0.2362525\n-2.737646\n0.0061881\n\n\n\n\n\n\n\n\n\nWhy is the coefficient for student negative now when it was positive before?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#logistic-regression-for-more-than-two-classes",
+    "href": "slides/04-2-lda-qda_o.qmd.html#logistic-regression-for-more-than-two-classes",
+    "title": "Chapter 4 Part 2",
+    "section": "Logistic regression for more than two classes",
+    "text": "Logistic regression for more than two classes\n\\[P(Y=k|X) = \\frac{e ^{\\beta_{0k}+\\beta_{1k}X_1+\\dots+\\beta_{pk}X_p}}{\\sum_{l=1}^Ke^{\\beta_{0l}+\\beta_{1l}X_1+\\dots+\\beta_{pl}X_p}}\\]\n\nWe generalize this to situations with multiple classes\nHere we have a linear function for each of the \\(K\\) classes\nThis is known as multinomial logistic regression"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-warmup",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-warmup",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Warmup",
+    "text": "LDA Warmup\nTo give us a general overview, we are going to watch the StatQuest video on the topic: https://www.youtube.com/watch?v=azXCzI57Yfc"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#discriminant-analysis",
+    "href": "slides/04-2-lda-qda_o.qmd.html#discriminant-analysis",
+    "title": "Chapter 4 Part 2",
+    "section": "Discriminant Analysis",
+    "text": "Discriminant Analysis\n\nHere the approach is to model the distribution of X in each of the classes separately, and then use Bayes theorem to flip things around and obtain \\(P(Y|X)\\).\nWhen we use normal (Gaussian) distributions for each class, this leads to linear or quadratic discriminant analysis.\nHowever, this approach is quite general, and other distributions can be used as well. We will focus on normal distributions."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#why-another-approach",
+    "href": "slides/04-2-lda-qda_o.qmd.html#why-another-approach",
+    "title": "Chapter 4 Part 2",
+    "section": "Why Another Approach?",
+    "text": "Why Another Approach?\n\nWhen the classes are well-separated, the parameter estimates for the logistic regression model are surprisingly unstable. Linear discriminant analysis does not suffer from this problem.\nIf n is small and the distribution of the predictors X is approximately normal in each of the classes, the linear discriminant model is again more stable than the logistic regression model.\nLinear discriminant analysis is popular when we have more than two response classes, because it also provides low-dimensional views of the data."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#bayes-theorem-classification",
+    "href": "slides/04-2-lda-qda_o.qmd.html#bayes-theorem-classification",
+    "title": "Chapter 4 Part 2",
+    "section": "Bayes Theorem (classification)",
+    "text": "Bayes Theorem (classification)\nThomas Bayes was a famous mathematician whose name represents a big subfield of statistical and probabilistic modeling. Here we focus on a simple result, known as Bayes theorem:\n\\[P(Y=k|X=x) = \\frac{P(X=x|Y=k)\\cdot P(Y=k)}{P(X=x)}\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#bayes-for-discriminant-analysis",
+    "href": "slides/04-2-lda-qda_o.qmd.html#bayes-for-discriminant-analysis",
+    "title": "Chapter 4 Part 2",
+    "section": "Bayes for Discriminant Analysis",
+    "text": "Bayes for Discriminant Analysis\n\\[P(Y=k|X=x) = \\frac{\\pi_kf_k(x)}{\\sum_{l=1}^K\\pi_lf_l(x)} \\text{, where}\\]\n\n\\(f_k(x)=P(X=x|Y=k)\\) is the density for \\(X\\) in class \\(k\\). Here we use normal’s but they could be other distributions (such as \\(\\chi^2\\))\n\\(\\pi_k = P(Y=k)\\) is the marginal or prior probability for class \\(k\\)."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#classify-to-the-highest-density",
+    "href": "slides/04-2-lda-qda_o.qmd.html#classify-to-the-highest-density",
+    "title": "Chapter 4 Part 2",
+    "section": "Classify to the highest density",
+    "text": "Classify to the highest density\n\\[\\pi_1=.5, \\pi_2=.5\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe classify a new point according to which density is highest.\nWhen the priors are different, we take them into account as well, and compare \\(\\pi_kf_k(x)\\).\nOn the right, we favor the pink class - the decision boundary has shifted to the left."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-when-p1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-when-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA (when \\(p=1\\))",
+    "text": "LDA (when \\(p=1\\))\nThe Gaussian (normal) density has the form\n\\[f_k(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma_k}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}\\]\n\n\\(\\mu_k\\) is the mean, \\(\\sigma_k^2\\) the variance (in class \\(k\\))\nFor now, we assume \\(\\sigma_k=\\sigma\\) for all groups (we will need to check this with real data)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-when-p1-1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-when-p1-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA (when \\(p=1\\))",
+    "text": "LDA (when \\(p=1\\))\nWe plug this \\(f_k(x)\\) into Bayes formula and after some simplifying we get:\n\\[p_k(x) = \\frac{\\pi_k\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}{\\sum_{l=1}^K\\pi_l\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{1}{2}(\\frac{x-\\mu_k}{\\sigma_k})^2}}\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#discriminant-function",
+    "href": "slides/04-2-lda-qda_o.qmd.html#discriminant-function",
+    "title": "Chapter 4 Part 2",
+    "section": "Discriminant Function",
+    "text": "Discriminant Function\nTo classify at the value X = x, we need to see which of the \\(p_k(x)\\) is largest. Taking logs, and discarding terms that do not depend on \\(k\\), we see that this is equivalent to assigning x to the class with the largest discriminant score:\n\\[\\delta_k(x) = x\\cdot \\frac{\\mu_k}{\\sigma^2}-\\frac{\\mu_k^2}{2\\sigma^2}+log(\\pi_k)\\]\n\nImportantly, \\(\\delta_k(x)\\) is a linear function of \\(x\\).\nIf there are \\(K=2\\) classes and \\(\\pi_1=\\pi_2=.5\\), then the decision boundry is at\n\n\\[x=\\frac{\\mu_1+\\mu_2}{2}\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#maximizing-delta_kx",
+    "href": "slides/04-2-lda-qda_o.qmd.html#maximizing-delta_kx",
+    "title": "Chapter 4 Part 2",
+    "section": "Maximizing \\(\\delta_k(x)\\)",
+    "text": "Maximizing \\(\\delta_k(x)\\)\n\nIn order to maximize this, we need estimates for all the parameters\n\n\nWhat should we estimate \\(\\hat{\\pi_k}\\), \\(\\mu_k\\), and \\(\\sigma^2\\) with?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#maximizing-delta_kx-1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#maximizing-delta_kx-1",
+    "title": "Chapter 4 Part 2",
+    "section": "Maximizing \\(\\delta_k(x)\\)",
+    "text": "Maximizing \\(\\delta_k(x)\\)\n\\[\\hat{\\pi}_k = \\frac{n_k}{n}\\]\n\\[\\hat{\\mu}_k = \\frac{1}{n_k}\\sum_{i:y_k=k}x_i\\]\n\\[\\hat{\\sigma}^2 = \\frac{1}{n-K}\\sum_{k=1}^K\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2 = \\sum_{k=1}^K\\frac{n_k-1}{n-K}\\cdot \\hat{\\sigma}_k^2\\]\nWhere \\[\\hat{\\sigma}_k^2 = \\frac{1}{n_k-1}\\sum_{i:y_i=k}(x_i-\\hat{\\mu}_k)^2\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-in-r-example-p1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-in-r-example-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA In R Example (\\(p=1\\))",
+    "text": "LDA In R Example (\\(p=1\\))\n\ndata(\"BlueJays\") # Bring data into environment\nlibrary(Stat2Data)\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(discrim)\n\n\nCan we determine the sex of a blue jay by measuring the distance from the tip of the bill to the back of the head (Head)?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA",
+    "text": "LDA Bluejays EDA\n\ntt_split &lt;- initial_split(BlueJays,prop=.7)\n\nBJ_train &lt;- training(tt_split)\n\nBJ_train |&gt; ggplot(aes(x = Head,y=KnownSex)) +\n  geom_boxplot() +\n  theme_bw()"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda-1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA",
+    "text": "LDA Bluejays EDA\n\nWhat assumptions should we check?\n\n\nNormality of our predictor\nConstant variance between groups."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda---normality",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda---normality",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA - Normality",
+    "text": "LDA Bluejays EDA - Normality\n\nlibrary(patchwork)\n\n(BJ_train |&gt; ggplot(aes(sample = Head)) + geom_qq())+\n  (BJ_train |&gt; ggplot(aes(x = Head)) + geom_histogram())"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda---variance",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-bluejays-eda---variance",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA Bluejays EDA - Variance",
+    "text": "LDA Bluejays EDA - Variance\n\nBJ_train |&gt; group_by(KnownSex)|&gt;\n  summarize(Head_sd = sd(Head))\n\n# A tibble: 2 × 2\n  KnownSex Head_sd\n  &lt;fct&gt;      &lt;dbl&gt;\n1 F           1.27\n2 M           1.25\n\n\n\nVery similar standard deviations (and thus variances)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#fit-lda",
+    "href": "slides/04-2-lda-qda_o.qmd.html#fit-lda",
+    "title": "Chapter 4 Part 2",
+    "section": "Fit LDA",
+    "text": "Fit LDA\n\nlda_spec &lt;- discrim_linear() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")\n\nlda_fit&lt;-  lda_spec |&gt; \n  fit(KnownSex ~ Head,\n      data = BJ_train)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#check-the-fit",
+    "href": "slides/04-2-lda-qda_o.qmd.html#check-the-fit",
+    "title": "Chapter 4 Part 2",
+    "section": "Check The Fit",
+    "text": "Check The Fit\n\nBJTest &lt;- testing(tt_split)\n\nlda_fit |&gt; \n  augment(new_data = BJTest) %&gt;%\n  conf_mat(truth = KnownSex, estimate = .pred_class) \n\n          Truth\nPrediction  F  M\n         F 10  1\n         M  5 21\n\n\n\nlda_fit|&gt; \n  augment(new_data = BJTest) |&gt; \n  accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.838"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#compare-to-logistic",
+    "href": "slides/04-2-lda-qda_o.qmd.html#compare-to-logistic",
+    "title": "Chapter 4 Part 2",
+    "section": "Compare to Logistic",
+    "text": "Compare to Logistic\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(KnownSex ~ Head,\n      data = BJ_train) |&gt;\n  augment(new_data = BJTest)|&gt;\n    accuracy(truth = KnownSex,estimate=.pred_class)\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.865"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#application-exercise",
+    "href": "slides/04-2-lda-qda_o.qmd.html#application-exercise",
+    "title": "Chapter 4 Part 2",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nWe are going to use the penguins data from the palmerpeguins package.\n\nConduct basic EDA to see if penguin bill length is different by sex and if LDA is an appropriate model choice.\nUse LDA to predict penguin sex based on their bill length using training and testing data. Get the accuracy on the testing set.\nFit a logistic regression model and get it’s accuracy to see which did better."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-with-p1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-with-p1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA with \\(p>1\\)",
+    "text": "LDA with \\(p&gt;1\\)\n\nWhen we have 2 or more predictors, the distribution becomes multivariate.\nIf the covariance between predictors is 0 within each class of the response, LDA is still appropriate."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#lda-with-p1-1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#lda-with-p1-1",
+    "title": "Chapter 4 Part 2",
+    "section": "LDA with \\(p>1\\)",
+    "text": "LDA with \\(p&gt;1\\)\n\nFor example, with 2 normal predictors, their distributions in 3d would like like this:\n\n\n\nLuckily, the discriminate function remains linear\n\n\\[\\delta_k(x) = c_{k0} + c_{k1}x_1+...c_{kp}x_p\\]"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#example-p2k3",
+    "href": "slides/04-2-lda-qda_o.qmd.html#example-p2k3",
+    "title": "Chapter 4 Part 2",
+    "section": "Example: \\(p=2,K=3\\)",
+    "text": "Example: \\(p=2,K=3\\)\n\nThere is no limit on the number of levels of the categorical response for LDA\nSuppose \\(\\pi_1=\\pi_2\\pi_3=1/3\\)\n\n - The dashed lines are known as the Bayes decision boundaries"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#probabilities",
+    "href": "slides/04-2-lda-qda_o.qmd.html#probabilities",
+    "title": "Chapter 4 Part 2",
+    "section": "Probabilities",
+    "text": "Probabilities\n\nOnce the estimates for the \\(\\hat{\\delta}_k(x)\\) have been found, we can plug them in and get:\n\\[\\hat{P}(Y=k|X=x)=\\frac{e^{\\hat{\\delta}_k(x)}}{\\sum_{l=1}^Ke^{\\hat{\\delta}^l(x)}}\\]\nClassifying to the largest \\(\\hat{\\delta}_k(x)\\) amounts to classifying to the class for which \\(\\hat{P}(Y = k|X = x)\\) is largest.\nWhen \\(K = 2\\), we classify to class 2 if \\(\\hat{P}(Y = 2|X = x)\\geq 0.5\\), else to class 1."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#example---credit-card-fraud",
+    "href": "slides/04-2-lda-qda_o.qmd.html#example---credit-card-fraud",
+    "title": "Chapter 4 Part 2",
+    "section": "Example - Credit Card Fraud",
+    "text": "Example - Credit Card Fraud\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n# A tibble: 1 × 3\n  .metric  .estimator .estimate\n  &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt;\n1 accuracy binary         0.972\n\n\n\nAccuracy of 97.7% on a testing set!\nWhat about the different types of errors?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#errors",
+    "href": "slides/04-2-lda-qda_o.qmd.html#errors",
+    "title": "Chapter 4 Part 2",
+    "section": "Errors",
+    "text": "Errors\n\nOf the true yes, we made errors at the rate of 83/(83+26), 76%\nOf the true no, we made errors at the rate of 2/(2889+2), .069%"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#types-of-errors",
+    "href": "slides/04-2-lda-qda_o.qmd.html#types-of-errors",
+    "title": "Chapter 4 Part 2",
+    "section": "Types of Errors",
+    "text": "Types of Errors\n\nRecall:\n\nFalse positive rate: The fraction of negative examples that are classified as positive.\nFalse negative rate: The fraction of positive examples that are classified as negative.\n\nRemember the model gave probabilities, the final yes or no is decided by\n\\[\\hat{P}(Default=Yes|Balance,Student) \\geq .5\\]\n\nWe can adjust our error rates by changing that threshold"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#sensitivity-and-specificity",
+    "href": "slides/04-2-lda-qda_o.qmd.html#sensitivity-and-specificity",
+    "title": "Chapter 4 Part 2",
+    "section": "Sensitivity and Specificity",
+    "text": "Sensitivity and Specificity\n\n\n          Truth\nPrediction   No  Yes\n       No  2889   83\n       Yes    2   26\n\n\n\nThe sensitivity is the true positive rate.\n\nThe rate at which we correctly predict a person will default.\n26/(83+26) = .24 (24%)\n\nThe specificity is the true negative rate.\n\nThe rate at which we correctly predict a person will not default.\n2889/(2889+2) =.999 (99.9%)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#varying-the-threshold",
+    "href": "slides/04-2-lda-qda_o.qmd.html#varying-the-threshold",
+    "title": "Chapter 4 Part 2",
+    "section": "Varying the threshold",
+    "text": "Varying the threshold\n\nIn order to determine the best threshold, we want to maximize the specificty and sensitivity.\nOR - maximize the sensitivty and minimize 1-specificity.\nIn order to to do this we use an \\(ROC\\) curve which stands for receiver operating characteristic curve."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#roc-curve",
+    "href": "slides/04-2-lda-qda_o.qmd.html#roc-curve",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC Curve",
+    "text": "ROC Curve\nWe want to maximize the area under this curve, called ROC AUC\n\nlda_roc&lt;- lda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_curve(truth = default,.pred_No) \n\nhead(lda_roc)\n\n# A tibble: 6 × 3\n  .threshold specificity sensitivity\n       &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;\n1  -Inf          0                 1\n2     0.0819     0                 1\n3     0.129      0.00917           1\n4     0.151      0.0183            1\n5     0.154      0.0275            1\n6     0.201      0.0367            1"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#roc-curve-1",
+    "href": "slides/04-2-lda-qda_o.qmd.html#roc-curve-1",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC Curve",
+    "text": "ROC Curve\n\nautoplot(lda_roc)"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#roc-auc",
+    "href": "slides/04-2-lda-qda_o.qmd.html#roc-auc",
+    "title": "Chapter 4 Part 2",
+    "section": "ROC AUC",
+    "text": "ROC AUC\n\nlda_fit_2 |&gt;\n  augment(new_data = testing(def_splits)) |&gt;\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957\n\n\nIf we want to tune our model better, we can optimize the ROC AUC by changing the threshold.\n\nI did a train/test approach here. What should I do different if I want to tune for threshold?"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#qda",
+    "href": "slides/04-2-lda-qda_o.qmd.html#qda",
+    "title": "Chapter 4 Part 2",
+    "section": "QDA",
+    "text": "QDA\n\nQDA arises when \\(p&gt;1\\) and the is a covariance structure between the predictors within the same level of the response.\nThis introduces a squared term into the maximization problem of the \\(\\delta_k(x)\\), thus the name."
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#qda-in-r",
+    "href": "slides/04-2-lda-qda_o.qmd.html#qda-in-r",
+    "title": "Chapter 4 Part 2",
+    "section": "QDA In R",
+    "text": "QDA In R\n\nqda_fit&lt;-discrim_quad() |&gt;\n  set_mode(\"classification\")|&gt;\n  set_engine(\"MASS\")|&gt; \n  fit(default ~ balance + student,\n      data = training(def_splits))\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  conf_mat(truth = default, estimate = .pred_class) \n\n          Truth\nPrediction   No  Yes\n       No  2888   80\n       Yes    3   29\n\nqda_fit |&gt;\n  augment(new_data = testing(def_splits)) %&gt;%\n  roc_auc(truth = default,.pred_No) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 roc_auc binary         0.957"
+  },
+  {
+    "objectID": "slides/04-2-lda-qda_o.qmd.html#tuning-by-threhold",
+    "href": "slides/04-2-lda-qda_o.qmd.html#tuning-by-threhold",
+    "title": "Chapter 4 Part 2",
+    "section": "Tuning By Threhold",
+    "text": "Tuning By Threhold\nhttps://www.tidymodels.org/start/case-study/"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html",
+    "href": "slides/04-logistic_o.qmd.html",
+    "title": "Chapter 4 Part 1",
+    "section": "",
+    "text": "We had a linear regression refresher\nLinear regression is a great tool when we have a continuous outcome\nWe are going to learn some fancy ways to do even better in the future\n\nSetup:\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#recap",
+    "href": "slides/04-logistic_o.qmd.html#recap",
+    "title": "Chapter 4 Part 1",
+    "section": "",
+    "text": "We had a linear regression refresher\nLinear regression is a great tool when we have a continuous outcome\nWe are going to learn some fancy ways to do even better in the future\n\nSetup:\n\nlibrary(tidyverse)\nlibrary(broom)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#classification-1",
+    "href": "slides/04-logistic_o.qmd.html#classification-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Classification",
+    "text": "Classification\n\nWhat are some examples of classification problems?\n\n\nQualitative response variable in an unordered set, \\(\\mathcal{C}\\)\neye color \\(\\in\\) {blue, brown, green}\nemail \\(\\in\\) {spam, not spam}\nResponse, \\(Y\\) takes on values in \\(\\mathcal{C}\\)\nPredictors are a vector, \\(X\\)\nThe task: build a function \\(C(X)\\) that takes \\(X\\) and predicts \\(Y\\), \\(C(X)\\in\\mathcal{C}\\)\nMany times we are actually more interested in the probabilities that \\(X\\) belongs to each category in \\(\\mathcal{C}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#example-credit-card-default",
+    "href": "slides/04-logistic_o.qmd.html#example-credit-card-default",
+    "title": "Chapter 4 Part 1",
+    "section": "Example: Credit card default",
+    "text": "Example: Credit card default\n\n\nCode\nset.seed(1)\nDefault |&gt;\n  sample_frac(size = 0.25) |&gt;\n  ggplot(aes(balance, income, color = default)) +\n  geom_point(pch = 4) +\n  scale_color_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"top\") -&gt; p1\n\np2 &lt;- ggplot(Default, aes(x = default, y = balance, fill = default)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"none\")\n\np3 &lt;- ggplot(Default, aes(x = default, y = income, fill = default)) +\n  geom_boxplot() +\n  scale_fill_manual(values = c(\"cornflower blue\", \"red\")) +\n  theme_classic() +\n  theme(legend.position = \"none\")\ngrid.arrange(p1, p2, p3, ncol = 3, widths = c(2, 1, 1))"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#can-we-use-linear-regression",
+    "href": "slides/04-logistic_o.qmd.html#can-we-use-linear-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Can we use linear regression?",
+    "text": "Can we use linear regression?\nWe can code Default as\n\\[Y = \\begin{cases} 0 & \\textrm{if }\\texttt{No}\\\\ 1&\\textrm{if }\\texttt{Yes}\\end{cases}\\] Can we fit a linear regression of \\(Y\\) on \\(X\\) and classify as Yes if \\(\\hat{Y}&gt; 0.5\\)?\n\nIn this case of a binary outcome, linear regression is okay (it is equivalent to linear discriminant analysis, you can read more about that in your book!)\n\\(E[Y|X=x] = P(Y=1|X=x)\\), so it seems like this is a pretty good idea!\nThe problem: Linear regression can produce probabilities less than 0 or greater than 1 😱"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#can-we-use-linear-regression-1",
+    "href": "slides/04-logistic_o.qmd.html#can-we-use-linear-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Can we use linear regression?",
+    "text": "Can we use linear regression?\nWe can code Default as\n\\[Y = \\begin{cases} 0 & \\textrm{if }\\texttt{No}\\\\ 1&\\textrm{if }\\texttt{Yes}\\end{cases}\\] Can we fit a linear regression of \\(Y\\) on \\(X\\) and classify as Yes if \\(\\hat{Y}&gt; 0.5\\)?\n\nWhat may do a better job?\n\n\nLogistic regression!"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#linear-versus-logistic-regression",
+    "href": "slides/04-logistic_o.qmd.html#linear-versus-logistic-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear versus logistic regression",
+    "text": "Linear versus logistic regression\n\n\nCode\nDefault &lt;- Default |&gt;\n  mutate(\n  p = glm(default ~ balance, data = Default, family = \"binomial\") |&gt;\n  predict(type = \"response\"),\n  p2 = lm(I(default == \"Yes\") ~ balance, data = Default) |&gt; predict(),\n  def = ifelse(default == \"Yes\", 1, 0)\n)\n\n\nDefault |&gt;\n  sample_frac(0.25) |&gt;\nggplot(aes(balance, p2)) +\n  geom_hline(yintercept = c(0, 1), lty = 2, size = 0.2) +\n  geom_line(color = \"cornflower blue\") +\n  geom_point(aes(balance, def), shape = \"|\", color = \"orange\") +\n  theme_classic() +\n  labs(y = \"probability of default\") -&gt; p1\n\nDefault |&gt;\n  sample_frac(0.25) |&gt;\nggplot(aes(balance, p)) +\n  geom_hline(yintercept = c(0, 1), lty = 2, size = 0.2) +\n  geom_line(color = \"cornflower blue\") +\n  geom_point(aes(balance, def), shape = \"|\", color = \"orange\") +\n  theme_classic() +\n  labs(y = \"probability of default\") -&gt; p2\n\ngrid.arrange(p1, p2, ncol = 2)\n\n\n\n\n\n\n\n\n\n\nWhich does a better job at predicting the probability of default?\n\n\nThe orange marks represent the response \\(Y\\in\\{0,1\\}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#linear-regression",
+    "href": "slides/04-logistic_o.qmd.html#linear-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear Regression",
+    "text": "Linear Regression\nWhat if we have \\(&gt;2\\) possible outcomes? For example, someone comes to the emergency room and we need to classify them according to their symptoms\n\\[\n\\begin{align}\nY = \\begin{cases} 1& \\textrm{if }\\texttt{stroke}\\\\2&\\textrm{if }\\texttt{drug overdose}\\\\3&\\textrm{if }\\texttt{epileptic seizure}\\end{cases}\n\\end{align}\n\\]\n\nWhat could go wrong here?\n\n\nThe coding implies an ordering\nThe coding implies equal spacing (that is the difference between stroke and drug overdose is the same as drug overdose and epileptic seizure)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#linear-regression-1",
+    "href": "slides/04-logistic_o.qmd.html#linear-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear Regression",
+    "text": "Linear Regression\nWhat if we have \\(&gt;2\\) possible outcomes? For example, someone comes to the emergency room and we need to classify them according to their symptoms\n\\[\n\\begin{align}\nY = \\begin{cases} 1& \\textrm{if }\\texttt{stroke}\\\\2&\\textrm{if }\\texttt{drug overdose}\\\\3&\\textrm{if }\\texttt{epileptic seizure}\\end{cases}\n\\end{align}\n\\]\n\nLinear regression is not appropriate here\nMutliclass logistic regression or discriminant analysis are more appropriate"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#logistic-regression",
+    "href": "slides/04-logistic_o.qmd.html#logistic-regression",
+    "title": "Chapter 4 Part 1",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\\[\np(X) = \\frac{e^{\\beta_0+\\beta_1X}}{1+e^{\\beta_0+\\beta_1X}}\n\\]\n\nNote: \\(p(X)\\) is shorthand for \\(P(Y=1|X)\\)\nNo matter what values \\(\\beta_0\\), \\(\\beta_1\\), or \\(X\\) take \\(p(X)\\) will always be between 0 and 1"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#logistic-regression-1",
+    "href": "slides/04-logistic_o.qmd.html#logistic-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\\[\np(X) = \\frac{e^{\\beta_0+\\beta_1X}}{1+e^{\\beta_0+\\beta_1X}}\n\\]\nWe can rearrange this into the following form:\n\\[\n\\log\\left(\\frac{p(X)}{1-p(X)}\\right) = \\beta_0 + \\beta_1 X\n\\]\n\nWhat is this transformation called?\n\n\nThis is a log odds or logit transformation of \\(p(X)\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#linear-versus-logistic-regression-1",
+    "href": "slides/04-logistic_o.qmd.html#linear-versus-logistic-regression-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Linear versus logistic regression",
+    "text": "Linear versus logistic regression\n\n\n\n\n\n\n\n\n\nLogistic regression ensures that our estimates for \\(p(X)\\) are between 0 and 1 🎉"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#maximum-likelihood",
+    "href": "slides/04-logistic_o.qmd.html#maximum-likelihood",
+    "title": "Chapter 4 Part 1",
+    "section": "Maximum Likelihood",
+    "text": "Maximum Likelihood\n\nRefresher: How did we estimate \\(\\hat\\beta\\) in linear regression?"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#maximum-likelihood-1",
+    "href": "slides/04-logistic_o.qmd.html#maximum-likelihood-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Maximum Likelihood",
+    "text": "Maximum Likelihood\n\nRefresher: How did we estimate \\(\\hat\\beta\\) in linear regression?\n\nIn logistic regression, we use maximum likelihood to estimate the parameters\n\\[\\mathcal{l}(\\beta_0,\\beta_1)=\\prod_{i:y_i=1}p(x_i)\\prod_{i:y_i=0}(1-p(x_i))\\]\n\nThis likelihood give the probability of the observed ones and zeros in the data\nWe pick \\(\\beta_0\\) and \\(\\beta_1\\) to maximize the likelihood\nWe’ll let R do the heavy lifting here"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#lets-see-it-in-r",
+    "href": "slides/04-logistic_o.qmd.html#lets-see-it-in-r",
+    "title": "Chapter 4 Part 1",
+    "section": "Let’s see it in R",
+    "text": "Let’s see it in R\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(default ~ balance, \n      data = Default) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term         estimate std.error statistic   p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept) -10.7      0.361        -29.5 3.62e-191\n2 balance       0.00550  0.000220      25.0 1.98e-137\n\n\n\nUse the logistic_reg() function in R with the glm engine"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#making-predictions",
+    "href": "slides/04-logistic_o.qmd.html#making-predictions",
+    "title": "Chapter 4 Part 1",
+    "section": "Making predictions",
+    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $1000?\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.6513306\n0.3611574\n-29.49221\n0\n\n\nbalance\n0.0054989\n0.0002204\n24.95309\n0\n\n\n\n\n\n\n\n\n. . .\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 1000}}{1+e^{-10.65+0.0055\\times 1000}}=0.006\n\\]"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#making-predictions-1",
+    "href": "slides/04-logistic_o.qmd.html#making-predictions-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Making predictions",
+    "text": "Making predictions\n\nWhat is our estimated probability of default for someone with a balance of $2000?\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-10.6513306\n0.3611574\n-29.49221\n0\n\n\nbalance\n0.0054989\n0.0002204\n24.95309\n0\n\n\n\n\n\n\n\n\n. . .\n\\[\n\\hat{p}(X) = \\frac{e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}{1+e^{\\hat{\\beta}_0+\\hat{\\beta}_1X}}=\\frac{e^{-10.65+0.0055\\times 2000}}{1+e^{-10.65+0.0055\\times 2000}}=0.586\n\\]"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#logistic-regression-example",
+    "href": "slides/04-logistic_o.qmd.html#logistic-regression-example",
+    "title": "Chapter 4 Part 1",
+    "section": "Logistic regression example",
+    "text": "Logistic regression example\nLet’s refit the model to predict the probability of default given the customer is a student\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-3.5041278\n0.0707130\n-49.554219\n0.0000000\n\n\nstudentYes\n0.4048871\n0.1150188\n3.520181\n0.0004313\n\n\n\n\n\n\n\n\n\\[P(\\texttt{default = Yes}|\\texttt{student = Yes}) = \\frac{e^{-3.5041+0.4049\\times1}}{1+e^{-3.5041+0.4049\\times1}}=0.0431\\]\n. . .\n\nHow will this change if student = No?\n\n. . .\n\\[P(\\texttt{default = Yes}|\\texttt{student = No}) = \\frac{e^{-3.5041+0.4049\\times0}}{1+e^{-3.5041+0.4049\\times0}}=0.0292\\]"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#potential-confounding",
+    "href": "slides/04-logistic_o.qmd.html#potential-confounding",
+    "title": "Chapter 4 Part 1",
+    "section": "Potential Confounding",
+    "text": "Potential Confounding\n\n\n\n\n\n\n\n\n\n\nWhat is going on here?"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#confounding",
+    "href": "slides/04-logistic_o.qmd.html#confounding",
+    "title": "Chapter 4 Part 1",
+    "section": "Confounding",
+    "text": "Confounding\n\n\n\n\n\n\n\n\n\n\nStudents tend to have higher balances than non-students\nTheir marginal default rate is higher\nFor each level of balance, students default less\nTheir conditional default rate is lower"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#a-bit-about-odds",
+    "href": "slides/04-logistic_o.qmd.html#a-bit-about-odds",
+    "title": "Chapter 4 Part 1",
+    "section": "A bit about “odds”",
+    "text": "A bit about “odds”\n\nThe “odds” tell you how likely an event is\n🌂 Let’s say there is a 60% chance of rain today * What is the probability that it will rain?\n\\(p = 0.6\\)\nWhat is the probability that it won’t rain?\n\\(1-p = 0.4\\)\nWhat are the odds that it will rain?\n3 to 2, 3:2, \\(\\frac{0.6}{0.4} = 1.5\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#transforming-logs",
+    "href": "slides/04-logistic_o.qmd.html#transforming-logs",
+    "title": "Chapter 4 Part 1",
+    "section": "Transforming logs",
+    "text": "Transforming logs\n\nHow do you “undo” a \\(\\log\\) base \\(e\\)?\nUse \\(e\\)! For example:\n\\(e^{\\log(10)} = 10\\)\n\\(e^{\\log(1283)} = 1283\\)\n\\(e^{\\log(x)} = x\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#transforming-logs-1",
+    "href": "slides/04-logistic_o.qmd.html#transforming-logs-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Transforming logs",
+    "text": "Transforming logs\n\nHow would you get the odds from the log(odds)?\n\n\n\nHow do you “undo” a \\(\\log\\) base \\(e\\)?\nUse \\(e\\)! For example:\n\\(e^{\\log(10)} = 10\\)\n\\(e^{\\log(1283)} = 1283\\)\n\\(e^{\\log(x)} = x\\)\n\n\n\n\\(e^{\\log(odds)}\\) = odds"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#transforming-odds",
+    "href": "slides/04-logistic_o.qmd.html#transforming-odds",
+    "title": "Chapter 4 Part 1",
+    "section": "Transforming odds",
+    "text": "Transforming odds\n\nodds = \\(\\frac{\\pi}{1-\\pi}\\)\nSolving for \\(\\pi\\)\n\\(\\pi = \\frac{\\textrm{odds}}{1+\\textrm{odds}}\\)\nPlugging in \\(e^{\\log(odds)}\\) = odds\n\\(\\pi = \\frac{e^{\\log(odds)}}{1+e^{\\log(odds)}}\\)\nPlugging in \\(\\log(odds) = \\beta_0 + \\beta_1x\\)\n\\(\\pi = \\frac{e^{\\beta_0 + \\beta_1x}}{1+e^{\\beta_0 + \\beta_1x}}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#the-logistic-model",
+    "href": "slides/04-logistic_o.qmd.html#the-logistic-model",
+    "title": "Chapter 4 Part 1",
+    "section": "The logistic model",
+    "text": "The logistic model\n\n✌️ forms\n\n\n\n\n\n\n\n\nForm\nModel\n\n\n\n\nLogit form\n\\(\\log\\left(\\frac{\\pi}{1-\\pi}\\right) = \\beta_0 + \\beta_1x\\)\n\n\nProbability form\n\\(\\Large\\pi = \\frac{e^{\\beta_0 + \\beta_1x}}{1+e^{\\beta_0 + \\beta_1x}}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#the-logistic-model-1",
+    "href": "slides/04-logistic_o.qmd.html#the-logistic-model-1",
+    "title": "Chapter 4 Part 1",
+    "section": "The logistic model",
+    "text": "The logistic model\n\n\n\nprobability\nodds\nlog(odds)\n\n\n\n\n\\(\\pi\\)\n\\(\\frac{\\pi}{1-\\pi}\\)\n\\(\\log\\left(\\frac{\\pi}{1-\\pi}\\right)=l\\)\n\n\n\n⬅️\n\n\n\nlog(odds)\nodds\nprobability\n\n\n\n\n\\(l\\)\n\\(e^l\\)\n\\(\\frac{e^l}{1+e^l} = \\pi\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#the-logistic-model-2",
+    "href": "slides/04-logistic_o.qmd.html#the-logistic-model-2",
+    "title": "Chapter 4 Part 1",
+    "section": "The logistic model",
+    "text": "The logistic model\n\n✌️ forms\nlog(odds): \\(l = \\beta_0 + \\beta_1x\\)\nP(Outcome = Yes): \\(\\Large\\pi =\\frac{e^{\\beta_0 + \\beta_1x}}{1+e^{\\beta_0 + \\beta_1x}}\\)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later. (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-1",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-1",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat is the explanatory variable?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-2",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-2",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat type of variable is this?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-3",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-3",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat is the outcome variable?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-4",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-4",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat type of variable is this?\n\nA study investigated whether a handheld device that sends a magnetic pulse into a person’s head might be an effective treatment for migraine headaches.\n\n\nResearchers recruited 200 subjects who suffered from migraines\nrandomly assigned them to receive either the TMS (transcranial magnetic stimulation) treatment or a placebo treatment\nSubjects were instructed to apply the device at the onset of migraine symptoms and then assess how they felt two hours later (either Pain-free or Not pain-free)"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-5",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-5",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can compare the results using odds\nWhat are the odds of being pain-free for the placebo group?\n\\((22/100)/(78/100) = 22/78 = 0.282\\)\nWhat are the odds of being pain-free for the treatment group?\n\\(39/61 = 0.639\\)\nComparing the odds what can we conclude?\nTMS increases the likelihood of success"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-6",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-6",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\nWe can summarize this relationship with an odds ratio: the ratio of the two odds\n\\(\\Large OR = \\frac{39/61}{22/78} = \\frac{0.639}{0.282} = 2.27\\)\n“the odds of being pain free were 2.27 times higher with TMS than with the placebo”"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-7",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-7",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat if we wanted to calculate this in terms of Not pain-free (with pain-free) as the referent?\n\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{61/39}{78/22} = \\frac{1.564}{3.545} = 0.441\\)\nthe odds for still being in pain for the TMS group are 0.441 times the odds of being in pain for the placebo group"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-8",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-8",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat changed here?\n\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-9",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-9",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nIn general, it’s more natural to interpret odds ratios &gt; 1, you can flip the referent to do so\n\n\n\nTreatment\nTMS\nPlacebo\nTotal\n\n\n\n\nPain-free two hours later\n39\n22\n61\n\n\nNot pain-free two hours later\n61\n78\n139\n\n\nTotal\n100\n100\n200\n\n\n\n\\(\\Large OR = \\frac{78/22}{61/39} = \\frac{3.545}{1.564} = 2.27\\)\nthe odds for still being in pain for the placebo group are 2.27 times the odds of being in pain for the TMS group"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-10",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-10",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nLet’s look at some Titanic data. We are interested in whether the passenger reported being female is related to whether they survived.\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-11",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-11",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat are the odds of surviving for females versus males?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\]"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-12",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-12",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nHow do you interpret this?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n\\[\\Large OR = \\frac{308/154}{142/709} = \\frac{2}{0.2} = 9.99\\] the odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-13",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-13",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nWhat if we wanted to fit a model? What would the equation be?\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nSurvived\n308\n142\n450\n\n\nDied\n154\n709\n863\n\n\nTotal\n462\n851\n1313\n\n\n\n. . .\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-14",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-14",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\\[\\Large \\log(\\textrm{odds of survival}) = \\beta_0 + \\beta_1 \\textrm{Female}\\]\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68\n2 Sexfemale       2.30    0.135       17.1 2.91e-65"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-15",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-15",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds Ratios",
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    -1.61    0.0919     -17.5 1.70e-68\n2 Sexfemale       2.30    0.135       17.1 2.91e-65"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-16",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-16",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds Ratios",
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    0.200    0.0919     -17.5 1.70e-68\n2 Sexfemale      9.99     0.135       17.1 2.91e-65\n\nexp(2.301176)\n\n[1] 9.99"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-17",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-17",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds Ratios",
+    "text": "Odds Ratios\n\nHow do you interpret this result?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Survived ~ Sex, data = Titanic) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    0.200    0.0919     -17.5 1.70e-68\n2 Sexfemale      9.99     0.135       17.1 2.91e-65\n\nexp(2.301176)\n\n[1] 9.99\n\n\nthe odds of surviving for the female passengers was 9.99 times the odds of surviving for the male passengers"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-18",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-18",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)   -19.2       5.63     -3.41 0.000644\n2 GPA             5.45      1.58      3.45 0.000553\n\n\nA one unit increase in GPA yields a 5.45 increase in the log odds of acceptance"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-19",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-19",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\nWhat if the explanatory variable is continuous?\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy(exponentiate = TRUE) \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)  4.56e-9      5.63     -3.41 0.000644\n2 GPA          2.34e+2      1.58      3.45 0.000553\n\n\nA one unit increase in GPA yields a 234-fold increase in the odds of acceptance\n\n😱 that seems huge! Remember: the interpretation of these coefficients depends on your units (the same as in ordinary linear regression)."
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-20",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-20",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA, data = MedGPA) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)   -19.2       5.63     -3.41 0.000644\n2 GPA             5.45      1.58      3.45 0.000553\n\n\n\nexp(5.454) ## a one unit increase in GPA\n\n[1] 234\n\nexp(5.454 * 0.1) ## a 0.1 increase in GPA\n\n[1] 1.73\n\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#odds-ratios-21",
+    "href": "slides/04-logistic_o.qmd.html#odds-ratios-21",
+    "title": "Chapter 4 Part 1",
+    "section": "Odds ratios",
+    "text": "Odds ratios\n\nHow could we get the odds associated with increasing GPA by 0.1?\n\n\nMedGPA &lt;- MedGPA |&gt;\n  mutate(GPA_10 = GPA * 10)\n\nlogistic_reg() |&gt;\n  set_engine(\"glm\") |&gt;\n  fit(Acceptance ~ GPA_10, data = MedGPA) |&gt;\n  tidy(exponentiate = TRUE)\n\n# A tibble: 2 × 5\n  term             estimate std.error statistic  p.value\n  &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept) 0.00000000456     5.63      -3.41 0.000644\n2 GPA_10      1.73              0.158      3.45 0.000553\n\n\nA one-tenth unit increase in GPA yields a 1.73-fold increase in the odds of acceptance"
+  },
+  {
+    "objectID": "slides/04-logistic_o.qmd.html#application-exercise",
+    "href": "slides/04-logistic_o.qmd.html#application-exercise",
+    "title": "Chapter 4 Part 1",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nUsing the Default data from the ISLR package. Fit two logistic regression models that predict whether a customer defaults\n\nOne model with student as a predictor. Interpret the coefficient of studentYes.\nAnother model with balance as a predictor. Interpret the coefficient of balance.\n\nHere is some code to get you started:\n\nlibrary(ISLR)\ndata(\"Default\")"
   }
 ]
