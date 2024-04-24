@@ -839,7 +839,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -4469,7 +4469,7 @@
     "href": "slides/06-2-shrinkage.html#another-reason",
     "title": "Chapter 6 Part 2",
     "section": "Another Reason",
-    "text": "Another Reason\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\n\n\n\nWhy?\n\n\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\nWe have more variables than observations ( \\(p &gt; n\\) )\nThe variables are linear combinations of one another\nThe variance can blow up"
+    "text": "Another Reason\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\n\n\n\nWhy?\n\n\n\nWe have more variables than observations ( \\(p &gt; n\\) )\nThe variables are linear combinations of one another\nThe variance can blow up"
   },
   {
     "objectID": "slides/06-2-shrinkage.html#ridge-regression",
@@ -4490,7 +4490,7 @@
     "href": "slides/06-2-shrinkage.html#more-on-ridge",
     "title": "Chapter 6 Part 2",
     "section": "More on Ridge",
-    "text": "More on Ridge\n\nLike least squares, ridge regression seeks coefficient estimates taht fit the data well by making the RSS small.\nThe second term \\(\\lambda\\sum_j\\beta_j^2\\) is called a shrinkage penalty, is small when \\(\\beta_1,...\\beta_p\\) are close to 0, and so it has the effect of shrinking the estimates of \\(\\beta_j\\) toward 0."
+    "text": "More on Ridge\n\nLike least squares, ridge regression seeks coefficient estimates that fit the data well by making the RSS small.\nThe second term \\(\\lambda\\sum_j\\beta_j^2\\) is called a shrinkage penalty, is small when \\(\\beta_1,...\\beta_p\\) are close to 0, and so it has the effect of shrinking the estimates of \\(\\beta_j\\) toward 0."
   },
   {
     "objectID": "slides/06-2-shrinkage.html#shinkage",
@@ -4511,7 +4511,7 @@
     "href": "slides/06-2-shrinkage.html#bias-variance-tradeoff",
     "title": "Chapter 6 Part 2",
     "section": "Bias-variance tradeoff",
-    "text": "Bias-variance tradeoff\n\nHow do you think ridge regression fits into the bias-variance tradeoff?\n\n\nAs \\(\\lambda\\) ☝️, bias ☝️, variance 👇"
+    "text": "Bias-variance tradeoff\n\nHow do you think ridge regression fits into the bias-variance trade-off?\n\n\nAs \\(\\lambda\\) ☝️, bias ☝️, variance 👇"
   },
   {
     "objectID": "slides/06-2-shrinkage.html#ridge-regression-2",
@@ -4532,14 +4532,14 @@
     "href": "slides/06-2-shrinkage.html#ridge---scalling-predictors",
     "title": "Chapter 6 Part 2",
     "section": "Ridge - Scalling Predictors",
-    "text": "Ridge - Scalling Predictors\n\nThe standard least squares coefficient estimates are scale equivalent: multiplying \\(X_j\\) by a constant c simply leads to a scaling of the least squares coefficient estimates by a factor of \\(1=c\\). In other words, regardless of how the jth predictor is scaled, \\(X_j\\hat{\\beta}_j\\) will remain the same.\nIn contrast, the ridge regression coefficient estimates can change substantially when multiplying a given predictor by a constant, due to the sum of squared coefficients term in the penalty part of the ridge regression objective function.\nTherefore, it is best to apply ridge regression after standardizing the predictors, using the formula\n\\[\\tilde{x}_{ij} = \\frac{x_{ij}}{\\sqrt{\\frac{1}{2}\\sum_{i=1}^n(x_{ij}-\\bar{x}_j)^2}}\\]"
+    "text": "Ridge - Scalling Predictors\n\nThe standard least squares coefficient estimates are scale equivalent: multiplying \\(X_j\\) by a constant c simply leads to a scaling of the least squares coefficient estimates by a factor of \\(1=c\\). In other words, regardless of how the \\(j\\)th predictor is scaled, \\(X_j\\hat{\\beta}_j\\) will remain the same.\nIn contrast, the ridge regression coefficient estimates can change substantially when multiplying a given predictor by a constant, due to the sum of squared coefficients term in the penalty part of the ridge regression objective function.\nTherefore, it is best to apply ridge regression after standardizing the predictors, using the formula\n\\[\\tilde{x}_{ij} = \\frac{x_{ij}}{\\sqrt{\\frac{1}{n}\\sum_{i=1}^n(x_{ij}-\\bar{x}_j)^2}}\\]"
   },
   {
     "objectID": "slides/06-2-shrinkage.html#ridge-bias-variance-tradeoff",
     "href": "slides/06-2-shrinkage.html#ridge-bias-variance-tradeoff",
     "title": "Chapter 6 Part 2",
-    "section": "Ridge Bias-variance tradeoff",
-    "text": "Ridge Bias-variance tradeoff\n\n\nSimulated data with n = 50 observations, p = 45 predictors, all having nonzero coefficients. Squared bias (black), variance (green), and test mean squared error (purple) for the ridge regression predictions on a simulated data set, as a function of \\(\\lambda\\) and \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\). The horizontal dashed lines indicate the minimum possible MSE. The purple crosses indicate the ridge regression models for which the MSE is smallest."
+    "section": "Ridge Bias-Variance tradeoff",
+    "text": "Ridge Bias-Variance tradeoff\n\n\nSimulated data with n = 50 observations, p = 45 predictors, all having nonzero coefficients.\nSquared bias (black), variance (green), and test mean squared error (purple) for the ridge regression predictions on a simulated data set, as a function of \\(\\lambda\\) and \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\). The horizontal dashed lines indicate the minimum possible MSE. The purple crosses indicate the ridge regression models for which the MSE is smallest."
   },
   {
     "objectID": "slides/06-2-shrinkage_o.html",
@@ -4567,7 +4567,7 @@
     "href": "slides/06-2-shrinkage_o.html#another-reason",
     "title": "Chapter 6 Part 2",
     "section": "Another Reason",
-    "text": "Another Reason\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\n\n\n\nWhy?\n\n\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\nWe have more variables than observations ( \\(p &gt; n\\) )\nThe variables are linear combinations of one another\nThe variance can blow up"
+    "text": "Another Reason\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\n\n\n\nWhy?\n\n\n\nWe have more variables than observations ( \\(p &gt; n\\) )\nThe variables are linear combinations of one another\nThe variance can blow up"
   },
   {
     "objectID": "slides/06-2-shrinkage_o.html#ridge-regression",
@@ -4581,14 +4581,14 @@
     "href": "slides/06-2-shrinkage_o.html#ridge-regression-1",
     "title": "Chapter 6 Part 2",
     "section": "Ridge Regression",
-    "text": "Ridge Regression\n\nLRRidge\n\n\n\nRecall, the least squares fitting procedure estimates \\(\\beta_0,...,\\beta_p\\) using the values that minimize \\[RSS = \\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2\\]\n\n\n\n\nRidge regression coefficient estimates, \\(\\hat{\\beta}^R\\) are the values that minimize\n\n\\[\\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2+\\lambda\\sum_{j=1}^p\\beta_j^2\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p\\beta_j^2\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately"
+    "text": "Ridge Regression\n\nLRRidge\n\n\n\nRecall, the least squares fitting procedure estimates \\(\\beta_0,...,\\beta_p\\) using the values that minimize \\[RSS = \\sum_{i=1}^n\\left(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij}\\right)^2\\]\n\n\n\n\nRidge regression coefficient estimates, \\(\\hat{\\beta}^R\\) are the values that minimize\n\n\\[\\sum_{i=1}^n\\left(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij}\\right)^2+\\lambda\\sum_{j=1}^p\\beta_j^2\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p\\beta_j^2\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately"
   },
   {
     "objectID": "slides/06-2-shrinkage_o.html#more-on-ridge",
     "href": "slides/06-2-shrinkage_o.html#more-on-ridge",
     "title": "Chapter 6 Part 2",
     "section": "More on Ridge",
-    "text": "More on Ridge\n\nLike least squares, ridge regression seeks coefficient estimates taht fit the data well by making the RSS small.\nThe second term \\(\\lambda\\sum_j\\beta_j^2\\) is called a shrinkage penalty, is small when \\(\\beta_1,...\\beta_p\\) are close to 0, and so it has the effect of shrinking the estimates of \\(\\beta_j\\) toward 0."
+    "text": "More on Ridge\n\nLike least squares, ridge regression seeks coefficient estimates that fit the data well by making the RSS small.\nThe second term \\(\\lambda\\sum_j\\beta_j^2\\) is called a shrinkage penalty, is small when \\(\\beta_1,...\\beta_p\\) are close to 0, and so it has the effect of shrinking the estimates of \\(\\beta_j\\) toward 0."
   },
   {
     "objectID": "slides/06-2-shrinkage_o.html#shinkage",
@@ -4609,7 +4609,7 @@
     "href": "slides/06-2-shrinkage_o.html#ridge---scalling-predictors",
     "title": "Chapter 6 Part 2",
     "section": "Ridge - Scalling Predictors",
-    "text": "Ridge - Scalling Predictors\n\nThe standard least squares coefficient estimates are scale equivalent: multiplying \\(X_j\\) by a constant c simply leads to a scaling of the least squares coefficient estimates by a factor of \\(1=c\\). In other words, regardless of how the jth predictor is scaled, \\(X_j\\hat{\\beta}_j\\) will remain the same.\nIn contrast, the ridge regression coefficient estimates can change substantially when multiplying a given predictor by a constant, due to the sum of squared coefficients term in the penalty part of the ridge regression objective function.\nTherefore, it is best to apply ridge regression after standardizing the predictors, using the formula\n\\[\\tilde{x}_{ij} = \\frac{x_{ij}}{\\sqrt{\\frac{1}{2}\\sum_{i=1}^n(x_{ij}-\\bar{x}_j)^2}}\\]"
+    "text": "Ridge - Scalling Predictors\n\nThe standard least squares coefficient estimates are scale equivalent: multiplying \\(X_j\\) by a constant c simply leads to a scaling of the least squares coefficient estimates by a factor of \\(1=c\\). In other words, regardless of how the \\(j\\)th predictor is scaled, \\(X_j\\hat{\\beta}_j\\) will remain the same.\nIn contrast, the ridge regression coefficient estimates can change substantially when multiplying a given predictor by a constant, due to the sum of squared coefficients term in the penalty part of the ridge regression objective function.\nTherefore, it is best to apply ridge regression after standardizing the predictors, using the formula\n\\[\\tilde{x}_{ij} = \\frac{x_{ij}}{\\sqrt{\\frac{1}{n}\\sum_{i=1}^n(x_{ij}-\\bar{x}_j)^2}}\\]"
   },
   {
     "objectID": "slides/06-2-shrinkage_o.html#ridge-regression-2",
@@ -4623,21 +4623,21 @@
     "href": "slides/06-2-shrinkage_o.html#choosing-lambda",
     "title": "Chapter 6 Part 2",
     "section": "Choosing \\(\\lambda\\)",
-    "text": "Choosing \\(\\lambda\\)\n\n\\(\\lambda\\) is known as a tuning parameter and is selected using cross validation\nFor example, choose the \\(\\lambda\\) that results in the smallest estimated test error"
+    "text": "Choosing \\(\\lambda\\)\n\n\\(\\lambda\\) is known as a tuning parameter and is selected using cross validation\nFor example, choose the \\(\\lambda\\) that results in the smallest estimated test error\nAfterwards we refit using all available observations (from training set)"
   },
   {
     "objectID": "slides/06-2-shrinkage_o.html#bias-variance-tradeoff",
     "href": "slides/06-2-shrinkage_o.html#bias-variance-tradeoff",
     "title": "Chapter 6 Part 2",
     "section": "Bias-variance tradeoff",
-    "text": "Bias-variance tradeoff\n\nHow do you think ridge regression fits into the bias-variance tradeoff?\n\n\nAs \\(\\lambda\\) ☝️, bias ☝️, variance 👇"
+    "text": "Bias-variance tradeoff\n\nHow do you think ridge regression fits into the bias-variance trade-off?\n\n\nAs \\(\\lambda\\) ☝️, bias ☝️, variance 👇"
   },
   {
     "objectID": "slides/06-2-shrinkage_o.html#ridge-bias-variance-tradeoff",
     "href": "slides/06-2-shrinkage_o.html#ridge-bias-variance-tradeoff",
     "title": "Chapter 6 Part 2",
-    "section": "Ridge Bias-variance tradeoff",
-    "text": "Ridge Bias-variance tradeoff\n\n\nSimulated data with n = 50 observations, p = 45 predictors, all having nonzero coefficients. Squared bias (black), variance (green), and test mean squared error (purple) for the ridge regression predictions on a simulated data set, as a function of \\(\\lambda\\) and \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\). The horizontal dashed lines indicate the minimum possible MSE. The purple crosses indicate the ridge regression models for which the MSE is smallest.\n\n\nLasso\n\nRidge regression does have one obvious disadvantage: unlike subset selection, which will generally select models that involve just a subset of the variables, ridge regression will include all p predictors in the final model\nThe Lasso is a relatively recent alternative to ridge regression that overcomes this disadvantage. The lasso coefficients, \\(\\hat{\\beta}_\\lambda^L\\), minimize the quantity\n\n\\[\\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2+\\lambda\\sum_{j=1}^p|\\beta_j|\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p|\\beta_j|\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately\n\nIn statistics lingo, the lasso uses an \\(\\ell_1\\) (pronounced “ell 1”) penalty instead of an \\(\\ell_2\\) penalty. The \\(\\ell_1\\) norm of a coefficient vector \\(\\beta\\) is given by \\(||\\beta||_1 = \\sum|\\beta_j|\\)"
+    "section": "Ridge Bias-Variance tradeoff",
+    "text": "Ridge Bias-Variance tradeoff\n\n\nSimulated data with n = 50 observations, p = 45 predictors, all having nonzero coefficients.\nSquared bias (black), variance (green), and test mean squared error (purple) for the ridge regression predictions on a simulated data set, as a function of \\(\\lambda\\) and \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\). The horizontal dashed lines indicate the minimum possible MSE. The purple crosses indicate the ridge regression models for which the MSE is smallest."
   },
   {
     "objectID": "slides/06-2-shrinkage.html#lasso-continued",
@@ -4651,14 +4651,14 @@
     "href": "slides/06-2-shrinkage.html#ridge-shrinkage",
     "title": "Chapter 6 Part 2",
     "section": "Ridge Shrinkage",
-    "text": "Ridge Shrinkage\n\nEach curve corresponds to the ridge regression coefficient estimate for one of the ten variables, plotted as a function of \\(\\lambda\\)."
+    "text": "Ridge Shrinkage\n\n\n\n\nEach curve corresponds to the ridge regression coefficient estimate for one of the ten variables, plotted as a function of \\(\\lambda\\)."
   },
   {
     "objectID": "slides/06-2-shrinkage.html#ridge-shinkage-coeff",
     "href": "slides/06-2-shrinkage.html#ridge-shinkage-coeff",
     "title": "Chapter 6 Part 2",
     "section": "Ridge Shinkage Coeff",
-    "text": "Ridge Shinkage Coeff\n\n\n\n\n\nThis displays the same ridge coefficient estimates as the previous graphs, but instead of displaying \\(\\lambda\\) on the x-axis, we now display \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\), where \\(\\hat{\\beta}\\) denotes the vector of the least squares coefficient estimates.\nThe notation \\(||\\beta||_2\\) denotes the"
+    "text": "Ridge Shinkage Coeff\n\n\n\n\n\nThis displays the same ridge coefficient estimates as the previous graphs, but instead of displaying \\(\\lambda\\) on the x-axis, we now display \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\), where \\(\\hat{\\beta}\\) denotes the vector of the least squares coefficient estimates.\nIn statistics lingo, the ridge uses an \\(\\ell_2\\) (pronounced “ell 2”) penalty of the betas, written \\(||\\beta||_2\\)."
   },
   {
     "objectID": "slides/06-2-shrinkage.html#lasso-shrinkage",
@@ -4728,7 +4728,7 @@
     "href": "slides/06-2-shrinkage.html#lasso",
     "title": "Chapter 6 Part 2",
     "section": "Lasso",
-    "text": "Lasso\n\nRidge regression does have one obvious disadvantage: unlike subset selection, which will generally select models that involve just a subset of the variables, ridge regression will include all p predictors in the final model\nThe Lasso is a relatively recent alternative to ridge regression that overcomes this disadvantage. The lasso coefficients, \\(\\hat{\\beta}_\\lambda^L\\), minimize the quantity\n\n\\[\\sum_{i=1}^n\\left(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij}\\right)^2+\\lambda\\sum_{j=1}^p|\\beta_j|\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p|\\beta_j|\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately\n\nIn statistics lingo, the lasso uses an \\(\\ell_1\\) (pronounced “ell 1”) penalty instead of an \\(\\ell_2\\) penalty. The \\(\\ell_1\\) norm of a coefficient vector \\(\\beta\\) is given by \\(||\\beta||_1 = \\sum|\\beta_j|\\)"
+    "text": "Lasso\n\nRidge regression does have one obvious disadvantage: unlike subset selection, which will generally select models that involve just a subset of the variables, ridge regression will include all p predictors in the final model\nThe Lasso is a relatively recent alternative to ridge regression that overcomes this disadvantage. The lasso coefficients, \\(\\hat{\\beta}_\\lambda^L\\), minimize the quantity\n\\[\\sum_{i=1}^n\\left(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij}\\right)^2+\\lambda\\sum_{j=1}^p|\\beta_j|= RSS + \\lambda\\sum_{j=1}^p|\\beta_j|\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately\nIn statistics lingo, the lasso uses an \\(\\ell_1\\) (pronounced “ell 1”) penalty instead of an \\(\\ell_2\\) penalty. The \\(\\ell_1\\) norm of a coefficient vector \\(\\beta\\) is given by \\(||\\beta||_1 = \\sum|\\beta_j|\\)"
   },
   {
     "objectID": "slides/06-2-shrinkage.html#lasso-regression",
@@ -4736,5 +4736,747 @@
     "title": "Chapter 6 Part 2",
     "section": "Lasso Regression",
     "text": "Lasso Regression\n\nIMPORTANT: When doing lasso regression, it is important to standardize your variables (divide by the standard deviation)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#lasso-coefficient-shrink",
+    "href": "slides/06-2-shrinkage.html#lasso-coefficient-shrink",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso Coefficient Shrink",
+    "text": "Lasso Coefficient Shrink"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#lasso-coefficient-ratio",
+    "href": "slides/06-2-shrinkage.html#lasso-coefficient-ratio",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso Coefficient Ratio",
+    "text": "Lasso Coefficient Ratio"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#ridge-vs-lasso-lambda-vs-mse-ex-2",
+    "href": "slides/06-2-shrinkage.html#ridge-vs-lasso-lambda-vs-mse-ex-2",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso \\(\\lambda\\) vs MSE Ex 2",
+    "text": "Ridge vs Lasso \\(\\lambda\\) vs MSE Ex 2\n\n\n\n\nPlots of squared bias (black), variance (green), and test MSE (purple) for the lasso. The simulated data is similar to that before, except that now only two predictors are related to the response."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#ridge-vs-lasso-r2-vs-mse-ex-2",
+    "href": "slides/06-2-shrinkage.html#ridge-vs-lasso-r2-vs-mse-ex-2",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso \\(R^2\\) vs MSE Ex 2",
+    "text": "Ridge vs Lasso \\(R^2\\) vs MSE Ex 2\n\n\n\n\nComparison of squared bias, variance and test MSE between lasso (solid) and ridge (dashed). Both are plotted against their \\(R^2\\) on the training data, as a common form of indexing. The crosses in both plots indicate the lasso model for which the MSE is smallest."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-shrinkage",
+    "href": "slides/06-2-shrinkage_o.html#ridge-shrinkage",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Shrinkage",
+    "text": "Ridge Shrinkage\n\n\n\n\nEach curve corresponds to the ridge regression coefficient estimate for one of the ten variables, plotted as a function of \\(\\lambda\\)."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-shinkage-coeff",
+    "href": "slides/06-2-shrinkage_o.html#ridge-shinkage-coeff",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Shinkage Coeff",
+    "text": "Ridge Shinkage Coeff\n\n\n\n\n\nThis displays the same ridge coefficient estimates as the previous graphs, but instead of displaying \\(\\lambda\\) on the x-axis, we now display \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\), where \\(\\hat{\\beta}\\) denotes the vector of the least squares coefficient estimates.\nIn statistics lingo, the ridge uses an \\(\\ell_2\\) (pronounced “ell 2”) penalty of the betas, written \\(||\\beta||_2\\)."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#lasso",
+    "href": "slides/06-2-shrinkage_o.html#lasso",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso",
+    "text": "Lasso\n\nRidge regression does have one obvious disadvantage: unlike subset selection, which will generally select models that involve just a subset of the variables, ridge regression will include all p predictors in the final model\nThe Lasso is a relatively recent alternative to ridge regression that overcomes this disadvantage. The lasso coefficients, \\(\\hat{\\beta}_\\lambda^L\\), minimize the quantity\n\\[\\sum_{i=1}^n\\left(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij}\\right)^2+\\lambda\\sum_{j=1}^p|\\beta_j|= RSS + \\lambda\\sum_{j=1}^p|\\beta_j|\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately\nIn statistics lingo, the lasso uses an \\(\\ell_1\\) (pronounced “ell 1”) penalty instead of an \\(\\ell_2\\) penalty. The \\(\\ell_1\\) norm of a coefficient vector \\(\\beta\\) is given by \\(||\\beta||_1 = \\sum|\\beta_j|\\)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#lasso-continued",
+    "href": "slides/06-2-shrinkage_o.html#lasso-continued",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso Continued",
+    "text": "Lasso Continued\n\nAs with ridge regression, the lasso shrinks the coefficient estimates towards zero.\nIn the case of the lasso, the \\(\\ell_1\\) penalty has the effect of forcing some of the coefficient estimates to be exactly equal to zero when the tuning parameter \\(\\lambda\\) is sufficiently large.\nLike best subset selection, the lasso performs variable selection.\nWe say that the lasso yields sparse models - that is, models that involve only a subset of the variables.\nAs in ridge regression, selecting a good value of \\(\\lambda\\) for the lasso is critical; cross-validation is again the method of choice."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#lasso-coefficient-shrink",
+    "href": "slides/06-2-shrinkage_o.html#lasso-coefficient-shrink",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso Coefficient Shrink",
+    "text": "Lasso Coefficient Shrink"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#lasso-coefficient-ratio",
+    "href": "slides/06-2-shrinkage_o.html#lasso-coefficient-ratio",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso Coefficient Ratio",
+    "text": "Lasso Coefficient Ratio"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#lasso-regression",
+    "href": "slides/06-2-shrinkage_o.html#lasso-regression",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso Regression",
+    "text": "Lasso Regression\n\nIMPORTANT: When doing lasso regression, it is important to standardize your variables (divide by the standard deviation)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-vs-lasso",
+    "href": "slides/06-2-shrinkage_o.html#ridge-vs-lasso",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso",
+    "text": "Ridge vs Lasso\n\nWhy does lasso, unlike ridge, result in coefficient estimates that are exactly zero?"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-2",
+    "href": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-2",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso 2",
+    "text": "Ridge vs Lasso 2\nThey each are a minimization problem\nLasso: \\[\\text{minimize}_\\beta\\sum_{i=1}^n\\left(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij}\\right)^2\\text{ subject to }\\sum_{j=1}^p|\\beta_j|\\leq s\\]\nRidge: \\[\\text{minimize}_\\beta\\sum_{i=1}^n\\left(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij}\\right)^2\\text{ subject to }\\sum_{j=1}^p\\beta_j^2\\leq s\\]"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-graphs",
+    "href": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-graphs",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso Graphs",
+    "text": "Ridge vs Lasso Graphs"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-lambda-vs-mse",
+    "href": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-lambda-vs-mse",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso \\(\\lambda\\) vs MSE",
+    "text": "Ridge vs Lasso \\(\\lambda\\) vs MSE\n\n\n\n\nPlots of squared bias (black), variance (green), and test MSE (purple) for the lasso on simulated data set."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-r2-vs-mse",
+    "href": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-r2-vs-mse",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso \\(R^2\\) vs MSE",
+    "text": "Ridge vs Lasso \\(R^2\\) vs MSE\n\n\n\n\nComparison of squared bias, variance and test MSE between lasso (solid) and ridge (dashed). Both are plotted against their \\(R^2\\) on the training data, as a common form of indexing. The crosses in both plots indicate the lasso model for which the MSE is smallest."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-lambda-vs-mse-ex-2",
+    "href": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-lambda-vs-mse-ex-2",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso \\(\\lambda\\) vs MSE Ex 2",
+    "text": "Ridge vs Lasso \\(\\lambda\\) vs MSE Ex 2\n\n\n\n\nPlots of squared bias (black), variance (green), and test MSE (purple) for the lasso. The simulated data is similar to that before, except that now only two predictors are related to the response."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-r2-vs-mse-ex-2",
+    "href": "slides/06-2-shrinkage_o.html#ridge-vs-lasso-r2-vs-mse-ex-2",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge vs Lasso \\(R^2\\) vs MSE Ex 2",
+    "text": "Ridge vs Lasso \\(R^2\\) vs MSE Ex 2\n\n\n\n\nComparison of squared bias, variance and test MSE between lasso (solid) and ridge (dashed). Both are plotted against their \\(R^2\\) on the training data, as a common form of indexing. The crosses in both plots indicate the lasso model for which the MSE is smallest."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#lasso-vs-ridge-summary",
+    "href": "slides/06-2-shrinkage_o.html#lasso-vs-ridge-summary",
+    "title": "Chapter 6 Part 2",
+    "section": "Lasso vs Ridge Summary",
+    "text": "Lasso vs Ridge Summary\n\nThese two examples illustrate that neither ridge regression nor the lasso will universally dominate the other.\nIn general, one might expect the lasso to perform better when the response is a function of only a relatively small number of predictors.\nHowever, the number of predictors that is related to the response is never known a priori for real data sets.\nA technique such as cross-validation can be used in order to determine which approach is better on a particular data set."
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#setup",
+    "href": "slides/06-3-lasso_ridge_tm.html#setup",
+    "title": "Chapter 6 Part 3",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(ISLR2)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#lasso-and-ridge---statquest",
+    "href": "slides/06-3-lasso_ridge_tm.html#lasso-and-ridge---statquest",
+    "title": "Chapter 6 Part 3",
+    "section": "Lasso and Ridge - Statquest",
+    "text": "Lasso and Ridge - Statquest\nhttps://www.youtube.com/watch?v=Q81RR3yKn30&t=7s\nhttps://www.youtube.com/watch?v=NGf0voTMlcs\nOn your own:\nRidge Vs Lasso https://www.youtube.com/watch?v=Xm2C_gTAl8c\nElastic Net https://www.youtube.com/watch?v=1dKRdX9bfIo"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#ridge-regression",
+    "href": "slides/06-3-lasso_ridge_tm.html#ridge-regression",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\n\nPros\n\nCan be used when \\(p &gt; n\\)\nCan be used to help with multicollinearity\nWill decrease variance (as \\(\\lambda \\rightarrow \\infty\\) )\n\n\nCons\n\nWill have increased bias (compared to least squares)\nDoes not really help with variable selection (all variables are included in some regard, even if their \\(\\beta\\) coefficients are really small)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#lasso",
+    "href": "slides/06-3-lasso_ridge_tm.html#lasso",
+    "title": "Chapter 6 Part 3",
+    "section": "Lasso",
+    "text": "Lasso\n\n\nPros\n\nCan be used when \\(p &gt; n\\)\nCan be used to help with multicollinearity\nWill decrease variance (as \\(\\lambda \\rightarrow \\infty\\) )\nCan be used for variable selection, since it will make some \\(\\beta\\) coefficients exactly 0\n\n\nCons\n\nWill have increased bias (compared to least squares)\nIf \\(p&gt;n\\) the lasso can select at most \\(n\\) variables"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-want-to-do-both",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-want-to-do-both",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we want to do both?",
+    "text": "What if we want to do both?\n\nElastic net!\n\\(RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\)\n\n\n\nWhat is the \\(\\ell_1\\) part of the penalty?\n\n\n\n\nWhat is the \\(\\ell_2\\) part of the penalty"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#elastic-net",
+    "href": "slides/06-3-lasso_ridge_tm.html#elastic-net",
+    "title": "Chapter 6 Part 3",
+    "section": "Elastic net",
+    "text": "Elastic net\n\\[RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\]\n\nWhen will this be equivalent to Ridge Regression?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#elastic-net-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#elastic-net-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Elastic net",
+    "text": "Elastic net\n\\[RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\]\n\nWhen will this be equivalent to Lasso?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#elastic-net-2",
+    "href": "slides/06-3-lasso_ridge_tm.html#elastic-net-2",
+    "title": "Chapter 6 Part 3",
+    "section": "Elastic Net",
+    "text": "Elastic Net\n\\[RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\]\n\nThe \\(\\ell_1\\) part of the penalty will generate a sparse model (shrink some \\(\\beta\\) coefficients to exactly 0)\nThe \\(\\ell_2\\) part of the penalty removes the limitation on the number of variables selected (can be \\(&gt;n\\) now)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#tidymodels",
+    "href": "slides/06-3-lasso_ridge_tm.html#tidymodels",
+    "title": "Chapter 6 Part 3",
+    "section": "tidymodels",
+    "text": "tidymodels\n\nlm_spec &lt;- \n  linear_reg() |&gt; # Pick linear regression\n  set_engine(engine = \"lm\") # set engine\nlm_spec\n\nLinear Regression Model Specification (regression)\n\nComputational engine: lm \n\n\n\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#validation-set-approach",
+    "href": "slides/06-3-lasso_ridge_tm.html#validation-set-approach",
+    "title": "Chapter 6 Part 3",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n\nExtract the training and testing data\n\ntraining(Auto_split)\ntesting(Auto_split)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#a-faster-way",
+    "href": "slides/06-3-lasso_ridge_tm.html#a-faster-way",
+    "title": "Chapter 6 Part 3",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nYou can use last_fit() and specify the split\nThis will automatically train the data on the train data from the split\nInstead of specifying which metric to calculate (with rmse as before) you can just use collect_metrics() and it will automatically calculate the metrics on the test data from the split"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#a-faster-way-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#a-faster-way-1",
+    "title": "Chapter 6 Part 3",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100000)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics() \n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.77  Preprocessor1_Model1\n2 rsq     standard       0.634 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-about-cross-validation",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-about-cross-validation",
+    "title": "Chapter 6 Part 3",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\nAuto_cv\n\n#  5-fold cross-validation \n# A tibble: 5 × 2\n  splits           id   \n  &lt;list&gt;           &lt;chr&gt;\n1 &lt;split [313/79]&gt; Fold1\n2 &lt;split [313/79]&gt; Fold2\n3 &lt;split [314/78]&gt; Fold3\n4 &lt;split [314/78]&gt; Fold4\n5 &lt;split [314/78]&gt; Fold5"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-wanted-to-do-some-preprocessing",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-wanted-to-do-some-preprocessing",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we wanted to do some preprocessing",
+    "text": "What if we wanted to do some preprocessing\n\nFor the shrinkage methods we discussed it was important to scale the variables\n\n\n\n\nWhat would happen if we scale before doing cross-validation? Will we get different answers?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-wanted-to-do-some-preprocessing-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-wanted-to-do-some-preprocessing-1",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we wanted to do some preprocessing",
+    "text": "What if we wanted to do some preprocessing\n\nAuto_scaled &lt;- Auto |&gt;\n  mutate(horsepower = scale(horsepower))\n\nsd(Auto_scaled$horsepower)\n\n[1] 1\n\n\n\nAuto_cv_scaled &lt;- vfold_cv(Auto_scaled, v = 5)\n\n# Will not actually use:\nmap_dbl(Auto_cv_scaled$splits,\n        function(x) {\n          dat &lt;- as.data.frame(x)$horsepower\n          sd(dat)\n        })\n\n[1] 0.9698961 1.0060047 0.9967524 1.0339029 0.9922419"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-wanted-to-do-some-preprocessing-2",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-wanted-to-do-some-preprocessing-2",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we wanted to do some preprocessing",
+    "text": "What if we wanted to do some preprocessing\n\nrecipe()!\nUsing the recipe() function along with step_*() functions, we can specify preprocessing steps and R will automagically apply them to each fold appropriately.\n\n\n\nrec &lt;- recipe(mpg ~ horsepower, data = Auto) |&gt;\n  step_scale(horsepower) \n\n\nYou can find all of the potential preprocessing steps here: https://tidymodels.github.io/recipes/reference/index.html"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#where-do-we-plug-in-this-recipe",
+    "href": "slides/06-3-lasso_ridge_tm.html#where-do-we-plug-in-this-recipe",
+    "title": "Chapter 6 Part 3",
+    "section": "Where do we plug in this recipe?",
+    "text": "Where do we plug in this recipe?\n\nThe recipe gets plugged into the fit_resamples() function\n\n\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nrec &lt;- recipe(mpg ~ horsepower, data = Auto) |&gt;\n  step_scale(horsepower)\n\nresults &lt;- fit_resamples(lm_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.92      5  0.0744 Preprocessor1_Model1\n2 rsq     standard   0.611     5  0.0158 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-want-to-predict-mpg-with-more-variables",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-want-to-predict-mpg-with-more-variables",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we want to predict mpg with more variables",
+    "text": "What if we want to predict mpg with more variables\n\nNow we still want to add a step to scale predictors\nWe could either write out all predictors individually to scale them\nOR we could use the all_predictors() short hand.\n\n\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#putting-it-together",
+    "href": "slides/06-3-lasso_ridge_tm.html#putting-it-together",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it together",
+    "text": "Putting it together\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_scale(all_predictors())\n\nresults &lt;- fit_resamples(lm_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.23      5  0.157  Preprocessor1_Model1\n2 rsq     standard   0.704     5  0.0253 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#application-exercise",
+    "href": "slides/06-3-lasso_ridge_tm.html#application-exercise",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nExamine the Hitters dataset by running ?Hitters in the Console\nWe want to predict a major league player’s Salary from all of the other 19 variables in this dataset. Create a visualization of Salary.\nCreate a recipe to estimate this model.\nAdd a preprocessing step to your recipe, scaling each of the predictors"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-have-categorical-variables",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-have-categorical-variables",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we have categorical variables?",
+    "text": "What if we have categorical variables?\n\nWe can turn the categorical variables into indicator (“dummy”) variables in the recipe\n\n\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_dummy(all_nominal()) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-have-missing-data",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-have-missing-data",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we have missing data?",
+    "text": "What if we have missing data?\n\nWe can remove any rows with missing data\n\n\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_dummy(all_nominal()) |&gt;\n  step_naomit(everything()) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#what-if-we-have-missing-data-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#what-if-we-have-missing-data-1",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we have missing data?",
+    "text": "What if we have missing data?\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_dummy(all_nominal()) |&gt;\n  step_naomit(all_outcomes()) |&gt;\n  step_impute_mean(all_predictors()) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#application-exercise-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#application-exercise-1",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nAdd a preprocessing step to your recipe to convert nominal variables into indicators\nAdd a step to your recipe to remove missing values for the outcome\nAdd a step to your recipe to impute missing values for the predictors using the average for the remaining values NOTE THIS IS NOT THE BEST WAY TO DO THIS!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#ridge-lasso-and-elastic-net",
+    "href": "slides/06-3-lasso_ridge_tm.html#ridge-lasso-and-elastic-net",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge, Lasso, and Elastic net",
+    "text": "Ridge, Lasso, and Elastic net\nWhen specifying your model, you can indicate whether you would like to use ridge, lasso, or elastic net. We can write a general equation to minimize:\n\\[RSS + \\lambda\\left((1-\\alpha)\\sum_{i=1}^p\\beta_j^2+\\alpha\\sum_{i=1}^p|\\beta_j|\\right)\\]\n\nlm_spec &lt;- linear_reg() |&gt;\n  set_engine(\"glmnet\") \n\n\nFirst specify the engine. We’ll use glmnet\nThe linear_reg() function has two additional parameters, penalty and mixture\npenalty is \\(\\lambda\\) from our equation.\nmixture is a number between 0 and 1 representing \\(\\alpha\\)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#ridge-lasso-and-elastic-net-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#ridge-lasso-and-elastic-net-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge, Lasso, and Elastic net",
+    "text": "Ridge, Lasso, and Elastic net\n\\[RSS + \\lambda\\left((1-\\alpha)\\sum_{i=1}^p\\beta_j^2+\\alpha\\sum_{i=1}^p|\\beta_j|\\right)\\]\n\nWhat would we set mixture to in order to perform Ridge regression?\n\n\n\nridge_spec &lt;- linear_reg(penalty = 100, mixture = 0) |&gt; \n  set_engine(\"glmnet\")"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#application-exercise-2",
+    "href": "slides/06-3-lasso_ridge_tm.html#application-exercise-2",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nSet a seed set.seed(1)\nCreate a cross validation object for the Hitters dataset\nUsing the recipe from the previous exercise, fit the model using Ridge regression with a penalty \\(\\lambda\\) = 300\nWhat is the estimate of the test RMSE for this model?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#ridge-lasso-and-elastic-net-2",
+    "href": "slides/06-3-lasso_ridge_tm.html#ridge-lasso-and-elastic-net-2",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge, Lasso, and Elastic net",
+    "text": "Ridge, Lasso, and Elastic net\n\\[RSS + \\lambda\\left((1-\\alpha)\\sum_{i=1}^p\\beta_j^2+\\alpha\\sum_{i=1}^p|\\beta_j|\\right)\\]\n\nridge_spec &lt;- linear_reg(penalty = 100, mixture = 0) |&gt; \n  set_engine(\"glmnet\") \n\n\n\nlasso_spec &lt;- linear_reg(penalty = 5, mixture = 1) |&gt;\n  set_engine(\"glmnet\") \n\n\n\n\nenet_spec &lt;- linear_reg(penalty = 60, mixture = 0.7) |&gt; \n  set_engine(\"glmnet\")"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#okay-but-we-wanted-to-look-at-3-different-models",
+    "href": "slides/06-3-lasso_ridge_tm.html#okay-but-we-wanted-to-look-at-3-different-models",
+    "title": "Chapter 6 Part 3",
+    "section": "Okay, but we wanted to look at 3 different models!",
+    "text": "Okay, but we wanted to look at 3 different models!\n\nridge_spec &lt;- linear_reg(penalty = 100, mixture = 0) |&gt;\n  set_engine(\"glmnet\") \n\nresults &lt;- fit_resamples(ridge_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\n\n\nlasso_spec &lt;- linear_reg(penalty = 5, mixture = 1) |&gt;\n  set_engine(\"glmnet\") \n\nresults &lt;- fit_resamples(lasso_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\n\n\n\nelastic_spec &lt;- linear_reg(penalty = 40, mixture = 0.1) |&gt;\n  set_engine(\"glmnet\") \n\nresults &lt;- fit_resamples(elastic_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\n\n😱 this looks like copy + pasting!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#tune",
+    "href": "slides/06-3-lasso_ridge_tm.html#tune",
+    "title": "Chapter 6 Part 3",
+    "section": "tune 🎶",
+    "text": "tune 🎶\n\npenalty_spec &lt;- \n  linear_reg(penalty = tune(), mixture = tune()) |&gt; \n  set_engine(\"glmnet\") \n\n\nNotice the code above has tune() for the the penalty and the mixture. Those are the things we want to vary!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#tune-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#tune-1",
+    "title": "Chapter 6 Part 3",
+    "section": "tune 🎶",
+    "text": "tune 🎶\n\nNow we need to create a grid of potential penalties ( \\(\\lambda\\) ) and mixtures ( \\(\\alpha\\) ) that we want to test\nInstead of fit_resamples() we are going to use tune_grid()\n\n\n\ngrid &lt;- expand_grid(penalty = seq(0, 100, by = 10),\n                    mixture = seq(0, 1, by = 0.25))\n\nresults &lt;- tune_grid(penalty_spec,\n                     preprocessor = rec,\n                     grid = grid, \n                     resamples = Auto_cv)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#tune-2",
+    "href": "slides/06-3-lasso_ridge_tm.html#tune-2",
+    "title": "Chapter 6 Part 3",
+    "section": "tune 🎶",
+    "text": "tune 🎶\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 110 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0       0 rmse    standard   4.30      1      NA Preprocessor1_Model01\n 2       0       0 rsq     standard   0.699     1      NA Preprocessor1_Model01\n 3      10       0 rmse    standard   4.86      1      NA Preprocessor1_Model02\n 4      10       0 rsq     standard   0.692     1      NA Preprocessor1_Model02\n 5      20       0 rmse    standard   5.41      1      NA Preprocessor1_Model03\n 6      20       0 rsq     standard   0.691     1      NA Preprocessor1_Model03\n 7      30       0 rmse    standard   5.81      1      NA Preprocessor1_Model04\n 8      30       0 rsq     standard   0.691     1      NA Preprocessor1_Model04\n 9      40       0 rmse    standard   6.10      1      NA Preprocessor1_Model05\n10      40       0 rsq     standard   0.691     1      NA Preprocessor1_Model05\n# ℹ 100 more rows"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#subset-results",
+    "href": "slides/06-3-lasso_ridge_tm.html#subset-results",
+    "title": "Chapter 6 Part 3",
+    "section": "Subset results",
+    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    0.25 rmse    standard    4.26     1      NA Preprocessor1_Model12\n 2       0    0.5  rmse    standard    4.26     1      NA Preprocessor1_Model23\n 3       0    1    rmse    standard    4.26     1      NA Preprocessor1_Model45\n 4       0    0.75 rmse    standard    4.27     1      NA Preprocessor1_Model34\n 5       0    0    rmse    standard    4.30     1      NA Preprocessor1_Model01\n 6      10    0    rmse    standard    4.86     1      NA Preprocessor1_Model02\n 7      20    0    rmse    standard    5.41     1      NA Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.69     1      NA Preprocessor1_Model13\n 9      30    0    rmse    standard    5.81     1      NA Preprocessor1_Model04\n10      40    0    rmse    standard    6.10     1      NA Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nSince this is a data frame, we can do things like filter and arrange!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#subset-results-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#subset-results-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Subset results",
+    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    0.25 rmse    standard    4.26     1      NA Preprocessor1_Model12\n 2       0    0.5  rmse    standard    4.26     1      NA Preprocessor1_Model23\n 3       0    1    rmse    standard    4.26     1      NA Preprocessor1_Model45\n 4       0    0.75 rmse    standard    4.27     1      NA Preprocessor1_Model34\n 5       0    0    rmse    standard    4.30     1      NA Preprocessor1_Model01\n 6      10    0    rmse    standard    4.86     1      NA Preprocessor1_Model02\n 7      20    0    rmse    standard    5.41     1      NA Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.69     1      NA Preprocessor1_Model13\n 9      30    0    rmse    standard    5.81     1      NA Preprocessor1_Model04\n10      40    0    rmse    standard    6.10     1      NA Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nWhich would you choose?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#section",
+    "href": "slides/06-3-lasso_ridge_tm.html#section",
+    "title": "Chapter 6 Part 3",
+    "section": "",
+    "text": "results |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  ggplot(aes(penalty, mean, color = factor(mixture), group = factor(mixture))) +\n  geom_line() +\n  geom_point() + \n  labs(y = \"RMSE\")"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#application-exercise-3",
+    "href": "slides/06-3-lasso_ridge_tm.html#application-exercise-3",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\nUsing the Hitters cross validation object and recipe created in the previous exercise, use tune_grid to pick the optimal penalty and mixture values.\nUpdate the code below to create a grid that includes penalties from 0 to 50 by 1 and mixtures from 0 to 1 by 0.5.\nUse this grid in the tune_grid function. Then use collect_metrics and filter to only include the RSME estimates.\nCreate a figure to examine the estimated test RMSE for the grid of penalty and mixture values – which should you choose?\n\n\n\n\ngrid &lt;- expand_grid(penalty = seq(0, ----),\n                    mixture = seq(0, 1, by = ----))"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#putting-it-all-together",
+    "href": "slides/06-3-lasso_ridge_tm.html#putting-it-all-together",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it all together",
+    "text": "Putting it all together\n\nOften we can use a combination of all of these tools together\nFirst split our data\nDo cross validation on just the training data to tune the parameters\nUse last_fit() with the selected parameters, specifying the split data so that it is evaluated on the left out test sample"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#putting-it-all-together-1",
+    "href": "slides/06-3-lasso_ridge_tm.html#putting-it-all-together-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it all together",
+    "text": "Putting it all together\n\nauto_split &lt;- initial_split(Auto, prop = 0.5)\nauto_train &lt;- training(auto_split)\nauto_cv &lt;- vfold_cv(auto_train, v = 5)\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = auto_train) |&gt;\n  step_scale(all_predictors())\n\ntuning &lt;- tune_grid(penalty_spec,\n                     rec,\n                     grid = grid,\n                     resamples = auto_cv)\n\ntuning |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 66 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0     1   rmse    standard    3.48     1      NA Preprocessor1_Model56\n 2       0     0.8 rmse    standard    3.48     1      NA Preprocessor1_Model45\n 3       0     0.6 rmse    standard    3.49     1      NA Preprocessor1_Model34\n 4       0     0.4 rmse    standard    3.49     1      NA Preprocessor1_Model23\n 5       0     0.2 rmse    standard    3.49     1      NA Preprocessor1_Model12\n 6       0     0   rmse    standard    3.63     1      NA Preprocessor1_Model01\n 7      10     0   rmse    standard    4.42     1      NA Preprocessor1_Model02\n 8      20     0   rmse    standard    5.02     1      NA Preprocessor1_Model03\n 9      10     0.2 rmse    standard    5.10     1      NA Preprocessor1_Model13\n10      30     0   rmse    standard    5.44     1      NA Preprocessor1_Model04\n# ℹ 56 more rows"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#putting-it-all-together-2",
+    "href": "slides/06-3-lasso_ridge_tm.html#putting-it-all-together-2",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it all together",
+    "text": "Putting it all together\n\nfinal_spec &lt;- linear_reg(penalty = 0, mixture = 0) |&gt;\n  set_engine(\"glmnet\")\nfit &lt;- last_fit(final_spec, \n                rec,\n                split = auto_split) \nfit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.45  Preprocessor1_Model1\n2 rsq     standard       0.691 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#extracting-coefficients",
+    "href": "slides/06-3-lasso_ridge_tm.html#extracting-coefficients",
+    "title": "Chapter 6 Part 3",
+    "section": "Extracting coefficients",
+    "text": "Extracting coefficients\n\nWe can use workflow() to combine the recipe and the model specification to pass to a fit object.\n\n\n\ntraining_data &lt;- training(auto_split)\n\nworkflow() |&gt;\n  add_recipe(rec) |&gt;\n  add_model(final_spec) |&gt;\n  fit(data = training_data) |&gt;\n  tidy()\n\n# A tibble: 4 × 3\n  term         estimate penalty\n  &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)     42.6        0\n2 horsepower      -1.41       0\n3 displacement    -1.44       0\n4 weight          -3.62       0"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#application-exercise-4",
+    "href": "slides/06-3-lasso_ridge_tm.html#application-exercise-4",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\nUsing the final model specification, extract the coefficients from the model by creating a workflow\nFilter out any coefficients exactly equal to 0\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm.html#tune-autoplot",
+    "href": "slides/06-3-lasso_ridge_tm.html#tune-autoplot",
+    "title": "Chapter 6 Part 3",
+    "section": "tune autoplot",
+    "text": "tune autoplot\n\nautoplot(results)+ ## ggplot function\n  theme_classic()"
+  },
+  {
+    "objectID": "labs/04-ridge-lasso-elastic.html",
+    "href": "labs/04-ridge-lasso-elastic.html",
+    "title": "Lab 04 - Ridge Lasso Elastic Net",
+    "section": "",
+    "text": "Go to our RStudio and create a new R project inside your class folder. Create a .qmd file for your lab.\n\n\nNow, make sure the author is your name, title is appropriate and Render the document."
+  },
+  {
+    "objectID": "labs/04-ridge-lasso-elastic.html#yaml",
+    "href": "labs/04-ridge-lasso-elastic.html#yaml",
+    "title": "Lab 04 - Ridge Lasso Elastic Net",
+    "section": "",
+    "text": "Now, make sure the author is your name, title is appropriate and Render the document."
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html",
+    "href": "slides/06-3-lasso_ridge_tm_o.html",
+    "title": "Chapter 6 Part 3",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidymodels)\nlibrary(ISLR2)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#setup",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#setup",
+    "title": "Chapter 6 Part 3",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidymodels)\nlibrary(ISLR2)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#lasso-and-ridge---statquest",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#lasso-and-ridge---statquest",
+    "title": "Chapter 6 Part 3",
+    "section": "Lasso and Ridge - Statquest",
+    "text": "Lasso and Ridge - Statquest\nhttps://www.youtube.com/watch?v=Q81RR3yKn30&t=7s\nhttps://www.youtube.com/watch?v=NGf0voTMlcs\nOn your own:\nRidge Vs Lasso https://www.youtube.com/watch?v=Xm2C_gTAl8c\nElastic Net https://www.youtube.com/watch?v=1dKRdX9bfIo"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#ridge-regression",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#ridge-regression",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\n\n\nPros\n\nCan be used when \\(p &gt; n\\)\nCan be used to help with multicollinearity\nWill decrease variance (as \\(\\lambda \\rightarrow \\infty\\) )\n\n\n\n\nCons\n\nWill have increased bias (compared to least squares)\nDoes not really help with variable selection (all variables are included in some regard, even if their \\(\\beta\\) coefficients are really small)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#lasso",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#lasso",
+    "title": "Chapter 6 Part 3",
+    "section": "Lasso",
+    "text": "Lasso\n\n\n\nPros\n\nCan be used when \\(p &gt; n\\)\nCan be used to help with multicollinearity\nWill decrease variance (as \\(\\lambda \\rightarrow \\infty\\) )\nCan be used for variable selection, since it will make some \\(\\beta\\) coefficients exactly 0\n\n\n\n\nCons\n\nWill have increased bias (compared to least squares)\nIf \\(p&gt;n\\) the lasso can select at most \\(n\\) variables"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-want-to-do-both",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-want-to-do-both",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we want to do both?",
+    "text": "What if we want to do both?\n\nElastic net!\n\\(RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\)\n\n. . .\n\nWhat is the \\(\\ell_1\\) part of the penalty?\n\n. . .\n\nWhat is the \\(\\ell_2\\) part of the penalty"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#elastic-net",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#elastic-net",
+    "title": "Chapter 6 Part 3",
+    "section": "Elastic net",
+    "text": "Elastic net\n\\[RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\]\n\nWhen will this be equivalent to Ridge Regression?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#elastic-net-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#elastic-net-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Elastic net",
+    "text": "Elastic net\n\\[RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\]\n\nWhen will this be equivalent to Lasso?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#elastic-net-2",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#elastic-net-2",
+    "title": "Chapter 6 Part 3",
+    "section": "Elastic Net",
+    "text": "Elastic Net\n\\[RSS + \\lambda_1\\sum_{j=1}^p\\beta^2_j+\\lambda_2\\sum_{j=1}^p|\\beta_j|\\]\n\nThe \\(\\ell_1\\) part of the penalty will generate a sparse model (shrink some \\(\\beta\\) coefficients to exactly 0)\nThe \\(\\ell_2\\) part of the penalty removes the limitation on the number of variables selected (can be \\(&gt;n\\) now)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#tidymodels",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#tidymodels",
+    "title": "Chapter 6 Part 3",
+    "section": "tidymodels",
+    "text": "tidymodels\n\nlm_spec &lt;- \n  linear_reg() |&gt; # Pick linear regression\n  set_engine(engine = \"lm\") # set engine\nlm_spec\n\nLinear Regression Model Specification (regression)\n\nComputational engine: lm \n\n\n\nlm_fit &lt;- fit(lm_spec,\n              mpg ~ horsepower,\n              data = Auto)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#validation-set-approach",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#validation-set-approach",
+    "title": "Chapter 6 Part 3",
+    "section": "Validation set approach",
+    "text": "Validation set approach\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nAuto_split\n\n&lt;Training/Testing/Total&gt;\n&lt;196/196/392&gt;\n\n\n. . .\nExtract the training and testing data\n\ntraining(Auto_split)\ntesting(Auto_split)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#a-faster-way",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#a-faster-way",
+    "title": "Chapter 6 Part 3",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nYou can use last_fit() and specify the split\nThis will automatically train the data on the train data from the split\nInstead of specifying which metric to calculate (with rmse as before) you can just use collect_metrics() and it will automatically calculate the metrics on the test data from the split"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#a-faster-way-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#a-faster-way-1",
+    "title": "Chapter 6 Part 3",
+    "section": "A faster way!",
+    "text": "A faster way!\n\nset.seed(100000)\n\nAuto_split &lt;- initial_split(Auto, prop = 0.5)\nlm_fit &lt;- last_fit(lm_spec,\n                   mpg ~ horsepower,\n                   split = Auto_split) \n\nlm_fit |&gt;\n  collect_metrics() \n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.77  Preprocessor1_Model1\n2 rsq     standard       0.634 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-about-cross-validation",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-about-cross-validation",
+    "title": "Chapter 6 Part 3",
+    "section": "What about cross validation?",
+    "text": "What about cross validation?\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\nAuto_cv\n\n#  5-fold cross-validation \n# A tibble: 5 × 2\n  splits           id   \n  &lt;list&gt;           &lt;chr&gt;\n1 &lt;split [313/79]&gt; Fold1\n2 &lt;split [313/79]&gt; Fold2\n3 &lt;split [314/78]&gt; Fold3\n4 &lt;split [314/78]&gt; Fold4\n5 &lt;split [314/78]&gt; Fold5"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-wanted-to-do-some-preprocessing",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-wanted-to-do-some-preprocessing",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we wanted to do some preprocessing",
+    "text": "What if we wanted to do some preprocessing\n\nFor the shrinkage methods we discussed it was important to scale the variables\n\n. . .\n\n\nWhat would happen if we scale before doing cross-validation? Will we get different answers?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-wanted-to-do-some-preprocessing-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-wanted-to-do-some-preprocessing-1",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we wanted to do some preprocessing",
+    "text": "What if we wanted to do some preprocessing\n\nAuto_scaled &lt;- Auto |&gt;\n  mutate(horsepower = scale(horsepower))\n\nsd(Auto_scaled$horsepower)\n\n[1] 1\n\n\n\nAuto_cv_scaled &lt;- vfold_cv(Auto_scaled, v = 5)\n\n# Will not actually use:\nmap_dbl(Auto_cv_scaled$splits,\n        function(x) {\n          dat &lt;- as.data.frame(x)$horsepower\n          sd(dat)\n        })\n\n[1] 0.9698961 1.0060047 0.9967524 1.0339029 0.9922419"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-wanted-to-do-some-preprocessing-2",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-wanted-to-do-some-preprocessing-2",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we wanted to do some preprocessing",
+    "text": "What if we wanted to do some preprocessing\n\nrecipe()!\nUsing the recipe() function along with step_*() functions, we can specify preprocessing steps and R will automagically apply them to each fold appropriately.\n\n. . .\n\nrec &lt;- recipe(mpg ~ horsepower, data = Auto) |&gt;\n  step_scale(horsepower) \n\n\nYou can find all of the potential preprocessing steps here: https://tidymodels.github.io/recipes/reference/index.html"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#where-do-we-plug-in-this-recipe",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#where-do-we-plug-in-this-recipe",
+    "title": "Chapter 6 Part 3",
+    "section": "Where do we plug in this recipe?",
+    "text": "Where do we plug in this recipe?\n\nThe recipe gets plugged into the fit_resamples() function\n\n. . .\n\nAuto_cv &lt;- vfold_cv(Auto, v = 5)\n\nrec &lt;- recipe(mpg ~ horsepower, data = Auto) |&gt;\n  step_scale(horsepower)\n\nresults &lt;- fit_resamples(lm_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.92      5  0.0744 Preprocessor1_Model1\n2 rsq     standard   0.611     5  0.0158 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-want-to-predict-mpg-with-more-variables",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-want-to-predict-mpg-with-more-variables",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we want to predict mpg with more variables",
+    "text": "What if we want to predict mpg with more variables\n\nNow we still want to add a step to scale predictors\nWe could either write out all predictors individually to scale them\nOR we could use the all_predictors() short hand.\n\n. . .\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#putting-it-together",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#putting-it-together",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it together",
+    "text": "Putting it together\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_scale(all_predictors())\n\nresults &lt;- fit_resamples(lm_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 6\n  .metric .estimator  mean     n std_err .config             \n  &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard   4.23      5  0.157  Preprocessor1_Model1\n2 rsq     standard   0.704     5  0.0253 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#application-exercise",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#application-exercise",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nExamine the Hitters dataset by running ?Hitters in the Console\nWe want to predict a major league player’s Salary from all of the other 19 variables in this dataset. Create a visualization of Salary.\nCreate a recipe to estimate this model.\nAdd a preprocessing step to your recipe, scaling each of the predictors"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-have-categorical-variables",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-have-categorical-variables",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we have categorical variables?",
+    "text": "What if we have categorical variables?\n\nWe can turn the categorical variables into indicator (“dummy”) variables in the recipe\n\n. . .\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_dummy(all_nominal()) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-have-missing-data",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-have-missing-data",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we have missing data?",
+    "text": "What if we have missing data?\n\nWe can remove any rows with missing data\n\n. . .\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_dummy(all_nominal()) |&gt;\n  step_naomit(everything()) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-have-missing-data-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#what-if-we-have-missing-data-1",
+    "title": "Chapter 6 Part 3",
+    "section": "What if we have missing data?",
+    "text": "What if we have missing data?\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = Auto) |&gt;\n  step_dummy(all_nominal()) |&gt;\n  step_naomit(all_outcomes()) |&gt;\n  step_impute_mean(all_predictors()) |&gt;\n  step_scale(all_predictors())"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-1",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nAdd a preprocessing step to your recipe to convert nominal variables into indicators\nAdd a step to your recipe to remove missing values for the outcome\nAdd a step to your recipe to impute missing values for the predictors using the average for the remaining values NOTE THIS IS NOT THE BEST WAY TO DO THIS!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#ridge-lasso-and-elastic-net",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#ridge-lasso-and-elastic-net",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge, Lasso, and Elastic net",
+    "text": "Ridge, Lasso, and Elastic net\nWhen specifying your model, you can indicate whether you would like to use ridge, lasso, or elastic net. We can write a general equation to minimize:\n\\[RSS + \\lambda\\left((1-\\alpha)\\sum_{i=1}^p\\beta_j^2+\\alpha\\sum_{i=1}^p|\\beta_j|\\right)\\]\n\nlm_spec &lt;- linear_reg() |&gt;\n  set_engine(\"glmnet\") \n\n\nFirst specify the engine. We’ll use glmnet\nThe linear_reg() function has two additional parameters, penalty and mixture\npenalty is \\(\\lambda\\) from our equation.\nmixture is a number between 0 and 1 representing \\(\\alpha\\)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#ridge-lasso-and-elastic-net-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#ridge-lasso-and-elastic-net-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge, Lasso, and Elastic net",
+    "text": "Ridge, Lasso, and Elastic net\n\\[RSS + \\lambda\\left((1-\\alpha)\\sum_{i=1}^p\\beta_j^2+\\alpha\\sum_{i=1}^p|\\beta_j|\\right)\\]\n\nWhat would we set mixture to in order to perform Ridge regression?\n\n. . .\n\nridge_spec &lt;- linear_reg(penalty = 100, mixture = 0) |&gt; \n  set_engine(\"glmnet\")"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-2",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-2",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nSet a seed set.seed(1)\nCreate a cross validation object for the Hitters dataset\nUsing the recipe from the previous exercise, fit the model using Ridge regression with a penalty \\(\\lambda\\) = 300\nWhat is the estimate of the test RMSE for this model?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#ridge-lasso-and-elastic-net-2",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#ridge-lasso-and-elastic-net-2",
+    "title": "Chapter 6 Part 3",
+    "section": "Ridge, Lasso, and Elastic net",
+    "text": "Ridge, Lasso, and Elastic net\n\\[RSS + \\lambda\\left((1-\\alpha)\\sum_{i=1}^p\\beta_j^2+\\alpha\\sum_{i=1}^p|\\beta_j|\\right)\\]\n\nridge_spec &lt;- linear_reg(penalty = 100, mixture = 0) |&gt; \n  set_engine(\"glmnet\") \n\n. . .\n\nlasso_spec &lt;- linear_reg(penalty = 5, mixture = 1) |&gt;\n  set_engine(\"glmnet\") \n\n. . .\n\nenet_spec &lt;- linear_reg(penalty = 60, mixture = 0.7) |&gt; \n  set_engine(\"glmnet\")"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#okay-but-we-wanted-to-look-at-3-different-models",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#okay-but-we-wanted-to-look-at-3-different-models",
+    "title": "Chapter 6 Part 3",
+    "section": "Okay, but we wanted to look at 3 different models!",
+    "text": "Okay, but we wanted to look at 3 different models!\n\nridge_spec &lt;- linear_reg(penalty = 100, mixture = 0) |&gt;\n  set_engine(\"glmnet\") \n\nresults &lt;- fit_resamples(ridge_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\n. . .\n\nlasso_spec &lt;- linear_reg(penalty = 5, mixture = 1) |&gt;\n  set_engine(\"glmnet\") \n\nresults &lt;- fit_resamples(lasso_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\n. . .\n\nelastic_spec &lt;- linear_reg(penalty = 40, mixture = 0.1) |&gt;\n  set_engine(\"glmnet\") \n\nresults &lt;- fit_resamples(elastic_spec,\n                         preprocessor = rec,\n                         resamples = Auto_cv)\n\n\n😱 this looks like copy + pasting!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#tune",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#tune",
+    "title": "Chapter 6 Part 3",
+    "section": "tune 🎶",
+    "text": "tune 🎶\n\npenalty_spec &lt;- \n  linear_reg(penalty = tune(), mixture = tune()) |&gt; \n  set_engine(\"glmnet\") \n\n\nNotice the code above has tune() for the the penalty and the mixture. Those are the things we want to vary!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#tune-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#tune-1",
+    "title": "Chapter 6 Part 3",
+    "section": "tune 🎶",
+    "text": "tune 🎶\n\nNow we need to create a grid of potential penalties ( \\(\\lambda\\) ) and mixtures ( \\(\\alpha\\) ) that we want to test\nInstead of fit_resamples() we are going to use tune_grid()\n\n. . .\n\ngrid &lt;- expand_grid(penalty = seq(0, 100, by = 10),\n                    mixture = seq(0, 1, by = 0.25))\n\nresults &lt;- tune_grid(penalty_spec,\n                     preprocessor = rec,\n                     grid = grid, \n                     resamples = Auto_cv)"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#tune-autoplot",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#tune-autoplot",
+    "title": "Chapter 6 Part 3",
+    "section": "tune autoplot",
+    "text": "tune autoplot\n\nautoplot(results)+ ## ggplot function\n  theme_classic()"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#tune-2",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#tune-2",
+    "title": "Chapter 6 Part 3",
+    "section": "tune 🎶",
+    "text": "tune 🎶\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 110 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0       0 rmse    standard   4.30      1      NA Preprocessor1_Model01\n 2       0       0 rsq     standard   0.699     1      NA Preprocessor1_Model01\n 3      10       0 rmse    standard   4.86      1      NA Preprocessor1_Model02\n 4      10       0 rsq     standard   0.692     1      NA Preprocessor1_Model02\n 5      20       0 rmse    standard   5.41      1      NA Preprocessor1_Model03\n 6      20       0 rsq     standard   0.691     1      NA Preprocessor1_Model03\n 7      30       0 rmse    standard   5.81      1      NA Preprocessor1_Model04\n 8      30       0 rsq     standard   0.691     1      NA Preprocessor1_Model04\n 9      40       0 rmse    standard   6.10      1      NA Preprocessor1_Model05\n10      40       0 rsq     standard   0.691     1      NA Preprocessor1_Model05\n# ℹ 100 more rows"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#subset-results",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#subset-results",
+    "title": "Chapter 6 Part 3",
+    "section": "Subset results",
+    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    0.25 rmse    standard    4.26     1      NA Preprocessor1_Model12\n 2       0    0.5  rmse    standard    4.26     1      NA Preprocessor1_Model23\n 3       0    1    rmse    standard    4.26     1      NA Preprocessor1_Model45\n 4       0    0.75 rmse    standard    4.27     1      NA Preprocessor1_Model34\n 5       0    0    rmse    standard    4.30     1      NA Preprocessor1_Model01\n 6      10    0    rmse    standard    4.86     1      NA Preprocessor1_Model02\n 7      20    0    rmse    standard    5.41     1      NA Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.69     1      NA Preprocessor1_Model13\n 9      30    0    rmse    standard    5.81     1      NA Preprocessor1_Model04\n10      40    0    rmse    standard    6.10     1      NA Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nSince this is a data frame, we can do things like filter and arrange!"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#subset-results-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#subset-results-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Subset results",
+    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    0.25 rmse    standard    4.26     1      NA Preprocessor1_Model12\n 2       0    0.5  rmse    standard    4.26     1      NA Preprocessor1_Model23\n 3       0    1    rmse    standard    4.26     1      NA Preprocessor1_Model45\n 4       0    0.75 rmse    standard    4.27     1      NA Preprocessor1_Model34\n 5       0    0    rmse    standard    4.30     1      NA Preprocessor1_Model01\n 6      10    0    rmse    standard    4.86     1      NA Preprocessor1_Model02\n 7      20    0    rmse    standard    5.41     1      NA Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.69     1      NA Preprocessor1_Model13\n 9      30    0    rmse    standard    5.81     1      NA Preprocessor1_Model04\n10      40    0    rmse    standard    6.10     1      NA Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nWhich would you choose?"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#section",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#section",
+    "title": "Chapter 6 Part 3",
+    "section": "",
+    "text": "results |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  ggplot(aes(penalty, mean, color = factor(mixture), group = factor(mixture))) +\n  geom_line() +\n  geom_point() + \n  labs(y = \"RMSE\")"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-3",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-3",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\nUsing the Hitters cross validation object and recipe created in the previous exercise, use tune_grid to pick the optimal penalty and mixture values.\nUpdate the code below to create a grid that includes penalties from 0 to 50 by 1 and mixtures from 0 to 1 by 0.5.\nUse this grid in the tune_grid function. Then use collect_metrics and filter to only include the RSME estimates.\nCreate a figure to examine the estimated test RMSE for the grid of penalty and mixture values – which should you choose?\n\n\n\n\ngrid &lt;- expand_grid(penalty = seq(0, ----),\n                    mixture = seq(0, 1, by = ----))"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it all together",
+    "text": "Putting it all together\n\nOften we can use a combination of all of these tools together\nFirst split our data\nDo cross validation on just the training data to tune the parameters\nUse last_fit() with the selected parameters, specifying the split data so that it is evaluated on the left out test sample"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together-1",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together-1",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it all together",
+    "text": "Putting it all together\n\nauto_split &lt;- initial_split(Auto, prop = 0.5)\nauto_train &lt;- training(auto_split)\nauto_cv &lt;- vfold_cv(auto_train, v = 5)\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = auto_train) |&gt;\n  step_scale(all_predictors())\n\ntuning &lt;- tune_grid(penalty_spec,\n                     rec,\n                     grid = grid,\n                     resamples = auto_cv)\n\ntuning |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 66 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0     1   rmse    standard    3.48     1      NA Preprocessor1_Model56\n 2       0     0.8 rmse    standard    3.48     1      NA Preprocessor1_Model45\n 3       0     0.6 rmse    standard    3.49     1      NA Preprocessor1_Model34\n 4       0     0.4 rmse    standard    3.49     1      NA Preprocessor1_Model23\n 5       0     0.2 rmse    standard    3.49     1      NA Preprocessor1_Model12\n 6       0     0   rmse    standard    3.63     1      NA Preprocessor1_Model01\n 7      10     0   rmse    standard    4.42     1      NA Preprocessor1_Model02\n 8      20     0   rmse    standard    5.02     1      NA Preprocessor1_Model03\n 9      10     0.2 rmse    standard    5.10     1      NA Preprocessor1_Model13\n10      30     0   rmse    standard    5.44     1      NA Preprocessor1_Model04\n# ℹ 56 more rows"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together-2",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together-2",
+    "title": "Chapter 6 Part 3",
+    "section": "Putting it all together",
+    "text": "Putting it all together\n\nfinal_spec &lt;- linear_reg(penalty = 0, mixture = 0) |&gt;\n  set_engine(\"glmnet\")\nfit &lt;- last_fit(final_spec, \n                rec,\n                split = auto_split) \nfit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.45  Preprocessor1_Model1\n2 rsq     standard       0.691 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#extracting-coefficients",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#extracting-coefficients",
+    "title": "Chapter 6 Part 3",
+    "section": "Extracting coefficients",
+    "text": "Extracting coefficients\n\nWe can use workflow() to combine the recipe and the model specification to pass to a fit object.\n\n. . .\n\ntraining_data &lt;- training(auto_split)\n\nworkflow() |&gt;\n  add_recipe(rec) |&gt;\n  add_model(final_spec) |&gt;\n  fit(data = training_data) |&gt;\n  tidy()\n\n# A tibble: 4 × 3\n  term         estimate penalty\n  &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)     42.6        0\n2 horsepower      -1.41       0\n3 displacement    -1.44       0\n4 weight          -3.62       0"
+  },
+  {
+    "objectID": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-4",
+    "href": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-4",
+    "title": "Chapter 6 Part 3",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\n\nUsing the final model specification, extract the coefficients from the model by creating a workflow\nFilter out any coefficients exactly equal to 0"
   }
 ]
