@@ -839,7 +839,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nLab\nHomework\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -2950,7 +2950,7 @@
     "href": "slides/06-subset_o.html#best-subsets---not-tidymodels",
     "title": "Chapter 6 Part 1",
     "section": "Best Subsets - not tidymodels",
-    "text": "Best Subsets - not tidymodels\n\nPredict balance based on Income, Limit, Rating, Cards, Age, Education, Own, Married, and Region\nNot in tidymodels\n(*) indicates the given variable is in the corresponding model\n\n\n\nCode\nbest_ss_model &lt;- regsubsets(Balance ~.,data = Credit)\n\nsummary(best_ss_model)\n\n\nSubset selection object\nCall: regsubsets.formula(Balance ~ ., data = Credit)\n11 Variables  (and intercept)\n            Forced in Forced out\nIncome          FALSE      FALSE\nLimit           FALSE      FALSE\nRating          FALSE      FALSE\nCards           FALSE      FALSE\nAge             FALSE      FALSE\nEducation       FALSE      FALSE\nOwnYes          FALSE      FALSE\nStudentYes      FALSE      FALSE\nMarriedYes      FALSE      FALSE\nRegionSouth     FALSE      FALSE\nRegionWest      FALSE      FALSE\n1 subsets of each size up to 8\nSelection Algorithm: exhaustive\n         Income Limit Rating Cards Age Education OwnYes StudentYes MarriedYes RegionSouth\n1  ( 1 ) \" \"    \" \"   \"*\"    \" \"   \" \" \" \"       \" \"    \" \"        \" \"        \" \"        \n2  ( 1 ) \"*\"    \" \"   \"*\"    \" \"   \" \" \" \"       \" \"    \" \"        \" \"        \" \"        \n3  ( 1 ) \"*\"    \" \"   \"*\"    \" \"   \" \" \" \"       \" \"    \"*\"        \" \"        \" \"        \n4  ( 1 ) \"*\"    \"*\"   \" \"    \"*\"   \" \" \" \"       \" \"    \"*\"        \" \"        \" \"        \n5  ( 1 ) \"*\"    \"*\"   \"*\"    \"*\"   \" \" \" \"       \" \"    \"*\"        \" \"        \" \"        \n6  ( 1 ) \"*\"    \"*\"   \"*\"    \"*\"   \"*\" \" \"       \" \"    \"*\"        \" \"        \" \"        \n7  ( 1 ) \"*\"    \"*\"   \"*\"    \"*\"   \"*\" \" \"       \"*\"    \"*\"        \" \"        \" \"        \n8  ( 1 ) \"*\"    \"*\"   \"*\"    \"*\"   \"*\" \" \"       \"*\"    \"*\"        \" \"        \" \"        \n         RegionWest\n1  ( 1 ) \" \"       \n2  ( 1 ) \" \"       \n3  ( 1 ) \" \"       \n4  ( 1 ) \" \"       \n5  ( 1 ) \" \"       \n6  ( 1 ) \" \"       \n7  ( 1 ) \" \"       \n8  ( 1 ) \"*\""
+    "text": "Best Subsets - not tidymodels\n\nPredict balance based on Income, Limit, Rating, Cards, Age, Education, Own, Married, and Region\nNot in tidymodels\n(*) indicates the given variable is in the corresponding model\n\n\n\nCode\nbest_ss_model &lt;- regsubsets(Balance ~.,data = c_train )\n\nsummary(best_ss_model)\n\n\nSubset selection object\nCall: regsubsets.formula(Balance ~ ., data = c_train)\n11 Variables  (and intercept)\n            Forced in Forced out\nIncome          FALSE      FALSE\nLimit           FALSE      FALSE\nRating          FALSE      FALSE\nCards           FALSE      FALSE\nAge             FALSE      FALSE\nEducation       FALSE      FALSE\nOwnYes          FALSE      FALSE\nStudentYes      FALSE      FALSE\nMarriedYes      FALSE      FALSE\nRegionSouth     FALSE      FALSE\nRegionWest      FALSE      FALSE\n1 subsets of each size up to 8\nSelection Algorithm: exhaustive\n         Income Limit Rating Cards Age Education OwnYes StudentYes MarriedYes RegionSouth\n1  ( 1 ) \" \"    \" \"   \"*\"    \" \"   \" \" \" \"       \" \"    \" \"        \" \"        \" \"        \n2  ( 1 ) \"*\"    \" \"   \"*\"    \" \"   \" \" \" \"       \" \"    \" \"        \" \"        \" \"        \n3  ( 1 ) \"*\"    \"*\"   \" \"    \" \"   \" \" \" \"       \" \"    \"*\"        \" \"        \" \"        \n4  ( 1 ) \"*\"    \"*\"   \" \"    \"*\"   \" \" \" \"       \" \"    \"*\"        \" \"        \" \"        \n5  ( 1 ) \"*\"    \"*\"   \" \"    \"*\"   \"*\" \" \"       \" \"    \"*\"        \" \"        \" \"        \n6  ( 1 ) \"*\"    \"*\"   \"*\"    \"*\"   \"*\" \" \"       \" \"    \"*\"        \" \"        \" \"        \n7  ( 1 ) \"*\"    \"*\"   \"*\"    \"*\"   \"*\" \" \"       \" \"    \"*\"        \"*\"        \" \"        \n8  ( 1 ) \"*\"    \"*\"   \"*\"    \"*\"   \"*\" \"*\"       \" \"    \"*\"        \"*\"        \" \"        \n         RegionWest\n1  ( 1 ) \" \"       \n2  ( 1 ) \" \"       \n3  ( 1 ) \" \"       \n4  ( 1 ) \" \"       \n5  ( 1 ) \" \"       \n6  ( 1 ) \" \"       \n7  ( 1 ) \" \"       \n8  ( 1 ) \" \""
   },
   {
     "objectID": "slides/06-subset_o.html#best-subsets---not-tidymodels-1",
@@ -2985,7 +2985,7 @@
     "href": "slides/06-subset_o.html#best-subsets---looking-at-model",
     "title": "Chapter 6 Part 1",
     "section": "Best Subsets - Looking at model",
-    "text": "Best Subsets - Looking at model\n\nWe can use the coef function to look at the coefficients of a model\n\n\n\nCode\ncoef(best_ss_model,8)\n\n\n (Intercept)       Income        Limit       Rating        Cards          Age \n-492.2521797   -7.8085352    0.1920721    1.1188371   17.9558589   -0.6072104 \n      OwnYes   StudentYes   RegionWest \n -10.6441699  425.8728203    8.9503733 \n\n\n\nOnce we choose the best model, we can refit it with tidymodels!"
+    "text": "Best Subsets - Looking at model\n\nWe can use the coef function to look at the coefficients of a model\n\n\n\nCode\ncoef(best_ss_model,8)\n\n\n (Intercept)       Income        Limit       Rating        Cards          Age \n-442.9663782   -7.6554801    0.2039346    0.8930414   17.5046106   -0.7496664 \n   Education   StudentYes   MarriedYes \n  -1.2622327  425.4323902  -12.4991226 \n\n\n\nOnce we choose the best model, we can refit it with tidymodels!"
   },
   {
     "objectID": "slides/06-subset_o.html#application-exercise",
@@ -4448,6 +4448,195 @@
     "href": "slides/06-subset_o.html#best-subsets",
     "title": "Chapter 6 Part 1",
     "section": "Best Subsets",
-    "text": "Best Subsets\n\nSave the summary and see whats included\n\n\n\nCode\nreg_summary &lt;- summary(best_ss_model)\nnames(reg_summary) # See what metrics are included \n\n\n[1] \"which\"  \"rsq\"    \"rss\"    \"adjr2\"  \"cp\"     \"bic\"    \"outmat\" \"obj\"   \n\n\n\nWe can access each of these with $\nThis gives you the value for each of the best models with different number of predictors\n\n\n\nCode\nreg_summary$rsq\n\n\n[1] 0.7458484 0.8751179 0.9498788 0.9535800 0.9541606 0.9546879 0.9548167 0.9548880"
+    "text": "Best Subsets\n\nSave the summary and see whats included\n\n\n\nCode\nreg_summary &lt;- summary(best_ss_model)\nnames(reg_summary) # See what metrics are included \n\n\n[1] \"which\"  \"rsq\"    \"rss\"    \"adjr2\"  \"cp\"     \"bic\"    \"outmat\" \"obj\"   \n\n\n\nWe can access each of these with $\nThis gives you the value for each of the best models with different number of predictors\n\n\n\nCode\nreg_summary$rsq\n\n\n[1] 0.7419596 0.8645677 0.9470542 0.9514489 0.9521160 0.9525191 0.9526977 0.9527695"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#setup",
+    "href": "slides/06-2-shrinkage.html#setup",
+    "title": "Chapter 6 Part 2",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR2)\nlibrary(leaps)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#shrinkage-methods",
+    "href": "slides/06-2-shrinkage.html#shrinkage-methods",
+    "title": "Chapter 6 Part 2",
+    "section": "Shrinkage Methods",
+    "text": "Shrinkage Methods\nRidge regression and Lasso - The subset selection methods use least squares to fit a linear model that contains a subset of the predictors.\n\nAs an alternative, we can fit a model containing all p predictors using a technique that constrains or regularizes the coefficient estimates, or equivalently, that shrinks the coefficient estimates towards zero.\nIt may not be immediately obvious why such a constraint should improve the fit, but it turns out that shrinking the coefficient estimates can significantly reduce their variance."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#another-reason",
+    "href": "slides/06-2-shrinkage.html#another-reason",
+    "title": "Chapter 6 Part 2",
+    "section": "Another Reason",
+    "text": "Another Reason\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\n\n\n\nWhy?\n\n\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\nWe have more variables than observations ( \\(p &gt; n\\) )\nThe variables are linear combinations of one another\nThe variance can blow up"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#ridge-regression",
+    "href": "slides/06-2-shrinkage.html#ridge-regression",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\nWhat if we add an additional penalty to keep the \\(\\hat\\beta\\) coefficients small (this will keep the variance from blowing up!)\nInstead of minimizing \\(RSS\\), like we do with linear regression, let’s minimize \\(RSS\\) PLUS some penalty function\n\\(RSS + \\underbrace{\\lambda\\sum_{j=1}^p\\beta^2_j}_{\\textrm{shrinkage penalty}}\\)\n\n\n\nWhat happens when \\(\\lambda=0\\)? What happens as \\(\\lambda\\rightarrow\\infty\\)?"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#ridge-regression-1",
+    "href": "slides/06-2-shrinkage.html#ridge-regression-1",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\nLRRidge\n\n\n\nRecall, the least squares fitting procedure estimates \\(\\beta_0,...,\\beta_p\\) using the values that minimize \\[RSS = \\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2\\]\n\n\n\n\nRidge regression coefficient estimates, \\(\\hat{\\beta}^R\\) are the values that minimize\n\n\\[\\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2+\\lambda\\sum_{j=1}^p\\beta_j^2\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p\\beta_j^2\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#more-on-ridge",
+    "href": "slides/06-2-shrinkage.html#more-on-ridge",
+    "title": "Chapter 6 Part 2",
+    "section": "More on Ridge",
+    "text": "More on Ridge\n\nLike least squares, ridge regression seeks coefficient estimates taht fit the data well by making the RSS small.\nThe second term \\(\\lambda\\sum_j\\beta_j^2\\) is called a shrinkage penalty, is small when \\(\\beta_1,...\\beta_p\\) are close to 0, and so it has the effect of shrinking the estimates of \\(\\beta_j\\) toward 0."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#shinkage",
+    "href": "slides/06-2-shrinkage.html#shinkage",
+    "title": "Chapter 6 Part 2",
+    "section": "Shinkage",
+    "text": "Shinkage\n\nEach curve corresponds to the ridge regression coefficient estimate for one of the ten variables, plotted as a function of \\(\\lambda\\)."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#choosing-lambda",
+    "href": "slides/06-2-shrinkage.html#choosing-lambda",
+    "title": "Chapter 6 Part 2",
+    "section": "Choosing \\(\\lambda\\)",
+    "text": "Choosing \\(\\lambda\\)\n\n\\(\\lambda\\) is known as a tuning parameter and is selected using cross validation\nFor example, choose the \\(\\lambda\\) that results in the smallest estimated test error"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#bias-variance-tradeoff",
+    "href": "slides/06-2-shrinkage.html#bias-variance-tradeoff",
+    "title": "Chapter 6 Part 2",
+    "section": "Bias-variance tradeoff",
+    "text": "Bias-variance tradeoff\n\nHow do you think ridge regression fits into the bias-variance tradeoff?\n\n\nAs \\(\\lambda\\) ☝️, bias ☝️, variance 👇"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#ridge-regression-2",
+    "href": "slides/06-2-shrinkage.html#ridge-regression-2",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\nIMPORTANT: When doing ridge regression, it is important to standardize your variables (divide by the standard deviation)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#shinkage-coeff",
+    "href": "slides/06-2-shrinkage.html#shinkage-coeff",
+    "title": "Chapter 6 Part 2",
+    "section": "Shinkage Coeff",
+    "text": "Shinkage Coeff\n\n\n\n\n\nThis displays the same ridge coefficient estimates as the previous graphs, but instead of displaying \\(\\lambda\\) on the x-axis, we now display \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\), where \\(\\hat{\\beta}\\) denotes the vector of the least squares coefficient estimates.\nThe notation \\(||\\beta||_2\\) denotes the"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#ridge---scalling-predictors",
+    "href": "slides/06-2-shrinkage.html#ridge---scalling-predictors",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge - Scalling Predictors",
+    "text": "Ridge - Scalling Predictors\n\nThe standard least squares coefficient estimates are scale equivalent: multiplying \\(X_j\\) by a constant c simply leads to a scaling of the least squares coefficient estimates by a factor of \\(1=c\\). In other words, regardless of how the jth predictor is scaled, \\(X_j\\hat{\\beta}_j\\) will remain the same.\nIn contrast, the ridge regression coefficient estimates can change substantially when multiplying a given predictor by a constant, due to the sum of squared coefficients term in the penalty part of the ridge regression objective function.\nTherefore, it is best to apply ridge regression after standardizing the predictors, using the formula\n\\[\\tilde{x}_{ij} = \\frac{x_{ij}}{\\sqrt{\\frac{1}{2}\\sum_{i=1}^n(x_{ij}-\\bar{x}_j)^2}}\\]"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage.html#ridge-bias-variance-tradeoff",
+    "href": "slides/06-2-shrinkage.html#ridge-bias-variance-tradeoff",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Bias-variance tradeoff",
+    "text": "Ridge Bias-variance tradeoff\n\n\nSimulated data with n = 50 observations, p = 45 predictors, all having nonzero coefficients. Squared bias (black), variance (green), and test mean squared error (purple) for the ridge regression predictions on a simulated data set, as a function of \\(\\lambda\\) and \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\)\nThe horizontal dashed lines indicate the minimum possible MSE. The purple crosses indicate the ridge regression models for which the MSE is smallest.\n\nLasso\n\nRidge regression does have one obvious disadvantage: unlike subset selection, which will generally select models that involve just a subset of the variables, ridge regression will include all p predictors in the final model\nThe Lasso is a relatively recent alternative to ridge regression that overcomes this disadvantage. The lasso coefficients, \\(\\hat{\\beta}_\\lambda^L\\), minimize the quantity\n\n\\[\\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2+\\lambda\\sum_{j=1}^p|\\beta_j|\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p|\\beta_j|\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately\n\nIn statistics lingo, the lasso uses an \\(\\ell_1\\) (pronounced “ell 1”) penalty instead of an \\(\\ell_2\\) penalty. The \\(\\ell_1\\) norm of a coefficient vector \\(\\beta\\) is given by \\(||\\beta||_1 = \\sum|\\beta_j|\\)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html",
+    "href": "slides/06-2-shrinkage_o.html",
+    "title": "Chapter 6 Part 2",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR2)\nlibrary(leaps)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#setup",
+    "href": "slides/06-2-shrinkage_o.html#setup",
+    "title": "Chapter 6 Part 2",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidymodels)\nlibrary(gridExtra)\nlibrary(ISLR2)\nlibrary(leaps)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#shrinkage-methods",
+    "href": "slides/06-2-shrinkage_o.html#shrinkage-methods",
+    "title": "Chapter 6 Part 2",
+    "section": "Shrinkage Methods",
+    "text": "Shrinkage Methods\nRidge regression and Lasso - The subset selection methods use least squares to fit a linear model that contains a subset of the predictors.\n\nAs an alternative, we can fit a model containing all p predictors using a technique that constrains or regularizes the coefficient estimates, or equivalently, that shrinks the coefficient estimates towards zero.\nIt may not be immediately obvious why such a constraint should improve the fit, but it turns out that shrinking the coefficient estimates can significantly reduce their variance."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#another-reason",
+    "href": "slides/06-2-shrinkage_o.html#another-reason",
+    "title": "Chapter 6 Part 2",
+    "section": "Another Reason",
+    "text": "Another Reason\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\n\n\n\nWhy?\n\n\n\nSometimes we can’t solve for \\(\\hat\\beta\\)\nWe have more variables than observations ( \\(p &gt; n\\) )\nThe variables are linear combinations of one another\nThe variance can blow up"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-regression",
+    "href": "slides/06-2-shrinkage_o.html#ridge-regression",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\nWhat if we add an additional penalty to keep the \\(\\hat\\beta\\) coefficients small (this will keep the variance from blowing up!)\nInstead of minimizing \\(RSS\\), like we do with linear regression, let’s minimize \\(RSS\\) PLUS some penalty function\n\\(RSS + \\underbrace{\\lambda\\sum_{j=1}^p\\beta^2_j}_{\\textrm{shrinkage penalty}}\\)\n\n\n\nWhat happens when \\(\\lambda=0\\)? What happens as \\(\\lambda\\rightarrow\\infty\\)?"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-regression-1",
+    "href": "slides/06-2-shrinkage_o.html#ridge-regression-1",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\nLRRidge\n\n\n\nRecall, the least squares fitting procedure estimates \\(\\beta_0,...,\\beta_p\\) using the values that minimize \\[RSS = \\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2\\]\n\n\n\n\nRidge regression coefficient estimates, \\(\\hat{\\beta}^R\\) are the values that minimize\n\n\\[\\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2+\\lambda\\sum_{j=1}^p\\beta_j^2\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p\\beta_j^2\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#more-on-ridge",
+    "href": "slides/06-2-shrinkage_o.html#more-on-ridge",
+    "title": "Chapter 6 Part 2",
+    "section": "More on Ridge",
+    "text": "More on Ridge\n\nLike least squares, ridge regression seeks coefficient estimates taht fit the data well by making the RSS small.\nThe second term \\(\\lambda\\sum_j\\beta_j^2\\) is called a shrinkage penalty, is small when \\(\\beta_1,...\\beta_p\\) are close to 0, and so it has the effect of shrinking the estimates of \\(\\beta_j\\) toward 0."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#shinkage",
+    "href": "slides/06-2-shrinkage_o.html#shinkage",
+    "title": "Chapter 6 Part 2",
+    "section": "Shinkage",
+    "text": "Shinkage\n\nEach curve corresponds to the ridge regression coefficient estimate for one of the ten variables, plotted as a function of \\(\\lambda\\)."
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#shinkage-coeff",
+    "href": "slides/06-2-shrinkage_o.html#shinkage-coeff",
+    "title": "Chapter 6 Part 2",
+    "section": "Shinkage Coeff",
+    "text": "Shinkage Coeff\n\n\n\n\n\nThis displays the same ridge coefficient estimates as the previous graphs, but instead of displaying \\(\\lambda\\) on the x-axis, we now display \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\), where \\(\\hat{\\beta}\\) denotes the vector of the least squares coefficient estimates.\nThe notation \\(||\\beta||_2\\) denotes the"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge---scalling-predictors",
+    "href": "slides/06-2-shrinkage_o.html#ridge---scalling-predictors",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge - Scalling Predictors",
+    "text": "Ridge - Scalling Predictors\n\nThe standard least squares coefficient estimates are scale equivalent: multiplying \\(X_j\\) by a constant c simply leads to a scaling of the least squares coefficient estimates by a factor of \\(1=c\\). In other words, regardless of how the jth predictor is scaled, \\(X_j\\hat{\\beta}_j\\) will remain the same.\nIn contrast, the ridge regression coefficient estimates can change substantially when multiplying a given predictor by a constant, due to the sum of squared coefficients term in the penalty part of the ridge regression objective function.\nTherefore, it is best to apply ridge regression after standardizing the predictors, using the formula\n\\[\\tilde{x}_{ij} = \\frac{x_{ij}}{\\sqrt{\\frac{1}{2}\\sum_{i=1}^n(x_{ij}-\\bar{x}_j)^2}}\\]"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-regression-2",
+    "href": "slides/06-2-shrinkage_o.html#ridge-regression-2",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Regression",
+    "text": "Ridge Regression\n\nIMPORTANT: When doing ridge regression, it is important to standardize your variables (divide by the standard deviation)"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#choosing-lambda",
+    "href": "slides/06-2-shrinkage_o.html#choosing-lambda",
+    "title": "Chapter 6 Part 2",
+    "section": "Choosing \\(\\lambda\\)",
+    "text": "Choosing \\(\\lambda\\)\n\n\\(\\lambda\\) is known as a tuning parameter and is selected using cross validation\nFor example, choose the \\(\\lambda\\) that results in the smallest estimated test error"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#bias-variance-tradeoff",
+    "href": "slides/06-2-shrinkage_o.html#bias-variance-tradeoff",
+    "title": "Chapter 6 Part 2",
+    "section": "Bias-variance tradeoff",
+    "text": "Bias-variance tradeoff\n\nHow do you think ridge regression fits into the bias-variance tradeoff?\n\n\nAs \\(\\lambda\\) ☝️, bias ☝️, variance 👇"
+  },
+  {
+    "objectID": "slides/06-2-shrinkage_o.html#ridge-bias-variance-tradeoff",
+    "href": "slides/06-2-shrinkage_o.html#ridge-bias-variance-tradeoff",
+    "title": "Chapter 6 Part 2",
+    "section": "Ridge Bias-variance tradeoff",
+    "text": "Ridge Bias-variance tradeoff\n\n\nSimulated data with n = 50 observations, p = 45 predictors, all having nonzero coefficients. Squared bias (black), variance (green), and test mean squared error (purple) for the ridge regression predictions on a simulated data set, as a function of \\(\\lambda\\) and \\(||\\hat{\\beta}_\\lambda^R||_2/||\\hat{\\beta}||_2\\)\nThe horizontal dashed lines indicate the minimum possible MSE. The purple crosses indicate the ridge regression models for which the MSE is smallest.\n\n\nLasso\n\nRidge regression does have one obvious disadvantage: unlike subset selection, which will generally select models that involve just a subset of the variables, ridge regression will include all p predictors in the final model\nThe Lasso is a relatively recent alternative to ridge regression that overcomes this disadvantage. The lasso coefficients, \\(\\hat{\\beta}_\\lambda^L\\), minimize the quantity\n\n\\[\\sum_{i=1}^n(y_i-\\beta_0-\\sum_{j=1}^p\\beta_jx_{ij})^2+\\lambda\\sum_{j=1}^p|\\beta_j|\\]\n\\[ = RSS + \\lambda\\sum_{j=1}^p|\\beta_j|\\]\nwhere \\(\\lambda\\geq 0\\) is a tuning parameter, to be determined separately\n\nIn statistics lingo, the lasso uses an \\(\\ell_1\\) (pronounced “ell 1”) penalty instead of an \\(\\ell_2\\) penalty. The \\(\\ell_1\\) norm of a coefficient vector \\(\\beta\\) is given by \\(||\\beta||_1 = \\sum|\\beta_j|\\)"
   }
 ]
