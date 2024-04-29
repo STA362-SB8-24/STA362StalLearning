@@ -839,7 +839,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nProject\nLab\nHomework\nExam\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nProject\nLab\nHomework\nExam\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, Bayesian Additive, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 12 - PCA, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nCh 12 - Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -5407,28 +5407,28 @@
     "href": "slides/06-3-lasso_ridge_tm_o.html#tune-autoplot",
     "title": "Chapter 6 Part 3",
     "section": "tune autoplot",
-    "text": "tune autoplot\n\nautoplot(results)+ ## ggplot function\n  theme_classic()"
+    "text": "tune autoplot\n\nautoplot(results)+ ## ggplot function\n  theme_classic()\n\nWarning in ggplot2::scale_x_continuous(trans = trans): log-10 transformation introduced infinite values.\nlog-10 transformation introduced infinite values."
   },
   {
     "objectID": "slides/06-3-lasso_ridge_tm_o.html#tune-2",
     "href": "slides/06-3-lasso_ridge_tm_o.html#tune-2",
     "title": "Chapter 6 Part 3",
     "section": "tune 🎶",
-    "text": "tune 🎶\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 110 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0       0 rmse    standard   4.30      1      NA Preprocessor1_Model01\n 2       0       0 rsq     standard   0.699     1      NA Preprocessor1_Model01\n 3      10       0 rmse    standard   4.86      1      NA Preprocessor1_Model02\n 4      10       0 rsq     standard   0.692     1      NA Preprocessor1_Model02\n 5      20       0 rmse    standard   5.41      1      NA Preprocessor1_Model03\n 6      20       0 rsq     standard   0.691     1      NA Preprocessor1_Model03\n 7      30       0 rmse    standard   5.81      1      NA Preprocessor1_Model04\n 8      30       0 rsq     standard   0.691     1      NA Preprocessor1_Model04\n 9      40       0 rmse    standard   6.10      1      NA Preprocessor1_Model05\n10      40       0 rsq     standard   0.691     1      NA Preprocessor1_Model05\n# ℹ 100 more rows"
+    "text": "tune 🎶\n\nresults |&gt;\n  collect_metrics()\n\n# A tibble: 110 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0       0 rmse    standard   4.25      5  0.139  Preprocessor1_Model01\n 2       0       0 rsq     standard   0.702     5  0.0231 Preprocessor1_Model01\n 3      10       0 rmse    standard   4.75      5  0.119  Preprocessor1_Model02\n 4      10       0 rsq     standard   0.697     5  0.0211 Preprocessor1_Model02\n 5      20       0 rmse    standard   5.30      5  0.0981 Preprocessor1_Model03\n 6      20       0 rsq     standard   0.697     5  0.0210 Preprocessor1_Model03\n 7      30       0 rmse    standard   5.71      5  0.0850 Preprocessor1_Model04\n 8      30       0 rsq     standard   0.697     5  0.0209 Preprocessor1_Model04\n 9      40       0 rmse    standard   6.02      5  0.0775 Preprocessor1_Model05\n10      40       0 rsq     standard   0.697     5  0.0209 Preprocessor1_Model05\n# ℹ 100 more rows"
   },
   {
     "objectID": "slides/06-3-lasso_ridge_tm_o.html#subset-results",
     "href": "slides/06-3-lasso_ridge_tm_o.html#subset-results",
     "title": "Chapter 6 Part 3",
     "section": "Subset results",
-    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    0.25 rmse    standard    4.26     1      NA Preprocessor1_Model12\n 2       0    0.5  rmse    standard    4.26     1      NA Preprocessor1_Model23\n 3       0    1    rmse    standard    4.26     1      NA Preprocessor1_Model45\n 4       0    0.75 rmse    standard    4.27     1      NA Preprocessor1_Model34\n 5       0    0    rmse    standard    4.30     1      NA Preprocessor1_Model01\n 6      10    0    rmse    standard    4.86     1      NA Preprocessor1_Model02\n 7      20    0    rmse    standard    5.41     1      NA Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.69     1      NA Preprocessor1_Model13\n 9      30    0    rmse    standard    5.81     1      NA Preprocessor1_Model04\n10      40    0    rmse    standard    6.10     1      NA Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nSince this is a data frame, we can do things like filter and arrange!"
+    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    1    rmse    standard    4.23     5  0.157  Preprocessor1_Model45\n 2       0    0.75 rmse    standard    4.23     5  0.156  Preprocessor1_Model34\n 3       0    0.25 rmse    standard    4.23     5  0.155  Preprocessor1_Model12\n 4       0    0.5  rmse    standard    4.23     5  0.156  Preprocessor1_Model23\n 5       0    0    rmse    standard    4.25     5  0.139  Preprocessor1_Model01\n 6      10    0    rmse    standard    4.75     5  0.119  Preprocessor1_Model02\n 7      20    0    rmse    standard    5.30     5  0.0981 Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.60     5  0.0861 Preprocessor1_Model13\n 9      30    0    rmse    standard    5.71     5  0.0850 Preprocessor1_Model04\n10      40    0    rmse    standard    6.02     5  0.0775 Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nSince this is a data frame, we can do things like filter and arrange!"
   },
   {
     "objectID": "slides/06-3-lasso_ridge_tm_o.html#subset-results-1",
     "href": "slides/06-3-lasso_ridge_tm_o.html#subset-results-1",
     "title": "Chapter 6 Part 3",
     "section": "Subset results",
-    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    0.25 rmse    standard    4.26     1      NA Preprocessor1_Model12\n 2       0    0.5  rmse    standard    4.26     1      NA Preprocessor1_Model23\n 3       0    1    rmse    standard    4.26     1      NA Preprocessor1_Model45\n 4       0    0.75 rmse    standard    4.27     1      NA Preprocessor1_Model34\n 5       0    0    rmse    standard    4.30     1      NA Preprocessor1_Model01\n 6      10    0    rmse    standard    4.86     1      NA Preprocessor1_Model02\n 7      20    0    rmse    standard    5.41     1      NA Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.69     1      NA Preprocessor1_Model13\n 9      30    0    rmse    standard    5.81     1      NA Preprocessor1_Model04\n10      40    0    rmse    standard    6.10     1      NA Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nWhich would you choose?"
+    "text": "Subset results\n\nresults |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    1    rmse    standard    4.23     5  0.157  Preprocessor1_Model45\n 2       0    0.75 rmse    standard    4.23     5  0.156  Preprocessor1_Model34\n 3       0    0.25 rmse    standard    4.23     5  0.155  Preprocessor1_Model12\n 4       0    0.5  rmse    standard    4.23     5  0.156  Preprocessor1_Model23\n 5       0    0    rmse    standard    4.25     5  0.139  Preprocessor1_Model01\n 6      10    0    rmse    standard    4.75     5  0.119  Preprocessor1_Model02\n 7      20    0    rmse    standard    5.30     5  0.0981 Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.60     5  0.0861 Preprocessor1_Model13\n 9      30    0    rmse    standard    5.71     5  0.0850 Preprocessor1_Model04\n10      40    0    rmse    standard    6.02     5  0.0775 Preprocessor1_Model05\n# ℹ 45 more rows\n\n\n\nWhich would you choose?"
   },
   {
     "objectID": "slides/06-3-lasso_ridge_tm_o.html#section",
@@ -5456,21 +5456,21 @@
     "href": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together-1",
     "title": "Chapter 6 Part 3",
     "section": "Putting it all together",
-    "text": "Putting it all together\n\nauto_split &lt;- initial_split(Auto, prop = 0.5)\nauto_train &lt;- training(auto_split)\nauto_cv &lt;- vfold_cv(auto_train, v = 5)\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = auto_train) |&gt;\n  step_scale(all_predictors())\n\ntuning &lt;- tune_grid(penalty_spec,\n                     rec,\n                     grid = grid,\n                     resamples = auto_cv)\n\ntuning |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 66 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0     1   rmse    standard    3.48     1      NA Preprocessor1_Model56\n 2       0     0.8 rmse    standard    3.48     1      NA Preprocessor1_Model45\n 3       0     0.6 rmse    standard    3.49     1      NA Preprocessor1_Model34\n 4       0     0.4 rmse    standard    3.49     1      NA Preprocessor1_Model23\n 5       0     0.2 rmse    standard    3.49     1      NA Preprocessor1_Model12\n 6       0     0   rmse    standard    3.63     1      NA Preprocessor1_Model01\n 7      10     0   rmse    standard    4.42     1      NA Preprocessor1_Model02\n 8      20     0   rmse    standard    5.02     1      NA Preprocessor1_Model03\n 9      10     0.2 rmse    standard    5.10     1      NA Preprocessor1_Model13\n10      30     0   rmse    standard    5.44     1      NA Preprocessor1_Model04\n# ℹ 56 more rows"
+    "text": "Putting it all together\n\nauto_split &lt;- initial_split(Auto, prop = 0.5)\nauto_train &lt;- training(auto_split)\nauto_cv &lt;- vfold_cv(auto_train, v = 5)\n\nrec &lt;- recipe(mpg ~ horsepower + displacement + weight, data = auto_train) |&gt;\n  step_scale(all_predictors())\n\ntuning &lt;- tune_grid(penalty_spec,\n                     rec,\n                     grid = grid,\n                     resamples = auto_cv)\n\ntuning |&gt;\n  collect_metrics() |&gt;\n  filter(.metric == \"rmse\") |&gt;\n  arrange(mean)\n\n# A tibble: 55 × 8\n   penalty mixture .metric .estimator  mean     n std_err .config              \n     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                \n 1       0    1    rmse    standard    3.49     5   0.214 Preprocessor1_Model45\n 2       0    0.75 rmse    standard    3.50     5   0.207 Preprocessor1_Model34\n 3       0    0.5  rmse    standard    3.51     5   0.206 Preprocessor1_Model23\n 4       0    0.25 rmse    standard    3.51     5   0.206 Preprocessor1_Model12\n 5       0    0    rmse    standard    3.57     5   0.220 Preprocessor1_Model01\n 6      10    0    rmse    standard    4.22     5   0.229 Preprocessor1_Model02\n 7      20    0    rmse    standard    4.80     5   0.227 Preprocessor1_Model03\n 8      10    0.25 rmse    standard    5.13     5   0.228 Preprocessor1_Model13\n 9      30    0    rmse    standard    5.21     5   0.227 Preprocessor1_Model04\n10      40    0    rmse    standard    5.50     5   0.227 Preprocessor1_Model05\n# ℹ 45 more rows"
   },
   {
     "objectID": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together-2",
     "href": "slides/06-3-lasso_ridge_tm_o.html#putting-it-all-together-2",
     "title": "Chapter 6 Part 3",
     "section": "Putting it all together",
-    "text": "Putting it all together\n\nfinal_spec &lt;- linear_reg(penalty = 0, mixture = 0) |&gt;\n  set_engine(\"glmnet\")\nfit &lt;- last_fit(final_spec, \n                rec,\n                split = auto_split) \nfit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.45  Preprocessor1_Model1\n2 rsq     standard       0.691 Preprocessor1_Model1"
+    "text": "Putting it all together\n\nfinal_spec &lt;- linear_reg(penalty = 0, mixture = 0) |&gt;\n  set_engine(\"glmnet\")\nfit &lt;- last_fit(final_spec, \n                rec,\n                split = auto_split) \nfit |&gt;\n  collect_metrics()\n\n# A tibble: 2 × 4\n  .metric .estimator .estimate .config             \n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 rmse    standard       4.94  Preprocessor1_Model1\n2 rsq     standard       0.681 Preprocessor1_Model1"
   },
   {
     "objectID": "slides/06-3-lasso_ridge_tm_o.html#extracting-coefficients",
     "href": "slides/06-3-lasso_ridge_tm_o.html#extracting-coefficients",
     "title": "Chapter 6 Part 3",
     "section": "Extracting coefficients",
-    "text": "Extracting coefficients\n\nWe can use workflow() to combine the recipe and the model specification to pass to a fit object.\n\n. . .\n\ntraining_data &lt;- training(auto_split)\n\nworkflow() |&gt;\n  add_recipe(rec) |&gt;\n  add_model(final_spec) |&gt;\n  fit(data = training_data) |&gt;\n  tidy()\n\n# A tibble: 4 × 3\n  term         estimate penalty\n  &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)     42.6        0\n2 horsepower      -1.41       0\n3 displacement    -1.44       0\n4 weight          -3.62       0"
+    "text": "Extracting coefficients\n\nWe can use workflow() to combine the recipe and the model specification to pass to a fit object.\n\n. . .\n\ntraining_data &lt;- training(auto_split)\n\nworkflow() |&gt;\n  add_recipe(rec) |&gt;\n  add_model(final_spec) |&gt;\n  fit(data = training_data) |&gt;\n  tidy()\n\n# A tibble: 4 × 3\n  term         estimate penalty\n  &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    41.4         0\n2 horsepower     -0.814       0\n3 displacement   -1.42        0\n4 weight         -3.83        0"
   },
   {
     "objectID": "slides/06-3-lasso_ridge_tm_o.html#application-exercise-4",
@@ -5890,5 +5890,915 @@
       "Course Contents",
       "Project"
     ]
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#application-exercise",
+    "href": "slides/03-linear_regression.html#application-exercise",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\nCreate a new quarto file for this homework in your exercises R project."
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#lets-look-at-an-example",
+    "href": "slides/03-linear_regression.html#lets-look-at-an-example",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s look at an example",
+    "text": "Let’s look at an example\nLet’s look at a sample of 116 sparrows from Kent Island. We are interested in the relationship between Weight and Wing Length\n\n\nthe standard error of \\(\\hat{\\beta_1}\\) ( \\(SE_{\\hat{\\beta}_1}\\) ) is how much we expect the sample slope to vary from one random sample to another."
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows",
+    "href": "slides/03-linear_regression.html#sparrows",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow can we quantify how much we’d expect the slope to differ from one random sample to another?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-1",
+    "href": "slides/03-linear_regression.html#sparrows-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow do we interpret this?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n“the sample slope is more than 13 standard errors above a slope of zero”"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-2",
+    "href": "slides/03-linear_regression.html#sparrows-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow do we know what values of this statistic are worth paying attention to?\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\nconfidence intervals\np-values"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#application-exercise-1",
+    "href": "slides/03-linear_regression.html#application-exercise-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp).\nPull out the coefficients and confidence intervals using the tidy() function demonstrated. How do you interpret these?"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-3",
+    "href": "slides/03-linear_regression.html#sparrows-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow are these statistics distributed under the null hypothesis?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy() \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-4",
+    "href": "slides/03-linear_regression.html#sparrows-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\nI’ve generated some data under a null hypothesis where \\(n = 20\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-5",
+    "href": "slides/03-linear_regression.html#sparrows-5",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\nthis is a t-distribution with n-p-1 degrees of freedom."
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-6",
+    "href": "slides/03-linear_regression.html#sparrows-6",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\nThe distribution of test statistics we would expect given the null hypothesis is true, \\(\\beta_1 = 0\\), is t-distribution with n-2 degrees of freedom."
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-7",
+    "href": "slides/03-linear_regression.html#sparrows-7",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-8",
+    "href": "slides/03-linear_regression.html#sparrows-8",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow can we compare this line to the distribution under the null?\n\n\n\np-value"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-9",
+    "href": "slides/03-linear_regression.html#sparrows-9",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#return-to-generated-data-n-20",
+    "href": "slides/03-linear_regression.html#return-to-generated-data-n-20",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Return to generated data, n = 20",
+    "text": "Return to generated data, n = 20\n\n\nLet’s say we get a statistic of 1.5 in a sample"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#lets-do-it-in-r",
+    "href": "slides/03-linear_regression.html#lets-do-it-in-r",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area less than 1.5\n\n\npt(1.5, df = 18)\n\n[1] 0.9245248"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#lets-do-it-in-r-1",
+    "href": "slides/03-linear_regression.html#lets-do-it-in-r-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5\n\n\npt(1.5, df = 18, lower.tail = FALSE)\n\n[1] 0.07547523"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#lets-do-it-in-r-2",
+    "href": "slides/03-linear_regression.html#lets-do-it-in-r-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5 or less than -1.5.\n\n\n\npt(1.5, df = 18, lower.tail = FALSE) * 2\n\n[1] 0.1509505"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#hypothesis-test",
+    "href": "slides/03-linear_regression.html#hypothesis-test",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Hypothesis test",
+    "text": "Hypothesis test\n\nnull hypothesis \\(H_0: \\beta_1 = 0\\)\nalternative hypothesis \\(H_A: \\beta_1 \\ne 0\\)\np-value: 0.15\nOften, we have an \\(\\alpha\\)-level cutoff to compare this to, for example 0.05. Since this is greater than 0.05, we fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#application-exercise-2",
+    "href": "slides/03-linear_regression.html#application-exercise-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nUsing the linear model you fit previously (mpg from wt and hp) - calculate the p-value for the coefficient for weight\nInterpret this value. What is the null hypothesis? What is the alternative hypothesis? Do you reject the null?"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#lets-do-it-in-r-3",
+    "href": "slides/03-linear_regression.html#lets-do-it-in-r-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\n\\(t^* = t_{n-p-1} = t_{114} = 1.98\\)\n\\(LB = 0.47 - 1.98\\times 0.0347 = 0.399\\)\n\\(UB = 0.47+1.98 \\times 0.0347 = 0.536\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#linear-regression-questions",
+    "href": "slides/03-linear_regression.html#linear-regression-questions",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Questions",
+    "text": "Linear Regression Questions\n\n✔️ Is there a relationship between a response variable and predictors?\n✔️ How strong is the relationship?\n✔️ What is the uncertainty?\nHow accurately can we predict a future outcome?"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#sparrows-10",
+    "href": "slides/03-linear_regression.html#sparrows-10",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nUsing the information here, how could I predict a new sparrow’s weight if I knew the wing length was 30?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n\\(1.37 + 0.467 \\times 30 = 15.38\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#linear-regression-accuracy",
+    "href": "slides/03-linear_regression.html#linear-regression-accuracy",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\nWhat is the residual sum of squares again?\n\n\nNote: In previous classes, this may have been referred to as SSE (sum of squares error), the book uses RSS, so we will stick with that!\n\n\n\\[RSS = \\sum(y_i - \\hat{y}_i)^2\\]"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#linear-regression-accuracy-1",
+    "href": "slides/03-linear_regression.html#linear-regression-accuracy-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\n\nThe total sum of squares represents the variability of the outcome, it is equivalent to the variability described by the model plus the remaining residual sum of squares\n\n\\[TSS = \\sum(y_i - \\bar{y})^2\\]"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#linear-regression-accuracy-2",
+    "href": "slides/03-linear_regression.html#linear-regression-accuracy-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\nThere are many ways “model fit” can be assessed. Two common ones are:\n\nResidual Standard Error (RSE)\n\\(R^2\\) - the fraction of the variance explained\n\n\\(RSE = \\sqrt{\\frac{1}{n-p-1}RSS}\\)\n\\(R^2 = 1 - \\frac{RSS}{TSS}\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#lets-do-it-in-r-4",
+    "href": "slides/03-linear_regression.html#lets-do-it-in-r-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\n\nlm_fit &lt;- linear_reg() |&gt; \n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows)\n\nlm_fit |&gt;\n  predict(new_data = Sparrows) |&gt;\n  bind_cols(Sparrows) |&gt;\n  rsq(truth = Weight, estimate = .pred) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rsq     standard       0.614\n\n\n\n\nIs this testing \\(R^2\\) or training \\(R^2\\)?"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#application-exercise-3",
+    "href": "slides/03-linear_regression.html#application-exercise-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp), using polynomials with 4 degrees of freedom for both.\nEstimate the training \\(R^2\\) using the rsq function.\nInterpret this values."
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#application-exercise-4",
+    "href": "slides/03-linear_regression.html#application-exercise-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nCreate a cross validation object to do 5 fold cross validation using the mtcars data\nRefit the model on this object (using fit_resamples)\nUse collect_metrics to estimate the test \\(R^2\\) - how does this compare to the training \\(R^2\\) calculated in the previous exercise?"
+  },
+  {
+    "objectID": "slides/03-linear_regression.html#additional-linear-regression-topics",
+    "href": "slides/03-linear_regression.html#additional-linear-regression-topics",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Additional Linear Regression Topics",
+    "text": "Additional Linear Regression Topics\n\nPolynomial terms\nInteractions\nOutliers\nNon-constant variance of error terms\nHigh leverage points\nCollinearity\n\nRefer to Chapter 3 for more details on these topics if you need a refresher.\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#setup",
+    "href": "slides/07-basic-dt.html#setup",
+    "title": "Chapter 8 Part 1",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(ISLR2)\nlibrary(rpart.plot)\n#install.packages('rpart.plot')"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-trees",
+    "href": "slides/07-basic-dt.html#decision-trees",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision trees",
+    "text": "Decision trees\n\nCan be applied to regression problems\nCan be applied to classification problems\n\n\n\nWhat is the difference?"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-tree---baseball-salary-example",
+    "href": "slides/07-basic-dt.html#decision-tree---baseball-salary-example",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example\n\n\nHow would you stratify this?"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-1",
+    "href": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-1",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#lets-walk-through-the-figure",
+    "href": "slides/07-basic-dt.html#lets-walk-through-the-figure",
+    "title": "Chapter 8 Part 1",
+    "section": "Let’s walk through the figure",
+    "text": "Let’s walk through the figure\n\nThis is using the Hitters data from the ISLR 📦\nI fit a regression tree predicting the salary of a baseball player from:\n\nNumber of years they played in the major leagues\nNumber of hits they made in the previous year\n\nAt each node the label (e.g., \\(X_j &lt; t_k\\) ) indicates that the left branch that comes from that split. The right branch is the opposite, e.g. \\(X_j \\geq t_k\\)."
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#lets-walk-through-the-figure-1",
+    "href": "slides/07-basic-dt.html#lets-walk-through-the-figure-1",
+    "title": "Chapter 8 Part 1",
+    "section": "Let’s walk through the figure",
+    "text": "Let’s walk through the figure\n\nFor example, the first internal node indicates that those to the left have less than 4.5 years in the major league, on the right have \\(\\geq\\) 4.5 years.\nThe number on the top of the nodes indicates the predicted Salary, for example before doing any splitting, the average Salary for the whole dataset is 536 thousand dollars.\nThis tree has two internal nodes and three termninal nodes"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-2",
+    "href": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-2",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-3",
+    "href": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-3",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-4",
+    "href": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-4",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-5",
+    "href": "slides/07-basic-dt.html#decision-tree---baseball-salary-example-5",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#terminology",
+    "href": "slides/07-basic-dt.html#terminology",
+    "title": "Chapter 8 Part 1",
+    "section": "Terminology",
+    "text": "Terminology\n\n🎄 The final regions, \\(R_1, R_2, R_3\\) are called terminal nodes\n🌴 You can think of the trees as upside down, the leaves are at the bottom\n🎄 The splits are called internal nodes"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#interpretation-of-results",
+    "href": "slides/07-basic-dt.html#interpretation-of-results",
+    "title": "Chapter 8 Part 1",
+    "section": "Interpretation of results",
+    "text": "Interpretation of results\n\nYears is the most important factor in determining Salary; players with less experience earn lower salaries\nGiven that a player is less experienced, the number of Hits seems to play little role in the Salary\nAmong players who have been in the major leagues for 4.5 years or more, the number of Hits made in the previous year does affect Salary, players with more Hits tend to have higher salaries\nThis is probably an oversimplification, but see how easy it is to interpret!"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#interpreting-decision-trees",
+    "href": "slides/07-basic-dt.html#interpreting-decision-trees",
+    "title": "Chapter 8 Part 1",
+    "section": " Interpreting decision trees",
+    "text": "Interpreting decision trees\n\nQuestionsGraph\n\n\n\n\nHow many internal nodes does this plot have? How many terminal nodes?\nWhat is the average Salary for players who have more than 6.5 years in the major leagues but less than 118 Hits? What % of the dataset fall in this category?"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#the-tree-building-process",
+    "href": "slides/07-basic-dt.html#the-tree-building-process",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nDivide the predictor space (the set of possible values for \\(X_1, X_2, \\dots, X_p\\) ) into \\(J\\) distinct non-overlapping regions, \\(R_1, R_2, \\dots R_j\\)\nFor every observation that falls into the region \\(R_j\\), we make the same prediction, the mean response value for the training observations in \\(R_j\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#the-tree-building-process-1",
+    "href": "slides/07-basic-dt.html#the-tree-building-process-1",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nThe regions could have any shape, but we choose to divide the predictor space into high-dimensional boxes for simplicity and ease of interpretation\nThe goal is to find boxes, \\(R_1, \\dots, R_j\\) that minimize the RSS, given by\n\\(\\sum_{j=1}^J\\sum_{i\\in R_j}(y_i-\\hat{y}_{R_j})^2\\) where \\(\\hat{y}_{R_j}\\) is the mean response for the training observations within the \\(j\\)th box."
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#the-tree-building-process-2",
+    "href": "slides/07-basic-dt.html#the-tree-building-process-2",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nIt is often computationally infeasible to consider every possible partition of the feature space into \\(J\\) boxes\nTherefore, we take a top-down, greedy approach known as recursive binary splitting\nThis is top-down because it begins at the top of the tree and then splits the predictor space successively into two branches at a time\nIt is greedy because at each step the best split is made at that step (instead of looking forward and picking a split that may result in a better tree in a future step)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#the-tree-building-process-3",
+    "href": "slides/07-basic-dt.html#the-tree-building-process-3",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nFirst select the predictor \\(X_j\\) and the cutpoint \\(s\\) such that splitting the predictor space into \\(\\{X|X_j &lt; s\\}\\) and \\(\\{X|X_k\\geq s\\}\\) leads to the greatest possible reduction in RSS\nWe repeat this process, looking for the best predictor and cutpoint to split the data within each of the resulting regions\nNow instead of splitting the entire predictor space, we split one of the two previously identified regions, now we have three regions"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#the-tree-building-process-4",
+    "href": "slides/07-basic-dt.html#the-tree-building-process-4",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nThen we look to split one of these three regions to minimize the RSS\nThis process continues until some stopping criteria are met. 🛑 e.g., we could stop when we have created a fixed number of regions, or we could keep going until no region contains more than 5 observations, etc."
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#draw-a-partition",
+    "href": "slides/07-basic-dt.html#draw-a-partition",
+    "title": "Chapter 8 Part 1",
+    "section": " Draw a partition",
+    "text": "Draw a partition\nDraw an example of a partition of a two-dimensional feature space that could result from recursive binary splitting with six regions. Label your figure with the regions, \\(R_1, \\dots, R_6\\) as well as the cutpoints \\(t_1, t_2, \\dots\\). Draw a decision tree corresponding to this partition."
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#decision-tree-predictions",
+    "href": "slides/07-basic-dt.html#decision-tree-predictions",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree predictions",
+    "text": "Decision tree predictions\n\nPredict the response for a test observation using the mean of the training observations in the region that the test observation belongs to\n\n\n\nWhat could potentially go wrong with what we have described so far?\n\n\nThe process may produce good predictions on the training set but is likely to overfit!"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#pruning-a-tree",
+    "href": "slides/07-basic-dt.html#pruning-a-tree",
+    "title": "Chapter 8 Part 1",
+    "section": "Pruning a tree",
+    "text": "Pruning a tree\nDo you love the tree puns? I DO!\n\nA smaller tree (with fewer splits, that is fewer regions \\(R_1,\\dots, R_j\\) ) may lead to lower variance and better interpretation at the cost of a little bias\nA good strategy is to grow a very large tree, \\(T_0\\), and then prune it back to obtain a subtree\nFor this, we use cost complexity pruning (also known as weakest link 🔗 pruning)\nConsider a sequence of trees indexed by a nonnegative tuning parameter, \\(\\alpha\\). For each \\(\\alpha\\) there is a subtree \\(T \\subset T_0\\) such that \\(\\sum_{m=1}^{|T|}\\sum_{i:x_i\\in R_m}(y_i-\\hat{y}_{R_m})^2+\\alpha|T|\\) is as small as possible."
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#pruning",
+    "href": "slides/07-basic-dt.html#pruning",
+    "title": "Chapter 8 Part 1",
+    "section": "Pruning",
+    "text": "Pruning\n\\[\\sum_{m=1}^{|T|}\\sum_{i:x_i\\in R_m}(y_i-\\hat{y}_{R_m})^2+\\alpha|T|\\]\n\n\\(|T|\\) indicates the number of terminal nodes of the tree \\(T\\)\n\\(R_m\\) is the box (the subset of the predictor space) corresponding to the \\(m\\)th terminal node\n\\(\\hat{y}_{R_m}\\) is the mean of the training observations in \\(R_m\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#choosing-the-best-subtree",
+    "href": "slides/07-basic-dt.html#choosing-the-best-subtree",
+    "title": "Chapter 8 Part 1",
+    "section": "Choosing the best subtree",
+    "text": "Choosing the best subtree\nThe tuning parameter, \\(\\alpha\\), controls the trade-off between the subtree’s complexity and its fit to the training data\n\nHow do you think you could select \\(\\alpha\\)?\n\n\nYou can select an optimal value, \\(\\hat{\\alpha}\\) using cross-validation!\nThen return to the full dataset and obtain the subtree using \\(\\hat{\\alpha}\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#summary-regression-tree-algorithm",
+    "href": "slides/07-basic-dt.html#summary-regression-tree-algorithm",
+    "title": "Chapter 8 Part 1",
+    "section": "Summary regression tree algorithm",
+    "text": "Summary regression tree algorithm\n\nUse recursive binary splitting to grow a large tree on the training data, stop when you reach some stopping criteria\nApply cost complexity pruning to the larger tree to obtain a sequence of best subtrees, as a function of \\(\\alpha\\)\nUse K-fold cross-validation to choose \\(\\alpha\\). Pick \\(\\alpha\\) to minimize the average error\nReturn the subtree that corresponds to the chosen \\(\\alpha\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#randomly-divide-the-data-in-half-132-training-observations-131-testing",
+    "href": "slides/07-basic-dt.html#randomly-divide-the-data-in-half-132-training-observations-131-testing",
+    "title": "Chapter 8 Part 1",
+    "section": "1. Randomly divide the data in half, 132 training observations, 131 testing",
+    "text": "1. Randomly divide the data in half, 132 training observations, 131 testing\n\nset.seed(77)\nbaseball_split &lt;- initial_split(baseball, prop = 0.5)\nbaseball_train &lt;- training(baseball_split)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#create-cross-validation-object-for-6-fold-cross-validation",
+    "href": "slides/07-basic-dt.html#create-cross-validation-object-for-6-fold-cross-validation",
+    "title": "Chapter 8 Part 1",
+    "section": "2. Create cross-validation object for 6-fold cross validation",
+    "text": "2. Create cross-validation object for 6-fold cross validation\n\nbaseball_cv &lt;- vfold_cv(baseball_train, v = 6)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#create-a-model-specification-that-tunes-based-on-complexity-alpha-and-add-to-workflow",
+    "href": "slides/07-basic-dt.html#create-a-model-specification-that-tunes-based-on-complexity-alpha-and-add-to-workflow",
+    "title": "Chapter 8 Part 1",
+    "section": "3. Create a model specification that tunes based on complexity, \\(\\alpha\\) and add to workflow",
+    "text": "3. Create a model specification that tunes based on complexity, \\(\\alpha\\) and add to workflow\n\ntree_spec &lt;- decision_tree(\n  cost_complexity = tune(), \n  tree_depth = 10,\n  mode = \"regression\") |&gt;\n  set_engine(\"rpart\")\n\nwf &lt;- workflow() |&gt;\n  add_recipe(\n    recipe(Salary ~ Hits + Years + PutOuts + RBI + Walks + Runs, data = baseball)\n    ) |&gt;\n  add_model(tree_spec)\n\n\nWhat is my tree depth for my “large” tree?"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#fit-the-model-on-the-cross-validation-set",
+    "href": "slides/07-basic-dt.html#fit-the-model-on-the-cross-validation-set",
+    "title": "Chapter 8 Part 1",
+    "section": "4. Fit the model on the cross validation set",
+    "text": "4. Fit the model on the cross validation set\n\ngrid &lt;- expand_grid(cost_complexity = seq(0.01, 0.05, by = 0.01))\nmodel &lt;- tune_grid(wf,\n                   grid = grid,\n                   resamples = baseball_cv)\n\n\nWhat \\(\\alpha\\)s am I trying?"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#choose-alpha-that-minimizes-the-rmse",
+    "href": "slides/07-basic-dt.html#choose-alpha-that-minimizes-the-rmse",
+    "title": "Chapter 8 Part 1",
+    "section": "5. Choose \\(\\alpha\\) that minimizes the RMSE",
+    "text": "5. Choose \\(\\alpha\\) that minimizes the RMSE\n\nmodel |&gt;\n  show_best(metric = \"rmse\")\n\n# A tibble: 5 × 7\n  cost_complexity .metric .estimator  mean     n std_err .config             \n            &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1            0.01 rmse    standard    422.     6    33.6 Preprocessor1_Model1\n2            0.02 rmse    standard    423.     6    32.0 Preprocessor1_Model2\n3            0.03 rmse    standard    425.     6    31.9 Preprocessor1_Model3\n4            0.04 rmse    standard    429.     6    32.5 Preprocessor1_Model4\n5            0.05 rmse    standard    441.     6    25.3 Preprocessor1_Model5"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#choose-alpha-that-minimizes-the-rmse-1",
+    "href": "slides/07-basic-dt.html#choose-alpha-that-minimizes-the-rmse-1",
+    "title": "Chapter 8 Part 1",
+    "section": "5. Choose \\(\\alpha\\) that minimizes the RMSE",
+    "text": "5. Choose \\(\\alpha\\) that minimizes the RMSE\n\nmodel |&gt;\n  show_best()\n\n\nmodel |&gt;\n  select_best(metric = \"rmse\") #&lt;&lt;\n\n# A tibble: 1 × 2\n  cost_complexity .config             \n            &lt;dbl&gt; &lt;chr&gt;               \n1            0.01 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#choose-alpha-that-minimizes-the-rmse-2",
+    "href": "slides/07-basic-dt.html#choose-alpha-that-minimizes-the-rmse-2",
+    "title": "Chapter 8 Part 1",
+    "section": "5. Choose \\(\\alpha\\) that minimizes the RMSE",
+    "text": "5. Choose \\(\\alpha\\) that minimizes the RMSE\n\nmodel |&gt;\n  show_best(metric = \"rmse\")\n\n\nfinal_complexity &lt;- select_best(model, metric = \"rmse\")"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#fit-the-final-model",
+    "href": "slides/07-basic-dt.html#fit-the-final-model",
+    "title": "Chapter 8 Part 1",
+    "section": "6. Fit the final model",
+    "text": "6. Fit the final model\n\nwf_final &lt;- wf |&gt;\n  finalize_workflow(final_complexity)\n\nfinal_model &lt;- fit(wf_final,\n                   data = baseball_train)"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#final-tree",
+    "href": "slides/07-basic-dt.html#final-tree",
+    "title": "Chapter 8 Part 1",
+    "section": "Final tree",
+    "text": "Final tree\n\n\nHow many terminal nodes does this tree have?"
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#calculate-rmse-on-the-test-data",
+    "href": "slides/07-basic-dt.html#calculate-rmse-on-the-test-data",
+    "title": "Chapter 8 Part 1",
+    "section": "Calculate RMSE on the test data",
+    "text": "Calculate RMSE on the test data\n\nbaseball_test &lt;- testing(baseball_split)\nfinal_model |&gt;\n  predict(new_data = baseball_test) |&gt;\n  bind_cols(baseball_test) |&gt;\n  metrics(truth = Salary, estimate = .pred)\n\n# A tibble: 3 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rmse    standard     380.   \n2 rsq     standard       0.291\n3 mae     standard     248."
+  },
+  {
+    "objectID": "slides/07-basic-dt.html#application-exercise",
+    "href": "slides/07-basic-dt.html#application-exercise",
+    "title": "Chapter 8 Part 1",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nUsing the College data from the ISLR package, predict the number of applications received from a subset of the variables of your choice using a decision tree. (Not sure about the variables? Run ?College in the console after loading the ISLR package)\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html",
+    "href": "slides/07-basic-dt_o.html",
+    "title": "Chapter 8 Part 1",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidymodels)\nlibrary(ISLR2)\nlibrary(rpart.plot)\n#install.packages('rpart.plot')"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#setup",
+    "href": "slides/07-basic-dt_o.html#setup",
+    "title": "Chapter 8 Part 1",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidymodels)\nlibrary(ISLR2)\nlibrary(rpart.plot)\n#install.packages('rpart.plot')"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-trees",
+    "href": "slides/07-basic-dt_o.html#decision-trees",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision trees",
+    "text": "Decision trees\n\nCan be applied to regression problems\nCan be applied to classification problems\n\n. . .\n\nWhat is the difference?"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example",
+    "href": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example\n\n\n\n\n\n\n\n\n\n\nHow would you stratify this?"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-1",
+    "href": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-1",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#lets-walk-through-the-figure",
+    "href": "slides/07-basic-dt_o.html#lets-walk-through-the-figure",
+    "title": "Chapter 8 Part 1",
+    "section": "Let’s walk through the figure",
+    "text": "Let’s walk through the figure\n\nThis is using the Hitters data from the ISLR 📦\nI fit a regression tree predicting the salary of a baseball player from:\n\nNumber of years they played in the major leagues\nNumber of hits they made in the previous year\n\nAt each node the label (e.g., \\(X_j &lt; t_k\\) ) indicates that the left branch that comes from that split. The right branch is the opposite, e.g. \\(X_j \\geq t_k\\)."
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#lets-walk-through-the-figure-1",
+    "href": "slides/07-basic-dt_o.html#lets-walk-through-the-figure-1",
+    "title": "Chapter 8 Part 1",
+    "section": "Let’s walk through the figure",
+    "text": "Let’s walk through the figure\n\nFor example, the first internal node indicates that those to the left have less than 4.5 years in the major league, on the right have \\(\\geq\\) 4.5 years.\nThe number on the top of the nodes indicates the predicted Salary, for example before doing any splitting, the average Salary for the whole dataset is 536 thousand dollars.\nThis tree has two internal nodes and three termninal nodes"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-2",
+    "href": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-2",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-3",
+    "href": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-3",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-4",
+    "href": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-4",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-5",
+    "href": "slides/07-basic-dt_o.html#decision-tree---baseball-salary-example-5",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree - Baseball Salary Example",
+    "text": "Decision tree - Baseball Salary Example"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#terminology",
+    "href": "slides/07-basic-dt_o.html#terminology",
+    "title": "Chapter 8 Part 1",
+    "section": "Terminology",
+    "text": "Terminology\n\n🎄 The final regions, \\(R_1, R_2, R_3\\) are called terminal nodes\n🌴 You can think of the trees as upside down, the leaves are at the bottom\n🎄 The splits are called internal nodes"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#interpretation-of-results",
+    "href": "slides/07-basic-dt_o.html#interpretation-of-results",
+    "title": "Chapter 8 Part 1",
+    "section": "Interpretation of results",
+    "text": "Interpretation of results\n\nYears is the most important factor in determining Salary; players with less experience earn lower salaries\nGiven that a player is less experienced, the number of Hits seems to play little role in the Salary\nAmong players who have been in the major leagues for 4.5 years or more, the number of Hits made in the previous year does affect Salary, players with more Hits tend to have higher salaries\nThis is probably an oversimplification, but see how easy it is to interpret!"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#interpreting-decision-trees",
+    "href": "slides/07-basic-dt_o.html#interpreting-decision-trees",
+    "title": "Chapter 8 Part 1",
+    "section": " Interpreting decision trees",
+    "text": "Interpreting decision trees\n\nQuestionsGraph\n\n\n\n\nHow many internal nodes does this plot have? How many terminal nodes?\nWhat is the average Salary for players who have more than 6.5 years in the major leagues but less than 118 Hits? What % of the dataset fall in this category?"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#the-tree-building-process",
+    "href": "slides/07-basic-dt_o.html#the-tree-building-process",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nDivide the predictor space (the set of possible values for \\(X_1, X_2, \\dots, X_p\\) ) into \\(J\\) distinct non-overlapping regions, \\(R_1, R_2, \\dots R_j\\)\nFor every observation that falls into the region \\(R_j\\), we make the same prediction, the mean response value for the training observations in \\(R_j\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#the-tree-building-process-1",
+    "href": "slides/07-basic-dt_o.html#the-tree-building-process-1",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nThe regions could have any shape, but we choose to divide the predictor space into high-dimensional boxes for simplicity and ease of interpretation\nThe goal is to find boxes, \\(R_1, \\dots, R_j\\) that minimize the RSS, given by\n\\(\\sum_{j=1}^J\\sum_{i\\in R_j}(y_i-\\hat{y}_{R_j})^2\\) where \\(\\hat{y}_{R_j}\\) is the mean response for the training observations within the \\(j\\)th box."
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#the-tree-building-process-2",
+    "href": "slides/07-basic-dt_o.html#the-tree-building-process-2",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nIt is often computationally infeasible to consider every possible partition of the feature space into \\(J\\) boxes\nTherefore, we take a top-down, greedy approach known as recursive binary splitting\nThis is top-down because it begins at the top of the tree and then splits the predictor space successively into two branches at a time\nIt is greedy because at each step the best split is made at that step (instead of looking forward and picking a split that may result in a better tree in a future step)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#the-tree-building-process-3",
+    "href": "slides/07-basic-dt_o.html#the-tree-building-process-3",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nFirst select the predictor \\(X_j\\) and the cutpoint \\(s\\) such that splitting the predictor space into \\(\\{X|X_j &lt; s\\}\\) and \\(\\{X|X_k\\geq s\\}\\) leads to the greatest possible reduction in RSS\nWe repeat this process, looking for the best predictor and cutpoint to split the data within each of the resulting regions\nNow instead of splitting the entire predictor space, we split one of the two previously identified regions, now we have three regions"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#the-tree-building-process-4",
+    "href": "slides/07-basic-dt_o.html#the-tree-building-process-4",
+    "title": "Chapter 8 Part 1",
+    "section": "The tree building process",
+    "text": "The tree building process\n\nThen we look to split one of these three regions to minimize the RSS\nThis process continues until some stopping criteria are met. 🛑 e.g., we could stop when we have created a fixed number of regions, or we could keep going until no region contains more than 5 observations, etc."
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#draw-a-partition",
+    "href": "slides/07-basic-dt_o.html#draw-a-partition",
+    "title": "Chapter 8 Part 1",
+    "section": " Draw a partition",
+    "text": "Draw a partition\nDraw an example of a partition of a two-dimensional feature space that could result from recursive binary splitting with six regions. Label your figure with the regions, \\(R_1, \\dots, R_6\\) as well as the cutpoints \\(t_1, t_2, \\dots\\). Draw a decision tree corresponding to this partition."
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#decision-tree-predictions",
+    "href": "slides/07-basic-dt_o.html#decision-tree-predictions",
+    "title": "Chapter 8 Part 1",
+    "section": "Decision tree predictions",
+    "text": "Decision tree predictions\n\nPredict the response for a test observation using the mean of the training observations in the region that the test observation belongs to\n\n. . .\n\nWhat could potentially go wrong with what we have described so far?\n\n\nThe process may produce good predictions on the training set but is likely to overfit!"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#pruning-a-tree",
+    "href": "slides/07-basic-dt_o.html#pruning-a-tree",
+    "title": "Chapter 8 Part 1",
+    "section": "Pruning a tree",
+    "text": "Pruning a tree\nDo you love the tree puns? I DO!\n\nA smaller tree (with fewer splits, that is fewer regions \\(R_1,\\dots, R_j\\) ) may lead to lower variance and better interpretation at the cost of a little bias\nA good strategy is to grow a very large tree, \\(T_0\\), and then prune it back to obtain a subtree\nFor this, we use cost complexity pruning (also known as weakest link 🔗 pruning)\nConsider a sequence of trees indexed by a nonnegative tuning parameter, \\(\\alpha\\). For each \\(\\alpha\\) there is a subtree \\(T \\subset T_0\\) such that \\(\\sum_{m=1}^{|T|}\\sum_{i:x_i\\in R_m}(y_i-\\hat{y}_{R_m})^2+\\alpha|T|\\) is as small as possible."
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#pruning",
+    "href": "slides/07-basic-dt_o.html#pruning",
+    "title": "Chapter 8 Part 1",
+    "section": "Pruning",
+    "text": "Pruning\n\\[\\sum_{m=1}^{|T|}\\sum_{i:x_i\\in R_m}(y_i-\\hat{y}_{R_m})^2+\\alpha|T|\\]\n\n\\(|T|\\) indicates the number of terminal nodes of the tree \\(T\\)\n\\(R_m\\) is the box (the subset of the predictor space) corresponding to the \\(m\\)th terminal node\n\\(\\hat{y}_{R_m}\\) is the mean of the training observations in \\(R_m\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#choosing-the-best-subtree",
+    "href": "slides/07-basic-dt_o.html#choosing-the-best-subtree",
+    "title": "Chapter 8 Part 1",
+    "section": "Choosing the best subtree",
+    "text": "Choosing the best subtree\nThe tuning parameter, \\(\\alpha\\), controls the trade-off between the subtree’s complexity and its fit to the training data\n\nHow do you think you could select \\(\\alpha\\)?\n\n\nYou can select an optimal value, \\(\\hat{\\alpha}\\) using cross-validation!\nThen return to the full dataset and obtain the subtree using \\(\\hat{\\alpha}\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#summary-regression-tree-algorithm",
+    "href": "slides/07-basic-dt_o.html#summary-regression-tree-algorithm",
+    "title": "Chapter 8 Part 1",
+    "section": "Summary regression tree algorithm",
+    "text": "Summary regression tree algorithm\n\nUse recursive binary splitting to grow a large tree on the training data, stop when you reach some stopping criteria\nApply cost complexity pruning to the larger tree to obtain a sequence of best subtrees, as a function of \\(\\alpha\\)\nUse K-fold cross-validation to choose \\(\\alpha\\). Pick \\(\\alpha\\) to minimize the average error\nReturn the subtree that corresponds to the chosen \\(\\alpha\\)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#randomly-divide-the-data-in-half-132-training-observations-131-testing",
+    "href": "slides/07-basic-dt_o.html#randomly-divide-the-data-in-half-132-training-observations-131-testing",
+    "title": "Chapter 8 Part 1",
+    "section": "1. Randomly divide the data in half, 132 training observations, 131 testing",
+    "text": "1. Randomly divide the data in half, 132 training observations, 131 testing\n\nset.seed(77)\nbaseball_split &lt;- initial_split(baseball, prop = 0.5)\nbaseball_train &lt;- training(baseball_split)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#create-cross-validation-object-for-6-fold-cross-validation",
+    "href": "slides/07-basic-dt_o.html#create-cross-validation-object-for-6-fold-cross-validation",
+    "title": "Chapter 8 Part 1",
+    "section": "2. Create cross-validation object for 6-fold cross validation",
+    "text": "2. Create cross-validation object for 6-fold cross validation\n\nbaseball_cv &lt;- vfold_cv(baseball_train, v = 6)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#create-a-model-specification-that-tunes-based-on-complexity-alpha-and-add-to-workflow",
+    "href": "slides/07-basic-dt_o.html#create-a-model-specification-that-tunes-based-on-complexity-alpha-and-add-to-workflow",
+    "title": "Chapter 8 Part 1",
+    "section": "3. Create a model specification that tunes based on complexity, \\(\\alpha\\) and add to workflow",
+    "text": "3. Create a model specification that tunes based on complexity, \\(\\alpha\\) and add to workflow\n\ntree_spec &lt;- decision_tree(\n  cost_complexity = tune(), \n  tree_depth = 10,\n  mode = \"regression\") |&gt;\n  set_engine(\"rpart\")\n\nwf &lt;- workflow() |&gt;\n  add_recipe(\n    recipe(Salary ~ Hits + Years + PutOuts + RBI + Walks + Runs, data = baseball)\n    ) |&gt;\n  add_model(tree_spec)\n\n\nWhat is my tree depth for my “large” tree?"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#fit-the-model-on-the-cross-validation-set",
+    "href": "slides/07-basic-dt_o.html#fit-the-model-on-the-cross-validation-set",
+    "title": "Chapter 8 Part 1",
+    "section": "4. Fit the model on the cross validation set",
+    "text": "4. Fit the model on the cross validation set\n\ngrid &lt;- expand_grid(cost_complexity = seq(0.01, 0.05, by = 0.01))\nmodel &lt;- tune_grid(wf,\n                   grid = grid,\n                   resamples = baseball_cv)\n\n\nWhat \\(\\alpha\\)s am I trying?"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#choose-alpha-that-minimizes-the-rmse",
+    "href": "slides/07-basic-dt_o.html#choose-alpha-that-minimizes-the-rmse",
+    "title": "Chapter 8 Part 1",
+    "section": "5. Choose \\(\\alpha\\) that minimizes the RMSE",
+    "text": "5. Choose \\(\\alpha\\) that minimizes the RMSE\n\nmodel |&gt;\n  show_best(metric = \"rmse\")\n\n# A tibble: 5 × 7\n  cost_complexity .metric .estimator  mean     n std_err .config             \n            &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1            0.01 rmse    standard    422.     6    33.6 Preprocessor1_Model1\n2            0.02 rmse    standard    423.     6    32.0 Preprocessor1_Model2\n3            0.03 rmse    standard    425.     6    31.9 Preprocessor1_Model3\n4            0.04 rmse    standard    429.     6    32.5 Preprocessor1_Model4\n5            0.05 rmse    standard    441.     6    25.3 Preprocessor1_Model5"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#choose-alpha-that-minimizes-the-rmse-1",
+    "href": "slides/07-basic-dt_o.html#choose-alpha-that-minimizes-the-rmse-1",
+    "title": "Chapter 8 Part 1",
+    "section": "5. Choose \\(\\alpha\\) that minimizes the RMSE",
+    "text": "5. Choose \\(\\alpha\\) that minimizes the RMSE\n\nmodel |&gt;\n  show_best()\n\n\nmodel |&gt;\n  select_best(metric = \"rmse\") #&lt;&lt;\n\n# A tibble: 1 × 2\n  cost_complexity .config             \n            &lt;dbl&gt; &lt;chr&gt;               \n1            0.01 Preprocessor1_Model1"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#choose-alpha-that-minimizes-the-rmse-2",
+    "href": "slides/07-basic-dt_o.html#choose-alpha-that-minimizes-the-rmse-2",
+    "title": "Chapter 8 Part 1",
+    "section": "5. Choose \\(\\alpha\\) that minimizes the RMSE",
+    "text": "5. Choose \\(\\alpha\\) that minimizes the RMSE\n\nmodel |&gt;\n  show_best(metric = \"rmse\")\n\n\nfinal_complexity &lt;- select_best(model, metric = \"rmse\")"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#fit-the-final-model",
+    "href": "slides/07-basic-dt_o.html#fit-the-final-model",
+    "title": "Chapter 8 Part 1",
+    "section": "6. Fit the final model",
+    "text": "6. Fit the final model\n\nwf_final &lt;- wf |&gt;\n  finalize_workflow(final_complexity)\n\nfinal_model &lt;- fit(wf_final,\n                   data = baseball_train)"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#final-tree",
+    "href": "slides/07-basic-dt_o.html#final-tree",
+    "title": "Chapter 8 Part 1",
+    "section": "Final tree",
+    "text": "Final tree\n\n\n\n\n\n\n\n\n\n\nHow many terminal nodes does this tree have?"
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#calculate-rmse-on-the-test-data",
+    "href": "slides/07-basic-dt_o.html#calculate-rmse-on-the-test-data",
+    "title": "Chapter 8 Part 1",
+    "section": "Calculate RMSE on the test data",
+    "text": "Calculate RMSE on the test data\n\nbaseball_test &lt;- testing(baseball_split)\nfinal_model |&gt;\n  predict(new_data = baseball_test) |&gt;\n  bind_cols(baseball_test) |&gt;\n  metrics(truth = Salary, estimate = .pred)\n\n# A tibble: 3 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rmse    standard     380.   \n2 rsq     standard       0.291\n3 mae     standard     248."
+  },
+  {
+    "objectID": "slides/07-basic-dt_o.html#application-exercise",
+    "href": "slides/07-basic-dt_o.html#application-exercise",
+    "title": "Chapter 8 Part 1",
+    "section": " Application Exercise",
+    "text": "Application Exercise\nUsing the College data from the ISLR package, predict the number of applications received from a subset of the variables of your choice using a decision tree. (Not sure about the variables? Run ?College in the console after loading the ISLR package)"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html",
+    "href": "slides/03-linear_regression_o.html",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "",
+    "text": "Create a new quarto file for this homework in your exercises R project."
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#application-exercise",
+    "href": "slides/03-linear_regression_o.html#application-exercise",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "",
+    "text": "Create a new quarto file for this homework in your exercises R project."
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#lets-look-at-an-example",
+    "href": "slides/03-linear_regression_o.html#lets-look-at-an-example",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s look at an example",
+    "text": "Let’s look at an example\nLet’s look at a sample of 116 sparrows from Kent Island. We are interested in the relationship between Weight and Wing Length\n\n\n\n\n\n\n\n\n\n\nthe standard error of \\(\\hat{\\beta_1}\\) ( \\(SE_{\\hat{\\beta}_1}\\) ) is how much we expect the sample slope to vary from one random sample to another."
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows",
+    "href": "slides/03-linear_regression_o.html#sparrows",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow can we quantify how much we’d expect the slope to differ from one random sample to another?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-1",
+    "href": "slides/03-linear_regression_o.html#sparrows-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow do we interpret this?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n“the sample slope is more than 13 standard errors above a slope of zero”"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-2",
+    "href": "slides/03-linear_regression_o.html#sparrows-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow do we know what values of this statistic are worth paying attention to?\n\n. . .\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\nconfidence intervals\np-values"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#application-exercise-1",
+    "href": "slides/03-linear_regression_o.html#application-exercise-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp).\nPull out the coefficients and confidence intervals using the tidy() function demonstrated. How do you interpret these?"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-3",
+    "href": "slides/03-linear_regression_o.html#sparrows-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow are these statistics distributed under the null hypothesis?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy() \n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-4",
+    "href": "slides/03-linear_regression_o.html#sparrows-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\n\n\n\n\n\n\n\n\nI’ve generated some data under a null hypothesis where \\(n = 20\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-5",
+    "href": "slides/03-linear_regression_o.html#sparrows-5",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\n\n\n\n\n\n\n\n\nthis is a t-distribution with n-p-1 degrees of freedom."
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-6",
+    "href": "slides/03-linear_regression_o.html#sparrows-6",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\nThe distribution of test statistics we would expect given the null hypothesis is true, \\(\\beta_1 = 0\\), is t-distribution with n-2 degrees of freedom."
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-7",
+    "href": "slides/03-linear_regression_o.html#sparrows-7",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-8",
+    "href": "slides/03-linear_regression_o.html#sparrows-8",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nHow can we compare this line to the distribution under the null?\n\n\n\n\n\n\n\n\n\n\n\np-value"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-9",
+    "href": "slides/03-linear_regression_o.html#sparrows-9",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\n\n\n\n\n\n\n\n\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#return-to-generated-data-n-20",
+    "href": "slides/03-linear_regression_o.html#return-to-generated-data-n-20",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Return to generated data, n = 20",
+    "text": "Return to generated data, n = 20\n\n\n\n\n\n\n\n\n\n\nLet’s say we get a statistic of 1.5 in a sample"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#lets-do-it-in-r",
+    "href": "slides/03-linear_regression_o.html#lets-do-it-in-r",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area less than 1.5\n\n\n\n\n\n\n\n\n\n\npt(1.5, df = 18)\n\n[1] 0.9245248"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#lets-do-it-in-r-1",
+    "href": "slides/03-linear_regression_o.html#lets-do-it-in-r-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5\n\n\n\n\n\n\n\n\n\n\npt(1.5, df = 18, lower.tail = FALSE)\n\n[1] 0.07547523"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#lets-do-it-in-r-2",
+    "href": "slides/03-linear_regression_o.html#lets-do-it-in-r-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\nThe proportion of area greater than 1.5 or less than -1.5.\n\n\n\n\n\n\n\n\n\n. . .\n\npt(1.5, df = 18, lower.tail = FALSE) * 2\n\n[1] 0.1509505"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#hypothesis-test",
+    "href": "slides/03-linear_regression_o.html#hypothesis-test",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Hypothesis test",
+    "text": "Hypothesis test\n\nnull hypothesis \\(H_0: \\beta_1 = 0\\)\nalternative hypothesis \\(H_A: \\beta_1 \\ne 0\\)\np-value: 0.15\nOften, we have an \\(\\alpha\\)-level cutoff to compare this to, for example 0.05. Since this is greater than 0.05, we fail to reject the null hypothesis"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#application-exercise-2",
+    "href": "slides/03-linear_regression_o.html#application-exercise-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nUsing the linear model you fit previously (mpg from wt and hp) - calculate the p-value for the coefficient for weight\nInterpret this value. What is the null hypothesis? What is the alternative hypothesis? Do you reject the null?"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#lets-do-it-in-r-3",
+    "href": "slides/03-linear_regression_o.html#lets-do-it-in-r-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy(conf.int = TRUE)\n\n# A tibble: 2 × 7\n  term        estimate std.error statistic  p.value conf.low conf.high\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1   -0.531     3.26 \n2 WingLength     0.467    0.0347     13.5  2.62e-25    0.399     0.536\n\n\n\n\\(t^* = t_{n-p-1} = t_{114} = 1.98\\)\n\\(LB = 0.47 - 1.98\\times 0.0347 = 0.399\\)\n\\(UB = 0.47+1.98 \\times 0.0347 = 0.536\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#linear-regression-questions",
+    "href": "slides/03-linear_regression_o.html#linear-regression-questions",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Questions",
+    "text": "Linear Regression Questions\n\n✔️ Is there a relationship between a response variable and predictors?\n✔️ How strong is the relationship?\n✔️ What is the uncertainty?\nHow accurately can we predict a future outcome?"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#sparrows-10",
+    "href": "slides/03-linear_regression_o.html#sparrows-10",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Sparrows",
+    "text": "Sparrows\n\nUsing the information here, how could I predict a new sparrow’s weight if I knew the wing length was 30?\n\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows) |&gt;\n  tidy()\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    1.37     0.957       1.43 1.56e- 1\n2 WingLength     0.467    0.0347     13.5  2.62e-25\n\n\n\n\\(1.37 + 0.467 \\times 30 = 15.38\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#linear-regression-accuracy",
+    "href": "slides/03-linear_regression_o.html#linear-regression-accuracy",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\nWhat is the residual sum of squares again?\n\n\nNote: In previous classes, this may have been referred to as SSE (sum of squares error), the book uses RSS, so we will stick with that!\n\n. . .\n\\[RSS = \\sum(y_i - \\hat{y}_i)^2\\]"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#linear-regression-accuracy-1",
+    "href": "slides/03-linear_regression_o.html#linear-regression-accuracy-1",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\n\nThe total sum of squares represents the variability of the outcome, it is equivalent to the variability described by the model plus the remaining residual sum of squares\n\n\\[TSS = \\sum(y_i - \\bar{y})^2\\]"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#linear-regression-accuracy-2",
+    "href": "slides/03-linear_regression_o.html#linear-regression-accuracy-2",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Linear Regression Accuracy",
+    "text": "Linear Regression Accuracy\n\nThere are many ways “model fit” can be assessed. Two common ones are:\n\nResidual Standard Error (RSE)\n\\(R^2\\) - the fraction of the variance explained\n\n\\(RSE = \\sqrt{\\frac{1}{n-p-1}RSS}\\)\n\\(R^2 = 1 - \\frac{RSS}{TSS}\\)"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#lets-do-it-in-r-4",
+    "href": "slides/03-linear_regression_o.html#lets-do-it-in-r-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Let’s do it in R!",
+    "text": "Let’s do it in R!\n\nlm_fit &lt;- linear_reg() |&gt; \n  set_engine(\"lm\") |&gt;\n  fit(Weight ~ WingLength, data = Sparrows)\n\nlm_fit |&gt;\n  predict(new_data = Sparrows) |&gt;\n  bind_cols(Sparrows) |&gt;\n  rsq(truth = Weight, estimate = .pred) \n\n# A tibble: 1 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rsq     standard       0.614\n\n\n. . .\n\nIs this testing \\(R^2\\) or training \\(R^2\\)?"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#application-exercise-3",
+    "href": "slides/03-linear_regression_o.html#application-exercise-3",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nFit a linear model using the mtcars data frame predicting miles per gallon (mpg) from weight and horsepower (wt and hp), using polynomials with 4 degrees of freedom for both.\nEstimate the training \\(R^2\\) using the rsq function.\nInterpret this values."
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#application-exercise-4",
+    "href": "slides/03-linear_regression_o.html#application-exercise-4",
+    "title": "Chapter 3 - Linear Regression",
+    "section": " Application Exercise",
+    "text": "Application Exercise\n\n\nCreate a cross validation object to do 5 fold cross validation using the mtcars data\nRefit the model on this object (using fit_resamples)\nUse collect_metrics to estimate the test \\(R^2\\) - how does this compare to the training \\(R^2\\) calculated in the previous exercise?"
+  },
+  {
+    "objectID": "slides/03-linear_regression_o.html#additional-linear-regression-topics",
+    "href": "slides/03-linear_regression_o.html#additional-linear-regression-topics",
+    "title": "Chapter 3 - Linear Regression",
+    "section": "Additional Linear Regression Topics",
+    "text": "Additional Linear Regression Topics\n\nPolynomial terms\nInteractions\nOutliers\nNon-constant variance of error terms\nHigh leverage points\nCollinearity\n\nRefer to Chapter 3 for more details on these topics if you need a refresher."
   }
 ]
