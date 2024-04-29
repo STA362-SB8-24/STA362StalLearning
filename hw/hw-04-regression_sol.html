@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -249,8 +283,9 @@ window.Quarto = {
    
   <ul>
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">1.</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">8.</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">9.</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><strong>8.</strong></a></li>
+  <li><a href="#best-subsets" id="toc-best-subsets" class="nav-link" data-scroll-target="#best-subsets">Best Subsets</a></li>
+  <li><a href="#lasso" id="toc-lasso" class="nav-link" data-scroll-target="#lasso">Lasso</a></li>
   </ul>
 </nav>
     </div>
@@ -278,51 +313,761 @@ window.Quarto = {
 
 <section id="section" class="level3">
 <h3 class="anchored" data-anchor-id="section">1.</h3>
-<p>We perform best subset, forward stepwise, and backward stepwise selection on a single data set. For each approach, we obtain p + 1 models, containing <span class="math inline">\(0, 1, 2, . . . ,p\)</span> predictors.</p>
-<p>Explain your answers:</p>
-<ol type="a">
-<li><p>Which of the three models with k predictors has the smallest training RSS?</p></li>
-<li><p>Which of the three models with k predictors has the smallest test RSS?</p></li>
-<li><p>True or False:</p></li>
+<p><strong>We perform best subset, forward stepwise, and backward stepwise selection on a single data set. For each approach, we obtain p + 1 models, containing</strong> <span class="math inline">\(0, 1, 2, . . . ,p\)</span> <strong>predictors.</strong></p>
+<p><strong>Explain your answers:</strong></p>
+<p><strong>(a) Which of the three models with k predictors has the smallest training RSS?</strong></p>
+<p>Best subsets since it considers every possible combination. It is possible both forward and backward stepwise pick the same k predictor model and have the same training RSS.</p>
+<ol start="2" type="a">
+<li><strong>Which of the three models with k predictors has the smallest test RSS?</strong></li>
+</ol>
+<p>You cannot determine this to be sure. It depends if the best subset choice on the training set overfit. If it did, one of the other approach models could perform better.</p>
+<ol start="3" type="a">
+<li><strong>True or False:</strong></li>
 </ol>
 <ol type="i">
-<li><p>The predictors in the k-variable model identified by forward stepwise are a subset of the predictors in the (k+1)-variable model identified by forward stepwise selection.</p></li>
-<li><p>The predictors in the k-variable model identified by backward stepwise are a subset of the predictors in the (k + 1)- variable model identified by backward stepwise selection.</p></li>
-<li><p>The predictors in the k-variable model identified by backward stepwise are a subset of the predictors in the (k + 1)- variable model identified by forward stepwise selection.</p></li>
-<li><p>The predictors in the k-variable model identified by forward stepwise are a subset of the predictors in the (k+1)-variable model identified by backward stepwise selection.</p></li>
-<li><p>The predictors in the k-variable model identified by best subset are a subset of the predictors in the (k + 1)-variable model identified by best subset selection.</p></li>
+<li><strong>The predictors in the k-variable model identified by forward stepwise are a subset of the predictors in the (k+1)-variable model identified by forward stepwise selection.</strong></li>
 </ol>
+<p>True, FSR keeps all k predictors from the previous step and adds an additional variable.</p>
+<ol start="2" type="i">
+<li><strong>The predictors in the k-variable model identified by backward stepwise are a subset of the predictors in the (k + 1)- variable model identified by backward stepwise selection.</strong></li>
+</ol>
+<p>True, BSR drops 1 variable form a k+1 predictor model and goes down to a k variable model. The k variables must be in the k+1 variable model.</p>
+<ol start="3" type="i">
+<li><strong>The predictors in the k-variable model identified by backward stepwise are a subset of the predictors in the (k + 1)- variable model identified by forward stepwise selection.</strong></li>
+</ol>
+<p>False, not always true.</p>
+<ol start="4" type="i">
+<li><strong>The predictors in the k-variable model identified by forward stepwise are a subset of the predictors in the (k+1)-variable model identified by backward stepwise selection.</strong></li>
+</ol>
+<p>False, not always true.</p>
+<ol start="22" type="a">
+<li><strong>The predictors in the k-variable model identified by best subset are a subset of the predictors in the (k + 1)-variable model identified by best subset selection.</strong></li>
+</ol>
+<p>False, not always true.</p>
 </section>
 <section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1">8.</h3>
-<p>In this exercise, we will generate simulated data, and will then use this data to perform best subset selection.</p>
+<h3 class="anchored" data-anchor-id="section-1"><strong>8.</strong></h3>
+<p><strong>In this exercise, we will generate simulated data, and will then use this data to perform best subset selection.</strong></p>
 <ol type="a">
-<li><p>Use the rnorm() function to generate a predictor X of length n = 100, as well as a noise vector ϵ of length n = 100.</p></li>
-<li><p>Generate a response vector <span class="math inline">\(Y\)</span> of length <span class="math inline">\(n=100\)</span> according to the model</p></li>
+<li><strong>Use the rnorm() function to generate a predictor X of length n = 100, as well as a noise vector <span class="math inline">\(\epsilon\)</span> of length n = 100.</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">10</span>, <span class="at">sd =</span> <span class="dv">10</span>) </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ep <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>,<span class="at">sd =</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="a">
+<li><strong>Generate a response vector</strong> <span class="math inline">\(Y\)</span> <strong>of length</strong> <span class="math inline">\(n=100\)</span> <strong>according to the model</strong></li>
 </ol>
 <p><span class="math display">\[Y=\beta_0 + \beta_1X+\beta_2X^2+\beta_3X^3+\epsilon,\]</span></p>
-<p>where <span class="math inline">\(\beta_0,\beta_1,\)</span> and <span class="math inline">\(\beta_3\)</span> are constants of your choice.</p>
+<p><strong>where</strong> <span class="math inline">\(\beta_0,\beta_1,\)</span> <strong>and</strong> <span class="math inline">\(\beta_3\)</span> <strong>are constants of your choice.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Y <span class="ot">=</span> <span class="dv">5</span> <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span>X <span class="sc">+</span> <span class="dv">10</span><span class="sc">*</span>X<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span>X<span class="sc">^</span><span class="dv">3</span> <span class="sc">+</span> ep</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ol start="3" type="a">
-<li><p>Use the regsubsets() function to perform best subset selection in order to choose the best model containing the predictors X,X2, . . . ,X10. What is the best model obtained according to Cp, BIC, and adjusted R2? Show some plots to provide evidence for your answer, and report the coefficients of the best model obtained. Note you will need to use the data.frame() function to create a single data set containing both X and Y .</p></li>
-<li><p>Repeat (c), using forward stepwise selection and also using backwards stepwise selection. How does your answer compare to the results in (c)?</p></li>
-<li><p>Now fit a lasso model to the simulated data, again using X,X2, . . . ,X10 as predictors. Use cross-validation to select the optimal value of λ. Create plots of the cross-validation error as a function of λ. Report the resulting coefficient estimates, and discuss the results obtained.</p></li>
-<li><p>Now generate a response vector Y according to the model</p></li>
+<li><strong>Use the regsubsets() function to perform best subset selection in order to choose the best model containing the predictors <span class="math inline">\(X\)</span>,<span class="math inline">\(X^2\)</span>, . . . ,<span class="math inline">\(X^{10}\)</span>. What is the best model obtained according to <span class="math inline">\(C_p\)</span>, BIC, and adjusted <span class="math inline">\(R^2\)</span>? Show some plots to provide evidence for your answer, and report the coefficients of the best model obtained. Note you will need to use the data.frame() function to create a single data set containing both X and Y .</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>simdata <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">ysim =</span> Y,<span class="at">xsim =</span> X)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(simdata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        ysim      xsim
+1 1845.03133  8.368388
+2   34.56759 -3.272097
+3   14.39104  1.845040
+4 5054.90702 12.113334
+5  457.36512  4.704802
+6   42.17828  1.571858</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>create_metrics_table <span class="ot">&lt;-</span> <span class="cf">function</span>(X){</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  K <span class="ot">&lt;-</span> <span class="fu">length</span>(X<span class="sc">$</span>rsq)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  metrics_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">num_pred=</span> <span class="dv">1</span><span class="sc">:</span>K, <span class="co"># K different models</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">Rsq =</span> X<span class="sc">$</span>rsq,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                           <span class="at">rss =</span> X<span class="sc">$</span>rss,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                           <span class="at">adjr2 =</span> X<span class="sc">$</span>adjr2,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                           <span class="at">cp =</span> X<span class="sc">$</span>cp,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>                           <span class="at">bic =</span> X<span class="sc">$</span>bic) <span class="sc">|&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    tidyr<span class="sc">::</span><span class="fu">pivot_longer</span>(<span class="at">cols=</span>Rsq<span class="sc">:</span>bic,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>                 <span class="at">names_to =</span> <span class="st">"metric"</span>,<span class="at">values_to =</span> <span class="st">"metric_val"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># This pivot puts the metric values in 1 column </span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># and creates another column for the name of </span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># the metric</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(metrics_df)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'leaps' was built under R version 4.3.2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>bss_fit <span class="ot">&lt;-</span> <span class="fu">regsubsets</span>(ysim<span class="sc">~</span><span class="fu">poly</span>(xsim,<span class="dv">10</span>),<span class="at">data =</span> simdata)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>bss_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ poly(xsim, 10), data = simdata)
+10 Variables  (and intercept)
+                 Forced in Forced out
+poly(xsim, 10)1      FALSE      FALSE
+poly(xsim, 10)2      FALSE      FALSE
+poly(xsim, 10)3      FALSE      FALSE
+poly(xsim, 10)4      FALSE      FALSE
+poly(xsim, 10)5      FALSE      FALSE
+poly(xsim, 10)6      FALSE      FALSE
+poly(xsim, 10)7      FALSE      FALSE
+poly(xsim, 10)8      FALSE      FALSE
+poly(xsim, 10)9      FALSE      FALSE
+poly(xsim, 10)10     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: exhaustive</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>bss_summary <span class="ot">&lt;-</span> <span class="fu">summary</span>(bss_fit)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>bss_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ poly(xsim, 10), data = simdata)
+10 Variables  (and intercept)
+                 Forced in Forced out
+poly(xsim, 10)1      FALSE      FALSE
+poly(xsim, 10)2      FALSE      FALSE
+poly(xsim, 10)3      FALSE      FALSE
+poly(xsim, 10)4      FALSE      FALSE
+poly(xsim, 10)5      FALSE      FALSE
+poly(xsim, 10)6      FALSE      FALSE
+poly(xsim, 10)7      FALSE      FALSE
+poly(xsim, 10)8      FALSE      FALSE
+poly(xsim, 10)9      FALSE      FALSE
+poly(xsim, 10)10     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: exhaustive
+         poly(xsim, 10)1 poly(xsim, 10)2 poly(xsim, 10)3 poly(xsim, 10)4
+1  ( 1 ) "*"             " "             " "             " "            
+2  ( 1 ) "*"             "*"             " "             " "            
+3  ( 1 ) "*"             "*"             "*"             " "            
+4  ( 1 ) "*"             "*"             "*"             "*"            
+5  ( 1 ) "*"             "*"             "*"             "*"            
+6  ( 1 ) "*"             "*"             "*"             "*"            
+7  ( 1 ) "*"             "*"             "*"             "*"            
+8  ( 1 ) "*"             "*"             "*"             "*"            
+         poly(xsim, 10)5 poly(xsim, 10)6 poly(xsim, 10)7 poly(xsim, 10)8
+1  ( 1 ) " "             " "             " "             " "            
+2  ( 1 ) " "             " "             " "             " "            
+3  ( 1 ) " "             " "             " "             " "            
+4  ( 1 ) " "             " "             " "             " "            
+5  ( 1 ) "*"             " "             " "             " "            
+6  ( 1 ) "*"             " "             "*"             " "            
+7  ( 1 ) "*"             "*"             "*"             " "            
+8  ( 1 ) "*"             "*"             "*"             "*"            
+         poly(xsim, 10)9 poly(xsim, 10)10
+1  ( 1 ) " "             " "             
+2  ( 1 ) " "             " "             
+3  ( 1 ) " "             " "             
+4  ( 1 ) " "             " "             
+5  ( 1 ) " "             " "             
+6  ( 1 ) " "             " "             
+7  ( 1 ) " "             " "             
+8  ( 1 ) " "             " "             </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.3.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>bss_full_data_metrics <span class="ot">&lt;-</span> <span class="fu">create_metrics_table</span>(bss_summary)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bss_full_data_metrics)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  num_pred metric metric_val
+     &lt;int&gt; &lt;chr&gt;       &lt;dbl&gt;
+1        1 Rsq       6.57e-1
+2        1 rss       5.51e+9
+3        1 adjr2     6.53e-1
+4        1 cp        4.95e+6
+5        1 bic      -9.77e+1
+6        2 Rsq       9.45e-1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>bss_full_data_metrics <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y=</span>metric_val,<span class="at">x=</span>num_pred))<span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>metric,<span class="at">scales =</span> <span class="st">"free_y"</span>)<span class="sc">+</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Best Subset Regression"</span>,</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">subtitle =</span> <span class="st">"On Full Data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw-04-regression_sol_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>According to <span class="math inline">\(C_p\)</span>, BIC, and adjusted <span class="math inline">\(R^2\)</span> the best model is the three variable model. On the adjusted <span class="math inline">\(R^\)</span> graph you can see substantial improvements in the value between the 1 and 2 variable and the 2 and 3 variable model, and then little to no improvements beyond 3 variables. With <span class="math inline">\(C_p\)</span> and BIC we see the same behavior with with substantial decreases in the values between 1 and 2 variable models and then again between 2 and 3 variable models. All 3 metrics agree that the best model is a model with 3 variables.</p>
+<ol start="4" type="a">
+<li><strong>Repeat (c), using forward stepwise selection and also using backwards stepwise selection. How does your answer compare to the results in (c)?</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>fsw_fit <span class="ot">&lt;-</span> <span class="fu">regsubsets</span>(ysim<span class="sc">~</span><span class="fu">poly</span>(xsim,<span class="dv">10</span>),<span class="at">data =</span> simdata,<span class="at">method =</span> <span class="st">"forward"</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>fsw_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ poly(xsim, 10), data = simdata, method = "forward")
+10 Variables  (and intercept)
+                 Forced in Forced out
+poly(xsim, 10)1      FALSE      FALSE
+poly(xsim, 10)2      FALSE      FALSE
+poly(xsim, 10)3      FALSE      FALSE
+poly(xsim, 10)4      FALSE      FALSE
+poly(xsim, 10)5      FALSE      FALSE
+poly(xsim, 10)6      FALSE      FALSE
+poly(xsim, 10)7      FALSE      FALSE
+poly(xsim, 10)8      FALSE      FALSE
+poly(xsim, 10)9      FALSE      FALSE
+poly(xsim, 10)10     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: forward</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>fsw_summary <span class="ot">&lt;-</span> <span class="fu">summary</span>(fsw_fit)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>fsw_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ poly(xsim, 10), data = simdata, method = "forward")
+10 Variables  (and intercept)
+                 Forced in Forced out
+poly(xsim, 10)1      FALSE      FALSE
+poly(xsim, 10)2      FALSE      FALSE
+poly(xsim, 10)3      FALSE      FALSE
+poly(xsim, 10)4      FALSE      FALSE
+poly(xsim, 10)5      FALSE      FALSE
+poly(xsim, 10)6      FALSE      FALSE
+poly(xsim, 10)7      FALSE      FALSE
+poly(xsim, 10)8      FALSE      FALSE
+poly(xsim, 10)9      FALSE      FALSE
+poly(xsim, 10)10     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: forward
+         poly(xsim, 10)1 poly(xsim, 10)2 poly(xsim, 10)3 poly(xsim, 10)4
+1  ( 1 ) "*"             " "             " "             " "            
+2  ( 1 ) "*"             "*"             " "             " "            
+3  ( 1 ) "*"             "*"             "*"             " "            
+4  ( 1 ) "*"             "*"             "*"             "*"            
+5  ( 1 ) "*"             "*"             "*"             "*"            
+6  ( 1 ) "*"             "*"             "*"             "*"            
+7  ( 1 ) "*"             "*"             "*"             "*"            
+8  ( 1 ) "*"             "*"             "*"             "*"            
+         poly(xsim, 10)5 poly(xsim, 10)6 poly(xsim, 10)7 poly(xsim, 10)8
+1  ( 1 ) " "             " "             " "             " "            
+2  ( 1 ) " "             " "             " "             " "            
+3  ( 1 ) " "             " "             " "             " "            
+4  ( 1 ) " "             " "             " "             " "            
+5  ( 1 ) "*"             " "             " "             " "            
+6  ( 1 ) "*"             " "             "*"             " "            
+7  ( 1 ) "*"             "*"             "*"             " "            
+8  ( 1 ) "*"             "*"             "*"             "*"            
+         poly(xsim, 10)9 poly(xsim, 10)10
+1  ( 1 ) " "             " "             
+2  ( 1 ) " "             " "             
+3  ( 1 ) " "             " "             
+4  ( 1 ) " "             " "             
+5  ( 1 ) " "             " "             
+6  ( 1 ) " "             " "             
+7  ( 1 ) " "             " "             
+8  ( 1 ) " "             " "             </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>fsw_full_data_metrics <span class="ot">&lt;-</span> <span class="fu">create_metrics_table</span>(fsw_summary)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fsw_full_data_metrics)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  num_pred metric metric_val
+     &lt;int&gt; &lt;chr&gt;       &lt;dbl&gt;
+1        1 Rsq       6.57e-1
+2        1 rss       5.51e+9
+3        1 adjr2     6.53e-1
+4        1 cp        4.95e+6
+5        1 bic      -9.77e+1
+6        2 Rsq       9.45e-1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>fsw_full_data_metrics <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y=</span>metric_val,<span class="at">x=</span>num_pred))<span class="sc">+</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>metric,<span class="at">scales =</span> <span class="st">"free_y"</span>)<span class="sc">+</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Forward Stepwise Regression"</span>,</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">subtitle =</span> <span class="st">"On Full Data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw-04-regression_sol_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>bsw_fit <span class="ot">&lt;-</span> <span class="fu">regsubsets</span>(ysim<span class="sc">~</span><span class="fu">poly</span>(xsim,<span class="dv">10</span>),<span class="at">data =</span> simdata,<span class="at">method =</span> <span class="st">"backward"</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>fsw_fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ poly(xsim, 10), data = simdata, method = "forward")
+10 Variables  (and intercept)
+                 Forced in Forced out
+poly(xsim, 10)1      FALSE      FALSE
+poly(xsim, 10)2      FALSE      FALSE
+poly(xsim, 10)3      FALSE      FALSE
+poly(xsim, 10)4      FALSE      FALSE
+poly(xsim, 10)5      FALSE      FALSE
+poly(xsim, 10)6      FALSE      FALSE
+poly(xsim, 10)7      FALSE      FALSE
+poly(xsim, 10)8      FALSE      FALSE
+poly(xsim, 10)9      FALSE      FALSE
+poly(xsim, 10)10     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: forward</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>bsw_summary <span class="ot">&lt;-</span> <span class="fu">summary</span>(bsw_fit)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>bsw_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ poly(xsim, 10), data = simdata, method = "backward")
+10 Variables  (and intercept)
+                 Forced in Forced out
+poly(xsim, 10)1      FALSE      FALSE
+poly(xsim, 10)2      FALSE      FALSE
+poly(xsim, 10)3      FALSE      FALSE
+poly(xsim, 10)4      FALSE      FALSE
+poly(xsim, 10)5      FALSE      FALSE
+poly(xsim, 10)6      FALSE      FALSE
+poly(xsim, 10)7      FALSE      FALSE
+poly(xsim, 10)8      FALSE      FALSE
+poly(xsim, 10)9      FALSE      FALSE
+poly(xsim, 10)10     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: backward
+         poly(xsim, 10)1 poly(xsim, 10)2 poly(xsim, 10)3 poly(xsim, 10)4
+1  ( 1 ) "*"             " "             " "             " "            
+2  ( 1 ) "*"             "*"             " "             " "            
+3  ( 1 ) "*"             "*"             "*"             " "            
+4  ( 1 ) "*"             "*"             "*"             "*"            
+5  ( 1 ) "*"             "*"             "*"             "*"            
+6  ( 1 ) "*"             "*"             "*"             "*"            
+7  ( 1 ) "*"             "*"             "*"             "*"            
+8  ( 1 ) "*"             "*"             "*"             "*"            
+         poly(xsim, 10)5 poly(xsim, 10)6 poly(xsim, 10)7 poly(xsim, 10)8
+1  ( 1 ) " "             " "             " "             " "            
+2  ( 1 ) " "             " "             " "             " "            
+3  ( 1 ) " "             " "             " "             " "            
+4  ( 1 ) " "             " "             " "             " "            
+5  ( 1 ) "*"             " "             " "             " "            
+6  ( 1 ) "*"             " "             "*"             " "            
+7  ( 1 ) "*"             "*"             "*"             " "            
+8  ( 1 ) "*"             "*"             "*"             "*"            
+         poly(xsim, 10)9 poly(xsim, 10)10
+1  ( 1 ) " "             " "             
+2  ( 1 ) " "             " "             
+3  ( 1 ) " "             " "             
+4  ( 1 ) " "             " "             
+5  ( 1 ) " "             " "             
+6  ( 1 ) " "             " "             
+7  ( 1 ) " "             " "             
+8  ( 1 ) " "             " "             </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>bsw_full_data_metrics <span class="ot">&lt;-</span> <span class="fu">create_metrics_table</span>(bsw_summary)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bsw_full_data_metrics)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  num_pred metric metric_val
+     &lt;int&gt; &lt;chr&gt;       &lt;dbl&gt;
+1        1 Rsq       6.57e-1
+2        1 rss       5.51e+9
+3        1 adjr2     6.53e-1
+4        1 cp        4.95e+6
+5        1 bic      -9.77e+1
+6        2 Rsq       9.45e-1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>bsw_full_data_metrics <span class="sc">|&gt;</span> </span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y=</span>metric_val,<span class="at">x=</span>num_pred))<span class="sc">+</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>metric,<span class="at">scales =</span> <span class="st">"free_y"</span>)<span class="sc">+</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Backward Stepwise Regression"</span>,</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">subtitle =</span> <span class="st">"On Full Data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw-04-regression_sol_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>With both forward and backwards stepwise regression we see identical behavior of BIC, <span class="math inline">\(C_p\)</span> and adjusted <span class="math inline">\(R^2\)</span> as with the best subset regression, the best model is with 3 predictors.</p>
+<ol start="5" type="a">
+<li><strong>Now fit a lasso model to the simulated data, again using <span class="math inline">\(X\)</span>,<span class="math inline">\(X^2\)</span>, . . . ,<span class="math inline">\(X^{10}\)</span> as predictors. Use cross-validation to select the optimal value of <span class="math inline">\(\lambda\)</span>. Create plots of the cross-validation error as a function of <span class="math inline">\(\lambda\)</span>. Report the resulting coefficient estimates, and discuss the results obtained.</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ────────────────────────────────────── tidymodels 1.1.1 ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ broom        1.0.5          ✔ rsample      1.2.1     
+✔ dials        1.2.1          ✔ tibble       3.2.1     
+✔ dplyr        1.1.4          ✔ tidyr        1.3.1     
+✔ infer        1.0.6          ✔ tune         1.2.1.9000
+✔ modeldata    1.3.0          ✔ workflows    1.1.4     
+✔ parsnip      1.2.1          ✔ workflowsets 1.0.1     
+✔ purrr        1.0.2          ✔ yardstick    1.3.0     
+✔ recipes      1.0.10         </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'broom' was built under R version 4.3.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dials' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'scales' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'infer' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'modeldata' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'parsnip' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.3.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'recipes' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'rsample' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'workflows' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'workflowsets' was built under R version 4.3.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'yardstick' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──
+✖ purrr::discard() masks scales::discard()
+✖ dplyr::filter()  masks stats::filter()
+✖ dplyr::lag()     masks stats::lag()
+✖ recipes::step()  masks stats::step()
+• Learn how to get started at https://www.tidymodels.org/start/</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">434</span>)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>simdat_alt <span class="ot">&lt;-</span> simdata<span class="sc">|&gt;</span></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">poly</span>(simdata<span class="sc">$</span>xsim,<span class="at">degree=</span><span class="dv">10</span>,<span class="at">simple =</span> T,<span class="at">raw =</span> T))<span class="sc">|&gt;</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>xsim)</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>sim_cv <span class="ot">&lt;-</span> <span class="fu">vfold_cv</span>(simdat_alt, <span class="at">v =</span> <span class="dv">5</span>)</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>lasso_spec <span class="ot">&lt;-</span> </span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">linear_reg</span>(<span class="at">penalty =</span> <span class="fu">tune</span>(), <span class="at">mixture =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"glmnet"</span>) </span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>lam_grid <span class="ot">&lt;-</span> <span class="fu">expand_grid</span>(<span class="at">penalty =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">325</span>, <span class="at">by =</span> <span class="dv">10</span>))</span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a>rec <span class="ot">&lt;-</span> <span class="fu">recipe</span>(ysim <span class="sc">~</span> ., <span class="at">data =</span> simdat_alt) <span class="sc">|&gt;</span></span>
+<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">step_normalize</span>(<span class="fu">all_predictors</span>())</span>
+<span id="cb49-18"><a href="#cb49-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-19"><a href="#cb49-19" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">tune_grid</span>(lasso_spec,</span>
+<span id="cb49-20"><a href="#cb49-20" aria-hidden="true" tabindex="-1"></a>                     <span class="at">preprocessor =</span> rec,</span>
+<span id="cb49-21"><a href="#cb49-21" aria-hidden="true" tabindex="-1"></a>                     <span class="at">grid =</span> lam_grid, </span>
+<span id="cb49-22"><a href="#cb49-22" aria-hidden="true" tabindex="-1"></a>                     <span class="at">resamples =</span> sim_cv)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'glmnet' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'Matrix' was built under R version 4.3.2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>metrics<span class="ot">&lt;-</span> results <span class="sc">|&gt;</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>            <span class="fu">collect_metrics</span>()</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>metrics</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 66 × 7
+   penalty .metric .estimator   mean     n     std_err .config              
+     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;dbl&gt; &lt;int&gt;       &lt;dbl&gt; &lt;chr&gt;                
+ 1       0 rmse    standard   355.       5 49.1        Preprocessor1_Model01
+ 2       0 rsq     standard     1.00     5  0.00000335 Preprocessor1_Model01
+ 3      10 rmse    standard   355.       5 49.1        Preprocessor1_Model02
+ 4      10 rsq     standard     1.00     5  0.00000335 Preprocessor1_Model02
+ 5      20 rmse    standard   355.       5 49.1        Preprocessor1_Model03
+ 6      20 rsq     standard     1.00     5  0.00000335 Preprocessor1_Model03
+ 7      30 rmse    standard   355.       5 49.1        Preprocessor1_Model04
+ 8      30 rsq     standard     1.00     5  0.00000335 Preprocessor1_Model04
+ 9      40 rmse    standard   355.       5 49.1        Preprocessor1_Model05
+10      40 rsq     standard     1.00     5  0.00000335 Preprocessor1_Model05
+# ℹ 56 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>metrics <span class="sc">|&gt;</span> </span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(.metric <span class="sc">==</span><span class="st">"rmse"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(penalty)<span class="sc">|&gt;</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">penalty =</span> <span class="fu">min</span>(penalty),</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean =</span> <span class="fu">mean</span>(mean))<span class="sc">|&gt;</span></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>penalty,<span class="at">y=</span>mean)) <span class="sc">+</span></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Lasso Penalty vs RMSE"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw-04-regression_sol_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>final_spec <span class="ot">&lt;-</span> <span class="fu">linear_reg</span>(<span class="at">penalty =</span> <span class="dv">0</span>, <span class="at">mixture =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"glmnet"</span>)</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>final_lasso_workflow <span class="ot">&lt;-</span> <span class="fu">workflow</span>()<span class="sc">|&gt;</span></span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_model</span>(final_spec) <span class="sc">|&gt;</span> </span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_recipe</span>(rec)</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>final_lasso_fit <span class="ot">&lt;-</span> final_lasso_workflow<span class="sc">|&gt;</span></span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(<span class="at">data =</span>simdat_alt)</span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a>final_lasso_fit <span class="sc">|&gt;</span> <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11 × 3
+   term        estimate penalty
+   &lt;chr&gt;          &lt;dbl&gt;   &lt;dbl&gt;
+ 1 (Intercept)    8587.       0
+ 2 1                 0        0
+ 3 2              1848.       0
+ 4 3             10578.       0
+ 5 4                 0        0
+ 6 5                 0        0
+ 7 6                 0        0
+ 8 7                 0        0
+ 9 8                 0        0
+10 9                 0        0
+11 10                0        0</code></pre>
+</div>
+</div>
+<p>Lasso regression keeps only variables <span class="math inline">\(X^2\)</span> and <span class="math inline">\(X^3\)</span> which misses X.</p>
+<ol start="6" type="a">
+<li><strong>Now generate a response vector Y according to the model</strong></li>
 </ol>
 <p><span class="math display">\[Y=\beta_0 + \beta_7X^7 + \epsilon\]</span></p>
-<p>and perform best subset selection and the lasso. Discuss the results obtained.</p>
+<p><strong>and perform best subset selection and the lasso. Discuss the results obtained.</strong></p>
+<p>New Sim Data</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>Y2 <span class="ot">=</span> <span class="dv">5</span> <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span>X <span class="sc">+</span> <span class="dv">5</span><span class="sc">*</span>X<span class="sc">^</span><span class="dv">7</span> <span class="sc">+</span> ep</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>simdata_2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">ysim =</span> Y2,<span class="at">xsim =</span> X)</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a><span class="do">## This is to fit the model with the polynomials</span></span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>simdat_alt_2 <span class="ot">&lt;-</span> simdata_2<span class="sc">|&gt;</span></span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">poly</span>(simdata<span class="sc">$</span>xsim,<span class="at">degree=</span><span class="dv">10</span>,<span class="at">simple =</span> T,<span class="at">raw =</span> T))<span class="sc">|&gt;</span></span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>xsim)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">9.</h3>
-<p>In this exercise, we will predict the number of applications received using the other variables in the College data set.</p>
-<ol type="a">
-<li><p>Split the data set into a training set and a test set.</p></li>
-<li><p>Fit a linear model using least squares on the training set, and report the test error obtained.</p></li>
-<li><p>Fit a ridge regression model on the training set, with λ chosen by cross-validation. Report the test error obtained.</p></li>
-<li><p>Fit a lasso model on the training set, with λ chosen by cross validation. Report the test error obtained, along with the number of non-zero coefficient estimates.</p></li>
-<li><p>Fit a PCR model on the training set, with M chosen by cross validation. Report the test error obtained, along with the value of M selected by cross-validation.</p></li>
-<li><p>Fit a PLS model on the training set, with M chosen by cross validation. Report the test error obtained, along with the value of M selected by cross-validation.</p></li>
-<li><p>Comment on the results obtained. How accurately can we predict the number of college applications received? Is there much difference among the test errors resulting from these five approaches?</p></li>
-</ol>
+<section id="best-subsets" class="level3">
+<h3 class="anchored" data-anchor-id="best-subsets">Best Subsets</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>bss_fit_2 <span class="ot">&lt;-</span> <span class="fu">regsubsets</span>(ysim<span class="sc">~</span>.,<span class="at">data =</span> simdat_alt_2)</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>bss_fit_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ ., data = simdat_alt_2)
+10 Variables  (and intercept)
+     Forced in Forced out
+`1`      FALSE      FALSE
+`2`      FALSE      FALSE
+`3`      FALSE      FALSE
+`4`      FALSE      FALSE
+`5`      FALSE      FALSE
+`6`      FALSE      FALSE
+`7`      FALSE      FALSE
+`8`      FALSE      FALSE
+`9`      FALSE      FALSE
+`10`     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: exhaustive</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>bss_summary_2 <span class="ot">&lt;-</span> <span class="fu">summary</span>(bss_fit_2)</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>bss_summary_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Subset selection object
+Call: regsubsets.formula(ysim ~ ., data = simdat_alt_2)
+10 Variables  (and intercept)
+     Forced in Forced out
+`1`      FALSE      FALSE
+`2`      FALSE      FALSE
+`3`      FALSE      FALSE
+`4`      FALSE      FALSE
+`5`      FALSE      FALSE
+`6`      FALSE      FALSE
+`7`      FALSE      FALSE
+`8`      FALSE      FALSE
+`9`      FALSE      FALSE
+`10`     FALSE      FALSE
+1 subsets of each size up to 8
+Selection Algorithm: exhaustive
+         `1` `2` `3` `4` `5` `6` `7` `8` `9` `10`
+1  ( 1 ) " " " " " " " " " " " " "*" " " " " " " 
+2  ( 1 ) "*" " " " " " " " " " " "*" " " " " " " 
+3  ( 1 ) " " " " "*" "*" " " " " "*" " " " " " " 
+4  ( 1 ) "*" " " " " " " "*" "*" "*" " " " " " " 
+5  ( 1 ) "*" "*" " " " " "*" "*" "*" " " " " " " 
+6  ( 1 ) "*" " " " " "*" "*" " " "*" " " "*" "*" 
+7  ( 1 ) "*" "*" " " " " " " "*" "*" "*" "*" "*" 
+8  ( 1 ) "*" "*" " " "*" " " "*" "*" "*" "*" "*" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>bss_full_data_metrics_2 <span class="ot">&lt;-</span> <span class="fu">create_metrics_table</span>(bss_summary_2)</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bss_full_data_metrics_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  num_pred metric metric_val
+     &lt;int&gt; &lt;chr&gt;       &lt;dbl&gt;
+1        1 Rsq           1  
+2        1 rss      158450. 
+3        1 adjr2         1  
+4        1 cp           46.2
+5        1 bic       -4050. 
+6        2 Rsq           1  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>bss_full_data_metrics_2 <span class="sc">|&gt;</span> </span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y=</span>metric_val,<span class="at">x=</span>num_pred))<span class="sc">+</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>metric,<span class="at">scales =</span> <span class="st">"free_y"</span>)<span class="sc">+</span></span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Best Subset Regression"</span>,</span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">subtitle =</span> <span class="st">"On Full Data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw-04-regression_sol_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Best subsets indicates that either two or eight coefficients should be kept. If we choose 2, the model would be X and <span class="math inline">\(X^7\)</span>, the correct model. If we choose predictors then we would keep all but <span class="math inline">\(X^4\)</span>, <span class="math inline">\(X^5\)</span> and <span class="math inline">\(X^6\)</span>.</p>
+</section>
+<section id="lasso" class="level3">
+<h3 class="anchored" data-anchor-id="lasso">Lasso</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">434</span>)</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>sim_cv <span class="ot">&lt;-</span> <span class="fu">vfold_cv</span>(simdat_alt_2, <span class="at">v =</span> <span class="dv">5</span>)</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>lasso_spec <span class="ot">&lt;-</span> </span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">linear_reg</span>(<span class="at">penalty =</span> <span class="fu">tune</span>(), <span class="at">mixture =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"glmnet"</span>) </span>
+<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>lam_grid <span class="ot">&lt;-</span> <span class="fu">expand_grid</span>(<span class="at">penalty =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">10</span>))</span>
+<span id="cb65-11"><a href="#cb65-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-12"><a href="#cb65-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-13"><a href="#cb65-13" aria-hidden="true" tabindex="-1"></a>rec <span class="ot">&lt;-</span> <span class="fu">recipe</span>(ysim <span class="sc">~</span> ., <span class="at">data =</span> simdat_alt_2) <span class="sc">|&gt;</span></span>
+<span id="cb65-14"><a href="#cb65-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">step_scale</span>(<span class="fu">all_predictors</span>())</span>
+<span id="cb65-15"><a href="#cb65-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-16"><a href="#cb65-16" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">tune_grid</span>(lasso_spec,</span>
+<span id="cb65-17"><a href="#cb65-17" aria-hidden="true" tabindex="-1"></a>                     <span class="at">preprocessor =</span> rec,</span>
+<span id="cb65-18"><a href="#cb65-18" aria-hidden="true" tabindex="-1"></a>                     <span class="at">grid =</span> lam_grid, </span>
+<span id="cb65-19"><a href="#cb65-19" aria-hidden="true" tabindex="-1"></a>                     <span class="at">resamples =</span> sim_cv)</span>
+<span id="cb65-20"><a href="#cb65-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-21"><a href="#cb65-21" aria-hidden="true" tabindex="-1"></a>metrics<span class="ot">&lt;-</span> results <span class="sc">|&gt;</span></span>
+<span id="cb65-22"><a href="#cb65-22" aria-hidden="true" tabindex="-1"></a>            <span class="fu">collect_metrics</span>()</span>
+<span id="cb65-23"><a href="#cb65-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-24"><a href="#cb65-24" aria-hidden="true" tabindex="-1"></a>metrics</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 22 × 7
+   penalty .metric .estimator         mean     n std_err .config              
+     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;             &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                
+ 1       0 rmse    standard   510011538.       5 3.43e+8 Preprocessor1_Model01
+ 2       0 rsq     standard           1.00     5 1.22e-6 Preprocessor1_Model01
+ 3      10 rmse    standard   510011538.       5 3.43e+8 Preprocessor1_Model02
+ 4      10 rsq     standard           1.00     5 1.22e-6 Preprocessor1_Model02
+ 5      20 rmse    standard   510011538.       5 3.43e+8 Preprocessor1_Model03
+ 6      20 rsq     standard           1.00     5 1.22e-6 Preprocessor1_Model03
+ 7      30 rmse    standard   510011538.       5 3.43e+8 Preprocessor1_Model04
+ 8      30 rsq     standard           1.00     5 1.22e-6 Preprocessor1_Model04
+ 9      40 rmse    standard   510011538.       5 3.43e+8 Preprocessor1_Model05
+10      40 rsq     standard           1.00     5 1.22e-6 Preprocessor1_Model05
+# ℹ 12 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>metrics <span class="sc">|&gt;</span> </span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(.metric <span class="sc">==</span><span class="st">"rmse"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(penalty)<span class="sc">|&gt;</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">penalty =</span> <span class="fu">min</span>(penalty),</span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean =</span> <span class="fu">mean</span>(mean))<span class="sc">|&gt;</span></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>penalty,<span class="at">y=</span>mean)) <span class="sc">+</span></span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Lasso Penalty vs RMSE"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hw-04-regression_sol_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>metrics <span class="sc">|&gt;</span> <span class="fu">filter</span>(.metric<span class="sc">==</span><span class="st">"rmse"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11 × 7
+   penalty .metric .estimator       mean     n    std_err .config              
+     &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;           &lt;dbl&gt; &lt;int&gt;      &lt;dbl&gt; &lt;chr&gt;                
+ 1       0 rmse    standard   510011538.     5 342846372. Preprocessor1_Model01
+ 2      10 rmse    standard   510011538.     5 342846372. Preprocessor1_Model02
+ 3      20 rmse    standard   510011538.     5 342846372. Preprocessor1_Model03
+ 4      30 rmse    standard   510011538.     5 342846372. Preprocessor1_Model04
+ 5      40 rmse    standard   510011538.     5 342846372. Preprocessor1_Model05
+ 6      50 rmse    standard   510011538.     5 342846372. Preprocessor1_Model06
+ 7      60 rmse    standard   510011538.     5 342846372. Preprocessor1_Model07
+ 8      70 rmse    standard   510011538.     5 342846372. Preprocessor1_Model08
+ 9      80 rmse    standard   510011538.     5 342846372. Preprocessor1_Model09
+10      90 rmse    standard   510011538.     5 342846372. Preprocessor1_Model10
+11     100 rmse    standard   510011538.     5 342846372. Preprocessor1_Model11</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose lambda = 81</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>final_spec <span class="ot">&lt;-</span> <span class="fu">linear_reg</span>(<span class="at">penalty =</span> <span class="dv">0</span>, <span class="at">mixture =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"glmnet"</span>)</span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a>final_lasso_workflow <span class="ot">&lt;-</span> <span class="fu">workflow</span>()<span class="sc">|&gt;</span></span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_model</span>(final_spec) <span class="sc">|&gt;</span> </span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_recipe</span>(rec)</span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>final_lasso_fit <span class="ot">&lt;-</span> final_lasso_workflow<span class="sc">|&gt;</span></span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>(<span class="at">data =</span>simdat_alt_2)</span>
+<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a>final_lasso_fit <span class="sc">|&gt;</span> <span class="fu">tidy</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11 × 3
+   term            estimate penalty
+   &lt;chr&gt;              &lt;dbl&gt;   &lt;dbl&gt;
+ 1 (Intercept)   130518046.       0
+ 2 1                     0        0
+ 3 2                     0        0
+ 4 3                     0        0
+ 5 4                     0        0
+ 6 5                     0        0
+ 7 6             415202305.       0
+ 8 7           24905659724.       0
+ 9 8              20982661.       0
+10 9                     0        0
+11 10                    0        0</code></pre>
+</div>
+</div>
+<p>In this case, lasso keeps the intercept and coefficients for <span class="math inline">\(X^6\)</span>, <span class="math inline">\(X^7\)</span> and <span class="math inline">\(X^8\)</span>. Best subsets did a better job.</p>
 
 
 </section>
