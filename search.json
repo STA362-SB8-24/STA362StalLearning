@@ -7493,5 +7493,19 @@
     "title": "Chapter 8 Part 2",
     "section": " Application Exercise",
     "text": "Application Exercise\n\nOpen your last application exercise\nRefit your model as a bagged tree and a random forest"
+  },
+  {
+    "objectID": "slides/07-2-dt.html#trade-off",
+    "href": "slides/07-2-dt.html#trade-off",
+    "title": "Chapter 8 Part 2",
+    "section": "Trade Off",
+    "text": "Trade Off\n\nWhat is our final tree?\n\n\n\nWith both bagging and random forests, we have traded interpretability with performance.\nThese approaches will predict better but we no longer have a single represenation fo the tree.\nEven if we wanted to pick the best performing tree, it may have a different subset of variables than other similar trees."
+  },
+  {
+    "objectID": "slides/07-2-dt_o.html#trade-off",
+    "href": "slides/07-2-dt_o.html#trade-off",
+    "title": "Chapter 8 Part 2",
+    "section": "Trade Off",
+    "text": "Trade Off\n\nWhat is our final tree?\n\n. . .\n\nWith both bagging and random forests, we have traded interpretability with performance.\nThese approaches will predict better but we no longer have a single represenation fo the tree.\nEven if we wanted to pick the best performing tree, it may have a different subset of variables than other similar trees."
   }
 ]

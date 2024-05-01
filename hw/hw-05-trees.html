@@ -331,9 +331,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Produce a pruned tree corresponding to the optimal tree size obtained using cross-validation. If cross-validation does not lead to selection of a pruned tree, then create a pruned tree with five terminal nodes.</p></li>
 <li><p>Compare the training error rates between the pruned and unpruned trees. Which is higher?</p></li>
 <li><p>Compare the test error rates between the pruned and unpruned trees. Which is higher?</p></li>
-<li><p>Fit a bagged tree model using the training data (do not use cross validation). You will need to change the <code>mtry</code> argument to the correct number. What is the test error rate?</p></li>
-<li><p>Fit a random forest model using the training data (do not use cross validation). You will need to change the <code>mtry</code> argument to the correct number. What is the test error rate?</p></li>
-<li><p>Fit a random forest model using cross validation on the training set to tune the <code>mtry</code> argument. With your best <code>mtry</code> value, refit the model on the whole training set. What is the test error rate?</p></li>
+<li><p>Fit a bagged tree model using the training data (you do not need to use cross validation). You will need to change the <code>mtry</code> argument to the correct number. What is the test error rate?</p></li>
+<li><p>Fit a random forest model using the training data (you do not need to use cross validation). You will need to change the <code>mtry</code> argument to the correct number. What is the test error rate?</p></li>
+<li><p>Fit a tree model using cross validation on the training set to tune the <code>mtry</code> argument. With your best <code>mtry</code> value, refit the model on the whole training set. What is the test error rate?</p></li>
 <li><p>Finally, create a table that includes the test error for all of the models included above. Give each a name that is clear and include any tuned values. Which model is best and why?</p></li>
 </ol>
 </section>
