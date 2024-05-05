@@ -839,7 +839,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Learning Schedule",
     "section": "",
-    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nProject\nLab\nHomework\nExam\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 8 - Bagging, RF, Boosting, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - PCA or Clustering\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nFinish Up\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
+    "text": "Note: The timeline of topics and assignments might be updated throughout the semester.\n\n\n\n\n\n\n\n\n\nDay\nDate\nTopic\nNotes\nOutline\nProject\nLab\nHomework\nExam\n\n\n\n\n1\n15 April\nCourse Intro, Ch 1 - Stat Learning Examples, Ch 2 - SL, Bias-Variance Tradeoff\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16 April\nCh 5 - Cross Validation, Tidy Models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n17 April\nCh 5 - Cross Validation, Tidy Models, Ch 3 - LR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n18 April\nCh 4 - Logistic Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n19 April\nCh 4 - LDA, QDA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n22 April\nCh 4 - Naive Bayes, KMeans Classification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n23 April\nCh 6 - Subset Selection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n24 April\nCh 6 - Shrinkage Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n25 April\nTidymodel recipies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n26 April\nExam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n29 April\nCh 6 - Dimension Reduction, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n30 April\nCh 8 - Decision Trees, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n1 May\nCh 8 - Bagging, RF, Boosting, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2 May\nCh 8 - Bagging, RF, Boosting, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n3 May\nCh 8 - Bagging, RF, Boosting, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16\n6 May\nCh 12 - PCA or Clustering, project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\n7 May\nFinish Up, watch project videos, surveys etc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n18\n8 May\nExam",
     "crumbs": [
       "Course Contents",
       "Schedule & Assignments"
@@ -7934,5 +7934,551 @@
     "title": "Lab 05 - Decision Trees",
     "section": "",
     "text": "Now, make sure the author is your name, title is appropriate and then Render the document."
+  },
+  {
+    "objectID": "slides/08-clustering.html#setup",
+    "href": "slides/08-clustering.html#setup",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(palmerpenguins)\ndata(penguins)\nlibrary(tidyclust)\n#install.packages('tidyclust')\n#install.packages('factoextra')"
+  },
+  {
+    "objectID": "slides/08-clustering.html#unsupervised-learning",
+    "href": "slides/08-clustering.html#unsupervised-learning",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Unsupervised learning",
+    "text": "Unsupervised learning\n\nGrouping or categorizing observational units (objects) without any pre-assigned labels or scores (no outcome information!)"
+  },
+  {
+    "objectID": "slides/08-clustering.html#some-examples",
+    "href": "slides/08-clustering.html#some-examples",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Some examples:",
+    "text": "Some examples:\n\nLatent Dirichlet Allocation: Topic Modeling of TSL Articles\nNetwork Analysis: Political Books\nNetwork & Clustering: Characters in ‘Love Actually’"
+  },
+  {
+    "objectID": "slides/08-clustering.html#k-means-clustering",
+    "href": "slides/08-clustering.html#k-means-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "\\(k\\)-means Clustering",
+    "text": "\\(k\\)-means Clustering\n\\(k\\)-means clustering is an unsupervised partitioning algorithm designed to find a partition of the observations such that the following objective function is minimized (find the smallest within cluster sum of squares):\n\\[\\text{arg}\\,\\min\\limits_{C_1, \\ldots, C_k} \\Bigg\\{ \\sum_{k=1}^K \\sum_{i \\in C_k} \\sum_{j=1}^p (x_{ij} - \\overline{x}_{kj})^2 \\Bigg\\}\\]"
+  },
+  {
+    "objectID": "slides/08-clustering.html#a-fun-applet",
+    "href": "slides/08-clustering.html#a-fun-applet",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "A fun applet!!",
+    "text": "A fun applet!!\nhttps://www.naftaliharris.com/blog/visualizing-k-means-clustering/"
+  },
+  {
+    "objectID": "slides/08-clustering.html#convergence-yes-local",
+    "href": "slides/08-clustering.html#convergence-yes-local",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Convergence? Yes! (local…)",
+    "text": "Convergence? Yes! (local…)\n\nIf a point is “closer” to a different center, moving it will lower the objective function.\nAverages minimize squared differences, so taking the new average will result in a lower objective function.\nIf a point is equidistant from two clusters, the point won’t move.\nThe algorithm must converge in finite number of steps because there are finitely many points."
+  },
+  {
+    "objectID": "slides/08-clustering.html#scaling",
+    "href": "slides/08-clustering.html#scaling",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Scaling",
+    "text": "Scaling\n\nraw datascalled data\n\n\n\n\n\nnorm_clust %&gt;%\n  kmeans(centers = 2) %&gt;%\n  augment(norm_clust) %&gt;%\n  ggplot() + \n  geom_point(aes(x = x1, \n                 y = x2, \n                 color = .cluster)) +\n  ggtitle(\"k-means (k=2) on raw data\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnorm_clust %&gt;%\n  mutate(across(everything(), \n                scale)) %&gt;%\n  kmeans(centers = 2) %&gt;%\n  augment(norm_clust) %&gt;%\n  ggplot() + \n  geom_point(aes(x = x1, \n                 y = x2, \n                 color = .cluster)) +\n  ggtitle(\"k-means (k=2) on raw data\")"
+  },
+  {
+    "objectID": "slides/08-clustering.html#k-medoids",
+    "href": "slides/08-clustering.html#k-medoids",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "k-Medoids",
+    "text": "k-Medoids\nShortcomings of k-means\n\nCenter is calculated as average (establishes Euclidean distance)\nBecause center changes, distances must be re-calculated\nReally, only Euclidean distance makes sense"
+  },
+  {
+    "objectID": "slides/08-clustering.html#partitioning-around-medoids-pam",
+    "href": "slides/08-clustering.html#partitioning-around-medoids-pam",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Partitioning Around Medoids (PAM)",
+    "text": "Partitioning Around Medoids (PAM)\nFind the observations (data values!) \\(m_k\\) that solve:\n\\[\\text{arg}\\,\\min\\limits_{C_1, \\ldots, C_k} \\Bigg\\{ \\sum_{k=1}^K \\sum_{i \\in C_k}d(x_i, m_k) \\Bigg\\}\\]\n\nNot well implemented in R"
+  },
+  {
+    "objectID": "slides/08-clustering.html#evaluating-clustering-which-k",
+    "href": "slides/08-clustering.html#evaluating-clustering-which-k",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Evaluating clustering (which \\(k\\)?)",
+    "text": "Evaluating clustering (which \\(k\\)?)\n\nSilhouette Width (use \\(k\\) with smallest silhouette width)\nElbow plot (use \\(k\\) at elbow on plot of \\(k\\) vs. within cluster sum of squares)\nThe silhouette of a single observation is proportional to the average distance from that observation to within-cluster observations minus the average distance to outside-cluster observations; normalized by the greater of these two average.\nA large silhouette (close to 1) suggests that an observation is more similar to those within its cluster than those outside its cluster.\nWe can average all silhouettes to get a metric for the full clustering fit."
+  },
+  {
+    "objectID": "slides/08-clustering.html#silhouette-width",
+    "href": "slides/08-clustering.html#silhouette-width",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Silhouette width",
+    "text": "Silhouette width\nConsider observation \\(i \\in\\) cluster \\(C_1\\). Let\n\\[d(i, C_k) = \\mbox{average dissimilarity of } i \\mbox{ to all objects in cluster } C_k\\] \\[a(i) =  \\mbox{average dissimilarity of } i \\mbox{ to all objects in } C_1.\\] \\[b(i) = \\min_{C_k \\ne C_1} d(i,C_k) = \\mbox{distance to the next closest neighbor cluster}\\] \\[s(i) = \\frac{b(i) - a(i)}{\\max \\{ a(i), b(i) \\}}\\] \\[\\mbox{average}_{i \\in C_1} s(i) = \\mbox{average silhouette width for cluster } C_1\\]\nNote that if \\(a(i) &lt; b(i)\\) then \\(i\\) is well classified with a maximum \\(s(i) = 1\\). If \\(a(i) &gt; b(i)\\) then \\(i\\) is not well classified with a maximum \\(s(i) = -1\\)."
+  },
+  {
+    "objectID": "slides/08-clustering.html#distance-metric-mathematically",
+    "href": "slides/08-clustering.html#distance-metric-mathematically",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Distance metric (mathematically)",
+    "text": "Distance metric (mathematically)\n\n\\(d({\\bf x}, {\\bf y}) \\geq 0\\)\n\\(d({\\bf x}, {\\bf y}) = d({\\bf y}, {\\bf x})\\)\n\\(d({\\bf x}, {\\bf y}) = 0\\) iff \\({\\bf x} = {\\bf y}\\)\n\\(d({\\bf x}, {\\bf y}) \\leq d({\\bf x}, {\\bf z}) + d({\\bf z}, {\\bf y})\\) for all other vectors \\({\\bf z}\\)."
+  },
+  {
+    "objectID": "slides/08-clustering.html#distance-measures-for-clustering",
+    "href": "slides/08-clustering.html#distance-measures-for-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Distance measures (for clustering)",
+    "text": "Distance measures (for clustering)\n\nCosine Distance\n\n\n\\[d_C({\\bf x}, {\\bf y}) =  \\frac{{\\bf x} \\cdot {\\bf y}}{|| {\\bf x} ||  ||{\\bf y}||}\\] \\[= \\frac{\\sum_{i=1}^p x_i y_i}{\\sqrt{\\sum_{i=1}^p x_i^2 \\sum_{i=1}^p y_i^2}}\\] \\[= 1 - r_P ({\\bf x}, {\\bf y})  \\ \\ \\ \\ \\mbox{if } \\overline{\\bf x} = \\overline{\\bf y} = 0\\] * Hamming Distance\n\\[\\begin{align}\nd_H({\\bf x}, {\\bf y}) = \\sum_{i=1}^p I(x_i \\ne y_i)\n\\end{align}\\]\n\n\n\n\n\nThe Hamming distance across the two DNA strands is 7."
+  },
+  {
+    "objectID": "slides/08-clustering.html#distance-measures-for-clustering-1",
+    "href": "slides/08-clustering.html#distance-measures-for-clustering-1",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Distance measures (for clustering)",
+    "text": "Distance measures (for clustering)\n\nCosine Distance\n\n\n\\[d_C({\\bf x}, {\\bf y}) =  \\frac{{\\bf x} \\cdot {\\bf y}}{|| {\\bf x} ||  ||{\\bf y}||}\\] \\[= \\frac{\\sum_{i=1}^p x_i y_i}{\\sqrt{\\sum_{i=1}^p x_i^2 \\sum_{i=1}^p y_i^2}}\\] \\[= 1 - r_P ({\\bf x}, {\\bf y})  \\ \\ \\ \\ \\mbox{if } \\overline{\\bf x} = \\overline{\\bf y} = 0\\] * Hamming Distance\n\\[\\begin{align}\nd_H({\\bf x}, {\\bf y}) = \\sum_{i=1}^p I(x_i \\ne y_i)\n\\end{align}\\]\n\n\n\n\n\nThe Hamming distance across the two DNA strands is 7."
+  },
+  {
+    "objectID": "slides/08-clustering.html#dist-function-in-r",
+    "href": "slides/08-clustering.html#dist-function-in-r",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "dist function in R",
+    "text": "dist function in R\n\nThe function dist in R calculates the distances given above."
+  },
+  {
+    "objectID": "slides/08-clustering.html#hierarchical-clustering",
+    "href": "slides/08-clustering.html#hierarchical-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Hierarchical Clustering",
+    "text": "Hierarchical Clustering\n\nis a set of nested clusters that are organized as a tree. Note that objects that belong to a child cluster also belong to the parent cluster.\n\nStat Quest: https://www.youtube.com/watch?v=7xHsRkOdVwo"
+  },
+  {
+    "objectID": "slides/08-clustering.html#definitions",
+    "href": "slides/08-clustering.html#definitions",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Definitions",
+    "text": "Definitions\nAgglomerative methods start with each object (e.g., gene, penguin, etc.) in its own group. Groups are merged until all objects are together in one group.\nDivisive methods start with all objects in one group and break up the groups sequentially until all objects are individuals.\nSingle Linkage algorithm defines the distance between groups as that of the closest pair of individuals.\nComplete Linkage algorithm defines the distance between groups as that of the farthest pair of individuals.\nAverage Linkage algorithm defines the distance between groups as the average of the distances between all pairs of individuals across the groups."
+  },
+  {
+    "objectID": "slides/08-clustering.html#toy-example",
+    "href": "slides/08-clustering.html#toy-example",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Toy example",
+    "text": "Toy example\nof Single Linkage Agglomerative Hierarchical Clustering\n\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\nA\n0\n\n\n\n\n\n\nB\n0.2\n0\n\n\n\n\n\nC\n0.6\n0.5\n0\n\n\n\n\nD\n1\n0.9\n0.4\n0\n\n\n\nE\n0.9\n0.8\n0.5\n0.3\n0\n\n\n\nsee class notes to walk through the process."
+  },
+  {
+    "objectID": "slides/08-clustering.html#hierarchical-clustering-in-r",
+    "href": "slides/08-clustering.html#hierarchical-clustering-in-r",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Hierarchical clustering in R",
+    "text": "Hierarchical clustering in R\n\npenguins_h &lt;- penguins %&gt;%\n  drop_na(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g) %&gt;%\n  select(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g) %&gt;%\n  mutate(across(bill_length_mm:body_mass_g, scale))\n\npenguin_hclust &lt;- penguins_h %&gt;%\n  dist() %&gt;%\n  hclust(method = \"complete\")\n\npenguin_hclust\n\n\nCall:\nhclust(d = ., method = \"complete\")\n\nCluster method   : complete \nDistance         : euclidean \nNumber of objects: 342 \n\npenguin_dend &lt;- as.dendrogram(penguin_hclust)"
+  },
+  {
+    "objectID": "slides/08-clustering.html#the-basic-dendrogram",
+    "href": "slides/08-clustering.html#the-basic-dendrogram",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "The basic dendrogram",
+    "text": "The basic dendrogram\n\nplot(penguin_hclust)"
+  },
+  {
+    "objectID": "slides/08-clustering.html#colored-dendrogram",
+    "href": "slides/08-clustering.html#colored-dendrogram",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Colored dendrogram",
+    "text": "Colored dendrogram\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/08-clustering.html#algorithm-k-means-clustering",
+    "href": "slides/08-clustering.html#algorithm-k-means-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Algorithm: \\(k\\)-Means Clustering",
+    "text": "Algorithm: \\(k\\)-Means Clustering\n\nRandomly assign a number, from 1 to \\(k\\), to each of the observations. These serve as initial cluster assignments for the observations.\n\n\n\nIterate until the cluster assignments stop changing:\n\nFor each of the \\(k\\) clusters, compute the cluster centroid. The \\(k^{th}\\) cluster centroid is the vector of the \\(p\\) feature means for the observations in the \\(k^{th}\\) cluster.\n\n\n\n\n(b) Assign each observation to the cluster whose centroid is closest (where closest is defined using Euclidean distance).\n\n\n\nTies? Do something consistent: for example, leave in the current cluster."
+  },
+  {
+    "objectID": "slides/08-clustering.html#raw-data",
+    "href": "slides/08-clustering.html#raw-data",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "raw data",
+    "text": "raw data\n\n\n\nnorm_clust %&gt;%\n  kmeans(centers = 2) %&gt;%\n  augment(norm_clust) %&gt;%\n  ggplot() + \n  geom_point(aes(x = x1, \n                 y = x2, \n                 color = .cluster)) +\n  ggtitle(\"k-means (k=2) on raw data\")"
+  },
+  {
+    "objectID": "slides/08-clustering.html#scalled",
+    "href": "slides/08-clustering.html#scalled",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Scalled",
+    "text": "Scalled\n\n\n\nnorm_clust %&gt;%\n  mutate(across(everything(), \n                scale)) %&gt;%\n  kmeans(centers = 2) %&gt;%\n  augment(norm_clust) %&gt;%\n  ggplot() + \n  geom_point(aes(x = x1, \n                 y = x2, \n                 color = .cluster)) +\n  ggtitle(\"k-means (k=2) on raw data\")"
+  },
+  {
+    "objectID": "slides/08-clustering.html#string-distances",
+    "href": "slides/08-clustering.html#string-distances",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "String distances",
+    "text": "String distances\nhttps://www.kdnuggets.com/2019/01/comparison-text-distance-metrics.html\n\nComparison of string distance metrics from https://www.kdnuggets.com/2019/01/comparison-text-distance-metrics.html."
+  },
+  {
+    "objectID": "slides/08-clustering.html#algorithm-agglomerative-hierarchical-clustering-algorithm",
+    "href": "slides/08-clustering.html#algorithm-agglomerative-hierarchical-clustering-algorithm",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Algorithm: Agglomerative Hierarchical Clustering Algorithm",
+    "text": "Algorithm: Agglomerative Hierarchical Clustering Algorithm\n\nBegin with \\(n\\) observations and a measure (such as Euclidean distance) of all the \\({n \\choose 2} = n(n-1)/2\\) pairwise dissimilarities. Treat each observation as its own cluster.\n\n\n\nFor \\(i = n, n - 1, \\ldots , 2\\):\n\nExamine all pairwise inter-cluster dissimilarities among the \\(i\\) clusters and identify the pair of clusters that are least dissimilar (that is, most similar). Fuse these two clusters. The dissimilarity between these two clusters indicates the height in the dendrogram at which the fusion should be placed.\n\n\n\n\n\nCompute the new pairwise inter-cluster dissimilarities among the \\(i - 1\\) remaining clusters."
+  },
+  {
+    "objectID": "slides/08-clustering.html#hierarchical-clustering-in-r---tidymodels",
+    "href": "slides/08-clustering.html#hierarchical-clustering-in-r---tidymodels",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Hierarchical clustering in R - tidymodels",
+    "text": "Hierarchical clustering in R - tidymodels\n\n# Define a hierarchical clustering model\nhc_spec &lt;- hier_clust(linkage_method = \"complete\",\n                      num_clusters = 3)\n\n# Create a workflow\nworkflow &lt;- workflow() |&gt;\n  add_recipe(pen_recipe2) |&gt;\n  add_model(hc_spec)\n\n# fit\nhc_fit &lt;- workflow |&gt;\n  fit(data = penguins_na_drop)"
+  },
+  {
+    "objectID": "slides/08-clustering.html#predict-and-graph",
+    "href": "slides/08-clustering.html#predict-and-graph",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Predict and Graph",
+    "text": "Predict and Graph\n\n# Predict clusters\nworkflow_fit |&gt; extract_cluster_assignment(num_clusters = 3)\n\n# A tibble: 342 × 1\n   .cluster \n   &lt;fct&gt;    \n 1 Cluster_1\n 2 Cluster_1\n 3 Cluster_1\n 4 Cluster_1\n 5 Cluster_1\n 6 Cluster_1\n 7 Cluster_1\n 8 Cluster_1\n 9 Cluster_1\n10 Cluster_1\n# ℹ 332 more rows\n\nlibrary(factoextra)\n\nworkflow_fit %&gt;%\n  extract_fit_engine() %&gt;%\n  fviz_dend(main = \"complete\", k = 3)\n\n\n\n\n\n\n\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/08-clustering.html#distance-measures-clustering",
+    "href": "slides/08-clustering.html#distance-measures-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Distance measures (clustering)",
+    "text": "Distance measures (clustering)\n\nEuclidean Distance\n\n\n\\[d_E({\\bf x}, {\\bf y}) = \\sqrt{\\sum_{i=1}^p (x_i - y_i)^2}\\]\n\nPearson Correlation Distance\n\n\n\n\\[d_P({\\bf x}, {\\bf y}) = 1 - r_P ({\\bf x}, {\\bf y})\\] \\[\\mbox{ or } d_P({\\bf x}, {\\bf y}) =  1 - |r_P ({\\bf x}, {\\bf y})|\\] \\[\\mbox{ or } d_P({\\bf x}, {\\bf y}) =  1 - (r_P ({\\bf x}, {\\bf y}))^2\\]"
+  },
+  {
+    "objectID": "slides/08-clustering.html#correlation-distance-isnt-a-distance-metric",
+    "href": "slides/08-clustering.html#correlation-distance-isnt-a-distance-metric",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Correlation distance isn’t a distance metric!",
+    "text": "Correlation distance isn’t a distance metric!\n\nx1 &lt;- c(1,2,3)\nx2 &lt;- c(1, 4, 10)\nx3 &lt;- c(9, 2, 2)\n\n# d(1,2)\n1 - cor(x1, x2)\n\n[1] 0.01801949\n\n# d(1,3)\n1 - cor(x1, x3)\n\n[1] 1.866025\n\n# d(2,3)\n1 - cor(x2, x3)\n\n[1] 1.755929\n\n# d(1,3) &gt; d(1,2) + d(2,3)\n1 - cor(x1, x2) + 1 - cor(x2, x3)\n\n[1] 1.773948"
+  },
+  {
+    "objectID": "slides/08-clustering.html#correlation-distance-isnt-a-distance-metric-1",
+    "href": "slides/08-clustering.html#correlation-distance-isnt-a-distance-metric-1",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Correlation distance isn’t a distance metric!",
+    "text": "Correlation distance isn’t a distance metric!\nUsing absolute distance doesn’t fix things.\n\n# d(1,2)\n1 - abs(cor(x1, x2))\n\n[1] 0.01801949\n\n# d(1,3)\n1 - abs(cor(x1, x3))\n\n[1] 0.1339746\n\n# d(2,3)\n1 - abs(cor(x2, x3))\n\n[1] 0.2440711\n\n# d(2,3) &gt; d(1,2) + d(1,3)\n1 - abs(cor(x1, x2)) + 1 - abs(cor(x1, x3))\n\n[1] 0.1519941"
+  },
+  {
+    "objectID": "slides/08-clustering.html#k-means-tidymodels",
+    "href": "slides/08-clustering.html#k-means-tidymodels",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "K-means tidymodels",
+    "text": "K-means tidymodels\n\npenguins_recipe &lt;- recipe(~.,data = penguins) |&gt;\n  update_role(all_predictors(), new_role = \"predictor\") |&gt;\n  step_select(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g)|&gt;\n  step_naomit(all_predictors()) |&gt;\n  step_scale(all_predictors()) \n\nkmeans_spec &lt;- k_means(num_clusters =3)\n\n# Create a workflow\nwf &lt;- workflow() |&gt;\n  add_recipe(penguins_recipe) |&gt;\n  add_model(kmeans_spec) #no engine since base R\n\n# Train the model\nkm_fit &lt;- wf |&gt;\n  fit(data = penguins)"
+  },
+  {
+    "objectID": "slides/08-clustering.html#k-means-outputs",
+    "href": "slides/08-clustering.html#k-means-outputs",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "k-means outputs",
+    "text": "k-means outputs\n\nextract_cluster_assignment(km_fit) |&gt;\n  head()\n\n# A tibble: 6 × 1\n  .cluster \n  &lt;fct&gt;    \n1 Cluster_1\n2 Cluster_1\n3 Cluster_1\n4 Cluster_1\n5 Cluster_1\n6 Cluster_1\n\n\n\nextract_centroids(km_fit)\n\n# A tibble: 3 × 5\n  .cluster  bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n1 Cluster_1           7.00          9.17              13.4        4.47\n2 Cluster_2           8.70          9.50              14.0        4.87\n3 Cluster_3           8.70          7.59              15.4        6.33"
+  },
+  {
+    "objectID": "slides/08-clustering.html#k-means-outputs-1",
+    "href": "slides/08-clustering.html#k-means-outputs-1",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "k-means outputs",
+    "text": "k-means outputs\n\nkm_summary&lt;- extract_fit_summary(km_fit)\nkm_summary\n\n$cluster_names\n[1] Cluster_1 Cluster_2 Cluster_3\nLevels: Cluster_1 Cluster_2 Cluster_3\n\n$centroids\n# A tibble: 3 × 4\n  bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n           &lt;dbl&gt;         &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n1           7.00          9.17              13.4        4.47\n2           8.70          9.50              14.0        4.87\n3           8.70          7.59              15.4        6.33\n\n$n_members\n[1] 132  87 123\n\n$sse_within_total_total\n[1] 122.1477 112.9852 143.1502\n\n$sse_total\n[1] 1364\n\n$orig_labels\n  [1] 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n [43] 2 1 1 1 1 1 2 1 1 1 2 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 1 1 2 1 2 1 1 1 2 1 2 1 1 1\n [85] 1 1 1 1 1 1 2 1 1 1 2 1 1 1 2 1 2 1 1 1 1 1 1 1 2 1 2 1 2 1 2 1 1 1 1 1 1 1 2 1 1 1\n[127] 1 1 2 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[169] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[211] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[253] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[295] 1 2 1 2 2 2 2 2 2 2 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2\n[337] 2 2 2 2 2 2\n\n$cluster_assignments\n  [1] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n  [9] Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [17] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [25] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [33] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [41] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [49] Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n [57] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n [65] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n [73] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1\n [81] Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [89] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1\n [97] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n[105] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_2 Cluster_1\n[113] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[121] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[129] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[137] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[145] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_3\n[153] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[161] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[169] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[177] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[185] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[193] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[201] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[209] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[217] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[225] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[233] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[241] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[249] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[257] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[265] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[273] Cluster_3 Cluster_3 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[281] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[289] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_1 Cluster_2\n[297] Cluster_1 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[305] Cluster_1 Cluster_2 Cluster_1 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[313] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[321] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[329] Cluster_1 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[337] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\nLevels: Cluster_1 Cluster_2 Cluster_3"
+  },
+  {
+    "objectID": "slides/08-clustering.html#measuring-k-means-fit",
+    "href": "slides/08-clustering.html#measuring-k-means-fit",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Measuring k-means fit",
+    "text": "Measuring k-means fit\nSum of squared error\n\nOne simple metric is the within cluster sum-of-squared error (WSS), which measures the sum of all distances from observations to their cluster center.\nThis is sometimes scaled with the total sum-of-squared error (TSS), the distance from all observations to the global centroid; in particular, the ratio WSS/TSS is often computed.\nSmall values of WSS or of the WSS/TSS ratio suggest that the observations within clusters are closer (more similar) to each other than they are to the other clusters.\nThe WSS and TSS come “for free” with the model fit summary, or they can be accessed directly from the model fit."
+  },
+  {
+    "objectID": "slides/08-clustering.html#wss",
+    "href": "slides/08-clustering.html#wss",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "WSS",
+    "text": "WSS\nNote we use the fit object, not summary.\n\nkm_fit |&gt; sse_within_total()\n\n# A tibble: 1 × 3\n  .metric          .estimator .estimate\n  &lt;chr&gt;            &lt;chr&gt;          &lt;dbl&gt;\n1 sse_within_total standard        378.\n\nkm_fit |&gt; sse_total()\n\n# A tibble: 1 × 3\n  .metric   .estimator .estimate\n  &lt;chr&gt;     &lt;chr&gt;          &lt;dbl&gt;\n1 sse_total standard        1364\n\nkm_fit |&gt; sse_ratio()\n\n# A tibble: 1 × 3\n  .metric   .estimator .estimate\n  &lt;chr&gt;     &lt;chr&gt;          &lt;dbl&gt;\n1 sse_ratio standard       0.277\n\nkm_fit |&gt; sse_within()\n\n# A tibble: 3 × 3\n  .cluster    wss n_members\n  &lt;fct&gt;     &lt;dbl&gt;     &lt;int&gt;\n1 Cluster_1  122.       132\n2 Cluster_2  113.        87\n3 Cluster_3  143.       123"
+  },
+  {
+    "objectID": "slides/08-clustering.html#silhouette-width---tidymodels",
+    "href": "slides/08-clustering.html#silhouette-width---tidymodels",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Silhouette width - tidymodels",
+    "text": "Silhouette width - tidymodels\nThe computation of the silhouette depends on the original observation values, a dataset must also be supplied to the function.\n\n# only needed because I didn't split and handle NAs before\npenguins_na_drop &lt;- penguins |&gt; drop_na(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g) \n\n    \nkm_fit %&gt;%\n  silhouette_avg(penguins_na_drop )\n\n# A tibble: 1 × 3\n  .metric        .estimator .estimate\n  &lt;chr&gt;          &lt;chr&gt;          &lt;dbl&gt;\n1 silhouette_avg standard       0.447"
+  },
+  {
+    "objectID": "slides/08-clustering.html#cosine-distance-for-clustering",
+    "href": "slides/08-clustering.html#cosine-distance-for-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Cosine Distance (for clustering)",
+    "text": "Cosine Distance (for clustering)\n\\[d_C({\\bf x}, {\\bf y}) =  \\frac{{\\bf x} \\cdot {\\bf y}}{|| {\\bf x} ||  ||{\\bf y}||}\\] \\[= \\frac{\\sum_{i=1}^p x_i y_i}{\\sqrt{\\sum_{i=1}^p x_i^2 \\sum_{i=1}^p y_i^2}}\\] \\[= 1 - r_P ({\\bf x}, {\\bf y})  \\ \\ \\ \\ \\mbox{if } \\overline{\\bf x} = \\overline{\\bf y} = 0\\] * Hamming Distance\n\\[\\begin{align}\nd_H({\\bf x}, {\\bf y}) = \\sum_{i=1}^p I(x_i \\ne y_i)\n\\end{align}\\]\n\nThe Hamming distance across the two DNA strands is 7."
+  },
+  {
+    "objectID": "slides/08-clustering.html#k-means-clustering-find-k",
+    "href": "slides/08-clustering.html#k-means-clustering-find-k",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "K Means Clustering, find K",
+    "text": "K Means Clustering, find K\n\npen_recipe2 &lt;- recipe(~.,data = penguins_na_drop) |&gt;\n  update_role(all_predictors(), new_role = \"predictor\") |&gt;\n  step_select(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g)|&gt;\n  step_scale(all_predictors()) \n\npen_cv &lt;- vfold_cv(penguins_na_drop,5)\n\nkm_spec2 &lt;- k_means(num_clusters = tune())\n\nclust_num_grid &lt;- grid_regular(num_clusters(),levels = 10)\n\nwf_tune &lt;- workflow()|&gt;\n  add_recipe(pen_recipe2)|&gt;\n  add_model(km_spec2)\n  \nres &lt;- tune_cluster(\n  wf_tune,\n  resamples = pen_cv,\n  grid = clust_num_grid,\n  control = control_grid(save_pred = TRUE, extract = identity),\n  metrics = cluster_metric_set(sse_within_total, sse_total, sse_ratio)\n)\nres_metrics &lt;- res %&gt;% collect_metrics()\nres_metrics\n\n# A tibble: 30 × 7\n   num_clusters .metric          .estimator     mean     n  std_err .config              \n          &lt;int&gt; &lt;chr&gt;            &lt;chr&gt;         &lt;dbl&gt; &lt;int&gt;    &lt;dbl&gt; &lt;chr&gt;                \n 1            1 sse_ratio        standard      1         5  0       Preprocessor1_Model01\n 2            1 sse_total        standard   1090.        5  0.980   Preprocessor1_Model01\n 3            1 sse_within_total standard   1090.        5  0.980   Preprocessor1_Model01\n 4            2 sse_ratio        standard      0.413     5  0.00431 Preprocessor1_Model02\n 5            2 sse_total        standard   1090.        5  0.980   Preprocessor1_Model02\n 6            2 sse_within_total standard    451.        5  4.46    Preprocessor1_Model02\n 7            3 sse_ratio        standard      0.341     5  0.0177  Preprocessor1_Model03\n 8            3 sse_total        standard   1090.        5  0.980   Preprocessor1_Model03\n 9            3 sse_within_total standard    372.        5 19.2     Preprocessor1_Model03\n10            4 sse_ratio        standard      0.225     5  0.00313 Preprocessor1_Model04\n# ℹ 20 more rows"
+  },
+  {
+    "objectID": "slides/08-clustering.html#k-means-clustering-find-k-1",
+    "href": "slides/08-clustering.html#k-means-clustering-find-k-1",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "K Means Clustering, find K",
+    "text": "K Means Clustering, find K\n\nres_metrics %&gt;%\n  filter(.metric == \"sse_ratio\") %&gt;%\n  ggplot(aes(x = num_clusters, y = mean)) +\n  geom_point() +\n  geom_line() +\n  theme_minimal() +\n  ylab(\"mean WSS/TSS ratio, over 5 folds\") +\n  xlab(\"Number of clusters\") +\n  scale_x_continuous(breaks = 1:10)"
+  },
+  {
+    "objectID": "slides/08-clustering.html#output",
+    "href": "slides/08-clustering.html#output",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Output",
+    "text": "Output\n\nhc_summary &lt;- hc_fit %&gt;% extract_fit_summary()\nhc_summary %&gt;% str()\n\nList of 7\n $ cluster_names         : Factor w/ 3 levels \"Cluster_1\",\"Cluster_2\",..: 1 2 3\n $ centroids             : tibble [3 × 4] (S3: tbl_df/tbl/data.frame)\n  ..$ bill_length_mm   : num [1:3] 7.2 8.7 9.15\n  ..$ bill_depth_mm    : num [1:3] 9.27 7.59 9.4\n  ..$ flipper_length_mm: num [1:3] 13.5 15.4 14\n  ..$ body_mass_g      : num [1:3] 4.6 6.33 4.71\n $ n_members             : int [1:3] 165 123 54\n $ sse_within_total_total: num [1:3] 169.5 120.9 49.9\n $ sse_total             : num 656\n $ orig_labels           : NULL\n $ cluster_assignments   : Factor w/ 3 levels \"Cluster_1\",\"Cluster_2\",..: 1 1 1 1 1 1 1 1 1 1 ...\n\n\n\n# This depends on our linkage chosen\nhc_preds &lt;- hc_fit %&gt;% predict(penguins_na_drop)\nhc_preds\n\n# A tibble: 342 × 1\n   .pred_cluster\n   &lt;fct&gt;        \n 1 Cluster_1    \n 2 Cluster_1    \n 3 Cluster_1    \n 4 Cluster_1    \n 5 Cluster_1    \n 6 Cluster_1    \n 7 Cluster_1    \n 8 Cluster_1    \n 9 Cluster_3    \n10 Cluster_1    \n# ℹ 332 more rows\n\n\n\nhc_fit  |&gt; extract_cluster_assignment(num_clusters = 3)\n\n# A tibble: 342 × 1\n   .cluster \n   &lt;fct&gt;    \n 1 Cluster_1\n 2 Cluster_1\n 3 Cluster_1\n 4 Cluster_1\n 5 Cluster_1\n 6 Cluster_1\n 7 Cluster_1\n 8 Cluster_1\n 9 Cluster_1\n10 Cluster_1\n# ℹ 332 more rows\n\nhc_preds &lt;- hc_fit |&gt; augment(penguins_na_drop)\nhead(hc_preds)\n\n# A tibble: 6 × 9\n  .pred_cluster species island  bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;         &lt;fct&gt;   &lt;fct&gt;            &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Cluster_1     Adelie  Torger…           39.1          18.7               181        3750\n2 Cluster_1     Adelie  Torger…           39.5          17.4               186        3800\n3 Cluster_1     Adelie  Torger…           40.3          18                 195        3250\n4 Cluster_1     Adelie  Torger…           36.7          19.3               193        3450\n5 Cluster_1     Adelie  Torger…           39.3          20.6               190        3650\n6 Cluster_1     Adelie  Torger…           38.9          17.8               181        3625\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "slides/08-clustering.html#graph",
+    "href": "slides/08-clustering.html#graph",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Graph",
+    "text": "Graph\n\nlibrary(factoextra)\n\nhc_fit  %&gt;%\n  extract_fit_engine() %&gt;%\n  fviz_dend(main = \"complete\", k = 3)"
+  },
+  {
+    "objectID": "slides/08-clustering.html#clustering",
+    "href": "slides/08-clustering.html#clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": " Clustering",
+    "text": "Clustering\n\nPerform Kmeans and Hierarchical Clustering on the iris dataset (use data(\"iris\"))\n\n\n\n\n\n🔗 https://sta362-sb8-24.github.io/STA362StatLearning/"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html",
+    "href": "slides/08-clustering_o.html",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "",
+    "text": "library(tidymodels)\nlibrary(tidyverse)\nlibrary(palmerpenguins)\ndata(penguins)\nlibrary(tidyclust)\n#install.packages('tidyclust')\n#install.packages('factoextra')"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#setup",
+    "href": "slides/08-clustering_o.html#setup",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "",
+    "text": "library(tidymodels)\nlibrary(tidyverse)\nlibrary(palmerpenguins)\ndata(penguins)\nlibrary(tidyclust)\n#install.packages('tidyclust')\n#install.packages('factoextra')"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#unsupervised-learning",
+    "href": "slides/08-clustering_o.html#unsupervised-learning",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Unsupervised learning",
+    "text": "Unsupervised learning\n\nGrouping or categorizing observational units (objects) without any pre-assigned labels or scores (no outcome information!)"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#some-examples",
+    "href": "slides/08-clustering_o.html#some-examples",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Some examples:",
+    "text": "Some examples:\n\nLatent Dirichlet Allocation: Topic Modeling of TSL Articles\nNetwork Analysis: Political Books\nNetwork & Clustering: Characters in ‘Love Actually’"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#k-means-clustering",
+    "href": "slides/08-clustering_o.html#k-means-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "\\(k\\)-means Clustering",
+    "text": "\\(k\\)-means Clustering\n\\(k\\)-means clustering is an unsupervised partitioning algorithm designed to find a partition of the observations such that the following objective function is minimized (find the smallest within cluster sum of squares):\n\\[\\text{arg}\\,\\min\\limits_{C_1, \\ldots, C_k} \\Bigg\\{ \\sum_{k=1}^K \\sum_{i \\in C_k} \\sum_{j=1}^p (x_{ij} - \\overline{x}_{kj})^2 \\Bigg\\}\\]"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#a-fun-applet",
+    "href": "slides/08-clustering_o.html#a-fun-applet",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "A fun applet!!",
+    "text": "A fun applet!!\nhttps://www.naftaliharris.com/blog/visualizing-k-means-clustering/"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#algorithm-k-means-clustering",
+    "href": "slides/08-clustering_o.html#algorithm-k-means-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Algorithm: \\(k\\)-Means Clustering",
+    "text": "Algorithm: \\(k\\)-Means Clustering\n\nRandomly assign a number, from 1 to \\(k\\), to each of the observations. These serve as initial cluster assignments for the observations.\n\n. . .\n\nIterate until the cluster assignments stop changing:\n\nFor each of the \\(k\\) clusters, compute the cluster centroid. The \\(k^{th}\\) cluster centroid is the vector of the \\(p\\) feature means for the observations in the \\(k^{th}\\) cluster.\n\n\n. . .\n(b) Assign each observation to the cluster whose centroid is closest (where closest is defined using Euclidean distance).\n. . .\n\nTies? Do something consistent: for example, leave in the current cluster."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#convergence-yes-local",
+    "href": "slides/08-clustering_o.html#convergence-yes-local",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Convergence? Yes! (local…)",
+    "text": "Convergence? Yes! (local…)\n\nIf a point is “closer” to a different center, moving it will lower the objective function.\nAverages minimize squared differences, so taking the new average will result in a lower objective function.\nIf a point is equidistant from two clusters, the point won’t move.\nThe algorithm must converge in finite number of steps because there are finitely many points."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#scaling",
+    "href": "slides/08-clustering_o.html#scaling",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Scaling",
+    "text": "Scaling\n\nraw datascalled data\n\n\n\n\n\nnorm_clust %&gt;%\n  kmeans(centers = 2) %&gt;%\n  augment(norm_clust) %&gt;%\n  ggplot() + \n  geom_point(aes(x = x1, \n                 y = x2, \n                 color = .cluster)) +\n  ggtitle(\"k-means (k=2) on raw data\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnorm_clust %&gt;%\n  mutate(across(everything(), \n                scale)) %&gt;%\n  kmeans(centers = 2) %&gt;%\n  augment(norm_clust) %&gt;%\n  ggplot() + \n  geom_point(aes(x = x1, \n                 y = x2, \n                 color = .cluster)) +\n  ggtitle(\"k-means (k=2) on raw data\")"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#k-means-tidymodels",
+    "href": "slides/08-clustering_o.html#k-means-tidymodels",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "K-means tidymodels",
+    "text": "K-means tidymodels\n\npenguins_recipe &lt;- recipe(~.,data = penguins) |&gt;\n  update_role(all_predictors(), new_role = \"predictor\") |&gt;\n  step_select(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g)|&gt;\n  step_naomit(all_predictors()) |&gt;\n  step_scale(all_predictors()) \n\nkmeans_spec &lt;- k_means(num_clusters =3)\n\n# Create a workflow\nwf &lt;- workflow() |&gt;\n  add_recipe(penguins_recipe) |&gt;\n  add_model(kmeans_spec) #no engine since base R\n\n# Train the model\nkm_fit &lt;- wf |&gt;\n  fit(data = penguins)"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#k-means-outputs",
+    "href": "slides/08-clustering_o.html#k-means-outputs",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "k-means outputs",
+    "text": "k-means outputs\n\nextract_cluster_assignment(km_fit) |&gt;\n  head()\n\n# A tibble: 6 × 1\n  .cluster \n  &lt;fct&gt;    \n1 Cluster_1\n2 Cluster_1\n3 Cluster_1\n4 Cluster_1\n5 Cluster_1\n6 Cluster_1\n\n\n\nextract_centroids(km_fit)\n\n# A tibble: 3 × 5\n  .cluster  bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n1 Cluster_1           7.00          9.17              13.4        4.47\n2 Cluster_2           8.70          9.50              14.0        4.87\n3 Cluster_3           8.70          7.59              15.4        6.33"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#k-means-outputs-1",
+    "href": "slides/08-clustering_o.html#k-means-outputs-1",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "k-means outputs",
+    "text": "k-means outputs\n\nkm_summary&lt;- extract_fit_summary(km_fit)\nkm_summary\n\n$cluster_names\n[1] Cluster_1 Cluster_2 Cluster_3\nLevels: Cluster_1 Cluster_2 Cluster_3\n\n$centroids\n# A tibble: 3 × 4\n  bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n           &lt;dbl&gt;         &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n1           7.00          9.17              13.4        4.47\n2           8.70          9.50              14.0        4.87\n3           8.70          7.59              15.4        6.33\n\n$n_members\n[1] 132  87 123\n\n$sse_within_total_total\n[1] 122.1477 112.9852 143.1502\n\n$sse_total\n[1] 1364\n\n$orig_labels\n  [1] 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n [43] 2 1 1 1 1 1 2 1 1 1 2 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 1 1 2 1 2 1 1 1 2 1 2 1 1 1\n [85] 1 1 1 1 1 1 2 1 1 1 2 1 1 1 2 1 2 1 1 1 1 1 1 1 2 1 2 1 2 1 2 1 1 1 1 1 1 1 2 1 1 1\n[127] 1 1 2 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[169] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[211] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[253] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[295] 1 2 1 2 2 2 2 2 2 2 1 2 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2\n[337] 2 2 2 2 2 2\n\n$cluster_assignments\n  [1] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n  [9] Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [17] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [25] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [33] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [41] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [49] Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n [57] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n [65] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n [73] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1\n [81] Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n [89] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1\n [97] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1\n[105] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_2 Cluster_1\n[113] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[121] Cluster_1 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[129] Cluster_2 Cluster_1 Cluster_2 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[137] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1\n[145] Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_1 Cluster_2 Cluster_3\n[153] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[161] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[169] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[177] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[185] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[193] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[201] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[209] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[217] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[225] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[233] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[241] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[249] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[257] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[265] Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3 Cluster_3\n[273] Cluster_3 Cluster_3 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[281] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[289] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_1 Cluster_2\n[297] Cluster_1 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[305] Cluster_1 Cluster_2 Cluster_1 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[313] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[321] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[329] Cluster_1 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\n[337] Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2 Cluster_2\nLevels: Cluster_1 Cluster_2 Cluster_3"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#measuring-k-means-fit",
+    "href": "slides/08-clustering_o.html#measuring-k-means-fit",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Measuring k-means fit",
+    "text": "Measuring k-means fit\nSum of squared error\n\nOne simple metric is the within cluster sum-of-squared error (WSS), which measures the sum of all distances from observations to their cluster center.\nThis is sometimes scaled with the total sum-of-squared error (TSS), the distance from all observations to the global centroid; in particular, the ratio WSS/TSS is often computed.\nSmall values of WSS or of the WSS/TSS ratio suggest that the observations within clusters are closer (more similar) to each other than they are to the other clusters.\nThe WSS and TSS come “for free” with the model fit summary, or they can be accessed directly from the model fit."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#wss",
+    "href": "slides/08-clustering_o.html#wss",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "WSS",
+    "text": "WSS\nNote we use the fit object, not summary.\n\nkm_fit |&gt; sse_within_total()\n\n# A tibble: 1 × 3\n  .metric          .estimator .estimate\n  &lt;chr&gt;            &lt;chr&gt;          &lt;dbl&gt;\n1 sse_within_total standard        378.\n\nkm_fit |&gt; sse_total()\n\n# A tibble: 1 × 3\n  .metric   .estimator .estimate\n  &lt;chr&gt;     &lt;chr&gt;          &lt;dbl&gt;\n1 sse_total standard        1364\n\nkm_fit |&gt; sse_ratio()\n\n# A tibble: 1 × 3\n  .metric   .estimator .estimate\n  &lt;chr&gt;     &lt;chr&gt;          &lt;dbl&gt;\n1 sse_ratio standard       0.277\n\nkm_fit |&gt; sse_within()\n\n# A tibble: 3 × 3\n  .cluster    wss n_members\n  &lt;fct&gt;     &lt;dbl&gt;     &lt;int&gt;\n1 Cluster_1  122.       132\n2 Cluster_2  113.        87\n3 Cluster_3  143.       123"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#evaluating-clustering-which-k",
+    "href": "slides/08-clustering_o.html#evaluating-clustering-which-k",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Evaluating clustering (which \\(k\\)?)",
+    "text": "Evaluating clustering (which \\(k\\)?)\n\nSilhouette Width (use \\(k\\) with smallest silhouette width)\nElbow plot (use \\(k\\) at elbow on plot of \\(k\\) vs. within cluster sum of squares)\nThe silhouette of a single observation is proportional to the average distance from that observation to within-cluster observations minus the average distance to outside-cluster observations; normalized by the greater of these two average.\nA large silhouette (close to 1) suggests that an observation is more similar to those within its cluster than those outside its cluster.\nWe can average all silhouettes to get a metric for the full clustering fit."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#silhouette-width",
+    "href": "slides/08-clustering_o.html#silhouette-width",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Silhouette width",
+    "text": "Silhouette width\nConsider observation \\(i \\in\\) cluster \\(C_1\\). Let\n\\[d(i, C_k) = \\mbox{average dissimilarity of } i \\mbox{ to all objects in cluster } C_k\\] \\[a(i) =  \\mbox{average dissimilarity of } i \\mbox{ to all objects in } C_1.\\] \\[b(i) = \\min_{C_k \\ne C_1} d(i,C_k) = \\mbox{distance to the next closest neighbor cluster}\\] \\[s(i) = \\frac{b(i) - a(i)}{\\max \\{ a(i), b(i) \\}}\\] \\[\\mbox{average}_{i \\in C_1} s(i) = \\mbox{average silhouette width for cluster } C_1\\]\nNote that if \\(a(i) &lt; b(i)\\) then \\(i\\) is well classified with a maximum \\(s(i) = 1\\). If \\(a(i) &gt; b(i)\\) then \\(i\\) is not well classified with a maximum \\(s(i) = -1\\)."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#silhouette-width---tidymodels",
+    "href": "slides/08-clustering_o.html#silhouette-width---tidymodels",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Silhouette width - tidymodels",
+    "text": "Silhouette width - tidymodels\nThe computation of the silhouette depends on the original observation values, a dataset must also be supplied to the function.\n\n# only needed because I didn't split and handle NAs before\npenguins_na_drop &lt;- penguins |&gt; drop_na(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g) \n\n    \nkm_fit %&gt;%\n  silhouette_avg(penguins_na_drop )\n\n# A tibble: 1 × 3\n  .metric        .estimator .estimate\n  &lt;chr&gt;          &lt;chr&gt;          &lt;dbl&gt;\n1 silhouette_avg standard       0.447"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#k-means-clustering-find-k",
+    "href": "slides/08-clustering_o.html#k-means-clustering-find-k",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "K Means Clustering, find K",
+    "text": "K Means Clustering, find K\n\npen_recipe2 &lt;- recipe(~.,data = penguins_na_drop) |&gt;\n  update_role(all_predictors(), new_role = \"predictor\") |&gt;\n  step_select(bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g)|&gt;\n  step_scale(all_predictors()) \n\npen_cv &lt;- vfold_cv(penguins_na_drop,5)\n\nkm_spec2 &lt;- k_means(num_clusters = tune())\n\nclust_num_grid &lt;- grid_regular(num_clusters(),levels = 10)\n\nwf_tune &lt;- workflow()|&gt;\n  add_recipe(pen_recipe2)|&gt;\n  add_model(km_spec2)\n  \nres &lt;- tune_cluster(\n  wf_tune,\n  resamples = pen_cv,\n  grid = clust_num_grid,\n  control = control_grid(save_pred = TRUE, extract = identity),\n  metrics = cluster_metric_set(sse_within_total, sse_total, sse_ratio)\n)\nres_metrics &lt;- res %&gt;% collect_metrics()\nres_metrics\n\n# A tibble: 30 × 7\n   num_clusters .metric          .estimator     mean     n  std_err .config              \n          &lt;int&gt; &lt;chr&gt;            &lt;chr&gt;         &lt;dbl&gt; &lt;int&gt;    &lt;dbl&gt; &lt;chr&gt;                \n 1            1 sse_ratio        standard      1         5  0       Preprocessor1_Model01\n 2            1 sse_total        standard   1090.        5  0.980   Preprocessor1_Model01\n 3            1 sse_within_total standard   1090.        5  0.980   Preprocessor1_Model01\n 4            2 sse_ratio        standard      0.413     5  0.00431 Preprocessor1_Model02\n 5            2 sse_total        standard   1090.        5  0.980   Preprocessor1_Model02\n 6            2 sse_within_total standard    451.        5  4.46    Preprocessor1_Model02\n 7            3 sse_ratio        standard      0.341     5  0.0177  Preprocessor1_Model03\n 8            3 sse_total        standard   1090.        5  0.980   Preprocessor1_Model03\n 9            3 sse_within_total standard    372.        5 19.2     Preprocessor1_Model03\n10            4 sse_ratio        standard      0.225     5  0.00313 Preprocessor1_Model04\n# ℹ 20 more rows"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#k-means-clustering-find-k-1",
+    "href": "slides/08-clustering_o.html#k-means-clustering-find-k-1",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "K Means Clustering, find K",
+    "text": "K Means Clustering, find K\n\nres_metrics %&gt;%\n  filter(.metric == \"sse_ratio\") %&gt;%\n  ggplot(aes(x = num_clusters, y = mean)) +\n  geom_point() +\n  geom_line() +\n  theme_minimal() +\n  ylab(\"mean WSS/TSS ratio, over 5 folds\") +\n  xlab(\"Number of clusters\") +\n  scale_x_continuous(breaks = 1:10)"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#distance-metric-mathematically",
+    "href": "slides/08-clustering_o.html#distance-metric-mathematically",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Distance metric (mathematically)",
+    "text": "Distance metric (mathematically)\n\n\\(d({\\bf x}, {\\bf y}) \\geq 0\\)\n\\(d({\\bf x}, {\\bf y}) = d({\\bf y}, {\\bf x})\\)\n\\(d({\\bf x}, {\\bf y}) = 0\\) iff \\({\\bf x} = {\\bf y}\\)\n\\(d({\\bf x}, {\\bf y}) \\leq d({\\bf x}, {\\bf z}) + d({\\bf z}, {\\bf y})\\) for all other vectors \\({\\bf z}\\)."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#distance-measures-clustering",
+    "href": "slides/08-clustering_o.html#distance-measures-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Distance measures (clustering)",
+    "text": "Distance measures (clustering)\n\nEuclidean Distance\n\n. . .\n\\[d_E({\\bf x}, {\\bf y}) = \\sqrt{\\sum_{i=1}^p (x_i - y_i)^2}\\]\n\nPearson Correlation Distance\n\n. . .\n\\[d_P({\\bf x}, {\\bf y}) = 1 - r_P ({\\bf x}, {\\bf y})\\] \\[\\mbox{ or } d_P({\\bf x}, {\\bf y}) =  1 - |r_P ({\\bf x}, {\\bf y})|\\] \\[\\mbox{ or } d_P({\\bf x}, {\\bf y}) =  1 - (r_P ({\\bf x}, {\\bf y}))^2\\]"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#correlation-distance-isnt-a-distance-metric",
+    "href": "slides/08-clustering_o.html#correlation-distance-isnt-a-distance-metric",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Correlation distance isn’t a distance metric!",
+    "text": "Correlation distance isn’t a distance metric!\n\nx1 &lt;- c(1,2,3)\nx2 &lt;- c(1, 4, 10)\nx3 &lt;- c(9, 2, 2)\n\n# d(1,2)\n1 - cor(x1, x2)\n\n[1] 0.01801949\n\n# d(1,3)\n1 - cor(x1, x3)\n\n[1] 1.866025\n\n# d(2,3)\n1 - cor(x2, x3)\n\n[1] 1.755929\n\n# d(1,3) &gt; d(1,2) + d(2,3)\n1 - cor(x1, x2) + 1 - cor(x2, x3)\n\n[1] 1.773948"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#correlation-distance-isnt-a-distance-metric-1",
+    "href": "slides/08-clustering_o.html#correlation-distance-isnt-a-distance-metric-1",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Correlation distance isn’t a distance metric!",
+    "text": "Correlation distance isn’t a distance metric!\nUsing absolute distance doesn’t fix things.\n\n# d(1,2)\n1 - abs(cor(x1, x2))\n\n[1] 0.01801949\n\n# d(1,3)\n1 - abs(cor(x1, x3))\n\n[1] 0.1339746\n\n# d(2,3)\n1 - abs(cor(x2, x3))\n\n[1] 0.2440711\n\n# d(2,3) &gt; d(1,2) + d(1,3)\n1 - abs(cor(x1, x2)) + 1 - abs(cor(x1, x3))\n\n[1] 0.1519941"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#cosine-distance-for-clustering",
+    "href": "slides/08-clustering_o.html#cosine-distance-for-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Cosine Distance (for clustering)",
+    "text": "Cosine Distance (for clustering)\n\\[d_C({\\bf x}, {\\bf y}) =  \\frac{{\\bf x} \\cdot {\\bf y}}{|| {\\bf x} ||  ||{\\bf y}||}\\] \\[= \\frac{\\sum_{i=1}^p x_i y_i}{\\sqrt{\\sum_{i=1}^p x_i^2 \\sum_{i=1}^p y_i^2}}\\] \\[= 1 - r_P ({\\bf x}, {\\bf y})  \\ \\ \\ \\ \\mbox{if } \\overline{\\bf x} = \\overline{\\bf y} = 0\\] * Hamming Distance\n\\[\\begin{align}\nd_H({\\bf x}, {\\bf y}) = \\sum_{i=1}^p I(x_i \\ne y_i)\n\\end{align}\\]\n\n\n\n\n\nThe Hamming distance across the two DNA strands is 7."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#dist-function-in-r",
+    "href": "slides/08-clustering_o.html#dist-function-in-r",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "dist function in R",
+    "text": "dist function in R\n\n\n\n\n\nThe function dist in R calculates the distances given above."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#string-distances",
+    "href": "slides/08-clustering_o.html#string-distances",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "String distances",
+    "text": "String distances\nhttps://www.kdnuggets.com/2019/01/comparison-text-distance-metrics.html\n\n\n\n\n\nComparison of string distance metrics from https://www.kdnuggets.com/2019/01/comparison-text-distance-metrics.html."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#k-medoids",
+    "href": "slides/08-clustering_o.html#k-medoids",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "k-Medoids",
+    "text": "k-Medoids\nShortcomings of k-means\n\nCenter is calculated as average (establishes Euclidean distance)\nBecause center changes, distances must be re-calculated\nReally, only Euclidean distance makes sense"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#partitioning-around-medoids-pam",
+    "href": "slides/08-clustering_o.html#partitioning-around-medoids-pam",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Partitioning Around Medoids (PAM)",
+    "text": "Partitioning Around Medoids (PAM)\nFind the observations (data values!) \\(m_k\\) that solve:\n\\[\\text{arg}\\,\\min\\limits_{C_1, \\ldots, C_k} \\Bigg\\{ \\sum_{k=1}^K \\sum_{i \\in C_k}d(x_i, m_k) \\Bigg\\}\\]\n\nNot well implemented in R"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#hierarchical-clustering",
+    "href": "slides/08-clustering_o.html#hierarchical-clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Hierarchical Clustering",
+    "text": "Hierarchical Clustering\n\nis a set of nested clusters that are organized as a tree. Note that objects that belong to a child cluster also belong to the parent cluster.\n\nStat Quest: https://www.youtube.com/watch?v=7xHsRkOdVwo"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#algorithm-agglomerative-hierarchical-clustering-algorithm",
+    "href": "slides/08-clustering_o.html#algorithm-agglomerative-hierarchical-clustering-algorithm",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Algorithm: Agglomerative Hierarchical Clustering Algorithm",
+    "text": "Algorithm: Agglomerative Hierarchical Clustering Algorithm\n\nBegin with \\(n\\) observations and a measure (such as Euclidean distance) of all the \\({n \\choose 2} = n(n-1)/2\\) pairwise dissimilarities. Treat each observation as its own cluster.\n\n. . .\n\nFor \\(i = n, n - 1, \\ldots , 2\\):\n\nExamine all pairwise inter-cluster dissimilarities among the \\(i\\) clusters and identify the pair of clusters that are least dissimilar (that is, most similar). Fuse these two clusters. The dissimilarity between these two clusters indicates the height in the dendrogram at which the fusion should be placed.\n\n\n. . .\n\nCompute the new pairwise inter-cluster dissimilarities among the \\(i - 1\\) remaining clusters."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#definitions",
+    "href": "slides/08-clustering_o.html#definitions",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Definitions",
+    "text": "Definitions\nAgglomerative methods start with each object (e.g., gene, penguin, etc.) in its own group. Groups are merged until all objects are together in one group.\nDivisive methods start with all objects in one group and break up the groups sequentially until all objects are individuals.\nSingle Linkage algorithm defines the distance between groups as that of the closest pair of individuals.\nComplete Linkage algorithm defines the distance between groups as that of the farthest pair of individuals.\nAverage Linkage algorithm defines the distance between groups as the average of the distances between all pairs of individuals across the groups."
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#hierarchical-clustering-in-r---tidymodels",
+    "href": "slides/08-clustering_o.html#hierarchical-clustering-in-r---tidymodels",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Hierarchical clustering in R - tidymodels",
+    "text": "Hierarchical clustering in R - tidymodels\n\n# Define a hierarchical clustering model\nhc_spec &lt;- hier_clust(linkage_method = \"complete\",\n                      num_clusters = 3)\n\n# Create a workflow\nworkflow &lt;- workflow() |&gt;\n  add_recipe(pen_recipe2) |&gt;\n  add_model(hc_spec)\n\n# fit\nhc_fit &lt;- workflow |&gt;\n  fit(data = penguins_na_drop)"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#output",
+    "href": "slides/08-clustering_o.html#output",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Output",
+    "text": "Output\n\nhc_summary &lt;- hc_fit %&gt;% extract_fit_summary()\nhc_summary %&gt;% str()\n\nList of 7\n $ cluster_names         : Factor w/ 3 levels \"Cluster_1\",\"Cluster_2\",..: 1 2 3\n $ centroids             : tibble [3 × 4] (S3: tbl_df/tbl/data.frame)\n  ..$ bill_length_mm   : num [1:3] 7.2 8.7 9.15\n  ..$ bill_depth_mm    : num [1:3] 9.27 7.59 9.4\n  ..$ flipper_length_mm: num [1:3] 13.5 15.4 14\n  ..$ body_mass_g      : num [1:3] 4.6 6.33 4.71\n $ n_members             : int [1:3] 165 123 54\n $ sse_within_total_total: num [1:3] 169.5 120.9 49.9\n $ sse_total             : num 656\n $ orig_labels           : NULL\n $ cluster_assignments   : Factor w/ 3 levels \"Cluster_1\",\"Cluster_2\",..: 1 1 1 1 1 1 1 1 1 1 ...\n\n\n\n# This depends on our linkage chosen\nhc_preds &lt;- hc_fit %&gt;% predict(penguins_na_drop)\nhc_preds\n\n# A tibble: 342 × 1\n   .pred_cluster\n   &lt;fct&gt;        \n 1 Cluster_1    \n 2 Cluster_1    \n 3 Cluster_1    \n 4 Cluster_1    \n 5 Cluster_1    \n 6 Cluster_1    \n 7 Cluster_1    \n 8 Cluster_1    \n 9 Cluster_3    \n10 Cluster_1    \n# ℹ 332 more rows\n\n\n\nhc_fit  |&gt; extract_cluster_assignment(num_clusters = 3)\n\n# A tibble: 342 × 1\n   .cluster \n   &lt;fct&gt;    \n 1 Cluster_1\n 2 Cluster_1\n 3 Cluster_1\n 4 Cluster_1\n 5 Cluster_1\n 6 Cluster_1\n 7 Cluster_1\n 8 Cluster_1\n 9 Cluster_1\n10 Cluster_1\n# ℹ 332 more rows\n\nhc_preds &lt;- hc_fit |&gt; augment(penguins_na_drop)\nhead(hc_preds)\n\n# A tibble: 6 × 9\n  .pred_cluster species island  bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;         &lt;fct&gt;   &lt;fct&gt;            &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Cluster_1     Adelie  Torger…           39.1          18.7               181        3750\n2 Cluster_1     Adelie  Torger…           39.5          17.4               186        3800\n3 Cluster_1     Adelie  Torger…           40.3          18                 195        3250\n4 Cluster_1     Adelie  Torger…           36.7          19.3               193        3450\n5 Cluster_1     Adelie  Torger…           39.3          20.6               190        3650\n6 Cluster_1     Adelie  Torger…           38.9          17.8               181        3625\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#graph",
+    "href": "slides/08-clustering_o.html#graph",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": "Graph",
+    "text": "Graph\n\nlibrary(factoextra)\n\nhc_fit  %&gt;%\n  extract_fit_engine() %&gt;%\n  fviz_dend(main = \"complete\", k = 3)"
+  },
+  {
+    "objectID": "slides/08-clustering_o.html#clustering",
+    "href": "slides/08-clustering_o.html#clustering",
+    "title": "Chapter 12 - Unsupervised Learning",
+    "section": " Clustering",
+    "text": "Clustering\n\nPerform Kmeans and Hierarchical Clustering on the iris dataset (use data(\"iris\"))"
   }
 ]
