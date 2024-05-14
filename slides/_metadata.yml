@@ -7,13 +7,15 @@ format:
     theme: custom.scss
     transition: fade
     slide-number: true
-    chalkboard: true
     highlight-style: a11y-dark
+    embed-resources: true
     echo: true
     message: false
     warning: false
     include: true
     incremental: true
+  html:
+    embed-resources: true
 editor: visual
 execute:
   freeze: auto

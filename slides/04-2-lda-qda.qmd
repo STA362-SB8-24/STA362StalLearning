@@ -3,8 +3,10 @@ title: "Chapter 4 Part 2"
 subtitle: "Multinomial Logisitc, LDA, QDA"
 format: 
   revealjs:
+    output-file: "04-2-lda-qda.qmd"
     slide-number: true
-    chalkboard: true
+  html:
+    output-file: "04-2-lda-qda_o.qmd"
 ---
 
 ## Recap {.small}

@@ -3,8 +3,10 @@ title: "Chapter 4 Part 1"
 subtitle: "Logistic Regression"
 format: 
   revealjs:
+    output-file: "04-logistic.qmd"
     slide-number: true
-    chalkboard: true
+  html:
+    output-file: "04-logistic_o.qmd"
 ---
  
 ## Recap {.small}

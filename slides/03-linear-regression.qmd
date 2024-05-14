@@ -1,6 +1,11 @@
 ---
 title: "Chapter 3 - Linear Regression"
-format: revealjs
+format: 
+  revealjs:
+    output-file: "03-linear_regression.html"
+    slide-number: true
+  html:
+    output-file: "03-linear_regression_o.html"
 ---
 
 ## {{< fa laptop >}} `Application Exercise` {.small}

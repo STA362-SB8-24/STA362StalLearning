@@ -1,9 +1,7 @@
 ---
 title: "Homework 2"
 subtitle: "Cross Validation and tidymodels"
-format:
-  html:
-    theme: cosmo
+format: html
 ---
 
 ```{r include=FALSE}

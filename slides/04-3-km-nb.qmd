@@ -4,7 +4,9 @@ subtitle: "KMeans, Naive Bayes"
 format: 
   revealjs:
     slide-number: true
-    chalkboard: true
+    output-file: "04-3-km-nb.html"
+  html:
+    output-file: "04-3-km-nb_o.html"
 editor_options: 
   chunk_output_type: console
 ---

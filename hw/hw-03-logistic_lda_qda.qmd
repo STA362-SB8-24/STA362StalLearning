@@ -1,9 +1,7 @@
 ---
 title: "Homework 3"
 subtitle: "Logistic, LDA, QDA, Naive Bayes, and KNN"
-format:
-  html:
-    theme: cosmo
+format: html
 ---
 
 ```{r include=FALSE}
@@ -13,7 +11,7 @@ library(ISLR)
 hw_num <- 3
 ```
 
-## Due 4/23/2024 at 9am
+## Due 4/23/2024 at 1pm
 
 # Instructions
 
